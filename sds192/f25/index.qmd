@@ -1,8 +1,12 @@
 ---
-title: "SDS 192: Introduction to Data Science"
-author: "Lindsay Poirier"
+title: "SDS 192: Introduction to Data Science - by: Jericho Lawson"
+author: "Jericho Lawson"
 date: "Last updated on `r Sys.Date()`"
 ---
+
+# Disclaimer
+
+Note that this website is still in development and will be until at least August 25th. 
 
 # Syllabus
 
@@ -16,19 +20,22 @@ library(htmltools)
 
 Data science involves applying a set of strategies to transform a recorded set of values into something from which we can glean knowledge and insight. This course will introduce you to concepts and methods from the field of data science, along with how to apply them in `R`. You will learn how to acquire, clean, wrangle, and visualize data. You will also learn best practices in data science workflows, such as code documentation and version control. Issues in data ethics will be addressed throughout the course.
 
-Classes will be held on Mondays from 1:40 PM to 2:55 PM and on Wednesday and Thursdays from 1:20 PM to 2:35 PM.
+Classes will be held on the following days/times for these sections:
 
-SDS 100: Reproducible Scientific Computing with Data is a co-requisite for this course and designed to help support you in coding in `R`. Please note that I walk into this course with the assumption that most students have never coded before. Coding for the first time can be intimidating, but I intend do everything in my power to support you through the learning curve and to make things both fun and relevant in the process. I personally picked up most of my data science skills through a lot of trial-and-error, practice, and curiosity. My hope is that, in this course, you will learn through experimentation, along with independent and collaborative problem-solving. Honing these competencies will serve you as you move on to other courses in the SDS program and/or at Smith.
+- 01: Monday/Wednesday/Friday from 9:25 AM - 10:40 AM
+- 02: Monday/Wednesday/Friday from 10:50 AM - 12:05 PM
+
+SDS 100: Reproducible Scientific Computing with Data is a co-requisite for this course and designed to help support you in coding in `R`. Please note that I walk into this course with the assumption that most students have never coded before. Coding for the first time can be intimidating, but I am here to support you through the learning curve and make things fun and relevant in the process. Trial-and-error is crucial! You will make mistakes and errors a high percentage of the time, but through that, you will discover and pick up skills that will define best practices and cultivate your coding style. Through experimentation, independence, and collaborative problem-solving, these qualities will serve you well as you progress to future courses in the SDS program and/or at Smith.
 
 
 ## Course Instructor
 
 ::: float_image_right
 ```{r}
-#| label: Lindsay Poirier
-#| fig-cap: Lindsay Poirier, she/her/hers.
+#| label: Jericho Lawson
+#| fig-cap: Jericho Lawson (he/him/his)
 #| out.width: "200px"
-knitr::include_graphics("https://lindsaypoirier.github.io/images/profile.png")
+knitr::include_graphics("https://jericholawson.github.io/images/profile.jpg")
 ```
 :::
 
@@ -195,6 +202,10 @@ Outside of class almost all of our communication will happen via Slack. You can 
 -   `#sds-192-discussions`: Share news articles and relevant opportunities
 -   `#sds-192-questions`: Ask and answer questions about our course
 -   You can also create private Slack channels with your project group members.
+
+## Disclaimer
+
+Content and design are adapted from Lindsay Poirier. For any questions or comments on material, please email me at [jlawson01@smith.edu](mailto:jlawson01@smith.edu)
 
 :::
 
