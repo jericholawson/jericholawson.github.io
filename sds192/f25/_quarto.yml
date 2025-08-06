@@ -8,7 +8,7 @@ website:
     title: "SDS 192: Introduction to Data Science"
     right:
       - text: "Syllabus"
-        href: index.html
+        href: index.qmd
       - text: "Assignments"
         href: assignments.html
       - text: "Labs"
@@ -26,6 +26,9 @@ format:
       smooth_scroll: false
     highlight: tango
     lib_dir: libs
+
+publish:
+  provider: gh-pages
 
 
 
