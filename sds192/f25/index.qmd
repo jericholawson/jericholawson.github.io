@@ -2,6 +2,7 @@
 title: "SDS 192: Introduction to Data Science"
 author: "Lindsay Poirier"
 date: "Last updated on `r Sys.Date()`"
+format: html
 ---
 
 # Syllabus
