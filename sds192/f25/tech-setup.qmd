@@ -1,0 +1,72 @@
+---
+title: "Tech Setup"
+subtitle: "SDS 192: Introduction to Data Science"
+author: "Jericho Lawson<br/>
+  <span style = 'font-size: 70%;'>
+  Materials adopted from Lindsay Poirier"
+editor: source
+---
+
+## Introduction
+
+This document is meant to walk you through how to setup R, RStudio, and GitHub for SDS 192. 
+
+::: callout-tip
+As you get everything set-up, if you run into any hiccups along the way, there are many ways to get help:
+
+1. Ask questions in Slack. There will be a `#techissues` channel dedicated for this purpose.
+    - Make sure to be specific in your issue. Indicate which step you are stuck on and include any screenshots.
+2. Feel free to DM me on Slack or via email. With some more complex issues, I can provide some guidance.
+3. Ask about these issues in student hours or at the Spinelli Center.
+:::
+
+## Setting up your R Environment
+
+1. Follow the instructions in chapters 4-6 at [https://happygitwithr.com/](https://happygitwithr.com/) to create a GitHub account, install `R` and RStudio if you haven't already done so. 
+2. Open RStudio.
+3. Check to ensure you have git installed by opening RStudio and clicking on `Tools > Global Options > Git/SVN` tab. Check the top of the pane for a field for the Git executable. It should say something like: "/usr/bin/git" or "C:/Program Files/Git/". If it says "(Not Found)" git is not installed. 
+
+4. If git is not installed, follow instructions in chapter 7 at [https://happygitwithr.com/](https://happygitwithr.com/)
+5. Edit your git config by following these instructions: 
+
+<p><a href="https://muse.ai/v/JLaUt3v-Configure-Git">Edit gitconfig file</a> from David Keyes.</p>
+
+6. Create a personal access token by following these instructions, and **be absolutely, positively, undeniably sure to set the expiration to 150 days**: 
+
+<p><a href="https://muse.ai/v/evn3xvX-Create-a-Personal-Access-Token-PAT-on-GitHub">Create a Personal Access Token (PAT) on GitHub</a> from David Keyes.</p>
+
+7. Store your personal access token by following these instructions: 
+
+<p><a href="https://muse.ai/v/NUGdUDd-Store-Personal-Access-Token-to-Connect-RStudio-and-GitHub">Store Personal Access Token to Connect RStudio and GitHub</a> from David Keyes.</p>
+
+8. Use the following link below to access the lab repository from GitHub Classroom:
+    - For 01 students: [https://classroom.github.com/a/-_yD9jiy](https://classroom.github.com/a/-_yD9jiy)
+    - For 02 students: [https://classroom.github.com/a/UVCt_nG1](https://classroom.github.com/a/UVCt_nG1)
+    
+You will go through all necessary prompts. Feel free to use this video as a resource: [https://www.youtube.com/watch?v=lsQ48kn-uD0](https://www.youtube.com/watch?v=lsQ48kn-uD0)
+
+9. Copy the URL for your SDS 192 Lab GitHub repo. It should look like this:
+https://github.com/sds192lawson/sds192lawson-f25-YOURSECTION-lab-submission-repository-lab0-YOUR_USER_NAME
+
+10. Create a project in RStudio from this GitHub repo by following the instructions starting at 26 seconds of this video:
+
+<p><a href="https://muse.ai/v/Way9iir-How-to-Connect-RStudio-Projects-with-GitHub-Repositories-GitHub-First">How to Connect RStudio Projects with GitHub Repositories: GitHub First</a> from David Keyes.</p>
+
+11. Install the rmarkdown package in RStudio by entering the following lines of code in the Console Pane of RStudio (lower left hand corer on initial install).  
+
+```
+install.packages("rmarkdown")
+library(rmarkdown)
+```
+
+12. On the initial install, the Files tab will be in the lower right hand corner of RStudio. Open lab0.qmd, and then follow the prompt in that file. Click Save.
+
+13. Commit your code by following the instructions in this video starting at 14 seconds: 
+
+<p><a href="https://muse.ai/v/GrXBX2t-Make-a-Commit-and-View-More-History">Make a Commit and View More History</a> from David Keyes.</p>
+
+14. Push your code to GitHub.com by following the instructions in this video starting at 27 seconds:
+
+<p><a href="https://muse.ai/v/UJmQE7i-General-Workflow-Push">General Workflow: Push</a> from David Keyes.</p>
+
+15. Navigate to https://github.com/sds192lawson/sds192lawson-f25-YOURSECTION-lab-submission-repository-lab0-YOUR_USER_NAME and double check to make sure the README file has your name listed. 
