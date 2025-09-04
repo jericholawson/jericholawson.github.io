@@ -1,0 +1,27 @@
+project:
+  type: website
+website:
+  title: Jericho Lawson - Website
+  navbar:
+    background: primary
+    right:
+    - href: index.qmd
+      text: Home
+    - href: about.qmd
+      text: About
+    - text: Classes
+      menu:
+      - href: sds192/f25/index.html
+        text: SDS 192, Fall 2025
+      - href: sds270/f25/index.html
+        text: SDS 270, Fall 2025
+      - href: classes/index.html
+        text: Previous Classes
+    - href: cv.pdf
+      text: CV
+format:
+  html:
+    theme:
+    - cosmo
+    - custom.scss
+    toc: true
