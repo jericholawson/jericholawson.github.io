@@ -93,7 +93,7 @@ editor: source
 ::: columns
 ::: {.column width="50%"}
 
-- Advanced R
+- [Advanced R](https://adv-r.hadley.nz/)
 
 ![](images/lec1textbookMain.png){fig-align="center" width="50%"}
 
@@ -101,7 +101,7 @@ editor: source
 :::
 ::: {.column width="50%"}
 
-- R Packages
+- [R Packages](https://r-pkgs.org/)
 
 ![](images/lec1textbookSec.png){fig-align="center" width="50%"}
 
