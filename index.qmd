@@ -1,5 +1,6 @@
 ---
 title: "Larger-Than-Memory Data Workflows with Apache Arrow"
+format: html
 ---
 
 ## Workshop Description
