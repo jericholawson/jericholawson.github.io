@@ -5,7 +5,17 @@ author: "Jericho Lawson<br/>
   <span style = 'font-size: 70%;'>
   Materials adopted from Lindsay Poirier"
 editor: source
+date: last-modified
 ---
+
+::: callout-warning
+
+## Warning
+
+Updates to this document are indicated in [red.]{style="color:red;"}
+
+:::
+
 
 ## Introduction
 
@@ -45,8 +55,9 @@ As you get everything set-up, if you run into any hiccups along the way, there a
     
 You will go through all necessary prompts. Feel free to use this video as a resource: [https://www.youtube.com/watch?v=lsQ48kn-uD0](https://www.youtube.com/watch?v=lsQ48kn-uD0)
 
-9. Copy the URL for your SDS 192 Lab GitHub repo. It should look like this:
-https://github.com/sds192lawson/sds192lawson-f25-YOURSECTION-lab-submission-repository-lab0-YOUR_USER_NAME
+9. Copy the URL for your SDS 192 Lab GitHub repo. [It should look like one of the following two links:]{style="color:red;"}
+- https://github.com/sds192lawson/sds192lawson-f25-YOURSECTION-lab-submission-repository-lab0-YOUR_USER_NAME
+- [https://github.com/sds192lawson/lab-submission-repository-YOUR_USER_NAME]{style="color:red;"}
 
 10. Create a project in RStudio from this GitHub repo by following the instructions starting at 26 seconds of this video:
 
@@ -69,4 +80,4 @@ library(rmarkdown)
 
 <p><a href="https://muse.ai/v/UJmQE7i-General-Workflow-Push">General Workflow: Push</a> from David Keyes.</p>
 
-15. Navigate to https://github.com/sds192lawson/sds192lawson-f25-YOURSECTION-lab-submission-repository-lab0-YOUR_USER_NAME and double check to make sure the README file has your name listed. 
+15. Navigate to [https://github.com/sds192lawson/lab-submission-repository-YOUR_USER_NAME]{style="color:red;"} and double check to make sure the [lab0.qmd]{style="color:red;"} file has your name listed. 
