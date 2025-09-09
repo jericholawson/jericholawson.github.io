@@ -1,5 +1,5 @@
 ---
-title: "Class #2: Vectors & GitHub"
+title: "Class #2: Vectors"
 subtitle: "SDS 270: Programming for Data Science in R"
 author: "Jericho Lawson<br/>
   <span style = 'font-size: 70%;'>
@@ -17,6 +17,28 @@ editor: source
 
 - If you haven't yet -- turn in the last set of exercises!
 - Check the Slack workspace for any updates
+
+## From survey
+
+- Looking forward to...
+  - improving R skills
+  - developing a package
+- Not looking forward to...
+  - Interview-style quizzes
+  - Coding itself
+- Hoping to get from this course...
+  - Confidence and proficiency in R
+  - Pivoting, wrangling
+  - Applications from R
+
+## From survey
+
+- Questions to me...
+  - Resources in R?
+    - Cheat sheets
+    - [The Book of R](https://web.itu.edu.tr/~tokerem/The_Book_of_R.pdf)
+    - [Modern Data Science with R](https://mdsr-book.github.io/mdsr3e/)
+    - [Posit Recipes](https://posit.cloud/learn/recipes)
 
 ## Review of names and values
 
@@ -210,4 +232,5 @@ starwars_person_film |>
 ## For now and Thursday: 
 
 - Work on exercises: Vectors
+- Make sure you have a working GitHub account (for Thursday)
 
