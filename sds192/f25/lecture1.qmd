@@ -13,7 +13,7 @@ format:
 editor: source
 ---
 
-## Welcome!
+## Welcome! 
 
 ::: columns
 ::: {.column width="40%"}
