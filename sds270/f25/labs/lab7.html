@@ -138,6 +138,7 @@ window.Quarto = {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p><span style="color:red;">Update: 9/25/25 - Modified instructions.</span></p>
 <p>In this lab, we will learn how to build an R package.</p>
 <ul>
 <li><strong>Goal:</strong> by the end of this lab, you should be able to build an R package.</li>
@@ -161,7 +162,7 @@ window.Quarto = {
 <ol type="1">
 <li>Create a new folder on your computer.</li>
 <li>Go to File <span class="math inline">\(\rightarrow\)</span> New Project.</li>
-<li>Go to New Directory <span class="math inline">\(\rightarrow\)</span> New Project.</li>
+<li>Go to New Directory <span class="math inline">\(\rightarrow\)</span> New <span style="color:red;">Package</span>.</li>
 </ol>
 <p>You should see this screen pop up: <img src="images/newproject.png" class="img-fluid"></p>
 <ol start="4" type="1">
@@ -189,6 +190,7 @@ Note
 <li>Delete the NAMESPACE file in your package.</li>
 <li>When using <code>devtools::document()</code> in the future, a <code>NAMESPACE</code> file should automatically be created.</li>
 </ul>
+<p><span style="color:red;">Additionally, it is possible you may need to install the <code>roxygen2</code> package.</span></p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -216,7 +218,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Experiment by changing some of the information about the package in the <code>DESCRIPTION</code> file, and then rebuilding the package. Do you see the changes reflected in the Package documentation? Try changing the title, description, or version number. [Do NOT change the name of the package!]</p>
+<p>Experiment by changing some of the information about the package in the <code>DESCRIPTION</code> file, and then rebuilding the package. Do you see the changes reflected in the Package documentation <span style="color:red;">in the Packages tab</span>? Try changing the title, description, or version number. [Do NOT change the name of the package!]</p>
 </div>
 </div>
 </section>
@@ -246,6 +248,7 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>Add the <code>print_emoji()</code> method you wrote for the S3 lab to a new file named <code>print_emoji.R</code> in the <code>R/</code> directory. Rebuild the package.</p>
+<p><span style="color:red;">Hint: Use the <code>usethis</code> library and the <code>use_r()</code> function. For the file, make sure to add in all necessary functions.</span></p>
 </div>
 </div>
 <p>Try to use your function by running (something like):</p>
@@ -299,7 +302,7 @@ Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2</code></
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Add the following directive to your method at the beginning of the file.</p>
+<p>Add the following directive to your method at the beginning of <span style="color:red;">each of the functions in</span> the file.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' @export</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -317,7 +320,7 @@ Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2</code></
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If your method calls function from another package, add those dependencies to the Imports field in <code>DESCRIPTION</code> using <code>use_package()</code>. Rebuild the package.</p>
+<p>If your method calls functions from another package, add those dependencies to the Imports field in <code>DESCRIPTION</code> using <code>use_package()</code>. Rebuild the package.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
