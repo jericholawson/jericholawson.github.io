@@ -108,7 +108,106 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Use the code below to load and wrangle the data:</p>
+<section id="learning-goals" class="level3">
+<h3 class="anchored" data-anchor-id="learning-goals">Learning Goals</h3>
+<ul>
+<li>Read the <code>ggplot</code> cheatsheets</li>
+<li>Produce and interpret univariate plots</li>
+<li>Produce and interpret multivariate plots</li>
+<li>Summarize and interpret variation and co-variation from observation of plots</li>
+<li>Contextualize plots with descriptive labels and titles</li>
+</ul>
+</section>
+</section>
+<section id="review-of-key-terms" class="level2">
+<h2 class="anchored" data-anchor-id="review-of-key-terms">Review of Key Terms</h2>
+<dl>
+<dt>Multivariate Plots</dt>
+<dd>
+<p>Plots that summarize and visualize the distribution and relationship between multiple variables</p>
+</dd>
+<dt>Univariate Plots</dt>
+<dd>
+<p>Plots that summarize and visualize the distribution of a single variable</p>
+</dd>
+<dt>Variation</dt>
+<dd>
+<p>The degree to which categorical or numeric values vary across data</p>
+</dd>
+</dl>
+</section>
+<section id="home-mortgage-disclosure-act-hmda" class="level2">
+<h2 class="anchored" data-anchor-id="home-mortgage-disclosure-act-hmda">Home Mortgage Disclosure Act (HMDA)</h2>
+<p>In the United States, homeownership can offer a pathway to promoting stability and social mobility. However, historically, opportunities for purchasing a home have been unequally distributed along racial and ethnic lines. In a practice known as redlining, some banks in the mid-twentieth century would make decisions about who would be approved for loans based on the perceived “riskiness” of the neighborhoods they lived in; risk was often determined by the racial makeup of the neighborhood. This discrimination in lending enforced the racial segregation of communities and made it much more difficult for Black and other minority individuals to secure access to a financial asset that could be passed down in their families. With limited access to this opportunity for securing generational wealth, we still feel the affects of redlining today - even though racially-motivated redlining was prohibited by the Fair Housing Act in 1968.</p>
+<p>In order to monitor for fair lending practices, in 1975, the Home Mortgage Disclosure Act was passed, requiring lending institutions to publicly disclose data about their lending - reporting each loan application they receive, whether the loan was approved or denied, and demographic information on the borrowers. This data is currently published annually by the Consumer Federal Protection Bureau, and a number of organizations monitor it to determine if there are continued forms of racial discrimination in who has access to home loans.</p>
+<p>In this lab, we are going to examine Home Mortgage Disclosure Act data from 2024 in Mississippi. Recently, a study by Lending Tree showed that Black homebuyers in Mississippi face some of the highest loan denial rates in the country:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OfhLFoRrpgs?si=zdaOV71chXhkVT2-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<p>Each row in this dataset is one mortgage application, and variables describing the demographics of the applicant, details about the loan, and whether or not the loan was approved are included in the data. When denied, the reasons for denial are also included. For consistency in comparisons, I’ve filtered this dataset down to only include 30-year conventional, first-lien, single-family, non-commercial loans that are either for a home purchase or a home improvement. The <a href="https://ffiec.cfpb.gov/documentation/publications/loan-level-datasets/lar-data-fields">data documentation</a> for this dataset is quite thick, so I will provide you with a data dictionary for today.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>VARIABLE NAME</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>derived_ethnicity</td>
+<td>Single aggregated ethnicity categorization derived from applicant/borrower and co-applicant/co-borrower ethnicity fields</td>
+</tr>
+<tr class="even">
+<td>derived_race</td>
+<td>Single aggregated race categorization derived from applicant/borrower and co-applicant/co-borrower race fields</td>
+</tr>
+<tr class="odd">
+<td>derived_sex</td>
+<td>Single aggregated sex categorization derived from applicant/borrower and co-applicant/co-borrower sex fields</td>
+</tr>
+<tr class="even">
+<td>action_taken</td>
+<td>The action taken on the covered loan or application</td>
+</tr>
+<tr class="odd">
+<td>loan_purpose</td>
+<td>The purpose of covered loan or application</td>
+</tr>
+<tr class="even">
+<td>loan_amount</td>
+<td>The amount of the covered loan, or the amount applied for</td>
+</tr>
+<tr class="odd">
+<td>loan_to_value_ratio</td>
+<td>The ratio of the total amount of debt secured by the property to the value of the property relied on in making the credit decision</td>
+</tr>
+<tr class="even">
+<td>income</td>
+<td>The gross annual income, in thousands of dollars, relied on in making the credit decision, or if a credit decision was not made, the gross annual income relied on in processing the application</td>
+</tr>
+<tr class="odd">
+<td>debt_to_income_ratio</td>
+<td>The ratio, as a percentage, of the applicant’s or borrower’s total monthly debt to the total monthly income relied on in making the credit decision</td>
+</tr>
+<tr class="even">
+<td>tract_minority_population_percent</td>
+<td>Percentage of minority population to total population for tract, rounded to two decimal places</td>
+</tr>
+<tr class="odd">
+<td>denial_reason</td>
+<td>The principal reason, or reasons, for denial</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="setting-up-your-environment" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-your-environment">Setting Up Your Environment</h2>
+<ol type="1">
+<li>Run the code below to the import the 2024 Home Mortgage Disclosure Act data for Mississippi into <code>R</code>. It may take a few moments to load. Call me or one of the data assistants over if you get an error.</li>
+</ol>
 <div class="cell" data-document="show">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
@@ -188,6 +287,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>            denial_reason<span class="fl">.3</span>, </span>
 <span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>            denial_reason<span class="fl">.4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p>We’re going to start our analysis with univariate plotting. Specifically, we are going to produce data visualizations that count the number of observations in a dataset that fall into specific groupings. When grouping observations by a categorical variable, we will produce a bar plot. Remember when labeling that these plots visualize frequency. They use the height aesthetic to visualize us how many rows in a variable have a certain value.</p>
+<p>Let’s start by comparing how many home loans were for home purchases vs.&nbsp;the number for home improvements.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -210,6 +311,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Now let’s look at the number of applicants of each race.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -226,6 +328,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>In the last plot, we visualized the frequency of a categorical variable. When grouping observations into intervals of a numeric variable, we will produce a histogram. For instance, let’s say we want to know the distribution of loan amounts that applicants requested in Mississippi in 2024. With a histogram, I can visualize how many loan applications requested $0-$100000, &gt;$100000-$200000, and so on. Histograms use the height aesthetic to visualize how many rows in a variable fall into each of these numeric bins.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -249,6 +352,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A good plot caption does three things. First, it describes what the plot is and the variables displayed on it. Second, it articulates at least one fact from the plot. Third, it interprets the significance of that fact. The caption that I provided for the last plot follows this template:</p>
+<p>(describe) This histogram displays the distribution of home loan amounts requested by Mississippi applicants in 2024. (articulate fact) The plot shows that the majority of applicants requested loans under $250,000. (interpret significance) Since the average home loan size in the U.S. in 2024 was $252,505, this indicates that average requested home loan sizes in MS were smaller in comparison to the country as a whole.</p>
+</div>
+</div>
+<p>Loan to value ratio is a measure that indicates the percentage of a property’s value that a borrower requests of a lending institution. So let’s say I want to buy a property with a value of $100,000; I plan to put down $20,000, and I request a loan for $80,000. The loan to value ratio would be 80. Typically, when borrowers can put more down, it is considered a less risky loan.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -268,6 +386,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Let’s move on to some multivariate plotting. Remember that we can add further variables to a plot via a number of different aesthetics (e.g.&nbsp;color: <code>fill=</code> or <code>col=</code>; size: <code>size=</code>; position: <code>x=</code> or <code>y=</code>, small multiples: <code>+ facet_wrap(vars(...)) )</code>. Whenever we add further data to a plot, we should be on the lookout for overplotting.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -291,6 +410,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>We learned earlier in this lab that there were more white applicants than applicants of other races applying for loans in Mississippi in 2024. If we only look at <em>counts</em> of approvals or denials then we don’t know if differences in approval numbers are due to disparities in who is getting loans or due to there just being more applicants of a particular race. For this reason, we are more interested in the <em>percentage</em> of approvals for each race and the <em>percentage</em> of denials for each race. This is more comparable across races than counts.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -307,6 +427,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Now let’s move on to comparing how requested loan amounts differ across race. To do so, we are going to create a boxplot that compares summary statistics (i.e.&nbsp;minimum, maximum, median, 1st quartile, 3rd quartile, and outliers) of the loan amounts requested by applicants of each race.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -331,6 +452,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>In the past several exercises, we have been creating plots that count the number of rows in a variable have a certain value. …but what if our dataset presents aggregated data - where those counts have already been given to us? For instance, I wrote some code below to create a dataset where the counts of individuals of each race that were denied loans is already calculated, along with the percentage of individuals that were denied loans. I also created a dataset where the counts of individuals of each race <em>and sex</em> that were denied loans is already calculated, along with the percentage. You’ll learn more about these functions in a few weeks. Take a look at these datasets below, and consider how they compare them to the data that we started with.</p>
+<div class="cell" data-document="show">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>hmda_denial_by_race <span class="ot">&lt;-</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  hmda_ms_2024 <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(derived_race) <span class="sc">|&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">total_denied =</span> <span class="fu">sum</span>(action_taken <span class="sc">==</span> <span class="st">"Application denied"</span>),</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">percent_denied =</span> <span class="fu">sum</span>(action_taken <span class="sc">==</span> <span class="st">"Application denied"</span>)<span class="sc">/</span><span class="fu">n</span>())</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>hmda_denial_by_race_sex <span class="ot">&lt;-</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  hmda_ms_2024 <span class="sc">|&gt;</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(derived_race <span class="sc">!=</span> <span class="st">"Free Form Text Only"</span>) <span class="sc">|&gt;</span> <span class="co">#There were only 3 denials with free form text for race in MS in 2024, and they have been removed here for plot legibility</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(derived_race, derived_sex) <span class="sc">|&gt;</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">total_denied =</span> <span class="fu">sum</span>(action_taken <span class="sc">==</span> <span class="st">"Application denied"</span>),</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">percent_denied =</span> <span class="fu">sum</span>(action_taken <span class="sc">==</span> <span class="st">"Application denied"</span>)<span class="sc">/</span><span class="fu">n</span>())</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>hmda_denial_by_race</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 3
+  derived_race                              total_denied percent_denied
+  &lt;chr&gt;                                            &lt;int&gt;          &lt;dbl&gt;
+1 2 or more minority races                            33          0.516
+2 American Indian or Alaska Native                    49          0.476
+3 Asian                                               78          0.162
+4 Black or African American                         4643          0.478
+5 Free Form Text Only                                  3          1    
+6 Joint                                              114          0.317
+7 Native Hawaiian or Other Pacific Islander           10          0.233
+8 Race Not Available                                 615          0.103
+9 White                                             3954          0.225</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>hmda_denial_by_race_sex</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 31 × 4
+# Groups:   derived_race [8]
+   derived_race                     derived_sex      total_denied percent_denied
+   &lt;chr&gt;                            &lt;chr&gt;                   &lt;int&gt;          &lt;dbl&gt;
+ 1 2 or more minority races         Female                     15          0.556
+ 2 2 or more minority races         Joint                       6          0.429
+ 3 2 or more minority races         Male                        8          0.471
+ 4 2 or more minority races         Sex Not Availab…            4          0.667
+ 5 American Indian or Alaska Native Female                     20          0.476
+ 6 American Indian or Alaska Native Joint                       7          0.778
+ 7 American Indian or Alaska Native Male                       21          0.429
+ 8 American Indian or Alaska Native Sex Not Availab…            1          0.333
+ 9 Asian                            Female                     20          0.149
+10 Asian                            Joint                      16          0.139
+# ℹ 21 more rows</code></pre>
+</div>
+</div>
+<p>When counts have already been calculated for us, we need to use a different type of plot to visualize these counts. We don’t need the plot function to count the rows with each value; we just need it to set the height of the bar to a numeric value provided in our dataset. We will create column plots below to do this.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -343,18 +514,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout-body-container callout-body">
 <p>In the code below, fill in the blanks to set the height of each bar to the percent of individuals in a particular race whose mortgage was denied. Select a geom function to create a column chart. Be sure to fill in the correct labels.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>hmda_denial_by_race <span class="sc">|&gt;</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> derived_race, _______)) <span class="sc">+</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  _______ <span class="sc">+</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Home Mortgage Disclosure Act Applications, Mississippi, 2024"</span>,</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Race of Applicant"</span>,</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"___________"</span>,</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="fu">str_wrap</span>(<span class="st">"This column plot visualizes the denial rates of home mortgage applications in MS in 2024. The plot shows that Black or African American applicants, American Indian or Alaska Native applicants, or applicants of 2 or more minority races were all denied mortgage at double the rate of White applicants. This may indicate disparities in lending practices."</span>, <span class="dv">120</span>)) <span class="sc">+</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>hmda_denial_by_race <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> derived_race, _______)) <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  _______ <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Home Mortgage Disclosure Act Applications, Mississippi, 2024"</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Race of Applicant"</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"___________"</span>,</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="fu">str_wrap</span>(<span class="st">"This column plot visualizes the denial rates of home mortgage applications in MS in 2024. The plot shows that Black or African American applicants, American Indian or Alaska Native applicants, or applicants of 2 or more minority races were all denied mortgage at double the rate of White applicants. This may indicate disparities in lending practices."</span>, <span class="dv">120</span>)) <span class="sc">+</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
+<p>While this gives us some insight into disparities in lending practices, we can’t see how multiple aspects of a person’s identity might factor in to these distinctions. The concept of intersectionality - introduced by civil rights scholar Kimberle Crenshaw in the late 1980s - considers how people of certain overlapping social identities may face unique forms of discrimination. Let’s take a look at how this data changes when we also consider sex in relation to denial rates.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -367,10 +539,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout-body-container callout-body">
 <p>Copy your code above, replacing the <code>hmda_denial_by_race</code> data frame with <code>hmda_denial_by_race_sex</code>. Using the <code>fill</code> aesthetic, add the variable for describing the applicants’ sex to the plot. Set the position of the columns to <code>"dodge"</code>, and be sure to add a label for the <code>fill</code> aesthetic. Adjust the caption to summarize your findings.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
+<p>In reviewing data like this, some banks have explained the disparities by suggesting that certain groups of applicants are more likely to have lower credit scores, less cash for down payments, or more debt in relation to their income. Let’s take a look at the reasons that Mississippi banks denied mortgage loans in 2024.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -383,12 +556,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout-body-container callout-body">
 <p>Create a plot below that visualizes how many applicants <em>of each race</em> were denied mortgages <em>for each denial reason</em>. Be sure to give it a descriptive title and labels covering all 5 essential components of data context. You may wish to borrow some of your previous code to adjust the plot for legibility. I’ve given you some code below to filter the data frame to just those mortgage applications that were denied.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>hmda_ms_2024 <span class="sc">|&gt;</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(action_taken <span class="sc">==</span> <span class="st">"Application denied"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Fill remaining lines here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>hmda_ms_2024 <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(action_taken <span class="sc">==</span> <span class="st">"Application denied"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Fill remaining lines here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
+<p>From this plot, you should learn that the top three reasons for denials were: 1) Multiple (meaning some combination of other denial reasons), 2) Credit history, and 3) Debt-to-income ratio. This dataset does not release information about applicants’ credit histories. However, we can take a look at the outcomes of applications from applicants with different debt-to-income ratios compared across races.</p>
+<p>Debt-to-income ratio refers to how much debt a person has in relation to the money they earn in income. A high debt-to-income ratio indicates that someone may not be pulling in enough income to pay off their debts, while a low debt-to-income ratio indicates that their income can reasonably help them pay off their debts. Banks are often hesitant to lend to individuals with high debt-to-income ratios.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -401,33 +576,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout-body-container callout-body">
 <p>Below I’ve given you some code to produce a plot that visualizes the percent of mortgage applications that resulted in each action (e.g.&nbsp;loan originated, denied, etc.), broken out by the debt-to-income ratio of the applicant. Referring to last week’s lab, add a line to this code to facet this plot by race. For which races was the denial rate higher for applicants with a lower than 50% debt-to-income ratio? Adjust the fact and interpretation presented in the caption with your response.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>hmda_ms_2024 <span class="sc">|&gt;</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> debt_to_income_ratio, <span class="at">fill =</span> action_taken)) <span class="sc">+</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#Add line to facet here</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Home Mortgage Disclosure Act Applications, Mississippi, 2024"</span>,</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Debt-to-Income Ratio"</span>,</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Percent of Mortgage Applications"</span>,</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Action Taken"</span>, </span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="fu">str_wrap</span>(<span class="st">"This bar plot visualizes the percent of mortgage applications that resulted in each action, broken out by the debt-to-income ratio of the applicant. From this plot, we can see that most applicants with a debt-to-income ratio of 50% or higher were denied loans, and most applicants with a debt-to-income ratio of lower than 50% had their loans originated. This shows that banks are less likely to lend to applicants with higher debt-to-income ratios."</span>,<span class="at">width =</span> <span class="dv">120</span>)) <span class="sc">+</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>),</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="fl">0.4</span>, <span class="st">"cm"</span>),</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>)) <span class="sc">+</span></span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill=</span><span class="fu">guide_legend</span>(<span class="at">nrow =</span> <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>hmda_ms_2024 <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> debt_to_income_ratio, <span class="at">fill =</span> action_taken)) <span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#Add line to facet here</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Home Mortgage Disclosure Act Applications, Mississippi, 2024"</span>,</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Debt-to-Income Ratio"</span>,</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Percent of Mortgage Applications"</span>,</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill =</span> <span class="st">"Action Taken"</span>, </span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="fu">str_wrap</span>(<span class="st">"This bar plot visualizes the percent of mortgage applications that resulted in each action, broken out by the debt-to-income ratio of the applicant. From this plot, we can see that most applicants with a debt-to-income ratio of 50% or higher were denied loans, and most applicants with a debt-to-income ratio of lower than 50% had their loans originated. This shows that banks are less likely to lend to applicants with higher debt-to-income ratios."</span>,<span class="at">width =</span> <span class="dv">120</span>)) <span class="sc">+</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>),</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="fl">0.4</span>, <span class="st">"cm"</span>),</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>)) <span class="sc">+</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill=</span><span class="fu">guide_legend</span>(<span class="at">nrow =</span> <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="lab3_info_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="lab3_info_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 </div>
+<p>Finally, let’s take a look at differences in what borrowers owe when their mortgages are approved. A number of factors influence the interest rates that borrowers pay on their loans (including credit history, income, debt-to-income ratio, and loan term). Higher debt-to-income ratios often result in higher interest rates.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -440,20 +616,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout-body-container callout-body">
 <p>Below I’ve given you some code to produce a plot that visualizes how the distributions of interest rates differed across debt-to-income ratios when loans were approved. Referring to last week’s lab, add a line to this code to facet this plot by race. For which races were the interest rates higher even with lower debt-to-income ratios? Adjust the fact and interpretation presented in the caption with your response.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>hmda_ms_2024 <span class="sc">|&gt;</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(action_taken <span class="sc">==</span> <span class="st">"Loan originated"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> debt_to_income_ratio, <span class="at">y =</span> interest_rate)) <span class="sc">+</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Home Mortgage Disclosure Act Applications, Mississippi, 2024"</span>,</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Debt-to-Income Ratio"</span>,</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Interest Rate"</span>,</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="fu">str_wrap</span>(<span class="st">"These boxplots visualize the distribution of interest rates for loans originated in MS in 2024, broken out by the debt-to-income ratio of the applicant. From this plot, we can see that the median interest rate for borrowers with a debt-to-income ratio of under 50% was around 7%. Median interest rates increased for borrowers with a debt-to-income ratio of over 50%. This shows that a high debt-to-income ratio may be one factor contributing to higher interest rates."</span>,<span class="at">width =</span> <span class="dv">120</span>)) <span class="sc">+</span></span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>hmda_ms_2024 <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(action_taken <span class="sc">==</span> <span class="st">"Loan originated"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> debt_to_income_ratio, <span class="at">y =</span> interest_rate)) <span class="sc">+</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Home Mortgage Disclosure Act Applications, Mississippi, 2024"</span>,</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Debt-to-Income Ratio"</span>,</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Interest Rate"</span>,</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="fu">str_wrap</span>(<span class="st">"These boxplots visualize the distribution of interest rates for loans originated in MS in 2024, broken out by the debt-to-income ratio of the applicant. From this plot, we can see that the median interest rate for borrowers with a debt-to-income ratio of under 50% was around 7%. Median interest rates increased for borrowers with a debt-to-income ratio of over 50%. This shows that a high debt-to-income ratio may be one factor contributing to higher interest rates."</span>,<span class="at">width =</span> <span class="dv">120</span>)) <span class="sc">+</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="lab3_info_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="lab3_info_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
