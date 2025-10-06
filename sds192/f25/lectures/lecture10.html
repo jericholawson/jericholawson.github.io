@@ -296,7 +296,7 @@ Jericho Lawson<br> <span style="font-size: 70%;"> <a href="http://www.smith.edu/
 <li><code>midwest</code> data set in <code>ggplot2</code> package
 <ul>
 <li>437 midwest counties with 28 variables</li>
-<li>Demographic information of midwest U.S. counties from 200 U.S. census</li>
+<li>Demographic information of midwest U.S. counties from 2000 U.S. census</li>
 </ul></li>
 </ul>
 <div class="cell">
@@ -577,19 +577,19 @@ Jericho Lawson<br> <span style="font-size: 70%;"> <a href="http://www.smith.edu/
 </ul>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a>midwest <span class="sc">|&gt;</span></span>
-<span id="cb17-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">propDegreeOfHS =</span> percprof <span class="sc">/</span> perchsd) <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">propDegreeOfHS =</span> percollege <span class="sc">/</span> perchsd) <span class="sc">|&gt;</span></span>
 <span id="cb17-3"><a href=""></a>  <span class="fu">select</span>(county, state, poptotal, propDegreeOfHS) <span class="sc">|&gt;</span></span>
 <span id="cb17-4"><a href=""></a>  <span class="fu">head</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 4
   county    state poptotal propDegreeOfHS
   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;          &lt;dbl&gt;
-1 ADAMS     IL       66090         0.0580
-2 ALEXANDER IL       10626         0.0481
-3 BOND      IL       14991         0.0647
-4 BOONE     IL       30806         0.0556
-5 BROWN     IL        5836         0.0489
-6 BUREAU    IL       35688         0.0427</code></pre>
+1 ADAMS     IL       66090          0.261
+2 ALEXANDER IL       10626          0.188
+3 BOND      IL       14991          0.246
+4 BOONE     IL       30806          0.229
+5 BROWN     IL        5836          0.210
+6 BUREAU    IL       35688          0.247</code></pre>
 </div>
 </div>
 </section>
