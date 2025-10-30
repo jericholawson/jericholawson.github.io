@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="lecture15_apply_files/libs/clipboard/clipboard.min.js"></script>
+<script src="lecture15_apply_files/libs/quarto-html/tabby.min.js"></script>
+<script src="lecture15_apply_files/libs/quarto-html/popper.min.js"></script>
+<script src="lecture15_apply_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="lecture15_apply_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="lecture15_apply_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="lecture15_apply_files/libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.23">
+
+  <meta name="author" content="Jericho Lawson   Statistical &amp; Data Sciences, Smith College   Fall 2025  ">
+  <title>Class #15: Functionals, apply()</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="lecture15_apply_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="lecture15_apply_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="lecture15_apply_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link href="lecture15_apply_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="lecture15_apply_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="lecture15_apply_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="lecture15_apply_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Class #15: Functionals, <code>apply()</code></h1>
+  <p class="subtitle">SDS 270: Programming for Data Science in R</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Jericho Lawson<br> <span style="font-size: 70%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> </span> Fall 2025 <br> 
+</div>
+</div>
+</div>
+
+</section>
+<section id="last-time" class="slide level2">
+<h2>Last Time</h2>
+<ul>
+<li>Conditions
+<ul>
+<li>Errors</li>
+<li>Warnings</li>
+<li>Messages</li>
+<li>Ignoring and handling errors
+<ul>
+<li><code>try()</code></li>
+<li><code>tryCatch()</code></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="today" class="slide level2">
+<h2>Today</h2>
+<ul>
+<li>Functionals
+<ul>
+<li>What they are</li>
+<li>Usage</li>
+</ul></li>
+<li><code>apply()</code> statements
+<ul>
+<li>What they are</li>
+<li>Different types</li>
+<li>Examples</li>
+</ul></li>
+</ul>
+</section>
+<section id="functionals" class="slide level2">
+<h2>Functionals</h2>
+<ul>
+<li>Take a function as an input and returns a vector
+<ul>
+<li>Can run function call as we iterate through some data structure</li>
+<li>Alternative to for loops
+<ul>
+<li>Cleaner code; known behavior</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="functional-types" class="slide level2">
+<h2>Functional types</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><code>apply()</code></p>
+<ul>
+<li>base R family of functionals
+<ul>
+<li><code>apply()</code>, <code>lapply()</code>, <code>vapply()</code>, <code>tapply()</code>, <code>replicate()</code></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><code>map()</code></p>
+<ul>
+<li>From <code>purrr</code> (which is part of tidyverse)
+<ul>
+<li><code>map()</code>, <code>map2()</code>, <code>pmap()</code>, <code>walk()</code></li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="apply" class="slide level2">
+<h2><code>apply()</code></h2>
+<ul>
+<li>Returns a vector after applying a function to the margins of some array or matrix</li>
+<li><code>apply(x, MARGIN, FUN, ...)</code>
+<ul>
+<li><code>x</code>: the array/matrix used for iteration</li>
+<li><code>MARGIN</code>: 1 for cycling through rows, 2 for cycling through columns</li>
+<li><code>FUN</code>: the function to be used on each row/column</li>
+</ul></li>
+<li>Returns an array</li>
+</ul>
+</section>
+<section id="example-column-means" class="slide level2">
+<h2>Example: column means</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a>sums <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="fu">ncol</span>(mtcars))</span>
+<span id="cb1-2"><a href=""></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(mtcars)){</span>
+<span id="cb1-3"><a href=""></a>  sums[i] <span class="ot">=</span> <span class="fu">sum</span>(mtcars[, i])</span>
+<span id="cb1-4"><a href=""></a>}</span>
+<span id="cb1-5"><a href=""></a>sums</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  642.900  198.000 7383.100 4694.000  115.090  102.952  571.160   14.000
+ [9]   13.000  118.000   90.000</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">apply</span>(mtcars, <span class="dv">2</span>, sum)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     mpg      cyl     disp       hp     drat       wt     qsec       vs 
+ 642.900  198.000 7383.100 4694.000  115.090  102.952  571.160   14.000 
+      am     gear     carb 
+  13.000  118.000   90.000 </code></pre>
+</div>
+</div>
+</section>
+<section id="different-types" class="slide level2">
+<h2>Different types</h2>
+<ul>
+<li><code>lapply(x, FUN, ...)</code>: cycles through atomic vector or list; applies function to each element and returns a list
+<ul>
+<li><code>x</code> and <code>FUN</code> in use</li>
+</ul></li>
+<li><code>vapply(x, FUN, FUN.VALUE, ...)</code>: cycles through atomic vector or list; applies function to each element and returns a <strong>vector</strong>
+<ul>
+<li><code>x</code> and <code>FUN</code> in use</li>
+<li><code>FUN.VALUE</code> is a template for each run</li>
+</ul></li>
+</ul>
+</section>
+<section id="different-types-1" class="slide level2">
+<h2>Different types</h2>
+<ul>
+<li><code>tapply(x, INDEX, FUN)</code>: cycles through a ragged array (i.e.&nbsp;with some group component); applies function to each group within array
+<ul>
+<li><code>x</code> and <code>FUN</code> in use</li>
+<li><code>INDEX</code> specifies the grouping vector</li>
+</ul></li>
+<li><code>replicate(n, expr)</code>: repeated evaluation of an expression
+<ul>
+<li><code>n</code> specifies number of iterates</li>
+<li><code>expr</code> refers to the function call used</li>
+</ul></li>
+</ul>
+</section>
+<section id="walkthrough" class="slide level2">
+<h2>Walkthrough</h2>
+<ul>
+<li>Let’s use the <code>mtcars</code> dataset as an example:</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">head</span>(mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+</div>
+</div>
+</section>
+<section id="example-getting-column-means" class="slide level2">
+<h2>Example: Getting column means</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a><span class="fu">apply</span>(mtcars, <span class="dv">2</span>, mean)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       mpg        cyl       disp         hp       drat         wt       qsec 
+ 20.090625   6.187500 230.721875 146.687500   3.596563   3.217250  17.848750 
+        vs         am       gear       carb 
+  0.437500   0.406250   3.687500   2.812500 </code></pre>
+</div>
+</div>
+</section>
+<section id="example-getting-summary-vector-for-each-column" class="slide level2 smaller">
+<h2>Example: Getting summary vector for each column</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a><span class="fu">apply</span>(mtcars, <span class="dv">2</span>, summary)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             mpg    cyl     disp       hp     drat      wt     qsec     vs
+Min.    10.40000 4.0000  71.1000  52.0000 2.760000 1.51300 14.50000 0.0000
+1st Qu. 15.42500 4.0000 120.8250  96.5000 3.080000 2.58125 16.89250 0.0000
+Median  19.20000 6.0000 196.3000 123.0000 3.695000 3.32500 17.71000 0.0000
+Mean    20.09062 6.1875 230.7219 146.6875 3.596563 3.21725 17.84875 0.4375
+3rd Qu. 22.80000 8.0000 326.0000 180.0000 3.920000 3.61000 18.90000 1.0000
+Max.    33.90000 8.0000 472.0000 335.0000 4.930000 5.42400 22.90000 1.0000
+             am   gear   carb
+Min.    0.00000 3.0000 1.0000
+1st Qu. 0.00000 3.0000 2.0000
+Median  0.00000 4.0000 2.0000
+Mean    0.40625 3.6875 2.8125
+3rd Qu. 1.00000 4.0000 4.0000
+Max.    1.00000 5.0000 8.0000</code></pre>
+</div>
+</div>
+<ul>
+<li>How could we alter the code so we get a table for each column?</li>
+</ul>
+</section>
+<section id="example-getting-summary-vector-for-each-column-1" class="slide level2">
+<h2>Example: Getting summary vector for each column</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a><span class="fu">lapply</span>(mtcars, summary)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$mpg
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  10.40   15.43   19.20   20.09   22.80   33.90 
+
+$cyl
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  4.000   4.000   6.000   6.188   8.000   8.000 
+
+$disp
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   71.1   120.8   196.3   230.7   326.0   472.0 
+
+$hp
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   52.0    96.5   123.0   146.7   180.0   335.0 
+
+$drat
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  2.760   3.080   3.695   3.597   3.920   4.930 
+
+$wt
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.513   2.581   3.325   3.217   3.610   5.424 
+
+$qsec
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  14.50   16.89   17.71   17.85   18.90   22.90 
+
+$vs
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.4375  1.0000  1.0000 
+
+$am
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.4062  1.0000  1.0000 
+
+$gear
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  3.000   3.000   4.000   3.688   4.000   5.000 
+
+$carb
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   2.000   2.000   2.812   4.000   8.000 </code></pre>
+</div>
+</div>
+</section>
+<section id="example-trimmed-mean" class="slide level2">
+<h2>Example: Trimmed mean</h2>
+<ul>
+<li>Secondary arguments can be passed as <code>...</code>
+<ul>
+<li>Trimmed mean: <code>trim</code> shaves % off left and right side of distribution</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a><span class="fu">mean</span>(mtcars<span class="sc">$</span>mpg, <span class="at">trim =</span> <span class="fl">0.1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 19.69615</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href=""></a><span class="fu">apply</span>(mtcars, <span class="dv">2</span>, mean, <span class="at">trim =</span> <span class="fl">0.1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        mpg         cyl        disp          hp        drat          wt 
+ 19.6961538   6.2307692 222.5230769 141.1923077   3.5792308   3.1526923 
+       qsec          vs          am        gear        carb 
+ 17.8276923   0.4230769   0.3846154   3.6153846   2.6538462 </code></pre>
+</div>
+</div>
+</section>
+<section id="example-mean" class="slide level2">
+<h2>Example: Mean</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a><span class="fu">vapply</span>(mtcars, mean, <span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       mpg        cyl       disp         hp       drat         wt       qsec 
+ 20.090625   6.187500 230.721875 146.687500   3.596563   3.217250  17.848750 
+        vs         am       gear       carb 
+  0.437500   0.406250   3.687500   2.812500 </code></pre>
+</div>
+</div>
+<ul>
+<li>Question: How could we write the <code>vapply()</code> function to generate a vectorized five-number summary on each column in mtcars?</li>
+</ul>
+</section>
+<section id="example-getting-summary-vector-for-each-column-2" class="slide level2">
+<h2>Example: Getting summary vector for each column</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href=""></a><span class="fu">vapply</span>(mtcars, summary, <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             mpg    cyl     disp       hp     drat      wt     qsec     vs
+Min.    10.40000 4.0000  71.1000  52.0000 2.760000 1.51300 14.50000 0.0000
+1st Qu. 15.42500 4.0000 120.8250  96.5000 3.080000 2.58125 16.89250 0.0000
+Median  19.20000 6.0000 196.3000 123.0000 3.695000 3.32500 17.71000 0.0000
+Mean    20.09062 6.1875 230.7219 146.6875 3.596563 3.21725 17.84875 0.4375
+3rd Qu. 22.80000 8.0000 326.0000 180.0000 3.920000 3.61000 18.90000 1.0000
+Max.    33.90000 8.0000 472.0000 335.0000 4.930000 5.42400 22.90000 1.0000
+             am   gear   carb
+Min.    0.00000 3.0000 1.0000
+1st Qu. 0.00000 3.0000 2.0000
+Median  0.00000 4.0000 2.0000
+Mean    0.40625 3.6875 2.8125
+3rd Qu. 1.00000 4.0000 4.0000
+Max.    1.00000 5.0000 8.0000</code></pre>
+</div>
+</div>
+</section>
+<section id="example-getting-summary-vector-for-each-column-3" class="slide level2">
+<h2>Example: Getting summary vector for each column</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href=""></a><span class="fu">vapply</span>(mtcars, summary, <span class="fu">c</span>(<span class="st">"Min"</span> <span class="ot">=</span> <span class="dv">0</span>, <span class="st">"1Q"</span> <span class="ot">=</span> <span class="dv">0</span>, </span>
+<span id="cb21-2"><a href=""></a>                          <span class="st">"Med"</span> <span class="ot">=</span> <span class="dv">0</span>, <span class="st">"Mean"</span> <span class="ot">=</span> <span class="dv">0</span>, </span>
+<span id="cb21-3"><a href=""></a>                          <span class="st">"3Q"</span> <span class="ot">=</span> <span class="dv">0</span>, <span class="st">"Max"</span> <span class="ot">=</span> <span class="dv">0</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          mpg    cyl     disp       hp     drat      wt     qsec     vs      am
+Min  10.40000 4.0000  71.1000  52.0000 2.760000 1.51300 14.50000 0.0000 0.00000
+1Q   15.42500 4.0000 120.8250  96.5000 3.080000 2.58125 16.89250 0.0000 0.00000
+Med  19.20000 6.0000 196.3000 123.0000 3.695000 3.32500 17.71000 0.0000 0.00000
+Mean 20.09062 6.1875 230.7219 146.6875 3.596563 3.21725 17.84875 0.4375 0.40625
+3Q   22.80000 8.0000 326.0000 180.0000 3.920000 3.61000 18.90000 1.0000 1.00000
+Max  33.90000 8.0000 472.0000 335.0000 4.930000 5.42400 22.90000 1.0000 1.00000
+       gear   carb
+Min  3.0000 1.0000
+1Q   3.0000 2.0000
+Med  4.0000 2.0000
+Mean 3.6875 2.8125
+3Q   4.0000 4.0000
+Max  5.0000 8.0000</code></pre>
+</div>
+</div>
+</section>
+<section id="example-getting-mpg-mean-across-different-groups" class="slide level2">
+<h2>Example: Getting mpg mean across different groups</h2>
+<ul>
+<li>Let’s factorize the <code>cyl</code> column so we look at the 3 groups in there:</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href=""></a>mtcars<span class="sc">$</span>cyl <span class="ot">&lt;-</span> <span class="fu">factor</span>(mtcars<span class="sc">$</span>cyl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li>Can use <code>tapply()</code> to find the mean mpg in each group of the number of cylinders</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href=""></a><span class="fu">tapply</span>(mtcars<span class="sc">$</span>mpg, mtcars<span class="sc">$</span>cyl, mean)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       4        6        8 
+26.66364 19.74286 15.10000 </code></pre>
+</div>
+</div>
+</section>
+<section id="example-replicate" class="slide level2 smaller">
+<h2>Example: replicate()</h2>
+<p>Suppose we want to generate 100 random sample of 10 cars from the <code>mtcars</code> dataset</p>
+<ul>
+<li>Start with the <code>sample()</code> function</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href=""></a><span class="fu">sample</span>(<span class="fu">rownames</span>(mtcars), <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Ford Pantera L"   "Datsun 710"       "Maserati Bora"    "Volvo 142E"      
+ [5] "Merc 240D"        "Merc 280C"        "Merc 450SL"       "Dodge Challenger"
+ [9] "Merc 450SE"       "Ferrari Dino"    </code></pre>
+</div>
+</div>
+<ul>
+<li>Use replicate function</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href=""></a><span class="fu">replicate</span>(<span class="dv">100</span>, <span class="fu">sample</span>(<span class="fu">rownames</span>(mtcars), <span class="at">size =</span> <span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      [,1]               [,2]                 [,3]                 
+ [1,] "Datsun 710"       "Mazda RX4 Wag"      "Hornet Sportabout"  
+ [2,] "Toyota Corolla"   "Ferrari Dino"       "Fiat X1-9"          
+ [3,] "Merc 450SL"       "Lotus Europa"       "Merc 280C"          
+ [4,] "Toyota Corona"    "Hornet 4 Drive"     "Honda Civic"        
+ [5,] "Merc 450SE"       "Chrysler Imperial"  "Lotus Europa"       
+ [6,] "Dodge Challenger" "Fiat 128"           "Hornet 4 Drive"     
+ [7,] "Fiat 128"         "Mazda RX4"          "Mazda RX4 Wag"      
+ [8,] "Merc 450SLC"      "Toyota Corolla"     "Merc 230"           
+ [9,] "Honda Civic"      "Cadillac Fleetwood" "Fiat 128"           
+[10,] "Hornet 4 Drive"   "AMC Javelin"        "Lincoln Continental"
+      [,4]                 [,5]                  [,6]                 
+ [1,] "Merc 230"           "Lincoln Continental" "Lincoln Continental"
+ [2,] "Porsche 914-2"      "Ford Pantera L"      "Merc 240D"          
+ [3,] "Mazda RX4 Wag"      "Ferrari Dino"        "Volvo 142E"         
+ [4,] "Fiat 128"           "Honda Civic"         "Merc 450SLC"        
+ [5,] "Cadillac Fleetwood" "Fiat X1-9"           "Toyota Corolla"     
+ [6,] "Camaro Z28"         "Merc 450SL"          "Porsche 914-2"      
+ [7,] "Merc 240D"          "Volvo 142E"          "Fiat X1-9"          
+ [8,] "Dodge Challenger"   "Merc 450SLC"         "Merc 280C"          
+ [9,] "Honda Civic"        "Toyota Corona"       "Hornet 4 Drive"     
+[10,] "Maserati Bora"      "Toyota Corolla"      "Pontiac Firebird"   
+      [,7]                [,8]                 [,9]                 
+ [1,] "Valiant"           "Chrysler Imperial"  "Toyota Corona"      
+ [2,] "Toyota Corona"     "Merc 450SL"         "Lincoln Continental"
+ [3,] "Lotus Europa"      "Hornet Sportabout"  "Cadillac Fleetwood" 
+ [4,] "Hornet Sportabout" "Merc 240D"          "Fiat 128"           
+ [5,] "Maserati Bora"     "Cadillac Fleetwood" "Lotus Europa"       
+ [6,] "AMC Javelin"       "Merc 450SE"         "Mazda RX4 Wag"      
+ [7,] "Duster 360"        "Maserati Bora"      "Hornet 4 Drive"     
+ [8,] "Ferrari Dino"      "Camaro Z28"         "Maserati Bora"      
+ [9,] "Dodge Challenger"  "Duster 360"         "Hornet Sportabout"  
+[10,] "Pontiac Firebird"  "Merc 230"           "Merc 450SE"         
+      [,10]                 [,11]                 [,12]              
+ [1,] "Hornet Sportabout"   "Merc 230"            "Toyota Corona"    
+ [2,] "Valiant"             "Lincoln Continental" "Dodge Challenger" 
+ [3,] "Toyota Corolla"      "Dodge Challenger"    "Chrysler Imperial"
+ [4,] "Merc 240D"           "Camaro Z28"          "Valiant"          
+ [5,] "Lincoln Continental" "Maserati Bora"       "Duster 360"       
+ [6,] "Cadillac Fleetwood"  "Volvo 142E"          "Datsun 710"       
+ [7,] "Hornet 4 Drive"      "Merc 280C"           "Lotus Europa"     
+ [8,] "Volvo 142E"          "Pontiac Firebird"    "Merc 450SL"       
+ [9,] "Maserati Bora"       "Ford Pantera L"      "Fiat 128"         
+[10,] "Fiat 128"            "Merc 450SE"          "Merc 280C"        
+      [,13]                [,14]            [,15]               
+ [1,] "Cadillac Fleetwood" "Merc 280"       "Ford Pantera L"    
+ [2,] "Maserati Bora"      "Datsun 710"     "Cadillac Fleetwood"
+ [3,] "Dodge Challenger"   "Hornet 4 Drive" "Mazda RX4 Wag"     
+ [4,] "Merc 280"           "Duster 360"     "Toyota Corolla"    
+ [5,] "Valiant"            "Honda Civic"    "Merc 280"          
+ [6,] "Merc 280C"          "Fiat X1-9"      "Dodge Challenger"  
+ [7,] "Mazda RX4 Wag"      "Camaro Z28"     "Merc 450SLC"       
+ [8,] "Fiat 128"           "Merc 450SL"     "Honda Civic"       
+ [9,] "Merc 450SE"         "Merc 230"       "Merc 450SE"        
+[10,] "Toyota Corona"      "Mazda RX4"      "Toyota Corona"     
+      [,16]                 [,17]                 [,18]               
+ [1,] "Merc 450SE"          "Ford Pantera L"      "Pontiac Firebird"  
+ [2,] "Toyota Corona"       "Toyota Corona"       "Valiant"           
+ [3,] "Fiat 128"            "Chrysler Imperial"   "Mazda RX4 Wag"     
+ [4,] "Mazda RX4"           "Fiat 128"            "Toyota Corona"     
+ [5,] "Volvo 142E"          "Maserati Bora"       "Merc 230"          
+ [6,] "Dodge Challenger"    "Toyota Corolla"      "Toyota Corolla"    
+ [7,] "Lotus Europa"        "Mazda RX4 Wag"       "Merc 240D"         
+ [8,] "Lincoln Continental" "Lincoln Continental" "Hornet 4 Drive"    
+ [9,] "Ford Pantera L"      "Merc 450SE"          "Cadillac Fleetwood"
+[10,] "Merc 230"            "Lotus Europa"        "Datsun 710"        
+      [,19]              [,20]                 [,21]               
+ [1,] "Valiant"          "Merc 240D"           "Merc 450SL"        
+ [2,] "Volvo 142E"       "Duster 360"          "Fiat X1-9"         
+ [3,] "Merc 450SLC"      "Fiat 128"            "Mazda RX4"         
+ [4,] "Merc 450SL"       "Merc 450SL"          "Honda Civic"       
+ [5,] "Hornet 4 Drive"   "Hornet Sportabout"   "Merc 240D"         
+ [6,] "Merc 450SE"       "Porsche 914-2"       "Merc 280"          
+ [7,] "Merc 230"         "Merc 450SE"          "Volvo 142E"        
+ [8,] "Dodge Challenger" "Pontiac Firebird"    "Valiant"           
+ [9,] "Ford Pantera L"   "Lincoln Continental" "Duster 360"        
+[10,] "Toyota Corolla"   "Datsun 710"          "Cadillac Fleetwood"
+      [,22]                [,23]               [,24]                
+ [1,] "Merc 240D"          "Toyota Corolla"    "Fiat 128"           
+ [2,] "Maserati Bora"      "Merc 450SLC"       "Toyota Corona"      
+ [3,] "Merc 450SLC"        "Fiat X1-9"         "Merc 450SL"         
+ [4,] "Valiant"            "AMC Javelin"       "Merc 450SLC"        
+ [5,] "Porsche 914-2"      "Merc 280"          "Ford Pantera L"     
+ [6,] "Fiat X1-9"          "Merc 450SE"        "Datsun 710"         
+ [7,] "Mazda RX4 Wag"      "Toyota Corona"     "Cadillac Fleetwood" 
+ [8,] "Toyota Corona"      "Merc 280C"         "Lincoln Continental"
+ [9,] "Cadillac Fleetwood" "Pontiac Firebird"  "Merc 280"           
+[10,] "Dodge Challenger"   "Hornet Sportabout" "Camaro Z28"         
+      [,25]                 [,26]               [,27]              
+ [1,] "Lincoln Continental" "Toyota Corona"     "Fiat X1-9"        
+ [2,] "Cadillac Fleetwood"  "Dodge Challenger"  "Ford Pantera L"   
+ [3,] "Merc 450SL"          "Ferrari Dino"      "Volvo 142E"       
+ [4,] "AMC Javelin"         "Merc 280"          "Honda Civic"      
+ [5,] "Ford Pantera L"      "Valiant"           "Dodge Challenger" 
+ [6,] "Valiant"             "Hornet Sportabout" "Toyota Corolla"   
+ [7,] "Pontiac Firebird"    "Fiat X1-9"         "Chrysler Imperial"
+ [8,] "Fiat X1-9"           "Maserati Bora"     "Mazda RX4"        
+ [9,] "Ferrari Dino"        "Merc 450SLC"       "Ferrari Dino"     
+[10,] "Merc 280"            "Mazda RX4 Wag"     "Maserati Bora"    
+      [,28]               [,29]               [,30]                
+ [1,] "Merc 450SL"        "Merc 450SE"        "Volvo 142E"         
+ [2,] "Ferrari Dino"      "Mazda RX4"         "Porsche 914-2"      
+ [3,] "Porsche 914-2"     "Hornet 4 Drive"    "Hornet 4 Drive"     
+ [4,] "Hornet Sportabout" "Toyota Corona"     "Ford Pantera L"     
+ [5,] "Ford Pantera L"    "Merc 240D"         "Merc 450SE"         
+ [6,] "Mazda RX4"         "Chrysler Imperial" "Maserati Bora"      
+ [7,] "Camaro Z28"        "Fiat X1-9"         "Merc 450SL"         
+ [8,] "Merc 240D"         "Fiat 128"          "Mazda RX4 Wag"      
+ [9,] "Fiat 128"          "Mazda RX4 Wag"     "Lincoln Continental"
+[10,] "Mazda RX4 Wag"     "Duster 360"        "AMC Javelin"        
+      [,31]              [,32]            [,33]                
+ [1,] "Ferrari Dino"     "Duster 360"     "Valiant"            
+ [2,] "Mazda RX4 Wag"    "Merc 240D"      "Camaro Z28"         
+ [3,] "Merc 450SE"       "Merc 450SE"     "Hornet Sportabout"  
+ [4,] "Merc 280C"        "Datsun 710"     "Toyota Corona"      
+ [5,] "Datsun 710"       "Maserati Bora"  "Mazda RX4"          
+ [6,] "Valiant"          "Toyota Corona"  "Dodge Challenger"   
+ [7,] "Volvo 142E"       "Merc 280"       "Ferrari Dino"       
+ [8,] "Merc 240D"        "Ford Pantera L" "AMC Javelin"        
+ [9,] "Merc 450SLC"      "Hornet 4 Drive" "Merc 240D"          
+[10,] "Dodge Challenger" "Lotus Europa"   "Lincoln Continental"
+      [,34]              [,35]               [,36]                
+ [1,] "Merc 280"         "Merc 240D"         "Honda Civic"        
+ [2,] "Duster 360"       "Toyota Corona"     "Chrysler Imperial"  
+ [3,] "Merc 240D"        "Mazda RX4 Wag"     "Camaro Z28"         
+ [4,] "Mazda RX4"        "Merc 450SL"        "Valiant"            
+ [5,] "Merc 230"         "Hornet Sportabout" "Fiat X1-9"          
+ [6,] "AMC Javelin"      "Fiat 128"          "Hornet Sportabout"  
+ [7,] "Honda Civic"      "Porsche 914-2"     "Ford Pantera L"     
+ [8,] "Datsun 710"       "Valiant"           "Maserati Bora"      
+ [9,] "Merc 450SLC"      "Merc 280"          "Merc 240D"          
+[10,] "Dodge Challenger" "Duster 360"        "Lincoln Continental"
+      [,37]                 [,38]               [,39]             
+ [1,] "Datsun 710"          "Merc 450SLC"       "Mazda RX4 Wag"   
+ [2,] "Merc 450SLC"         "Ford Pantera L"    "Merc 450SL"      
+ [3,] "Toyota Corolla"      "Hornet Sportabout" "Hornet 4 Drive"  
+ [4,] "Merc 280C"           "Volvo 142E"        "Fiat 128"        
+ [5,] "Cadillac Fleetwood"  "Merc 280C"         "AMC Javelin"     
+ [6,] "Duster 360"          "Porsche 914-2"     "Dodge Challenger"
+ [7,] "Hornet 4 Drive"      "Merc 280"          "Fiat X1-9"       
+ [8,] "Lincoln Continental" "Ferrari Dino"      "Merc 450SLC"     
+ [9,] "Fiat X1-9"           "Mazda RX4"         "Pontiac Firebird"
+[10,] "Pontiac Firebird"    "Camaro Z28"        "Valiant"         
+      [,40]               [,41]               [,42]              
+ [1,] "Chrysler Imperial" "Fiat 128"          "Chrysler Imperial"
+ [2,] "Volvo 142E"        "Duster 360"        "Merc 450SL"       
+ [3,] "Datsun 710"        "Merc 450SL"        "Duster 360"       
+ [4,] "Fiat 128"          "AMC Javelin"       "Fiat X1-9"        
+ [5,] "Lotus Europa"      "Hornet Sportabout" "Merc 450SE"       
+ [6,] "Merc 230"          "Merc 280"          "Pontiac Firebird" 
+ [7,] "Merc 240D"         "Maserati Bora"     "Merc 240D"        
+ [8,] "Pontiac Firebird"  "Toyota Corona"     "Fiat 128"         
+ [9,] "Toyota Corolla"    "Mazda RX4 Wag"     "Merc 280C"        
+[10,] "Ferrari Dino"      "Merc 280C"         "AMC Javelin"      
+      [,43]               [,44]               [,45]             
+ [1,] "Lotus Europa"      "Valiant"           "Ford Pantera L"  
+ [2,] "Merc 240D"         "Toyota Corolla"    "Pontiac Firebird"
+ [3,] "Mazda RX4 Wag"     "Honda Civic"       "Merc 230"        
+ [4,] "Ferrari Dino"      "Pontiac Firebird"  "Ferrari Dino"    
+ [5,] "Hornet 4 Drive"    "Fiat 128"          "Lotus Europa"    
+ [6,] "Ford Pantera L"    "Camaro Z28"        "Merc 450SE"      
+ [7,] "Fiat 128"          "Mazda RX4"         "Camaro Z28"      
+ [8,] "Merc 450SE"        "Chrysler Imperial" "Fiat 128"        
+ [9,] "Camaro Z28"        "Fiat X1-9"         "Hornet 4 Drive"  
+[10,] "Hornet Sportabout" "Porsche 914-2"     "Toyota Corolla"  
+      [,46]               [,47]                 [,48]               
+ [1,] "Datsun 710"        "Merc 450SL"          "Datsun 710"        
+ [2,] "Merc 450SE"        "Toyota Corona"       "Merc 450SL"        
+ [3,] "Mazda RX4 Wag"     "Mazda RX4"           "Cadillac Fleetwood"
+ [4,] "Fiat X1-9"         "Merc 450SE"          "Merc 240D"         
+ [5,] "Toyota Corona"     "Datsun 710"          "Chrysler Imperial" 
+ [6,] "Merc 280"          "Cadillac Fleetwood"  "Hornet 4 Drive"    
+ [7,] "Hornet Sportabout" "Merc 280"            "Ford Pantera L"    
+ [8,] "Merc 240D"         "Fiat 128"            "Fiat 128"          
+ [9,] "Porsche 914-2"     "Merc 280C"           "Mazda RX4 Wag"     
+[10,] "Maserati Bora"     "Lincoln Continental" "Merc 450SE"        
+      [,49]                [,50]                [,51]               
+ [1,] "Merc 450SL"         "Valiant"            "AMC Javelin"       
+ [2,] "Merc 280"           "Duster 360"         "Chrysler Imperial" 
+ [3,] "AMC Javelin"        "Maserati Bora"      "Cadillac Fleetwood"
+ [4,] "Toyota Corolla"     "Merc 230"           "Fiat X1-9"         
+ [5,] "Merc 450SE"         "Cadillac Fleetwood" "Ferrari Dino"      
+ [6,] "Ferrari Dino"       "Toyota Corolla"     "Merc 240D"         
+ [7,] "Mazda RX4"          "Mazda RX4 Wag"      "Maserati Bora"     
+ [8,] "Fiat X1-9"          "Ford Pantera L"     "Merc 450SLC"       
+ [9,] "Ford Pantera L"     "Porsche 914-2"      "Valiant"           
+[10,] "Cadillac Fleetwood" "Merc 450SLC"        "Merc 280C"         
+      [,52]               [,53]                 [,54]                
+ [1,] "Chrysler Imperial" "Merc 280C"           "Hornet 4 Drive"     
+ [2,] "Merc 450SLC"       "Merc 450SE"          "Lotus Europa"       
+ [3,] "Merc 280C"         "Merc 280"            "Ford Pantera L"     
+ [4,] "Porsche 914-2"     "Lincoln Continental" "Chrysler Imperial"  
+ [5,] "Honda Civic"       "Chrysler Imperial"   "Dodge Challenger"   
+ [6,] "Camaro Z28"        "Volvo 142E"          "Lincoln Continental"
+ [7,] "Merc 450SE"        "Pontiac Firebird"    "Maserati Bora"      
+ [8,] "Duster 360"        "Mazda RX4"           "Merc 450SE"         
+ [9,] "Datsun 710"        "Duster 360"          "Merc 240D"          
+[10,] "Dodge Challenger"  "Hornet 4 Drive"      "Toyota Corolla"     
+      [,55]                 [,56]           [,57]           
+ [1,] "Dodge Challenger"    "Lotus Europa"  "Ford Pantera L"
+ [2,] "Lincoln Continental" "Ferrari Dino"  "Maserati Bora" 
+ [3,] "Honda Civic"         "AMC Javelin"   "Duster 360"    
+ [4,] "Fiat 128"            "Duster 360"    "Ferrari Dino"  
+ [5,] "Camaro Z28"          "Merc 240D"     "Fiat 128"      
+ [6,] "Merc 450SLC"         "Honda Civic"   "Valiant"       
+ [7,] "Mazda RX4"           "Porsche 914-2" "Camaro Z28"    
+ [8,] "Hornet 4 Drive"      "Merc 450SLC"   "Merc 450SE"    
+ [9,] "Merc 280"            "Merc 450SL"    "Merc 240D"     
+[10,] "Ford Pantera L"      "Fiat 128"      "Merc 280C"     
+      [,58]               [,59]               [,60]               
+ [1,] "Pontiac Firebird"  "Merc 280C"         "Toyota Corolla"    
+ [2,] "Valiant"           "Mazda RX4 Wag"     "Merc 280C"         
+ [3,] "Merc 230"          "Hornet 4 Drive"    "Porsche 914-2"     
+ [4,] "Camaro Z28"        "Merc 450SL"        "Volvo 142E"        
+ [5,] "Chrysler Imperial" "Ferrari Dino"      "Lotus Europa"      
+ [6,] "Hornet Sportabout" "Merc 450SLC"       "Cadillac Fleetwood"
+ [7,] "Volvo 142E"        "Fiat 128"          "Valiant"           
+ [8,] "Mazda RX4"         "Merc 280"          "Camaro Z28"        
+ [9,] "Toyota Corona"     "Hornet Sportabout" "Dodge Challenger"  
+[10,] "Hornet 4 Drive"    "Camaro Z28"        "Maserati Bora"     
+      [,61]                 [,62]               [,63]               
+ [1,] "Lotus Europa"        "Fiat 128"          "Merc 450SE"        
+ [2,] "Toyota Corona"       "Merc 450SL"        "Ferrari Dino"      
+ [3,] "AMC Javelin"         "Valiant"           "Merc 280C"         
+ [4,] "Mazda RX4 Wag"       "AMC Javelin"       "Merc 450SL"        
+ [5,] "Merc 230"            "Maserati Bora"     "Toyota Corolla"    
+ [6,] "Fiat 128"            "Merc 450SLC"       "Hornet 4 Drive"    
+ [7,] "Fiat X1-9"           "Merc 280"          "Ford Pantera L"    
+ [8,] "Merc 240D"           "Mazda RX4 Wag"     "Cadillac Fleetwood"
+ [9,] "Lincoln Continental" "Ford Pantera L"    "Camaro Z28"        
+[10,] "Porsche 914-2"       "Hornet Sportabout" "Merc 230"          
+      [,64]              [,65]                 [,66]               
+ [1,] "Mazda RX4"        "Toyota Corona"       "Merc 230"          
+ [2,] "Pontiac Firebird" "Lotus Europa"        "Merc 280"          
+ [3,] "Toyota Corona"    "Merc 450SE"          "Fiat 128"          
+ [4,] "Datsun 710"       "Ferrari Dino"        "Chrysler Imperial" 
+ [5,] "Volvo 142E"       "Merc 450SL"          "Camaro Z28"        
+ [6,] "Dodge Challenger" "Lincoln Continental" "Datsun 710"        
+ [7,] "Merc 280C"        "Mazda RX4"           "Toyota Corolla"    
+ [8,] "Hornet 4 Drive"   "Merc 240D"           "Cadillac Fleetwood"
+ [9,] "Ford Pantera L"   "Porsche 914-2"       "Hornet 4 Drive"    
+[10,] "Merc 450SE"       "Cadillac Fleetwood"  "Pontiac Firebird"  
+      [,67]                [,68]                 [,69]             
+ [1,] "Dodge Challenger"   "Lincoln Continental" "Maserati Bora"   
+ [2,] "Chrysler Imperial"  "Volvo 142E"          "Duster 360"      
+ [3,] "Mazda RX4 Wag"      "Chrysler Imperial"   "Dodge Challenger"
+ [4,] "Lotus Europa"       "Mazda RX4 Wag"       "Datsun 710"      
+ [5,] "Hornet Sportabout"  "Porsche 914-2"       "Fiat X1-9"       
+ [6,] "Fiat 128"           "Dodge Challenger"    "Porsche 914-2"   
+ [7,] "Merc 280C"          "Datsun 710"          "AMC Javelin"     
+ [8,] "Mazda RX4"          "Merc 240D"           "Ferrari Dino"    
+ [9,] "Cadillac Fleetwood" "Toyota Corona"       "Merc 450SLC"     
+[10,] "Toyota Corona"      "Valiant"             "Mazda RX4 Wag"   
+      [,70]                 [,71]                 [,72]                
+ [1,] "Hornet Sportabout"   "Maserati Bora"       "Hornet Sportabout"  
+ [2,] "Volvo 142E"          "Hornet 4 Drive"      "Merc 240D"          
+ [3,] "Ford Pantera L"      "Volvo 142E"          "Lincoln Continental"
+ [4,] "Mazda RX4 Wag"       "Datsun 710"          "Merc 280C"          
+ [5,] "Chrysler Imperial"   "Lincoln Continental" "Merc 230"           
+ [6,] "Dodge Challenger"    "Merc 450SE"          "Mazda RX4 Wag"      
+ [7,] "Ferrari Dino"        "Merc 280"            "Volvo 142E"         
+ [8,] "Valiant"             "Mazda RX4 Wag"       "AMC Javelin"        
+ [9,] "Maserati Bora"       "Chrysler Imperial"   "Ferrari Dino"       
+[10,] "Lincoln Continental" "Merc 230"            "Maserati Bora"      
+      [,73]               [,74]                 [,75]          
+ [1,] "Merc 450SLC"       "Lincoln Continental" "Mazda RX4 Wag"
+ [2,] "Camaro Z28"        "Ferrari Dino"        "Honda Civic"  
+ [3,] "Maserati Bora"     "Lotus Europa"        "AMC Javelin"  
+ [4,] "Hornet 4 Drive"    "Merc 450SL"          "Merc 280C"    
+ [5,] "Fiat X1-9"         "Chrysler Imperial"   "Toyota Corona"
+ [6,] "Chrysler Imperial" "Volvo 142E"          "Merc 450SL"   
+ [7,] "Duster 360"        "Merc 450SLC"         "Valiant"      
+ [8,] "Merc 450SE"        "Merc 240D"           "Ferrari Dino" 
+ [9,] "Merc 280"          "Fiat X1-9"           "Fiat 128"     
+[10,] "Hornet Sportabout" "Datsun 710"          "Duster 360"   
+      [,76]               [,77]               [,78]               
+ [1,] "Pontiac Firebird"  "AMC Javelin"       "Cadillac Fleetwood"
+ [2,] "Merc 280"          "Camaro Z28"        "Ferrari Dino"      
+ [3,] "Mazda RX4 Wag"     "Chrysler Imperial" "Merc 450SLC"       
+ [4,] "Toyota Corona"     "Mazda RX4"         "Volvo 142E"        
+ [5,] "Merc 450SE"        "Merc 450SLC"       "Ford Pantera L"    
+ [6,] "Chrysler Imperial" "Valiant"           "Toyota Corolla"    
+ [7,] "Merc 280C"         "Fiat 128"          "Camaro Z28"        
+ [8,] "Fiat 128"          "Fiat X1-9"         "Hornet 4 Drive"    
+ [9,] "Datsun 710"        "Merc 450SL"        "Porsche 914-2"     
+[10,] "Merc 230"          "Porsche 914-2"     "Merc 450SL"        
+      [,79]                [,80]           [,81]                
+ [1,] "Maserati Bora"      "Merc 450SL"    "Merc 450SL"         
+ [2,] "Merc 450SL"         "Mazda RX4"     "Merc 230"           
+ [3,] "Volvo 142E"         "Duster 360"    "Merc 280"           
+ [4,] "Pontiac Firebird"   "Maserati Bora" "Lincoln Continental"
+ [5,] "Cadillac Fleetwood" "Honda Civic"   "Dodge Challenger"   
+ [6,] "Valiant"            "Datsun 710"    "Valiant"            
+ [7,] "Chrysler Imperial"  "Toyota Corona" "Fiat X1-9"          
+ [8,] "Ferrari Dino"       "Porsche 914-2" "Pontiac Firebird"   
+ [9,] "Merc 230"           "Merc 450SE"    "Camaro Z28"         
+[10,] "Hornet 4 Drive"     "Merc 240D"     "Merc 450SE"         
+      [,82]                [,83]                 [,84]              
+ [1,] "Duster 360"         "Porsche 914-2"       "Fiat X1-9"        
+ [2,] "Merc 280"           "Ford Pantera L"      "Datsun 710"       
+ [3,] "Cadillac Fleetwood" "Hornet 4 Drive"      "Merc 450SLC"      
+ [4,] "Camaro Z28"         "Merc 240D"           "Hornet Sportabout"
+ [5,] "Chrysler Imperial"  "Ferrari Dino"        "Ferrari Dino"     
+ [6,] "Fiat 128"           "Lincoln Continental" "Ford Pantera L"   
+ [7,] "Datsun 710"         "Fiat 128"            "Mazda RX4"        
+ [8,] "Volvo 142E"         "Datsun 710"          "Toyota Corona"    
+ [9,] "Pontiac Firebird"   "Fiat X1-9"           "Volvo 142E"       
+[10,] "Toyota Corolla"     "Toyota Corona"       "Toyota Corolla"   
+      [,85]                 [,86]            [,87]              
+ [1,] "Dodge Challenger"    "Merc 280"       "Hornet 4 Drive"   
+ [2,] "Merc 240D"           "Volvo 142E"     "Merc 450SL"       
+ [3,] "Merc 450SL"          "AMC Javelin"    "AMC Javelin"      
+ [4,] "Volvo 142E"          "Hornet 4 Drive" "Valiant"          
+ [5,] "Hornet 4 Drive"      "Merc 450SE"     "Toyota Corona"    
+ [6,] "Lincoln Continental" "Duster 360"     "Hornet Sportabout"
+ [7,] "Lotus Europa"        "Lotus Europa"   "Merc 280C"        
+ [8,] "AMC Javelin"         "Fiat 128"       "Maserati Bora"    
+ [9,] "Cadillac Fleetwood"  "Honda Civic"    "Merc 280"         
+[10,] "Porsche 914-2"       "Toyota Corona"  "Mazda RX4"        
+      [,88]                 [,89]                 [,90]               
+ [1,] "Toyota Corolla"      "Cadillac Fleetwood"  "Volvo 142E"        
+ [2,] "Fiat X1-9"           "Chrysler Imperial"   "Toyota Corona"     
+ [3,] "Duster 360"          "Lotus Europa"        "AMC Javelin"       
+ [4,] "Merc 280"            "Pontiac Firebird"    "Merc 230"          
+ [5,] "Datsun 710"          "Ferrari Dino"        "Fiat 128"          
+ [6,] "Chrysler Imperial"   "Lincoln Continental" "Cadillac Fleetwood"
+ [7,] "Lincoln Continental" "Toyota Corona"       "Dodge Challenger"  
+ [8,] "Porsche 914-2"       "Toyota Corolla"      "Fiat X1-9"         
+ [9,] "Merc 230"            "Valiant"             "Mazda RX4"         
+[10,] "Volvo 142E"          "Merc 230"            "Merc 280"          
+      [,91]                 [,92]                [,93]                
+ [1,] "Dodge Challenger"    "Mazda RX4 Wag"      "Merc 240D"          
+ [2,] "Honda Civic"         "Ferrari Dino"       "Maserati Bora"      
+ [3,] "Toyota Corolla"      "Mazda RX4"          "Ford Pantera L"     
+ [4,] "Lincoln Continental" "Cadillac Fleetwood" "Lincoln Continental"
+ [5,] "Mazda RX4"           "Merc 280"           "Ferrari Dino"       
+ [6,] "Cadillac Fleetwood"  "Toyota Corona"      "Mazda RX4"          
+ [7,] "Fiat 128"            "Ford Pantera L"     "Toyota Corona"      
+ [8,] "Merc 230"            "Fiat X1-9"          "Merc 280C"          
+ [9,] "Fiat X1-9"           "Chrysler Imperial"  "Merc 450SE"         
+[10,] "Chrysler Imperial"   "Merc 240D"          "Camaro Z28"         
+      [,94]                [,95]                [,96]                
+ [1,] "Merc 450SL"         "Toyota Corona"      "Toyota Corona"      
+ [2,] "Merc 280C"          "Cadillac Fleetwood" "Mazda RX4"          
+ [3,] "Toyota Corona"      "Fiat 128"           "Lincoln Continental"
+ [4,] "Honda Civic"        "Chrysler Imperial"  "Merc 450SE"         
+ [5,] "Hornet Sportabout"  "Mazda RX4"          "Cadillac Fleetwood" 
+ [6,] "Merc 230"           "Hornet Sportabout"  "Merc 450SLC"        
+ [7,] "Hornet 4 Drive"     "Ford Pantera L"     "Volvo 142E"         
+ [8,] "Cadillac Fleetwood" "Camaro Z28"         "Ferrari Dino"       
+ [9,] "Mazda RX4 Wag"      "Hornet 4 Drive"     "Datsun 710"         
+[10,] "Chrysler Imperial"  "Porsche 914-2"      "Merc 280"           
+      [,97]                 [,98]                [,99]             
+ [1,] "Cadillac Fleetwood"  "Fiat X1-9"          "Camaro Z28"      
+ [2,] "Fiat X1-9"           "Merc 450SL"         "Ferrari Dino"    
+ [3,] "Hornet Sportabout"   "Ferrari Dino"       "Ford Pantera L"  
+ [4,] "Merc 450SE"          "Honda Civic"        "Fiat 128"        
+ [5,] "Mazda RX4 Wag"       "Hornet 4 Drive"     "Merc 450SE"      
+ [6,] "Toyota Corolla"      "Porsche 914-2"      "Lotus Europa"    
+ [7,] "Porsche 914-2"       "Merc 280C"          "Dodge Challenger"
+ [8,] "Toyota Corona"       "Pontiac Firebird"   "Merc 240D"       
+ [9,] "Hornet 4 Drive"      "Cadillac Fleetwood" "Porsche 914-2"   
+[10,] "Lincoln Continental" "Lotus Europa"       "Mazda RX4 Wag"   
+      [,100]              
+ [1,] "Merc 240D"         
+ [2,] "Dodge Challenger"  
+ [3,] "Duster 360"        
+ [4,] "Merc 280C"         
+ [5,] "Cadillac Fleetwood"
+ [6,] "Hornet Sportabout" 
+ [7,] "Valiant"           
+ [8,] "Merc 280"          
+ [9,] "Merc 230"          
+[10,] "Merc 450SL"        </code></pre>
+</div>
+</div>
+<ul>
+<li>Question: How could we change the code so we take the mean of the <code>mpg</code>s of 10 randomly sampled cars across 100 samples?</li>
+</ul>
+</section>
+<section id="for-now-and-tuesday" class="slide level2">
+<h2>For now and Tuesday:</h2>
+<ul>
+<li>Project proposal and help file: due tonight at 11:59pm</li>
+</ul>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="lecture15_apply_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="lecture15_apply_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="lecture15_apply_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="lecture15_apply_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="lecture15_apply_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="lecture15_apply_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="lecture15_apply_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="lecture15_apply_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="lecture15_apply_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="lecture15_apply_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
