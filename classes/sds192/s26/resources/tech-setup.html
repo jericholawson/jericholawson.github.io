@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jericho Lawson">
+<meta name="dcterms.date" content="2026-01-10">
 
-<title>Jericho Lawson</title>
+<title>Tech Setup – SDS 192: Introduction to Data Science, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +22,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,22 +105,23 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Jericho Lawson</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -94,43 +131,28 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-classes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Classes</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-classes">    
-        <li>
-    <a class="dropdown-item" href="./classes/classes.html">
- <span class="dropdown-text">All Classes</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./classes/sds192/s26/index.html">
- <span class="dropdown-text">SDS 192, Spring 2026</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./classes/sds270/s26/index.html">
- <span class="dropdown-text">SDS 270, Spring 2026</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./classes/index.qmd">
- <span class="dropdown-text">Other Classes</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./files/cv.pdf"> 
-<span class="menu-text">CV</span></a>
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://slack.com"> 
+<span class="menu-text"><iconify-icon icon="fa6-brands:slack"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jericholawson"> 
+<span class="menu-text"><iconify-icon icon="fa6-brands:github"></iconify-icon></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -143,21 +165,48 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#slack" id="toc-slack" class="nav-link" data-scroll-target="#slack">Slack</a></li>
+  <li><a href="#perusall" id="toc-perusall" class="nav-link" data-scroll-target="#perusall">Perusall</a></li>
+  <li><a href="#r-and-rstudio" id="toc-r-and-rstudio" class="nav-link" data-scroll-target="#r-and-rstudio">R and RStudio</a></li>
+  <li><a href="#git-github-and-github-classroom" id="toc-git-github-and-github-classroom" class="nav-link" data-scroll-target="#git-github-and-github-classroom">git, GitHub, and GitHub Classroom</a>
+  <ul class="collapse">
+  <li><a href="#setting-up-your-r-environment" id="toc-setting-up-your-r-environment" class="nav-link" data-scroll-target="#setting-up-your-r-environment">Setting up your R Environment</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Jericho Lawson</h1>
-<p class="subtitle lead">Lecturer at Smith College</p>
+<h1 class="title">Tech Setup</h1>
+<p class="subtitle lead">SDS 192: Introduction to Data Science, Spring 2026</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jericho Lawson </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 10, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -167,30 +216,177 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'fs' was built under R version 4.4.3</code></pre>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Warning
 </div>
 </div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="images/profile.jpg" class="img-fluid"></p>
-<p><a href="mailto:jlawson01@smith.edu"><iconify-icon role="img" inline="" icon="bi:envelope" aria-label="Icon envelope from bi Iconify.design set." title="Icon envelope from bi Iconify.design set."></iconify-icon> jlawson01@smith.edu</a><br>
-<a href="https://x.com/jerichostats"><iconify-icon role="img" inline="" icon="fa6-brands:x-twitter" aria-label="Icon x-twitter from fa6-brands Iconify.design set." title="Icon x-twitter from fa6-brands Iconify.design set."></iconify-icon> <span class="citation" data-cites="jerichostats">@jerichostats</span></a><br>
-<a href="https://github.com/jericholawson"><iconify-icon role="img" inline="" icon="fa6-brands:github" aria-label="Icon github from fa6-brands Iconify.design set." title="Icon github from fa6-brands Iconify.design set."></iconify-icon> jericholawson</a></p>
-</div><div class="column paddedmain" style="width:70%;">
-<p>I am currently a Lecturer at Smith College. My research interests include high-dimensional variable selection, sports statistics, and deep learning. I am committed to providing student-centric and engaging statistical education to all backgrounds, as seen in courses such as Introduction to Statistical Computing, Sampling Surveys, and Introduction to Statistics. My current research aims to pinpoint useful abstract features within images for image classification through the knockoffs framework, called ImgKnock.</p>
+<div class="callout-body-container callout-body">
+<p>Updates to this document are indicated in <span style="color:red;">red.</span></p>
 </div>
 </div>
-<section id="recent-news" class="level2">
-<h2 class="anchored" data-anchor-id="recent-news">Recent News</h2>
-<p>TBD</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>You will be setting up all software and applications that are needed to complete and submit assignments of various forms in SDS 192. We will set up the following tools in this setup:</p>
+<ul>
+<li>Slack</li>
+<li>Perusall</li>
+<li>R/RStudio</li>
+<li>GitHub Classroom</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>As you get everything set up, if you run into any hiccups along the way, there are many ways to get help:</p>
+<ol type="1">
+<li>Ask questions in Slack. There will be a <code>#techissues</code> channel dedicated for this purpose.
+<ul>
+<li>Make sure to be specific in your issue. Indicate which step you are stuck on and include any screenshots.</li>
+</ul></li>
+<li>Feel free to DM me on Slack or via email. With some more complex issues, I can provide some guidance.</li>
+<li>Ask about these issues in student hours or at the Spinelli Center.</li>
+</ol>
+</div>
+</div>
 </section>
-<section id="for-fun" class="level2">
-<h2 class="anchored" data-anchor-id="for-fun">For Fun!</h2>
-<p>TBD</p>
+<section id="slack" class="level2">
+<h2 class="anchored" data-anchor-id="slack">Slack</h2>
+<p>Slack will be used as a discussion forum, in which you can ask and answer clarifying questions to the whole class, provide perspectives on situations discussed in lab assignments, and find out announcements about the class on a day-to-day basis.</p>
+<p>If you run into hiccups with this part, Smith’s ITS department has some quick hints <a href="https://its.smith.edu/slack">here</a>.</p>
+<p>Nonetheless, to set up Slack, you will do the following:</p>
+<ol type="1">
+<li>Accept the Slack invitation via email from this course. Follow the directions in order to get into the course.</li>
+<li>You will see some of the following channels below. Go to the #general channel, go to my “Welcome” post, and reply to the thread with a random fact of your choice.</li>
+</ol>
+<p><img src="images/slackchannels.png" class="img-fluid">{fig-align=“center”, fig-width=“60%”}</p>
+<ol start="3" type="1">
+<li><em>Optional, but recommended:</em> Turn on notifications from this workspace (this should already be toggled, but double-check to be sure.) Also, you may be encouraged to download and install Slack on your laptops and phones.</li>
+</ol>
+</section>
+<section id="perusall" class="level2">
+<h2 class="anchored" data-anchor-id="perusall">Perusall</h2>
+<p>Perusall will be used for all reading assignments, in which you will annotate and comment on particular items from weekly readings.</p>
+<p>To set up Perusall, you will do the following:</p>
+<ol type="1">
+<li>Use the following link to join the Perusall course: <a href="https://app.perusall.com/join/LAWSON-2BX49">link</a></li>
+<li>Create a new account. You can do so by signing-in through Google with your smith.edu email address or creating a traditional account with your smith.edu email address.</li>
+<li>Go to Assignments and go to the Test Assignment. You will create one annotation in this assignment. Once you’ve done so, you’re good to go.</li>
+</ol>
+<p><em>Note:</em> Let me know if you are having difficulties accessing Perusall throughout the semester.</p>
+</section>
+<section id="r-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-and-rstudio">R and RStudio</h2>
+<p>R and RStudio will collectively make up the coding tools we will use to run through data science examples and assignments. R is the coding language that many statisticians and data scientists use to generate data visualizations, complete data wrangling, and run analyses. RStudio is the application that we use to interact with R, formally known as an IDE (i.e.&nbsp;Integrated Development Environment). We will use RStudio particularly when writing R code and walking through problems.</p>
+<p>We will need to download and install R and RStudio onto our laptops. If you are running a web-based operating system (e.g.&nbsp;ChromeOS), you will have to use <a href="https://posit.cloud/">Posit Cloud</a> to run R. Instructions to use Posit Cloud can be seen at the bottom of this section.</p>
+<p>For everyone else (e.g.&nbsp;Windows, Mac, Linux), you will download and install R and RStudio using these instructions:</p>
+<ol type="1">
+<li>Go to the following link <a href="https://posit.co/download/rstudio-desktop/">here</a>.</li>
+<li>Install R first by clicking on “Download and Install R”, which can be found on the left side of the page.</li>
+<li>You will be redirected to <a href="https://cran.rstudio.com/">https://cran.rstudio.com/</a>.
+<ul>
+<li>Windows: Click on the link to “Download R for Windows”, choose “install R for the first time”, then choose “Download R 4.5.2 for Windows”.</li>
+<li>MacOS: Click “Download R for (Mac) OS X”. Download the install package for version R-4.5.2. Read the information carefully to determine which of the two versions to download.</li>
+<li>Linux: Click on the link to “Download R for Linux”. You will need to choose the version of Linux that corresponds to your installation. Versions are available for Debian, RedHat, SUSE, and Ubuntu.</li>
+</ul></li>
+<li>Once the R file has been downloaded, please install R by opening the file. Follow all prompts as necessary, keeping things as defaulted as possible.</li>
+<li>Go back to the Posit webpage and follow step 2 on the page by clicking “Download RStudio Desktop for ____”. Once downloaded, install RStudio by opening the file. Follow all prompts as necessary.</li>
+</ol>
+<p>For those using Posit Cloud:</p>
+<ol type="1">
+<li>Click the Login button located at the top-right corner of the screen.</li>
+<li>Sign-in using either Google or GitHub.</li>
+</ol>
+<p>If you have trouble installing and downloading R/RStudio, we will have some time at the beginning of the first lab to walk through any issues you all have.</p>
+</section>
+<section id="git-github-and-github-classroom" class="level2">
+<h2 class="anchored" data-anchor-id="git-github-and-github-classroom">git, GitHub, and GitHub Classroom</h2>
+<p>We will be using git commands, GitHub, and GitHub classroom to collaborate with others on coding and projects, submit coding-relative activities and assignments, and get familiar with data science workflows.</p>
+<p>To differentiate between the terms, when referring to “git”, this refers to the software and commands associated with tracking changes in files during software development. The actions “push”, “pull”, “commit”, and others will pop up and we will discuss these in detail throughout the semester. GitHub refers to the application that utilizes the git system to aid in these processes. GitHub Classroom is a special use of GitHub that will allow for specific repositories to be linked to our classroom.</p>
+<p>A few actions need to happen to set these items up, which you’ll see in the subsections below.</p>
+<section id="setting-up-your-r-environment" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-your-r-environment">Setting up your R Environment</h3>
+<p>If you have any troubles, you can use the <a href="https://happygitwithr.com/">Happy Git with R</a> textbook for assistance.</p>
+<ol type="1">
+<li>Go to GitHub and create a GitHub account, preferably with your smith.edu account. Setup account details.</li>
+<li>Open RStudio on your laptop.</li>
+<li>Check to ensure you have git installed by opening RStudio and clicking on <code>Tools &gt; Global Options &gt; Git/SVN</code> tab. Check the top of the pane for a field for the Git executable. It should say something like: “/usr/bin/git” or “C:/Program Files/Git/”. If it says “(Not Found)” git is not installed.</li>
+<li>In the R console (bottom-left corner), you will input and hit Enter for each of these lines of code (replace what it is in the quotations with your info):</li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"usethis"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"PUT GITHUB USERNAME HERE"</span>, <span class="at">user.email =</span> <span class="st">"PUT GITHUB EMAIL HERE"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<!-- <p><a href="https://muse.ai/v/JLaUt3v-Configure-Git">Edit gitconfig file</a> from David Keyes.</p> -->
+<p>HEEEEEEEEEEEEEEEEEERE</p>
+<ol start="6" type="1">
+<li>Create a personal access token by following these instructions, and <strong>be absolutely, positively, undeniably sure to set the expiration to 150 days</strong>:</li>
+</ol>
+<p>
+<a href="https://muse.ai/v/evn3xvX-Create-a-Personal-Access-Token-PAT-on-GitHub">Create a Personal Access Token (PAT) on GitHub</a> from David Keyes.
+</p>
+<ol start="7" type="1">
+<li>Store your personal access token by following these instructions:</li>
+</ol>
+<p>
+<a href="https://muse.ai/v/NUGdUDd-Store-Personal-Access-Token-to-Connect-RStudio-and-GitHub">Store Personal Access Token to Connect RStudio and GitHub</a> from David Keyes.
+</p>
+<ol start="8" type="1">
+<li>Use the following link below to access the lab repository from GitHub Classroom:
+<ul>
+<li>For 01 students: <a href="https://classroom.github.com/a/-_yD9jiy">https://classroom.github.com/a/-_yD9jiy</a></li>
+<li>For 02 students: <a href="https://classroom.github.com/a/UVCt_nG1">https://classroom.github.com/a/UVCt_nG1</a></li>
+</ul></li>
+</ol>
+<p>You will go through all necessary prompts. Feel free to use this video as a resource: <a href="https://www.youtube.com/watch?v=lsQ48kn-uD0">https://www.youtube.com/watch?v=lsQ48kn-uD0</a></p>
+<ol start="9" type="1">
+<li>Copy the URL for your SDS 192 Lab GitHub repo. <span style="color:red;">It should look like one of the following two links:</span></li>
+</ol>
+<ul>
+<li>https://github.com/sds192lawson/sds192lawson-f25-YOURSECTION-lab-submission-repository-lab0-YOUR_USER_NAME</li>
+<li><span style="color:red;">https://github.com/sds192lawson/lab-submission-repository-YOUR_USER_NAME</span></li>
+</ul>
+<ol start="10" type="1">
+<li>Create a project in RStudio from this GitHub repo by following the instructions starting at 26 seconds of this video:</li>
+</ol>
+<p>
+<a href="https://muse.ai/v/Way9iir-How-to-Connect-RStudio-Projects-with-GitHub-Repositories-GitHub-First">How to Connect RStudio Projects with GitHub Repositories: GitHub First</a> from David Keyes.
+</p>
+<ol start="11" type="1">
+<li>Install the rmarkdown package in RStudio by entering the following lines of code in the Console Pane of RStudio (lower left hand corer on initial install).</li>
+</ol>
+<pre><code>install.packages("rmarkdown")
+library(rmarkdown)</code></pre>
+<ol start="12" type="1">
+<li><p>On the initial install, the Files tab will be in the lower right hand corner of RStudio. Open lab0.qmd, and then follow the prompt in that file. Click Save.</p></li>
+<li><p>Commit your code by following the instructions in this video starting at 14 seconds:</p></li>
+</ol>
+<p>
+<a href="https://muse.ai/v/GrXBX2t-Make-a-Commit-and-View-More-History">Make a Commit and View More History</a> from David Keyes.
+</p>
+<ol start="14" type="1">
+<li>Push your code to GitHub.com by following the instructions in this video starting at 27 seconds:</li>
+</ol>
+<p>
+<a href="https://muse.ai/v/UJmQE7i-General-Workflow-Push">General Workflow: Push</a> from David Keyes.
+</p>
+<ol start="15" type="1">
+<li>Navigate to <span style="color:red;">https://github.com/sds192lawson/lab-submission-repository-YOUR_USER_NAME</span> and double check to make sure the <span style="color:red;">lab0.qmd</span> file has your name listed.</li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
