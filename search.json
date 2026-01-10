@@ -1,0 +1,191 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jericho Lawson",
+    "section": "",
+    "text": "jlawson01@smith.edu\n @jerichostats\n jericholawson\n\nI am currently a Lecturer at Smith College. My research interests include high-dimensional variable selection, sports statistics, and deep learning. I am committed to providing student-centric and engaging statistical education to all backgrounds, as seen in courses such as Introduction to Statistical Computing, Sampling Surveys, and Introduction to Statistics. My current research aims to pinpoint useful abstract features within images for image classification through the knockoffs framework, called ImgKnock."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About this website",
+    "section": "",
+    "text": "Original R Manuals can be found at https://cran.r-project.org/manuals.html. The manuals in this website are built automatically from the originals using Quarto. You can find the scripts that do the conversion at https://github.com/rstudio/r-manuals."
+  },
+  {
+    "objectID": "sds270/s26/index.html",
+    "href": "sds270/s26/index.html",
+    "title": "Test",
+    "section": "",
+    "text": "HIIIIIIIIIIIIIIIII"
+  },
+  {
+    "objectID": "classes/sds270/s26/index.html",
+    "href": "classes/sds270/s26/index.html",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "",
+    "text": "This website is the central hub for all materials related to this iteration of SDS 270. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+  },
+  {
+    "objectID": "classes/sds270/s26/index.html#welcome",
+    "href": "classes/sds270/s26/index.html#welcome",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "",
+    "text": "This website is the central hub for all materials related to this iteration of SDS 270. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+  },
+  {
+    "objectID": "classes/sds270/s26/index.html#welcome-ii",
+    "href": "classes/sds270/s26/index.html#welcome-ii",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "Welcome II",
+    "text": "Welcome II\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb abbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "objectID": "classes/sds270/s26/index.html#quick-links",
+    "href": "classes/sds270/s26/index.html#quick-links",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "",
+    "text": "About\nSyllabus\nSchedule"
+  },
+  {
+    "objectID": "classes/sds270/s26/syllabus.html",
+    "href": "classes/sds270/s26/syllabus.html",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "",
+    "text": "Main\nSyllabus\nSchedule\n Slack\n GitHub"
+  },
+  {
+    "objectID": "classes/sds270/s26/syllabus.html#syllabus",
+    "href": "classes/sds270/s26/syllabus.html#syllabus",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "Syllabus",
+    "text": "Syllabus\nIn this webpage, you will find the syllabus for this course.\n\nOverview\n\nContactLocation/TimeDescriptionLearning OutcomesMaterials\n\n\n\n\n\n\n\nInstructor: Jericho Lawson\nEmail: jlawson01@smith.edu\nOffice Hours:\n\nMondays, 3-4pm\nFridays, 10am-12pm\nMcConnell 211\n\n\n\n\n\n\n\nMondays/Wednesdays, 10:50am - 12:05pm in Bass 002\n\n\n\nAdvanced programming techniques for data science using R. This course is not about data analysis—rather, students will learn the R programming language at a deep level. Topics may include data structures, control flow, regular expressions, functions, environments, functional programming, object-oriented programming, debuggging, testing, version control, documentation, literate programming, code review, and package development. The major goal for the course is to contribute to a viable, collaborative, open-source, publishable R package. Prerequisite of SDS 192 and CSC 110/111, or equivalent.\n\n\nBy the end of this course, students will be able to do the following:\n\nWrite R code that uses various deep-level ideas, such as regex, functions, objects, and documentation.\nContribute to an open-source software project using version control.\nDevelop and debug sophisticated functions in R.\nCreate a robust, encapsulated software package in the R programming language.\n\n\n\n\nTextbooks\n\nWickham, H. (2014). Advanced R (2nd ed.). CRC Press. https://adv-r.hadley.nz/\nWickham, H., & Bryan, J. (2023). R Packages (2nd ed.). O’Reilly Media. https://r-pkgs.org/\n\n\n\nCourse Website\n\nhttps://moodle.smith.edu/course/view.php?id=55496\nhttps://sds-270-01-202601.slack.com\n\n\n\nTechnology\n\nFor coding: R, RStudio, GitHub\nFor course management: Moodle (seldomly)\nFor course materials: My website\nFor discussions: Slack\n\n\n\n\n\n\n\nGrading and Expectations\n\nBreakdown\n\n\n\n\n\n\n\n\n\n\nFormative\n\n\nSummative\n\n\n\n\n\nIn-Class Exercises\n10%\n\nExams (2)\n30%\n\n\nProblem Sets\n20%\n\nPackage\n40%\n\n\n\nA traditional grading system will be used here. Cumulative numerical averages of 90-100 are guaranteed at least an A-, 80-89 at least a B-, and 70-79 at least a C-. The exact ranges for letter grades will ultimately be determined at the end of the course.\n\n\nClasses and In-Class Exercises (10%)\nEach class will consist of some form of the following: mini-lectures, demos, exercises, quizzes, discussions, and package work time. Expect an experiential environment, where you will be working with code and concepts during the classes. As such, each student must bring their laptop to class.\nStudents are expected to participate during lecture by asking questions and working with other students. In-class activities will be submitted by the end of class through a GitHub repository and are graded for completion and accuracy. To complete these in-class activities, it is required that you show up for class unless extenuating circumstances apply.\nWeekly readings will be assigned to prepare you for content that will be talked about in class. Even though there will be no grade associated with these readings, it is strongly recommended to come to the following week’s classes with these readings completed.\n\n\nProblem Sets (20% total)\nProblem sets will be assigned bi-weekly to provide practice related to the current topics. These problems will involve conceptual exploration of topics, as well as solving through extended problems that tie in multiple topics at once.\nSimilar to the in-class activities, the problem sets will be turned in through a GitHub repository. Questions are graded based on accuracy.\nGrade drop: Your lowest problem set grade will be dropped from your problem set total.\n\n\nExams (30% total)\nTwo exams will be given out in-class to demonstrate your knowledge on the course content. The first exam will be a closed-note written exam, while the second exam will be an open-note, open-laptop exam.\nExpect questions to be similar in vein to the problem sets.\n\n\nPackage (40%)\nThe overall objective of this course is to develop a new R package with a team of your choice. Throughout the second half of the course, you will receive feedback on the functionality, clarity, robustness, and readability of your code and documentation through a series of checkpoints.\nDespite the unique opportunity to create a package in R, it may seem daunting to do so at first. The checkpoints and mini-assignments will pace yourselves as we prepare for the final package. Beneath are the following:\n\nProposal and Help File: due TBD\n\nDevelop a one-page proposal that summarizes the package you want to create and/or modify with appropriate motivations, references, and a course of action.\nCreate a help file on a function that you’ve developed that details what it does, its usage, arguments, values, and examples.\n\nCheckpoint #1: due TBD\n\nDevelop an R package that meets minimum requirements.\n\nCheckpoint #2: due TBD\n\nDevelop an R package that advances on progress from the first checkpoint, including more functions, datasets, and/or descriptions.\n\nRehearsal: given TBD\n\nPrep for demonstration\n\nDemonstration: given in-class on TBD\n\nShowcase and run through a 5-8 minute demonstration on your R package.\n\nWhole package: due TBD\n\nComplete the R package and make any refinements.\n\n\nMore details to come in later weeks.\n\n\n\nPolicies\n\nPreparation and Attendance\nAs a four-credit course that meets 4.5 hours per week, Smith College expects students to dedicate at least 7.5 hours per week towards the course outside of class. The assignments, readings, and assessments are designed with this target in mind. Expect to read through lecture notes, examples, articles, and forums outside of class along with the assignments.\n\n\nExtensions\n(need to fix)\nYou will be granted 4 late days to use for lab assignments, with a maximum of one day used on each lab assignment. Additionally, you will be granted 4 late days to use for checkpoints during R package development (excluding the demonstration and whole package). No need to inform me that you intend to take these late days. Beyond this, late assignments will not be accepted without an accommodation from a class dean or from the ARC.\nNote that this policy does not apply to activities, readings, quizzes, or final package/presentation submission.\n\n\nAcademic Honesty\nSmith College expects all students to be honest and committed to the principles of academic and intellectual integrity in their preparation and submission of course work and examinations. Students and faculty at Smith are part of an academic community defined by its commitment to scholarship, which depends on scrupulous and attentive acknowledgment of all sources of information, and honest and respectful use of college resources. Any cases of dishonesty or plagiarism will be reported to the Academic Honor Board. Examples of dishonesty or plagiarism include:\n\nSubmitting work completed by another student as your own.\nCopying and pasting words from sources without quoting and citing the author.\nParaphrasing material from another source without citing the author.\nFailing to cite your sources correctly.\nFalsifying or misrepresenting information in submitted work.\nPaying another student or service to complete assignments for you.\nSubmitting work generated by artificially intelligent tools such as ChatGPT without permission or instruction to do so.\n\nYou are encouraged to discuss course material, including assignments, with your classmates. All work you turn in, however, must be your own. This includes both writing and code. Copying from other students, from books, or from websites (1) does nothing to help you learn how to program, (2) is easy for us to detect, and (3) has serious negative consequences.\n\n\nGenerative AI\n(need to fix)\nAs mentioned in the Academic Integrity Board, the professor for each course decides whether and how students are allowed to use generative AI in a given course. For this specific course, the use of generative AI to complete assignments or produce content for this course is on a assignment-by-assignment basis.\nAs an upper-division course, you have developed skills to code through basic tasks and processes in data science, as well as to analyze particular behaviors and patterns in the results. Generative AI can be useful as a tool to refine material and gather information about particular parts of code; however, the more you rely on AI, the more you lose out on the ability to think like a data scientist. The human element will be critical in succeeding in data science, and as such, appropriate considerations need to be made when using generative AI on assignments.\nSpecifically, here are the following permissions and constraints regarding generative AI on assignments and tasks in this course:\n\nActivities, exercises, and readings: Generative AI can be used for pre-writing activities and code editing. Use of generative AI for writing any length of written content, composing any length of code, or synthesizing content are prohibited. Code and prose should be written in your own style. Any permitted use of generative AI should be cited in areas in which it was used.\nQuizzes: Generative AI is strictly prohibited on all quizzes.\nPackage: Generative AI for use in development of ideas, pre-writing, and structuring is permitted. However, any formal writing of documentation and code is not permitted.\n\nAny unauthorized use of generative artificial intelligence in this course will be considered a case of academic dishonesty/plagiarism and will be reported to the Academic Honor Board. Some assignments will also contain modifications to these rules, so be mindful of these rules for each assignment.\n\n\n\nCommunity & Support\n\nCode of Conduct\nAs the instructor for this course, I am committed to making participation in this course a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion. Examples of unacceptable behavior by participants in this course include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.\nAs the instructor I have the right and responsibility to point out and stop behavior that is not aligned to this Code of Conduct. Participants who do not follow the Code of Conduct may be reprimanded for such behavior. Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the instructor.\nAll students and the instructor are expected to adhere to this Code of Conduct in all settings for this course: seminars, office hours, and over Slack. This Code of Conduct is adapted from the Contributor Covenant, version 1.0.0, available here.\n\n\nPrinciples of Community\nWhether in a class, college, or neighborhood setting, achieving a warm community is essential to your well-being. In this class, I hope we can foster a collaborative and welcoming environment: one that celebrates successes, respects individual strengths and weaknesses, demonstrates compassion for each other’s struggles, and affirms diverse identities.\nTo establish this, consider the following:\n\nCheck-in with colleagues before starting collaborative work.\nConsider when to step up and when to step back in class discussions, creating space for others to contribute. Listening is just as important to community-building as speaking.\nAcknowledge what we do and don’t know, as well as how our colleagues experience the world.\nSupport colleagues that may be stepping outside of their comfort zone (i.e. presentations).\nAsk questions often in our Slack workspace. Help each other out by answering questions when you can.\nAdmit mistakes. They happen, and I will certainly make mistakes in class.\nUse pronouns. This provides a foundation to a safe, respectful classroom environment that creates a sense of trust. For information on pronouns and usage, please see the Office of Equity and Inclusion link here: Pronouns\n\n\n\nAccommodations\nIt is my goal for everyone to succeed in this course. If you have personal circumstances that may impact your experience of our classroom, I encourage you to contact the Accessibility Resource Center in College Hall 104 or at arc@smith.edu. The Center will generate a letter that indicates to me what kind of support you need and how I can make your classroom experience more accommodating. Once you have this letter, you are welcome to visit my office hours or email me to discuss ideas about how we can tailor the course accordingly. While you can request accommodations at any time, the sooner we start this conversation, the better. If you have concerns about the course that are not addressed through ARC, please contact me. At no point will I ask you to divulge details about your personal circumstances to me.\n\n\nStudent Well-Being\nCollege life is stressful, and life outside of college can be overwhelming. It is my position that attending to your physical and mental health and well-being should be a top priority. I will remind you of this often throughout the semester. I encourage you to schedule a time to talk with me if you are struggling with this course. If you, or anyone you know, is experiencing distress, there are numerous campus resources that can provide support via the Schacht Center.\nAdditional resources and support offered by the college are listed below:\n\nAccessibility Resource Center (ARC)\nSpinelli Center: Support for students doing quantitative work. Includes tutoring and resources.\n\nFor this class: Sun-Thurs, 7-9pm in Sabin-Reed 301.\nEmail qlctutor@smith.edu for specific request for help.\n\nCrisis Resources\nCounseling Services\nWellness Resources\nGender Identity and Expression\nDiscriminatory Harassment\n\n\n\n\nCourse Outline\n\n\n\n\n\n\n\n\n\n\nWeek\nDates\nTopics\nCh.\nAssignments / Notes\n\n\n\n\n1\n1/26-30\nIntroduction (R, GitHub), Data Structures\nAR3\n\n\n\n2\n2/2-6\nLists, Data Frames, Assignment\nAR2, 4\n\n\n\n3\n2/9-13\nControl Flow, Functions\nAR5, 6\n\n\n\n4\n2/16-20\nFunctions, Iteration\nAR5, 6, 9\n\n\n\n5\n2/23-2/27\nFunctionals, Review\nAR9\nExam #1: Wed. 2/25\n\n\n6\n3/2-3/6\nEnvironments, Packages\nAR7, RP1-3\n\n\n\n7\n3/9-13\nConditions, OOP\nAR8, 12\n\n\n\n8\n3/16-20\nSpring Break!\n\nNo class: Mon. 3/16; Wed. 3/20\n\n\n9\n3/23-27\nS3, Package Foundation\nAR12, RP3 \nHelp file due Tues, 10/21\n\n\n10\n3/30-4/3\nDescription, usethis\nRP9-12\nExam #2: Mon. 3/30\n\n\n11\n4/6-10\nCode, Data, Manuals, Testing\nRP6, 7, 16\n\n\n\n12\n4/13-17\nTesting, Vignettes\nRP13, 17\n\n\n\n13\n4/20-24\nProject Time\n\nCheckpoint #1 due Thurs, 11/20\n\n\n14\n4/27-5/1\nProject Time, Demonstrations\nNA\n\n\n\nFinals\n5/2-9\nFinals\nNA\nPackage due Tues. 5/10\n\n\n\n\nNote that the assignments and topics covered are tentatively scheduled and may be altered slightly as the quarter progresses. The instructor has the right to modify the syllabus if needed. If this occurs, students will be notified before the change occurs."
+  },
+  {
+    "objectID": "index.html#recent-news",
+    "href": "index.html#recent-news",
+    "title": "Jericho Lawson",
+    "section": "Recent News",
+    "text": "Recent News\nTBD"
+  },
+  {
+    "objectID": "index.html#for-fun",
+    "href": "index.html#for-fun",
+    "title": "Jericho Lawson",
+    "section": "For Fun!",
+    "text": "For Fun!\nTBD"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "",
+    "text": "Main\nSyllabus\nSchedule\nLectures\nMini-Labs\nHW"
+  },
+  {
+    "objectID": "schedule.html#schedule",
+    "href": "schedule.html#schedule",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "Schedule",
+    "text": "Schedule\n\nWeek 1: Introduction (1/26 - 1/30)\n\nMonday, 1/26Wednesday, 1/28\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Tuesday, 1/27 at 8:59pm)\n\n\n\n\n\nLecture #2: Names and Values\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 2: Data Structures (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\nLecture #3: Vectors\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nLecture #4: Multi-Dimensional Data Structures\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 at 8:59pm)\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 3: Project Workflow (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\nLecture #5: Projects\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nQuiz #1: Values and Vectors\nLecture #6: GitHub\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #3 (due Sunday, 2/15 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 4: Subsetting and Control Flow (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18\n\n\nLecture #7: Subsetting\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Control Flow\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 5: Functions and Apply (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25\n\n\nQuiz #2: Subsetting and Control Flow\nLecture #9: Functions\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #10: Apply and Map\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #5 (due Sunday, 3/1 at 8:59pm)\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 6: Packages (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\nLecture #11: Packages\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #12: Build a Package\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)"
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications\nBouris E., Levya B.K., Odugbo O.P., Lawson J., Jin S., Fei Z., Morales E., Alkhalili O., Caprioli J. (2025). A Vision Transformer Model for the Detection of Early Glaucoma from Optic Disc Photographs. Under revision at Medical Image Analysis.\nLawson J., Fei Z. (2025). ImgKnock: Novel Knockoff Inference for Image Data via Latent Representation Learning. UC Riverside. Retrieved from https://escholarship.org/uc/item/77403004.\nLawson J., Watkins J. (2020). Legitimate or Unfair?: An Evaluation and Improvement of the College Football Playoff Using Logistic Regression and Adjacency Matrices. University of Arizona Campus Repository. Retrieved from: https://repository.arizona.edu/handle/10150/651357."
+  },
+  {
+    "objectID": "research.html#posters-and-talks",
+    "href": "research.html#posters-and-talks",
+    "title": "Research",
+    "section": "Posters and Talks",
+    "text": "Posters and Talks"
+  },
+  {
+    "objectID": "schedule2.html",
+    "href": "schedule2.html",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "",
+    "text": "Main\nSyllabus\nSchedule\nLectures\nMini-Labs\nHW"
+  },
+  {
+    "objectID": "schedule2.html#schedule",
+    "href": "schedule2.html#schedule",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "Schedule",
+    "text": "Schedule\n\nWeek 1: Introduction (1/26 - 1/30)\n\nMonday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\nTo-Do/Due:\n\nPre-Course Survey (due Tuesday, 1/27 at 8:59pm)\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\nTo-Do:\n\nReadings #1 (due Tuesday, 2/3 at 8:59pm)\n\n\n\nLab #1: Tech Setup\n\nInstructions\n\nTo-Do:\n\nLab #1 (due Tuesday, 2/3 at 8:59pm)\nReadings #1 (due Tuesday, 2/3 at 8:59pm)\n\n\n\n\n\n\nWeek 2: R and Data Visualization (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4Friday, 2/6\n\n\n\nLecture #3: Intro to R\n\nSlides\nDue:\n\nLab #1 (due Tuesday, 2/3 at 8:59pm)\nReadings #1 (due Tuesday, 2/3 at 8:59pm)\n\n\n\n\n\nLecture #4: Intro to Data Visualization\n\nSlides\n\nTo-Do:\n\nReadings #2 (due Tuesday, 2/10 at 8:59pm)\n\n\n\nLab #2: R and RStudio\n\nInstructions\n\nTo-Do:\n\nLab #2 (due Tuesday, 2/10 at 8:59pm)\nReadings #2 (due Tuesday, 2/10 at 8:59pm)"
+  },
+  {
+    "objectID": "classes/sds270/s26/schedule.html",
+    "href": "classes/sds270/s26/schedule.html",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "",
+    "text": "Main\nSyllabus\nSchedule\n Slack\n GitHub"
+  },
+  {
+    "objectID": "classes/sds270/s26/schedule.html#schedule",
+    "href": "classes/sds270/s26/schedule.html#schedule",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "Schedule",
+    "text": "Schedule\n\nWeek 1: Introduction (1/26 - 1/30)\n\nMonday, 1/26Wednesday, 1/28\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Tuesday, 1/27 at 8:59pm)\n\n\n\n\n\nLecture #2: Names and Values\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 2: Data Structures (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\nLecture #3: Vectors\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nLecture #4: Multi-Dimensional Data Structures\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 at 8:59pm)\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 3: Project Workflow (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\nLecture #5: Projects\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nQuiz #1: Values and Vectors\nLecture #6: GitHub\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #3 (due Sunday, 2/15 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 4: Subsetting and Control Flow (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18\n\n\nLecture #7: Subsetting\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Control Flow\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 5: Functions and Apply (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25\n\n\nQuiz #2: Subsetting and Control Flow\nLecture #9: Functions\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #10: Apply and Map\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #5 (due Sunday, 3/1 at 8:59pm)\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\n\n\n\nWeek 6: Packages (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\nLecture #11: Packages\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #12: Build a Package\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)"
+  },
+  {
+    "objectID": "classes/classes.html",
+    "href": "classes/classes.html",
+    "title": "Classes",
+    "section": "",
+    "text": "Here is a list of classes that I have either instructed or TAed for before. Reach out to me if you have questions about any of the classes I have led or would like to request a copy of my syllabus!"
+  },
+  {
+    "objectID": "classes/classes.html#instructor-of-record",
+    "href": "classes/classes.html#instructor-of-record",
+    "title": "Classes",
+    "section": "Instructor of Record",
+    "text": "Instructor of Record\n\nSmith College (2025 - )UC Riverside (2020 - 2025)\n\n\n\nSDS 192: Introduction to Data Science\n\nFall 2025 (x2), Spring 2026\n\nSDS 270: Programming for Data Science in R\n\nFall 2025, Spring 2026\n\n\n\n\n\nSTAT 011: Introduction to Statistical Modeling\n\nFall 2023, Spring 2024\n\nSTAT 107: Statistical Computing\n\nSummer 2023, Summer 2024\n\nSTAT 127: Quality Improvements\n\nWinter 2023, Winter 2024)\n\nSTAT 130: Sampling Surveys\n\nFall 2024\n\nSTAT 170: Regression Analysis\n\nSummer 2025"
+  },
+  {
+    "objectID": "classes/classes.html#teaching-assistant",
+    "href": "classes/classes.html#teaching-assistant",
+    "title": "Classes",
+    "section": "Teaching Assistant",
+    "text": "Teaching Assistant\n\nUC Riverside (2020 - 2025)University of Arizona (2016 - 2020)\n\n\n\nSTAT 008: Statistics for Business\n\nSpring 2022, Winter 2025\n\nSTAT 010: Introduction to Statistics\n\nSummer 2021, Winter 2022, Summer 2022, Spring 2024, Spring 2025\n\nSTAT 011: Introduction to Statistical Modeling\n\nFall 2021, Fall 2022\n\nSTAT 107: Statistical Computing\n\nSummer 2022, Winter 2025\n\nSTAT 130: Sampling Surveys\n\nFall 2021, Fall 2022\n\nSTAT 208: Statistical Data Mining Methods\n\nSpring 2025\n\n\n\n\n\nMATH 100/100A: Math Lab (as UTA/UTC)\n\nFall 2017 - Spring 2020\n\nMATH 223: Vector Calculus\n\nSpring 2020\n\nMATH 396T/DATA 367: Sports Analytics\n\nSpring 2018, Spring 2019, Spring 2020"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Non-tabular knockoffs variable selection\nSports analytics\nSignal and image processing\n\nMy primary research interests center around the methodology of knockoffs variable selection on non-tabular data, specifically involving images from many contexts. Under the guidance of Dr. Zhe Fei, my PhD work focused on vision-transformer masked-autoencoder (ViTMAE) models to generate latent representations of images that can be used in an FDR-controlled variable selection framework called knockoffs to identify binary outcomes. As an application, I explored how this framework can be used to identify patients who exhibit signs of glaucoma.\nCurrent research centers on embedding the framework under mathematical guarantees and extending it to other disciplines, like those seen in the medical and environmental fields."
+  },
+  {
+    "objectID": "research.html#research-interests",
+    "href": "research.html#research-interests",
+    "title": "Research",
+    "section": "",
+    "text": "Non-tabular knockoffs variable selection\nSports analytics\nSignal and image processing\n\nMy primary research interests center around the methodology of knockoffs variable selection on non-tabular data, specifically involving images from many contexts. Under the guidance of Dr. Zhe Fei, my PhD work focused on vision-transformer masked-autoencoder (ViTMAE) models to generate latent representations of images that can be used in an FDR-controlled variable selection framework called knockoffs to identify binary outcomes. As an application, I explored how this framework can be used to identify patients who exhibit signs of glaucoma.\nCurrent research centers on embedding the framework under mathematical guarantees and extending it to other disciplines, like those seen in the medical and environmental fields."
+  },
+  {
+    "objectID": "classes/sds192/s26/index.html",
+    "href": "classes/sds192/s26/index.html",
+    "title": "SDS 192: Introduction to Data Science",
+    "section": "",
+    "text": "This website is the central hub for all materials related to this iteration of SDS 192. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+  },
+  {
+    "objectID": "classes/sds192/s26/index.html#welcome",
+    "href": "classes/sds192/s26/index.html#welcome",
+    "title": "SDS 192: Introduction to Data Science",
+    "section": "",
+    "text": "This website is the central hub for all materials related to this iteration of SDS 192. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+  }
+]

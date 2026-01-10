@@ -1,0 +1,366 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SDS 192: Introduction to Data Science",
+    "section": "",
+    "text": "This website is the central hub for all materials related to this iteration of SDS 192. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "SDS 192: Introduction to Data Science",
+    "section": "",
+    "text": "This website is the central hub for all materials related to this iteration of SDS 192. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "In this webpage, you will find the syllabus for this course (02)."
+  },
+  {
+    "objectID": "syllabus.html#overview",
+    "href": "syllabus.html#overview",
+    "title": "Syllabus",
+    "section": "Overview",
+    "text": "Overview\n\nContactLocation/TimeDescriptionLearning OutcomesMaterials\n\n\n\n\n\n\n\nInstructor: Jericho Lawson\nEmail: jlawson01@smith.edu\nOffice Hours:\n\nMondays, 3-4pm\nFridays, 10am-12pm\nMcConnell 207\n\n\n\n\n\n\n\nMondays, 1:40 - 2:55pm in Sabin-Reed 301\nWednesdays & Fridays, 1:20 - 2:35pm in Sabin-Reed 301\n\n\n\nData science involves applying a set of strategies to transform a recorded set of values into something from which we can glean knowledge and insight. This course will introduce you to concepts and methods from the field of data science, along with how to apply them in R. You will learn how to acquire, clean, wrangle, and visualize data. You will also learn best practices in data science workflows, such as code documentation and version control. Issues in data ethics will be addressed throughout the course.\n\n\nBy the end of this course, students will be able to do the following:\n\nData visualization: Create informative and clean visuals through various types of plots. Appropriate statistics and metrics are displayed. Use of base R and advanced libraries to generate plots (i.e. ggplot2).\nData wrangling: Develop techniques to properly use data in a workflow, which includes the transformation of data, data cleaning, and data joining. Students will also gather data in appropriate and ethical manners.\nWorkflow: Practice common tasks to working through particular data science problems, such as data retrieval, R programming, GitHub, and light statistics.\nData ethics: Identify best practices and ethical dilemmas that stem from data science work. This includes contextual thinking, environmental concerns, and intellectual property. Students will also develop ethical ways to use generative AI.\n\n\n\n\nTextbooks\n\nBaumer, B. S., Kaplan, D. T., & Horton, N. J. (2024). Modern Data Science with R (3rd ed.). CRC Press. https://mdsr-book.github.io/mdsr3e/\n\nOptional:\n\nIsmay, C., Kim A. Y., & Valdivia A. (2025). Statistical Inference via Data Science: A ModernDive into R and the Tidyverse (2nd ed.). CRC Press. https://moderndive.com/v2/\nIrizarry, R. A. (2022). Introduction to Data Science: Data Analysis and Prediction Algorithms with R. CRC Press. https://rafalab.dfci.harvard.edu/dsbook-part-1/\n\n\n\nTechnology\n\nFor coding: R, RStudio\n\nFor downloading/installing: Instructions\n\nFor assignment turn-ins: GitHub\n\nFor joining GitHub classroom: To join\n\nFor discussion assignments: Perusall\n\nFor joining Perusall course: To join\n\nEnrollment code: LAWSON-2BX49\n\n\nFor course management: Moodle, but will be used seldomly\nFor course materials: This website\nFor discussions and announcements: Slack"
+  },
+  {
+    "objectID": "syllabus.html#grading-and-expectations",
+    "href": "syllabus.html#grading-and-expectations",
+    "title": "Syllabus",
+    "section": "Grading and Expectations",
+    "text": "Grading and Expectations\n\nBreakdown\n\n\n\n\n\n\n\n\n\n\nFormative\n\n\nSummative\n\n\n\n\n\nReadings, Activities, Problems\n10%\n\nProjects (2)\n30%\n\n\nLabs\n30%\n\nExams (2)\n30%\n\n\n\nA traditional grading system will be used here. Cumulative numerical averages of 90-100 are guaranteed at least an A-, 80-89 at least a B-, and 70-79 at least a C-. The exact ranges for letter grades will ultimately be determined at the end of the course.\n\n\nMW Classes, Readings, Activties, and Exercises (10%)\nPrior to the upcoming week, readings will be assigned through Perusall that prepare you for material that will be explored thereafter. The readings on Perusall will involve:\n\nReading through the material\nWriting 2-4 annotations\nHighlighting one item you learned and one item that seems challenging\n\nThese annotations will allow me to identify which concepts to focus on in more detail during the week. Generally, these items will be due on Sundays at 11:59pm, with no acceptance of late work. Readings will be graded on completion.\nDuring Mondays and Wednesday classes, we will go through mini-lectures, activities, and demos. Classes will be experiential, meaning that you will have the opportunity to apply concepts from class to activities, exercises, and investigations. Students are expected to participate during lecture by asking questions and working with other students. Additionally, it is required that you bring your laptop to class. Class activities will be administered often during lecture, and you will have until the end of lecture to turn them in through your GitHub submission repository. These activities will be graded based on completion and/or correctness.\nOn occasion, a reading exercise may be assigned on Wednesday for you to complete. Similar to the activities, these will be turned in through your GitHub submission repository by Thursdays at 11:59pm. These exercises will be graded based on completion and correctness.\n\n\nFriday Classes and Labs (30%)\nFriday’s classes are dedicated exclusively to labs unless otherwise stated. In these labs, you will have the opportunity to compile (no pun intended) what you’ve learned and work on a experiential assignment that showcases those skills. This will involve strong usage of R and GitHub. In earlier weeks, we will get you all familiar with the technical programs along with the workflow.\nLabs in this course introduce a data science skill by walking you through exploratory analysis of a dataset documenting a socially-relevant issue (such as racial profiling in policing, affordable housing, and pollution). Labs will be started in class on Fridays and completed for homework by Wednesdays at 11:59pm. If you finish a lab early, you are encouraged to help your classmates. Labs will be graded on both completion and correctness. Note that at the end of each lab, there will be a prompt asking you to consider some of the ethical considerations of the data analysis you just completed. You must respond to this prompt in Slack to earn full credit on the lab.\nAll lab assignments will be submitted through your GitHub submission repository. You will submit assignments by pushing changes to template documents to a private GitHub repository. I will provide guidance on how to do this early in the semester.\n\n\nProjects (30% total)\nTwo projects will be assigned throughout the semester. The projects are designed to test your ability to successfully complete course objectives as described earlier. The following two projects, along with their tentative due dates, are seen below:\n\nProject #1: Data Visualizations and GitHub: due Wednesday, 3/4 at 11:59pm\n\nCreate meaningful, informative, and clear visualizations that communicate information from the data and real-world issue.\nConfigure an appropriate pipeline that funnels all relevant information, files, and summaries into a GitHub repository.\n\nProject #2: Workflow and Real-World Investigation: due Monday, 4/27 at 11:59pm\n\nComplete a detailed, attentive workflow of an investigation related to a real-world issue with appropriate data and context.\nPresent relevant information and code to various audiences in multiple formats, including a report, presentation, and demonstration.\n\n\nMore details to come in later weeks.\n\n\nExams (30% total)\nTwo exams will be administered during the course of the semester, which will include written and oral parts. The first exam will be administered in-class on Friday, 3/13, while the second exam will be administered during finals week as a self-scheduled exam. More details to come in later weeks."
+  },
+  {
+    "objectID": "syllabus.html#policies",
+    "href": "syllabus.html#policies",
+    "title": "Syllabus",
+    "section": "Policies",
+    "text": "Policies\n\nPreparation and Attendance\nAs a four-credit course that meets 4.5 hours per week, Smith expects students to dedicate at least 7.5 hours per week towards the course outside of class. The assignments, readings, and assessments are designed with this target in mind. Expect to read through lecture notes, examples, articles, and forums outside of class along with the assignments.\nAttending class is imperative to your learning and taking part in an active community. Attendance will be taken for each class period. However, things come up and you may not have the capacity to attend. As such, you will be able to miss 3 classes with no penalty. After the third unexcused absence, your overall grade will drop by 1% for each class missed. Additional absences may be excused due to family/personal difficulties, sickness, or school or career-related activities; however, I will require some form of documentation for these absences. Please speak with your class dean or the Accessibility Resource Center so that we can get documentation of your need.\nDo make every effort to arrive to class on time. If you happen/plan to arrive more than 10 minutes late, please inform me ahead of time. Any unexplained tardiness will result in a marked absence. If you must miss a class entirely, you should contact a peer to discuss what was missed.\n\n\nExtensions\nYou will be granted 2 free late days to use for lab assignments, with a maximum of one day used on each lab assignment. Additionally, you will be granted 2 late days to use for final project submissions, with a maximum of two days used at a single time. No need to inform me that you intend to take these late days. Beyond this, late assignments will not be accepted without an accommodation from a class dean or from the ARC.\nNote that this policy does not apply to Perusall annotations, reading exercises, exams, or project checkpoints/proposals/presentations.\n\n\nAcademic Honesty\nAs a student at Smith College, the college expects all students to be honest and committed to the principles of academic and intellectual integrity in preparation and submission of all course work and examinations, as outlined by the Academic Integrity Board (AIB). The AIB provides an Academic Integrity Statement, which all students are expected to abide by. Any cases of academic dishonesty or plagiarism will be reported to the Academic Honor Board. Examples of these behaviors include:\n\nSubmitting work completed by another student as your own.\nCopying and pasting words from sources without quoting and citing the author.\nParaphrasing material from another source without citing the author.\nFailing to cite your sources correctly.\nFalsifying or misrepresenting information in submitted work.\nPaying another student or service to complete assignments for you.\nSubmitting work generated by artificially intelligent tools such as ChatGPT without permission or instruction to do so.\n\nYou are encouraged to discuss course material, including assignments, with your classmates. All work you turn in, however, must be your own. This includes both writing and code. Copying from other students, from books, or from websites (1) does nothing to help you learn how to program, (2) is easy for us to detect, and (3) has serious negative consequences.\n\n\nGenerative AI\nAs mentioned in the Academic Integrity Board, the professor for each course decides whether and how students are allowed to use generative AI in a given course. For this specific course, any use of generative AI to complete assignments or produce content for this course is prohibited, unless otherwise stated in the assignment itself.\nAs a foundational course, it is critical that you are able to think like a data scientist, which includes producing meaningful code, developing logical solutions to problem, and critiquing good results from the bad ones. While the use of generative AI can be beneficial at producing base-level code and providing insights, it comes at the detriment of your own critical thinking. The human element will be critical in succeeding in data science. If you don’t develop the skills to understand how the underlying code is composed/works, then you will not be prepared for this kind of work.\nProhibited forms of generative AI usage include but are not limited to:\n\nSummarizing course readings.\nDrafting, editing, and proofreading responses to written prompts on any assignment.\nComposing and/or formatting code and comments.\nAnswering lab, quiz, or exam questions.\nConducting analysis of any plots, methods, and results for any assignment.\n\nAny unauthorized use of generative artificial intelligence in this course will be considered a case of academic dishonesty/plagiarism and will be reported to the Academic Honor Board.\nCaveat: While the policy here is strict, do note that there will be assignments and lectures that go through the ethical and effective use of generative AI in data science as part of a unit. In these assignments, further directions will be given to showcase the use of generative AI. However, unless otherwise stated, generative AI should not be used in any assignment."
+  },
+  {
+    "objectID": "syllabus.html#community-support",
+    "href": "syllabus.html#community-support",
+    "title": "Syllabus",
+    "section": "Community & Support",
+    "text": "Community & Support\n\nCode of Conduct\nAs the instructor for this course, I am committed to making participation in this course a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion. Examples of unacceptable behavior by participants in this course include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.\nAs the instructor I have the right and responsibility to point out and stop behavior that is not aligned to this Code of Conduct. Participants who do not follow the Code of Conduct may be reprimanded for such behavior. Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the instructor.\nAll students and the instructor are expected to adhere to this Code of Conduct in all settings for this course: seminars, office hours, and over Slack. This Code of Conduct is adapted from the Contributor Covenant, version 1.0.0, available here.\n\n\nPrinciples of Community\nWhether in a class, college, or neighborhood setting, achieving a warm community is essential to your well-being. In this class, I hope we can foster a collaborative and welcoming environment: one that celebrates successes, respects individual strengths and weaknesses, demonstrates compassion for each other’s struggles, and affirms diverse identities.\nTo establish this, consider the following:\n\nCheck-in with colleagues before starting collaborative work.\nConsider when to step up and when to step back in class discussions, creating space for others to contribute. Listening is just as important to community-building as speaking.\nAcknowledge what we do and don’t know, as well as how our colleagues experience the world.\nSupport colleagues that may be stepping outside of their comfort zone (i.e. presentations).\nAsk questions often in our Slack workspace. Help each other out by answering questions when you can.\nAdmit mistakes. They happen, and I will certainly make mistakes in class.\nUse pronouns. This provides a foundation to a safe, respectful classroom environment that creates a sense of trust. For information on pronouns and usage, please see the Office of Equity and Inclusion link here: Pronouns\n\n\n\nAccommodations\nIt is my goal for everyone to succeed in this course. If you have personal circumstances that may impact your experience of our classroom, I encourage you to contact the Accessibility Resource Center in College Hall 104 or at arc@smith.edu. The Center will generate a letter that indicates to me what kind of support you need and how I can make your classroom experience more accommodating. Once you have this letter, you are welcome to visit my office hours or email me to discuss ideas about how we can tailor the course accordingly. While you can request accommodations at any time, the sooner we start this conversation, the better. If you have concerns about the course that are not addressed through ARC, please contact me. At no point will I ask you to divulge details about your personal circumstances to me.\n\nStudent Well-Being\nCollege life is stressful, and life outside of college can be overwhelming. It is my position that attending to your physical and mental health and well-being should be a top priority. I will remind you of this often throughout the semester. I encourage you to schedule a time to talk with me if you are struggling with this course. If you, or anyone you know, is experiencing distress, there are numerous campus resources that can provide support via the Schacht Center.\nAdditional resources and support offered by the college are listed below:\n\nAccessibility Resource Center (ARC)\nSpinelli Center: Support for students doing quantitative work. Includes tutoring and resources.\n\nFor this class: Sun-Thurs, 7-9pm in Sabin-Reed 301.\nEmail qlctutor@smith.edu for specific request for help.\n\nCrisis Resources\nCounseling Services\nWellness Resources\nGender Identity and Expression\nDiscriminatory Harassment"
+  },
+  {
+    "objectID": "syllabus.html#course-outline",
+    "href": "syllabus.html#course-outline",
+    "title": "Syllabus",
+    "section": "Course Outline",
+    "text": "Course Outline\n\n\n\n\n\n\n\n\n\n\nWeek\nDates\nTopics\nCh.\nAssignments / Notes\n\n\n\n\n1\n1/26-30\nIntroduction to Data\n1\n\n\n\n2\n2/2-6\nIntro to R and Workflows\n1, B\n\n\n\n3\n2/9-13\nData Visualization\n2\n\n\n\n4\n2/16-20\nggplot2\n3\n\n\n\n5\n2/23-2/27\nData Wrangling\n4\n\n\n\n6\n3/2-3/6\nData Joining\n5\nProject #1 due: Wed, 3/4\n\n\n7\n3/9-13\nStatistics, Exam #1\n9\nExam #1: Fri, 3/13\n\n\n8\n3/16-20\nSpring Break!\n\nNo class all week long\n\n\n9\n3/23-27\nData Tidying\n6\n\n\n\n10\n3/30-4/3\nProgramming\n7\n\n\n\n11\n4/6-10\nEthics and Programming\n8, C\n\n\n\n12\n4/13-17\nSpatial Thinking\n17\n\n\n\n13\n4/20-24\nSpatial Thinking\n17\n\n\n\n14\n4/27-5/1\nAPIs and Review\n18\nProject #2 due: Mon, 4/27 \n\n\nFinals\n5/2-9\nFinals\nNA\nExam #2: self-scheduled (5/6-9) \n\n\n\n\nNote that the assignments and topics covered are tentatively scheduled and may be altered slightly as the quarter progresses. The instructor has the right to modify the syllabus if needed. If this occurs, students will be notified before the change occurs."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\n\n\nLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "schedule.html#week-1-introduction-126---130",
+    "href": "schedule.html#week-1-introduction-126---130",
+    "title": "Schedule",
+    "section": "",
+    "text": "Monday, 1/26Wednesday, 1/28\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Tuesday, 1/27 at 8:59pm)\n\n\n\n\n\nLecture #2: Names and Values\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+  },
+  {
+    "objectID": "schedule.html#week-2-data-structures-22---26",
+    "href": "schedule.html#week-2-data-structures-22---26",
+    "title": "Schedule",
+    "section": "Week 2: Data Structures (2/2 - 2/6)",
+    "text": "Week 2: Data Structures (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\nLecture #3: Vectors\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nLecture #4: Multi-Dimensional Data Structures\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 at 8:59pm)\nHW #1 (due Tuesday, 2/10 at 8:59pm)"
+  },
+  {
+    "objectID": "schedule.html#week-3-project-workflow-29---213",
+    "href": "schedule.html#week-3-project-workflow-29---213",
+    "title": "Schedule",
+    "section": "Week 3: Project Workflow (2/9 - 2/13)",
+    "text": "Week 3: Project Workflow (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\nLecture #5: Projects\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nImportantQuiz #1\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture #6: GitHub\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #3 (due Sunday, 2/15 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)"
+  },
+  {
+    "objectID": "schedule.html#week-4-subsetting-and-control-flow-216---220",
+    "href": "schedule.html#week-4-subsetting-and-control-flow-216---220",
+    "title": "Schedule",
+    "section": "Week 4: Subsetting and Control Flow (2/16 - 2/20)",
+    "text": "Week 4: Subsetting and Control Flow (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18\n\n\nLecture #7: Subsetting\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Control Flow\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)"
+  },
+  {
+    "objectID": "schedule.html#week-5-functions-and-apply-223---227",
+    "href": "schedule.html#week-5-functions-and-apply-223---227",
+    "title": "Schedule",
+    "section": "Week 5: Functions and Apply (2/23 - 2/27)",
+    "text": "Week 5: Functions and Apply (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25\n\n\nQuiz #2: Subsetting and Control Flow\nLecture #9: Functions\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #10: Apply and Map\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #5 (due Sunday, 3/1 at 8:59pm)\nHW #3 (due Tuesday, 3/3 at 8:59pm)"
+  },
+  {
+    "objectID": "schedule.html#week-6-packages-32---36",
+    "href": "schedule.html#week-6-packages-32---36",
+    "title": "Schedule",
+    "section": "Week 6: Packages (3/2 - 3/6)",
+    "text": "Week 6: Packages (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\nLecture #11: Packages\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #12: Build a Package\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#welcome",
+    "href": "lectures/w1l1_intro.html#welcome",
+    "title": "Introductions",
+    "section": "Welcome!",
+    "text": "Welcome!\n\n\n\n\n\n\n\n\n\nCourse: SDS 192, Sect. 02\nTimes:\n\nM, 1:40-2:55pm\nW/F, 1:20-2:35pm"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#welcome-1",
+    "href": "lectures/w1l1_intro.html#welcome-1",
+    "title": "Introductions",
+    "section": "Welcome!",
+    "text": "Welcome!\n\n\n\nInstructor: Jericho Lawson\n\nLocation: McConnell 207\n\nOffice Hours:\n\nM, 3-4pm\nF, 10am-12pm\n\nEmail: jlawson01@smith.edu"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#activity-data-science",
+    "href": "lectures/w1l1_intro.html#activity-data-science",
+    "title": "Lecture #1: Introductions",
+    "section": "Activity: Data Science",
+    "text": "Activity: Data Science\nForm groups of 2-3 with your peers near you. Complete the following tasks:\n\nIntroduce yourselves to each other! Mention your name, major, and one cool thing you did over the summer.\nOn a piece of paper, write the names of all group members.\nWrite down words, phrases, and ideas that come to mind when you hear “data science”."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#what-is-data-science-common-view",
+    "href": "lectures/w1l1_intro.html#what-is-data-science-common-view",
+    "title": "Introductions",
+    "section": "What is data science? Common view:",
+    "text": "What is data science? Common view:\n\n\n\nInterdisciplinary field combining computer science, mathematics/statistics, and domain expertise to extract meaningful information from unstructured data points"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#what-is-data-science-my-view",
+    "href": "lectures/w1l1_intro.html#what-is-data-science-my-view",
+    "title": "Introductions",
+    "section": "What is data science? My view:",
+    "text": "What is data science? My view:\n\n\n\nInterdisciplinary field combining computer science, mathematics/statistics, and domain expertise to extract meaningful information from unstructured data points\n Includes the human aspect: use of aesthetics, situational context, and communication to explain the data to the world"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#case-study-1-aclu-fights-discriminatory-housing",
+    "href": "lectures/w1l1_intro.html#case-study-1-aclu-fights-discriminatory-housing",
+    "title": "Introductions",
+    "section": "Case Study 1: ACLU Fights Discriminatory Housing",
+    "text": "Case Study 1: ACLU Fights Discriminatory Housing\n\n\n\nAmerican Civil Liberties Union employs data scientists to produce insights regarding discriminatory laws and practices\nFindings are presented in courts, legislatures, and public reports\nIn this study, they use public data to show that excluding people with criminal records from housing can be viewed as a violation of the US Fair Housing Act."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#case-study-2-epa-tracks-environmental-injustice",
+    "href": "lectures/w1l1_intro.html#case-study-2-epa-tracks-environmental-injustice",
+    "title": "Introductions",
+    "section": "Case Study 2: EPA Tracks Environmental Injustice",
+    "text": "Case Study 2: EPA Tracks Environmental Injustice\n\n\n\nEnvironmental Protection Agency hires data scientists to produce insights regarding environmental health risks\nFindings implicate environmental policies, funding allocations, and legal actions against states and industries\nThis tool, visualizes environmental and demographic indicators to highlight communities experiencing environmental injustices."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#case-study-3-geena-davis-institute-studies-gender-biases-in-films",
+    "href": "lectures/w1l1_intro.html#case-study-3-geena-davis-institute-studies-gender-biases-in-films",
+    "title": "Introductions",
+    "section": "Case Study 3: Geena Davis Institute Studies Gender Biases in Films",
+    "text": "Case Study 3: Geena Davis Institute Studies Gender Biases in Films\n\n\n\nGeena Davis Institute collaborated with University of Southern California’s Signal Analysis and Interpretation Laboratory (SAIL)\nDeveloped a machine learning tool to measure representation of diverse groups in films by studying screen time and speaking"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#topics-covered-in-this-course",
+    "href": "lectures/w1l1_intro.html#topics-covered-in-this-course",
+    "title": "Introductions",
+    "section": "Topics covered in this course",
+    "text": "Topics covered in this course\n\n\n\nData visualization\nData wrangling\nProgramming with data (via R)\nData retrieval\nData science infrastructures and workflows\nData science ethics\nMapping"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#learning-objectives",
+    "href": "lectures/w1l1_intro.html#learning-objectives",
+    "title": "Introductions",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nData visualization\n\nCreate informative and clean visuals via base R, advanced libraries\nShow appropriate statistics and metrics for support\n\nData wrangling\n\nDevelop proper wrangling techniques, including data transformation, cleaning, and joining\nGather data in appropriate and ethical manners"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#learning-objectives-1",
+    "href": "lectures/w1l1_intro.html#learning-objectives-1",
+    "title": "Introductions",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nWorkflow\n\nPractice retrieval, R programming, GitHub, and light statistics\n\nData ethics\n\nIdentify best practices and ethical dilemmas, including contextual thinking, environmental concerns, and intellectual property\nDevelop ethical ways to use generative AI"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#who-am-i",
+    "href": "lectures/w1l1_intro.html#who-am-i",
+    "title": "Introductions",
+    "section": "Who am I?",
+    "text": "Who am I?\nCall me Jericho, but if you prefer, Professor Lawson or Dr. Lawson is okay!\n\n\n\n\n\n\n\n\n\nLecturer of Statistical and Data Sciences\nResearch interests: variable selection, imaging, machine learning\nMy college journey:\n\nPh.D. in Applied Statistics from UC Riverside\nM.S. in Statistics from UC Riverside\nB.S. in Applied Mathematics; Statistics and Data Science from University of Arizona"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#who-am-i-1",
+    "href": "lectures/w1l1_intro.html#who-am-i-1",
+    "title": "Introductions",
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\n\n\n\n\n\n\n\nFrom Arizona!!\n\nWill either hear me talk about the state or the Suns\n\nHiker, foodie, and explorer!"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#exercise",
+    "href": "lectures/w1l1_intro.html#exercise",
+    "title": "Introductions",
+    "section": "Exercise",
+    "text": "Exercise\nOn your feet! I’ll ask three questions about light-hearted pieces of information. For each question,\n\nGroup or order yourselves.\nPonder about what characteristics you see with the groupings/orderings."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#workflow",
+    "href": "lectures/w1l1_intro.html#workflow",
+    "title": "Introductions",
+    "section": "Workflow",
+    "text": "Workflow\n\nDetermine problem/issue\nCollect data\nExplore and clean the data\nModel the data\nCommunicate results\n\nQuestion? How was this done? Discuss amongst yourselves."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#tools",
+    "href": "lectures/w1l1_intro.html#tools",
+    "title": "Introductions",
+    "section": "Tools",
+    "text": "Tools\n\nDetermine problem/issue: Exploration of issues\nCollect data: From online source (e.g. scraping, csv file)\nExplore and clean the data: Use of R, wrangling\nModel the data: Statistics, regression\nCommunicate results: Plots, tables, writing, presentations"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#coding-agonizing-when-it-doesnt-work-satisfying-when-it-does",
+    "href": "lectures/w1l1_intro.html#coding-agonizing-when-it-doesnt-work-satisfying-when-it-does",
+    "title": "Introductions",
+    "section": "Coding: agonizing when it doesn’t work, satisfying when it does",
+    "text": "Coding: agonizing when it doesn’t work, satisfying when it does\n\nThink of code like a language.\nCoding can be incredibly frustrating.\nCoding has been exclusionary."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#prepping-for-this-class",
+    "href": "lectures/w1l1_intro.html#prepping-for-this-class",
+    "title": "Introductions",
+    "section": "Prepping for this class",
+    "text": "Prepping for this class\n\nNavigate the Moodle course website\nRead through the syllabus\nPerusall\nSlack"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#for-monday",
+    "href": "lectures/w1l1_intro.html#for-monday",
+    "title": "Introductions",
+    "section": "For Monday",
+    "text": "For Monday\n\nInstall Slack desktop and set notifications\nRead through article and make annotations on Perusall\nRead through Ch. 1-2 of textbook and syllabus\nTake reading/syllabus quiz on Moodle\nComplete the pre-course survey on Moodle\nBring charged laptop to class on Monday"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#section",
+    "href": "lectures/w1l1_intro.html#section",
+    "title": "Introductions",
+    "section": "",
+    "text": "Sources: NYT, Compadre DB, The Atlantic"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#warm-up-activity-data-science",
+    "href": "lectures/w1l1_intro.html#warm-up-activity-data-science",
+    "title": "Introductions",
+    "section": "Warm-Up Activity: Data Science",
+    "text": "Warm-Up Activity: Data Science\nForm groups of 2-3 with your peers near you. Complete the following tasks:\n\nIntroduce yourselves to each other! Mention your name, major, and one cool thing you did over winter break.\nOn a piece of paper, write the names of all group members.\nWrite down words, phrases, and ideas that come to mind when you hear “data science”."
+  },
+  {
+    "objectID": "schedule.html#week-1-what-is-data-science-126---130",
+    "href": "schedule.html#week-1-what-is-data-science-126---130",
+    "title": "Schedule",
+    "section": "",
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\n\n\nLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "schedule.html#week-2-what-is-r-and-github-22---26",
+    "href": "schedule.html#week-2-what-is-r-and-github-22---26",
+    "title": "Schedule",
+    "section": "Week 2: What is R and GitHub? (2/2 - 2/6)",
+    "text": "Week 2: What is R and GitHub? (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4Friday, 2/6\n\n\nLecture #3: Intro to R\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nLecture #4: Coding with R and GitHub\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 at 8:59pm)\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nLab #2: R and GitHub"
+  },
+  {
+    "objectID": "schedule.html#week-3-data-visualization-the-basics-29---213",
+    "href": "schedule.html#week-3-data-visualization-the-basics-29---213",
+    "title": "Schedule",
+    "section": "Week 3: Data Visualization, The Basics (2/9 - 2/13)",
+    "text": "Week 3: Data Visualization, The Basics (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11Friday, 2/13\n\n\nLecture #5: Data Visualization\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nImportantQuiz #1\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture #6: Types of Data Visualizations\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #3 (due Sunday, 2/15 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLab #3: Visualization Aesthetics"
+  },
+  {
+    "objectID": "schedule.html#week-4-data-visualizations-ggplot-216---220",
+    "href": "schedule.html#week-4-data-visualizations-ggplot-216---220",
+    "title": "Schedule",
+    "section": "Week 4: Data Visualizations, ggplot (2/16 - 2/20)",
+    "text": "Week 4: Data Visualizations, ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\nLecture #7: Intro to ggplot\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Advanced ggplot2\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLab #4: Plotting Frequencies and Distributions"
+  },
+  {
+    "objectID": "schedule.html#week-5-data-wrangling-223---227",
+    "href": "schedule.html#week-5-data-wrangling-223---227",
+    "title": "Schedule",
+    "section": "Week 5: Data Wrangling (2/23 - 2/27)",
+    "text": "Week 5: Data Wrangling (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25Friday, 2/27\n\n\nQuiz #2: Subsetting and Control Flow\nLecture #9: Intro to Data Wrangling\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #10: Data Wrangling\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #5 (due Sunday, 3/1 at 8:59pm)\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nProject Time"
+  },
+  {
+    "objectID": "schedule.html#week-6-data-joining-32---36",
+    "href": "schedule.html#week-6-data-joining-32---36",
+    "title": "Schedule",
+    "section": "Week 6: Data Joining (3/2 - 3/6)",
+    "text": "Week 6: Data Joining (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4Friday, 3/6\n\n\nLecture #11: Data Joining\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #12: Problem Solving\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLab #5: Data Wrangling (and Joining)"
+  },
+  {
+    "objectID": "schedule.html#week-7-statistics-and-exam-1-39---313",
+    "href": "schedule.html#week-7-statistics-and-exam-1-39---313",
+    "title": "Schedule",
+    "section": "Week 7: Statistics and Exam #1 (3/9 - 3/13)",
+    "text": "Week 7: Statistics and Exam #1 (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11Friday, 3/13\n\n\nLecture #13: Statistics\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #14: Review\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nExam #1: In-Class"
+  },
+  {
+    "objectID": "schedule.html#week-8-spring-break-316---319",
+    "href": "schedule.html#week-8-spring-break-316---319",
+    "title": "Schedule",
+    "section": "Week 8: Spring Break! (3/16 - 3/19)",
+    "text": "Week 8: Spring Break! (3/16 - 3/19)\n\nMonday, 3/16Wednesday, 3/18Friday, 3/20\n\n\nNo Class!\n\n\nNo Class!\n\n\nNo Class!"
+  },
+  {
+    "objectID": "schedule.html#week-9-data-tidying-323---327",
+    "href": "schedule.html#week-9-data-tidying-323---327",
+    "title": "Schedule",
+    "section": "Week 9: Data Tidying (3/23 - 3/27)",
+    "text": "Week 9: Data Tidying (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25Friday, 3/27\n\n\nLecture #15: Data Tidying\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #16: Data Tidying, Part II\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLab #6: Data Tidying"
+  },
+  {
+    "objectID": "schedule.html#week-10-programming-330---43",
+    "href": "schedule.html#week-10-programming-330---43",
+    "title": "Schedule",
+    "section": "Week 10: Programming (3/30 - 4/3)",
+    "text": "Week 10: Programming (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1Friday, 4/3\n\n\nLecture #17: Functions\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #18: Iteration and Functionals\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLab #7: Programming with Data"
+  },
+  {
+    "objectID": "schedule.html#week-11-ethics-and-programming-46---410",
+    "href": "schedule.html#week-11-ethics-and-programming-46---410",
+    "title": "Schedule",
+    "section": "Week 11: Ethics and Programming (4/6 - 4/10)",
+    "text": "Week 11: Ethics and Programming (4/6 - 4/10)\n\nMonday, 4/6Wednesday, 4/8Friday, 4/10\n\n\nLecture #19: Data Ethics\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #20: Testing, Debugging, and AI\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLab #8: Algorithms"
+  },
+  {
+    "objectID": "schedule.html#week-12-spatial-thinking-413---417",
+    "href": "schedule.html#week-12-spatial-thinking-413---417",
+    "title": "Schedule",
+    "section": "Week 12: Spatial Thinking (4/13 - 4/17)",
+    "text": "Week 12: Spatial Thinking (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15Friday, 4/17\n\n\nLecture #21: Spatial Thinking\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #22: Lying with Maps\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLab #9: Point Mapping"
+  },
+  {
+    "objectID": "schedule.html#week-13-spatial-thinking-420---424",
+    "href": "schedule.html#week-13-spatial-thinking-420---424",
+    "title": "Schedule",
+    "section": "Week 13: Spatial Thinking (4/20 - 4/24)",
+    "text": "Week 13: Spatial Thinking (4/20 - 4/24)\n\nMonday, 4/20Wednesday, 4/22Friday, 4/24\n\n\nLecture #23: Project Time\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #24: Polygon Mapping\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLab #10: Polygon Mapping"
+  },
+  {
+    "objectID": "schedule.html#week-14-presentations-apis-review-427---51",
+    "href": "schedule.html#week-14-presentations-apis-review-427---51",
+    "title": "Schedule",
+    "section": "Week 14: Presentations, APIs, Review (4/27 - 5/1)",
+    "text": "Week 14: Presentations, APIs, Review (4/27 - 5/1)\n\nMonday, 4/27Wednesday, 4/29Friday, 5/1\n\n\nProject #2 Presentations\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #25: APIs and Review\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLecture #26: Review\n\n\n\nPresentations 25: APIs, Review 26: Review"
+  },
+  {
+    "objectID": "schedule.html#finals-52---59",
+    "href": "schedule.html#finals-52---59",
+    "title": "Schedule",
+    "section": "Finals: (5/2 - 5/9)",
+    "text": "Finals: (5/2 - 5/9)\nFinal"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#for-wednesday-and-beyond",
+    "href": "lectures/w1l1_intro.html#for-wednesday-and-beyond",
+    "title": "Introductions",
+    "section": "For Wednesday and beyond",
+    "text": "For Wednesday and beyond\n\nNavigate the course website\nRead through the syllabus\nComplete the pre-course survey and quiz\n\nDue Wednesday at 11:59pm, link on website under Week 1\n\nJoin the Slack, Perusall, and GitHub classroom sites\nRun through the tech setup\n\nR and RStudio"
+  }
+]

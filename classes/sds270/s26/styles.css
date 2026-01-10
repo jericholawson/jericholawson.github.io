@@ -1,0 +1,22 @@
+/* css styles */
+
+/* Navbar background */
+.navbar {
+  background-color: #4AA4DE !important;  /* dark blue/gray */
+}
+
+/* Navbar text color */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #1F65CC !important;  /* orange on hover */
+}
+
+/* Hover effect */
+.paddedmain {
+  padding: 0in 0.5in 0.5in 0.5in; /* top right bottom left */
+}
