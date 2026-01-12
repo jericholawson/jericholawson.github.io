@@ -60,7 +60,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\n\n\nLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\n\n\nLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm) –&gt;\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm) –&gt;\nTech Setup (due Wednesday, 2/1 at 11:59pm) –&gt;\nLab #1 (due Wednesday, 2/1 at 11:59pm) –&gt;\n\nTemplate"
   },
   {
     "objectID": "schedule.html#week-1-introduction-126---130",
@@ -256,7 +256,7 @@
     "href": "schedule.html#week-1-what-is-data-science-126---130",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\n\n\nLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\n\n\nLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm) –&gt;\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm) –&gt;\nTech Setup (due Wednesday, 2/1 at 11:59pm) –&gt;\nLab #1 (due Wednesday, 2/1 at 11:59pm) –&gt;\n\nTemplate"
   },
   {
     "objectID": "schedule.html#week-2-what-is-r-and-github-22---26",
@@ -415,42 +415,42 @@
   {
     "objectID": "resources/tech-setup.html",
     "href": "resources/tech-setup.html",
-    "title": "Tech Setup",
+    "title": "Tech Setup (2 pts)",
     "section": "",
     "text": "WarningWarning\n\n\n\nUpdates to this document are indicated in red."
   },
   {
     "objectID": "resources/tech-setup.html#introduction",
     "href": "resources/tech-setup.html#introduction",
-    "title": "Tech Setup",
+    "title": "Tech Setup (2 pts)",
     "section": "Introduction",
     "text": "Introduction\nYou will be setting up all software and applications that are needed to complete and submit assignments of various forms in SDS 192. We will set up the following tools in this setup:\n\nSlack\nPerusall\nR/RStudio\nGitHub Classroom\n\n\n\n\n\n\n\nTip\n\n\n\nAs you get everything set up, if you run into any hiccups along the way, there are many ways to get help:\n\nAsk questions in Slack. There will be a #techissues channel dedicated for this purpose.\n\nMake sure to be specific in your issue. Indicate which step you are stuck on and include any screenshots.\n\nFeel free to DM me on Slack or via email. With some more complex issues, I can provide some guidance.\nAsk about these issues in student hours or at the Spinelli Center."
   },
   {
     "objectID": "resources/tech-setup.html#slack",
     "href": "resources/tech-setup.html#slack",
-    "title": "Tech Setup",
+    "title": "Tech Setup (2 pts)",
     "section": "Slack",
     "text": "Slack\nSlack will be used as a discussion forum, in which you can ask and answer clarifying questions to the whole class, provide perspectives on situations discussed in lab assignments, and find out announcements about the class on a day-to-day basis.\nIf you run into hiccups with this part, Smith’s ITS department has some quick hints here.\nNonetheless, to set up Slack, you will do the following:\n\nAccept the Slack invitation via email from this course. Follow the directions in order to get into the course.\nYou will see some of the following channels below. Go to the #general channel, go to my “Welcome” post, and reply to the thread with a random fact of your choice.\n\n\n\n\n\n\n\nOptional, but recommended: Turn on notifications from this workspace (this should already be toggled, but double-check to be sure.) Also, you may be encouraged to download and install Slack on your laptops and phones."
   },
   {
     "objectID": "resources/tech-setup.html#perusall",
     "href": "resources/tech-setup.html#perusall",
-    "title": "Tech Setup",
+    "title": "Tech Setup (2 pts)",
     "section": "Perusall",
     "text": "Perusall\nPerusall will be used for all reading assignments, in which you will annotate and comment on particular items from weekly readings.\nTo set up Perusall, you will do the following:\n\nUse the following link to join the Perusall course: link\nCreate a new account. You can do so by signing-in through Google with your smith.edu email address or creating a traditional account with your smith.edu email address.\nGo to Assignments and go to the Test Assignment. You will create one annotation in this assignment. Once you’ve done so, you’re good to go.\n\nNote: Let me know if you are having difficulties accessing Perusall throughout the semester."
   },
   {
     "objectID": "resources/tech-setup.html#r-and-rstudio",
     "href": "resources/tech-setup.html#r-and-rstudio",
-    "title": "Tech Setup",
+    "title": "Tech Setup (2 pts)",
     "section": "R and RStudio",
     "text": "R and RStudio\nR and RStudio will collectively make up the coding tools we will use to run through data science examples and assignments. R is the coding language that many statisticians and data scientists use to generate data visualizations, complete data wrangling, and run analyses. RStudio is the application that we use to interact with R, formally known as an IDE (i.e. Integrated Development Environment). We will use RStudio particularly when writing R code and walking through problems.\nWe will need to download and install R and RStudio onto our laptops. If you are running a web-based operating system (e.g. ChromeOS), you will have to use Posit Cloud to run R. Instructions to use Posit Cloud can be seen at the bottom of this section.\nFor everyone else (e.g. Windows, Mac, Linux), you will download and install R and RStudio using these instructions:\n\nGo to the following link here.\nInstall R first by clicking on “Download and Install R”, which can be found on the left side of the page.\nYou will be redirected to https://cran.rstudio.com/.\n\nWindows: Click on the link to “Download R for Windows”, choose “install R for the first time”, then choose “Download R 4.5.2 for Windows”.\nMacOS: Click “Download R for (Mac) OS X”. Download the install package for version R-4.5.2. Read the information carefully to determine which of the two versions to download.\nLinux: Click on the link to “Download R for Linux”. You will need to choose the version of Linux that corresponds to your installation. Versions are available for Debian, RedHat, SUSE, and Ubuntu.\n\nOnce the R file has been downloaded, please install R by opening the file. Follow all prompts as necessary, keeping things as defaulted as possible.\nGo back to the Posit webpage and follow step 2 on the page by clicking “Download RStudio Desktop for ____”. Once downloaded, install RStudio by opening the file. Follow all prompts as necessary.\n\nFor those using Posit Cloud:\n\nClick the Login button located at the top-right corner of the screen.\nSign-in using either Google or GitHub.\n\nIf you have trouble installing and downloading R/RStudio, we will have some time at the beginning of the first lab to walk through any issues you all have."
   },
   {
     "objectID": "resources/tech-setup.html#git-github-and-github-classroom",
     "href": "resources/tech-setup.html#git-github-and-github-classroom",
-    "title": "Tech Setup",
+    "title": "Tech Setup (2 pts)",
     "section": "git, GitHub, and GitHub Classroom",
     "text": "git, GitHub, and GitHub Classroom\nWe will be using git commands, GitHub, and GitHub classroom to collaborate with others on coding and projects, submit coding-relative activities and assignments, and get familiar with data science workflows.\nTo differentiate between the terms, when referring to “git”, this refers to the software and commands associated with tracking changes in files during software development. The actions “push”, “pull”, “commit”, and others will pop up and we will discuss these in detail throughout the semester. GitHub refers to the application that utilizes the git system to aid in these processes. GitHub Classroom is a special use of GitHub that will allow for specific repositories to be linked to our classroom.\nA few actions need to happen to set these items up, which you’ll see in the subsections below.\n\nSetting Up Your R Environment\nIf you have any troubles, you can use the Happy Git with R textbook for assistance.\n\nGo to GitHub and create a GitHub account, preferably with your smith.edu account. Setup account details.\nOpen RStudio on your laptop.\nCheck to ensure you have git installed by opening RStudio and clicking on Tools &gt; Global Options &gt; Git/SVN tab. Check the top of the pane for a field for the Git executable. It should say something like: “/usr/bin/git” or “C:/Program Files/Git/”. If it says “(Not Found)” git is not installed.\nIn the R console (bottom-left corner), you will input and hit Enter for each of these lines of code (replace what it is in the quotations with your info):\n\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\nuse_git_config(user.name = \"PUT GITHUB USERNAME HERE\", user.email = \"PUT GITHUB EMAIL HERE\")\n\n\nPut the following line of code in the console:\n\n\ncreate_github_token()\n\nDefine a name for the token and set the expiration date to be 150 days from today’s date. Leave all other settings the same and generate the token.\nOnce done, please save the token in some fashion. You will not see this token again once you leave the webpage.\n\nReturn to RStudio and run the following lines of code in the console:\n\n\nlibrary(gitcreds)\ngitcreds_set()\n\nWhen prompted for the token, paste the token you created into the console and hit Enter.\nIf you are needing additional assistance, please use the following videos:\n\nConfiguring git\nPersonal Access Token (PAT)\nStoring PAT\n\n\n\nSetting Up GitHub Classroom and Future Repositories\nYour current and future RStudio environments are now linked to your GitHub account, providing you access to repositories on GitHub itself. With this in mind, we can now replicate repositories from GitHub in a process called cloning.\n\nUse the following link below to access the test repository from GitHub Classroom:\n\nhttps://classroom.github.com/a/_arMNRWC\n\n\nYou will go through all necessary prompts. Feel free to use this video as a resource: https://www.youtube.com/watch?v=lsQ48kn-uD0\n\nCopy the URL for your SDS 192 Lab GitHub repo. It should look like the following link:\n\nhttps://github.com/sds192lawson/tech-setup-repository-YOUR_USERNAME\n\nGo back to RStudio. At the top-left corner, click on File &gt; New Project &gt; Version Control &gt; git.\n\nPaste the URL into the first field, type a simple name for the folder in the second field, and choose an appropriate directory on your computer to house the repository. Then, click Create Project.\n\nInstall the rmarkdown package in RStudio by entering the following lines of code in the console.\n\n\ninstall.packages(\"rmarkdown\")\nlibrary(rmarkdown)\n\n\nOn the initial install, the Files tab will be in the lower right hand corner of RStudio. Open practice.qmd, and then follow the prompts in that file. Click Save.\nWe will now pull, commit, and push changes to the remote repository on GitHub. To do so, go to the Git tab on the top-right corner. From there,\n\nClick on the blue downward arrow, which pulls updates from the remote repository. This ensures we have the most recent updates.\nClick on the stacked checkmark in the same area, which will allow you to commit changes to the remote repository. Stage each file in the left column by clicking on the checkbox and add a message in the right column that briefly specifies what changes you’ve made to the repository. Click Commit thereafter.\nClick on the green upward area, which pushes updates to the remote repository. A window will pop up, showing the status of the push. If successful, you should see those updated files in your GitHub repository. You can use the URL from step 8 to verify.\n\nRepeat steps 7-9 twice, each for the following two repositories you will use for lecture activities and lab assignments respectively:\n\nActivities Repo: https://classroom.github.com/a/V5LWa0K6\nLab Repo: https://classroom.github.com/a/vO0Mut-V\n\n\nIf you are needing additional assistance, please use the following videos:\n\nConfiguring RStudio Projects\nCommitting Files\nPushing Files"
   },
