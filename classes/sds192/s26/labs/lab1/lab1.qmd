@@ -1,0 +1,94 @@
+---
+title: 'Lab #1: R and Understanding Datasets (30 pts)'
+author: "YOUR NAME HERE"
+format:
+  html:
+    embed-resources: true
+editor: source
+knitr:
+  opts_chunk:
+    message: false
+---
+
+## Questions
+
+::: {.callout-important}
+###### Question 1 (5 pts)
+See if you can identify a unique key for this dataset. Write some lines of code to determine whether the column you've identified can act as unique key for the data. Hint: You need to check whether the values in the column ever repeat.
+
+
+```{r}
+# Write code to calculate number of rows in scorecard
+
+# Write code to calculate the number of unique values in the column you've identified as a unique key 
+
+# Do these numbers match?
+```
+
+:::
+
+::: {.callout-important}
+###### Question 2 (5 pts)
+At this point, you've probably figured out that each row in this dataset is a higher education institution. However, there are many different ways that we can define higher education institutions, and that will impact what gets included and excluded in our data. Referencing the Technical Documentation, locate a definition for the unit of observation in this dataset. What institutions are included, and what institutions are excluded? Summarize a definition below.
+
+Replace and write here.
+
+:::
+
+::: {.callout-important}
+
+###### Question 3 (5 pts)
+For each of the variable names in the `scorecard` data frame, look up the associated name in the data dictionary. You will need to search for the variable name in the sixth column of the data dictionary (I recommend using Ctrl-F to quickly locate the variable name in the spreadsheet.) Once you've found the variable name, reference column 1 to determine what this variable means, and reference columns 7 and 8 to see what possible values will appear in that column.
+
+Identify one nominal variable, one ordinal variable, one discrete variable, and one continuous variable in `scorecard` and list their variable names below. Then uncomment the lines below and use the `typeof()` function to see how `R` determined their data types. Did any surprise you?
+
+```{r}
+#typeof(scorecard$_____)
+#typeof(scorecard$_____)
+#typeof(scorecard$_____)
+#typeof(scorecard$_____)
+```
+
+:::
+
+::: {.callout-important}
+###### Question 4 (5 pts)
+Write code below to recode the `admcon7` variable and store the results in a new variable in `scorecard` called `admcon7_text`. You'll need to look up the values in the data dictionary. If you've done this correctly, running this code should produce a barplot that displays multiple bars.
+
+```{r}
+#| eval: false
+#| code-fold: false
+scorecard$admcon7_text <-
+  recode(
+    scorecard$admcon7, 
+    #Fill replacements here
+    .default = NA_character_
+  )
+
+ggplot(scorecard, aes(x = admcon7_text)) +
+  geom_bar()
+```
+
+:::
+
+::: {.callout-important}
+
+###### Question 5 (5 pts)
+In a code chunk below, calculate the number of missing values in both the `costt4_a` and the `costt4_p` columns. Reference the NOTES column in the data dictionary to determine why there are so many `NA` values in these columns. Add a comment to the code chunk below, explaining the reason for missing values in these columns.
+
+```{r}
+# Write code here
+
+# Add comment here
+```
+
+:::
+
+::: {.callout-important}
+
+###### Question 6 (5 pts)
+
+Referencing the College Scorecard data documentation, see if you can determine which students are included in calculations of earnings and debt. How might the data’s coverage bias the values that get reported? What might be the social consequences of these biases? Share your ideas on our discussions Slack channel.
+
+:::
+
