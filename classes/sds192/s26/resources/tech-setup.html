@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jericho Lawson">
-<meta name="dcterms.date" content="2026-01-10">
+<meta name="dcterms.date" content="2026-01-12">
 
 <title>Tech Setup – SDS 192: Introduction to Data Science, Spring 2026</title>
 <style>
@@ -176,7 +176,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#r-and-rstudio" id="toc-r-and-rstudio" class="nav-link" data-scroll-target="#r-and-rstudio">R and RStudio</a></li>
   <li><a href="#git-github-and-github-classroom" id="toc-git-github-and-github-classroom" class="nav-link" data-scroll-target="#git-github-and-github-classroom">git, GitHub, and GitHub Classroom</a>
   <ul class="collapse">
-  <li><a href="#setting-up-your-r-environment" id="toc-setting-up-your-r-environment" class="nav-link" data-scroll-target="#setting-up-your-r-environment">Setting up your R Environment</a></li>
+  <li><a href="#setting-up-your-r-environment" id="toc-setting-up-your-r-environment" class="nav-link" data-scroll-target="#setting-up-your-r-environment">Setting Up Your R Environment</a></li>
+  <li><a href="#setting-up-github-classroom-and-future-repositories" id="toc-setting-up-github-classroom-and-future-repositories" class="nav-link" data-scroll-target="#setting-up-github-classroom-and-future-repositories">Setting Up GitHub Classroom and Future Repositories</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -204,7 +205,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 10, 2026</p>
+      <p class="date">January 12, 2026</p>
     </div>
   </div>
   
@@ -269,7 +270,11 @@ Tip
 <li>Accept the Slack invitation via email from this course. Follow the directions in order to get into the course.</li>
 <li>You will see some of the following channels below. Go to the #general channel, go to my “Welcome” post, and reply to the thread with a random fact of your choice.</li>
 </ol>
-<p><img src="images/slackchannels.png" class="img-fluid">{fig-align=“center”, fig-width=“60%”}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/slackchannels.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 <ol start="3" type="1">
 <li><em>Optional, but recommended:</em> Turn on notifications from this workspace (this should already be toggled, but double-check to be sure.) Also, you may be encouraged to download and install Slack on your laptops and phones.</li>
 </ol>
@@ -315,75 +320,87 @@ Tip
 <p>To differentiate between the terms, when referring to “git”, this refers to the software and commands associated with tracking changes in files during software development. The actions “push”, “pull”, “commit”, and others will pop up and we will discuss these in detail throughout the semester. GitHub refers to the application that utilizes the git system to aid in these processes. GitHub Classroom is a special use of GitHub that will allow for specific repositories to be linked to our classroom.</p>
 <p>A few actions need to happen to set these items up, which you’ll see in the subsections below.</p>
 <section id="setting-up-your-r-environment" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-your-r-environment">Setting up your R Environment</h3>
+<h3 class="anchored" data-anchor-id="setting-up-your-r-environment">Setting Up Your R Environment</h3>
 <p>If you have any troubles, you can use the <a href="https://happygitwithr.com/">Happy Git with R</a> textbook for assistance.</p>
 <ol type="1">
-<li>Go to GitHub and create a GitHub account, preferably with your smith.edu account. Setup account details.</li>
-<li>Open RStudio on your laptop.</li>
-<li>Check to ensure you have git installed by opening RStudio and clicking on <code>Tools &gt; Global Options &gt; Git/SVN</code> tab. Check the top of the pane for a field for the Git executable. It should say something like: “/usr/bin/git” or “C:/Program Files/Git/”. If it says “(Not Found)” git is not installed.</li>
-<li>In the R console (bottom-left corner), you will input and hit Enter for each of these lines of code (replace what it is in the quotations with your info):</li>
+<li><p>Go to GitHub and create a GitHub account, preferably with your smith.edu account. Setup account details.</p></li>
+<li><p>Open RStudio on your laptop.</p></li>
+<li><p>Check to ensure you have git installed by opening RStudio and clicking on <code>Tools &gt; Global Options &gt; Git/SVN</code> tab. Check the top of the pane for a field for the Git executable. It should say something like: “/usr/bin/git” or “C:/Program Files/Git/”. If it says “(Not Found)” git is not installed.</p></li>
+<li><p>In the R console (bottom-left corner), you will input and hit Enter for each of these lines of code (replace what it is in the quotations with your info):</p></li>
 </ol>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"usethis"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"PUT GITHUB USERNAME HERE"</span>, <span class="at">user.email =</span> <span class="st">"PUT GITHUB EMAIL HERE"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<!-- <p><a href="https://muse.ai/v/JLaUt3v-Configure-Git">Edit gitconfig file</a> from David Keyes.</p> -->
-<p>HEEEEEEEEEEEEEEEEEERE</p>
+<ol start="5" type="1">
+<li>Put the following line of code in the console:</li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_github_token</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Define a name for the token and set the expiration date to be 150 days from today’s date. Leave all other settings the same and generate the token.</p>
+<p>Once done, please save the token in some fashion. You will not see this token again once you leave the webpage.</p>
 <ol start="6" type="1">
-<li>Create a personal access token by following these instructions, and <strong>be absolutely, positively, undeniably sure to set the expiration to 150 days</strong>:</li>
+<li>Return to RStudio and run the following lines of code in the console:</li>
 </ol>
-<p>
-<a href="https://muse.ai/v/evn3xvX-Create-a-Personal-Access-Token-PAT-on-GitHub">Create a Personal Access Token (PAT) on GitHub</a> from David Keyes.
-</p>
-<ol start="7" type="1">
-<li>Store your personal access token by following these instructions:</li>
-</ol>
-<p>
-<a href="https://muse.ai/v/NUGdUDd-Store-Personal-Access-Token-to-Connect-RStudio-and-GitHub">Store Personal Access Token to Connect RStudio and GitHub</a> from David Keyes.
-</p>
-<ol start="8" type="1">
-<li>Use the following link below to access the lab repository from GitHub Classroom:
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gitcreds)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gitcreds_set</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>When prompted for the token, paste the token you created into the console and hit Enter.</p>
+<p>If you are needing additional assistance, please use the following videos:</p>
 <ul>
-<li>For 01 students: <a href="https://classroom.github.com/a/-_yD9jiy">https://classroom.github.com/a/-_yD9jiy</a></li>
-<li>For 02 students: <a href="https://classroom.github.com/a/UVCt_nG1">https://classroom.github.com/a/UVCt_nG1</a></li>
+<li><a href="https://muse.ai/v/JLaUt3v-Configure-Git">Configuring git</a></li>
+<li><a href="https://muse.ai/v/evn3xvX-Create-a-Personal-Access-Token-PAT-on-GitHub">Personal Access Token (PAT)</a></li>
+<li><a href="https://muse.ai/v/NUGdUDd-Store-Personal-Access-Token-to-Connect-RStudio-and-GitHub">Storing PAT</a></li>
+</ul>
+</section>
+<section id="setting-up-github-classroom-and-future-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-github-classroom-and-future-repositories">Setting Up GitHub Classroom and Future Repositories</h3>
+<p>Your current and future RStudio environments are now linked to your GitHub account, providing you access to repositories on GitHub itself. With this in mind, we can now replicate repositories from GitHub in a process called <strong>cloning</strong>.</p>
+<ol start="7" type="1">
+<li>Use the following link below to access the test repository from GitHub Classroom:
+<ul>
+<li><a href="https://classroom.github.com/a/_arMNRWC">https://classroom.github.com/a/_arMNRWC</a></li>
 </ul></li>
 </ol>
 <p>You will go through all necessary prompts. Feel free to use this video as a resource: <a href="https://www.youtube.com/watch?v=lsQ48kn-uD0">https://www.youtube.com/watch?v=lsQ48kn-uD0</a></p>
-<ol start="9" type="1">
-<li>Copy the URL for your SDS 192 Lab GitHub repo. <span style="color:red;">It should look like one of the following two links:</span></li>
-</ol>
+<ol start="8" type="1">
+<li>Copy the URL for your SDS 192 Lab GitHub repo. It should look like the following link:
 <ul>
-<li>https://github.com/sds192lawson/sds192lawson-f25-YOURSECTION-lab-submission-repository-lab0-YOUR_USER_NAME</li>
-<li><span style="color:red;">https://github.com/sds192lawson/lab-submission-repository-YOUR_USER_NAME</span></li>
-</ul>
+<li>https://github.com/sds192lawson/tech-setup-repository-YOUR_USERNAME</li>
+</ul></li>
+<li>Go back to RStudio. At the top-left corner, click on File &gt; New Project &gt; Version Control &gt; git.</li>
+</ol>
+<p>Paste the URL into the first field, type a simple name for the folder in the second field, and choose an appropriate directory on your computer to house the repository. Then, click Create Project.</p>
 <ol start="10" type="1">
-<li>Create a project in RStudio from this GitHub repo by following the instructions starting at 26 seconds of this video:</li>
+<li>Install the <code>rmarkdown</code> package in RStudio by entering the following lines of code in the console.</li>
 </ol>
-<p>
-<a href="https://muse.ai/v/Way9iir-How-to-Connect-RStudio-Projects-with-GitHub-Repositories-GitHub-First">How to Connect RStudio Projects with GitHub Repositories: GitHub First</a> from David Keyes.
-</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rmarkdown)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <ol start="11" type="1">
-<li>Install the rmarkdown package in RStudio by entering the following lines of code in the Console Pane of RStudio (lower left hand corer on initial install).</li>
+<li><p>On the initial install, the Files tab will be in the lower right hand corner of RStudio. Open practice.qmd, and then follow the prompts in that file. Click Save.</p></li>
+<li><p>We will now pull, commit, and push changes to the remote repository on GitHub. To do so, go to the Git tab on the top-right corner. From there,</p>
+<ul>
+<li>Click on the blue downward arrow, which <em>pulls</em> updates from the remote repository. This ensures we have the most recent updates.</li>
+<li>Click on the stacked checkmark in the same area, which will allow you to <em>commit</em> changes to the remote repository. <em>Stage</em> each file in the left column by clicking on the checkbox and add a message in the right column that briefly specifies what changes you’ve made to the repository. Click Commit thereafter.</li>
+<li>Click on the green upward area, which <em>pushes</em> updates to the remote repository. A window will pop up, showing the status of the push. If successful, you should see those updated files in your GitHub repository. You can use the URL from step 8 to verify.</li>
+</ul></li>
+<li><p>Repeat steps 7-9 twice, each for the following two repositories you will use for lecture activities and lab assignments respectively:</p>
+<ul>
+<li>Activities Repo: <a href="https://classroom.github.com/a/V5LWa0K6">https://classroom.github.com/a/V5LWa0K6</a></li>
+<li>Lab Repo: <a href="https://classroom.github.com/a/vO0Mut-V">https://classroom.github.com/a/vO0Mut-V</a></li>
+</ul></li>
 </ol>
-<pre><code>install.packages("rmarkdown")
-library(rmarkdown)</code></pre>
-<ol start="12" type="1">
-<li><p>On the initial install, the Files tab will be in the lower right hand corner of RStudio. Open lab0.qmd, and then follow the prompt in that file. Click Save.</p></li>
-<li><p>Commit your code by following the instructions in this video starting at 14 seconds:</p></li>
-</ol>
-<p>
-<a href="https://muse.ai/v/GrXBX2t-Make-a-Commit-and-View-More-History">Make a Commit and View More History</a> from David Keyes.
-</p>
-<ol start="14" type="1">
-<li>Push your code to GitHub.com by following the instructions in this video starting at 27 seconds:</li>
-</ol>
-<p>
-<a href="https://muse.ai/v/UJmQE7i-General-Workflow-Push">General Workflow: Push</a> from David Keyes.
-</p>
-<ol start="15" type="1">
-<li>Navigate to <span style="color:red;">https://github.com/sds192lawson/lab-submission-repository-YOUR_USER_NAME</span> and double check to make sure the <span style="color:red;">lab0.qmd</span> file has your name listed.</li>
-</ol>
+<p>If you are needing additional assistance, please use the following videos:</p>
+<ul>
+<li><a href="https://muse.ai/v/Way9iir-How-to-Connect-RStudio-Projects-with-GitHub-Repositories-GitHub-First">Configuring RStudio Projects</a></li>
+<li><a href="https://muse.ai/v/GrXBX2t-Make-a-Commit-and-View-More-History">Committing Files</a></li>
+<li><a href="https://muse.ai/v/UJmQE7i-General-Workflow-Push">Pushing Files</a></li>
+</ul>
 
 
 </section>
