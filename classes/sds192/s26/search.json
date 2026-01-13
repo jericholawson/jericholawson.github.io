@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "SDS 192: Introduction to Data Science",
     "section": "",
-    "text": "This website is the central hub for all materials related to this iteration of SDS 192. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+    "text": "This website is the central hub for all materials related to this iteration of SDS 192. Use the links on the right-side of the page to access particular content.\n\n\nSource: xkcd"
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "SDS 192: Introduction to Data Science",
     "section": "",
-    "text": "This website is the central hub for all materials related to this iteration of SDS 192. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+    "text": "This website is the central hub for all materials related to this iteration of SDS 192. Use the links on the right-side of the page to access particular content.\n\n\nSource: xkcd"
   },
   {
     "objectID": "syllabus.html",
@@ -60,7 +60,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\n\n\nLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm) –&gt;\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm) –&gt;\nTech Setup (due Wednesday, 2/1 at 11:59pm) –&gt;\nLab #1 (due Wednesday, 2/1 at 11:59pm) –&gt;\n\nTemplate"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides + Activity\n\n\n\nLecture #2: Intro to Data\n\nSlides\nActivity\n\n\n\nLab #1:  - \n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-1-introduction-126---130",
@@ -256,7 +256,7 @@
     "href": "schedule.html#week-1-what-is-data-science-126---130",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides\n\n\n\nLecture #2: Intro to Data\n\nSlides\n\n\n\nLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm) –&gt;\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm) –&gt;\nTech Setup (due Wednesday, 2/1 at 11:59pm) –&gt;\nLab #1 (due Wednesday, 2/1 at 11:59pm) –&gt;\n\nTemplate"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\nLecture #1: Introduction\n\nSlides + Activity\n\n\n\nLecture #2: Intro to Data\n\nSlides\nActivity\n\n\n\nLab #1:  - \n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-2-what-is-r-and-github-22---26",
@@ -509,5 +509,131 @@
     "title": "Lab #1: R and Understanding Datasets (30 pts)",
     "section": "Submission",
     "text": "Submission\n\nWhen you are done, save your .qmd file in RStudio in your lab-repo project.\nStage, commit, and push your file in the Git pane. Refer to steps from the Tech Setup assignment for assistance.\nNavigate back to GitHub and click on the .qmd files to make sure you see your changes to the files there. If you don’t see the changes there, I won’t see them either!"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#reminders",
+    "href": "lectures/w1l2_data.html#reminders",
+    "title": "Datasets",
+    "section": "Reminders",
+    "text": "Reminders\n\nTech setup\n\nComponents due tonight at 11:59pm\nImportant to do before Friday’s first lab"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#from-survey",
+    "href": "lectures/w1l2_data.html#from-survey",
+    "title": "Datasets",
+    "section": "From survey",
+    "text": "From survey\n\nLots of practice in RStudio in class\n\nDemos and time in class to work with R\n\nBetter familiarity with git commands\n\nTech setup will be a warmup\n\nLooking forward to…\n\nRStudio, AI, working with big/complex data\n\nNot looking forward to…\n\nCoding, readings, workload"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#from-survey-1",
+    "href": "lectures/w1l2_data.html#from-survey-1",
+    "title": "Datasets",
+    "section": "From survey",
+    "text": "From survey\n\nHoping to get out of this class…\n\nR, data analysis skills, datasets\n\nQuestions to me…\n\nWhy stats/data science?\nFootball team?\nMy initial struggles with R?"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#what-is-a-dataset",
+    "href": "lectures/w1l2_data.html#what-is-a-dataset",
+    "title": "Datasets",
+    "section": "What is a dataset?",
+    "text": "What is a dataset?\n\nSource: CA Housing Data"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#what-is-a-dataset-1",
+    "href": "lectures/w1l2_data.html#what-is-a-dataset-1",
+    "title": "Datasets",
+    "section": "What is a dataset?",
+    "text": "What is a dataset?\n\nCollection of data points organized into a structured format\nIn this course, we will mainly work with datasets that are structured in a two-dimensional format\n\nThese are referred to as rectangular datasets\n\nRectangular datasets are organized into a series of rows and columns; ideally:\n\nWe refer to rows as observations\nWe refer to columns as variables"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#what-is-a-dataset-cont.",
+    "href": "lectures/w1l2_data.html#what-is-a-dataset-cont.",
+    "title": "Datasets",
+    "section": "What is a dataset? (cont.)",
+    "text": "What is a dataset? (cont.)\n\nGrolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/."
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#collecting-and-organizing-data",
+    "href": "lectures/w1l2_data.html#collecting-and-organizing-data",
+    "title": "Datasets",
+    "section": "Collecting and organizing data",
+    "text": "Collecting and organizing data\n\nInvolves a research question we’re trying to answer\n\ne.g. What factors are contributing to a decrease in a bird species?\nExperimental vs. observational\n\nDetermine a sample, observation units, and variables to gather\nIn most cases: can be formed into a rectangular format\n\nRows represent the observations\nColumns represent the variables"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#observations-vs.-variables-vs.-values",
+    "href": "lectures/w1l2_data.html#observations-vs.-variables-vs.-values",
+    "title": "Datasets",
+    "section": "Observations vs. Variables vs. Values",
+    "text": "Observations vs. Variables vs. Values\n\nGrolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/.\nObservationsVariablesValues\n\n\n\nObservations refer to individual units or cases of the data being collected.\n\nIf I was collecting data about each student in this course, one student would be an observation.\nIf I was collecting census data and aggregating it at the county level, one county would be an observation.\n\n\n\n\n\nVariables describe something about an observation.\n\nIf I was collecting data about each student in this course, ‘major’ might be one variable.\nIf I was collecting county-level census data, ‘population’ might be one variable.\nCan be categorical or numerical\n\n\n\n\n\nValues refer to the actual value associated with a variable for a given observation.\n\nIf I was collecting data about each student’s major in this course, one value might be SDS."
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#key-considerations-for-rectangular-datasets",
+    "href": "lectures/w1l2_data.html#key-considerations-for-rectangular-datasets",
+    "title": "Datasets",
+    "section": "Key Considerations for Rectangular Datasets",
+    "text": "Key Considerations for Rectangular Datasets\n\n\n\nAll rows in a rectangular dataset are of equal length.\nAll columns in a rectangular dataset are of equal length.\n\n\n\n\n\n\n\nUnderstanding Check\n\n\nLet’s say I have a rectangular dataset documenting student names and majors, and I was missing major information for one student. What would this look like in a rectangular dataset?\n\n\n\n\n\nGrolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/."
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#how-do-i-find-out-more-information-about-a-dataset",
+    "href": "lectures/w1l2_data.html#how-do-i-find-out-more-information-about-a-dataset",
+    "title": "Datasets",
+    "section": "How do I find out more information about a dataset?",
+    "text": "How do I find out more information about a dataset?\n\nMetadata can be referred to as “data about data”\nMetadata provides important contextual information to help us interpret a dataset.\nThere are two types of metadata associated with datasets:\n\n\nAdministrativeDescriptive\n\n\n\nAdministrative metadata tells us how a dataset is managed and its provenance, or the history of how it came to be in its current form:\n\nWho created it?\nWhen was it created?\nWhen was it last updated?\nWho is permitted to use it?\n\n\n\n\n\nDescriptive metadata tells us information about the contents of a dataset:\n\nWhat does each row refer to?\nWhat does each column refer to?\nWhat values might appear in each cell?"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#where-do-i-find-metadata-for-a-dataset",
+    "href": "lectures/w1l2_data.html#where-do-i-find-metadata-for-a-dataset",
+    "title": "Datasets",
+    "section": "Where do I find metadata for a dataset?",
+    "text": "Where do I find metadata for a dataset?\n\nOften times, metadata is recorded in a dataset codebook or data dictionary.\nThese documents provide definitions for the observations and variables in a dataset and tell you the accepted values for each variable.\nLet’s say that I have a dataset of student names, majors, and class years. A codebook or data dictionary might tell me that:\n\nEach row in the dataset refers to one student.\nThe ‘Class Year’ variable refers to “the year the student is expected to graduate.”\nPossible values for the ‘Major’ variable are Political Science, SDS, and Sociology."
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#types-of-variables",
+    "href": "lectures/w1l2_data.html#types-of-variables",
+    "title": "Datasets",
+    "section": "Types of variables",
+    "text": "Types of variables\nVariables can fall into one of two different types:\n\nCategorical: variable can be split into discrete groups/factors\n\nNominal: named or classified labels with no inherent order\nOrdinal: ordered labels\n\nNumerical: variable defined by a set of numbers\n\nDiscrete: countable\nContinuous: measured"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#types-of-variables-cont.",
+    "href": "lectures/w1l2_data.html#types-of-variables-cont.",
+    "title": "Datasets",
+    "section": "Types of variables (cont.)",
+    "text": "Types of variables (cont.)\n\nQuestion: Provide examples of each of the four sub-types of different variables."
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#group-activity-to-turn-in",
+    "href": "lectures/w1l2_data.html#group-activity-to-turn-in",
+    "title": "Datasets",
+    "section": "Group activity (to turn-in)",
+    "text": "Group activity (to turn-in)\n\nNavigate to the “Class #2: Activity” on the website\nWork in groups to answer the questions on a sheet of paper"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#for-wednesday",
+    "href": "lectures/w1l2_data.html#for-wednesday",
+    "title": "Datasets",
+    "section": "For Wednesday",
+    "text": "For Wednesday\n\nWork on Tech Setup\nWork on Problem Solving lab (optional)\nWednesday’s class: Basics of R"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#for-friday",
+    "href": "lectures/w1l2_data.html#for-friday",
+    "title": "Datasets",
+    "section": "For Friday",
+    "text": "For Friday\n\nWork on Tech Setup\nFriday’s class: Lab on R and Datasets"
+  },
+  {
+    "objectID": "lectures/w1l2_act.html",
+    "href": "lectures/w1l2_act.html",
+    "title": "Class #2: Datasets",
+    "section": "",
+    "text": "Today, we are going to work with a dataset that documents cases where NYC Urban Park Rangers respond to requests for animal assistance, relocation, and/or rescue. If you are unfamiliar with what an Urban Park Ranger does, you may want to check out this video!\n\n\n\nNavigate to the NYC Urban Park Ranger Animal Condition Response dataset.\nNote the information listed in the “About this Dataset” section. This is administrative metadata.\nNote the attachment in this section with the file name: UrbanParkRangerAnimalConditionResponse_DataDictionary_20181107.xlsx. This contains descriptive metadata for this dataset.\nClick on the ‘Data’ tab at the top of the page. You can now see the data as a rectangular dataset.\nAnswer the following questions on a sheet of paper in groups of 3-4:\n\n\nWhat is the unit of observation in this dataset? In other words, what does each row signify? How do you know?\nHow frequently is this dataset updated? How do you know?\nWhat are the possible values for the Species Status variable in this dataset? How do you know?\nWhat is the value at index [3, 3] in this dataset? How do you know?\nIdentify the index of one missing value in this dataset. How do you know?\nIdentify one nominal variable, one ordinal variable, one discrete variable, and one continuous variable.\n\n\nAs a preview of what you will be able to do in a few weeks, here is a visualization of the most commons species for which services are requested in NYC!\n\n\nlibrary(tidyverse)\nnyc_urban_ranger &lt;- \n  read_csv(\"https://data.cityofnewyork.us/api/views/fuhs-xmg2/rows.csv\",\n           name_repair = make.names)\n\nnyc_urban_ranger %&gt;%\n  group_by(Species.Description) %&gt;%\n  summarize(Count = sum(X..of.Animals)) %&gt;%\n  top_n(10, Count) %&gt;%\n  ggplot(aes(x = reorder(Species.Description, Count), y = Count)) +\n  geom_col() +\n  coord_flip() +\n  labs(title=\"Top 10 Most Common Species for which NYC Urban Park Rangers Assistance is Requested, 2018-2021\", x = \"Species\", y = \"Count\") +\n  theme_minimal() +\n  theme(plot.title = element_text(size=8))"
+  },
+  {
+    "objectID": "index.html#announcements",
+    "href": "index.html#announcements",
+    "title": "SDS 192: Introduction to Data Science",
+    "section": "Announcements",
+    "text": "Announcements\nTBD"
   }
 ]
