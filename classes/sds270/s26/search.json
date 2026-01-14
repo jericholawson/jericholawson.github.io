@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "SDS 270: Programming for Data Science in R",
     "section": "",
-    "text": "This website is the central hub for all materials related to this iteration of SDS 270. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+    "text": "This website is the central hub for all materials related to this iteration of SDS 270. Use the links on the right-side of the page to access particular content.\n\n\nSource: xkcd"
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "SDS 270: Programming for Data Science in R",
     "section": "",
-    "text": "This website is the central hub for all materials related to this iteration of SDS 270. Use the links on the right-side of the page to access particular content.\n\nOverviewScheduleResources\n\n\nSome text here.\n\n\nSome text here.\n\n\nSome text here."
+    "text": "This website is the central hub for all materials related to this iteration of SDS 270. Use the links on the right-side of the page to access particular content.\n\n\nSource: xkcd"
   },
   {
     "objectID": "syllabus.html",
@@ -838,5 +838,12 @@
     "title": "Lists",
     "section": "For Now and Monday:",
     "text": "For Now and Monday:\n\nComplete GitHub setup and survey if they’re not finished yet\nRead chapters 2, 4 of Advanced R before Monday’s class\nExpect first problem set to be released next week"
+  },
+  {
+    "objectID": "index.html#announcements",
+    "href": "index.html#announcements",
+    "title": "SDS 270: Programming for Data Science in R",
+    "section": "Announcements",
+    "text": "Announcements\nTBD"
   }
 ]

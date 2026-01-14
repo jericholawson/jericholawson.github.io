@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -141,8 +141,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -150,10 +151,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#grading-and-expectations" id="toc-grading-and-expectations" class="nav-link" data-scroll-target="#grading-and-expectations">Grading and Expectations</a>
   <ul class="collapse">
   <li><a href="#breakdown" id="toc-breakdown" class="nav-link" data-scroll-target="#breakdown">Breakdown</a></li>
-  <li><a href="#mw-classes-readings-activties-and-exercises-10" id="toc-mw-classes-readings-activties-and-exercises-10" class="nav-link" data-scroll-target="#mw-classes-readings-activties-and-exercises-10">MW Classes, Readings, Activties, and Exercises (10%)</a></li>
-  <li><a href="#friday-classes-and-labs-30" id="toc-friday-classes-and-labs-30" class="nav-link" data-scroll-target="#friday-classes-and-labs-30">Friday Classes and Labs (30%)</a></li>
-  <li><a href="#projects-30-total" id="toc-projects-30-total" class="nav-link" data-scroll-target="#projects-30-total">Projects (30% total)</a></li>
+  <li><a href="#classes-and-in-class-exercises-10" id="toc-classes-and-in-class-exercises-10" class="nav-link" data-scroll-target="#classes-and-in-class-exercises-10">Classes and In-Class Exercises (10%)</a></li>
+  <li><a href="#problem-sets-20-total" id="toc-problem-sets-20-total" class="nav-link" data-scroll-target="#problem-sets-20-total">Problem Sets (20% total)</a></li>
   <li><a href="#exams-30-total" id="toc-exams-30-total" class="nav-link" data-scroll-target="#exams-30-total">Exams (30% total)</a></li>
+  <li><a href="#package-40" id="toc-package-40" class="nav-link" data-scroll-target="#package-40">Package (40%)</a></li>
   </ul></li>
   <li><a href="#policies" id="toc-policies" class="nav-link" data-scroll-target="#policies">Policies</a>
   <ul class="collapse">
@@ -171,11 +172,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#course-outline" id="toc-course-outline" class="nav-link" data-scroll-target="#course-outline">Course Outline</a></li>
   </ul>
-</nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="syllabus-pdf.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -183,6 +180,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Syllabus</h1>
+<p class="subtitle lead">SDS 270: Programming for Data Science in R, Spring 2026</p>
 </div>
 
 
@@ -199,17 +197,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In this webpage, you will find the syllabus for this course (02).</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Contact</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Location/Time</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Description</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Learning Outcomes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Materials</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="columns">
-<div class="column" style="width:20%;">
-<p><img src="images/profile.jpg" class="img-fluid"></p>
-</div><div class="column" style="width:70%;">
 <ul>
 <li>Instructor: Jericho Lawson</li>
 <li>Email: <a href="mailto:jlawson01@smith.edu">jlawson01@smith.edu</a></li>
@@ -221,36 +214,29 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </div>
-</div>
-</div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <ul>
-<li>Mondays, 1:40 - 2:55pm in Sabin-Reed 301</li>
-<li>Wednesdays &amp; Fridays, 1:20 - 2:35pm in Sabin-Reed 301</li>
+<li>Mondays/Wednesdays, 10:50am - 12:05pm in Bass 002</li>
 </ul>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Data science involves applying a set of strategies to transform a recorded set of values into something from which we can glean knowledge and insight. This course will introduce you to concepts and methods from the field of data science, along with how to apply them in R. You will learn how to acquire, clean, wrangle, and visualize data. You will also learn best practices in data science workflows, such as code documentation and version control. Issues in data ethics will be addressed throughout the course.</p>
+<p>Advanced programming techniques for data science using R. This course is not about data analysis—rather, students will learn the R programming language at a deep level. Topics may include data structures, control flow, regular expressions, functions, environments, functional programming, object-oriented programming, debuggging, testing, version control, documentation, literate programming, code review, and package development. The major goal for the course is to contribute to a viable, collaborative, open-source, publishable R package. Prerequisite of SDS 192 and CSC 110/111, or equivalent.</p>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>By the end of this course, students will be able to do the following:</p>
 <ul>
-<li><strong>Data visualization</strong>: Create informative and clean visuals through various types of plots. Appropriate statistics and metrics are displayed. Use of base R and advanced libraries to generate plots (i.e.&nbsp;ggplot2).</li>
-<li><strong>Data wrangling</strong>: Develop techniques to properly use data in a workflow, which includes the transformation of data, data cleaning, and data joining. Students will also gather data in appropriate and ethical manners.</li>
-<li><strong>Workflow</strong>: Practice common tasks to working through particular data science problems, such as data retrieval, R programming, GitHub, and light statistics.</li>
-<li><strong>Data ethics</strong>: Identify best practices and ethical dilemmas that stem from data science work. This includes contextual thinking, environmental concerns, and intellectual property. Students will also develop ethical ways to use generative AI.</li>
+<li><strong>Write</strong> R code that uses various deep-level ideas, such as regex, functions, objects, and documentation.</li>
+<li><strong>Contribute</strong> to an open-source software project using version control.</li>
+<li><strong>Develop</strong> and <strong>debug</strong> sophisticated functions in R.</li>
+<li><strong>Create</strong> a robust, encapsulated software package in the R programming language.</li>
 </ul>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <section id="textbooks" class="level3">
 <h3 class="anchored" data-anchor-id="textbooks">Textbooks</h3>
 <ul>
-<li>Baumer, B. S., Kaplan, D. T., &amp; Horton, N. J. (2024). <em>Modern Data Science with R (3rd ed.)</em>. CRC Press. <a href="https://mdsr-book.github.io/mdsr3e/">https://mdsr-book.github.io/mdsr3e/</a></li>
-</ul>
-<p>Optional:</p>
-<ul>
-<li>Ismay, C., Kim A. Y., &amp; Valdivia A. (2025). <em>Statistical Inference via Data Science: A ModernDive into R and the Tidyverse (2nd ed.)</em>. CRC Press. <a href="https://moderndive.com/v2/">https://moderndive.com/v2/</a></li>
-<li>Irizarry, R. A. (2022). <em>Introduction to Data Science: Data Analysis and Prediction Algorithms with R</em>. CRC Press. <a href="https://rafalab.dfci.harvard.edu/dsbook-part-1/">https://rafalab.dfci.harvard.edu/dsbook-part-1/</a></li>
+<li>Wickham, H. (2014). <em>Advanced R (2nd ed.).</em> CRC Press. <a href="https://adv-r.hadley.nz/">https://adv-r.hadley.nz/</a></li>
+<li>Wickham, H., &amp; Bryan, J. (2023). <em>R Packages (2nd ed.).</em> O’Reilly Media. <a href="https://r-pkgs.org/">https://r-pkgs.org/</a></li>
 </ul>
 </section>
 <section id="technology" class="level3">
@@ -261,16 +247,9 @@ ul.task-list li input[type="checkbox"] {
 <li>For downloading/installing: <a href="https://posit.co/download/rstudio-desktop/">Instructions</a></li>
 </ul></li>
 <li>For assignment turn-ins: GitHub</li>
-<li>For discussion assignments: Perusall
-<ul>
-<li>For joining Perusall course: <a href="https://app.perusall.com/join/LAWSON-2BX49">To join</a>
-<ul>
-<li>Enrollment code: LAWSON-2BX49</li>
-</ul></li>
-</ul></li>
-<li>For course management: <a href="https://moodle.smith.edu/course/view.php?id=55487">Moodle</a>, but will be used seldomly</li>
-<li>For course materials: <a href="https://jericholawson.github.io/classes/sds192/s26/">This website</a></li>
-<li>For discussions and announcements: <a href="https://sds-192-02-202601.slack.com">Slack</a></li>
+<li>For course management: <a href="https://moodle.smith.edu/course/view.php?id=55496">Moodle</a>, but will be used seldomly</li>
+<li>For course materials: <a href="https://jericholawson.github.io/classes/sds270/s26/">This website</a></li>
+<li>For discussions and announcements: <a href="https://sds-270-01-202603.slack.com">Slack</a></li>
 </ul>
 </section>
 </div>
@@ -300,75 +279,84 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Readings, Activities, Problems</td>
+<td>In-Class Exercises</td>
 <td>10%</td>
-<td></td>
-<td>Projects (2)</td>
-<td>30%</td>
-</tr>
-<tr class="even">
-<td>Labs</td>
-<td>30%</td>
 <td></td>
 <td>Exams (2)</td>
 <td>30%</td>
+</tr>
+<tr class="even">
+<td>Problem Sets</td>
+<td>20%</td>
+<td></td>
+<td>Package</td>
+<td>40%</td>
 </tr>
 </tbody>
 </table>
 <p>A traditional grading system will be used here. Cumulative numerical averages of 90-100 are guaranteed at least an A-, 80-89 at least a B-, and 70-79 at least a C-. The exact ranges for letter grades will ultimately be determined at the end of the course.</p>
 </section>
-<section id="mw-classes-readings-activties-and-exercises-10" class="level3">
-<h3 class="anchored" data-anchor-id="mw-classes-readings-activties-and-exercises-10">MW Classes, Readings, Activties, and Exercises (10%)</h3>
-<p>Prior to the upcoming week, readings will be assigned through Perusall that prepare you for material that will be explored thereafter. The readings on Perusall will involve:</p>
-<ul>
-<li>Reading through the material</li>
-<li>Writing 2-4 annotations</li>
-<li>Highlighting one item you learned and one item that seems challenging</li>
-</ul>
-<p>These annotations will allow me to identify which concepts to focus on in more detail during the week. Generally, these items will be due on <strong>Sundays at 11:59pm</strong>, with no acceptance of late work. Readings will be graded on <strong>completion</strong>.</p>
-<p>During Mondays and Wednesday classes, we will go through mini-lectures, activities, and demos. Classes will be experiential, meaning that you will have the opportunity to apply concepts from class to activities, exercises, and investigations. Students are expected to participate during lecture by asking questions and working with other students. Additionally, it is required that you bring your laptop to class. Class activities will be administered often during lecture, and you will have until <strong>the end of lecture</strong> to turn them in through your GitHub submission repository. These activities will be graded based on <strong>completion and/or correctness.</strong></p>
-<p>On occasion, a reading exercise may be assigned on Wednesday for you to complete. Similar to the activities, these will be turned in through your GitHub submission repository by <strong>Thursdays at 11:59pm</strong>. These exercises will be graded based on <strong>completion and correctness</strong>.</p>
+<section id="classes-and-in-class-exercises-10" class="level3">
+<h3 class="anchored" data-anchor-id="classes-and-in-class-exercises-10">Classes and In-Class Exercises (10%)</h3>
+<p>Each class will consist of some form of the following: mini-lectures, demos, exercises, discussions, and package work time. Expect an experiential environment, where you will be working with code and concepts during the classes. As such, each student must <strong>bring their laptop to class.</strong></p>
+<p>Students are expected to participate during lecture by <strong>asking questions</strong> and <strong>working with other students.</strong> In-class activities will be submitted by the end of class through a GitHub repository and are graded for completion and accuracy. To complete these in-class activities, it is <strong>required</strong> that you show up for class unless extenuating circumstances apply.</p>
+<p>Weekly readings will be assigned to prepare you for content that will be talked about in class. Even though there will be no grade associated with these readings, it is <strong>strongly recommended</strong> to come to the following week’s classes with these readings completed.</p>
 </section>
-<section id="friday-classes-and-labs-30" class="level3">
-<h3 class="anchored" data-anchor-id="friday-classes-and-labs-30">Friday Classes and Labs (30%)</h3>
-<p>Friday’s classes are dedicated exclusively to <strong>labs</strong> unless otherwise stated. In these labs, you will have the opportunity to compile (no pun intended) what you’ve learned and work on a experiential assignment that showcases those skills. This will involve strong usage of R and GitHub. In earlier weeks, we will get you all familiar with the technical programs along with the workflow.</p>
-<p>Labs in this course introduce a data science skill by walking you through exploratory analysis of a dataset documenting a socially-relevant issue (such as racial profiling in policing, affordable housing, and pollution). Labs will be started in class on Fridays and completed for homework by <strong>Wednesdays at 11:59pm</strong>. If you finish a lab early, you are encouraged to help your classmates. Labs will be graded on both <strong>completion and correctness.</strong> Note that at the end of each lab, there will be a prompt asking you to consider some of the ethical considerations of the data analysis you just completed. You must respond to this prompt in Slack to earn full credit on the lab.</p>
-<p>All lab assignments will be submitted through your GitHub submission repository. You will submit assignments by pushing changes to template documents to a private GitHub repository. I will provide guidance on how to do this early in the semester.</p>
-</section>
-<section id="projects-30-total" class="level3">
-<h3 class="anchored" data-anchor-id="projects-30-total">Projects (30% total)</h3>
-<p>Two projects will be assigned throughout the semester. The projects are designed to test your ability to successfully complete course objectives as described earlier. The following two projects, along with their tentative due dates, are seen below:</p>
-<ul>
-<li>Project #1: Data Visualizations and GitHub: <strong>due Wednesday, 3/4 at 11:59pm</strong>
-<ul>
-<li>Create meaningful, informative, and clear visualizations that communicate information from the data and real-world issue.</li>
-<li>Configure an appropriate pipeline that funnels all relevant information, files, and summaries into a GitHub repository.</li>
-</ul></li>
-<li>Project #2: Workflow and Real-World Investigation: <strong>due Monday, 4/27 at 11:59pm</strong>
-<ul>
-<li>Complete a detailed, attentive workflow of an investigation related to a real-world issue with appropriate data and context.</li>
-<li>Present relevant information and code to various audiences in multiple formats, including a report, presentation, and demonstration.</li>
-</ul></li>
-</ul>
-<p>More details to come in later weeks.</p>
+<section id="problem-sets-20-total" class="level3">
+<h3 class="anchored" data-anchor-id="problem-sets-20-total">Problem Sets (20% total)</h3>
+<p>Problem sets will be assigned bi-weekly to provide practice related to the current topics. These problems will involve conceptual exploration of topics, as well as solving through extended problems that tie in multiple topics at once.</p>
+<p>Similar to the in-class activities, the problem sets will be turned in through a GitHub repository. Questions are graded based on accuracy.</p>
+<p><em>Grade drop:</em> Your lowest problem set grade will be dropped from your problem set total.</p>
 </section>
 <section id="exams-30-total" class="level3">
 <h3 class="anchored" data-anchor-id="exams-30-total">Exams (30% total)</h3>
-<p>Two exams will be administered during the course of the semester, which will include written and oral parts. The first exam will be administered in-class on <strong>Friday, 3/13</strong>, while the second exam will be administered during finals week as a self-scheduled exam. More details to come in later weeks.</p>
+<p>Two exams will be given out in-class to demonstrate your knowledge on the course content. The first exam will be a closed-note written exam, while the second exam will be an open-note, open-laptop exam. These exams may include an oral portion, where you will have to explain particular concepts in a conversation-style setting.</p>
+<p>Expect questions to be similar in vein to the problem sets.</p>
+</section>
+<section id="package-40" class="level3">
+<h3 class="anchored" data-anchor-id="package-40">Package (40%)</h3>
+<p>The overall objective of this course is to develop a new R package with a team of your choice. Throughout the second half of the course, you will receive feedback on the functionality, clarity, robustness, and readability of your code and documentation through a series of checkpoints.</p>
+<p>Despite the unique opportunity to create a package in R, it may seem daunting to do so at first. The checkpoints and mini-assignments will pace yourselves as we prepare for the final package. Beneath are the following:</p>
+<ul>
+<li><strong>Proposal and Outline</strong>: due Monday, 3/30 at 11:59pm
+<ul>
+<li>Develop a one-page proposal that summarizes the package you want to create and/or modify with appropriate motivations, references, and a course of action.</li>
+<li>Create an outline that mimics the potential description file you will ultimately develop.</li>
+</ul></li>
+<li><strong>Checkpoint #1</strong>: due Monday, 4/13 at 11:59pm
+<ul>
+<li>Develop an R package that meets minimum requirements.</li>
+</ul></li>
+<li><strong>Rehearsal</strong>: given during alloted times on Monday, 4/20
+<ul>
+<li>Prep for demonstration</li>
+</ul></li>
+<li><strong>Checkpoint #2</strong>: due Friday, 4/24 at 11:59pm
+<ul>
+<li>Develop an R package that advances on progress from the first checkpoint, including more functions, datasets, and/or descriptions.</li>
+</ul></li>
+<li><strong>Demonstration</strong>: given in-class on Wednesday, 4/29
+<ul>
+<li>Showcase and run through a 5-8 minute demonstration on your R package.</li>
+</ul></li>
+<li><strong>Whole package</strong>: due Wednesday, 5/6 at 11:59pm
+<ul>
+<li>Complete the R package and make any refinements.</li>
+</ul></li>
+</ul>
+<p>More details to come in later weeks.</p>
 </section>
 </section>
 <section id="policies" class="level2">
 <h2 class="anchored" data-anchor-id="policies">Policies</h2>
 <section id="preparation-and-attendance" class="level3">
 <h3 class="anchored" data-anchor-id="preparation-and-attendance">Preparation and Attendance</h3>
-<p>As a four-credit course that meets 4.5 hours per week, Smith expects students to dedicate at least 7.5 hours per week towards the course outside of class. The assignments, readings, and assessments are designed with this target in mind. Expect to read through lecture notes, examples, articles, and forums outside of class along with the assignments.</p>
-<p>Attending class is imperative to your learning and taking part in an active community. Attendance will be taken for each class period. However, things come up and you may not have the capacity to attend. As such, you will be able to miss <strong>3 classes</strong> with no penalty. After the third unexcused absence, your overall grade will drop by 1% for each class missed. Additional absences may be excused due to family/personal difficulties, sickness, or school or career-related activities; however, I will require some form of documentation for these absences. Please speak with your class dean or the <a href="https://www.smith.edu/your-campus/offices-services/accessibility-resource-center">Accessibility Resource Center</a> so that we can get documentation of your need.</p>
-<p>Do make every effort to arrive to class on time. If you happen/plan to arrive more than 10 minutes late, please inform me ahead of time. Any unexplained tardiness will result in a marked absence. If you must miss a class entirely, you should contact a peer to discuss what was missed.</p>
+<p>As a four-credit course that meets 4.5 hours per week, Smith College expects students to dedicate at least 7.5 hours per week towards the course outside of class. The assignments, readings, and assessments are designed with this target in mind. Expect to read through lecture notes, examples, articles, and forums outside of class along with the assignments.</p>
 </section>
 <section id="extensions" class="level3">
 <h3 class="anchored" data-anchor-id="extensions">Extensions</h3>
-<p>You will be granted <strong>2 free late days</strong> to use for lab assignments, with a maximum of one day used on each lab assignment. Additionally, you will be granted <strong>2 late days</strong> to use for final project submissions, with a maximum of two days used at a single time. No need to inform me that you intend to take these late days. Beyond this, late assignments will not be accepted without an accommodation from a class dean or from the ARC.</p>
-<p>Note that this policy does not apply to Perusall annotations, reading exercises, exams, or project checkpoints/proposals/presentations.</p>
+<p>You will be granted <strong>2 late days</strong> to use on problem sets, with a maximum of one day used on each problem set. Additionally, you will be granted <strong>2 late days</strong> to use for checkpoints during R package development (excluding the demonstration and whole package). No need to inform me that you intend to take these late days. Beyond this, late assignments will not be accepted without an accommodation from a class dean or from the ARC.</p>
+<p>Note that this policy does not apply to activities, readings, exams, or final package/presentation submission.</p>
 </section>
 <section id="academic-honesty" class="level3">
 <h3 class="anchored" data-anchor-id="academic-honesty">Academic Honesty</h3>
@@ -386,18 +374,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="generative-ai" class="level3">
 <h3 class="anchored" data-anchor-id="generative-ai">Generative AI</h3>
-<p>As mentioned in the <a href="https://www.smith.edu/your-campus/offices-services/dean-college/academic-integrity-board/academic-integrity-board-students">Academic Integrity Board</a>, the professor for each course decides whether and how students are allowed to use generative AI in a given course. For this specific course, any use of generative AI to complete assignments or produce content for this course is <strong>prohibited</strong>, unless otherwise stated in the assignment itself.</p>
-<p>As a foundational course, it is critical that you are able to think like a data scientist, which includes producing meaningful code, developing logical solutions to problem, and critiquing good results from the bad ones. While the use of generative AI can be beneficial at producing base-level code and providing insights, it comes at the detriment of your own critical thinking. The human element will be critical in succeeding in data science. If you don’t develop the skills to understand how the underlying code is composed/works, then you will not be prepared for this kind of work.</p>
-<p>Prohibited forms of generative AI usage include but are not limited to:</p>
+<p>As mentioned in the <a href="https://www.smith.edu/your-campus/offices-services/dean-college/academic-integrity-board/academic-integrity-board-students">Academic Integrity Board</a>, the professor for each course decides whether and how students are allowed to use generative AI in a given course. For this specific course, the use of generative AI to complete assignments or produce content for this course is on a <strong>assignment-by-assignment basis</strong>, but will be <em>strictly prohibited</em> on in-class assignments and any final package submissions (i.e.&nbsp;demonstration, final package).</p>
+<p>As an upper-division course, you have developed skills to code through basic tasks and processes in data science, as well as to analyze particular behaviors and patterns in the results. Generative AI can be useful as a tool to refine material and gather information about particular parts of code; however, the more you rely on AI, the more you lose out on the ability to think like a data scientist. The human element will be critical in succeeding in data science, and as such, appropriate considerations need to be made when using generative AI on assignments.</p>
+<p>Specifically, here are the following permissions and constraints regarding generative AI on assignments and tasks in this course:</p>
 <ul>
-<li>Summarizing course readings.</li>
-<li>Drafting, editing, and proofreading responses to written prompts on any assignment.</li>
-<li>Composing and/or formatting code and comments.</li>
-<li>Answering lab, quiz, or exam questions.</li>
-<li>Conducting analysis of any plots, methods, and results for any assignment.</li>
+<li><strong>Activities, problem sets, and readings:</strong> Generative AI can be used for pre-writing activities and code editing. Use of generative AI for writing any length of written content, composing any length of code, or synthesizing content are prohibited. Code and prose should be written in your own style. Any permitted use of generative AI should be cited in areas in which it was used.</li>
+<li><strong>Exams:</strong> Generative AI is strictly prohibited on all exams.</li>
+<li><strong>Package:</strong> Generative AI for use in development of ideas, pre-writing, and structuring is permitted, particularly in the early phases of development. However, any formal writing of documentation and code is not permitted.</li>
 </ul>
-<p>Any unauthorized use of generative artificial intelligence in this course will be considered a case of academic dishonesty/plagiarism and will be reported to the Academic Honor Board.</p>
-<p><em>Caveat:</em> While the policy here is strict, do note that there will be assignments and lectures that go through the ethical and effective use of generative AI in data science as part of a unit. In these assignments, further directions will be given to showcase the use of generative AI. However, unless otherwise stated, generative AI should not be used in any assignment.</p>
+<p>Any unauthorized use of generative artificial intelligence in this course will be considered a case of academic dishonesty/plagiarism and will be reported to the Academic Honor Board. Some assignments will also contain modifications to these rules, so be mindful of these rules for each assignment.</p>
 </section>
 </section>
 <section id="community-support" class="level2">
@@ -449,11 +434,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="course-outline">Course Outline</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
+<col style="width: 9%">
+<col style="width: 13%">
+<col style="width: 35%">
 <col style="width: 15%">
-<col style="width: 36%">
-<col style="width: 8%">
-<col style="width: 28%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -468,107 +453,107 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>1</td>
 <td>1/26-30</td>
-<td>Introduction to Data</td>
-<td>1</td>
+<td>Introduction (R, GitHub), Data Structures</td>
+<td><span style="color:orange;">AR3</span></td>
 <td></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>2/2-6</td>
-<td>Intro to R and Workflows</td>
-<td>1, B</td>
+<td>Lists, Data Frames, Assignment</td>
+<td><span style="color:orange;">AR2, 4</span></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>2/9-13</td>
-<td>Data Visualization</td>
-<td>2</td>
+<td>Control Flow, Functions</td>
+<td><span style="color:orange;">AR5, 6</span></td>
 <td></td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>2/16-20</td>
-<td>ggplot2</td>
-<td>3</td>
+<td>Functions, Iteration</td>
+<td><span style="color:orange;">AR5, 6, 9</span></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>2/23-2/27</td>
-<td>Data Wrangling</td>
-<td>4</td>
-<td></td>
+<td>Functionals, Review</td>
+<td><span style="color:brown;">AR9</span></td>
+<td><span style="color:purple;">Exam #1: Wed. 2/25</span></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>3/2-3/6</td>
-<td>Data Joining</td>
-<td>5</td>
-<td><span style="color:purple;">Project #1 due: Wed, 3/4</span></td>
+<td>Environments, Packages</td>
+<td><span style="color:orange;">AR7, RP1-3</span></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>3/9-13</td>
-<td>Statistics, Exam #1</td>
-<td>9</td>
-<td><span style="color:purple;">Exam #1: Fri, 3/13</span></td>
+<td>Conditions, OOP</td>
+<td><span style="color:orange;">AR8, 12</span></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>8</td>
 <td>3/16-20</td>
 <td>Spring Break!</td>
-<td></td>
-<td><em>No class all week long</em></td>
+<td><span style="color:orange;"></span></td>
+<td><em>No class: Mon. 3/16; Wed. 3/18</em></td>
 </tr>
 <tr class="odd">
 <td>9</td>
 <td>3/23-27</td>
-<td>Data Tidying</td>
-<td>6</td>
+<td>S3, Package Foundation</td>
+<td><span style="color:orange;">AR12, RP3 </span></td>
 <td></td>
 </tr>
 <tr class="even">
 <td>10</td>
 <td>3/30-4/3</td>
-<td>Programming</td>
-<td>7</td>
-<td></td>
+<td>Description, <code>usethis</code></td>
+<td><span style="color:orange;">RP9-12</span></td>
+<td><span style="color:purple;">Exam #2: Mon, 3/30</span> <span style="color:purple;">Proposal: due Mon, 3/30 </span></td>
 </tr>
 <tr class="odd">
 <td>11</td>
 <td>4/6-10</td>
-<td>Ethics and Programming</td>
-<td>8, C</td>
+<td>Code, Data, Manuals, Testing</td>
+<td><span style="color:orange;">RP6, 7, 16</span></td>
 <td></td>
 </tr>
 <tr class="even">
 <td>12</td>
 <td>4/13-17</td>
-<td>Spatial Thinking</td>
-<td>17</td>
-<td></td>
+<td>Testing, Vignettes</td>
+<td><span style="color:orange;">RP13, 17</span></td>
+<td><span style="color:purple;">Checkpoint #1: due Mon, 4/13</span></td>
 </tr>
 <tr class="odd">
 <td>13</td>
 <td>4/20-24</td>
-<td>Spatial Thinking</td>
-<td>17</td>
-<td></td>
+<td>Project Time</td>
+<td><span style="color:brown;"></span></td>
+<td><span style="color:purple;">Checkpoint #2: due Fri, 4/24</span></td>
 </tr>
 <tr class="even">
 <td>14</td>
 <td>4/27-5/1</td>
-<td>APIs and Review</td>
-<td>18</td>
-<td><span style="color:purple;">Project #2 due: Mon, 4/27 </span></td>
+<td>Project Time, Demonstrations</td>
+<td>NA</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Finals</td>
-<td>5/2-9</td>
+<td>5/2-8</td>
 <td>Finals</td>
 <td>NA</td>
-<td><span style="color:purple;">Exam #2: self-scheduled (5/6-9) </span></td>
+<td><span style="color:purple;">Package: due Wed, 5/6</span></td>
 </tr>
 </tbody>
 </table>
