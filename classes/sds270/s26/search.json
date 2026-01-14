@@ -411,5 +411,432 @@
     "title": "Lecture: Introduction and Tech Setup",
     "section": "For Tuesday:",
     "text": "For Tuesday:\n\nWork on exercises: Names and Values\nRead through syllabus\nPre-course survey\nRead chapters 1-2 of Advanced R and complete Moodle quiz (5 questions) before Tuesday"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#welcome",
+    "href": "lectures/w1l1_intro.html#welcome",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Welcome!",
+    "text": "Welcome!\n\n\n\n\n\n\n\n\n\nCourse: SDS 270, Sect. 01\nTimes:\n\nM/W, 10:50am-12:05pm"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#welcome-1",
+    "href": "lectures/w1l1_intro.html#welcome-1",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Welcome!",
+    "text": "Welcome!\n\n\n\nInstructor: Jericho Lawson\n\nLocation: McConnell 207\n\nOffice Hours:\n\nM, 3-4pm\nF 10am-12pm\n\nEmail: jlawson01@smith.edu"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#what-youve-done",
+    "href": "lectures/w1l1_intro.html#what-youve-done",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "What you’ve done!",
+    "text": "What you’ve done!\n\nData wrangling (i.e. dplyr)\nData visualization (i.e. ggplot2)\nUniversal programming concepts\nData types\nSome structures in R (i.e. functions, if/else statements)\nBasic version control (i.e. GitHub)"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#what-you-will-do",
+    "href": "lectures/w1l1_intro.html#what-you-will-do",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "What you will do!",
+    "text": "What you will do!\n\nExplore the functionality within R\n\nHow does R WORK?\n\nWrite deeper-level R code\n\ne.g. objects, functions, files\n\nOrganize code and make it more efficient/robust\n\ne.g. repository organization, debugging, advanced features\n\nCreate an R package through collaborative work\n\nthrough GitHub with intended theme and organization"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#structure",
+    "href": "lectures/w1l1_intro.html#structure",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Structure",
+    "text": "Structure\n\nLectures\n\nSlide decks\nIn-class activities (10%)\nDemos\nBring your computer!!\n\nOutside class\n\nReadings\nProblem sets (20%)"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#structure-cont.",
+    "href": "lectures/w1l1_intro.html#structure-cont.",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Structure (cont.)",
+    "text": "Structure (cont.)\n\nExams\n\nFirst exam (2/25): Closed-note written\nSecond exam (3/30): Open-note, open-laptop\nMay include oral parts\n\nPackage\n\nSeries of checkpoints\nDemo and whole package with documentation"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#textbooks",
+    "href": "lectures/w1l1_intro.html#textbooks",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Textbooks",
+    "text": "Textbooks\n\n\n\nAdvanced R\n\n\n\n\n\n\n\n\nR Packages"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#so-generative-ai",
+    "href": "lectures/w1l1_intro.html#so-generative-ai",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "So… generative AI?",
+    "text": "So… generative AI?\n\nFine for pre-writing activities and code editing\n\nProhibited on code structure, prose, exams, and package\n\nWill be reported to AIB\n\n\nThink of generative AI as a tool, not your personal assistant"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#so-generative-ai-cont.",
+    "href": "lectures/w1l1_intro.html#so-generative-ai-cont.",
+    "title": "Introduction and Tech Setup",
+    "section": "So… generative AI? (cont.)",
+    "text": "So… generative AI? (cont.)\n\nFor this course: it is allowed for most things, but not all things\n\nLabs, exercises, and readings: okay, but use sparingly\nQuizzes: NOT ALLOWED\nPackage: okay for pre-drafting stuff\n\nThink of generative AI as a tool, not your personal assistant"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#resources",
+    "href": "lectures/w1l1_intro.html#resources",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Resources",
+    "text": "Resources\n\nWebsite\n\nCertified Moodle hater\n\nSlack\n\nDiscuss clarifying questions with class, message me with questions\n\nStudent hours\n\nM, 3-4pm and F, 10am-12pm\nMcConnell 207\n\nEmail\n\nCan email me at jlawson01@smith.edu"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#who-am-i",
+    "href": "lectures/w1l1_intro.html#who-am-i",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Who am I?",
+    "text": "Who am I?\nCall me Jericho, but if you prefer, Professor Lawson or Dr. Lawson is okay!\n\n\n\n\n\n\n\n\n\nLecturer of Statistical and Data Sciences\nResearch interests: variable selection, imaging, machine learning\nMy college journey:\n\nPh.D. in Applied Statistics from UC Riverside\nM.S. in Statistics from UC Riverside\nB.S. in Applied Mathematics; Statistics and Data Science from University of Arizona"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#who-am-i-1",
+    "href": "lectures/w1l1_intro.html#who-am-i-1",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\n\n\n\n\n\n\n\nFrom Arizona!!\n\nWill either hear me talk about the state or the Suns\n\nHiker, foodie, and explorer!"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#activity",
+    "href": "lectures/w1l1_intro.html#activity",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Activity",
+    "text": "Activity\nForm groups of 2-3 with your peers near you. Complete the following tasks:\n\nIntroduce yourselves to each other! Mention your name, major, and one cool thing you did over the winter.\nFor those, that have a laptop on you, attempt to complete the following:\n\nCreate a numeric vector that contains a sequence of numbers from 1 to 50.\nDetermine how much memory is being used by R right now.\nMake a simple plot using the following data: 4, 7, 2, 5, 2, 3, 3, 5, 3, 2, 1, 8\n\nDiscuss how you were able to complete these tasks."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#advanced-r-an-introduction",
+    "href": "lectures/w1l1_intro.html#advanced-r-an-introduction",
+    "title": "Introduction and Tech Setup",
+    "section": "Advanced R: An Introduction",
+    "text": "Advanced R: An Introduction\n\n\n\n\n\n\n\n\n\nDeeper dive into R\n\nComplex data types, functions, environments\nFunctional and object-oriented programming\n\nHow does R ACTUALLY work?\n\nMemory allocation, efficiency\n\nNew strategies for solving diverse problems"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#ch.-2-names-and-values",
+    "href": "lectures/w1l1_intro.html#ch.-2-names-and-values",
+    "title": "Introduction and Tech Setup",
+    "section": "Ch. 2: Names and Values",
+    "text": "Ch. 2: Names and Values\nLearning objectives:\n\nDifferentiate names and values in R\nInvestigate how memory is allocated for objects"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#lobstr",
+    "href": "lectures/w1l1_intro.html#lobstr",
+    "title": "Introduction and Tech Setup",
+    "section": "lobstr",
+    "text": "lobstr\n\n\n\n\n\n\n\n\n\nTools for investigating the specifics of an object\nIn same vein as using str()"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#memory-usage",
+    "href": "lectures/w1l1_intro.html#memory-usage",
+    "title": "Introduction and Tech Setup",
+    "section": "Memory usage",
+    "text": "Memory usage\n\nlibrary(lobstr)\nmem_used()\n\n42.40 MB\n\n\n\nCurious about how much memory R is taking up on our machine\nCan also go to top-right corner -&gt; __ MiB -&gt; Memory Usage Report"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#memory-of-objects",
+    "href": "lectures/w1l1_intro.html#memory-of-objects",
+    "title": "Introduction and Tech Setup",
+    "section": "Memory of objects",
+    "text": "Memory of objects\n\nUse obj_size() on individual objects\n\n\nobj_size(5)\n\n56 B\n\nobj_size(rep(5, 5))\n\n96 B\n\nobj_size(mtcars)\n\n7.21 kB\n\nobj_size(matrix(3, 3, 3))\n\n344 B"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#memory-locations",
+    "href": "lectures/w1l1_intro.html#memory-locations",
+    "title": "Introduction and Tech Setup",
+    "section": "Memory locations",
+    "text": "Memory locations\n\nUse ref() to see the memory address of each object\n\n\nref(5)\n\n[1:0x1dba5e143c8] &lt;dbl&gt; \n\nref(mtcars)\n\n█ [1:0x1dba7189228] &lt;df[,11]&gt; \n├─mpg = [2:0x1dba27d5b00] &lt;dbl&gt; \n├─cyl = [3:0x1dba27d5180] &lt;dbl&gt; \n├─disp = [4:0x1dba27d5640] &lt;dbl&gt; \n├─hp = [5:0x1dba27d5770] &lt;dbl&gt; \n├─drat = [6:0x1dba27d66e0] &lt;dbl&gt; \n├─wt = [7:0x1dba27d65b0] &lt;dbl&gt; \n├─qsec = [8:0x1dba27d5050] &lt;dbl&gt; \n├─vs = [9:0x1dba27d6350] &lt;dbl&gt; \n├─am = [10:0x1dba27d6480] &lt;dbl&gt; \n├─gear = [11:0x1dba27d7060] &lt;dbl&gt; \n└─carb = [12:0x1dba27d6940] &lt;dbl&gt;"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#addresses",
+    "href": "lectures/w1l1_intro.html#addresses",
+    "title": "Introduction and Tech Setup",
+    "section": "Addresses",
+    "text": "Addresses"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#aside",
+    "href": "lectures/w1l1_intro.html#aside",
+    "title": "Introduction and Tech Setup",
+    "section": "Aside",
+    "text": "Aside\n\nA 32-bit computer can address \\(2^{32} = 4,294,967,296\\) bytes of memory\n\n4 GB\n\nA 64-bit computer can address \\(2^{64} = 4,294,967,296\\) bytes of memory\n\n16 EB = 16,000,000 TB"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#for-tuesday",
+    "href": "lectures/w1l1_intro.html#for-tuesday",
+    "title": "Introduction and Tech Setup",
+    "section": "For Tuesday:",
+    "text": "For Tuesday:\n\nWork on exercises: Names and Values\nRead through syllabus\nPre-course survey\nRead chapters 1-2 of Advanced R and complete Moodle quiz (5 questions) before Tuesday"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#section",
+    "href": "lectures/w1l1_intro.html#section",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "",
+    "text": "Sources: NYT, Compadre DB, The Atlantic"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#section-1",
+    "href": "lectures/w1l1_intro.html#section-1",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "",
+    "text": "Sources: Posit, Athlytics Documentation, Advanced R"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#review",
+    "href": "lectures/w1l1_intro.html#review",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Review",
+    "text": "Review\n\nR is the coding language at hand\n\ne.g. syntax, memory allocation\n\nRStudio is the IDE/application where we can interact with R\n\ne.g. execution, view output, save files\nOther IDEs exist"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#the-rstudio-interface",
+    "href": "lectures/w1l1_intro.html#the-rstudio-interface",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "The RStudio Interface",
+    "text": "The RStudio Interface"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#objects-and-data-structures",
+    "href": "lectures/w1l1_intro.html#objects-and-data-structures",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Objects and Data Structures",
+    "text": "Objects and Data Structures\nActivity: In the same groups, list out all data structures in R.\n\ni.e. the ways we can store various pieces of data in R"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#examples",
+    "href": "lectures/w1l1_intro.html#examples",
+    "title": "Introduction and Tech Setup",
+    "section": "Examples",
+    "text": "Examples\n\na &lt;- c(27, 24, 25, 16, 18); a\n\n[1] 27 24 25 16 18\n\nb &lt;- c(T, F, F, T); b\n\n[1]  TRUE FALSE FALSE  TRUE\n\nc &lt;- c(\"hello\", \"everyone\"); c\n\n[1] \"hello\"    \"everyone\"\n\nd &lt;- c(27L, 24L, 25L, 16L, 18L); d\n\n[1] 27 24 25 16 18"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#testing-and-coercion",
+    "href": "lectures/w1l1_intro.html#testing-and-coercion",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Testing and Coercion",
+    "text": "Testing and Coercion\n\nis.double(b)\n\n[1] FALSE\n\nas.double(b)\n\n[1] 1 0 0 1\n\ntypeof(b)\n\n[1] \"logical\""
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#hierarchy-for-coercion",
+    "href": "lectures/w1l1_intro.html#hierarchy-for-coercion",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Hierarchy for Coercion",
+    "text": "Hierarchy for Coercion\nActivity: Use the is.___() and as.___() functions on each of the four objects to determine which type is the most flexible (all the way to the least flexible)."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#attributes",
+    "href": "lectures/w1l1_intro.html#attributes",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Attributes",
+    "text": "Attributes\n\nHold certain information about a vector (with attributes())\n\n\nattributes(a)\n\nNULL\n\n\n\nCan add a new attribute with attr(object, new_attribute)\n\n\nattr(a, \"name\") &lt;- \"numbers\"\nattributes(a)\n\n$name\n[1] \"numbers\""
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#attributes-cont.",
+    "href": "lectures/w1l1_intro.html#attributes-cont.",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Attributes (cont.)",
+    "text": "Attributes (cont.)\n\nnames(a) &lt;- 1:5\nattributes(a)\n\n$name\n[1] \"numbers\"\n\n$names\n[1] \"1\" \"2\" \"3\" \"4\" \"5\""
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#object-assignment",
+    "href": "lectures/w1l1_intro.html#object-assignment",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Object Assignment",
+    "text": "Object Assignment\nTwo ways you’ve seen object assignment:\n\nx = 13\nx &lt;- 13\n\nQuestion: Why the difference?"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#s3-atomic-vectors-and-special-types",
+    "href": "lectures/w1l1_intro.html#s3-atomic-vectors-and-special-types",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "S3 Atomic Vectors (and Special Types)",
+    "text": "S3 Atomic Vectors (and Special Types)\n\nFactors\nDates\nNAs\n\n\nc &lt;- as.factor(c)\nlevels(c) &lt;- c(\"everyone\", \"hello\", \"what\")"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#for-now-and-wednesday",
+    "href": "lectures/w1l1_intro.html#for-now-and-wednesday",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "For Now and Wednesday:",
+    "text": "For Now and Wednesday:\n\nGitHub setup\n\nUse tech setup instructions\nComplete test.qmd and act1.qmd files\n\nRead through syllabus\nPre-course survey\nRead chapters 1, 3 of Advanced R"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#vectors",
+    "href": "lectures/w1l1_intro.html#vectors",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Vectors",
+    "text": "Vectors\n\n\n\nFamily of data types\nAtomic vectors or lists\n\nWe will focus on atomic vectors"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#atomic-vectors",
+    "href": "lectures/w1l1_intro.html#atomic-vectors",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Atomic Vectors",
+    "text": "Atomic Vectors\n\n\n\nElements must be of same type\nCan use [] to access elements\nCan be built via c()"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#examples-concatenation",
+    "href": "lectures/w1l1_intro.html#examples-concatenation",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Examples (Concatenation)",
+    "text": "Examples (Concatenation)\n\na &lt;- c(27, 24, 25, 16, 18); a\n\n[1] 27 24 25 16 18\n\nb &lt;- c(T, F, F, T); b\n\n[1]  TRUE FALSE FALSE  TRUE\n\nc &lt;- c(\"hello\", \"everyone\"); c\n\n[1] \"hello\"    \"everyone\"\n\nd &lt;- c(27L, 24L, 25L, 16L, 18L); d\n\n[1] 27 24 25 16 18"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#s3-atomic-vectors-and-special-classes",
+    "href": "lectures/w1l1_intro.html#s3-atomic-vectors-and-special-classes",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "S3 Atomic Vectors (and Special Classes)",
+    "text": "S3 Atomic Vectors (and Special Classes)\n\nS3: class of objects in R\n\nDifferent from types in R\nExamples\n\nFactors\nDates\nNAs\n\n\n\n\nc &lt;- as.factor(c)\nlevels(c) &lt;- c(\"everyone\", \"hello\", \"what\")\n\n\nWe’ll talk more about S3 objects in a few weeks!"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#last-time",
+    "href": "lectures/w1l2_lists.html#last-time",
+    "title": "Lists",
+    "section": "Last Time",
+    "text": "Last Time\n\nIntroduction\nTech setup\nAtomic vectors"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#note-on-in-class-activities",
+    "href": "lectures/w1l2_lists.html#note-on-in-class-activities",
+    "title": "Lists",
+    "section": "Note on In-Class Activities",
+    "text": "Note on In-Class Activities\n\nWill usually be dispersed throughout the lecture\nYou’ll create a .qmd file to work on these activities to turn in by end of class\nThese will be committed and pushed through your repository"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#today",
+    "href": "lectures/w1l2_lists.html#today",
+    "title": "Lists",
+    "section": "Today",
+    "text": "Today\n\nLists\n\n“Traditional” lists\nFunctionality\nMatrices and arrays\n\n\nObjective: Familiarize yourself with lists in R, which includes creating lists, performing operations, and breaking down its structure in R."
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#activity-review",
+    "href": "lectures/w1l2_lists.html#activity-review",
+    "title": "Lists",
+    "section": "Activity: Review",
+    "text": "Activity: Review\nGather in groups of 2-3 and discuss all of the qualities that define an atomic vector (e.g. types, hierarchy, features). Then, run the following code below and describe what it’s doing line-by-line.\n\nx &lt;- c(2L, 4, 1, 8)\ny &lt;- c(T, F, F, T)\n\nattributes(x)\nis.integer(x)\n\nc(x, y)\nx + y"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#lists",
+    "href": "lectures/w1l2_lists.html#lists",
+    "title": "Lists",
+    "section": "Lists",
+    "text": "Lists\n\n\n\nThe “other” vector\nFlexible with types\n\nTechnically a collection of objects\n\nCan use [[]] to access elements\n\n$ can be used if named\nQuestion 1: Can we still use []?"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#list-creation",
+    "href": "lectures/w1l2_lists.html#list-creation",
+    "title": "Lists",
+    "section": "List Creation",
+    "text": "List Creation\n\nLists can be created via the list() function\n\nvector() function can be used for pre-determined length\n\ne.g. vector(\"list\", 4)\n\n\n\n\nobj1 &lt;- \"Northampton\"\nobj2 &lt;- \"MA\"\nobj3 &lt;- c(\"Abby\", \"Mike\", \"Tala\")\nobj4 &lt;- c(\"Tunic\", \"Familiars\")\n\nlist1 &lt;- list(obj1, obj2, obj3, obj4)\nlist1\n\n[[1]]\n[1] \"Northampton\"\n\n[[2]]\n[1] \"MA\"\n\n[[3]]\n[1] \"Abby\" \"Mike\" \"Tala\"\n\n[[4]]\n[1] \"Tunic\"     \"Familiars\""
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#list-creation-1",
+    "href": "lectures/w1l2_lists.html#list-creation-1",
+    "title": "Lists",
+    "section": "List Creation",
+    "text": "List Creation\n\nCan be named within or after creation\n\n____ = ...\nnames()\n\n\n\nlist(city = obj1, state = obj2, residents = obj3, coffee = obj4)\n\n$city\n[1] \"Northampton\"\n\n$state\n[1] \"MA\"\n\n$residents\n[1] \"Abby\" \"Mike\" \"Tala\"\n\n$coffee\n[1] \"Tunic\"     \"Familiars\"\n\nnames(list1) &lt;- c(\"city\", \"state\", \"residents\", \"coffee\")\nlist1\n\n$city\n[1] \"Northampton\"\n\n$state\n[1] \"MA\"\n\n$residents\n[1] \"Abby\" \"Mike\" \"Tala\"\n\n$coffee\n[1] \"Tunic\"     \"Familiars\""
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#concatenation",
+    "href": "lectures/w1l2_lists.html#concatenation",
+    "title": "Lists",
+    "section": "Concatenation",
+    "text": "Concatenation\n\nDid you know you can concatenate lists the same way you can atomic vectors??\n\n\nlist2 &lt;- list(interstates = 91)\nc(list1, list2)\n\n$city\n[1] \"Northampton\"\n\n$state\n[1] \"MA\"\n\n$residents\n[1] \"Abby\" \"Mike\" \"Tala\"\n\n$coffee\n[1] \"Tunic\"     \"Familiars\"\n\n$interstates\n[1] 91"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#accessing-elements",
+    "href": "lectures/w1l2_lists.html#accessing-elements",
+    "title": "Lists",
+    "section": "Accessing Elements",
+    "text": "Accessing Elements\n\nlist1$city\n\n[1] \"Northampton\"\n\nlist1[[1]]\n\n[1] \"Northampton\"\n\nlist1[1]\n\n$city\n[1] \"Northampton\"\n\n\nQuestion 2: What’s the difference between the outputs?"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#testing-and-coercion",
+    "href": "lectures/w1l2_lists.html#testing-and-coercion",
+    "title": "Lists",
+    "section": "Testing and Coercion",
+    "text": "Testing and Coercion\n\nIt’s the same process as before, but with list in place\n\n\nis.list(list1)\n\n[1] TRUE\n\nas.list(c(1, 2))\n\n[[1]]\n[1] 1\n\n[[2]]\n[1] 2"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#unlisting",
+    "href": "lectures/w1l2_lists.html#unlisting",
+    "title": "Lists",
+    "section": "Unlisting",
+    "text": "Unlisting\n\nCan convert a list to an atomic vector via unlist()\n\n\nunlist(list1)\n\n         city         state    residents1    residents2    residents3 \n\"Northampton\"          \"MA\"        \"Abby\"        \"Mike\"        \"Tala\" \n      coffee1       coffee2 \n      \"Tunic\"   \"Familiars\" \n\n\nQuestion 3: Why not use coercion to do this? Provide an example of what happens."
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#attributes",
+    "href": "lectures/w1l2_lists.html#attributes",
+    "title": "Lists",
+    "section": "Attributes",
+    "text": "Attributes\n\nSame process as seen with atomic vectors\n\n\nattributes(list1)\n\n$names\n[1] \"city\"      \"state\"     \"residents\" \"coffee\""
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#activity",
+    "href": "lectures/w1l2_lists.html#activity",
+    "title": "Lists",
+    "section": "Activity",
+    "text": "Activity\nSuppose we are the CDC and we’ve collected wastewater samples with regard to COVID-19, which is seen below:\n\nState: South Dakota, South Dakota, South Dakota\nWastewater activity level in state: 7.79, 10.89, 9.02\nWastewater activity level in nation: 8.42, 6.78, 5.75\nWastewater activity level regionally: 8.27, 6.41, 5.86\nLevel: high, very high, high\n\nDo the following:\n\nCreate appropriate atomic vectors for each of the five pieces of information.\nCreate a list combining the five atomic vectors.\nAnswer the following:\n\nWhat is this list a collection of?\nIs a list the most appropriate data structure for data?\nHow would I access the second element in the wastewater activity regionally from the list?\n\n\n\nSource: CDC National Wastewater Surveillance System"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#lets-add-some-dimension",
+    "href": "lectures/w1l2_lists.html#lets-add-some-dimension",
+    "title": "Lists",
+    "section": "Let’s Add Some Dimension!",
+    "text": "Let’s Add Some Dimension!\n\nIn most cases, we see data in two dimensions\n\nRows: observations\nColumns: variables\n\nVectors are inherently one-dimensional\n\nRules and features can add structure to this"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#lets-add-some-dimension-1",
+    "href": "lectures/w1l2_lists.html#lets-add-some-dimension-1",
+    "title": "Lists",
+    "section": "Let’s Add Some Dimension!",
+    "text": "Let’s Add Some Dimension!\n\ndim attribute adds that dimension\n\nIf applied to atomic vectors: called a matrix\nIf applied to lists: can be a list-matrix or list-array"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#matrices-and-arrays",
+    "href": "lectures/w1l2_lists.html#matrices-and-arrays",
+    "title": "Lists",
+    "section": "Matrices and Arrays",
+    "text": "Matrices and Arrays\n\nGenerally for linear-algebra\n\n\nlistMath &lt;- c(2, 4, 3, 2)\ndim(listMath) &lt;- c(2, 2)\nlistMath\n\n     [,1] [,2]\n[1,]    2    3\n[2,]    4    2\n\nattributes(listMath)\n\n$dim\n[1] 2 2"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#list-matrices",
+    "href": "lectures/w1l2_lists.html#list-matrices",
+    "title": "Lists",
+    "section": "List-Matrices",
+    "text": "List-Matrices\n\nlist1m &lt;- list1\ndim(list1m) &lt;- c(2, 2)\nlist1m\n\n     [,1]          [,2]       \n[1,] \"Northampton\" character,3\n[2,] \"MA\"          character,2"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#data-frames",
+    "href": "lectures/w1l2_lists.html#data-frames",
+    "title": "Lists",
+    "section": "Data Frames",
+    "text": "Data Frames\n\nvect1 &lt;- c(\"SpongeBob\", \"Patrick\", \"Sandy\")\nvect2 &lt;- c(\"sponge\", \"starfish\", \"squirrel\")\nvect3 &lt;- c(4, 6, 5)\n\nspongeList &lt;- list(character = vect1, species = vect2, height = vect3)\ndata.frame(spongeList)\n\n  character  species height\n1 SpongeBob   sponge      4\n2   Patrick starfish      6\n3     Sandy squirrel      5"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#data-frames-1",
+    "href": "lectures/w1l2_lists.html#data-frames-1",
+    "title": "Lists",
+    "section": "Data Frames",
+    "text": "Data Frames\n\nA named list of vectors\n\nVectors make up the columns\nRow entries correspond to collection of individual elements within the vectors\n\n\nQuestion 4: What other rules (either forced upon or by nature) do we need to abide by with data frames?"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#accessing-elements-1",
+    "href": "lectures/w1l2_lists.html#accessing-elements-1",
+    "title": "Lists",
+    "section": "Accessing Elements",
+    "text": "Accessing Elements\n\nDone with [[]], with commas in between to denote the elements\n\nA little tricky: rows first, then columns\n\nTo access dimensions while retaining current data structure: [,]\n\nSpecify indices within dimension you want to subset from\n\n\n\nWill discuss more in Monday’s class!"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#exercises",
+    "href": "lectures/w1l2_lists.html#exercises",
+    "title": "Lists",
+    "section": "Exercises",
+    "text": "Exercises\nRevisit the diamonds data frame again. Answer the following to turn in:\n\nUnlist the diamonds data frame. What happens? What is its type? Why?\nKnowing we are dealing with a list of vectors, access the cut of the 4th diamond such that we access the vector first, followed by the element.\nAre these two lines of code accessing the same element? Explain what’s happening:\n\n\ndiamonds[2, 5]\n\n# A tibble: 1 × 1\n  depth\n  &lt;dbl&gt;\n1  59.8\n\ndiamonds[[2]][5]\n\n[1] Good\nLevels: Fair &lt; Good &lt; Very Good &lt; Premium &lt; Ideal"
+  },
+  {
+    "objectID": "lectures/w1l2_lists.html#for-now-and-monday",
+    "href": "lectures/w1l2_lists.html#for-now-and-monday",
+    "title": "Lists",
+    "section": "For Now and Monday:",
+    "text": "For Now and Monday:\n\nComplete GitHub setup and survey if they’re not finished yet\nRead chapters 2, 4 of Advanced R before Monday’s class\nExpect first problem set to be released next week"
   }
 ]
