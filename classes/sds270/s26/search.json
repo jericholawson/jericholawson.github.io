@@ -60,7 +60,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28\n\n\n\n\n\n\n\n\nNoteLecture: Introduction\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Tuesday, 1/27 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to R and Vectors\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Monday, 1/26Wednesday, 1/28\n\n\n\n\n\n\n\n\nNoteLecture: Introduction, Tech Setup, Atomic Vectors\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Tuesday, 1/27 at 11:59pm)\n\nInstructions\nComplete test.qmd and act1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Tuesday, 1/27 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Lists\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nComplete any remaining setup\nRead chapters 2, 4 of Advanced R (before Monday’s class)"
   },
   {
     "objectID": "schedule.html#schedule",
@@ -130,49 +130,49 @@
     "href": "schedule.html#week-8-spring-break-316---320",
     "title": "Schedule",
     "section": "Week 8: Spring Break (3/16 - 3/20)",
-    "text": "Week 8: Spring Break (3/16 - 3/20)\n\nMonday, 3/16Wednesday, 3/18\n\n\n\n\n\n\n\n\nNoteLecture #1: Introduction\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture #1: Introduction\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 8: Spring Break (3/16 - 3/20)\n\nMonday, 3/16Wednesday, 3/18\n\n\n\n\n\n\n\n\nNoteLecture #1: Introduction\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture #1: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-9-s3-objects-package-foundation-323---327",
     "href": "schedule.html#week-9-s3-objects-package-foundation-323---327",
     "title": "Schedule",
     "section": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)",
-    "text": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25\n\n\n\n\n\n\n\n\nNoteLecture: S3 Objects\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Package Foundation, Review\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25\n\n\n\n\n\n\n\n\nNoteLecture: S3 Objects\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Package Foundation, Review\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-10-packages---description-and-libraries-330---43",
     "href": "schedule.html#week-10-packages---description-and-libraries-330---43",
     "title": "Schedule",
     "section": "Week 10: Packages - Description and Libraries (3/30 - 4/3)",
-    "text": "Week 10: Packages - Description and Libraries (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1\n\n\n\n\n\n\n\n\nImportantExam #2\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Description and Libraries\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 10: Packages - Description and Libraries (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1\n\n\n\n\n\n\n\n\nImportantExam #2\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Description and Libraries\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-11-packages---code-data-manuals-testing-46---410",
     "href": "schedule.html#week-11-packages---code-data-manuals-testing-46---410",
     "title": "Schedule",
     "section": "Week 11: Packages - Code, Data, Manuals, Testing (4/6 - 4/10)",
-    "text": "Week 11: Packages - Code, Data, Manuals, Testing (4/6 - 4/10)\n\nMonday, 4/6Wednesday, 4/8\n\n\n\n\n\n\n\n\nNoteLecture: Code, Data, Manuals\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Testing\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 11: Packages - Code, Data, Manuals, Testing (4/6 - 4/10)\n\nMonday, 4/6Wednesday, 4/8\n\n\n\n\n\n\n\n\nNoteLecture: Code, Data, Manuals\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Testing\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-12-packages---testing-vignettes-413---417",
     "href": "schedule.html#week-12-packages---testing-vignettes-413---417",
     "title": "Schedule",
     "section": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)",
-    "text": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15\n\n\n\n\n\n\n\n\nNoteLecture: Testing\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Vignettes\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15\n\n\n\n\n\n\n\n\nNoteLecture: Testing\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Vignettes\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-13-packages---project-time-420---424",
     "href": "schedule.html#week-13-packages---project-time-420---424",
     "title": "Schedule",
     "section": "Week 13: Packages - Project Time (4/20 - 4/24)",
-    "text": "Week 13: Packages - Project Time (4/20 - 4/24)\n\nMonday, 4/20Wednesday, 4/22\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 13: Packages - Project Time (4/20 - 4/24)\n\nMonday, 4/20Wednesday, 4/22\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-14-packages---project-time-demonstrations-427---51",
     "href": "schedule.html#week-14-packages---project-time-demonstrations-427---51",
     "title": "Schedule",
     "section": "Week 14: Packages - Project Time, Demonstrations (4/27 - 5/1)",
-    "text": "Week 14: Packages - Project Time, Demonstrations (4/27 - 5/1)\n\nMonday, 4/27Wednesday, 4/29\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteDemonstrations\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 14: Packages - Project Time, Demonstrations (4/27 - 5/1)\n\nMonday, 4/27Wednesday, 4/29\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteDemonstrations\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#finals-package-52---59",
@@ -186,21 +186,21 @@
     "href": "schedule.html#week-1-introduction-data-structures-126---130",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28\n\n\n\n\n\n\n\n\nNoteLecture: Introduction\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Tuesday, 1/27 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to R and Vectors\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Monday, 1/26Wednesday, 1/28\n\n\n\n\n\n\n\n\nNoteLecture: Introduction, Tech Setup, Atomic Vectors\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Tuesday, 1/27 at 11:59pm)\n\nInstructions\nComplete test.qmd and act1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Tuesday, 1/27 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Lists\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nComplete any remaining setup\nRead chapters 2, 4 of Advanced R (before Monday’s class)"
   },
   {
     "objectID": "schedule.html#week-2-data-structures-assignment-22---26",
     "href": "schedule.html#week-2-data-structures-assignment-22---26",
     "title": "Schedule",
     "section": "Week 2: Data Structures, Assignment (2/2 - 2/6)",
-    "text": "Week 2: Data Structures, Assignment (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\n\n\n\n\n\n\nNoteLecture: Lists, Data Frames, and Matrices\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Assignment and Memory\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 2: Data Structures, Assignment (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\n\n\n\n\n\n\nNoteLecture: Lists, Data Frames, and Matrices\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Assignment and Memory\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-3-control-flow-functions-29---213",
     "href": "schedule.html#week-3-control-flow-functions-29---213",
     "title": "Schedule",
     "section": "Week 3: Control Flow, Functions (2/9 - 2/13)",
-    "text": "Week 3: Control Flow, Functions (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\n\n\n\n\n\n\nNoteLecture: Control Flow\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Functions\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #3 (due Sunday, 2/15 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)"
+    "text": "Week 3: Control Flow, Functions (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\n\n\n\n\n\n\nNoteLecture: Control Flow\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Functions\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-4-functions-iteration-216---220",
@@ -228,14 +228,14 @@
     "href": "schedule.html#week-4-functions-iteration-review-216---220",
     "title": "Schedule",
     "section": "Week 4: Functions, Iteration, Review (2/16 - 2/20)",
-    "text": "Week 4: Functions, Iteration, Review (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18\n\n\n\n\n\n\n\n\nNoteLecture: Functions Beyond\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Iteration, Review\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 4: Functions, Iteration, Review (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18\n\n\n\n\n\n\n\n\nNoteLecture: Functions Beyond\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Iteration, Review\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-5-exam-1-functionals-223---227",
     "href": "schedule.html#week-5-exam-1-functionals-223---227",
     "title": "Schedule",
     "section": "Week 5: Exam #1, Functionals (2/23 - 2/27)",
-    "text": "Week 5: Exam #1, Functionals (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Functionals\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 5: Exam #1, Functionals (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Functionals\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#wednesday-225",
@@ -249,14 +249,14 @@
     "href": "schedule.html#week-6-functionals-environments-32---36",
     "title": "Schedule",
     "section": "Week 6: Functionals, Environments (3/2 - 3/6)",
-    "text": "Week 6: Functionals, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nNoteLecture: More Functionals\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 6: Functionals, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nNoteLecture: More Functionals\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-7-packages-conditions-and-oop-39---313",
     "href": "schedule.html#week-7-packages-conditions-and-oop-39---313",
     "title": "Schedule",
     "section": "Week 7: Packages, Conditions, and OOP (3/9 - 3/13)",
-    "text": "Week 7: Packages, Conditions, and OOP (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Packages and Conditions\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: OOP\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 at 8:59pm)"
+    "text": "Week 7: Packages, Conditions, and OOP (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Packages and Conditions\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: OOP\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "lectures/w1l1.html#welcome",
