@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 2, Lecture 2   ">
+
+<title>R and GitHub – SDS 192: Introduction to Data Science, Spring 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://sds-270-01-202603.slack.com"> 
+<span class="menu-text"><iconify-icon icon="fa6-brands:slack"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/"> 
+<span class="menu-text"><iconify-icon icon="fa6-brands:github"></iconify-icon></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#last-time" id="toc-last-time" class="nav-link active" data-scroll-target="#last-time">Last Time</a></li>
+  <li><a href="#activity" id="toc-activity" class="nav-link" data-scroll-target="#activity">Activity</a></li>
+  <li><a href="#today" id="toc-today" class="nav-link" data-scroll-target="#today">Today</a></li>
+  <li><a href="#working-directories" id="toc-working-directories" class="nav-link" data-scroll-target="#working-directories">Working directories</a></li>
+  <li><a href="#working-directories-1" id="toc-working-directories-1" class="nav-link" data-scroll-target="#working-directories-1">Working directories</a></li>
+  <li><a href="#r-projects" id="toc-r-projects" class="nav-link" data-scroll-target="#r-projects"><code>R</code> projects</a></li>
+  <li><a href="#data-imports" id="toc-data-imports" class="nav-link" data-scroll-target="#data-imports">Data imports</a></li>
+  <li><a href="#a-.csv-file" id="toc-a-.csv-file" class="nav-link" data-scroll-target="#a-.csv-file">A .csv file</a></li>
+  <li><a href="#importing-data-from-a-.csv-file" id="toc-importing-data-from-a-.csv-file" class="nav-link" data-scroll-target="#importing-data-from-a-.csv-file">Importing data from a .csv file</a></li>
+  <li><a href="#absolute-paths" id="toc-absolute-paths" class="nav-link" data-scroll-target="#absolute-paths">Absolute paths</a></li>
+  <li><a href="#relative-paths" id="toc-relative-paths" class="nav-link" data-scroll-target="#relative-paths">Relative paths</a></li>
+  <li><a href="#reading-data-in-from-url" id="toc-reading-data-in-from-url" class="nav-link" data-scroll-target="#reading-data-in-from-url">Reading data in from URL</a></li>
+  <li><a href="#importing-tips" id="toc-importing-tips" class="nav-link" data-scroll-target="#importing-tips">Importing tips</a></li>
+  <li><a href="#repairing-names" id="toc-repairing-names" class="nav-link" data-scroll-target="#repairing-names">Repairing names</a></li>
+  <li><a href="#missing-data" id="toc-missing-data" class="nav-link" data-scroll-target="#missing-data">Missing data</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#unnecessary-data" id="toc-unnecessary-data" class="nav-link" data-scroll-target="#unnecessary-data">Unnecessary data</a></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version Control</a>
+  <ul class="collapse">
+  <li><a href="#version-control-1" id="toc-version-control-1" class="nav-link" data-scroll-target="#version-control-1">Version control</a></li>
+  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a></li>
+  <li><a href="#creation-of-a-repository" id="toc-creation-of-a-repository" class="nav-link" data-scroll-target="#creation-of-a-repository">Creation of a repository</a></li>
+  <li><a href="#github-workflow" id="toc-github-workflow" class="nav-link" data-scroll-target="#github-workflow">GitHub workflow</a></li>
+  <li><a href="#pulls" id="toc-pulls" class="nav-link" data-scroll-target="#pulls">Pulls</a></li>
+  <li><a href="#example-pull" id="toc-example-pull" class="nav-link" data-scroll-target="#example-pull">Example: pull</a></li>
+  <li><a href="#commits" id="toc-commits" class="nav-link" data-scroll-target="#commits">Commits</a></li>
+  <li><a href="#differences-and-pushing" id="toc-differences-and-pushing" class="nav-link" data-scroll-target="#differences-and-pushing">Differences and pushing</a></li>
+  <li><a href="#example-differences-and-pushing" id="toc-example-differences-and-pushing" class="nav-link" data-scroll-target="#example-differences-and-pushing">Example: differences and pushing</a></li>
+  <li><a href="#why-github" id="toc-why-github" class="nav-link" data-scroll-target="#why-github">Why GitHub?</a></li>
+  <li><a href="#github-vocabulary" id="toc-github-vocabulary" class="nav-link" data-scroll-target="#github-vocabulary">GitHub vocabulary</a></li>
+  <li><a href="#collaboration-on-github" id="toc-collaboration-on-github" class="nav-link" data-scroll-target="#collaboration-on-github">Collaboration on GitHub</a></li>
+  <li><a href="#push-error" id="toc-push-error" class="nav-link" data-scroll-target="#push-error">Push error</a></li>
+  <li><a href="#pull-error" id="toc-pull-error" class="nav-link" data-scroll-target="#pull-error">Pull error</a></li>
+  <li><a href="#collaboration-challenges" id="toc-collaboration-challenges" class="nav-link" data-scroll-target="#collaboration-challenges">Collaboration challenges</a></li>
+  <li><a href="#merge-conflicts" id="toc-merge-conflicts" class="nav-link" data-scroll-target="#merge-conflicts">Merge conflicts</a></li>
+  <li><a href="#for-now-and-wednesday" id="toc-for-now-and-wednesday" class="nav-link" data-scroll-target="#for-now-and-wednesday">For Now and Wednesday</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="w2l2_github.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><code>R</code> and GitHub</h1>
+<p class="subtitle lead">SDS 192: Introduction to Data Science</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 2, Lecture 2 </span> <br> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="last-time" class="level2">
+<h2 class="anchored" data-anchor-id="last-time">Last Time</h2>
+<ul>
+<li>Welcome to <code>R</code>!
+<ul>
+<li>Interface</li>
+<li>Basics</li>
+</ul></li>
+<li>Coding in <code>R</code>
+<ul>
+<li>“hello world!”</li>
+<li>Objects and data structures</li>
+<li>Operators and functions</li>
+</ul></li>
+</ul>
+</section>
+<section id="activity" class="level2">
+<h2 class="anchored" data-anchor-id="activity">Activity</h2>
+<ul>
+<li>Talk to 2-3 people around you and discuss any questions you may have about using R/RStudio.</li>
+<li>Put any questions in the anonymous Google Form <a href="https://forms.gle/ZLuW2xM3P6xwS9Lh9">here</a></li>
+</ul>
+</section>
+<section id="today" class="level2">
+<h2 class="anchored" data-anchor-id="today">Today</h2>
+<ul>
+<li>More behind R
+<ul>
+<li>Data imports</li>
+<li>Missing data</li>
+<li>Other topics</li>
+</ul></li>
+<li>What is a workflow?
+<ul>
+<li>Why?</li>
+<li>Process</li>
+</ul></li>
+<li>GitHub
+<ul>
+<li>What is it?</li>
+<li>Actions</li>
+</ul></li>
+</ul>
+</section>
+<section id="working-directories" class="level2">
+<h2 class="anchored" data-anchor-id="working-directories">Working directories</h2>
+<ul>
+<li>Current workspace that you are situated in on your computer</li>
+<li>Can check with <code>getwd()</code></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="working-directories-1" class="level2">
+<h2 class="anchored" data-anchor-id="working-directories-1">Working directories</h2>
+<ul>
+<li>Important to set your working directory
+<ul>
+<li>If you create a project in directory, your working directory is set</li>
+<li>Otherwise, use <code>setwd()</code>
+<ul>
+<li>Need to find file path (Properties for Windows users, Cmd + Opt + C for Mac users on file)</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">".."</span>) <span class="co"># to go back a folder</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"C:/Users/jericho/Documents"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="r-projects" class="level2">
+<h2 class="anchored" data-anchor-id="r-projects"><code>R</code> projects</h2>
+<ul>
+<li>Associated with an <code>R</code> working directory
+<ul>
+<li>Results in own workspace and history</li>
+</ul></li>
+<li>Can be associated with a version control repository (e.g.&nbsp;Git)
+<ul>
+<li>Your lab submission repository is an example</li>
+</ul></li>
+<li>To make: File &gt; New Project</li>
+</ul>
+</section>
+<section id="data-imports" class="level2">
+<h2 class="anchored" data-anchor-id="data-imports">Data imports</h2>
+<ul>
+<li>Can be seen as a .txt or .csv file
+<ul>
+<li><code>read.table()</code> for .txt files</li>
+<li><code>read.csv()</code> for .csv files</li>
+</ul></li>
+<li>Specify file path and if the header exists</li>
+</ul>
+</section>
+<section id="a-.csv-file" class="level2">
+<h2 class="anchored" data-anchor-id="a-.csv-file">A .csv file</h2>
+<ul>
+<li>A comma-separated file
+<ul>
+<li>Rows are created with new lines (e.g.&nbsp;return/enter)</li>
+<li>Columns are separated by commas</li>
+</ul></li>
+</ul>
+<p><img src="images/lect4/csv.png" class="img-fluid"></p>
+</section>
+<section id="importing-data-from-a-.csv-file" class="level2">
+<h2 class="anchored" data-anchor-id="importing-data-from-a-.csv-file">Importing data from a .csv file</h2>
+<ul>
+<li>Need to place data into same working directory as your code
+<ul>
+<li>Adjust file path as necessary</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>nba_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"nba2024.csv"</span>, <span class="at">header =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="absolute-paths" class="level2">
+<h2 class="anchored" data-anchor-id="absolute-paths">Absolute paths</h2>
+<ul>
+<li>Absolute paths list all folders from your <code>root</code> folder to the location of the file
+<ul>
+<li>Avoid this as much as possible!</li>
+<li>Reproducibility issues</li>
+</ul></li>
+</ul>
+<p><em>Example:</em> “C:/Users/jericho/Documents/SDS 192”</p>
+</section>
+<section id="relative-paths" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="relative-paths">Relative paths</h2>
+<ul>
+<li>Relative paths direct to the desired file from your <em>current location</em>
+<ul>
+<li>Move up a directory: <code>../</code></li>
+<li>Move up two directories: <code>../../</code></li>
+<li>Move up a directory and into <code>datasets</code> folders: <code>../datasets/</code></li>
+</ul></li>
+</ul>
+<p><em>Example:</em></p>
+<ul>
+<li>datasets/</li>
+<li>code.qmd</li>
+<li>README.md</li>
+</ul>
+</section>
+<section id="reading-data-in-from-url" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="reading-data-in-from-url">Reading data in from URL</h2>
+<ul>
+<li>Instead of a file path, we can put in a URL
+<ul>
+<li>Make sure we are connected to the internet</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>hospital_costs_2018 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/SDS-192-Intro/SDS-192-public-website/main/slides/datasets/Hospital_Cost_Report_2018.csv"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(hospital_costs_2018[, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  rpt_rec_num Provider.CCN                 Hospital.Name        Street.Address
+1      623132        10032              WEDOWEE HOSPITAL 301 NORTH MAIN STREET
+2      628158       250042   NORTHWEST MS MEDICAL CENTER   1970 HOSPITAL DRIVE
+3      628833       440235 BIG SOUTH FORK MEDICAL CENTER      18797 ALBERTA ST
+4      631016        50523   SUTTER DELTA MEDICAL CENTER    3901 LONE TREE WAY
+5      631094        50305     ALTA BATES MEDICAL CENTER     2450 ASHBY AVENUE
+6      631292        50043         SUMMIT MEDICAL CENTER  350 HAWTHORNE AVENUE
+        City
+1    WEDOWEE
+2 CLARKSDALE
+3     ONEIDA
+4    ANTIOCH
+5   BERKELEY
+6    OAKLAND</code></pre>
+</div>
+</div>
+</section>
+<section id="importing-tips" class="level2">
+<h2 class="anchored" data-anchor-id="importing-tips">Importing tips</h2>
+<ul>
+<li>Data should be rectangular!
+<ul>
+<li>No merged columns/rows</li>
+<li>Values in every cell</li>
+</ul></li>
+<li>Avoid Excel and other proprietary formats</li>
+<li>Avoid spaces in column names if possible</li>
+</ul>
+</section>
+<section id="repairing-names" class="level2">
+<h2 class="anchored" data-anchor-id="repairing-names">Repairing names</h2>
+<ul>
+<li>If spaces exist in column name, you must use backticks in order to reference column
+<ul>
+<li>e.g.&nbsp;`column name`</li>
+<li>Other solutions:
+<ul>
+<li>Assign <code>make.names(names(your_data))</code> to <code>names(your_data)</code></li>
+<li>Fix each unwanted column name by accessing <code>names(your_data)</code></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="missing-data" class="level2">
+<h2 class="anchored" data-anchor-id="missing-data">Missing data</h2>
+<ul>
+<li>In almost all cases, missing data will occur
+<ul>
+<li>May show up as blank or <code>NA</code></li>
+</ul></li>
+<li>Solutions:
+<ul>
+<li>Use <code>na.omit(your_data)</code> to remove observations with at least one missing value
+<ul>
+<li>Easy solution, but may be problematic if missing values occur in various spots in data</li>
+</ul></li>
+<li>Imputation (only when data are missing at random)
+<ul>
+<li>Use of <code>replace()</code> function</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cities <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Northampton"</span>, <span class="st">"Amherst"</span>, <span class="st">"Hadley"</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>temps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">57</span>, <span class="dv">60</span>, <span class="cn">NA</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>inter <span class="ot">&lt;-</span> <span class="fu">c</span>(T, F, F)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">city =</span> cities, <span class="at">temp =</span> temps, <span class="at">inter =</span> inter)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">na.omit</span>(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         city temp inter
+1 Northampton   57  TRUE
+2     Amherst   60 FALSE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>temp <span class="ot">&lt;-</span> <span class="fu">replace</span>(data<span class="sc">$</span>temp, <span class="fu">is.na</span>(data<span class="sc">$</span>temp), <span class="fu">mean</span>(data<span class="sc">$</span>temp, <span class="at">na.rm =</span> T))</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>temp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 57.0 60.0 58.5</code></pre>
+</div>
+</div>
+</section>
+<section id="unnecessary-data" class="level2">
+<h2 class="anchored" data-anchor-id="unnecessary-data">Unnecessary data</h2>
+<ul>
+<li>Suppose there are small pockets of data that you deem are not the main focus of your project
+<ul>
+<li>Use of subsetting</li>
+<li>To remove: Use <code>!(condition)</code> within <code>[]</code></li>
+<li>To keep: Use <code>condition</code> within <code>[]</code></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>mtcars[mtcars<span class="sc">$</span>mpg <span class="sc">&lt;</span> <span class="dv">15</span>, ]</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>mtcars[<span class="sc">!</span>(mtcars<span class="sc">$</span>mpg <span class="sc">&lt;</span> <span class="dv">15</span>), ]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="version-control" class="level1">
+<h1>Version Control</h1>
+<section id="version-control-1" class="level2">
+<h2 class="anchored" data-anchor-id="version-control-1">Version control</h2>
+<ul>
+<li>Allows us to save and refer to versions of digital documents over time</li>
+<li>Supports “reproducibility” by allowing us to retrace our steps in a systematic way
+<ul>
+<li>e.g.&nbsp;a resume folder</li>
+<li>e.g.&nbsp;a package</li>
+</ul></li>
+</ul>
+<p><em>Question:</em> Why is version control important?</p>
+</section>
+<section id="git" class="level2">
+<h2 class="anchored" data-anchor-id="git">Git</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="git-1" class="level3">
+<h3 class="anchored" data-anchor-id="git-1">Git</h3>
+<ul>
+<li>Open source command line tool for version control</li>
+<li>Installed on your local machine (OS-specific)</li>
+<li>Does not require the use of any external tools</li>
+</ul>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="github" class="level3">
+<h3 class="anchored" data-anchor-id="github">GitHub</h3>
+<ul>
+<li>Web-hosting platform for <code>git</code> projects</li>
+<li>Hosts repositories for publishing/sharing work with the broader coding community</li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+<section id="creation-of-a-repository" class="level2">
+<h2 class="anchored" data-anchor-id="creation-of-a-repository">Creation of a repository</h2>
+<ul>
+<li>Multiple ways to do this:
+<ul>
+<li>Create repository on GitHub, then <strong>clone</strong> on your computer using RStudio/GitHub Desktop</li>
+<li>Create new project on RStudio, then connect to GitHub</li>
+</ul></li>
+</ul>
+<p>*Note:** The repository will be seen locally and remotely.</p>
+</section>
+<section id="github-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="github-workflow">GitHub workflow</h2>
+<ol type="1">
+<li><strong>Pull</strong> changes from GitHub (remote) to your machine (local)
+<ul>
+<li>Important to ensure there are not any conflicts!</li>
+</ul></li>
+<li><strong>Make</strong> changes on your computer</li>
+<li><strong>Commit</strong> changes
+<ul>
+<li>Do this often and leave descriptive commit messages!</li>
+</ul></li>
+<li><strong>Pull</strong> changes from remote again if working with others.</li>
+<li><strong>Push</strong> changes from machine (local) to GitHub (remote)</li>
+</ol>
+</section>
+<section id="pulls" class="level2">
+<h2 class="anchored" data-anchor-id="pulls">Pulls</h2>
+<ul>
+<li>Retrieves any changes made in remote repository, adds those changes to machine
+<ul>
+<li>Needs to be done when collaborating with multiple people</li>
+<li>When not done, merging conflicts can arise</li>
+</ul></li>
+</ul>
+</section>
+<section id="example-pull" class="level2">
+<h2 class="anchored" data-anchor-id="example-pull">Example: pull</h2>
+<p><img src="images/lect4/commit1.png" class="img-fluid"></p>
+</section>
+<section id="commits" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="commits">Commits</h2>
+<ul>
+<li>Commits are saves to a digital document
+<ul>
+<li>Stored snapshot of the document at that time</li>
+<li>Includes a unique hash that allows you to track the history of changes to the document</li>
+</ul></li>
+<li>When you commit, you create a commit message where you document your changes.
+<ul>
+<li>Commit messages should be descriptive of the changes made</li>
+</ul></li>
+</ul>
+<p><img src="images/lect4/commit2.png" class="img-fluid"></p>
+</section>
+<section id="differences-and-pushing" class="level2">
+<h2 class="anchored" data-anchor-id="differences-and-pushing">Differences and pushing</h2>
+<ul>
+<li>On committing, we can review the differences between the previous and current version of a document
+<ul>
+<li>Additions highlighted in green</li>
+<li>Deletions highlighted in red</li>
+</ul></li>
+<li>Commit, pull, and push</li>
+</ul>
+</section>
+<section id="example-differences-and-pushing" class="level2">
+<h2 class="anchored" data-anchor-id="example-differences-and-pushing">Example: differences and pushing</h2>
+<p><img src="images/lect4/push.png" class="img-fluid"></p>
+</section>
+<section id="why-github" class="level2">
+<h2 class="anchored" data-anchor-id="why-github">Why GitHub?</h2>
+<ul>
+<li>Reproducibility</li>
+<li>Collaboration</li>
+<li>Licensing</li>
+<li>Robust way to add descriptions (e.g.&nbsp;README files) and issues</li>
+</ul>
+</section>
+<section id="github-vocabulary" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="github-vocabulary">GitHub vocabulary</h2>
+<ul>
+<li><strong>Fork</strong>: Create a copy of a GitHub repository for editing in your own user account</li>
+<li><strong>Clone</strong>: Download a copy of a remote repository to your local machine</li>
+<li><strong>Pull</strong>: Fetch changes to code from a remote repository to local machine</li>
+<li><strong>Stage</strong>: Select the files you wish to commit changes on</li>
+<li><strong>Diff</strong>: Review the differences between different versions of files</li>
+<li><strong>Commit</strong>: Take a snapshot of changes to files</li>
+<li><strong>Push</strong>: Upload changes to code from local machine to remote repository</li>
+</ul>
+</section>
+<section id="collaboration-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration-on-github">Collaboration on GitHub</h2>
+<ul>
+<li>GitHub assigns permissions to different users to manage and make changes to files stored in a GitHub repository
+<ul>
+<li>Use of branches and pull requests</li>
+</ul></li>
+<li>Separate users can clone a repo to their local machine to make changes at the same time
+<ul>
+<li>If cloned, users will not know what changes the other is making!</li>
+<li>This is why pulling often is so important!</li>
+<li>There may be a different version of a file in GitHub by the time you go to push your changes</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="push-error" class="level2">
+<h2 class="anchored" data-anchor-id="push-error">Push error</h2>
+<p><img src="images/lect4/push-error.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>This error indicates that you don’t have the latest version of the files on your local machine. You should pull, then push again.</p>
+</blockquote>
+<hr>
+</section>
+<section id="pull-error" class="level2">
+<h2 class="anchored" data-anchor-id="pull-error">Pull error</h2>
+<p><img src="images/lect4/pull-error.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>This error indicates that pulling the changes that you or someone else made in remote would overwrite the changes you made on your local machine. You should commit, pull, and then push.</p>
+</blockquote>
+<hr>
+</section>
+<section id="collaboration-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration-challenges">Collaboration challenges</h2>
+<ul>
+<li>What happens when two users have cloned a GitHub repo to their local machine and are making changes to that repo in the same place at the same time?</li>
+<li>When pushing you will get an error indicating that there is a <em>merge conflict</em>.</li>
+<li><code>git</code> wants to know which version of the file you prefer - yours or your collaborators.</li>
+<li>You have to manually resolve these conflicts in an editor.</li>
+</ul>
+<hr>
+</section>
+<section id="merge-conflicts" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="merge-conflicts">Merge conflicts</h2>
+<p><img src="images/lect4/merge-error.png" class="img-fluid"></p>
+<p><img src="images/lect4/merge-conflict.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Delete lines so that only desired code appears. Commit changes, and then push.</p>
+</blockquote>
+</section>
+<section id="for-now-and-wednesday" class="level2">
+<h2 class="anchored" data-anchor-id="for-now-and-wednesday">For Now and Wednesday</h2>
+<ul>
+<li>Finish activity for today’s class</li>
+<li>Finish reading exercises by end of Thursday
+<ul>
+<li>Appendix B, problems 1 and 3</li>
+</ul></li>
+<li>Lab #1 due on Wednesday at 11:59pm</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

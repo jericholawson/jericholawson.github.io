@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 2, Lecture 1   ">
+
+<title>R Fundamentals – SDS 192: Introduction to Data Science, Spring 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://sds-270-01-202603.slack.com"> 
+<span class="menu-text"><iconify-icon icon="fa6-brands:slack"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/"> 
+<span class="menu-text"><iconify-icon icon="fa6-brands:github"></iconify-icon></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#last-time" id="toc-last-time" class="nav-link active" data-scroll-target="#last-time">Last Time</a></li>
+  <li><a href="#activity" id="toc-activity" class="nav-link" data-scroll-target="#activity">Activity</a></li>
+  <li><a href="#today" id="toc-today" class="nav-link" data-scroll-target="#today">Today</a></li>
+  <li><a href="#r-and-rstudio" id="toc-r-and-rstudio" class="nav-link" data-scroll-target="#r-and-rstudio">R and RStudio</a></li>
+  <li><a href="#rstudio-interface" id="toc-rstudio-interface" class="nav-link" data-scroll-target="#rstudio-interface">RStudio Interface</a></li>
+  <li><a href="#rstudio-interface-cont." id="toc-rstudio-interface-cont." class="nav-link" data-scroll-target="#rstudio-interface-cont.">RStudio Interface (cont.)</a></li>
+  <li><a href="#a-classic-first-project-in-coding" id="toc-a-classic-first-project-in-coding" class="nav-link" data-scroll-target="#a-classic-first-project-in-coding">A classic first project in coding</a></li>
+  <li><a href="#r-is-so-much-more-than-hello-world" id="toc-r-is-so-much-more-than-hello-world" class="nav-link" data-scroll-target="#r-is-so-much-more-than-hello-world">R is so much more than “Hello world!”</a></li>
+  <li><a href="#structure" id="toc-structure" class="nav-link" data-scroll-target="#structure">Structure</a></li>
+  <li><a href="#objects-and-the-actions" id="toc-objects-and-the-actions" class="nav-link" data-scroll-target="#objects-and-the-actions">Objects and the Actions</a></li>
+  <li><a href="#values-vs.-vectors-vs.-data-frames" id="toc-values-vs.-vectors-vs.-data-frames" class="nav-link" data-scroll-target="#values-vs.-vectors-vs.-data-frames">Values vs.&nbsp;Vectors vs.&nbsp;Data Frames</a></li>
+  <li><a href="#assigning-objects-to-variable-names" id="toc-assigning-objects-to-variable-names" class="nav-link" data-scroll-target="#assigning-objects-to-variable-names">Assigning Objects to Variable Names</a></li>
+  <li><a href="#learning-check" id="toc-learning-check" class="nav-link" data-scroll-target="#learning-check">Learning check</a></li>
+  <li><a href="#learning-check-1" id="toc-learning-check-1" class="nav-link" data-scroll-target="#learning-check-1">Learning check</a></li>
+  <li><a href="#where-can-i-find-these-data-objects-in-r" id="toc-where-can-i-find-these-data-objects-in-r" class="nav-link" data-scroll-target="#where-can-i-find-these-data-objects-in-r">Where can I find these data objects in <code>R</code>?</a></li>
+  <li><a href="#other-data-structures" id="toc-other-data-structures" class="nav-link" data-scroll-target="#other-data-structures">Other Data Structures</a></li>
+  <li><a href="#other-data-structures-1" id="toc-other-data-structures-1" class="nav-link" data-scroll-target="#other-data-structures-1">Other Data Structures</a></li>
+  <li><a href="#operators-and-functions-in-r" id="toc-operators-and-functions-in-r" class="nav-link" data-scroll-target="#operators-and-functions-in-r">Operators and functions in <code>R</code></a>
+  <ul class="collapse">
+  <li><a href="#activity-mathematical-operators" id="toc-activity-mathematical-operators" class="nav-link" data-scroll-target="#activity-mathematical-operators">Activity: Mathematical operators</a></li>
+  <li><a href="#operators-in-r" id="toc-operators-in-r" class="nav-link" data-scroll-target="#operators-in-r">Operators in <code>R</code></a></li>
+  <li><a href="#what-is-a-function" id="toc-what-is-a-function" class="nav-link" data-scroll-target="#what-is-a-function">What is a function?</a></li>
+  <li><a href="#structure-of-function" id="toc-structure-of-function" class="nav-link" data-scroll-target="#structure-of-function">Structure of Function</a></li>
+  <li><a href="#example-of-function" id="toc-example-of-function" class="nav-link" data-scroll-target="#example-of-function">Example of Function</a></li>
+  <li><a href="#finding-help" id="toc-finding-help" class="nav-link" data-scroll-target="#finding-help">Finding Help</a></li>
+  <li><a href="#learning-check-2" id="toc-learning-check-2" class="nav-link" data-scroll-target="#learning-check-2">Learning Check</a></li>
+  </ul></li>
+  <li><a href="#helpful-functions-in-r" id="toc-helpful-functions-in-r" class="nav-link" data-scroll-target="#helpful-functions-in-r">Helpful Functions in <code>R</code></a>
+  <ul class="collapse">
+  <li><a href="#helpful-value-operations" id="toc-helpful-value-operations" class="nav-link" data-scroll-target="#helpful-value-operations">Helpful Value Operations</a></li>
+  <li><a href="#helpful-vector-functions" id="toc-helpful-vector-functions" class="nav-link" data-scroll-target="#helpful-vector-functions">Helpful Vector Functions</a></li>
+  <li><a href="#learning-check-3" id="toc-learning-check-3" class="nav-link" data-scroll-target="#learning-check-3">Learning Check</a></li>
+  <li><a href="#helpful-data-frame-functions" id="toc-helpful-data-frame-functions" class="nav-link" data-scroll-target="#helpful-data-frame-functions">Helpful Data Frame Functions</a></li>
+  <li><a href="#do-i-really-have-to-memorize-all-of-these-functions" id="toc-do-i-really-have-to-memorize-all-of-these-functions" class="nav-link" data-scroll-target="#do-i-really-have-to-memorize-all-of-these-functions">Do I really have to memorize all of these functions?!</a></li>
+  <li><a href="#pipe-operator-in-r" id="toc-pipe-operator-in-r" class="nav-link" data-scroll-target="#pipe-operator-in-r">Pipe Operator in <code>R</code></a></li>
+  </ul></li>
+  <li><a href="#missing-values-and-r-functions" id="toc-missing-values-and-r-functions" class="nav-link" data-scroll-target="#missing-values-and-r-functions">Missing Values and <code>R</code> Functions</a>
+  <ul class="collapse">
+  <li><a href="#missing-values" id="toc-missing-values" class="nav-link" data-scroll-target="#missing-values">Missing Values</a></li>
+  <li><a href="#missing-values-in-math-functions" id="toc-missing-values-in-math-functions" class="nav-link" data-scroll-target="#missing-values-in-math-functions">Missing Values in Math Functions</a></li>
+  <li><a href="#for-now-and-wednesday" id="toc-for-now-and-wednesday" class="nav-link" data-scroll-target="#for-now-and-wednesday">For Now and Wednesday</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="w2l1_introR.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><code>R</code> Fundamentals</h1>
+<p class="subtitle lead">SDS 192: Introduction to Data Science</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 2, Lecture 1 </span> <br> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="last-time" class="level2">
+<h2 class="anchored" data-anchor-id="last-time">Last Time</h2>
+<ul>
+<li>Data fundamentals
+<ul>
+<li>Rectangular datasets</li>
+<li>Observations, variables, and values</li>
+<li>Categorical vs.&nbsp;discrete</li>
+</ul></li>
+</ul>
+</section>
+<section id="activity" class="level2">
+<h2 class="anchored" data-anchor-id="activity">Activity</h2>
+<p>Navigate over to the activity for today’s lecture on the website (via the Schedule).</p>
+<ul>
+<li>Work on the first problem with a group of 2-3 for 8-10 minutes!</li>
+</ul>
+</section>
+<section id="today" class="level2">
+<h2 class="anchored" data-anchor-id="today">Today</h2>
+<ul>
+<li>Welcome to <code>R</code>!
+<ul>
+<li>Interface</li>
+<li>Basics</li>
+</ul></li>
+<li>Coding in <code>R</code>
+<ul>
+<li>“hello world!”</li>
+<li>Objects and data structures</li>
+<li>Operators and functions</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="r-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="r-and-rstudio">R and RStudio</h2>
+<ul>
+<li>R is the coding language we are using for all things data science related</li>
+<li>RStudio is the interface (i.e.&nbsp;IDE) we are using to access R</li>
+<li>If you haven’t installed both yet: follow these instructions <a href="../resources/tech-setup.html">here</a></li>
+</ul>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img src="images/lect3/r.png" class="img-fluid"></p>
+</div><div class="column" style="width:70%;">
+<p><img src="images/lect3/rstudio.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="rstudio-interface" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-interface">RStudio Interface</h2>
+<p><img src="images/lect3/interface.png" class="img-fluid"></p>
+</section>
+<section id="rstudio-interface-cont." class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="rstudio-interface-cont.">RStudio Interface (cont.)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Script:</strong> top-left corner of screen; used to write in files
+<ul>
+<li>Quarto (.qmd) files</li>
+</ul></li>
+<li><strong>Console:</strong> bottom-left corner; execute single-line commands
+<ul>
+<li>Good for testing</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><strong>Environment:</strong> top-right corner; can see objects placed in memory
+<ul>
+<li>Data frames, values, etc.</li>
+</ul></li>
+<li><strong>Help/Plots/Viewer/etc.:</strong> bottom-right corner; used for supplemental tools
+<ul>
+<li>Can see plots, look through help files, etc.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p><img src="images/lect3/interface.png" class="img-fluid"></p>
+</section>
+<section id="a-classic-first-project-in-coding" class="level2">
+<h2 class="anchored" data-anchor-id="a-classic-first-project-in-coding">A classic first project in coding</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Hello world!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Hello world!"</code></pre>
+</div>
+</div>
+</section>
+<section id="r-is-so-much-more-than-hello-world" class="level2">
+<h2 class="anchored" data-anchor-id="r-is-so-much-more-than-hello-world">R is so much more than “Hello world!”</h2>
+<ul>
+<li>Coding language for statisticians and data scientists
+<ul>
+<li>Python, Julia are catching up</li>
+<li><a href="https://www.tiobe.com/tiobe-index/">TIOBE index</a></li>
+</ul></li>
+<li>Data visualization, wrangling, and analysis</li>
+<li>Syntax – think of it like learning a new language!</li>
+</ul>
+<hr>
+</section>
+<section id="structure" class="level2">
+<h2 class="anchored" data-anchor-id="structure">Structure</h2>
+<ul>
+<li>Nouns: objects (mostly)</li>
+<li>Verbs: functions, operations</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'stringr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'lubridate' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.6.0
+✔ ggplot2   4.0.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.2.0     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span> <span class="fu">select</span>(mpg, hp)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                     mpg  hp
+Mazda RX4           21.0 110
+Mazda RX4 Wag       21.0 110
+Datsun 710          22.8  93
+Hornet 4 Drive      21.4 110
+Hornet Sportabout   18.7 175
+Valiant             18.1 105
+Duster 360          14.3 245
+Merc 240D           24.4  62
+Merc 230            22.8  95
+Merc 280            19.2 123
+Merc 280C           17.8 123
+Merc 450SE          16.4 180
+Merc 450SL          17.3 180
+Merc 450SLC         15.2 180
+Cadillac Fleetwood  10.4 205
+Lincoln Continental 10.4 215
+Chrysler Imperial   14.7 230
+Fiat 128            32.4  66
+Honda Civic         30.4  52
+Toyota Corolla      33.9  65
+Toyota Corona       21.5  97
+Dodge Challenger    15.5 150
+AMC Javelin         15.2 150
+Camaro Z28          13.3 245
+Pontiac Firebird    19.2 175
+Fiat X1-9           27.3  66
+Porsche 914-2       26.0  91
+Lotus Europa        30.4 113
+Ford Pantera L      15.8 264
+Ferrari Dino        19.7 175
+Maserati Bora       15.0 335
+Volvo 142E          21.4 109</code></pre>
+</div>
+</div>
+</section>
+<section id="objects-and-the-actions" class="level2">
+<h2 class="anchored" data-anchor-id="objects-and-the-actions">Objects and the Actions</h2>
+<ul>
+<li>Information is stored in various data structures
+<ul>
+<li>e.g.&nbsp;value, data frame, list</li>
+<li><code>mtcars</code></li>
+</ul></li>
+<li>Can write functions to perform actions on these data structures
+<ul>
+<li>e.g.&nbsp;calculations, printing/storing information</li>
+<li><code>select()</code></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span> <span class="fu">select</span>(mpg, hp)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                     mpg  hp
+Mazda RX4           21.0 110
+Mazda RX4 Wag       21.0 110
+Datsun 710          22.8  93
+Hornet 4 Drive      21.4 110
+Hornet Sportabout   18.7 175
+Valiant             18.1 105
+Duster 360          14.3 245
+Merc 240D           24.4  62
+Merc 230            22.8  95
+Merc 280            19.2 123
+Merc 280C           17.8 123
+Merc 450SE          16.4 180
+Merc 450SL          17.3 180
+Merc 450SLC         15.2 180
+Cadillac Fleetwood  10.4 205
+Lincoln Continental 10.4 215
+Chrysler Imperial   14.7 230
+Fiat 128            32.4  66
+Honda Civic         30.4  52
+Toyota Corolla      33.9  65
+Toyota Corona       21.5  97
+Dodge Challenger    15.5 150
+AMC Javelin         15.2 150
+Camaro Z28          13.3 245
+Pontiac Firebird    19.2 175
+Fiat X1-9           27.3  66
+Porsche 914-2       26.0  91
+Lotus Europa        30.4 113
+Ford Pantera L      15.8 264
+Ferrari Dino        19.7 175
+Maserati Bora       15.0 335
+Volvo 142E          21.4 109</code></pre>
+</div>
+</div>
+</section>
+<section id="values-vs.-vectors-vs.-data-frames" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="values-vs.-vectors-vs.-data-frames">Values vs.&nbsp;Vectors vs.&nbsp;Data Frames</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Values</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Vectors</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Data Frame</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="nonincremental">
+<ul>
+<li>a single data point</li>
+<li><code>R</code> understands values to be of a certain <strong>type</strong>:
+<ul>
+<li>double: 3.29</li>
+<li>integer: 3</li>
+<li>character: “SDS 192”</li>
+<li>logical: TRUE/FALSE</li>
+<li>date-time: 1/23/84 01:23:01</li>
+</ul></li>
+</ul>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fl">3.29</span> <span class="co"># double</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.29</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>L <span class="co"># integer</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="st">"SDS 192"</span> <span class="co"># character</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "SDS 192"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="co"># logical</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.Date</span>() </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "2026-01-20"</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="nonincremental">
+<ul>
+<li>a 1-dimensional data object, listing a series of values</li>
+<li>all objects in a vector share the same <strong>type</strong></li>
+<li>vector defined by listing entries (separated by commas) in the function <code>c()</code> (shorthand for <em>concatenate/combine</em>)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3 4</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="st">"Northampton"</span>, <span class="st">"Hadley"</span>, <span class="st">"Easthampton"</span>, <span class="st">"Amherst"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Northampton" "Hadley"      "Easthampton" "Amherst"    </code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="nonincremental">
+<ul>
+<li>a two-dimensional (rectangular) data object</li>
+<li>Every column in a data frame is a vector</li>
+<li>Column names act as a variable name for that vector (access via the <code>$</code> accessor)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  col1  col2 col3
+1    1  TRUE    a
+2    5 FALSE    b
+3    6  TRUE    c
+4    7  TRUE    d</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>col1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 5 6 7</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="assigning-objects-to-variable-names" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="assigning-objects-to-variable-names">Assigning Objects to Variable Names</h2>
+<ul>
+<li><code>&lt;-</code> symbol assigns a value to a variable
+<ul>
+<li><code>=</code> is okay, but not preferred</li>
+</ul></li>
+<li>Stores object for future use</li>
+<li>Variable names should be short, descriptive, and snake-cased (lower-cased with words separated by underscores)
+<ul>
+<li>e.g.&nbsp;<code>urban_data</code> for a dataset that refers to demographic data in a city</li>
+<li>e.g.&nbsp;<code>test_scores</code> for a vector of test scores from a particular class</li>
+<li>Avoid periods, use separator characters (_), and do not start variables with numbers</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="learning-check" class="level2">
+<h2 class="anchored" data-anchor-id="learning-check">Learning check</h2>
+<p>What kind of object is this in <code>R</code>? What is its type?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>temps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">47.3</span>, <span class="fl">55.6</span>, <span class="fl">48.3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<hr>
+</section>
+<section id="learning-check-1" class="level2">
+<h2 class="anchored" data-anchor-id="learning-check-1">Learning check</h2>
+<p>What would happen if I were to do the following in <code>R</code>?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>val <span class="ot">&lt;-</span> <span class="dv">34</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>val <span class="ot">&lt;-</span> val <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li>This is called <em>overwriting</em> a variable.</li>
+</ul>
+<hr>
+</section>
+<section id="where-can-i-find-these-data-objects-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="where-can-i-find-these-data-objects-in-r">Where can I find these data objects in <code>R</code>?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Objects in <code>R</code> will be listed in the Environment tab in the upper right hand corner of RStudio.</li>
+<li>Removing unnecessary objects from the environment can free up space!</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(temps)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img src="images/lect3/environment.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="other-data-structures" class="level2">
+<h2 class="anchored" data-anchor-id="other-data-structures">Other Data Structures</h2>
+<ul>
+<li><code>list</code>: used to store objects of various types</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(<span class="st">"autumn"</span>, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>), <span class="cn">TRUE</span>, mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] "autumn"
+
+[[2]]
+[1] 2 4 6
+
+[[3]]
+[1] TRUE
+
+[[4]]
+              mpg cyl disp  hp
+Mazda RX4      21   6  160 110
+Mazda RX4 Wag  21   6  160 110</code></pre>
+</div>
+</div>
+</section>
+<section id="other-data-structures-1" class="level2">
+<h2 class="anchored" data-anchor-id="other-data-structures-1">Other Data Structures</h2>
+<ul>
+<li><code>matrix</code>: 2D data structure used to store values of same type
+<ul>
+<li>Not a <code>list</code> of vectors (e.g.&nbsp;data frame)</li>
+<li>Used for matrix operations</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">7</span>, <span class="dv">6</span>), <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     [,1] [,2]
+[1,]    1    3
+[2,]    7    6</code></pre>
+</div>
+</div>
+</section>
+<section id="operators-and-functions-in-r" class="level1">
+<h1>Operators and functions in <code>R</code></h1>
+<hr>
+<section id="activity-mathematical-operators" class="level2">
+<h2 class="anchored" data-anchor-id="activity-mathematical-operators">Activity: Mathematical operators</h2>
+<ul>
+<li>Think and write down all possible operations you would do inside an algebra class.</li>
+</ul>
+</section>
+<section id="operators-in-r" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="operators-in-r">Operators in <code>R</code></h2>
+<ul>
+<li>Symbols that communicate what operations to perform in <code>R</code></li>
+<li>Includes calculator symbols: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>
+<ul>
+<li><code>^</code> or <code>**</code> for exponentiation</li>
+<li><code>%%</code> for mod (remainder of a quotient of two numbers)</li>
+</ul></li>
+<li>Includes relational symbols: <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>
+<ul>
+<li><code>==</code> for equivalence</li>
+<li><code>!=</code> for non-equivalence</li>
+</ul></li>
+<li>Includes logical symbols: <code>&amp;</code> (AND), <code>|</code> (OR), <code>!</code> (NOT)</li>
+</ul>
+<hr>
+</section>
+<section id="what-is-a-function" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-function">What is a function?</h2>
+<ul>
+<li>An action done on an object to produce something
+<ul>
+<li>Inputs/arguments to outputs</li>
+<li>e.g.&nbsp;<code>y = f(x)</code></li>
+<li>e.g.&nbsp;With $15, I bought a slice of pizza for $5. Now I have $10 left.</li>
+</ul></li>
+</ul>
+</section>
+<section id="structure-of-function" class="level2">
+<h2 class="anchored" data-anchor-id="structure-of-function">Structure of Function</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(input1, ...){</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># action to input</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># return an output with return(__)</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li><strong>Arguments:</strong> inputs needed to complete action</li>
+<li><strong>Actions:</strong> what is being done to return an output</li>
+<li><strong>Outputs:</strong> the final product</li>
+</ul>
+</section>
+<section id="example-of-function" class="level2">
+<h2 class="anchored" data-anchor-id="example-of-function">Example of Function</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>pizza <span class="ot">&lt;-</span> <span class="cf">function</span>(money){</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  money <span class="ot">&lt;-</span> money <span class="sc">-</span> <span class="dv">5</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(money)</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pizza</span>(<span class="dv">15</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10</code></pre>
+</div>
+</div>
+</section>
+<section id="finding-help" class="level2">
+<h2 class="anchored" data-anchor-id="finding-help">Finding Help</h2>
+<ul>
+<li>Typing <code>?FUNCTION_NAME</code> in to the Console loads info about that function</li>
+</ul>
+<p><code>?round()</code></p>
+<ul>
+<li>What functions are required?</li>
+<li>What functions are optional?</li>
+</ul>
+<hr>
+</section>
+<section id="learning-check-2" class="level2">
+<h2 class="anchored" data-anchor-id="learning-check-2">Learning Check</h2>
+<p>Convert the following variable name into something descriptive in snake case:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">round</span>(pi, <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Run the code in your Console. How can we find this variable in RStudio once we run this code?</p>
+</section>
+</section>
+<section id="helpful-functions-in-r" class="level1">
+<h1>Helpful Functions in <code>R</code></h1>
+<hr>
+<section id="helpful-value-operations" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-value-operations">Helpful Value Operations</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Numeric Values</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Character Values</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="nonincremental">
+<p><code>R</code> can work just like a calculator!</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(a,b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+<p>Why does this produce an error?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="st">"3"</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(c, c)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `sum()`:
+! invalid 'type' (character) of argument</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="nonincremental">
+<p><code>R</code> can concatenate strings!</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>word1 <span class="ot">&lt;-</span> <span class="st">"Harry"</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>word2 <span class="ot">&lt;-</span> <span class="st">"Sally"</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">"When"</span>, word1, <span class="st">"Met"</span>, word2, <span class="at">sep =</span> <span class="st">" "</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "When Harry Met Sally"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="helpful-vector-functions" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-vector-functions">Helpful Vector Functions</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">All Vectors</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Numeric Vectors</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Categorical Vectors</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="nonincremental">
+<ul>
+<li><code>class()</code> returns the class of the values in a vector</li>
+<li><code>length()</code> returns the number of values in a vector</li>
+<li><code>is.na()</code> for each value, returns whether the value is an <code>NA</code> value</li>
+</ul>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="nonincremental">
+<ul>
+<li><code>sum()</code> returns the sum of the values in a vector</li>
+<li><code>max()</code> returns the maximum value in a vector</li>
+<li><code>rank()</code> returns the ranking of a value in a vector</li>
+<li><code>R</code> has other functions for accomplishing statistical, mathematical, and ordering operations</li>
+</ul>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div class="nonincremental">
+<ul>
+<li><code>unique()</code> returns the unique values of a vector</li>
+<li><code>table()</code> returns the distribution of unique values of a vector</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="learning-check-3" class="level2">
+<h2 class="anchored" data-anchor-id="learning-check-3">Learning Check</h2>
+<p>How would I find the sum of the third column in this data frame, which I have named <code>df</code>?</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>  col1 col2 col3
+1    1    2    3
+2    5    4    6
+3    7    6    9</code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="helpful-data-frame-functions" class="level2">
+<h2 class="anchored" data-anchor-id="helpful-data-frame-functions">Helpful Data Frame Functions</h2>
+<ul>
+<li><code>View()</code>: Opens a tab to view the data frame as a table</li>
+<li><code>head()</code>: returns first six rows of dataset</li>
+<li><code>names()</code>: returns the dataset’s column names</li>
+<li><code>nrow()</code>: returns the number of rows in the dataset</li>
+<li><code>ncol()</code>: returns the number of columns in the dataset</li>
+</ul>
+<hr>
+</section>
+<section id="do-i-really-have-to-memorize-all-of-these-functions" class="level2">
+<h2 class="anchored" data-anchor-id="do-i-really-have-to-memorize-all-of-these-functions">Do I really have to memorize all of these functions?!</h2>
+<ul>
+<li>No.&nbsp;There are cheatsheets! See <a href="https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf">this cheatsheet</a> for Base <code>R</code>.</li>
+<li>Google, ChatGPT, and various forums can also be used to discover new functions
+<ul>
+<li>e.g.&nbsp;“what function can be used to order a vector in R?”</li>
+</ul></li>
+</ul>
+</section>
+<section id="pipe-operator-in-r" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="pipe-operator-in-r">Pipe Operator in <code>R</code></h2>
+<ul>
+<li>Funnel objects into actions
+<ul>
+<li>e.g.&nbsp;data structures into various functions</li>
+<li><code>|&gt;</code> or <code>%&gt;%</code></li>
+</ul></li>
+<li>Useful for nesting functions</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(mtcars<span class="sc">$</span>am))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>mtcars <span class="sc">|&gt;</span> <span class="fu">pull</span>(am) <span class="sc">|&gt;</span> <span class="fu">unique</span>() <span class="sc">|&gt;</span> <span class="fu">length</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="missing-values-and-r-functions" class="level1">
+<h1>Missing Values and <code>R</code> Functions</h1>
+<hr>
+<section id="missing-values" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="missing-values">Missing Values</h2>
+<ul>
+<li>Remember that missing values still have a position in rectangular datasets</li>
+<li>Missing values get recorded as <code>NA</code> in R</li>
+<li>…but sometimes analysts put words or numbers in their datasets to indicate missingness:
+<ul>
+<li>“NONE”</li>
+<li>-999</li>
+<li>“” &lt;- this is the most challenging to uncover!</li>
+</ul></li>
+<li>…but what happens when we try to perform functions on vectors that contain missing values?</li>
+</ul>
+<hr>
+</section>
+<section id="missing-values-in-math-functions" class="level2">
+<h2 class="anchored" data-anchor-id="missing-values-in-math-functions">Missing Values in Math Functions</h2>
+<p>We can use <code>na.rm = TRUE</code> to ignore NA values in math functions.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>vals <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="dv">4</span>, <span class="cn">NA</span>, <span class="dv">6</span>)</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(vals)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(vals, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 13</code></pre>
+</div>
+</div>
+</section>
+<section id="for-now-and-wednesday" class="level2">
+<h2 class="anchored" data-anchor-id="for-now-and-wednesday">For Now and Wednesday</h2>
+<ul>
+<li>Finish activities for today’s class</li>
+<li>Lab #1 due on Wednesday at 11:59pm</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

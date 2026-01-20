@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jericho Lawson   Statistical &amp; Data Sciences, Smith College   Spring 2026  ">
 
-<title>Schedule – SDS 192: Introduction to Data Science, Spring 2026</title>
+<title>Class #4: R and GitHub – SDS 192: Introduction to Data Science, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,19 +72,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
     </a>
   </div>
@@ -94,19 +95,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
@@ -128,19 +129,34 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
+<h1 class="title">Class #4: R and GitHub</h1>
+<p class="subtitle lead">SDS 192: Introduction to Data Science</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jericho Lawson<br> <span style="font-size: 70%;"> <a href="http://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> </span> Spring 2026 <br> </p>
+          </div>
+  </div>
     
   
     
@@ -151,627 +167,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="week-1-what-is-data-science-126---130" class="level2">
-<h2 class="anchored" data-anchor-id="week-1-what-is-data-science-126---130">Week 1: What is Data Science? (1/26 - 1/30)</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Monday, 1/26</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Wednesday, 1/28</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Friday, 1/30</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Introductions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<!--
-- [Slides + Activity](lectures/w1l1_intro.qmd)
--->
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>In this activity, you will collaborate on a sample repository by making small changes and requesting a pull request.</p>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<ol type="1">
+<li>Go to File &gt; New Project. Then, go to Version Control &gt; git. You will put the following in the first two fields:</li>
+</ol>
 <ul>
-<li><a href="https://forms.gle/CHr6GQgT5956pgcP6">Pre-Course Survey</a> (due Wednesday, 1/28 at 11:59pm)</li>
-<li><a href="./resources/tech-setup.html">Tech Setup</a> (due Wednesday, 1/28 at 11:59pm)</li>
+<li><a href="https://github.com/jericholawson/fixthis">https://github.com/jericholawson/fixthis</a></li>
+<li>fixthis</li>
 </ul>
-</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Intro to Data
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<!--
-- [Slides](lectures/w1l2_data.qmd)
-- [Activity](lectures/w1l2_act.qmd)
--->
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="https://forms.gle/CHr6GQgT5956pgcP6">Pre-Course Survey</a> (due Wednesday, 1/28 at 11:59pm)</li>
-<li><a href="./resources/tech-setup.html">Tech Setup</a> (due Wednesday, 1/28 at 11:59pm)</li>
-<li><a href="https://app.perusall.com/join/LAWSON-2BX49">Readings #1</a> (due Sunday, 2/1 on Perusall at 11:59pm)</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lab #1: R and Understanding Datasets
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<!--
-- [Instructions](labs/lab1)
-- [Template](labs/lab1/lab1.qmd)
--->
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="https://app.perusall.com/join/LAWSON-2BX49">Readings #1</a> (due Sunday, 2/1 on Perusall at 11:59pm)</li>
-<li><a href="labs/lab1">Lab #1</a> (due Wednesday, 2/4 at 11:59pm)
-<ul>
-<li><a href="labs/lab1/lab1.qmd">Template</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!--
-
-## Week 2: What is R and GitHub? (2/2 - 2/6)
-
-::: {.panel-tabset}
-## Monday, 2/2
-
-::: {.callout-note}
-## Lecture: Intro to R
-
-- [Slides](lectures/w2l1_introR.qmd)
-- [Activity](lectures/w2l1_act.qmd)
-
-:::
-
-
-::: {.callout-warning}
-## To-Do/Due
-
-- [Lab #1](labs/lab1) (due Wednesday, 2/4 at 11:59pm)
-  - [Template](labs/lab1/lab1.qmd)
-
-:::
-
-## Wednesday, 2/4
-
-::: {.callout-note}
-## Lecture: Coding with R and GitHub
-
-- [Slides](lectures/w2l1_github.qmd)
-- [Activity](lectures/w2l2_act.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Reading Exercises #1 (due Thursday, 2/5 at 11:59pm in activities repo)
-  - Exercises #1 and #3 from Appendix B in [Modern Data Science with R](https://mdsr-book.github.io/mdsr3e/B-appR.html#appR-exercises)
-- [Readings #2](https://app.perusall.com/join/LAWSON-2BX49) (due Sunday, 2/8 at 11:59pm on Perusall)
-- [Lab #1](labs/lab1) (due Wednesday, 2/4 at 11:59pm)
-  - [Template](labs/lab1/lab1.qmd)
-
-:::
-
-## Friday, 2/6
-
-::: {.callout-note}
-## Lab #2: R and GitHub
-
-- [Instructions](labs/lab2)
-- [Template](labs/lab2/lab2.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- [Readings #2](https://app.perusall.com/join/LAWSON-2BX49) (due Sunday, 2/8 at 11:59pm on Perusall)
-- [Lab #2](labs/lab2) (due Wednesday, 2/11 at 11:59pm)
-  - [Template](labs/lab2/lab2.qmd)
-
-:::
-
-:::
-
-## Week 3: Data Visualization, The Basics (2/9 - 2/13)
-
-::: {.panel-tabset}
-## Monday, 2/9
-
-Lecture #5: Data Visualization
-
-- [Slides](lectures/lect5.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #1 (due Tuesday, 2/10 at 8:59pm)
-
-:::
-
-## Wednesday, 2/11
-
-::: {.callout-important}
-## Quiz #1
-
-:::
-
-::: {.callout-note}
-## Lecture #6: Types of Data Visualizations
-
-- [Slides](lectures/lect6.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #3 (due Sunday, 2/15 at 8:59pm)
-- HW #2 (due Sunday, 2/22 at 8:59pm)
-
-:::
-
-## Friday, 2/13
-
-Lab #3: Visualization Aesthetics
-
-:::
-
-## Week 4: Data Visualizations, ggplot (2/16 - 2/20)
-
-::: {.panel-tabset}
-## Monday, 2/16
-
-Lecture #7: Intro to ggplot
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #2 (due Sunday, 2/22 at 8:59pm)
-
-:::
-
-## Wednesday, 2/18
-
-Lecture #8: Advanced ggplot2
-
-- [Slides](lectures/lect8.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #4 (due Sunday, 2/22 at 8:59pm)
-- HW #2 (due Sunday, 2/22 at 8:59pm)
-
-:::
-
-## Friday, 2/20
-
-Lab #4: Plotting Frequencies and Distributions
-
-:::
-
-## Week 5: Data Wrangling (2/23 - 2/27)
-
-::: {.panel-tabset}
-## Monday, 2/23
-
-[Quiz #2: Subsetting and Control Flow]{style="color:red;"}
-
-Lecture #9: Intro to Data Wrangling
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #2 (due Sunday, 2/22 at 8:59pm)
-
-:::
-
-## Wednesday, 2/25
-
-Lecture #10: Data Wrangling
-
-- [Slides](lectures/lect8.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #5 (due Sunday, 3/1 at 8:59pm)
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Friday, 2/27
-
-Project Time
-
-:::
-
-## Week 6: Data Joining (3/2 - 3/6)
-
-::: {.panel-tabset}
-## Monday, 3/2
-
-Lecture #11: Data Joining
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Wednesday, 3/4
-
-[Quiz #3: Functions and Apply]{style="color:red;"}
-
-Lecture #12: Problem Solving
-
-- [Slides](lectures/lect12.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #6 (due Sunday, 3/8 at 8:59pm)
-
-:::
-
-## Friday, 3/6
-
-Lab #5: Data Wrangling (and Joining)
-
-:::
-
-
-## Week 7: Statistics and Exam #1 (3/9 - 3/13)
-
-::: {.panel-tabset}
-## Monday, 3/9
-
-Lecture #13: Statistics
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Wednesday, 3/11
-
-[Quiz #3: Functions and Apply]{style="color:red;"}
-
-Lecture #14: Review
-
-- [Slides](lectures/lect12.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #6 (due Sunday, 3/8 at 8:59pm)
-
-:::
-
-## Friday, 3/13
-
-Exam #1: In-Class
-
-:::
-
-## Week 8: Spring Break! (3/16 - 3/19)
-
-::: {.panel-tabset}
-## Monday, 3/16
-
-No Class!
-
-## Wednesday, 3/18
-
-No Class!
-
-## Friday, 3/20
-
-No Class!
-
-:::
-
-## Week 9: Data Tidying (3/23 - 3/27)
-
-::: {.panel-tabset}
-## Monday, 3/23
-
-Lecture #15: Data Tidying
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Wednesday, 3/25
-
-[Quiz #3: Functions and Apply]{style="color:red;"}
-
-Lecture #16: Data Tidying, Part II
-
-- [Slides](lectures/lect12.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #6 (due Sunday, 3/8 at 8:59pm)
-
-:::
-
-## Friday, 3/27
-
-Lab #6: Data Tidying
-
-:::
-
-
-## Week 10: Programming (3/30 - 4/3)
-
-::: {.panel-tabset}
-## Monday, 3/30
-
-Lecture #17: Functions
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Wednesday, 4/1
-
-[Quiz #3: Functions and Apply]{style="color:red;"}
-
-Lecture #18: Iteration and Functionals
-
-- [Slides](lectures/lect12.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #6 (due Sunday, 3/8 at 8:59pm)
-
-:::
-
-## Friday, 4/3
-
-Lab #7: Programming with Data
-
-:::
-
-## Week 11: Ethics and Programming (4/6 - 4/10)
-
-::: {.panel-tabset}
-## Monday, 4/6
-
-Lecture #19: Data Ethics
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Wednesday, 4/8
-
-[Quiz #3: Functions and Apply]{style="color:red;"}
-
-Lecture #20: Testing, Debugging, and AI
-
-- [Slides](lectures/lect12.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #6 (due Sunday, 3/8 at 8:59pm)
-
-:::
-
-## Friday, 4/10
-
-Lab #8: Algorithms
-
-:::
-
-## Week 12: Spatial Thinking (4/13 - 4/17)
-
-::: {.panel-tabset}
-## Monday, 4/13
-
-Lecture #21: Spatial Thinking
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Wednesday, 4/15
-
-[Quiz #3: Functions and Apply]{style="color:red;"}
-
-Lecture #22: Lying with Maps
-
-- [Slides](lectures/lect12.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #6 (due Sunday, 3/8 at 8:59pm)
-
-:::
-
-## Friday, 4/17
-
-Lab #9: Point Mapping
-
-:::
-
-## Week 13: Spatial Thinking (4/20 - 4/24)
-
-::: {.panel-tabset}
-## Monday, 4/20
-
-Lecture #23: Project Time
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Wednesday, 4/22
-
-[Quiz #3: Functions and Apply]{style="color:red;"}
-
-Lecture #24: Polygon Mapping
-
-- [Slides](lectures/lect12.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #6 (due Sunday, 3/8 at 8:59pm)
-
-:::
-
-## Friday, 4/24
-
-Lab #10: Polygon Mapping
-
-:::
-
-## Week 14: Presentations, APIs, Review (4/27 - 5/1)
-
-::: {.panel-tabset}
-## Monday, 4/27
-
-Project #2 Presentations
-
-- [Slides](lectures/lect7.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- HW #3 (due Tuesday, 3/3 at 8:59pm)
-
-:::
-
-## Wednesday, 4/29
-
-[Quiz #3: Functions and Apply]{style="color:red;"}
-
-Lecture #25: APIs and Review
-
-- [Slides](lectures/lect12.qmd)
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Readings #6 (due Sunday, 3/8 at 8:59pm)
-
-:::
-
-## Friday, 5/1
-
-Lecture #26: Review
-
-:::
-
-## Finals: (5/2 - 5/9)
-
-::: {.panel-tabset}
-## Finals Week
-
-Go do the final!
-
-:::
-
--->
+<p>In the last field, specify a folder you would want to clone this Git repository to. Click Create Project.</p>
+<p><img src="images/lect4/a1.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Go to the Git tab in the top-right corner of RStudio. Click on the L-shaped button (right next to the “main” button).</li>
+</ol>
+<p><img src="images/lect4/a2.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>We will create a new branch, which creates a replicate of the “main” branch that will allow us to track changes individually. Put your first name as a branch name and click Create.</li>
+</ol>
+<p><img src="images/lect4/a3.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Open the README.md file in your Files tab at the bottom-right corner of RStudio. You are free to add any changes to the file. Once you’ve done so, go to the Git tab and stage the README.md file by clicking the checkbox next to the file, as seen below.</li>
+</ol>
+<p><img src="images/lect4/a4.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>In the same Git tab, click on the double-paned check button (to the left of the downward arrow). A window will pop up. Here, we need to specify a message that marks when we’ve made changes. Type a commit message along the lines of what you see below:</li>
+</ol>
+<p><img src="images/lect4/a5.png" class="img-fluid"></p>
+<p>Click Commit afterwards. Afterwards, use the green upward arrow to push changes.</p>
+<ol start="6" type="1">
+<li>Go to the <a href="https://github.com/jericholawson/fixthis">GitHub repository</a> and click on Pull Requests. Here, you will click on the Compare &amp; Pull Request button.</li>
+</ol>
+<p><img src="images/lect4/a6.png" class="img-fluid"></p>
+<ol start="7" type="1">
+<li>Add a quick description and click Create Pull Request. When we do this, other members of a shared repository can determine if these changes should be merged into the main branch.</li>
+</ol>
+<p><img src="images/lect4/a7.png" class="img-fluid"></p>
+<p>Once you’ve made it here, you are good to go. There is nothing to submit into your activities repository.</p>
 
 
 </section>

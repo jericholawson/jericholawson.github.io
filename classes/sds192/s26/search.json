@@ -60,7 +60,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\nSlides + Activity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\nInstructions\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm)\nLab #1 (due Wednesday, 2/4 at 11:59pm)\n\nTemplate"
   },
   {
     "objectID": "schedule.html#week-1-introduction-126---130",
@@ -256,7 +256,7 @@
     "href": "schedule.html#week-1-what-is-data-science-126---130",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\nSlides + Activity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\nInstructions\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm)\nLab #1 (due Wednesday, 2/4 at 11:59pm)\n\nTemplate"
   },
   {
     "objectID": "schedule.html#week-2-what-is-r-and-github-22---26",
@@ -514,8 +514,8 @@
     "objectID": "lectures/w1l2_data.html#reminders",
     "href": "lectures/w1l2_data.html#reminders",
     "title": "Datasets",
-    "section": "Reminders",
-    "text": "Reminders\n\nTech setup\n\nComponents due tonight at 11:59pm\nImportant to do before Friday’s first lab"
+    "section": "",
+    "text": "Tech setup\n\nComponents due tonight at 11:59pm\nImportant to do before Friday’s first lab"
   },
   {
     "objectID": "lectures/w1l2_data.html#from-survey",
@@ -536,7 +536,7 @@
     "href": "lectures/w1l2_data.html#what-is-a-dataset",
     "title": "Datasets",
     "section": "What is a dataset?",
-    "text": "What is a dataset?\n\nSource: CA Housing Data"
+    "text": "What is a dataset?\n\n\n\nSource: CA Housing Data"
   },
   {
     "objectID": "lectures/w1l2_data.html#what-is-a-dataset-1",
@@ -564,21 +564,21 @@
     "href": "lectures/w1l2_data.html#observations-vs.-variables-vs.-values",
     "title": "Datasets",
     "section": "Observations vs. Variables vs. Values",
-    "text": "Observations vs. Variables vs. Values\n\nGrolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/.\nObservationsVariablesValues\n\n\n\nObservations refer to individual units or cases of the data being collected.\n\nIf I was collecting data about each student in this course, one student would be an observation.\nIf I was collecting census data and aggregating it at the county level, one county would be an observation.\n\n\n\n\n\nVariables describe something about an observation.\n\nIf I was collecting data about each student in this course, ‘major’ might be one variable.\nIf I was collecting county-level census data, ‘population’ might be one variable.\nCan be categorical or numerical\n\n\n\n\n\nValues refer to the actual value associated with a variable for a given observation.\n\nIf I was collecting data about each student’s major in this course, one value might be SDS."
+    "text": "Observations vs. Variables vs. Values\n\n\n\nGrolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/.\n\n\n\nObservationsVariablesValues\n\n\n\n\nObservations refer to individual units or cases of the data being collected.\n\nIf I was collecting data about each student in this course, one student would be an observation.\nIf I was collecting census data and aggregating it at the county level, one county would be an observation.\n\n\n\n\n\n\n\nVariables describe something about an observation.\n\nIf I was collecting data about each student in this course, ‘major’ might be one variable.\nIf I was collecting county-level census data, ‘population’ might be one variable.\nCan be categorical or numerical\n\n\n\n\n\n\n\nValues refer to the actual value associated with a variable for a given observation.\n\nIf I was collecting data about each student’s major in this course, one value might be SDS.\n\n\n\n\n\n\n\n\nReferring to rows, columns, and values\n\nAn index is a formal way of identifying the data at certain positions in a dataset.\nIndexes/indices are usually formatted as two numbers in brackets (e.g. [3,4]).\n\nFirst number: row position\nSecond number: column position\ne.g. [3, 4] will refer to the value three rows down and four rows over.\n\n\n\n\n\nReferring to rows, columns, and values (cont.)\n\nA row can be referenced by removing the value in the column (second) position\n\ne.g. [3, ] refers to third row\nSyntax seen in R, can depend in other coding languages\n\nA column can be referenced by removing the value in the row (first) position\n\ne.g. [, 4] refers to fourth column\nSyntax seen in R, can depend in other coding languages"
   },
   {
     "objectID": "lectures/w1l2_data.html#key-considerations-for-rectangular-datasets",
     "href": "lectures/w1l2_data.html#key-considerations-for-rectangular-datasets",
     "title": "Datasets",
     "section": "Key Considerations for Rectangular Datasets",
-    "text": "Key Considerations for Rectangular Datasets\n\n\n\nAll rows in a rectangular dataset are of equal length.\nAll columns in a rectangular dataset are of equal length.\n\n\n\n\n\n\n\nUnderstanding Check\n\n\nLet’s say I have a rectangular dataset documenting student names and majors, and I was missing major information for one student. What would this look like in a rectangular dataset?\n\n\n\n\n\nGrolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/."
+    "text": "Key Considerations for Rectangular Datasets\n\n\n\nAll rows in a rectangular dataset are of equal length.\nAll columns in a rectangular dataset are of equal length.\n\n\n\n\n\n\n\nNoteUnderstanding Check\n\n\n\nLet’s say I have a rectangular dataset documenting student names and majors, and I was missing major information for one student. What would this look like in a rectangular dataset?\n\n\n\n\nGrolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/."
   },
   {
     "objectID": "lectures/w1l2_data.html#how-do-i-find-out-more-information-about-a-dataset",
     "href": "lectures/w1l2_data.html#how-do-i-find-out-more-information-about-a-dataset",
     "title": "Datasets",
     "section": "How do I find out more information about a dataset?",
-    "text": "How do I find out more information about a dataset?\n\nMetadata can be referred to as “data about data”\nMetadata provides important contextual information to help us interpret a dataset.\nThere are two types of metadata associated with datasets:\n\n\nAdministrativeDescriptive\n\n\n\nAdministrative metadata tells us how a dataset is managed and its provenance, or the history of how it came to be in its current form:\n\nWho created it?\nWhen was it created?\nWhen was it last updated?\nWho is permitted to use it?\n\n\n\n\n\nDescriptive metadata tells us information about the contents of a dataset:\n\nWhat does each row refer to?\nWhat does each column refer to?\nWhat values might appear in each cell?"
+    "text": "How do I find out more information about a dataset?\n\n\nMetadata can be referred to as “data about data”\nMetadata provides important contextual information to help us interpret a dataset.\nThere are two types of metadata associated with datasets:\n\n\n\nAdministrativeDescriptive\n\n\n\n\nAdministrative metadata tells us how a dataset is managed and its provenance, or the history of how it came to be in its current form:\n\nWho created it?\nWhen was it created?\nWhen was it last updated?\nWho is permitted to use it?\n\n\n\n\n\n\n\nDescriptive metadata tells us information about the contents of a dataset:\n\nWhat does each row refer to?\nWhat does each column refer to?\nWhat values might appear in each cell?"
   },
   {
     "objectID": "lectures/w1l2_data.html#where-do-i-find-metadata-for-a-dataset",
@@ -635,5 +635,558 @@
     "title": "SDS 192: Introduction to Data Science",
     "section": "Announcements",
     "text": "Announcements\nTBD"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#last-time",
+    "href": "lectures/w2l1_introR.html#last-time",
+    "title": "R Fundamentals",
+    "section": "",
+    "text": "Data fundamentals\n\nRectangular datasets\nObservations, variables, and values\nCategorical vs. discrete"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#today",
+    "href": "lectures/w2l1_introR.html#today",
+    "title": "R Fundamentals",
+    "section": "Today",
+    "text": "Today\n\nWelcome to R!\n\nInterface\nBasics\n\nCoding in R\n\n“hello world!”\nObjects and data structures\nOperators and functions"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#r-and-rstudio",
+    "href": "lectures/w2l1_introR.html#r-and-rstudio",
+    "title": "R Fundamentals",
+    "section": "R and RStudio",
+    "text": "R and RStudio\n\nR is the coding language we are using for all things data science related\nRStudio is the interface (i.e. IDE) we are using to access R\nIf you haven’t installed both yet: follow these instructions here"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#rstudio-interface",
+    "href": "lectures/w2l1_introR.html#rstudio-interface",
+    "title": "R Fundamentals",
+    "section": "RStudio Interface",
+    "text": "RStudio Interface"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#rstudio-interface-cont.",
+    "href": "lectures/w2l1_introR.html#rstudio-interface-cont.",
+    "title": "R Fundamentals",
+    "section": "RStudio Interface (cont.)",
+    "text": "RStudio Interface (cont.)\n\n\n\nScript: top-left corner of screen; used to write in files\n\nQuarto (.qmd) files\n\nConsole: bottom-left corner; execute single-line commands\n\nGood for testing\n\n\n\n\nEnvironment: top-right corner; can see objects placed in memory\n\nData frames, values, etc.\n\nHelp/Plots/Viewer/etc.: bottom-right corner; used for supplemental tools\n\nCan see plots, look through help files, etc."
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#a-classic-first-project-in-coding",
+    "href": "lectures/w2l1_introR.html#a-classic-first-project-in-coding",
+    "title": "R Fundamentals",
+    "section": "A classic first project in coding",
+    "text": "A classic first project in coding\n\nprint(\"Hello world!\")\n\n[1] \"Hello world!\""
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#r-is-so-much-more-than-hello-world",
+    "href": "lectures/w2l1_introR.html#r-is-so-much-more-than-hello-world",
+    "title": "R Fundamentals",
+    "section": "R is so much more than “Hello world!”",
+    "text": "R is so much more than “Hello world!”\n\nCoding language for statisticians and data scientists\n\nPython, Julia are catching up\nTIOBE index\n\nData visualization, wrangling, and analysis\nSyntax – think of it like learning a new language!"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#structure",
+    "href": "lectures/w2l1_introR.html#structure",
+    "title": "R Fundamentals",
+    "section": "Structure",
+    "text": "Structure\n\nNouns: objects (mostly)\nVerbs: functions, operations\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nmtcars |&gt; select(mpg, hp)\n\n                     mpg  hp\nMazda RX4           21.0 110\nMazda RX4 Wag       21.0 110\nDatsun 710          22.8  93\nHornet 4 Drive      21.4 110\nHornet Sportabout   18.7 175\nValiant             18.1 105\nDuster 360          14.3 245\nMerc 240D           24.4  62\nMerc 230            22.8  95\nMerc 280            19.2 123\nMerc 280C           17.8 123\nMerc 450SE          16.4 180\nMerc 450SL          17.3 180\nMerc 450SLC         15.2 180\nCadillac Fleetwood  10.4 205\nLincoln Continental 10.4 215\nChrysler Imperial   14.7 230\nFiat 128            32.4  66\nHonda Civic         30.4  52\nToyota Corolla      33.9  65\nToyota Corona       21.5  97\nDodge Challenger    15.5 150\nAMC Javelin         15.2 150\nCamaro Z28          13.3 245\nPontiac Firebird    19.2 175\nFiat X1-9           27.3  66\nPorsche 914-2       26.0  91\nLotus Europa        30.4 113\nFord Pantera L      15.8 264\nFerrari Dino        19.7 175\nMaserati Bora       15.0 335\nVolvo 142E          21.4 109"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#values-vs.-vectors-vs.-data-frames",
+    "href": "lectures/w2l1_introR.html#values-vs.-vectors-vs.-data-frames",
+    "title": "R Fundamentals",
+    "section": "Values vs. Vectors vs. Data Frames",
+    "text": "Values vs. Vectors vs. Data Frames\n\nValuesVectorsData Frame\n\n\n\n\na single data point\nR understands values to be of a certain type:\n\ndouble: 3.29\ninteger: 3\ncharacter: “SDS 192”\nlogical: TRUE/FALSE\ndate-time: 1/23/84 01:23:01\n\n\n\n\n3.29 # double\n\n[1] 3.29\n\n3L # integer\n\n[1] 3\n\n\"SDS 192\" # character\n\n[1] \"SDS 192\"\n\nTRUE # logical\n\n[1] TRUE\n\nSys.Date() \n\n[1] \"2026-01-20\"\n\n\n\n\n\n\na 1-dimensional data object, listing a series of values\nall objects in a vector share the same type\nvector defined by listing entries (separated by commas) in the function c() (shorthand for concatenate/combine)\n\n\nc(1, 2, 3, 4)\n\n[1] 1 2 3 4\n\nc(\"Northampton\", \"Hadley\", \"Easthampton\", \"Amherst\")\n\n[1] \"Northampton\" \"Hadley\"      \"Easthampton\" \"Amherst\"    \n\n\n\n\n\n\n\na two-dimensional (rectangular) data object\nEvery column in a data frame is a vector\nColumn names act as a variable name for that vector (access via the $ accessor)\n\n\ndf\n\n  col1  col2 col3\n1    1  TRUE    a\n2    5 FALSE    b\n3    6  TRUE    c\n4    7  TRUE    d\n\ndf$col1\n\n[1] 1 5 6 7"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#assigning-objects-to-variable-names",
+    "href": "lectures/w2l1_introR.html#assigning-objects-to-variable-names",
+    "title": "R Fundamentals",
+    "section": "Assigning Objects to Variable Names",
+    "text": "Assigning Objects to Variable Names\n\n&lt;- symbol assigns a value to a variable\n\n= is okay, but not preferred\n\nStores object for future use\nVariable names should be short, descriptive, and snake-cased (lower-cased with words separated by underscores)\n\ne.g. urban_data for a dataset that refers to demographic data in a city\ne.g. test_scores for a vector of test scores from a particular class\nAvoid periods, use separator characters (_), and do not start variables with numbers"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#learning-check",
+    "href": "lectures/w2l1_introR.html#learning-check",
+    "title": "R Fundamentals",
+    "section": "Learning check",
+    "text": "Learning check\nWhat kind of object is this in R? What is its type?\n\ntemps &lt;- c(47.3, 55.6, 48.3)"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#learning-check-1",
+    "href": "lectures/w2l1_introR.html#learning-check-1",
+    "title": "R Fundamentals",
+    "section": "Learning check",
+    "text": "Learning check\nWhat would happen if I were to do the following in R?\n\nval &lt;- 34\nval &lt;- val + 1\n\n\nThis is called overwriting a variable."
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#where-can-i-find-these-data-objects-in-r",
+    "href": "lectures/w2l1_introR.html#where-can-i-find-these-data-objects-in-r",
+    "title": "R Fundamentals",
+    "section": "Where can I find these data objects in R?",
+    "text": "Where can I find these data objects in R?\n\n\n\nObjects in R will be listed in the Environment tab in the upper right hand corner of RStudio.\nRemoving unnecessary objects from the environment can free up space!\n\n\nrm(temps)"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#other-data-structures",
+    "href": "lectures/w2l1_introR.html#other-data-structures",
+    "title": "R Fundamentals",
+    "section": "Other Data Structures",
+    "text": "Other Data Structures\n\nlist: used to store objects of various types\n\n\nlist(\"autumn\", c(2, 4, 6), TRUE, mtcars[1:2, 1:4])\n\n[[1]]\n[1] \"autumn\"\n\n[[2]]\n[1] 2 4 6\n\n[[3]]\n[1] TRUE\n\n[[4]]\n              mpg cyl disp  hp\nMazda RX4      21   6  160 110\nMazda RX4 Wag  21   6  160 110"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#other-data-structures-1",
+    "href": "lectures/w2l1_introR.html#other-data-structures-1",
+    "title": "R Fundamentals",
+    "section": "Other Data Structures",
+    "text": "Other Data Structures\n\nmatrix: 2D data structure used to store values of same type\n\nNot a list of vectors (e.g. data frame)\nUsed for matrix operations\n\n\n\nmatrix(c(1, 3, 7, 6), nrow = 2, ncol = 2, byrow = TRUE)\n\n     [,1] [,2]\n[1,]    1    3\n[2,]    7    6"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#activity-mathematical-operators",
+    "href": "lectures/w2l1_introR.html#activity-mathematical-operators",
+    "title": "R Fundamentals",
+    "section": "Activity: Mathematical operators",
+    "text": "Activity: Mathematical operators\n\nThink and write down all possible operations you would do inside an algebra class."
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#operators-in-r",
+    "href": "lectures/w2l1_introR.html#operators-in-r",
+    "title": "R Fundamentals",
+    "section": "Operators in R",
+    "text": "Operators in R\n\nSymbols that communicate what operations to perform in R\nIncludes calculator symbols: +, -, *, /\n\n^ or ** for exponentiation\n%% for mod (remainder of a quotient of two numbers)\n\nIncludes relational symbols: &lt;, &lt;=, &gt;, &gt;=\n\n== for equivalence\n!= for non-equivalence\n\nIncludes logical symbols: & (AND), | (OR), ! (NOT)"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#what-is-a-function",
+    "href": "lectures/w2l1_introR.html#what-is-a-function",
+    "title": "R Fundamentals",
+    "section": "What is a function?",
+    "text": "What is a function?\n\nAn action done on an object to produce something\n\nInputs/arguments to outputs\ne.g. y = f(x)\ne.g. With $15, I bought a slice of pizza for $5. Now I have $10 left."
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#structure-of-function",
+    "href": "lectures/w2l1_introR.html#structure-of-function",
+    "title": "R Fundamentals",
+    "section": "Structure of Function",
+    "text": "Structure of Function\n\nfunction_name &lt;- function(input1, ...){\n  # action to input\n  # return an output with return(__)\n}\n\n\nArguments: inputs needed to complete action\nActions: what is being done to return an output\nOutputs: the final product"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#example-of-function",
+    "href": "lectures/w2l1_introR.html#example-of-function",
+    "title": "R Fundamentals",
+    "section": "Example of Function",
+    "text": "Example of Function\n\npizza &lt;- function(money){\n  money &lt;- money - 5\n  return(money)\n}\npizza(15)\n\n[1] 10"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#finding-help",
+    "href": "lectures/w2l1_introR.html#finding-help",
+    "title": "R Fundamentals",
+    "section": "Finding Help",
+    "text": "Finding Help\n\nTyping ?FUNCTION_NAME in to the Console loads info about that function\n\n?round()\n\nWhat functions are required?\nWhat functions are optional?"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#learning-check-2",
+    "href": "lectures/w2l1_introR.html#learning-check-2",
+    "title": "R Fundamentals",
+    "section": "Learning Check",
+    "text": "Learning Check\nConvert the following variable name into something descriptive in snake case:\n\na &lt;- round(pi, digits = 2)\n\nRun the code in your Console. How can we find this variable in RStudio once we run this code?"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#helpful-value-operations",
+    "href": "lectures/w2l1_introR.html#helpful-value-operations",
+    "title": "R Fundamentals",
+    "section": "Helpful Value Operations",
+    "text": "Helpful Value Operations\n\nNumeric ValuesCharacter Values\n\n\n\nR can work just like a calculator!\n\na &lt;- 2\nb &lt;- 3\n\nsum(a,b)\n\n[1] 5\n\n\nWhy does this produce an error?\n\nc &lt;- \"3\"\nsum(c, c)\n\nError in `sum()`:\n! invalid 'type' (character) of argument\n\n\n\n\n\n\nR can concatenate strings!\n\nword1 &lt;- \"Harry\"\nword2 &lt;- \"Sally\"\npaste(\"When\", word1, \"Met\", word2, sep = \" \")\n\n[1] \"When Harry Met Sally\""
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#helpful-vector-functions",
+    "href": "lectures/w2l1_introR.html#helpful-vector-functions",
+    "title": "R Fundamentals",
+    "section": "Helpful Vector Functions",
+    "text": "Helpful Vector Functions\n\nAll VectorsNumeric VectorsCategorical Vectors\n\n\n\n\nclass() returns the class of the values in a vector\nlength() returns the number of values in a vector\nis.na() for each value, returns whether the value is an NA value\n\n\n\n\n\n\nsum() returns the sum of the values in a vector\nmax() returns the maximum value in a vector\nrank() returns the ranking of a value in a vector\nR has other functions for accomplishing statistical, mathematical, and ordering operations\n\n\n\n\n\n\nunique() returns the unique values of a vector\ntable() returns the distribution of unique values of a vector"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#learning-check-3",
+    "href": "lectures/w2l1_introR.html#learning-check-3",
+    "title": "R Fundamentals",
+    "section": "Learning Check",
+    "text": "Learning Check\nHow would I find the sum of the third column in this data frame, which I have named df?\n\n\n  col1 col2 col3\n1    1    2    3\n2    5    4    6\n3    7    6    9"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#helpful-data-frame-functions",
+    "href": "lectures/w2l1_introR.html#helpful-data-frame-functions",
+    "title": "R Fundamentals",
+    "section": "Helpful Data Frame Functions",
+    "text": "Helpful Data Frame Functions\n\nView(): Opens a tab to view the data frame as a table\nhead(): returns first six rows of dataset\nnames(): returns the dataset’s column names\nnrow(): returns the number of rows in the dataset\nncol(): returns the number of columns in the dataset"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#do-i-really-have-to-memorize-all-of-these-functions",
+    "href": "lectures/w2l1_introR.html#do-i-really-have-to-memorize-all-of-these-functions",
+    "title": "R Fundamentals",
+    "section": "Do I really have to memorize all of these functions?!",
+    "text": "Do I really have to memorize all of these functions?!\n\nNo. There are cheatsheets! See this cheatsheet for Base R.\nGoogle, ChatGPT, and various forums can also be used to discover new functions\n\ne.g. “what function can be used to order a vector in R?”"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#pipe-operator-in-r",
+    "href": "lectures/w2l1_introR.html#pipe-operator-in-r",
+    "title": "R Fundamentals",
+    "section": "Pipe Operator in R",
+    "text": "Pipe Operator in R\n\nFunnel objects into actions\n\ne.g. data structures into various functions\n|&gt; or %&gt;%\n\nUseful for nesting functions\n\n\nlength(unique(mtcars$am))\n\n[1] 2\n\nmtcars |&gt; pull(am) |&gt; unique() |&gt; length()\n\n[1] 2"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#missing-values",
+    "href": "lectures/w2l1_introR.html#missing-values",
+    "title": "R Fundamentals",
+    "section": "Missing Values",
+    "text": "Missing Values\n\nRemember that missing values still have a position in rectangular datasets\nMissing values get recorded as NA in R\n…but sometimes analysts put words or numbers in their datasets to indicate missingness:\n\n“NONE”\n-999\n“” &lt;- this is the most challenging to uncover!\n\n…but what happens when we try to perform functions on vectors that contain missing values?"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#missing-values-in-math-functions",
+    "href": "lectures/w2l1_introR.html#missing-values-in-math-functions",
+    "title": "R Fundamentals",
+    "section": "Missing Values in Math Functions",
+    "text": "Missing Values in Math Functions\nWe can use na.rm = TRUE to ignore NA values in math functions.\n\nvals &lt;- c(1, 2, NA, 4, NA, 6)\nsum(vals)\n\n[1] NA\n\nsum(vals, na.rm = TRUE)\n\n[1] 13"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#for-now-and-friday",
+    "href": "lectures/w2l1_introR.html#for-now-and-friday",
+    "title": "R Fundamentals",
+    "section": "For now and Friday",
+    "text": "For now and Friday\n\nWork on Tech Setup\nWork on Problem Solving lab (optional)\nFriday’s class: Lab #1"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#activity",
+    "href": "lectures/w2l1_introR.html#activity",
+    "title": "R Fundamentals",
+    "section": "Activity",
+    "text": "Activity\nNavigate over to the activity for today’s lecture on the website (via the Schedule).\n\nWork on the first problem with a group of 2-3 for 8-10 minutes!"
+  },
+  {
+    "objectID": "lectures/w2l1_act.html",
+    "href": "lectures/w2l1_act.html",
+    "title": "Class #3: Intro to R",
+    "section": "",
+    "text": "Load the following dataset into your R environment:\n\n\nmtcars\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n\nWith a group of 2-3 people, explore this dataset and find the following information (and where you got them from):\n\nNumber of observations and variables\nWhat does each row represent?\nA categorical and numeric variable\nInformation about the dataset (hint: use the Help tab)\n\n\nThink and write down all possible operations you would do inside an algebra class.\nConvert the following variable name into something descriptive in snake case:\n\n\na &lt;- round(pi, digits = 2)\n\nRun the code in your Console. How can we find this variable in RStudio once we run this code?\n\nSuppose I use this code to find the mean of the disp and drat columns from mtcars:\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\nsapply(select(mtcars, c(mpg, cyl)), mean)\n\n     mpg      cyl \n20.09062  6.18750 \n\n\nRe-write this code such that we use the piping operators.\n\nThe functions below are commonly used on vectors:\n\n\nlength()\nunique()\nsort()\npaste()\n\nFor each function, look at its help file and briefly explain what each function does when applied to a numeric vector.\nWhen done: Save, commit, and push this file to your activities repository."
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html",
+    "href": "lectures/w2l1_introR.html",
+    "title": "R Fundamentals",
+    "section": "",
+    "text": "Data fundamentals\n\nRectangular datasets\nObservations, variables, and values\nCategorical vs. discrete"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#objects-and-the-actions",
+    "href": "lectures/w2l1_introR.html#objects-and-the-actions",
+    "title": "R Fundamentals",
+    "section": "Objects and the Actions",
+    "text": "Objects and the Actions\n\nInformation is stored in various data structures\n\ne.g. value, data frame, list\nmtcars\n\nCan write functions to perform actions on these data structures\n\ne.g. calculations, printing/storing information\nselect()\n\n\n\nmtcars |&gt; select(mpg, hp)\n\n                     mpg  hp\nMazda RX4           21.0 110\nMazda RX4 Wag       21.0 110\nDatsun 710          22.8  93\nHornet 4 Drive      21.4 110\nHornet Sportabout   18.7 175\nValiant             18.1 105\nDuster 360          14.3 245\nMerc 240D           24.4  62\nMerc 230            22.8  95\nMerc 280            19.2 123\nMerc 280C           17.8 123\nMerc 450SE          16.4 180\nMerc 450SL          17.3 180\nMerc 450SLC         15.2 180\nCadillac Fleetwood  10.4 205\nLincoln Continental 10.4 215\nChrysler Imperial   14.7 230\nFiat 128            32.4  66\nHonda Civic         30.4  52\nToyota Corolla      33.9  65\nToyota Corona       21.5  97\nDodge Challenger    15.5 150\nAMC Javelin         15.2 150\nCamaro Z28          13.3 245\nPontiac Firebird    19.2 175\nFiat X1-9           27.3  66\nPorsche 914-2       26.0  91\nLotus Europa        30.4 113\nFord Pantera L      15.8 264\nFerrari Dino        19.7 175\nMaserati Bora       15.0 335\nVolvo 142E          21.4 109"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#for-now-and-wednesday",
+    "href": "lectures/w2l1_introR.html#for-now-and-wednesday",
+    "title": "R Fundamentals",
+    "section": "For Now and Wednesday",
+    "text": "For Now and Wednesday\n\nFinish activities for today’s class\nLab #1 due on Wednesday at 11:59pm"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#last-time",
+    "href": "lectures/w2l2_github.html#last-time",
+    "title": "R and GitHub",
+    "section": "",
+    "text": "Welcome to R!\n\nInterface\nBasics\n\nCoding in R\n\n“hello world!”\nObjects and data structures\nOperators and functions"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#activity",
+    "href": "lectures/w2l2_github.html#activity",
+    "title": "R and GitHub",
+    "section": "Activity",
+    "text": "Activity\n\nTalk to 2-3 people around you and discuss any questions you may have about using R/RStudio.\nPut any questions in the anonymous Google Form here"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#today",
+    "href": "lectures/w2l2_github.html#today",
+    "title": "R and GitHub",
+    "section": "Today",
+    "text": "Today\n\nMore behind R\n\nData imports\nMissing data\nOther topics\n\nWhat is a workflow?\n\nWhy?\nProcess\n\nGitHub\n\nWhat is it?\nActions"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#working-directories",
+    "href": "lectures/w2l2_github.html#working-directories",
+    "title": "R and GitHub",
+    "section": "Working directories",
+    "text": "Working directories\n\nCurrent workspace that you are situated in on your computer\nCan check with getwd()\n\n\ngetwd()"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#working-directories-1",
+    "href": "lectures/w2l2_github.html#working-directories-1",
+    "title": "R and GitHub",
+    "section": "Working directories",
+    "text": "Working directories\n\nImportant to set your working directory\n\nIf you create a project in directory, your working directory is set\nOtherwise, use setwd()\n\nNeed to find file path (Properties for Windows users, Cmd + Opt + C for Mac users on file)\n\n\n\n\nsetwd(\"..\") # to go back a folder\n\n\nsetwd(\"C:/Users/jericho/Documents\")"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#r-projects",
+    "href": "lectures/w2l2_github.html#r-projects",
+    "title": "R and GitHub",
+    "section": "R projects",
+    "text": "R projects\n\nAssociated with an R working directory\n\nResults in own workspace and history\n\nCan be associated with a version control repository (e.g. Git)\n\nYour lab submission repository is an example\n\nTo make: File &gt; New Project"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#data-imports",
+    "href": "lectures/w2l2_github.html#data-imports",
+    "title": "R and GitHub",
+    "section": "Data imports",
+    "text": "Data imports\n\nCan be seen as a .txt or .csv file\n\nread.table() for .txt files\nread.csv() for .csv files\n\nSpecify file path and if the header exists"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#a-.csv-file",
+    "href": "lectures/w2l2_github.html#a-.csv-file",
+    "title": "R and GitHub",
+    "section": "A .csv file",
+    "text": "A .csv file\n\nA comma-separated file\n\nRows are created with new lines (e.g. return/enter)\nColumns are separated by commas"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#importing-data-from-a-.csv-file",
+    "href": "lectures/w2l2_github.html#importing-data-from-a-.csv-file",
+    "title": "R and GitHub",
+    "section": "Importing data from a .csv file",
+    "text": "Importing data from a .csv file\n\nNeed to place data into same working directory as your code\n\nAdjust file path as necessary\n\n\n\nnba_data &lt;- read.csv(\"nba2024.csv\", header = T)"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#absolute-paths",
+    "href": "lectures/w2l2_github.html#absolute-paths",
+    "title": "R and GitHub",
+    "section": "Absolute paths",
+    "text": "Absolute paths\n\nAbsolute paths list all folders from your root folder to the location of the file\n\nAvoid this as much as possible!\nReproducibility issues\n\n\nExample: “C:/Users/jericho/Documents/SDS 192”"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#relative-paths",
+    "href": "lectures/w2l2_github.html#relative-paths",
+    "title": "R and GitHub",
+    "section": "Relative paths",
+    "text": "Relative paths\n\nRelative paths direct to the desired file from your current location\n\nMove up a directory: ../\nMove up two directories: ../../\nMove up a directory and into datasets folders: ../datasets/\n\n\nExample:\n\ndatasets/\ncode.qmd\nREADME.md"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#reading-data-in-from-url",
+    "href": "lectures/w2l2_github.html#reading-data-in-from-url",
+    "title": "R and GitHub",
+    "section": "Reading data in from URL",
+    "text": "Reading data in from URL\n\nInstead of a file path, we can put in a URL\n\nMake sure we are connected to the internet\n\n\n\nhospital_costs_2018 &lt;- read.csv(\"https://raw.githubusercontent.com/SDS-192-Intro/SDS-192-public-website/main/slides/datasets/Hospital_Cost_Report_2018.csv\")\n\nhead(hospital_costs_2018[, 1:5])\n\n  rpt_rec_num Provider.CCN                 Hospital.Name        Street.Address\n1      623132        10032              WEDOWEE HOSPITAL 301 NORTH MAIN STREET\n2      628158       250042   NORTHWEST MS MEDICAL CENTER   1970 HOSPITAL DRIVE\n3      628833       440235 BIG SOUTH FORK MEDICAL CENTER      18797 ALBERTA ST\n4      631016        50523   SUTTER DELTA MEDICAL CENTER    3901 LONE TREE WAY\n5      631094        50305     ALTA BATES MEDICAL CENTER     2450 ASHBY AVENUE\n6      631292        50043         SUMMIT MEDICAL CENTER  350 HAWTHORNE AVENUE\n        City\n1    WEDOWEE\n2 CLARKSDALE\n3     ONEIDA\n4    ANTIOCH\n5   BERKELEY\n6    OAKLAND"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#importing-tips",
+    "href": "lectures/w2l2_github.html#importing-tips",
+    "title": "R and GitHub",
+    "section": "Importing tips",
+    "text": "Importing tips\n\nData should be rectangular!\n\nNo merged columns/rows\nValues in every cell\n\nAvoid Excel and other proprietary formats\nAvoid spaces in column names if possible"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#repairing-names",
+    "href": "lectures/w2l2_github.html#repairing-names",
+    "title": "R and GitHub",
+    "section": "Repairing names",
+    "text": "Repairing names\n\nIf spaces exist in column name, you must use backticks in order to reference column\n\ne.g. `column name`\nOther solutions:\n\nAssign make.names(names(your_data)) to names(your_data)\nFix each unwanted column name by accessing names(your_data)"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#missing-data",
+    "href": "lectures/w2l2_github.html#missing-data",
+    "title": "R and GitHub",
+    "section": "Missing data",
+    "text": "Missing data\n\nIn almost all cases, missing data will occur\n\nMay show up as blank or NA\n\nSolutions:\n\nUse na.omit(your_data) to remove observations with at least one missing value\n\nEasy solution, but may be problematic if missing values occur in various spots in data\n\nImputation (only when data are missing at random)\n\nUse of replace() function"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#example",
+    "href": "lectures/w2l2_github.html#example",
+    "title": "R and GitHub",
+    "section": "Example",
+    "text": "Example\n\ncities &lt;- c(\"Northampton\", \"Amherst\", \"Hadley\")\ntemps &lt;- c(57, 60, NA)\ninter &lt;- c(T, F, F)\ndata &lt;- data.frame(city = cities, temp = temps, inter = inter)\n\n\nna.omit(data)\n\n         city temp inter\n1 Northampton   57  TRUE\n2     Amherst   60 FALSE\n\n\n\ndata$temp &lt;- replace(data$temp, is.na(data$temp), mean(data$temp, na.rm = T))\ndata$temp\n\n[1] 57.0 60.0 58.5"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#unnecessary-data",
+    "href": "lectures/w2l2_github.html#unnecessary-data",
+    "title": "R and GitHub",
+    "section": "Unnecessary data",
+    "text": "Unnecessary data\n\nSuppose there are small pockets of data that you deem are not the main focus of your project\n\nUse of subsetting\nTo remove: Use !(condition) within []\nTo keep: Use condition within []\n\n\n\nmtcars[mtcars$mpg &lt; 15, ]\nmtcars[!(mtcars$mpg &lt; 15), ]"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#version-control-1",
+    "href": "lectures/w2l2_github.html#version-control-1",
+    "title": "R and GitHub",
+    "section": "Version control",
+    "text": "Version control\n\nAllows us to save and refer to versions of digital documents over time\nSupports “reproducibility” by allowing us to retrace our steps in a systematic way\n\ne.g. a resume folder\ne.g. a package\n\n\nQuestion: Why is version control important?"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#git",
+    "href": "lectures/w2l2_github.html#git",
+    "title": "R and GitHub",
+    "section": "Git",
+    "text": "Git\n\n\n\nGit\n\nOpen source command line tool for version control\nInstalled on your local machine (OS-specific)\nDoes not require the use of any external tools\n\n\n\n\nGitHub\n\nWeb-hosting platform for git projects\nHosts repositories for publishing/sharing work with the broader coding community"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#github-workflow",
+    "href": "lectures/w2l2_github.html#github-workflow",
+    "title": "R and GitHub",
+    "section": "GitHub workflow",
+    "text": "GitHub workflow\n\nPull changes from GitHub (remote) to your machine (local)\n\nImportant to ensure there are not any conflicts!\n\nMake changes on your computer\nCommit changes\n\nDo this often and leave descriptive commit messages!\n\nPull changes from remote again if working with others.\nPush changes from machine (local) to GitHub (remote)"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#pulls",
+    "href": "lectures/w2l2_github.html#pulls",
+    "title": "R and GitHub",
+    "section": "Pulls",
+    "text": "Pulls\n\nRetrieves any changes made in remote repository, adds those changes to machine\n\nNeeds to be done when collaborating with multiple people\nWhen not done, merging conflicts can arise"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#example-pull",
+    "href": "lectures/w2l2_github.html#example-pull",
+    "title": "R and GitHub",
+    "section": "Example: pull",
+    "text": "Example: pull"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#commits",
+    "href": "lectures/w2l2_github.html#commits",
+    "title": "R and GitHub",
+    "section": "Commits",
+    "text": "Commits\n\nCommits are saves to a digital document\n\nStored snapshot of the document at that time\nIncludes a unique hash that allows you to track the history of changes to the document\n\nWhen you commit, you create a commit message where you document your changes.\n\nCommit messages should be descriptive of the changes made"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#differences-and-pushing",
+    "href": "lectures/w2l2_github.html#differences-and-pushing",
+    "title": "R and GitHub",
+    "section": "Differences and pushing",
+    "text": "Differences and pushing\n\nOn committing, we can review the differences between the previous and current version of a document\n\nAdditions highlighted in green\nDeletions highlighted in red\n\nCommit, pull, and push"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#example-differences-and-pushing",
+    "href": "lectures/w2l2_github.html#example-differences-and-pushing",
+    "title": "R and GitHub",
+    "section": "Example: differences and pushing",
+    "text": "Example: differences and pushing"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#why-github",
+    "href": "lectures/w2l2_github.html#why-github",
+    "title": "R and GitHub",
+    "section": "Why GitHub?",
+    "text": "Why GitHub?\n\nReproducibility\nCollaboration\nLicensing\nRobust way to add descriptions (e.g. README files) and issues"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#github-vocabulary",
+    "href": "lectures/w2l2_github.html#github-vocabulary",
+    "title": "R and GitHub",
+    "section": "GitHub vocabulary",
+    "text": "GitHub vocabulary\n\nFork: Create a copy of a GitHub repository for editing in your own user account\nClone: Download a copy of a remote repository to your local machine\nPull: Fetch changes to code from a remote repository to local machine\nStage: Select the files you wish to commit changes on\nDiff: Review the differences between different versions of files\nCommit: Take a snapshot of changes to files\nPush: Upload changes to code from local machine to remote repository"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#collaboration-on-github",
+    "href": "lectures/w2l2_github.html#collaboration-on-github",
+    "title": "R and GitHub",
+    "section": "Collaboration on GitHub",
+    "text": "Collaboration on GitHub\n\nGitHub assigns permissions to different users to manage and make changes to files stored in a GitHub repository\n\nUse of branches and pull requests\n\nSeparate users can clone a repo to their local machine to make changes at the same time\n\nIf cloned, users will not know what changes the other is making!\nThis is why pulling often is so important!\nThere may be a different version of a file in GitHub by the time you go to push your changes"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#push-error",
+    "href": "lectures/w2l2_github.html#push-error",
+    "title": "R and GitHub",
+    "section": "Push error",
+    "text": "Push error\n\n\nThis error indicates that you don’t have the latest version of the files on your local machine. You should pull, then push again."
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#pull-error",
+    "href": "lectures/w2l2_github.html#pull-error",
+    "title": "R and GitHub",
+    "section": "Pull error",
+    "text": "Pull error\n\n\nThis error indicates that pulling the changes that you or someone else made in remote would overwrite the changes you made on your local machine. You should commit, pull, and then push."
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#collaboration-challenges",
+    "href": "lectures/w2l2_github.html#collaboration-challenges",
+    "title": "R and GitHub",
+    "section": "Collaboration challenges",
+    "text": "Collaboration challenges\n\nWhat happens when two users have cloned a GitHub repo to their local machine and are making changes to that repo in the same place at the same time?\nWhen pushing you will get an error indicating that there is a merge conflict.\ngit wants to know which version of the file you prefer - yours or your collaborators.\nYou have to manually resolve these conflicts in an editor."
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#merge-conflicts",
+    "href": "lectures/w2l2_github.html#merge-conflicts",
+    "title": "R and GitHub",
+    "section": "Merge conflicts",
+    "text": "Merge conflicts\n\n\n\nDelete lines so that only desired code appears. Commit changes, and then push."
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#for-now-and-wednesday",
+    "href": "lectures/w2l2_github.html#for-now-and-wednesday",
+    "title": "R and GitHub",
+    "section": "For Now and Wednesday",
+    "text": "For Now and Wednesday\n\nFinish activity for today’s class\nFinish reading exercises by end of Thursday\n\nAppendix B, problems 1 and 3\n\nLab #1 due on Wednesday at 11:59pm"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#creation-of-a-repository",
+    "href": "lectures/w2l2_github.html#creation-of-a-repository",
+    "title": "R and GitHub",
+    "section": "Creation of a repository",
+    "text": "Creation of a repository\n\nMultiple ways to do this:\n\nCreate repository on GitHub, then clone on your computer using RStudio/GitHub Desktop\nCreate new project on RStudio, then connect to GitHub\n\n\n*Note:** The repository will be seen locally and remotely."
+  },
+  {
+    "objectID": "lectures/w2l2_act.html",
+    "href": "lectures/w2l2_act.html",
+    "title": "Class #4: R and GitHub",
+    "section": "",
+    "text": "In this activity, you will collaborate on a sample repository by making small changes and requesting a pull request."
+  },
+  {
+    "objectID": "lectures/w2l2_act.html#questions",
+    "href": "lectures/w2l2_act.html#questions",
+    "title": "Class #4: R and GitHub",
+    "section": "Questions",
+    "text": "Questions\n\nGo to File &gt; New Project. Then, go to Version Control &gt; git. You will put the following in the first two fields:\n\n\nhttps://github.com/jericholawson/fixthis\nfixthis\n\nIn the last field, specify a folder you would want to clone this Git repository to. Click Create Project.\n\n\nGo to the Git tab in the top-right corner of RStudio. Click on the L-shaped button (right next to the “main” button).\n\n\n\nWe will create a new branch, which creates a replicate of the “main” branch that will allow us to track changes individually. Put your first name as a branch name and click Create.\n\n\n\nOpen the README.md file in your Files tab at the bottom-right corner of RStudio. You are free to add any changes to the file. Once you’ve done so, go to the Git tab and stage the README.md file by clicking the checkbox next to the file, as seen below.\n\n\n\nIn the same Git tab, click on the double-paned check button (to the left of the downward arrow). A window will pop up. Here, we need to specify a message that marks when we’ve made changes. Type a commit message along the lines of what you see below:\n\n\nClick Commit afterwards. Afterwards, use the green upward arrow to push changes.\n\nGo to the GitHub repository and click on Pull Requests. Here, you will click on the Compare & Pull Request button.\n\n\n\nAdd a quick description and click Create Pull Request. When we do this, other members of a shared repository can determine if these changes should be merged into the main branch.\n\n\nOnce you’ve made it here, you are good to go. There is nothing to submit into your activities repository."
+  },
+  {
+    "objectID": "lectures/w1l2_data.html",
+    "href": "lectures/w1l2_data.html",
+    "title": "Datasets",
+    "section": "",
+    "text": "Tech setup\n\nComponents due tonight at 11:59pm\nImportant to do before Friday’s first lab"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html",
+    "href": "lectures/w2l2_github.html",
+    "title": "R and GitHub",
+    "section": "",
+    "text": "Welcome to R!\n\nInterface\nBasics\n\nCoding in R\n\n“hello world!”\nObjects and data structures\nOperators and functions"
+  },
+  {
+    "objectID": "labs/lab2/index.html",
+    "href": "labs/lab2/index.html",
+    "title": "Lab #2: Git and GitHub",
+    "section": "",
+    "text": "There are many reasons that Git and GitHub are essential infrastructures for collaborative coding projects. For one Git saves snapshots of a code repository at different stages of a project so that we can track how it has changed over time and revert back to an older version if we discover a more recent error. We call this version control. Certain Git features also facilitate many people working on a coding project at once, by providing a number of tools to help prevent collaborators from over-writing each other’s work. These features also make it possible for developers to simultaneously modify, extend, and test components of the code without jeopardizing the project’s current functionality. I use GitHub for assignment submission in this course because it offers a number of features for commenting on and making suggestions in your code, which will be super helpful when reviewing assignments and projects. Further, GitHub supports code publication; by publishing code on GitHub, you contribute to an open access/free software community, enabling others to learn from and build off of your work.\nDespite all of these awesome benefits, there can be a significant learning curve when getting started with Git and GitHub. There are new vocabularies, workflows, and error mitigation strategies to learn when getting started. This lab is designed to help you get acquainted with the concepts behind Git and GitHub, suggested workflows for collaborating on projects in this course, and error resolution strategies.\n\n\n\nCreate, update, and close issues\nBranch a repo\nIssue pull requests\nAddress common push/pull errors\nAddress merge conflicts"
+  },
+  {
+    "objectID": "labs/lab2/index.html#introduction",
+    "href": "labs/lab2/index.html#introduction",
+    "title": "Lab #2: Git and GitHub",
+    "section": "",
+    "text": "There are many reasons that Git and GitHub are essential infrastructures for collaborative coding projects. For one Git saves snapshots of a code repository at different stages of a project so that we can track how it has changed over time and revert back to an older version if we discover a more recent error. We call this version control. Certain Git features also facilitate many people working on a coding project at once, by providing a number of tools to help prevent collaborators from over-writing each other’s work. These features also make it possible for developers to simultaneously modify, extend, and test components of the code without jeopardizing the project’s current functionality. I use GitHub for assignment submission in this course because it offers a number of features for commenting on and making suggestions in your code, which will be super helpful when reviewing assignments and projects. Further, GitHub supports code publication; by publishing code on GitHub, you contribute to an open access/free software community, enabling others to learn from and build off of your work.\nDespite all of these awesome benefits, there can be a significant learning curve when getting started with Git and GitHub. There are new vocabularies, workflows, and error mitigation strategies to learn when getting started. This lab is designed to help you get acquainted with the concepts behind Git and GitHub, suggested workflows for collaborating on projects in this course, and error resolution strategies.\n\n\n\nCreate, update, and close issues\nBranch a repo\nIssue pull requests\nAddress common push/pull errors\nAddress merge conflicts"
+  },
+  {
+    "objectID": "labs/lab2/index.html#review-of-key-terms",
+    "href": "labs/lab2/index.html#review-of-key-terms",
+    "title": "Lab #2: Git and GitHub",
+    "section": "Review of Key Terms",
+    "text": "Review of Key Terms\n\nRepo\n\nCollaborative storage space for folders, documents, data, and code\n\nBranch\n\nAn isolated version of a repo that can be modified without affecting the main branch\n\nClone\n\nCreates a copy of a repo stored in a remote space (e.g. GitHub) to your local machine (e.g. your computer)\n\nPull\n\nDownloads the latest version of a repo from remote space (e.g. GitHub) to your local machine (e.g. your computer)\n\nStage\n\nThe process of marking which changes of the code are ready to be saved\n\nCommit\n\nA stored snapshot of a repo at a particular moment in time\n\nPush\n\nUploads commits from your local machine (e.g. your computer) to a remote space (e.g. GitHub)\n\nPull Request\n\nA request for modified code to be integrated with a different branch\n\nMerge\n\nThe process of integrating code modifications from one branch into another branch"
+  },
+  {
+    "objectID": "labs/lab2/index.html#github-flow",
+    "href": "labs/lab2/index.html#github-flow",
+    "title": "Lab #2: Git and GitHub",
+    "section": "GitHub Flow",
+    "text": "GitHub Flow\n\ngit vs. GitHub\nAt the beginning of this semester, many of you installed git on your computers. git is a series of commands available in our computers to save snapshots of files at different moments in time. On the other hand, github.com is a website where we can store projects that have been configured with git commands. When you accepted the lab submission repository for this course, a project folder (what we will call repository) had been created for you on GitHub. If you navigate to GitHub right now, you will see the project folder, and you can click on it see changes that have been made. However, when you created a project for this repository in RStudio, you were using git commands on your computer to copy the project from GitHub to your computer. Similarly, you were using git commands when you staged, committed, and pushed your changes back to GitHub. In summary, git is a series of command line tools to manage changes to files. GitHub is a Web hosting platform for storing git projects.\n\n\nRemote vs. Local\nWe can store, edit, and publish files on GitHub without ever copying them to our local computers. Files on GitHub are technically stored on a server somewhere, so we will refer to the projects stored on GitHub as remote (i.e. distant, far-off, etc). Similarly, we can use git commands to save snapshots of different versions of files on our local computers without ever pushing the changes to GitHub, so we will refer to the projects stored on on our computers as local. In this course, we need the ability to move file changes between our local and remote repositories.\nWhy can’t we just do everything at GitHub or everything on our local machines? Well GitHub doesn’t have the nice environment for writing and running code that you have in RStudio, so we need to be able to move things to your local computers so that you can work on the code in RStudio. On the other hand, if all the work was done on your local computer and never pushed to GitHub, I (your instructor) would never see it! So the first important consideration in the GitHub Flow is how do we move changes made on our local machines to GitHub and vice versa.\nThe great news is that you’ve already been doing this! The primary way that we move changes between remote and local is through two git commands: pull and push. Pull copies changes from a remote repository to our local machines. Push pushes changes from our local machines to a remote repository. It looks like this:\n\nTypically, we want to make sure that we always follow this flow:\n\nPull changes from GitHub (remote) to local.\nMake changes locally.\nPush changes to GitHub.\n\nAs we are going to see later in the lab, the most frustrating issues with GitHub emerge when we break this flow.\n\n\nTo Branch or Not to Branch?\nIn my opinion, there are two kinds of workflows for GitHub. There’s the quick and dirty version, and there’s the long and elegant version. We just went over the Quick and Dirty version, and you’ve already had practice in it when submitting all of your labs for the course. Below are the differences between these two workflows (don’t worry about if you don’t understand what the steps mean right now; we will learn all of them in the lab).\n\n\n\n\n\n\n\nQuick and Dirty Version\nLong and Elegant Version\n\n\n\n\n\nPull recent changes from GitHub to local machine.\nMake edits and save them\nStage and commit changes.\nPush changes from local machine to GitHub.\n\nIn the quick and dirty version, all of this occurs in the main branch.\n\nCreate an issue at GitHub |\nBranch the repo at GitHub. |\nPull recent changes from GitHub to local machine. |\nMake edits in the new branch and save them.\nStage and commit changes.\nPush changes from local machine to GitHub. |\nCreate a pull request at GitHub |\nAssign a reviewer to review the proposed changes and wait for their approval.\nMerge changes, while also closing the issue and deleting the branch.\n\n\n\n\nThe long and elegant version is recommended for group work as it is designed to avoid errors and ensure that collaborators are all on the same page regarding changes to files. However, occasionally when you have to make small, quick changes to a file, and it won’t impact your teammate’s work, it will make more sense to follow the quick and dirty workflow. The goal for today is to get practice in the long and elegant version.\n\n\nRepo\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nNavigate to GitHub Classroom to accept the assignment. For this assignment, you will work with up to 2-3 people. Make sure everyone is in the same group.\n\n\nThis will create a repository at GitHub called lab-2. You’ll notice that the repository has a few files:\n\nREADME.md\ngithub-practice.Rmd\n\n\n\nClone\nCloning is a git command that copies a remote repository to your local machine. In other words, it will copy all of the project files in the remote GitHub folder to your local computer.\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nClone the repo to your RStudio environment. To do so, copy the repo’s URL at GitHub. You will want to make sure you are in the main project folder when you copy this URL; it won’t work if you’ve clicked through to any of the files. Then in RStudio click on File &gt; New Project &gt; Version Control &gt; Git, and paste the copied URL into the window that appears. Note what you see in the RStudio files pane after cloning the repo.\n\n\nRemember that cloning creates a copy of a remote repo on a local machine. In creating this project, you’ve copied all of the files that make up the github-practice repo at GitHub to your local computer. This means that you will find all of the files associated with this repo by navigating to the folder where you created the project on your computer.\nIt’s important to note that this is not just any old folder on your computer though. By cloning, you’ve created a git folder. This means that the folder has been set up in a way where git can track the changes that you make to it over time, and it knows that there is a remote version of the repository somewhere that you might want to keep it consistent with. If you tried to just create a new folder on your computer, it wouldn’t necessarily have these nice features.\n\n\nIssues\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nNavigate back to GitHub, and click on the repo’s Issues tab. Create an issue by clicking the ‘New Issue’ button. Title the issue: “Adding &lt;your name&gt; to the assignment.” Submit the issue, and to the left of the screen, assign the issue to yourself.\n\n\n\nIssues support project planning by allowing you to track changes you hope to make to your project over time. By assigning issues to certain collaborators on your project team, you can have clear documentation of who is responsible for what.\n\n\n\n\n\n\nTip\n\n\n\nIssues can be used for a number of purposes. Issues can be assigned to bugs that are in certain coding scripts. Other times, issues can be used to track features that need to be added to code down the road. Additionally, those using code can submit issues to ask questions about how something works, to report bugs, or to request features.\n\n\n\n\nBranch\nWhen you first create a repository, all of the code will be stored in the main branch of the repository. If you were to think of a project like a tree growing up from the ground, then the main branch would be the like the trunk of the tree. We don’t want the main branch to break because the whole tree could come down. One goal of a branching workflow in GitHub is to keep the most stable and polished versions of code in the main branch.\nSo what do we do in the meantime - when we’re editing code, potentially breaking things, trying to sort out its bugs, and it’s not quite in that stable and polished state yet? That’s where branching comes in.\nWhen we create a branch of our repo, GitHub creates a separate copy of the repo where you can make changes without impacting what’s in the main branch. Later, once we’re done making changes and things are stable and polished, we will have the opportunity to merge those changes back into the main branch.\nThink of it another way: You write a rockstar first draft of a final paper, and you decide to send it to a few friends to review. You could just share the original document with them and tell them “Have at it! Edit away!” The problem is that, if they are making changes directly to the original document, you could lose some of that awesome original text. A better option would be to create separate copies for each teammate to edit, send them those copies, and then figure out how to layer in their edits later. This is like branching. The original document would be the main branch, and each copy sent to a friend would be a branch off of main. Friends can make as many edits as they want in their branch because you still have the original stable and polished copy. Later, we can merge their changes back into the main branch.\n\n\n\n\n\n\n\nTip\n\n\n\nBranching can get pretty wild in GitHub. You can have branches of branches of branches. I don’t recommend this. A good workflow is to create a branch for making specific changes, merge those changes back into main, delete the branch, and then create a new branch for the next batch of changes.\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nClick on the Code tab on your repo’s page on GitHub. irectly below this tab, you will see a dropdown that is currently labeled “main.” This means that you are in the main branch. Each member of your team should click the down arrow, and create a branch by entering their first name into the textbox that appears, and then clicking “Create branch.”\n\n\n\n\n\nPull\nAs of right now, the branch that was created in the previous step only exists on GitHub; it doesn’t exist yet on your local machine. To get these changes to your local machine, you need to Pull the changes. Remember how we said that the super fancy git folder knows that there is a remote version of the repository somewhere that you might want to keep it consistent with? When we pull changes to our local machines, we are basically saying, check that remote version for changes, and then pull them into the repo on my computer.\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nHead back to RStudio. In the Environment pane, you will notice a tab labeled “Git.” It’s important to note that this tab will only appear in projects that are built from super fancy git folders. This is your RStudio command center for Git and GitHub. When you click on this tab, you will see a few buttons in the navigation bar. To pull changes, you should click the blue downward arrow. Click this button to pull the branches created remotely to your local machine.\n\n\n\n\n\nSwitch Branches\nEven though you pulled the new branches to your local machine, you are still currently working in the main branch. Remember that we always want to keep the main branch stable and polished. This is not where we are going to make edits. Instead, you will make edits in the branch that you just created. Later, we will merge those changes back into the main branch.\n\n\n\n\n\n\nImportantQuestion 6\n\n\n\nIn the top right hand corner of the Git tab, you will see a dropdown currently set to “main”. Click the downward arrow, and switch to your branch by selecting the appropriate branch.\n\n\n\n\n\nMake Changes\n\n\n\n\n\n\nImportantQuestion 7\n\n\n\nOnce in your branch, open github-practice.Rmd from the files pane. Decide within your group who will be Group member 1, 2, 3, and so on. Each group member should edit this file on their own local machines by adding their name and only their name to the appropriate location in the document (line 5, 7, or 9) based on their assigned number. It’s very important that this be the only section of the document you edit. Save the file by clicking File&gt;Save.\n\n\n\n\nStage\nSometimes we make a changes to a few files, save them, and we’re ready to create a snapshot of our repo (i.e. create a commit) with some of those changes. Remember that creating this snapshot is almost like taking a photo of the repo at this particular moment, allowing us to later go back to that photo to see what the repo looked like in that moment. To let Git know which changes we want to include in that snapshot, we need to stage the files. Staging basically says, “these files are ready to be included in the snapshot.”\n\n\n\n\n\n\nImportantQuestion 8\n\n\n\nOnce you save the file you’ll notice in the RStudio Git pane that the file name appears after a blue square labeled “M” (which stands for Modified). This means that the file is ready for staging. Stage the file - indicating that it’s ready for committing - by clicking the checkbox in front of the file name.\n\n\n\n\n\nCommit\nAs we just noted, committing changes basically means taking a snapshot of a repo at a particular moment in time. Commits are given unique hashes - sort of like a unique identifier that enables us to access the snapshot of the repo at a later date. In collaborative projects, it is typically recommended to commit often - after any major changes are made to a file. This ensures that we can eventually go back to look at very specific changes. It’s also important to label commits with descriptive titles so that we can recall what changes within that commit. Descriptive titles should detail what changes were made in the last round of edits.\nTo help put this into context, think back to our photograph metaphor. Let’s say that we are a photographer assigned to document how a baby develops in the first year of its life. If the photographer only took one photograph when the baby was 1 year old, we wouldn’t have a lot of documentation regarding how the baby developed! …so instead, let’s say that the photographer took a snapshot of the baby after every major milestone - their first laugh, their first solid food, their first crawl, their first word. We would have a lot more to go by when trying to understand how the baby developed. Same goes for committing code often.\nNow let’s say the photographer handed the batch of photos to the parents, and said - “look, here’s how your baby developed over time.” The parents might not remember which photograph was taken after which milestone. …but if the photographer were to label each photograph with things like “baby had first laugh,” the parents would be able to easily go back to specific moments in their baby’s development. This is why we want descriptive commit messages. We want to later be able to go back and scan through what changes were made after each commit.\nTo get a sense of what it means to be able to look back on these changes, check out the latest commits that I made to the GitHub repo for our course website. While I’m not going to claim to be the most diligent commit-er, you do get a basic sense of what changes were made to the repo following each commit from these commit messages. I could click through any of these links to see what my repo looked like at this moment in time.\n\n\n\n\n\n\n\nImportantQuestion 9\n\n\n\nCommit your changes by clicking the ‘Commit’ button in the Git pane. When you click this button, a new window will open showcasing the changes that have been made to the staged file. You should enter a commit message in the window that appears. Remember that commit messages should be descriptive. In this case, something like “added &lt;your-name&gt;’s name” would work. Click commit. Now a snapshot of this version of the code repo has been taken.\n\n\n\n\nPush\nOnly your local machine knows that a change has been made to the code. Remember again how we said that the super fancy git folder knows that there is a remote version of the repository somewhere that you might want to keep it consistent with? Now we want to do the opposite of pulling changes from GitHub to our local machines. Instead, we want to push the changes on our local machines to GitHub.\n\n\n\n\n\n\nImportantQuestion 10\n\n\n\nClick the Green upward arrow in the Git pane to push your changes to GitHub.\n\nOnce all group members have pushed their changes, head back over to GitHub. On the main code page, switch between branches and check out the contents of github-practice.Rmd in each branch. What differences do you notice?\n\n\n\n\nPull Request\nNote that now we have a few versions of our repo in separate branches on GitHub, and in each of those versions of the repo, the github-practice.Rmd file looks a little bit different. Now that we’ve made our changes and things are stable and polished, we want to move all of those changes into the main branch. To do this, we are going to issue a Pull Request. This is a request that signals to all of our collaborators that we are ready to move our changes back into the main branch.\n\n\n\n\n\n\nImportantQuestion 11\n\n\n\nOn your repo’s page in GitHub, click the “Pull Requests” tab, and then click the green “New Pull Request” button. You’re requesting to pull the changes from your personal branch into the main branch. This means that the base branch should be main, and the compare branch should be your personal branch.\n\nYou’ll see a screen where you can compare your branch to the main branch. Click the button to “Create Pull Request,” enter a descriptive title of the changes made, and then click “Create Pull Request” again.\n\n\n\n\nReview Pull Requests\nI recommend that you get in the habit of reviewing your collaborator’s work before merging their changes into the main branch. By creating pull requests, we scaffold an opportunity to review each other’s work before fully integrating the changes.\nNow there should be a pull request for all members of your team. Assign one team member to review one other team member’s code. All team members should have one reviewer.\n\n\n\n\n\n\nImportantQuestion 12\n\n\n\nOpen your own pull request in GitHub, and in the right sidebar, assign the team member responsible for reviewing your changes as a “Reviewer.”\n\nThen navigate to the pull request you are responsible for reviewing. Click on the “Files Changed” tab. Note that the left side of the screen shows the previous version of the file, and the right side of the screen shows the new version of the file. Lines in red have been deleted, and lines in green have been added.\n\nAfter looking through the changes, click the green button “Review changes.” Leave a note for your collaborator, indicating your evaluation of their changes. If everything looks good, check the radio button for “Approve.” If there are issues, check the radio button for “Request Changes.” Then click the button to “Submit Review.”\n\n\n\n\n\n\n\n\nTip\n\n\n\nIf your reviewer requested changes, you should go back to RStudio, and make sure you are in your own branch. Then make the requested changes, save the file, stage the file, commit the changes, and push again. The changes to your file will be tracked in your pull request. After this, you may move on to the Merge step. See here for further options on dismissing or re-requesting reviews.\n\n\n\n\nMerge\nOnce all reviewers have approved changes, we are ready to merge those changes into the main branch. Open each pull request. If everything is good and ready to merge, you will see a green checkmark that says “This branch has no conflicts with the base branch.”\n\n(If you get a message that there are conflicts, call myself or one of the Data Assistants over.)\n\n\n\n\n\n\nImportantQuestion 13\n\n\n\nClick the button to “Merge Pull Request”. In the comment box that appears, enter the text “closes #”. When you enter this text, you will see a dropdown of issues and pull requests currently in the repo. Issues will have an icon that appears as a circle with a dot in the center.\n\nSelect the issue associated with this pull request, and then click “Confirm Merge.” This will both merge the changes into the main branch and simultaneously close the issue you opened earlier. Finally, click the button to the delete the branch. Once this has been completed for all pull requests, head back over to the “Code” tab at GitHub, and check out github-practice.Rmd. What has happened to the file since merging the code? Navigate to the “Issues” tab. What has happened to the issues since confirming the merge?\n\n\n\n\n\n\n\n\nImportantBefore moving on to the next section…\n\n\n\nYou’ve now deleted branches at GitHub that your local machines don’t know have been deleted. Before moving on to the next step, you should navigate back to RStudio and pull these changes to your local machine by clicking the blue downward arrow. To streamline things in the next section of the lab, we are going to work entirely in the main branch (something that I would otherwise not recommend)."
+  },
+  {
+    "objectID": "labs/lab2/index.html#error-resolution",
+    "href": "labs/lab2/index.html#error-resolution",
+    "title": "Lab #2: Git and GitHub",
+    "section": "Error Resolution",
+    "text": "Error Resolution\nThe workflow presented above seems to work all fine and dandy. But there are a number of factors that can impede this seamless workflow. In this final section of the lab, we will go over three kinds of errors that you might come across in the workflow above, and talk about how you would resolve them. I can almost guarantee that you will deal with some of these issues when working on your group projects, so I would encourage you to keep this lab handy when engaging in project work.\n\nPush error\nA push error occurs when we make changes to files on our local machines, and go to commit and push them to GitHub, but other changes had already been made to the file at GitHub that were not yet pulled into our local environments. We get an error because our local repo is inconsistent with the remote repo. To fix this error, we need to pull changes to our local machine, and try committing and pushing again. Let’s replicate this error:\n\n\n\n\n\n\nImportantQuestion 14\n\n\n\nOne of your partners should navigate to the GitHub repository. Click on the file README.md. Click the pencil icon to edit the file. Replace the text: ADD NAME 1 HERE ADD NAME 2 HERE, and so on with your names. Scroll to the bottom of the page and commit changes noting in the message that your names were added.\nOther partner: Return to RStudio. Do not pull changes yet. Open github-practice.Rmd. On line 40 change the ncol() function to dim(). Save the file. Stage and commit your changes. Click the green upward arrow to push your changes. You should get an error that looks like this.\n\nFollow the steps above to resolve the error.\n\n\nAn easy way to avoid a push error is to always click the blue downward arrow to pull remote changes before starting to edit files on your local machine.\n\n\nPull error\nA pull error occurs when changes have already been made to the same location (the same line number) in both a remote file and a local file, and then we try to pull the changes from the remote repo to our local machines. As far as Git can tell, there are two options for what this line is supposed to look like, and it can’t tell which to prioritize. So Git recommends that, as a first step, we commit the changes that we made locally. It’s basically saying, let’s take a snapshot of your local repo as it looks right now, so that later we can figure out what to do about this conflict.\nIf this seems confusing imagine this: let’s say you write a paper, and you share it with one of your classmates to review. The classmate reads through it, makes suggested changes to the opening sentence, and sends it back you. …but, while your classmate was reviewing the paper, you were getting antsy about the paper deadline and started making your own edits to the paper, including edits to the opening sentence. Now you’re trying to incorporate the changes from your classmate’s review, and you’re not sure what to do about that opening sentence. As a first step, you have two options you can scrap your recent changes (maybe your classmate’s suggestions were better!) or you can save a separate copy of the file with your recent changes and figure out later how to resolve the differences. That’s exactly what we are going to do here:\nTo fix this error, you should stage and commit your local changes and then try pulling again. Let’s replicate this error:\n\n\n\n\n\n\nImportantQuestion 15\n\n\n\nOne of your partners should navigate to the GitHub repository. Click on the file github-practice.Rmd. Click the pencil icon to edit the file. Replace the code on line 47 with the following: colnames(pioneer_valley_2013).\nScroll to the bottom of the page and commit changes noting in the message how you updated the function.\nOther partner: Return to RStudio. Do not pull changes yet. Open github-practice.Rmd. Replace the code on line 47 with the following: ncol(pioneer_valley_2013)\nSave the file. Click the blue downward button to Pull changes. You should get an error that looks like this.\n\nFollow the steps above to resolve the error.\n\n\n\n\nMerge conflict\nSo now we have these two snapshots of github-practice.Rmd, and they are in conflict with one another. If we try to push our changes back to GitHub, Git is not going to know what to do. Should the file at GitHub look like the version currently at GitHub, should it look like the snapshot that we just commit to our local machines, or should it look like something else entirely?\nLet’s return to the example of trying to incorporate a peer’s edits to a paper that you have recently made changes to. We have to figure out what to do about that opening sentence. Do we want our version, their version, or some combination of the two? This is what it is like to fix a merge conflict.\nTo fix this error, open the file with conflicts and edit the lines with conflict.\n\n\n\n\n\n\nImportantQuestion 16\n\n\n\nOne of your partners should try to pull changes by clicking the blue downward arrow in RStudio. You will get an error that looks like this:\n{fig-alt=“This is the window that we see when we get a merge conflict. It says: CONFLICT (content): Merge conflict in README.md}\nTo fix this one your partners should open the file with the conflict. In this case it will be github-practice.Rmd. Scroll to the section of the file with the conflict. It will now look something like this:\n    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\n\n    ncol(pioneer_valley_2013)\n\n    =======\n\n    colnames(pioneer_valley_2013)\n\n    &gt;&gt;&gt;&gt;&gt;&gt;&gt; ee175895783b64e0e1f696d9456be4c4c7c3f3bf\nThe code following HEAD represents the recent changes you made on your local machine, and the code right before the long string of characters represents the changes that were made in an earlier commit (the long string of characters is the commit hash). Decide what that line should look like and delete all other content. This means you must delete “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”, “=======”, and “&gt;&gt;&gt;&gt;&gt;&gt;&gt; &lt;long-hash&gt;”, and you likely should delete at least one other line. Save the file, stage the file by clicking the checkbox next to the file in the Git page, and then commit your changes, and push them to GitHub.\n\n\n\n\n\n\n\n\nTipAvoiding Merge Conflicts\n\n\n\nYou may have noticed that the most frustrating merge conflicts tend to emerge when we have two people working on the same line of a repo’s file. The most effective way to avoid merge conflicts is to ensure that collaborators are working on different documents or different lines in a file. One way you might do this when starting to work on your group project is to open a file that you all plan to work on and having one of your team mates section off space of that file for different people to work. It might look something like this:\n\nOnce this change has been made, that group mate should stage, commit, and push the file to GitHub, and all other group mates should pull the change to their local machines.\n\n\n\n\nPath of Least Resistance\nI have been working with GitHub for years, and even to this day, I run into instances where things become so inconsistent between my local machine and the repo at GitHub that the fastest way to fix things is just to save local copies of the files that I’ve changed to somewhere else on my machine, delete the super fancy Git folder from its current location, and then re-clone the most up-to-date remote version to my local machine. Then I can figure out how I want to edit the most up-to-date version with my changes. This comic from XKCD captures this widely acknowledged solution beautifully:\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nIncreasingly, when data science researchers publish a paper in a journal, they are making the code they used to reach certain results freely available on GitHub for other researchers and the public to review. This is in part a response to the reproducibility crisis that you learned about in SDS 100. What do you see as the social benefits to making the code behind a data science finding publicly available online? What might be some of the social consequences of making this code freely available? How might we mitigate these consequences? Share your ideas on our discussions Slack channel."
   }
 ]
