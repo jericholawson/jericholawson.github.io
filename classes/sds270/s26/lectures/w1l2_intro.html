@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 1, Lecture 1   ">
+<meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 1, Lecture 2   ">
 
-<title>Introductions – SDS 192: Introduction to Data Science, Spring 2026</title>
+<title>Introduction, Tech Setup, Atomic Vectors – SDS 270: Programming for Data Science in R, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -85,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
+    <span class="navbar-title">SDS 270: Programming for Data Science in R, Spring 2026</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -115,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"><iconify-icon icon="fa6-brands:slack"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/"> 
+    <a class="nav-link" href="https://github.com"> 
 <span class="menu-text"><iconify-icon icon="fa6-brands:github"></iconify-icon></span></a>
   </li>  
 </ul>
@@ -136,33 +171,41 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome!</a></li>
   <li><a href="#welcome-1" id="toc-welcome-1" class="nav-link" data-scroll-target="#welcome-1">Welcome!</a></li>
+  <li><a href="#what-youve-done" id="toc-what-youve-done" class="nav-link" data-scroll-target="#what-youve-done">What you’ve done!</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#warm-up-activity-data-science" id="toc-warm-up-activity-data-science" class="nav-link" data-scroll-target="#warm-up-activity-data-science">Warm-Up Activity: Data Science</a></li>
-  <li><a href="#what-is-data-science-common-view" id="toc-what-is-data-science-common-view" class="nav-link" data-scroll-target="#what-is-data-science-common-view">What is data science? Common view:</a></li>
-  <li><a href="#what-is-data-science-my-view" id="toc-what-is-data-science-my-view" class="nav-link" data-scroll-target="#what-is-data-science-my-view">What is data science? My view:</a></li>
-  <li><a href="#case-study-1-aclu-fights-discriminatory-housing" id="toc-case-study-1-aclu-fights-discriminatory-housing" class="nav-link" data-scroll-target="#case-study-1-aclu-fights-discriminatory-housing">Case Study 1: ACLU Fights Discriminatory Housing</a></li>
-  <li><a href="#case-study-2-epa-tracks-environmental-injustice" id="toc-case-study-2-epa-tracks-environmental-injustice" class="nav-link" data-scroll-target="#case-study-2-epa-tracks-environmental-injustice">Case Study 2: EPA Tracks Environmental Injustice</a></li>
-  <li><a href="#case-study-3-geena-davis-institute-studies-gender-biases-in-films" id="toc-case-study-3-geena-davis-institute-studies-gender-biases-in-films" class="nav-link" data-scroll-target="#case-study-3-geena-davis-institute-studies-gender-biases-in-films">Case Study 3: Geena Davis Institute Studies Gender Biases in Films</a></li>
-  <li><a href="#topics-covered-in-this-course" id="toc-topics-covered-in-this-course" class="nav-link" data-scroll-target="#topics-covered-in-this-course">Topics covered in this course</a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  <li><a href="#learning-objectives-1" id="toc-learning-objectives-1" class="nav-link" data-scroll-target="#learning-objectives-1">Learning objectives</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  <li><a href="#what-you-will-do" id="toc-what-you-will-do" class="nav-link" data-scroll-target="#what-you-will-do">What you will do!</a></li>
+  <li><a href="#structure" id="toc-structure" class="nav-link" data-scroll-target="#structure">Structure</a></li>
+  <li><a href="#structure-cont." id="toc-structure-cont." class="nav-link" data-scroll-target="#structure-cont.">Structure (cont.)</a></li>
+  <li><a href="#textbooks" id="toc-textbooks" class="nav-link" data-scroll-target="#textbooks">Textbooks</a></li>
+  <li><a href="#so-generative-ai" id="toc-so-generative-ai" class="nav-link" data-scroll-target="#so-generative-ai">So… generative AI?</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   <li><a href="#who-am-i" id="toc-who-am-i" class="nav-link" data-scroll-target="#who-am-i">Who am I?</a></li>
   <li><a href="#who-am-i-1" id="toc-who-am-i-1" class="nav-link" data-scroll-target="#who-am-i-1">Who am I?</a></li>
-  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise">Exercise</a></li>
-  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
-  <li><a href="#coding-agonizing-when-it-doesnt-work-satisfying-when-it-does" id="toc-coding-agonizing-when-it-doesnt-work-satisfying-when-it-does" class="nav-link" data-scroll-target="#coding-agonizing-when-it-doesnt-work-satisfying-when-it-does">Coding: agonizing when it doesn’t work, satisfying when it does</a></li>
-  <li><a href="#for-friday-and-beyond" id="toc-for-friday-and-beyond" class="nav-link" data-scroll-target="#for-friday-and-beyond">For Friday and beyond</a></li>
+  <li><a href="#activity" id="toc-activity" class="nav-link" data-scroll-target="#activity">Activity</a></li>
+  <li><a href="#review" id="toc-review" class="nav-link" data-scroll-target="#review">Review</a></li>
+  <li><a href="#the-rstudio-interface" id="toc-the-rstudio-interface" class="nav-link" data-scroll-target="#the-rstudio-interface">The RStudio Interface</a></li>
+  <li><a href="#objects-and-data-structures" id="toc-objects-and-data-structures" class="nav-link" data-scroll-target="#objects-and-data-structures">Objects and Data Structures</a></li>
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a></li>
+  <li><a href="#atomic-vectors" id="toc-atomic-vectors" class="nav-link" data-scroll-target="#atomic-vectors">Atomic Vectors</a></li>
+  <li><a href="#examples-concatenation" id="toc-examples-concatenation" class="nav-link" data-scroll-target="#examples-concatenation">Examples (Concatenation)</a></li>
+  <li><a href="#testing-and-coercion" id="toc-testing-and-coercion" class="nav-link" data-scroll-target="#testing-and-coercion">Testing and Coercion</a></li>
+  <li><a href="#hierarchy-for-coercion" id="toc-hierarchy-for-coercion" class="nav-link" data-scroll-target="#hierarchy-for-coercion">Hierarchy for Coercion</a></li>
+  <li><a href="#attributes" id="toc-attributes" class="nav-link" data-scroll-target="#attributes">Attributes</a></li>
+  <li><a href="#attributes-cont." id="toc-attributes-cont." class="nav-link" data-scroll-target="#attributes-cont.">Attributes (cont.)</a></li>
+  <li><a href="#object-assignment" id="toc-object-assignment" class="nav-link" data-scroll-target="#object-assignment">Object Assignment</a></li>
+  <li><a href="#s3-atomic-vectors-and-special-classes" id="toc-s3-atomic-vectors-and-special-classes" class="nav-link" data-scroll-target="#s3-atomic-vectors-and-special-classes">S3 Atomic Vectors (and Special Classes)</a></li>
+  <li><a href="#for-now-and-next-week" id="toc-for-now-and-next-week" class="nav-link" data-scroll-target="#for-now-and-next-week">For Now and Next Week:</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="w1l1_intro.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="w1l2_intro.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introductions</h1>
-<p class="subtitle lead">SDS 192: Introduction to Data Science</p>
+<h1 class="title">Introduction, Tech Setup, Atomic Vectors</h1>
+<p class="subtitle lead">SDS 270: Programming for Data Science in R</p>
 </div>
 
 
@@ -172,7 +215,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p><br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 1, Lecture 1 </span> <br> </p>
+             <p><br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 1, Lecture 2 </span> <br> </p>
           </div>
   </div>
     
@@ -191,16 +234,15 @@ ul.task-list li input[type="checkbox"] {
 <div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/sdslogo.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/sdslogo.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
 <ul>
-<li><strong>Course:</strong> SDS 192, Sect. 02</li>
+<li><strong>Course:</strong> SDS 270, Sect. 01</li>
 <li><strong>Times:</strong>
 <ul>
-<li>M, 1:40-2:55pm</li>
-<li>W/F, 1:20-2:35pm</li>
+<li>M/W, 10:50am-12:05pm</li>
 </ul></li>
 </ul>
 </div>
@@ -218,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Office Hours:</strong>
 <ul>
 <li>M, 3-4pm</li>
-<li>F, 10am-12pm</li>
+<li>F 10am-12pm</li>
 </ul></li>
 <li><strong>Email:</strong> <a href="mailto:jlawson01@smith.edu">jlawson01@smith.edu</a></li>
 </ul>
@@ -231,24 +273,35 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+<section id="what-youve-done" class="level2">
+<h2 class="anchored" data-anchor-id="what-youve-done">What you’ve done!</h2>
+<ul>
+<li>Data wrangling (i.e.&nbsp;<code>dplyr</code>)</li>
+<li>Data visualization (i.e.&nbsp;<code>ggplot2</code>)</li>
+<li>Universal programming concepts</li>
+<li>Data types</li>
+<li>Some structures in R (i.e.&nbsp;functions, if/else statements)</li>
+<li>Basic version control (i.e.&nbsp;GitHub)</li>
+</ul>
+</section>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/lect1/ex1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
+<p><img src="images/lect1/ex1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
 </figure>
 </div>
 <div class="columns">
 <div class="column" style="width:65%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/lect1/ex2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="images/lect1/ex2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 </div><div class="column" style="width:35%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/lect1/ex3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+<p><img src="images/lect1/ex3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
 </figure>
 </div>
 </div>
@@ -257,129 +310,144 @@ ul.task-list li input[type="checkbox"] {
 <p>Sources: <a href="https://www.nytimes.com/interactive/2025/11/04/us/elections/results-virginia-governor.html">NYT</a>, <a href="https://compadre-db.org/">Compadre DB</a>, <a href="https://www.theatlantic.com/technology/2025/11/chatgpt-third-anniversary/685084/">The Atlantic</a></p>
 </blockquote>
 </section>
-<section id="warm-up-activity-data-science" class="level2">
-<h2 class="anchored" data-anchor-id="warm-up-activity-data-science">Warm-Up Activity: Data Science</h2>
-<p>Form groups of 2-3 with your peers near you. Complete the following tasks:</p>
-<ol type="1">
-<li>Introduce yourselves to each other! Mention your name, major, and one cool thing you did over winter break.</li>
-<li>On a piece of paper, write the names of all group members.</li>
-<li>Write down words, phrases, and ideas that come to mind when you hear “data science”.</li>
-</ol>
-</section>
-<section id="what-is-data-science-common-view" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-data-science-common-view">What is data science? Common view:</h2>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1"></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lect1/ex4.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:65.0%"></p>
+</figure>
+</div>
 <div class="columns">
-<div class="column" style="width:60%;">
-<ul>
-<li>Interdisciplinary field combining computer science, mathematics/statistics, and domain expertise to extract meaningful information from unstructured data points</li>
-</ul>
-</div><div class="column" style="width:40%;">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Data_science.png" class="img-fluid" width="400"></p>
+<div class="column" style="width:65%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lect1/ex5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:35%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lect1/ex6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
 </div>
 </div>
-<hr>
+</div>
+<blockquote class="blockquote">
+<p>Sources: <a href="https://posit.co/blog/shiny-python-in-positron/">Posit</a>, <a href="https://github.com/HzaCode/Athlytics">Athlytics Documentation</a>, <a href="https://adv-r.hadley.nz/base-types.html">Advanced R</a></p>
+</blockquote>
 </section>
-<section id="what-is-data-science-my-view" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-data-science-my-view">What is data science? My view:</h2>
+<section id="what-you-will-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-will-do">What you will do!</h2>
+<ul>
+<li>Explore the functionality within R
+<ul>
+<li>How does R WORK?</li>
+</ul></li>
+<li>Write deeper-level R code
+<ul>
+<li>e.g.&nbsp;objects, functions, files</li>
+</ul></li>
+<li>Organize code and make it more efficient/robust
+<ul>
+<li>e.g.&nbsp;repository organization, debugging, advanced features</li>
+</ul></li>
+<li>Create an R package through collaborative work
+<ul>
+<li>through GitHub with intended theme and organization</li>
+</ul></li>
+</ul>
+</section>
+<section id="structure" class="level2">
+<h2 class="anchored" data-anchor-id="structure">Structure</h2>
+<ul>
+<li>Lectures
+<ul>
+<li>Slide decks</li>
+<li>In-class activities (10%)</li>
+<li>Demos</li>
+<li>Bring your computer!!</li>
+</ul></li>
+<li>Outside class
+<ul>
+<li>Readings</li>
+<li>Problem sets (20%)</li>
+</ul></li>
+</ul>
+</section>
+<section id="structure-cont." class="level2">
+<h2 class="anchored" data-anchor-id="structure-cont.">Structure (cont.)</h2>
+<ul>
+<li>Exams
+<ul>
+<li>First exam (2/25): Closed-note written</li>
+<li>Second exam (3/30): Open-note, open-laptop</li>
+<li><em>May include oral parts</em></li>
+</ul></li>
+<li>Package
+<ul>
+<li>Series of checkpoints</li>
+<li>Demo and whole package with documentation</li>
+</ul></li>
+</ul>
+</section>
+<section id="textbooks" class="level2">
+<h2 class="anchored" data-anchor-id="textbooks">Textbooks</h2>
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:50%;">
 <ul>
-<li>Interdisciplinary field combining computer science, mathematics/statistics, and domain expertise to extract meaningful information from unstructured data points</li>
-<li><span style="color:red"> Includes the human aspect: use of aesthetics, situational context, and communication to explain the data to the world</span></li>
+<li><a href="https://adv-r.hadley.nz/">Advanced R</a></li>
 </ul>
-</div><div class="column" style="width:40%;">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Data_science.png" class="img-fluid" width="400"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lec1textbookMain.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
 </div>
-</div>
-<hr>
-</section>
-<section id="case-study-1-aclu-fights-discriminatory-housing" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="case-study-1-aclu-fights-discriminatory-housing">Case Study 1: ACLU Fights Discriminatory Housing</h2>
-<div class="columns">
-<div class="column">
+</div><div class="column" style="width:50%;">
 <ul>
-<li>American Civil Liberties Union employs <a href="https://medium.com/aclu-tech-analytics/meet-the-aclu-analytics-team-4644d4f20dae">data scientists</a> to produce insights regarding discriminatory laws and practices</li>
-<li>Findings are presented in courts, legislatures, and public reports</li>
-<li>In <a href="https://www.aclu.org/blog/racial-justice/race-and-economic-justice/lawsuit-challenges-discriminatory-housing-policy">this study</a>, they use public data to show that excluding people with criminal records from housing can be viewed as a violation of the US Fair Housing Act.</li>
+<li><a href="https://r-pkgs.org/">R Packages</a></li>
 </ul>
-</div><div class="column">
-<p><img src="https://www.aclu.org/sites/default/files/maps-desktop2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lec1textbookSec.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
 </div>
-</div>
-<hr>
-</section>
-<section id="case-study-2-epa-tracks-environmental-injustice" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="case-study-2-epa-tracks-environmental-injustice">Case Study 2: EPA Tracks Environmental Injustice</h2>
-<div class="columns">
-<div class="column">
-<ul>
-<li>Environmental Protection Agency hires <a href="https://www.epa.gov/careers/science-careers-epa">data scientists</a> to produce insights regarding environmental health risks</li>
-<li>Findings implicate environmental policies, funding allocations, and legal actions against states and industries</li>
-<li><a href="https://www.epa.gov/ejscreen">This tool</a>, visualizes environmental and demographic indicators to highlight communities experiencing environmental injustices.</li>
-</ul>
-</div><div class="column">
-<p><img src="https://www.epa.gov/system/files/images/2021-07/map_data.png" class="img-fluid" style="width:80.0%"></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="case-study-3-geena-davis-institute-studies-gender-biases-in-films" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="case-study-3-geena-davis-institute-studies-gender-biases-in-films">Case Study 3: Geena Davis Institute Studies Gender Biases in Films</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<ul>
-<li>Geena Davis Institute collaborated with University of Southern California’s Signal Analysis and Interpretation Laboratory (SAIL)</li>
-<li>Developed a machine learning tool to measure representation of diverse groups in films by studying screen time and speaking</li>
-</ul>
-</div><div class="column" style="width:40%;">
-<p><img src="https://geenadavisinstitute.org/wp-content/uploads/2023/12/Logo-1.svg" class="img-fluid" style="width:100.0%"></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="topics-covered-in-this-course" class="level2">
-<h2 class="anchored" data-anchor-id="topics-covered-in-this-course">Topics covered in this course</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<ul>
-<li>Data visualization</li>
-<li>Data wrangling</li>
-<li>Programming with data (via R)</li>
-<li>Data retrieval</li>
-<li>Data science infrastructures and workflows</li>
-<li>Data science ethics</li>
-<li>Mapping</li>
-</ul>
-</div><div class="column" style="width:30%;">
-<p><img src="https://miro.medium.com/max/1400/1*g945d5qBHDh_HjvdXStvNg.jpeg" class="img-fluid"></p>
 </div>
 </div>
 </section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<p><strong>Data visualization</strong></p>
+<section id="so-generative-ai" class="level2">
+<h2 class="anchored" data-anchor-id="so-generative-ai">So… generative AI?</h2>
 <ul>
-<li>Create informative and clean visuals via base R, advanced libraries</li>
-<li>Show appropriate statistics and metrics for support</li>
-</ul>
-<p><strong>Data wrangling</strong></p>
+<li>Fine for pre-writing activities and code editing
 <ul>
-<li>Develop proper wrangling techniques, including data transformation, cleaning, and joining</li>
-<li>Gather data in appropriate and ethical manners</li>
+<li>Prohibited on code structure, prose, exams, and package
+<ul>
+<li>Will be reported to AIB</li>
+</ul></li>
+</ul></li>
+<li>Think of generative AI as a tool, not your personal assistant</li>
 </ul>
 </section>
-<section id="learning-objectives-1" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives-1">Learning objectives</h2>
-<p><strong>Workflow</strong></p>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
-<li>Practice retrieval, R programming, GitHub, and light statistics</li>
-</ul>
-<p><strong>Data ethics</strong></p>
+<li><a href="https://jericholawson.github.io/classes/sds270/s26">Website</a>
 <ul>
-<li>Identify best practices and ethical dilemmas, including contextual thinking, environmental concerns, and intellectual property</li>
-<li>Develop ethical ways to use generative AI</li>
+<li>Certified Moodle hater</li>
+</ul></li>
+<li><a href="https://sds-270-01-202603.slack.com">Slack</a>
+<ul>
+<li>Discuss clarifying questions with class, message me with questions</li>
+</ul></li>
+<li>Student hours
+<ul>
+<li>M, 3-4pm and F, 10am-12pm</li>
+<li>McConnell 207</li>
+</ul></li>
+<li>Email
+<ul>
+<li>Can email me at <a href="mailto:jlawson01@smith.edu">jlawson01@smith.edu</a></li>
+</ul></li>
 </ul>
-<hr>
 </section>
 <section id="who-am-i" class="level2 smaller">
 <h2 class="smaller anchored" data-anchor-id="who-am-i">Who am I?</h2>
@@ -388,7 +456,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/jerichoHikes.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/jerichoHikes.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </div><div class="column" style="width:70%;">
@@ -411,7 +479,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/jerichoHikes.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/jerichoHikes.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </div><div class="column" style="width:70%;">
@@ -424,63 +492,200 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 </div>
-<hr>
 </section>
-<section id="exercise" class="level2">
-<h2 class="anchored" data-anchor-id="exercise">Exercise</h2>
-<p>On your feet! I’ll ask three questions about light-hearted pieces of information. For each question,</p>
+<section id="activity" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="activity">Activity</h2>
+<p>Form groups of 2-3 with your peers near you. Complete the following tasks:</p>
 <ol type="1">
-<li>Group or order yourselves.</li>
-<li>Ponder about what characteristics you see with the groupings/orderings.</li>
+<li>Introduce yourselves to each other! Mention your name, major, and one cool thing you did over the winter.</li>
+<li>For those, that have a laptop on you, attempt to complete the following:
+<ul>
+<li>Create a numeric vector that contains a sequence of numbers from 1 to 50.</li>
+<li>Determine how much memory is being used by R right now.</li>
+<li>Make a simple plot using the following data: 4, 7, 2, 5, 2, 3, 3, 5, 3, 2, 1, 8</li>
+</ul></li>
+<li>Discuss how you were able to complete these tasks.</li>
 </ol>
-<!-- Did you leave the state? -->
-<!-- Cups of coffee drank -->
-<!-- 1 to 5: Motivation level currently -->
-<hr>
 </section>
-<section id="workflow" class="level2">
-<h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
+<section id="review" class="level2">
+<h2 class="anchored" data-anchor-id="review">Review</h2>
 <ul>
-<li>Determine problem/issue</li>
-<li>Collect data</li>
-<li>Explore and clean the data</li>
-<li>Model the data</li>
-<li>Communicate results</li>
-</ul>
-<p><strong>Question?</strong> How was this done? Discuss amongst yourselves.</p>
-</section>
-<section id="tools" class="level2">
-<h2 class="anchored" data-anchor-id="tools">Tools</h2>
+<li>R is the coding language at hand
 <ul>
-<li><strong>Determine problem/issue:</strong> Exploration of issues</li>
-<li><strong>Collect data:</strong> From online source (e.g.&nbsp;scraping, csv file)</li>
-<li><strong>Explore and clean the data:</strong> Use of R, wrangling</li>
-<li><strong>Model the data:</strong> Statistics, regression</li>
-<li><strong>Communicate results:</strong> Plots, tables, writing, presentations</li>
-</ul>
-</section>
-<section id="coding-agonizing-when-it-doesnt-work-satisfying-when-it-does" class="level2">
-<h2 class="anchored" data-anchor-id="coding-agonizing-when-it-doesnt-work-satisfying-when-it-does">Coding: agonizing when it doesn’t work, satisfying when it does</h2>
-<ul>
-<li>Think of code like a language.</li>
-<li>Coding can be incredibly frustrating.</li>
-<li>Coding has been exclusionary.</li>
-</ul>
-</section>
-<section id="for-friday-and-beyond" class="level2">
-<h2 class="anchored" data-anchor-id="for-friday-and-beyond">For Friday and beyond</h2>
-<ul>
-<li>Navigate the course website</li>
-<li>Read through the syllabus</li>
-<li>Complete the pre-course survey and quiz
-<ul>
-<li>Due Friday at 11:59pm, link on website under Week 1</li>
+<li>e.g.&nbsp;syntax, memory allocation</li>
 </ul></li>
-<li>Join the Slack, Perusall, and GitHub classroom sites</li>
-<li>Run through the tech setup
+<li>RStudio is the IDE/application where we can interact with R
 <ul>
-<li>R and RStudio</li>
+<li>e.g.&nbsp;execution, view output, save files</li>
+<li>Other IDEs exist</li>
 </ul></li>
+</ul>
+</section>
+<section id="the-rstudio-interface" class="level2">
+<h2 class="anchored" data-anchor-id="the-rstudio-interface">The RStudio Interface</h2>
+<p><img src="images/lect1/rstudio.png" class="img-fluid"></p>
+</section>
+<section id="objects-and-data-structures" class="level2">
+<h2 class="anchored" data-anchor-id="objects-and-data-structures">Objects and Data Structures</h2>
+<p><em>Activity:</em> In the same groups, list out all data structures in R.</p>
+<ul>
+<li>i.e.&nbsp;the ways we can store various pieces of data in R</li>
+</ul>
+</section>
+<section id="vectors" class="level2">
+<h2 class="anchored" data-anchor-id="vectors">Vectors</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Family of data types</li>
+<li>Atomic vectors or lists
+<ul>
+<li>We will focus on atomic vectors</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:25%;">
+<p><img src="images/lect1/summary-tree-s3-1.png" class="img-fluid"></p>
+</div><div class="column" style="width:25%;">
+<p><img src="images/lect1/summary-tree-s3-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="atomic-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="atomic-vectors">Atomic Vectors</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Elements must be of same type</li>
+<li>Can use <code>[]</code> to access elements</li>
+<li>Can be built via <code>c()</code></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img src="images/lect1/summary-tree-s3-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="examples-concatenation" class="level2">
+<h2 class="anchored" data-anchor-id="examples-concatenation">Examples (Concatenation)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">24</span>, <span class="dv">25</span>, <span class="dv">16</span>, <span class="dv">18</span>); a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 27 24 25 16 18</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(T, F, F, T); b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  TRUE FALSE FALSE  TRUE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"everyone"</span>); c</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "hello"    "everyone"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">27</span>L, <span class="dv">24</span>L, <span class="dv">25</span>L, <span class="dv">16</span>L, <span class="dv">18</span>L); d</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 27 24 25 16 18</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-and-coercion" class="level2">
+<h2 class="anchored" data-anchor-id="testing-and-coercion">Testing and Coercion</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.double</span>(b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.double</span>(b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 0 0 1</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "logical"</code></pre>
+</div>
+</div>
+</section>
+<section id="hierarchy-for-coercion" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchy-for-coercion">Hierarchy for Coercion</h2>
+<p><em>Activity:</em> Use the <code>is.___()</code> and <code>as.___()</code> functions on each of the four objects to determine which type is the most flexible (all the way to the least flexible).</p>
+</section>
+<section id="attributes" class="level2">
+<h2 class="anchored" data-anchor-id="attributes">Attributes</h2>
+<ul>
+<li>Hold certain information about a vector (with <code>attributes()</code>)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>NULL</code></pre>
+</div>
+</div>
+<ul>
+<li>Can add a new attribute with <code>attr(object, new_attribute)</code></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attr</span>(a, <span class="st">"name"</span>) <span class="ot">&lt;-</span> <span class="st">"numbers"</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$name
+[1] "numbers"</code></pre>
+</div>
+</div>
+</section>
+<section id="attributes-cont." class="level2">
+<h2 class="anchored" data-anchor-id="attributes-cont.">Attributes (cont.)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(a) <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$name
+[1] "numbers"
+
+$names
+[1] "1" "2" "3" "4" "5"</code></pre>
+</div>
+</div>
+<p><img src="images/lect1/names.png" class="img-fluid"></p>
+</section>
+<section id="object-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="object-assignment">Object Assignment</h2>
+<p>Two ways you’ve seen object assignment:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="dv">13</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">13</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><em>Question:</em> Why the difference?</p>
+</section>
+<section id="s3-atomic-vectors-and-special-classes" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="s3-atomic-vectors-and-special-classes">S3 Atomic Vectors (and Special Classes)</h2>
+<ul>
+<li>S3: class of objects in R
+<ul>
+<li>Different from types in R</li>
+<li>Examples
+<ul>
+<li>Factors</li>
+<li>Dates</li>
+<li>NAs</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(c)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(c) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"everyone"</span>, <span class="st">"hello"</span>, <span class="st">"what"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<blockquote class="blockquote">
+<p>We’ll talk more about S3 objects in a few weeks!</p>
+</blockquote>
+</section>
+<section id="for-now-and-next-week" class="level2">
+<h2 class="anchored" data-anchor-id="for-now-and-next-week">For Now and Next Week:</h2>
+<ul>
+<li>GitHub setup
+<ul>
+<li>Use tech setup instructions</li>
+<li>Complete test.qmd and act1.qmd files</li>
+</ul></li>
+<li>Read through syllabus</li>
+<li>Pre-course survey</li>
+<li>Read chapters 1, 3 of Advanced R</li>
 </ul>
 
 

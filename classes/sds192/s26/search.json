@@ -60,7 +60,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm)\nLab #1 (due Wednesday, 2/4 at 11:59pm)\n\nTemplate"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
   },
   {
     "objectID": "schedule.html#week-1-introduction-126---130",
@@ -108,8 +108,8 @@
     "objectID": "lectures/w1l1_intro.html#welcome",
     "href": "lectures/w1l1_intro.html#welcome",
     "title": "Introductions",
-    "section": "Welcome!",
-    "text": "Welcome!\n\n\n\n\n\n\n\n\n\nCourse: SDS 192, Sect. 02\nTimes:\n\nM, 1:40-2:55pm\nW/F, 1:20-2:35pm"
+    "section": "",
+    "text": "Course: SDS 192, Sect. 02\nTimes:\n\nM, 1:40-2:55pm\nW/F, 1:20-2:35pm"
   },
   {
     "objectID": "lectures/w1l1_intro.html#welcome-1",
@@ -256,14 +256,14 @@
     "href": "schedule.html#week-1-what-is-data-science-126---130",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Sunday, 2/1 on Perusall at 11:59pm)\nLab #1 (due Wednesday, 2/4 at 11:59pm)\n\nTemplate"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Wednesday, 1/28 at 11:59pm)\nTech Setup (due Wednesday, 1/28 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
   },
   {
     "objectID": "schedule.html#week-2-what-is-r-and-github-22---26",
     "href": "schedule.html#week-2-what-is-r-and-github-22---26",
     "title": "Schedule",
     "section": "Week 2: What is R and GitHub? (2/2 - 2/6)",
-    "text": "Week 2: What is R and GitHub? (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4Friday, 2/6\n\n\nLecture #3: Intro to R\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nLecture #4: Coding with R and GitHub\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 at 8:59pm)\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\nLab #2: R and GitHub"
+    "text": "Week 2: What is R and GitHub? (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4Friday, 2/6\n\n\n\n\n\n\n\n\nNoteLecture: Intro to R\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #1 (due Wednesday, 2/4 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: R and GitHub\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReading Exercises #1 (due Thursday, 2/5 at 11:59pm in activities repo)\n\nExercises #1 and #3 from Appendix B in Modern Data Science with R\n\nReadings #2 (due Sunday, 2/8 at 11:59pm on Perusall)\nLab #1 (due Wednesday, 2/4 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #2: GitHub\n\n\n\n\nInstructions\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 at 11:59pm on Perusall)\nLab #2 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate"
   },
   {
     "objectID": "schedule.html#week-3-data-visualization-the-basics-29---213",
@@ -354,7 +354,7 @@
     "href": "schedule.html#finals-52---59",
     "title": "Schedule",
     "section": "Finals: (5/2 - 5/9)",
-    "text": "Finals: (5/2 - 5/9)\n\nFinals Week\n\n\nGo do the final!"
+    "text": "Finals: (5/2 - 5/9)\n\nFinals Week\n\n\nGo do the final!\n\n\n\n–&gt;"
   },
   {
     "objectID": "lectures/w1l1_intro.html#for-wednesday-and-beyond",
@@ -634,7 +634,7 @@
     "href": "index.html#announcements",
     "title": "SDS 192: Introduction to Data Science",
     "section": "Announcements",
-    "text": "Announcements\nTBD"
+    "text": "Announcements\n\n1/25: No class on Monday the 26th due to the snowstorm. Stay warm!"
   },
   {
     "objectID": "lectures/w2l1_introR.html#last-time",
@@ -1188,5 +1188,26 @@
     "title": "Lab #2: Git and GitHub",
     "section": "Error Resolution",
     "text": "Error Resolution\nThe workflow presented above seems to work all fine and dandy. But there are a number of factors that can impede this seamless workflow. In this final section of the lab, we will go over three kinds of errors that you might come across in the workflow above, and talk about how you would resolve them. I can almost guarantee that you will deal with some of these issues when working on your group projects, so I would encourage you to keep this lab handy when engaging in project work.\n\nPush error\nA push error occurs when we make changes to files on our local machines, and go to commit and push them to GitHub, but other changes had already been made to the file at GitHub that were not yet pulled into our local environments. We get an error because our local repo is inconsistent with the remote repo. To fix this error, we need to pull changes to our local machine, and try committing and pushing again. Let’s replicate this error:\n\n\n\n\n\n\nImportantQuestion 14\n\n\n\nOne of your partners should navigate to the GitHub repository. Click on the file README.md. Click the pencil icon to edit the file. Replace the text: ADD NAME 1 HERE ADD NAME 2 HERE, and so on with your names. Scroll to the bottom of the page and commit changes noting in the message that your names were added.\nOther partner: Return to RStudio. Do not pull changes yet. Open github-practice.Rmd. On line 40 change the ncol() function to dim(). Save the file. Stage and commit your changes. Click the green upward arrow to push your changes. You should get an error that looks like this.\n\nFollow the steps above to resolve the error.\n\n\nAn easy way to avoid a push error is to always click the blue downward arrow to pull remote changes before starting to edit files on your local machine.\n\n\nPull error\nA pull error occurs when changes have already been made to the same location (the same line number) in both a remote file and a local file, and then we try to pull the changes from the remote repo to our local machines. As far as Git can tell, there are two options for what this line is supposed to look like, and it can’t tell which to prioritize. So Git recommends that, as a first step, we commit the changes that we made locally. It’s basically saying, let’s take a snapshot of your local repo as it looks right now, so that later we can figure out what to do about this conflict.\nIf this seems confusing imagine this: let’s say you write a paper, and you share it with one of your classmates to review. The classmate reads through it, makes suggested changes to the opening sentence, and sends it back you. …but, while your classmate was reviewing the paper, you were getting antsy about the paper deadline and started making your own edits to the paper, including edits to the opening sentence. Now you’re trying to incorporate the changes from your classmate’s review, and you’re not sure what to do about that opening sentence. As a first step, you have two options you can scrap your recent changes (maybe your classmate’s suggestions were better!) or you can save a separate copy of the file with your recent changes and figure out later how to resolve the differences. That’s exactly what we are going to do here:\nTo fix this error, you should stage and commit your local changes and then try pulling again. Let’s replicate this error:\n\n\n\n\n\n\nImportantQuestion 15\n\n\n\nOne of your partners should navigate to the GitHub repository. Click on the file github-practice.Rmd. Click the pencil icon to edit the file. Replace the code on line 47 with the following: colnames(pioneer_valley_2013).\nScroll to the bottom of the page and commit changes noting in the message how you updated the function.\nOther partner: Return to RStudio. Do not pull changes yet. Open github-practice.Rmd. Replace the code on line 47 with the following: ncol(pioneer_valley_2013)\nSave the file. Click the blue downward button to Pull changes. You should get an error that looks like this.\n\nFollow the steps above to resolve the error.\n\n\n\n\nMerge conflict\nSo now we have these two snapshots of github-practice.Rmd, and they are in conflict with one another. If we try to push our changes back to GitHub, Git is not going to know what to do. Should the file at GitHub look like the version currently at GitHub, should it look like the snapshot that we just commit to our local machines, or should it look like something else entirely?\nLet’s return to the example of trying to incorporate a peer’s edits to a paper that you have recently made changes to. We have to figure out what to do about that opening sentence. Do we want our version, their version, or some combination of the two? This is what it is like to fix a merge conflict.\nTo fix this error, open the file with conflicts and edit the lines with conflict.\n\n\n\n\n\n\nImportantQuestion 16\n\n\n\nOne of your partners should try to pull changes by clicking the blue downward arrow in RStudio. You will get an error that looks like this:\n{fig-alt=“This is the window that we see when we get a merge conflict. It says: CONFLICT (content): Merge conflict in README.md}\nTo fix this one your partners should open the file with the conflict. In this case it will be github-practice.Rmd. Scroll to the section of the file with the conflict. It will now look something like this:\n    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\n\n    ncol(pioneer_valley_2013)\n\n    =======\n\n    colnames(pioneer_valley_2013)\n\n    &gt;&gt;&gt;&gt;&gt;&gt;&gt; ee175895783b64e0e1f696d9456be4c4c7c3f3bf\nThe code following HEAD represents the recent changes you made on your local machine, and the code right before the long string of characters represents the changes that were made in an earlier commit (the long string of characters is the commit hash). Decide what that line should look like and delete all other content. This means you must delete “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”, “=======”, and “&gt;&gt;&gt;&gt;&gt;&gt;&gt; &lt;long-hash&gt;”, and you likely should delete at least one other line. Save the file, stage the file by clicking the checkbox next to the file in the Git page, and then commit your changes, and push them to GitHub.\n\n\n\n\n\n\n\n\nTipAvoiding Merge Conflicts\n\n\n\nYou may have noticed that the most frustrating merge conflicts tend to emerge when we have two people working on the same line of a repo’s file. The most effective way to avoid merge conflicts is to ensure that collaborators are working on different documents or different lines in a file. One way you might do this when starting to work on your group project is to open a file that you all plan to work on and having one of your team mates section off space of that file for different people to work. It might look something like this:\n\nOnce this change has been made, that group mate should stage, commit, and push the file to GitHub, and all other group mates should pull the change to their local machines.\n\n\n\n\nPath of Least Resistance\nI have been working with GitHub for years, and even to this day, I run into instances where things become so inconsistent between my local machine and the repo at GitHub that the fastest way to fix things is just to save local copies of the files that I’ve changed to somewhere else on my machine, delete the super fancy Git folder from its current location, and then re-clone the most up-to-date remote version to my local machine. Then I can figure out how I want to edit the most up-to-date version with my changes. This comic from XKCD captures this widely acknowledged solution beautifully:\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nIncreasingly, when data science researchers publish a paper in a journal, they are making the code they used to reach certain results freely available on GitHub for other researchers and the public to review. This is in part a response to the reproducibility crisis that you learned about in SDS 100. What do you see as the social benefits to making the code behind a data science finding publicly available online? What might be some of the social consequences of making this code freely available? How might we mitigate these consequences? Share your ideas on our discussions Slack channel."
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html",
+    "href": "lectures/w1l1_intro.html",
+    "title": "Introductions",
+    "section": "",
+    "text": "Course: SDS 192, Sect. 02\nTimes:\n\nM, 1:40-2:55pm\nW/F, 1:20-2:35pm"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#for-friday-and-beyond",
+    "href": "lectures/w1l1_intro.html#for-friday-and-beyond",
+    "title": "Introductions",
+    "section": "For Friday and beyond",
+    "text": "For Friday and beyond\n\nNavigate the course website\nRead through the syllabus\nComplete the pre-course survey and quiz\n\nDue Friday at 11:59pm, link on website under Week 1\n\nJoin the Slack, Perusall, and GitHub classroom sites\nRun through the tech setup\n\nR and RStudio"
+  },
+  {
+    "objectID": "lectures/w1l2_data.html#for-monday",
+    "href": "lectures/w1l2_data.html#for-monday",
+    "title": "Datasets",
+    "section": "For Monday",
+    "text": "For Monday\n\nWork on Tech Setup\nMonday’s class: Lab on R and Datasets"
   }
 ]

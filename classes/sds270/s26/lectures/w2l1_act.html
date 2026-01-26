@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jericho Lawson">
 
-<title>Schedule – SDS 270: Programming for Data Science in R, Spring 2026</title>
+<title>Exercises from Week 2, Lecture 2: Subsetting – SDS 270: Programming for Data Science in R, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +21,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,19 +107,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">SDS 270: Programming for Data Science in R, Spring 2026</span>
     </a>
   </div>
@@ -94,19 +130,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
@@ -128,19 +164,40 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
+  <ul class="collapse">
+  <li><a href="#base-r-subsetting-vs.-dplyr-functions" id="toc-base-r-subsetting-vs.-dplyr-functions" class="nav-link" data-scroll-target="#base-r-subsetting-vs.-dplyr-functions">Base R Subsetting vs.&nbsp;dplyr() functions</a></li>
+  <li><a href="#list-columns-nest-and-unnest" id="toc-list-columns-nest-and-unnest" class="nav-link" data-scroll-target="#list-columns-nest-and-unnest">List-columns: <code>nest()</code> and <code>unnest()</code></a></li>
+  <li><a href="#mapping-over-list-columns" id="toc-mapping-over-list-columns" class="nav-link" data-scroll-target="#mapping-over-list-columns">Mapping over list columns</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
+<h1 class="title">Exercises from Week 2, Lecture 2: Subsetting</h1>
+<p class="subtitle lead">SDS 270</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jericho Lawson </p>
+          </div>
+  </div>
     
   
     
@@ -151,553 +208,217 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="week-1-introduction-data-structures-126---130" class="level2">
-<h2 class="anchored" data-anchor-id="week-1-introduction-data-structures-126---130">Week 1: Introduction, Data Structures (1/26 - 1/30)</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Monday, 1/26</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Wednesday, 1/28</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: CANCELLED
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Enjoy the snow and stay warm!!</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>In these exercises, we will be working with <code>starwars</code> tibble to learn how to subset in various manners.</p>
+<p>By the end of this lab, you will be able to:</p>
 <ul>
-<li>GitHub setup (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)
-<ul>
-<li><a href="./resources/tech-setup.html">Instructions</a></li>
-<li>Complete test.qmd and act1.qmd files</li>
-</ul></li>
-<li>Read through <a href="./syllabus.html">syllabus</a></li>
-<li><a href="https://forms.gle/GuTKyTTSvxnsbmag8">Pre-Course Survey</a> (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)</li>
-<li>Read chapters 1, 3 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before <span style="color:red;">next Monday’s</span> class)</li>
+<li>subset a data frame and tibble based on positive, negative, logical, and character indexing</li>
+<li>apply the <code>filter</code> and <code>select</code> functions via <code>dplyr</code></li>
 </ul>
+<p>Load in the following libraries below to work on this lab: <code>tidyverse</code></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'stringr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'lubridate' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.6.0
+✔ ggplot2   4.0.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.2.0     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
 </div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="callout callout-style-default callout-note callout-titled">
+<p>You will create a separate .qmd file and complete the following exercises that will then be committed and pushed in your SDS 270 repository.</p>
+</section>
+<section id="exercises" class="level2">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<p>For these exercises, you will be working exclusively with the <code>starwars</code> tibble. Answer the following questions below:</p>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Introduction, Tech Setup, Atomic Vectors
+<span class="screen-reader-only">Important</span>Q1
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<!--
-
-- [Slides](lectures/w1l1_intro.qmd)
-
--->
+<p>Using a <code>dplyr</code> function, construct a tibble from <code>starwars</code> that only contains characters with blue eyes.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do not alter code right above.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
+<span class="screen-reader-only">Important</span>Q2
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>GitHub setup (due Friday, 1/30 at 11:59pm)
-<ul>
-<li><a href="./resources/tech-setup.html">Instructions</a></li>
-<li>Complete test.qmd and act1.qmd files</li>
-</ul></li>
-<li>Read through <a href="./syllabus.html">syllabus</a></li>
-<li><a href="https://forms.gle/GuTKyTTSvxnsbmag8">Pre-Course Survey</a> (due Friday, 1/30 at 11:59pm)</li>
-<li>Read chapters 1, 3 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before Monday’s class)</li>
-</ul>
+<p>Using a <code>dplyr</code> function, construct a tibble from <code>starwars</code> that only contains characters with blue eyes and a height below 100 cm. Then, display only the names of these characters.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do not alter code right above.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
+<section id="base-r-subsetting-vs.-dplyr-functions" class="level3">
+<h3 class="anchored" data-anchor-id="base-r-subsetting-vs.-dplyr-functions">Base R Subsetting vs.&nbsp;dplyr() functions</h3>
+<p>In many applications, you will find R users that subset through the <code>[]</code>, <code>[[]]</code>, <code>$</code> symbols, but unless we know the type and functionality associated with the type, we will run across some errors.</p>
+<p>The next few exercises will showcase this. You will use the following objects in the next 3 exercises.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>num <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="st">"skin_color"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q3
 </div>
 </div>
-<!--
-
-
-
-::: {.callout-note}
-## Lecture: Lists
-
-- [Slides](lectures/w1l2_lists.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Complete any remaining setup
-- Read chapters 2, 4 of [Advanced R](https://adv-r.hadley.nz/introduction.html) (before Monday's class)
-
-:::
-
-
-
-
-## Week 2: Data Structures, Assignment (2/2 - 2/6)
-
-::: {.panel-tabset}
-## Monday, 2/2
-
-::: {.callout-note}
-## Lecture: Data Frames and Subsetting
-
-- [Slides](lectures/w2l1_dataFrames.qmd)
-- [Activity](lectures/w2l1_act.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Set #1 due Monday, 2/9 at 11:59pm via your repository
-
-:::
-
-## Wednesday, 2/4
-
-::: {.callout-note}
-## Lecture: Assignment and Memory
-
-- [Slides](lectures/w2l2_memory.qmd)
-- [Activity](lectures/w2l2_act.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Set #1 due Monday, 2/9 at 11:59pm via your repository
-- Read chapters 5, 6 of [Advanced R](https://adv-r.hadley.nz/introduction.html) (before Monday's class)
-
-:::
-:::
-
-## Week 3: Control Flow, Functions (2/9 - 2/13)
-
-::: {.panel-tabset}
-## Monday, 2/9
-
-::: {.callout-note}
-## Lecture: Control Flow
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 2/11
-
-::: {.callout-note}
-## Lecture: Functions
-
-- [Slides](lectures/lect6.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-:::
-
-## Week 4: Functions, Iteration, Review (2/16 - 2/20)
-
-::: {.panel-tabset}
-## Monday, 2/16
-
-::: {.callout-note}
-## Lecture: Functions Beyond
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 2/18
-
-::: {.callout-note}
-## Lecture: Iteration, Review
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 5: Exam #1, Functionals (2/23 - 2/27)
-
-::: {.panel-tabset}
-## Monday, 2/23
-
-::: {.callout-important}
-## Exam #1
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-
-## Wednesday, 2/25
-
-::: {.callout-note}
-## Lecture: Functionals
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 6: Functionals, Environments (3/2 - 3/6)
-
-::: {.panel-tabset}
-## Monday, 3/2
-
-::: {.callout-note}
-## Lecture: More Functionals
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-
-## Wednesday, 3/4
-
-::: {.callout-note}
-## Lecture: Environments
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 7: Packages, Conditions, and OOP (3/9 - 3/13)
-
-::: {.panel-tabset}
-## Monday, 3/9
-
-::: {.callout-note}
-## Lecture: Packages and Conditions
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/11
-
-::: {.callout-note}
-## Lecture: OOP
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 8: Spring Break (3/16 - 3/20)
-
-::: {.panel-tabset}
-## Monday, 3/16
-
-::: {.callout-note}
-## Lecture #1: Introduction
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/18
-
-::: {.callout-note}
-## Lecture #1: Introduction
-
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 9: S3 Objects, Package Foundation (3/23 - 3/27)
-
-::: {.panel-tabset}
-## Monday, 3/23
-
-::: {.callout-note}
-## Lecture: S3 Objects
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/25
-
-::: {.callout-note}
-## Lecture: Package Foundation, Review
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 10: Packages - Description and Libraries (3/30 - 4/3)
-
-::: {.panel-tabset}
-## Monday, 3/30
-
-::: {.callout-important}
-## Exam #2
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/1
-
-::: {.callout-note}
-## Lecture: Description and Libraries
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-:::
-
-## Week 11: Packages - Code, Data, Manuals, Testing (4/6 - 4/10)
-
-::: {.panel-tabset}
-## Monday, 4/6
-
-::: {.callout-note}
-## Lecture: Code, Data, Manuals
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/8
-
-::: {.callout-note}
-## Lecture: Testing
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 12: Packages - Testing, Vignettes (4/13 - 4/17)
-
-::: {.panel-tabset}
-## Monday, 4/13
-
-::: {.callout-note}
-## Lecture: Testing
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/15
-
-::: {.callout-note}
-## Lecture: Vignettes
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 13: Packages - Project Time (4/20 - 4/24)
-
-::: {.panel-tabset}
-## Monday, 4/20
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/22
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 14: Packages - Project Time, Demonstrations (4/27 - 5/1)
-
-::: {.panel-tabset}
-## Monday, 4/27
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/29
-
-::: {.callout-note}
-## Demonstrations
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Finals: Package (5/2 - 5/9)
-
-::: {.panel-tabset}
-## To-Do
-
-:::
-
--->
-
-
+<div class="callout-body-container callout-body">
+<p>Using <code>starwars</code>, access the 5th column using the <code>num</code> object within the <code>[[]]</code>, <code>[]</code> and <code>$</code> operators. What do you notice?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do not alter code right above.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q4
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using <code>starwars</code>, access the 5th column using the <code>var</code> object within the <code>[[]]</code>, <code>[]</code> and <code>$</code> operators. What do you notice?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do not alter code right above.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q5
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using <code>starwars</code>, access the 5th column by name with one of the <code>dplyr</code> functions. What do you notice?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do not alter code right above.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</section>
+<section id="list-columns-nest-and-unnest" class="level3">
+<h3 class="anchored" data-anchor-id="list-columns-nest-and-unnest">List-columns: <code>nest()</code> and <code>unnest()</code></h3>
+<p>We now look into list-columns, which are columns in which each element is composed of a list. When we think of a vector, most of the time we see a single value that is stored in an element. A list-column changes this. That value is now a list, which can be of any length we desire.</p>
+<p>List-columns can be expanded by <code>unnest()</code>. This has the effect of lengthening the data frame (sort of like an accordion). Each row is duplicated for each unique value of each entry in the list-column.</p>
+<p>The <code>nest()</code> function performs the opposite operation of “rolling up” the data frame to create a new list-column. We did this in the intro of list-columns.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q6
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Now using the <code>starwars</code> tibble, experiment with list-columns by expanding and contracting the other list-columns in the storms data frame.</p>
+</div>
+</div>
+</section>
+<section id="mapping-over-list-columns" class="level3">
+<h3 class="anchored" data-anchor-id="mapping-over-list-columns">Mapping over list columns</h3>
+<p>Suppose now we want to add the numbers of films for each character to the <code>starwars</code> data set. A simple <code>mutate()</code> like this will not throw an error, but also won’t do what we want.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>oops <span class="ot">&lt;-</span> starwars <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">num_films =</span> <span class="fu">length</span>(films)) <span class="sc">|&gt;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(num_films)) <span class="sc">|&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, num_films)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>oops</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 87 × 2
+   name               num_films
+   &lt;chr&gt;                  &lt;int&gt;
+ 1 Luke Skywalker            87
+ 2 C-3PO                     87
+ 3 R2-D2                     87
+ 4 Darth Vader               87
+ 5 Leia Organa               87
+ 6 Owen Lars                 87
+ 7 Beru Whitesun Lars        87
+ 8 R5-D4                     87
+ 9 Biggs Darklighter         87
+10 Obi-Wan Kenobi            87
+# ℹ 77 more rows</code></pre>
+</div>
+</div>
+<p>This just made all of the entries equal to <code>length(films)</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(oops<span class="sc">$</span>num_films <span class="sc">==</span> <span class="fu">length</span>(starwars<span class="sc">$</span>films))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<p>To get this right, we need to <code>map()</code> inside our <code>mutate()</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>starwars <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">num_films_actual =</span> <span class="fu">map_int</span>(films, length)) <span class="sc">|&gt;</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(num_films_actual)) <span class="sc">|&gt;</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, num_films_actual, films)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 87 × 3
+   name           num_films_actual films    
+   &lt;chr&gt;                     &lt;int&gt; &lt;list&gt;   
+ 1 R2-D2                         7 &lt;chr [7]&gt;
+ 2 C-3PO                         6 &lt;chr [6]&gt;
+ 3 Obi-Wan Kenobi                6 &lt;chr [6]&gt;
+ 4 Luke Skywalker                5 &lt;chr [5]&gt;
+ 5 Leia Organa                   5 &lt;chr [5]&gt;
+ 6 Chewbacca                     5 &lt;chr [5]&gt;
+ 7 Yoda                          5 &lt;chr [5]&gt;
+ 8 Palpatine                     5 &lt;chr [5]&gt;
+ 9 Darth Vader                   4 &lt;chr [4]&gt;
+10 Han Solo                      4 &lt;chr [4]&gt;
+# ℹ 77 more rows</code></pre>
+</div>
+</div>
+
+
+</section>
 </section>
 
 </main> <!-- /main -->

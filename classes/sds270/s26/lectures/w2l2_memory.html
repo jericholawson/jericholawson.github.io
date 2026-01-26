@@ -9,8 +9,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.23">
 
-  <meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 1, Lecture 2   ">
-  <title>SDS 270: Programming for Data Science in R, Spring 2026 – Lists</title>
+  <meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 2, Lecture 2   ">
+  <title>SDS 270: Programming for Data Science in R, Spring 2026 – Assignment and Memory</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -194,13 +194,13 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lists</h1>
+  <h1 class="title">Assignment and Memory</h1>
   <p class="subtitle">SDS 270: Programming for Data Science in R</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 1, Lecture 2 </span> <br> 
+<br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 2, Lecture 2 </span> <br> 
 </div>
 </div>
 </div>
@@ -209,392 +209,319 @@
 <section id="last-time" class="slide level2">
 <h2>Last Time</h2>
 <ul>
-<li>Introduction</li>
-<li>Tech setup</li>
-<li>Atomic vectors</li>
+<li>Data frames vs.&nbsp;tibbles
+<ul>
+<li>Functionality</li>
+<li>Storage</li>
+</ul></li>
+<li><code>NULL</code></li>
+<li>Subsetting
+<ul>
+<li>Differing ways</li>
+<li>Use on atomic vectors, lists, data frames</li>
+<li>Applications</li>
+</ul></li>
 </ul>
 </section>
-<section id="note-on-in-class-activities" class="slide level2">
-<h2>Note on In-Class Activities</h2>
+<section id="so-far" class="slide level2">
+<h2>So Far…</h2>
 <ul>
-<li>Will usually be dispersed throughout the lecture</li>
-<li>You’ll create a .qmd file to work on these activities to turn in by end of class</li>
-<li>These will be committed and pushed through your repository</li>
+<li>We’ve focused on data structures
+<ul>
+<li><em>Question:</em> Name them!</li>
+</ul></li>
+<li>We now jump into the rather quirky nature of how R is built
+<ul>
+<li>We only copy when modifying??</li>
+<li>R magically removes objects at any random time??</li>
+<li>Classes can be made just by adding a string??</li>
+</ul></li>
 </ul>
+<p>What you will discover is R’s programming philosophy can make it seem… lazy!?</p>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
 <ul>
-<li>Lists
+<li>Assignment
 <ul>
-<li>“Traditional” lists</li>
-<li>Functionality</li>
-<li>Matrices and arrays</li>
+<li><code>&lt;-</code> vs.&nbsp;<code>=</code></li>
+</ul></li>
+<li>Binding and memory
+<ul>
+<li>Object sizing</li>
+<li>Concatenation</li>
+<li>Copy-on-modify</li>
+<li>Unbinding</li>
+</ul></li>
+<li>Object size
+<ul>
+<li>????</li>
 </ul></li>
 </ul>
-<!-- 3.5, 3.6 -->
-<p><strong>Objective:</strong> Familiarize yourself with lists in R, which includes creating lists, performing operations, and breaking down its structure in R.</p>
+<p>We will focus on primarily Chapter 2 from <a href="https://adv-r.hadley.nz/">Advanced R</a>.</p>
 </section>
-<section id="activity-review" class="slide level2">
-<h2>Activity: Review</h2>
-<p>Gather in groups of 2-3 and discuss all of the qualities that define an atomic vector (e.g.&nbsp;types, hierarchy, features). Then, run the following code below and describe what it’s doing line-by-line.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>L, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">8</span>)</span>
-<span id="cb1-2"><a></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(T, F, F, T)</span>
-<span id="cb1-3"><a></a></span>
-<span id="cb1-4"><a></a><span class="fu">attributes</span>(x)</span>
-<span id="cb1-5"><a></a><span class="fu">is.integer</span>(x)</span>
-<span id="cb1-6"><a></a></span>
-<span id="cb1-7"><a></a><span class="fu">c</span>(x, y)</span>
-<span id="cb1-8"><a></a>x <span class="sc">+</span> y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
-<section id="lists" class="slide level2">
-<h2>Lists</h2>
+<section id="assignment" class="slide level2">
+<h2>Assignment</h2>
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:50%;">
+<h3 id="section"><code>=</code></h3>
 <ul>
-<li>The “other” vector</li>
-<li>Flexible with types
+<li>More universal
 <ul>
-<li>Technically a collection of objects</li>
-</ul></li>
-<li>Can use <code>[[]]</code> to access elements
-<ul>
-<li><code>$</code> can be used if named</li>
-<li><strong>Question 1:</strong> Can we still use <code>[]</code>?</li>
+<li>Can be used for parameter calls, assignment</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/lect2/summary-tree-s3-2.png"></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>y <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="section-1"><code>&lt;-</code></h3>
+<ul>
+<li>For assignment only
+<ul>
+<li>Technically a function that assigns right side values to left side</li>
+<li><strong>Question:</strong> How could we change the <code>&lt;-</code> symbol such that we assign left side values to the right?</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </div></div>
 </section>
-<section id="list-creation" class="slide level2 smaller">
-<h2>List Creation</h2>
+<section id="aside-vs." class="slide level2">
+<h2>Aside: <code>=</code> vs.&nbsp;<code>==</code></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="section-2"><code>=</code></h3>
 <ul>
-<li>Lists can be created via the <code>list()</code> function
+<li>For parameter calls and assignment</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>y <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="section-3"><code>==</code></h3>
 <ul>
-<li><code>vector()</code> function can be used for pre-determined length
+<li>For comparisons between left-sided and right-sided values
 <ul>
-<li>e.g.&nbsp;<code>vector("list", 4)</code></li>
+<li>Results in value/vector of logicals</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>y <span class="sc">==</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  TRUE FALSE</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="syntactic-names-for-assignment" class="slide level2">
+<h2>Syntactic Names for Assignment</h2>
+<ul>
+<li>Objects need to be assigned to names consisting of letters, digits, <code>.</code> and <code>_</code>
+<ul>
+<li>But there are rules:
+<ul>
+<li>Can’t start with digits or <code>_</code></li>
+<li>Can’t use any reserved words (e.g.&nbsp;<code>function</code>, <code>if</code>)</li>
+</ul></li>
+</ul></li>
+<li>General rule: concise, but detailed enough to showcase what it is
+<ul>
+<li>Can use snakecase, camelcase</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="co"># Storing a linear regression model</span></span>
+<span id="cb6-2"><a></a>mod_lr <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> disp, <span class="at">data =</span> mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="lobstr-package" class="slide level2">
+<h2><code>lobstr</code> Package</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/lect4/lobstr.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+<ul>
+<li>Tools for investigating the specifics of an object</li>
+<li>In same vein as using <code>str()</code></li>
+</ul>
+</div></div>
+</section>
+<section id="memory-usage-of-whole-environment" class="slide level2">
+<h2>Memory Usage (of Whole Environment)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">library</span>(lobstr)</span>
+<span id="cb7-2"><a></a><span class="fu">mem_used</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>43.33 MB</code></pre>
+</div>
+</div>
+<ul>
+<li>Curious about how much memory R is taking up on our machine</li>
+<li>Can also go to top-right corner -&gt; __ MiB -&gt; Memory Usage Report</li>
+</ul>
+
+<img data-src="images/lect4/Screenshot 2025-08-30 134342.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="memory-of-objects" class="slide level2">
+<h2>Memory of Objects</h2>
+<ul>
+<li>Use <code>obj_size()</code> on individual objects</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">obj_size</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>56 B</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">obj_size</span>(<span class="fu">rep</span>(<span class="dv">5</span>, <span class="dv">5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>96 B</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">obj_size</span>(mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>7.21 kB</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">obj_size</span>(<span class="fu">matrix</span>(<span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>344 B</code></pre>
+</div>
+</div>
+</section>
+<section id="binding" class="slide level2">
+<h2>Binding</h2>
+<ul>
+<li>Like Lego pieces
+<ul>
+<li>Can use <code>c()</code> to bind values/vectors together</li>
+<li>Can reference new element to place value inside
+<ul>
+<li><strong>Question:</strong> What happens if we reference index that is more than 1 index greater than the original length?</li>
 </ul></li>
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>obj1 <span class="ot">&lt;-</span> <span class="st">"Northampton"</span></span>
-<span id="cb2-2"><a></a>obj2 <span class="ot">&lt;-</span> <span class="st">"MA"</span></span>
-<span id="cb2-3"><a></a>obj3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Abby"</span>, <span class="st">"Mike"</span>, <span class="st">"Tala"</span>)</span>
-<span id="cb2-4"><a></a>obj4 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Tunic"</span>, <span class="st">"Familiars"</span>)</span>
-<span id="cb2-5"><a></a></span>
-<span id="cb2-6"><a></a>list1 <span class="ot">&lt;-</span> <span class="fu">list</span>(obj1, obj2, obj3, obj4)</span>
-<span id="cb2-7"><a></a>list1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[[1]]
-[1] "Northampton"
-
-[[2]]
-[1] "MA"
-
-[[3]]
-[1] "Abby" "Mike" "Tala"
-
-[[4]]
-[1] "Tunic"     "Familiars"</code></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb17-2"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(x, <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="list-creation-1" class="slide level2 smaller">
-<h2>List Creation</h2>
+<section id="copying" class="slide level2">
+<h2>Copying</h2>
 <ul>
-<li>Can be named within or after creation
-<ul>
-<li><code>____ = ...</code></li>
-<li><code>names()</code></li>
-</ul></li>
+<li><strong>Activity:</strong> Use the <code>obj_addr()</code> function on <code>a</code> and <code>b</code> below when we do the following:</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">list</span>(<span class="at">city =</span> obj1, <span class="at">state =</span> obj2, <span class="at">residents =</span> obj3, <span class="at">coffee =</span> obj4)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$city
-[1] "Northampton"
-
-$state
-[1] "MA"
-
-$residents
-[1] "Abby" "Mike" "Tala"
-
-$coffee
-[1] "Tunic"     "Familiars"</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"happy"</span>, <span class="st">"sad"</span>, <span class="st">"mad"</span>)</span>
+<span id="cb18-2"><a></a>b <span class="ot">&lt;-</span> a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">names</span>(list1) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"city"</span>, <span class="st">"state"</span>, <span class="st">"residents"</span>, <span class="st">"coffee"</span>)</span>
-<span id="cb6-2"><a></a>list1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$city
-[1] "Northampton"
-
-$state
-[1] "MA"
-
-$residents
-[1] "Abby" "Mike" "Tala"
-
-$coffee
-[1] "Tunic"     "Familiars"</code></pre>
-</div>
-</div>
+<p>What do you notice about how <code>a</code> and <code>b</code> are stored?</p>
 </section>
-<section id="concatenation" class="slide level2">
-<h2>Concatenation</h2>
+<section id="copying-1" class="slide level2">
+<h2>Copying</h2>
 <ul>
-<li>Did you know you can concatenate lists the same way you can atomic vectors??</li>
+<li><strong>Activity:</strong> Use the <code>obj_addr()</code> function on <code>a</code> and <code>b</code> below when we do the following:</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>list2 <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">interstates =</span> <span class="dv">91</span>)</span>
-<span id="cb8-2"><a></a><span class="fu">c</span>(list1, list2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$city
-[1] "Northampton"
-
-$state
-[1] "MA"
-
-$residents
-[1] "Abby" "Mike" "Tala"
-
-$coffee
-[1] "Tunic"     "Familiars"
-
-$interstates
-[1] 91</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>b[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"confused"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div>
+<p>What do you notice about how <code>a</code> and <code>b</code> are stored?</p>
 </section>
-<section id="accessing-elements" class="slide level2">
-<h2>Accessing Elements</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>list1<span class="sc">$</span>city</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Northampton"</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>list1[[<span class="dv">1</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Northampton"</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>list1[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$city
-[1] "Northampton"</code></pre>
-</div>
-</div>
-<p><strong>Question 2:</strong> What’s the difference between the outputs?</p>
-</section>
-<section id="testing-and-coercion" class="slide level2">
-<h2>Testing and Coercion</h2>
+<section id="copy-on-modify" class="slide level2">
+<h2>Copy-on-Modify</h2>
 <ul>
-<li>It’s the same process as before, but with list in place</li>
-</ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">is.list</span>(list1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a><span class="fu">as.list</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[[1]]
-[1] 1
-
-[[2]]
-[1] 2</code></pre>
-</div>
-</div>
-</section>
-<section id="unlisting" class="slide level2">
-<h2>Unlisting</h2>
+<li>A copy is only created when modification occurs
 <ul>
-<li>Can convert a list to an atomic vector via <code>unlist()</code></li>
-</ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">unlist</span>(list1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>         city         state    residents1    residents2    residents3 
-"Northampton"          "MA"        "Abby"        "Mike"        "Tala" 
-      coffee1       coffee2 
-      "Tunic"   "Familiars" </code></pre>
-</div>
-</div>
-<p><strong>Question 3:</strong> Why not use coercion to do this? Provide an example of what happens.</p>
-</section>
-<section id="attributes" class="slide level2">
-<h2>Attributes</h2>
-<ul>
-<li>Same process as seen with atomic vectors</li>
-</ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">attributes</span>(list1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$names
-[1] "city"      "state"     "residents" "coffee"   </code></pre>
-</div>
-</div>
-</section>
-<section id="activity" class="slide level2 smaller">
-<h2>Activity</h2>
-<p>Suppose we are the CDC and we’ve collected wastewater samples with regard to COVID-19, which is seen below:</p>
-<ul>
-<li>State: South Dakota, South Dakota, South Dakota</li>
-<li>Wastewater activity level in state: 7.79, 10.89, 9.02</li>
-<li>Wastewater activity level in nation: 8.42, 6.78, 5.75</li>
-<li>Wastewater activity level regionally: 8.27, 6.41, 5.86</li>
-<li>Level: high, very high, high</li>
-</ul>
-<p>Do the following:</p>
-<ul>
-<li>Create appropriate atomic vectors for each of the five pieces of information.</li>
-<li>Create a list combining the five atomic vectors.</li>
-<li>Answer the following:
-<ul>
-<li>What is this list a collection of?</li>
-<li>Is a list the most appropriate data structure for data?</li>
-<li>How would I access the second element in the wastewater activity regionally from the list?</li>
-</ul></li>
-</ul>
-<blockquote>
-<p>Source: <a href="https://www.cdc.gov/nwss/rv/COVID19-statetrend.html">CDC National Wastewater Surveillance System</a></p>
-</blockquote>
-</section>
-<section id="lets-add-some-dimension" class="slide level2 smaller">
-<h2>Let’s Add Some Dimension!</h2>
-<ul>
-<li>In most cases, we see data in two dimensions
-<ul>
-<li>Rows: observations</li>
-<li>Columns: variables</li>
-</ul></li>
-<li>Vectors are inherently one-dimensional
-<ul>
-<li>Rules and features can add structure to this</li>
-</ul></li>
-</ul>
-
-<img data-src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" class="r-stretch"></section>
-<section id="lets-add-some-dimension-1" class="slide level2">
-<h2>Let’s Add Some Dimension!</h2>
-<ul>
-<li><code>dim</code> attribute adds that dimension
-<ul>
-<li>If applied to atomic vectors: called a <strong>matrix</strong></li>
-<li>If applied to lists: can be a <strong>list-matrix</strong> or list-array</li>
+<li>Atomic vector: copy of whole vector occurs</li>
+<li>List: copy of elements changed occurs</li>
 </ul></li>
 </ul>
 </section>
-<section id="matrices-and-arrays" class="slide level2">
-<h2>Matrices and Arrays</h2>
+<section id="memory-locations" class="slide level2">
+<h2>Memory locations</h2>
 <ul>
-<li>Generally for linear-algebra</li>
+<li>Use <code>ref()</code> to see the memory address of each object</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>listMath <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>)</span>
-<span id="cb24-2"><a></a><span class="fu">dim</span>(listMath) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>)</span>
-<span id="cb24-3"><a></a>listMath</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">ref</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>     [,1] [,2]
-[1,]    2    3
-[2,]    4    2</code></pre>
+<pre><code>[1:0x21e6bb607e8] &lt;dbl&gt; </code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">attributes</span>(listMath)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">ref</span>(mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>$dim
-[1] 2 2</code></pre>
+<pre><code>█ [1:0x21e6e021018] &lt;df[,11]&gt; 
+├─mpg = [2:0x21e6a4e8830] &lt;dbl&gt; 
+├─cyl = [3:0x21e6a4e8960] &lt;dbl&gt; 
+├─disp = [4:0x21e6a4e8cf0] &lt;dbl&gt; 
+├─hp = [5:0x21e6a4ea5e0] &lt;dbl&gt; 
+├─drat = [6:0x21e6a4ea4b0] &lt;dbl&gt; 
+├─wt = [7:0x21e6a4ea710] &lt;dbl&gt; 
+├─qsec = [8:0x21e6a4eba10] &lt;dbl&gt; 
+├─vs = [9:0x21e6a4ec000] &lt;dbl&gt; 
+├─am = [10:0x21e6a4ebb40] &lt;dbl&gt; 
+├─gear = [11:0x21e6a4ec130] &lt;dbl&gt; 
+└─carb = [12:0x21e6a4e9d90] &lt;dbl&gt; </code></pre>
 </div>
 </div>
 </section>
-<section id="list-matrices" class="slide level2">
-<h2>List-Matrices</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>list1m <span class="ot">&lt;-</span> list1</span>
-<span id="cb28-2"><a></a><span class="fu">dim</span>(list1m) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>)</span>
-<span id="cb28-3"><a></a>list1m</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>     [,1]          [,2]       
-[1,] "Northampton" character,3
-[2,] "MA"          character,2</code></pre>
-</div>
-</div>
-</section>
-<section id="data-frames" class="slide level2">
-<h2>Data Frames</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>vect1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"SpongeBob"</span>, <span class="st">"Patrick"</span>, <span class="st">"Sandy"</span>)</span>
-<span id="cb30-2"><a></a>vect2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"sponge"</span>, <span class="st">"starfish"</span>, <span class="st">"squirrel"</span>)</span>
-<span id="cb30-3"><a></a>vect3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">5</span>)</span>
-<span id="cb30-4"><a></a></span>
-<span id="cb30-5"><a></a>spongeList <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">character =</span> vect1, <span class="at">species =</span> vect2, <span class="at">height =</span> vect3)</span>
-<span id="cb30-6"><a></a><span class="fu">data.frame</span>(spongeList)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  character  species height
-1 SpongeBob   sponge      4
-2   Patrick starfish      6
-3     Sandy squirrel      5</code></pre>
-</div>
-</div>
-</section>
-<section id="data-frames-1" class="slide level2">
-<h2>Data Frames</h2>
+<section id="addresses" class="slide level2">
+<h2>Addresses</h2>
+
+<img data-src="images/lect4/MemoryAddressContent.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="environments-a-preview" class="slide level2 smaller">
+<h2>Environments: A Preview</h2>
 <ul>
-<li>A named list of vectors
+<li>A special kind of named list, but
 <ul>
-<li>Vectors make up the columns</li>
-<li>Row entries correspond to collection of individual elements within the vectors</li>
+<li>with unique, unordered names</li>
+<li>has a parent</li>
+<li>not copied when modified</li>
+</ul></li>
+<li>Properties allow us to control what is stored, which has its uses in:
+<ul>
+<li>Current storage</li>
+<li>When running code</li>
+<li>And packages!!</li>
 </ul></li>
 </ul>
-<p><strong>Question 4:</strong> What other rules (either forced upon or by nature) do we need to abide by with data frames?</p>
+<p>We will explore more when we jump into Chapter 7!</p>
 </section>
-<section id="accessing-elements-1" class="slide level2">
-<h2>Accessing Elements</h2>
+<section id="garbage-collection" class="slide level2 smaller">
+<h2>Garbage Collection</h2>
 <ul>
-<li>Done with <code>[[]]</code>, with commas in between to denote the elements
-<ul>
-<li>A little tricky: rows first, then columns</li>
-</ul></li>
-<li>To access dimensions while retaining current data structure: <code>[,]</code>
-<ul>
-<li>Specify indices within dimension you want to subset from</li>
-</ul></li>
+<li><code>gc()</code></li>
 </ul>
-<blockquote>
-<p>Will discuss more in Monday’s class!</p>
-</blockquote>
-</section>
-<section id="exercises" class="slide level2 smaller scrollable">
-<h2>Exercises</h2>
-<p>Revisit the <code>diamonds</code> data frame again. Answer the following to turn in:</p>
-<ol start="5" type="1">
-<li>Unlist the <code>diamonds</code> data frame. What happens? What is its type? Why?</li>
-<li>Knowing we are dealing with a list of vectors, access the cut of the 4th diamond such that we access the vector first, followed by the element.</li>
-<li>Are these two lines of code accessing the same element? Explain what’s happening:</li>
-</ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>diamonds[<span class="dv">2</span>, <span class="dv">5</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">gc</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 1
-  depth
-  &lt;dbl&gt;
-1  59.8</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a>diamonds[[<span class="dv">2</span>]][<span class="dv">5</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] Good
-Levels: Fair &lt; Good &lt; Very Good &lt; Premium &lt; Ideal</code></pre>
+<pre><code>          used (Mb) gc trigger (Mb) max used (Mb)
+Ncells  672720 36.0    1372525 73.4  1372525 73.4
+Vcells 1223155  9.4    8388608 64.0  1876720 14.4</code></pre>
 </div>
 </div>
+<ul>
+<li>Runs automatically whenever R needs more memory to create a new object
+<ul>
+<li>Used on memory that is not being referenced</li>
+<li>Seen when we use <code>rm()</code> to remove a binding to a certain name</li>
+</ul></li>
+<li>OS reclaims memory from R when needed</li>
+</ul>
 </section>
 <section id="for-now-and-monday" class="slide level2">
 <h2>For Now and Monday:</h2>
 <ul>
-<li>Complete GitHub setup and survey if they’re not finished yet</li>
-<li>Read chapters 2, 4 of Advanced R before Monday’s class</li>
-<li>Expect first problem set to be released next week</li>
+<li>Work on exercises rest of time
+<ul>
+<li>Seen in schedule for today on website</li>
+</ul></li>
+<li>First problem set assigned
+<ul>
+<li>Due Monday, 2/9 at 11:59pm</li>
+</ul></li>
+<li>Read chapters 5 and 6 of Advanced R before Monday’s class</li>
 </ul>
 
 
@@ -602,7 +529,7 @@ Levels: Fair &lt; Good &lt; Very Good &lt; Premium &lt; Ideal</code></pre>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>SDS 270 | Lists</p>
+<p>SDS 270 | Memory</p>
 </div>
 </div></div>
 

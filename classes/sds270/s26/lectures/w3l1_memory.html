@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 1, Lecture 2   ">
+<meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 3, Lecture 1   ">
 
-<title>Datasets – SDS 192: Introduction to Data Science, Spring 2026</title>
+<title>Assignment and Memory – SDS 270: Programming for Data Science in R, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -85,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
+    <span class="navbar-title">SDS 270: Programming for Data Science in R, Spring 2026</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -115,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"><iconify-icon icon="fa6-brands:slack"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/"> 
+    <a class="nav-link" href="https://github.com"> 
 <span class="menu-text"><iconify-icon icon="fa6-brands:github"></iconify-icon></span></a>
   </li>  
 </ul>
@@ -134,35 +169,34 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#reminders" id="toc-reminders" class="nav-link active" data-scroll-target="#reminders">Reminders</a></li>
-  <li><a href="#from-survey" id="toc-from-survey" class="nav-link" data-scroll-target="#from-survey">From survey</a></li>
-  <li><a href="#from-survey-1" id="toc-from-survey-1" class="nav-link" data-scroll-target="#from-survey-1">From survey</a></li>
-  <li><a href="#what-is-a-dataset" id="toc-what-is-a-dataset" class="nav-link" data-scroll-target="#what-is-a-dataset">What is a dataset?</a></li>
-  <li><a href="#what-is-a-dataset-1" id="toc-what-is-a-dataset-1" class="nav-link" data-scroll-target="#what-is-a-dataset-1">What is a dataset?</a></li>
-  <li><a href="#what-is-a-dataset-cont." id="toc-what-is-a-dataset-cont." class="nav-link" data-scroll-target="#what-is-a-dataset-cont.">What is a dataset? (cont.)</a></li>
-  <li><a href="#collecting-and-organizing-data" id="toc-collecting-and-organizing-data" class="nav-link" data-scroll-target="#collecting-and-organizing-data">Collecting and organizing data</a></li>
-  <li><a href="#observations-vs.-variables-vs.-values" id="toc-observations-vs.-variables-vs.-values" class="nav-link" data-scroll-target="#observations-vs.-variables-vs.-values">Observations vs.&nbsp;Variables vs.&nbsp;Values</a>
-  <ul class="collapse">
-  <li><a href="#referring-to-rows-columns-and-values" id="toc-referring-to-rows-columns-and-values" class="nav-link" data-scroll-target="#referring-to-rows-columns-and-values">Referring to rows, columns, and values</a></li>
-  <li><a href="#referring-to-rows-columns-and-values-cont." id="toc-referring-to-rows-columns-and-values-cont." class="nav-link" data-scroll-target="#referring-to-rows-columns-and-values-cont.">Referring to rows, columns, and values (cont.)</a></li>
-  </ul></li>
-  <li><a href="#key-considerations-for-rectangular-datasets" id="toc-key-considerations-for-rectangular-datasets" class="nav-link" data-scroll-target="#key-considerations-for-rectangular-datasets">Key Considerations for Rectangular Datasets</a></li>
-  <li><a href="#how-do-i-find-out-more-information-about-a-dataset" id="toc-how-do-i-find-out-more-information-about-a-dataset" class="nav-link" data-scroll-target="#how-do-i-find-out-more-information-about-a-dataset">How do I find out more information about a dataset?</a></li>
-  <li><a href="#where-do-i-find-metadata-for-a-dataset" id="toc-where-do-i-find-metadata-for-a-dataset" class="nav-link" data-scroll-target="#where-do-i-find-metadata-for-a-dataset">Where do I find metadata for a dataset?</a></li>
-  <li><a href="#types-of-variables" id="toc-types-of-variables" class="nav-link" data-scroll-target="#types-of-variables">Types of variables</a></li>
-  <li><a href="#types-of-variables-cont." id="toc-types-of-variables-cont." class="nav-link" data-scroll-target="#types-of-variables-cont.">Types of variables (cont.)</a></li>
-  <li><a href="#group-activity-to-turn-in" id="toc-group-activity-to-turn-in" class="nav-link" data-scroll-target="#group-activity-to-turn-in">Group activity (to turn-in)</a></li>
-  <li><a href="#for-monday" id="toc-for-monday" class="nav-link" data-scroll-target="#for-monday">For Monday</a></li>
+  <li><a href="#last-time" id="toc-last-time" class="nav-link active" data-scroll-target="#last-time">Last Time</a></li>
+  <li><a href="#so-far" id="toc-so-far" class="nav-link" data-scroll-target="#so-far">So Far…</a></li>
+  <li><a href="#today" id="toc-today" class="nav-link" data-scroll-target="#today">Today</a></li>
+  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a></li>
+  <li><a href="#aside-vs." id="toc-aside-vs." class="nav-link" data-scroll-target="#aside-vs.">Aside: <code>=</code> vs.&nbsp;<code>==</code></a></li>
+  <li><a href="#syntactic-names-for-assignment" id="toc-syntactic-names-for-assignment" class="nav-link" data-scroll-target="#syntactic-names-for-assignment">Syntactic Names for Assignment</a></li>
+  <li><a href="#lobstr-package" id="toc-lobstr-package" class="nav-link" data-scroll-target="#lobstr-package"><code>lobstr</code> Package</a></li>
+  <li><a href="#memory-usage-of-whole-environment" id="toc-memory-usage-of-whole-environment" class="nav-link" data-scroll-target="#memory-usage-of-whole-environment">Memory Usage (of Whole Environment)</a></li>
+  <li><a href="#memory-of-objects" id="toc-memory-of-objects" class="nav-link" data-scroll-target="#memory-of-objects">Memory of Objects</a></li>
+  <li><a href="#binding" id="toc-binding" class="nav-link" data-scroll-target="#binding">Binding</a></li>
+  <li><a href="#copying" id="toc-copying" class="nav-link" data-scroll-target="#copying">Copying</a></li>
+  <li><a href="#copying-1" id="toc-copying-1" class="nav-link" data-scroll-target="#copying-1">Copying</a></li>
+  <li><a href="#copy-on-modify" id="toc-copy-on-modify" class="nav-link" data-scroll-target="#copy-on-modify">Copy-on-Modify</a></li>
+  <li><a href="#memory-locations" id="toc-memory-locations" class="nav-link" data-scroll-target="#memory-locations">Memory locations</a></li>
+  <li><a href="#addresses" id="toc-addresses" class="nav-link" data-scroll-target="#addresses">Addresses</a></li>
+  <li><a href="#environments-a-preview" id="toc-environments-a-preview" class="nav-link" data-scroll-target="#environments-a-preview">Environments: A Preview</a></li>
+  <li><a href="#garbage-collection" id="toc-garbage-collection" class="nav-link" data-scroll-target="#garbage-collection">Garbage Collection</a></li>
+  <li><a href="#for-now-and-monday" id="toc-for-now-and-monday" class="nav-link" data-scroll-target="#for-now-and-monday">For Now and Monday:</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="w1l2_data.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="w3l1_memory.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Datasets</h1>
-<p class="subtitle lead">SDS 192: Introduction to Data Science</p>
+<h1 class="title">Assignment and Memory</h1>
+<p class="subtitle lead">SDS 270: Programming for Data Science in R</p>
 </div>
 
 
@@ -172,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p><br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 1, Lecture 2 </span> <br> </p>
+             <p><br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 3, Lecture 1 </span> <br> </p>
           </div>
   </div>
     
@@ -185,294 +219,344 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="reminders" class="level2">
-<h2 class="anchored" data-anchor-id="reminders">Reminders</h2>
+<section id="last-time" class="level2">
+<h2 class="anchored" data-anchor-id="last-time">Last Time</h2>
 <ul>
-<li>Tech setup
+<li>Data frames vs.&nbsp;tibbles
 <ul>
-<li>Components due tonight at 11:59pm</li>
-<li>Important to do before Friday’s first lab</li>
+<li>Functionality</li>
+<li>Storage</li>
+</ul></li>
+<li><code>NULL</code></li>
+<li>Subsetting
+<ul>
+<li>Differing ways</li>
+<li>Use on atomic vectors, lists, data frames</li>
+<li>Applications</li>
 </ul></li>
 </ul>
 </section>
-<section id="from-survey" class="level2">
-<h2 class="anchored" data-anchor-id="from-survey">From survey</h2>
+<section id="so-far" class="level2">
+<h2 class="anchored" data-anchor-id="so-far">So Far…</h2>
 <ul>
-<li>Lots of practice in RStudio in class
+<li>We’ve focused on data structures
 <ul>
-<li>Demos and time in class to work with R</li>
+<li><em>Question:</em> Name them!</li>
 </ul></li>
-<li>Better familiarity with git commands
+<li>We now jump into the rather quirky nature of how R is built
 <ul>
-<li>Tech setup will be a warmup</li>
-</ul></li>
-<li>Looking forward to…
-<ul>
-<li>RStudio, AI, working with big/complex data</li>
-</ul></li>
-<li>Not looking forward to…
-<ul>
-<li>Coding, readings, workload</li>
+<li>We only copy when modifying??</li>
+<li>R magically removes objects at any random time??</li>
+<li>Classes can be made just by adding a string??</li>
 </ul></li>
 </ul>
+<p>What you will discover is R’s programming philosophy can make it seem… lazy!?</p>
 </section>
-<section id="from-survey-1" class="level2">
-<h2 class="anchored" data-anchor-id="from-survey-1">From survey</h2>
+<section id="today" class="level2">
+<h2 class="anchored" data-anchor-id="today">Today</h2>
 <ul>
-<li>Hoping to get out of this class…
+<li>Assignment
 <ul>
-<li>R, data analysis skills, datasets</li>
+<li><code>&lt;-</code> vs.&nbsp;<code>=</code></li>
 </ul></li>
-<li>Questions to me…
+<li>Binding and memory
 <ul>
-<li>Why stats/data science?</li>
-<li>Football team?</li>
-<li>My initial struggles with R?</li>
+<li>Object sizing</li>
+<li>Concatenation</li>
+<li>Copy-on-modify</li>
+<li>Unbinding</li>
+</ul></li>
+<li>Object size
+<ul>
+<li>????</li>
 </ul></li>
 </ul>
+<p>We will focus on primarily Chapter 2 from <a href="https://adv-r.hadley.nz/">Advanced R</a>.</p>
 </section>
-<section id="what-is-a-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-dataset">What is a dataset?</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/lect2/exData.png" class="img-fluid figure-img"></p>
-<figcaption>Source: CA Housing Data</figcaption>
-</figure>
-</div>
-</section>
-<section id="what-is-a-dataset-1" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-dataset-1">What is a dataset?</h2>
-<ul>
-<li>Collection of data points organized into a structured format</li>
-<li>In this course, we will mainly work with datasets that are structured in a two-dimensional format
-<ul>
-<li>These are referred to as <strong>rectangular</strong> datasets</li>
-</ul></li>
-<li>Rectangular datasets are organized into a series of rows and columns; ideally:
-<ul>
-<li>We refer to rows as <strong>observations</strong></li>
-<li>We refer to columns as <strong>variables</strong></li>
-</ul></li>
-</ul>
-</section>
-<section id="what-is-a-dataset-cont." class="level2">
-<h2 class="anchored" data-anchor-id="what-is-a-dataset-cont.">What is a dataset? (cont.)</h2>
-<p><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" class="img-fluid"></p>
-<p>Grolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/.</p>
-</section>
-<section id="collecting-and-organizing-data" class="level2">
-<h2 class="anchored" data-anchor-id="collecting-and-organizing-data">Collecting and organizing data</h2>
-<ul>
-<li>Involves a research question we’re trying to answer
-<ul>
-<li>e.g.&nbsp;What factors are contributing to a decrease in a bird species?</li>
-<li>Experimental vs.&nbsp;observational</li>
-</ul></li>
-<li>Determine a sample, observation units, and variables to gather</li>
-<li>In most cases: can be formed into a rectangular format
-<ul>
-<li>Rows represent the observations</li>
-<li>Columns represent the variables</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="observations-vs.-variables-vs.-values" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="observations-vs.-variables-vs.-values">Observations vs.&nbsp;Variables vs.&nbsp;Values</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" class="img-fluid figure-img"></p>
-<figcaption>Grolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/.</figcaption>
-</figure>
-</div>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Observations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Variables</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Values</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="nonincremental">
-<ul>
-<li>Observations refer to <em>individual units</em> or cases of the data being collected.
-<ul>
-<li>If I was collecting data about each student in this course, one student would be an observation.</li>
-<li>If I was collecting census data and aggregating it at the county level, one county would be an observation.</li>
-</ul></li>
-</ul>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="nonincremental">
-<ul>
-<li>Variables describe something about an observation.
-<ul>
-<li>If I was collecting data about each student in this course, ‘major’ might be one variable.</li>
-<li>If I was collecting county-level census data, ‘population’ might be one variable.</li>
-<li>Can be categorical or numerical</li>
-</ul></li>
-</ul>
-</div>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<div class="nonincremental">
-<ul>
-<li>Values refer to the actual value associated with a variable for a given observation.
-<ul>
-<li>If I was collecting data about each student’s major in this course, one value might be SDS.</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<hr>
-<section id="referring-to-rows-columns-and-values" class="level3">
-<h3 class="anchored" data-anchor-id="referring-to-rows-columns-and-values">Referring to rows, columns, and values</h3>
-<ul>
-<li>An <em>index</em> is a formal way of identifying the data at certain positions in a dataset.</li>
-<li>Indexes/indices are usually formatted as two numbers in brackets (e.g.&nbsp;[3,4]).
-<ul>
-<li>First number: row position</li>
-<li>Second number: column position</li>
-<li>e.g.&nbsp;[3, 4] will refer to the value three rows down and four rows over.</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="referring-to-rows-columns-and-values-cont." class="level3">
-<h3 class="anchored" data-anchor-id="referring-to-rows-columns-and-values-cont.">Referring to rows, columns, and values (cont.)</h3>
-<ul>
-<li>A <em>row</em> can be referenced by removing the value in the column (second) position
-<ul>
-<li>e.g.&nbsp;[3, ] refers to third row</li>
-<li>Syntax seen in R, can depend in other coding languages</li>
-</ul></li>
-<li>A <em>column</em> can be referenced by removing the value in the row (first) position
-<ul>
-<li>e.g.&nbsp;[, 4] refers to fourth column</li>
-<li>Syntax seen in R, can depend in other coding languages</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="key-considerations-for-rectangular-datasets" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="key-considerations-for-rectangular-datasets">Key Considerations for Rectangular Datasets</h2>
+<section id="assignment" class="level2">
+<h2 class="anchored" data-anchor-id="assignment">Assignment</h2>
 <div class="columns">
-<div class="column">
+<div class="column" style="width:50%;">
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"><code>=</code></h3>
 <ul>
-<li><p>All rows in a rectangular dataset are of equal length.</p></li>
-<li><p>All columns in a rectangular dataset are of equal length.</p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Understanding Check
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Let’s say I have a rectangular dataset documenting student names and majors, and I was missing major information for one student. What would this look like in a rectangular dataset?</p>
-</div>
-</div>
-</div><div class="column">
-<p><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" class="img-fluid"></p>
-<p>Grolemund, Garrett, and Hadley Wickham. n.d. R for Data Science. Accessed March 31, 2019. https://r4ds.had.co.nz/.</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="how-do-i-find-out-more-information-about-a-dataset" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="how-do-i-find-out-more-information-about-a-dataset">How do I find out more information about a dataset?</h2>
-<div class="nonincremental">
+<li>More universal
 <ul>
-<li>Metadata can be referred to as “data about data”</li>
-<li>Metadata provides important contextual information to help us interpret a dataset.</li>
-<li>There are two types of metadata associated with datasets:</li>
-</ul>
-</div>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Administrative</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Descriptive</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div class="nonincremental">
-<ul>
-<li>Administrative metadata tells us how a dataset is managed and its <em>provenance</em>, or the history of how it came to be in its current form:
-<ul>
-<li>Who created it?</li>
-<li>When was it created?</li>
-<li>When was it last updated?</li>
-<li>Who is permitted to use it?</li>
+<li>Can be used for parameter calls, assignment</li>
 </ul></li>
 </ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div class="nonincremental">
+</section>
+</div><div class="column" style="width:50%;">
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1"><code>&lt;-</code></h3>
 <ul>
-<li>Descriptive metadata tells us information about the contents of a dataset:
+<li>For assignment only
 <ul>
-<li>What does each row refer to?</li>
-<li>What does each column refer to?</li>
-<li>What values might appear in each cell?</li>
+<li>Technically a function that assigns right side values to left side</li>
+<li><strong>Question:</strong> How could we change the <code>&lt;-</code> symbol such that we assign left side values to the right?</li>
 </ul></li>
 </ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div>
-</div>
-</div>
-<hr>
 </section>
-<section id="where-do-i-find-metadata-for-a-dataset" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="where-do-i-find-metadata-for-a-dataset">Where do I find metadata for a dataset?</h2>
+</div>
+</div>
+</section>
+<section id="aside-vs." class="level2">
+<h2 class="anchored" data-anchor-id="aside-vs.">Aside: <code>=</code> vs.&nbsp;<code>==</code></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2"><code>=</code></h3>
 <ul>
-<li>Often times, metadata is recorded in a dataset codebook or data dictionary.</li>
-<li>These documents provide definitions for the observations and variables in a dataset and tell you the accepted values for each variable.</li>
-<li>Let’s say that I have a dataset of student names, majors, and class years. A codebook or data dictionary might tell me that:
+<li>For parameter calls and assignment</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="section-3" class="level3">
+<h3 class="anchored" data-anchor-id="section-3"><code>==</code></h3>
 <ul>
-<li>Each row in the dataset refers to one student.</li>
-<li>The ‘Class Year’ variable refers to “the year the student is expected to graduate.”</li>
-<li>Possible values for the ‘Major’ variable are Political Science, SDS, and Sociology.</li>
+<li>For comparisons between left-sided and right-sided values
+<ul>
+<li>Results in value/vector of logicals</li>
 </ul></li>
 </ul>
-<hr>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>y <span class="sc">==</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  TRUE FALSE</code></pre>
+</div>
+</div>
 </section>
-<section id="types-of-variables" class="level2">
-<h2 class="anchored" data-anchor-id="types-of-variables">Types of variables</h2>
-<p>Variables can fall into one of two different types:</p>
+</div>
+</div>
+</section>
+<section id="syntactic-names-for-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="syntactic-names-for-assignment">Syntactic Names for Assignment</h2>
 <ul>
-<li>Categorical: variable can be split into discrete groups/factors
+<li>Objects need to be assigned to names consisting of letters, digits, <code>.</code> and <code>_</code>
 <ul>
-<li>Nominal: named or classified labels <em>with no inherent order</em></li>
-<li>Ordinal: ordered labels</li>
+<li>But there are rules:
+<ul>
+<li>Can’t start with digits or <code>_</code></li>
+<li>Can’t use any reserved words (e.g.&nbsp;<code>function</code>, <code>if</code>)</li>
 </ul></li>
-<li>Numerical: variable defined by a set of numbers
+</ul></li>
+<li>General rule: concise, but detailed enough to showcase what it is
 <ul>
-<li>Discrete: countable</li>
-<li>Continuous: measured</li>
+<li>Can use snakecase, camelcase</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Storing a linear regression model</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>mod_lr <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> disp, <span class="at">data =</span> mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="lobstr-package" class="level2">
+<h2 class="anchored" data-anchor-id="lobstr-package"><code>lobstr</code> Package</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lect4/lobstr.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+<ul>
+<li>Tools for investigating the specifics of an object</li>
+<li>In same vein as using <code>str()</code></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="memory-usage-of-whole-environment" class="level2">
+<h2 class="anchored" data-anchor-id="memory-usage-of-whole-environment">Memory Usage (of Whole Environment)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lobstr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'lobstr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mem_used</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>43.54 MB</code></pre>
+</div>
+</div>
+<ul>
+<li>Curious about how much memory R is taking up on our machine</li>
+<li>Can also go to top-right corner -&gt; __ MiB -&gt; Memory Usage Report</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lect4/Screenshot 2025-08-30 134342.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="memory-of-objects" class="level2">
+<h2 class="anchored" data-anchor-id="memory-of-objects">Memory of Objects</h2>
+<ul>
+<li>Use <code>obj_size()</code> on individual objects</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>56 B</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">rep</span>(<span class="dv">5</span>, <span class="dv">5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>96 B</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>7.21 kB</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">obj_size</span>(<span class="fu">matrix</span>(<span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>344 B</code></pre>
+</div>
+</div>
+</section>
+<section id="binding" class="level2">
+<h2 class="anchored" data-anchor-id="binding">Binding</h2>
+<ul>
+<li>Like Lego pieces
+<ul>
+<li>Can use <code>c()</code> to bind values/vectors together</li>
+<li>Can reference new element to place value inside
+<ul>
+<li><strong>Question:</strong> What happens if we reference index that is more than 1 index greater than the original length?</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(x, <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="copying" class="level2">
+<h2 class="anchored" data-anchor-id="copying">Copying</h2>
+<ul>
+<li><strong>Activity:</strong> Use the <code>obj_addr()</code> function on <code>a</code> and <code>b</code> below when we do the following:</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"happy"</span>, <span class="st">"sad"</span>, <span class="st">"mad"</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>What do you notice about how <code>a</code> and <code>b</code> are stored?</p>
+</section>
+<section id="copying-1" class="level2">
+<h2 class="anchored" data-anchor-id="copying-1">Copying</h2>
+<ul>
+<li><strong>Activity:</strong> Use the <code>obj_addr()</code> function on <code>a</code> and <code>b</code> below when we do the following:</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>b[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"confused"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>What do you notice about how <code>a</code> and <code>b</code> are stored?</p>
+</section>
+<section id="copy-on-modify" class="level2">
+<h2 class="anchored" data-anchor-id="copy-on-modify">Copy-on-Modify</h2>
+<ul>
+<li>A copy is only created when modification occurs
+<ul>
+<li>Atomic vector: copy of whole vector occurs</li>
+<li>List: copy of elements changed occurs</li>
 </ul></li>
 </ul>
 </section>
-<section id="types-of-variables-cont." class="level2">
-<h2 class="anchored" data-anchor-id="types-of-variables-cont.">Types of variables (cont.)</h2>
+<section id="memory-locations" class="level2">
+<h2 class="anchored" data-anchor-id="memory-locations">Memory locations</h2>
 <ul>
-<li><strong>Question:</strong> Provide examples of each of the four sub-types of different variables.</li>
+<li>Use <code>ref()</code> to see the memory address of each object</li>
 </ul>
-<hr>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1:0x194336992a8] &lt;dbl&gt; </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ref</span>(mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>█ [1:0x19434bbb9d8] &lt;df[,11]&gt; 
+├─mpg = [2:0x19430ed3c70] &lt;dbl&gt; 
+├─cyl = [3:0x19430ed25e0] &lt;dbl&gt; 
+├─disp = [4:0x19430ed32f0] &lt;dbl&gt; 
+├─hp = [5:0x19430ed2aa0] &lt;dbl&gt; 
+├─drat = [6:0x19430ed2d00] &lt;dbl&gt; 
+├─wt = [7:0x19430ed24b0] &lt;dbl&gt; 
+├─qsec = [8:0x19430ed3550] &lt;dbl&gt; 
+├─vs = [9:0x19430ed1d90] &lt;dbl&gt; 
+├─am = [10:0x19430ed2710] &lt;dbl&gt; 
+├─gear = [11:0x19430ed2e30] &lt;dbl&gt; 
+└─carb = [12:0x19430ed37b0] &lt;dbl&gt; </code></pre>
+</div>
+</div>
 </section>
-<section id="group-activity-to-turn-in" class="level2">
-<h2 class="anchored" data-anchor-id="group-activity-to-turn-in">Group activity (to turn-in)</h2>
+<section id="addresses" class="level2">
+<h2 class="anchored" data-anchor-id="addresses">Addresses</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lect4/MemoryAddressContent.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="environments-a-preview" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="environments-a-preview">Environments: A Preview</h2>
 <ul>
-<li>Navigate to the “Class #2: Activity” on the website</li>
-<li>Work in groups to answer the questions on a sheet of paper</li>
+<li>A special kind of named list, but
+<ul>
+<li>with unique, unordered names</li>
+<li>has a parent</li>
+<li>not copied when modified</li>
+</ul></li>
+<li>Properties allow us to control what is stored, which has its uses in:
+<ul>
+<li>Current storage</li>
+<li>When running code</li>
+<li>And packages!!</li>
+</ul></li>
 </ul>
-<hr>
+<p>We will explore more when we jump into Chapter 7!</p>
 </section>
-<section id="for-monday" class="level2">
-<h2 class="anchored" data-anchor-id="for-monday">For Monday</h2>
+<section id="garbage-collection" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="garbage-collection">Garbage Collection</h2>
 <ul>
-<li>Work on Tech Setup</li>
-<li>Monday’s class: Lab on R and Datasets</li>
+<li><code>gc()</code></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gc</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          used (Mb) gc trigger (Mb) max used (Mb)
+Ncells  677247 36.2    1380871 73.8  1380871 73.8
+Vcells 1232134  9.5    8388608 64.0  1876720 14.4</code></pre>
+</div>
+</div>
+<ul>
+<li>Runs automatically whenever R needs more memory to create a new object
+<ul>
+<li>Used on memory that is not being referenced</li>
+<li>Seen when we use <code>rm()</code> to remove a binding to a certain name</li>
+</ul></li>
+<li>OS reclaims memory from R when needed</li>
+</ul>
+</section>
+<section id="for-now-and-monday" class="level2">
+<h2 class="anchored" data-anchor-id="for-now-and-monday">For Now and Monday:</h2>
+<ul>
+<li>Work on exercises rest of time
+<ul>
+<li>Seen in schedule for today on website</li>
+</ul></li>
+<li>First problem set assigned
+<ul>
+<li>Due Monday, 2/9 at 11:59pm</li>
+</ul></li>
+<li>Read chapters 5 and 6 of Advanced R before Monday’s class</li>
 </ul>
 
 
