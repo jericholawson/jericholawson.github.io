@@ -60,7 +60,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\nSlides + Activity\nNote: Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)\n\n\n\n\n\n\n&lt;!–"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\nSlides + Activity\nNote: Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
   },
   {
     "objectID": "schedule.html#week-1-introduction-126---130",
@@ -256,7 +256,7 @@
     "href": "schedule.html#week-1-what-is-data-science-126---130",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\nSlides + Activity\nNote: Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)\n\n\n\n\n\n\n&lt;!–"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\nSlides + Activity\nNote: Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
   },
   {
     "objectID": "schedule.html#week-2-what-is-r-and-github-22---26",
@@ -1734,5 +1734,19 @@
     "title": "Schedule",
     "section": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)",
     "text": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\nLecture #7: Types of Data Visualizations\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Advanced ggplot2\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLab #3: Visualization Aesthetics"
+  },
+  {
+    "objectID": "schedule-abc.html",
+    "href": "schedule-abc.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\nSlides + Activity\nNote: Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
+  },
+  {
+    "objectID": "schedule-abc.html#week-1-what-is-data-science-126---130",
+    "href": "schedule-abc.html#week-1-what-is-data-science-126---130",
+    "title": "Schedule",
+    "section": "",
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\nSlides + Activity\nNote: Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
   }
 ]
