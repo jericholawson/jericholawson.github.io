@@ -60,7 +60,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nEnjoy the snow and stay warm!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Friday, 1/30 at 11:59pm)\n\nInstructions\nComplete test.qmd and act1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before next Monday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introduction, Tech Setup, Atomic Vectors\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Friday, 1/30 at 11:59pm)\n\nInstructions\nComplete test.qmd and act1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before Monday’s class)"
+    "text": "Monday, 1/26Wednesday, 1/28\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nEnjoy the snow and stay warm!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Friday, 1/30 at 11:59pm)\n\nInstructions\nComplete practice.qmd and exs1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before next Monday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introduction, Tech Setup, Atomic Vectors\n\n\n\n\nSlides\nNote: Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Friday, 1/30 at 11:59pm)\n\nInstructions\nComplete practice.qmd and exs1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before next Monday’s class)"
   },
   {
     "objectID": "schedule.html#schedule",
@@ -186,7 +186,7 @@
     "href": "schedule.html#week-1-introduction-data-structures-126---130",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nEnjoy the snow and stay warm!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Friday, 1/30 at 11:59pm)\n\nInstructions\nComplete test.qmd and act1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before next Monday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introduction, Tech Setup, Atomic Vectors\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Friday, 1/30 at 11:59pm)\n\nInstructions\nComplete test.qmd and act1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before Monday’s class)"
+    "text": "Monday, 1/26Wednesday, 1/28\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nEnjoy the snow and stay warm!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Friday, 1/30 at 11:59pm)\n\nInstructions\nComplete practice.qmd and exs1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before next Monday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introduction, Tech Setup, Atomic Vectors\n\n\n\n\nSlides\nNote: Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nGitHub setup (due Friday, 1/30 at 11:59pm)\n\nInstructions\nComplete practice.qmd and exs1.qmd files\n\nRead through syllabus\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nRead chapters 1, 3 of Advanced R (before next Monday’s class)"
   },
   {
     "objectID": "schedule.html#week-2-data-structures-assignment-22---26",
@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooks\n\n\nTBA\n\n\n\nTBA\n\n\n\nTBA\n\n\n\nAdvanced R\nR Packages"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooks\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors \n\n\n\nTBA\n\n\n\nTBA\n\n\n\nAdvanced R\nR Packages"
   },
   {
     "objectID": "sets/set1.html",
@@ -1005,7 +1005,7 @@
     "href": "resources/tech-setup.html#git-github-and-github-classroom",
     "title": "Tech Setup (2 pts)",
     "section": "git, GitHub, and GitHub Classroom",
-    "text": "git, GitHub, and GitHub Classroom\nWe will be using git commands, GitHub, and GitHub classroom to collaborate with others on coding and projects, submit coding-relative activities and assignments, and get familiar with data science workflows.\nTo differentiate between the terms, when referring to “git”, this refers to the software and commands associated with tracking changes in files during software development. The actions “push”, “pull”, “commit”, and others will pop up and we will discuss these in detail throughout the semester. GitHub refers to the application that utilizes the git system to aid in these processes. GitHub Classroom is a special use of GitHub that will allow for specific repositories to be linked to our classroom.\nA few actions need to happen to set these items up, which you’ll see in the subsections below.\n\nSetting Up Your R Environment\nIf you have any troubles, you can use the Happy Git with R textbook for assistance.\n\nGo to GitHub and create a GitHub account (if you don’t have one), preferably with your smith.edu account. Setup account details.\nOpen RStudio on your laptop.\nCheck to ensure you have git installed by opening RStudio and clicking on Tools &gt; Global Options &gt; Git/SVN tab. Check the top of the pane for a field for the Git executable. It should say something like: “/usr/bin/git” or “C:/Program Files/Git/”. If it says “(Not Found)” git is not installed.\nIn the R console (bottom-left corner), you will input and hit Enter for each of these lines of code (replace what it is in the quotations with your info):\n\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\nuse_git_config(user.name = \"PUT GITHUB USERNAME HERE\", user.email = \"PUT GITHUB EMAIL HERE\")\n\n\nPut the following line of code in the console:\n\n\ncreate_github_token()\n\nDefine a name for the token and set the expiration date to be 150 days from today’s date. Leave all other settings the same and generate the token.\nOnce done, please save the token in some fashion. You will not see this token again once you leave the webpage.\n\nReturn to RStudio and run the following lines of code in the console:\n\n\nlibrary(gitcreds)\ngitcreds_set()\n\nWhen prompted for the token, paste the token you created into the console and hit Enter.\nIf you are needing additional assistance, please use the following videos:\n\nConfiguring git\nPersonal Access Token (PAT)\nStoring PAT\n\n\n\nSetting Up GitHub Classroom and Future Repositories\nYour current and future RStudio environments are now linked to your GitHub account, providing you access to repositories on GitHub itself. With this in mind, we can now replicate repositories from GitHub in a process called cloning.\n\nUse the following link below to access the SDS 270 repository from GitHub Classroom:\n\nhttps://classroom.github.com/a/_arMNRWC\n\n\nNEED TO UPDATE LINK\nYou will go through all necessary prompts. Feel free to use this video as a resource: https://www.youtube.com/watch?v=lsQ48kn-uD0\n\nCopy the URL for your SDS 270 GitHub repo. It should look like the following link:\n\nhttps://github.com/sds192lawson/tech-setup-repository-YOUR_USERNAME\n\n\nNEED TO UPDATE LINK\n\nGo back to RStudio. At the top-left corner, click on File &gt; New Project &gt; Version Control &gt; git.\n\nPaste the URL into the first field, type a simple name for the folder in the second field, and choose an appropriate directory on your computer to house the repository. Then, click Create Project.\n\nInstall the rmarkdown package in RStudio by entering the following lines of code in the console.\n\n\ninstall.packages(\"rmarkdown\")\nlibrary(rmarkdown)\n\n\nOn the initial install, the Files tab will be in the lower right hand corner of RStudio. Open practice.qmd, and then follow the prompts in that file. Click Save.\nWe will now pull, commit, and push changes to the remote repository on GitHub. To do so, go to the Git tab on the top-right corner. From there,\n\nClick on the blue downward arrow, which pulls updates from the remote repository. This ensures we have the most recent updates.\nClick on the stacked checkmark in the same area, which will allow you to commit changes to the remote repository. Stage each file in the left column by clicking on the checkbox and add a message in the right column that briefly specifies what changes you’ve made to the repository. Click Commit thereafter.\nClick on the green upward area, which pushes updates to the remote repository. A window will pop up, showing the status of the push. If successful, you should see those updated files in your GitHub repository. You can use the URL from step 8 to verify.\n\n\nIf you are needing additional assistance, please use the following videos:\n\nConfiguring RStudio Projects\nCommitting Files\nPushing Files"
+    "text": "git, GitHub, and GitHub Classroom\nWe will be using git commands, GitHub, and GitHub classroom to collaborate with others on coding and projects, submit coding-relative activities and assignments, and get familiar with data science workflows.\nTo differentiate between the terms, when referring to “git”, this refers to the software and commands associated with tracking changes in files during software development. The actions “push”, “pull”, “commit”, and others will pop up and we will discuss these in detail throughout the semester. GitHub refers to the application that utilizes the git system to aid in these processes. GitHub Classroom is a special use of GitHub that will allow for specific repositories to be linked to our classroom.\nA few actions need to happen to set these items up, which you’ll see in the subsections below.\n\nSetting Up Your R Environment\nIf you have any troubles, you can use the Happy Git with R textbook for assistance.\n\nGo to GitHub and create a GitHub account (if you don’t have one), preferably with your smith.edu account. Setup account details.\nOpen RStudio on your laptop.\nCheck to ensure you have git installed by opening RStudio and clicking on Tools &gt; Global Options &gt; Git/SVN tab. Check the top of the pane for a field for the Git executable. It should say something like: “/usr/bin/git” or “C:/Program Files/Git/”. If it says “(Not Found)” git is not installed.\nIn the R console (bottom-left corner), you will input and hit Enter for each of these lines of code (replace what it is in the quotations with your info):\n\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\nuse_git_config(user.name = \"PUT GITHUB USERNAME HERE\", user.email = \"PUT GITHUB EMAIL HERE\")\n\n\nPut the following line of code in the console:\n\n\ncreate_github_token()\n\nDefine a name for the token and set the expiration date to be 150 days from today’s date. Leave all other settings the same and generate the token.\nOnce done, please save the token in some fashion. You will not see this token again once you leave the webpage.\n\nReturn to RStudio and run the following lines of code in the console:\n\n\nlibrary(gitcreds)\ngitcreds_set()\n\nWhen prompted for the token, paste the token you created into the console and hit Enter.\nIf you are needing additional assistance, please use the following videos:\n\nConfiguring git\nPersonal Access Token (PAT)\nStoring PAT\n\n\n\nSetting Up GitHub Classroom and Future Repositories\nYour current and future RStudio environments are now linked to your GitHub account, providing you access to repositories on GitHub itself. With this in mind, we can now replicate repositories from GitHub in a process called cloning.\n\nUse the following link below to access the SDS 270 repository from GitHub Classroom:\n\nhttps://classroom.github.com/a/EHsdPrD4\n\n\nYou will go through all necessary prompts. Feel free to use this video as a resource: https://www.youtube.com/watch?v=lsQ48kn-uD0\n\nCopy the URL for your SDS 270 GitHub repo. It should look like the following link:\n\nhttps://github.com/sds270lawson/sds-270-repository-YOUR_USERNAME\n\nGo back to RStudio. At the top-left corner, click on File &gt; New Project &gt; Version Control &gt; git.\n\nPaste the URL into the first field, type a simple name for the folder in the second field, and choose an appropriate directory on your computer to house the repository. Then, click Create Project.\n\nInstall the rmarkdown package in RStudio by entering the following lines of code in the console.\n\n\ninstall.packages(\"rmarkdown\")\nlibrary(rmarkdown)\n\n\nOn the initial install, the Files tab will be in the lower right hand corner of RStudio. Open practice.qmd, and then follow the prompts in that file. Click Save.\nWe will now pull, commit, and push changes to the remote repository on GitHub. To do so, go to the Git tab on the top-right corner. From there,\n\nClick on the blue downward arrow, which pulls updates from the remote repository. This ensures we have the most recent updates.\nClick on the stacked checkmark in the same area, which will allow you to commit changes to the remote repository. Stage each file in the left column by clicking on the checkbox and add a message in the right column that briefly specifies what changes you’ve made to the repository. Click Commit thereafter.\nClick on the green upward area, which pushes updates to the remote repository. A window will pop up, showing the status of the push. If successful, you should see those updated files in your GitHub repository. You can use the URL from step 8 to verify.\n\n\nIf you are needing additional assistance, please use the following videos:\n\nConfiguring RStudio Projects\nCommitting Files\nPushing Files"
   },
   {
     "objectID": "lectures/w2l1_dataFrames.html#last-time",
@@ -1704,8 +1704,8 @@
     "objectID": "lectures/w1l2_intro.html#welcome",
     "href": "lectures/w1l2_intro.html#welcome",
     "title": "Introduction, Tech Setup, Atomic Vectors",
-    "section": "",
-    "text": "Course: SDS 270, Sect. 01\nTimes:\n\nM/W, 10:50am-12:05pm"
+    "section": "Welcome!",
+    "text": "Welcome!\n\n\n\n\n\n\n\n\n\nCourse: SDS 270, Sect. 01\nTimes:\n\nM/W, 10:50am-12:05pm"
   },
   {
     "objectID": "lectures/w1l2_intro.html#welcome-1",
@@ -2070,5 +2070,250 @@
     "title": "Exercises from Week 3, Lecture 1: Names and Values",
     "section": "Exercises",
     "text": "Exercises\n\nMeasuring Memory\nFirst, load the lobstr package. This package contains many functions that will make it easier for us to figure out what R is doing under the hood. Also load the tidyverse package.\n\nlibrary(lobstr)\n\nWarning: package 'lobstr' was built under R version 4.4.3\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nYour workspace should be empty.\n\n\n\n\n\n\nImportantQ1:\n\n\n\nUse ls() to list the objects in your workspace. If it is not empty, use the broom icon in the Environment tab in RStudio to empty it.\n\n\nBefore we do anything, how much memory is being used by our R session?\n\nmem_used()\n\n85.34 MB\n\n\nRecall that a byte is eight bits. A byte is a very small amount of information, typically used to store one character. A kilobyte is 1000 bytes, and a megabyte is 1000 kilobytes, etc. You should familiarize yourself briefly with the orders of magnitude of data.\nNow suppose we add some things to our workspace. We can add objects, functions, or load packages. Does loading a package increase the memory used by our session?\n\n\n\n\n\n\nImportantQ2:\n\n\n\nUse the library() command to load the broom package. Then check the memory usage with mem_used(). Does loading a package increase the amount of memory used? By how much?\n\n\n\n\n\n\n\n\nImportantQ3:\n\n\n\nWhat about loading a data set? Use the data() command to load the iris data set. Does that increase the memory usage? By how much?\n\n\n\n\n\n\n\n\nImportantQ4:\n\n\n\nUse obj_size() to measure the amount of memory that iris takes up. Was the increase you observed previously equal to this amount?\n\n\n\n\nMaking Copies\nAs much fun as it is to make copies, each copy occupies memory. Generally, we want to minimize the amount of memory that our code needs to run.\nLet’s store the amount of memory we are currently using.\n\nbefore &lt;- mem_used()\n\nNote the memory location of the iris data frame.\n\nref(iris)\n\n█ [1:0x212ac05e468] &lt;df[,5]&gt; \n├─Sepal.Length = [2:0x212a27ea260] &lt;dbl&gt; \n├─Sepal.Width = [3:0x212a27e9360] &lt;dbl&gt; \n├─Petal.Length = [4:0x212a27ea760] &lt;dbl&gt; \n├─Petal.Width = [5:0x212a27e8460] &lt;dbl&gt; \n└─Species = [6:0x212a08da7f0] &lt;fct&gt; \n\n\nNote that we can bind a second name my_iris to the iris data frame, without making a copy.\n\nmy_iris &lt;- iris\nref(my_iris)\n\n█ [1:0x212ac05e468] &lt;df[,5]&gt; \n├─Sepal.Length = [2:0x212a27ea260] &lt;dbl&gt; \n├─Sepal.Width = [3:0x212a27e9360] &lt;dbl&gt; \n├─Petal.Length = [4:0x212a27ea760] &lt;dbl&gt; \n├─Petal.Width = [5:0x212a27e8460] &lt;dbl&gt; \n└─Species = [6:0x212a08da7f0] &lt;fct&gt; \n\n\nNow let’s change the data frame in a way that forces a copy to be made.\n\nmy_iris &lt;- my_iris |&gt;\n  mutate(sepal_area = Sepal.Length * Sepal.Width)\nref(my_iris)\n\n█ [1:0x212a94adc68] &lt;df[,6]&gt; \n├─Sepal.Length = [2:0x212a27ea260] &lt;dbl&gt; \n├─Sepal.Width = [3:0x212a27e9360] &lt;dbl&gt; \n├─Petal.Length = [4:0x212a27ea760] &lt;dbl&gt; \n├─Petal.Width = [5:0x212a27e8460] &lt;dbl&gt; \n├─Species = [6:0x212a08da7f0] &lt;fct&gt; \n└─sepal_area = [7:0x212a27ecf60] &lt;dbl&gt; \n\n\nNote that the memory locations of my_iris and iris are not the same anymore. However, the memory locations of the underlying vectors are the same!\n\n\n\n\n\n\nImportantQ5:\n\n\n\nUse before and mem_used() to calculate how much extra memory the copy of my_iris occupies.\n\n\n\n\n\n\n\n\nImportantQ6:\n\n\n\nIs the difference you observed above equal to the size of the new column we created? Why or why not?\n\n\nDifferent representations of the same data may have different memory footprints. Suppose we change the iris data set into its long format.\n\niris_long &lt;- iris |&gt;\n  pivot_longer(-Species, names_to = \"type\", values_to = \"measurement\")\n\n\n\n\n\n\n\nImportantQ7:\n\n\n\nDoes iris_long take up the same amount of memory as iris? Why or why not?\n\n\nWe know that tibbles are like data.frames. Do they take up the same amount of memory?\n\nbefore &lt;- mem_used()\niris_tbl &lt;- iris_long |&gt;\n  as_tibble()\nmem_used() - before\n\n-6.07 kB\n\nclass(iris_tbl)\n\n[1] \"tbl_df\"     \"tbl\"        \"data.frame\"\n\n\nDoes converting a data.frame to a tbl force a copy?\n\nref(iris_tbl)\n\n█ [1:0x212a6144918] &lt;tibble[,3]&gt; \n├─Species = [2:0x212a00ed450] &lt;fct&gt; \n├─type = [3:0x212a01ddf50] &lt;chr&gt; \n└─measurement = [4:0x212a01d4750] &lt;dbl&gt; \n\nref(iris_long)\n\n█ [1:0x212a925c968] &lt;tibble[,3]&gt; \n├─Species = [2:0x212a00ed450] &lt;fct&gt; \n├─type = [3:0x212a01ddf50] &lt;chr&gt; \n└─measurement = [4:0x212a01d4750] &lt;dbl&gt; \n\n\n\n\n\n\n\n\nImportantQ8:\n\n\n\nDiscuss how using a tibble changes the memory footprint relative to using a data.frame.\n\n\n\n\nTracing memory\nUnfortunately, due to various complications and optimizations, it’s not always possible to reason ahead of time about whether R will make a copy of an object. Instead, we can use the tracemem() function to have R tell us whether it makes a copy and why.\nFirst, note the memory location of iris.\n\ntracemem(iris)\n\n[1] \"&lt;00000212AC05E468&gt;\"\n\n\nWe are now tracing this memory location. Some types of computations we make on iris do not require making a copy.\n\niris |&gt;\n  pull(Petal.Length) |&gt;\n  mean()\n\n[1] 3.758\n\n\nHowever, if we modify iris using mutate(), a copy does get made.\n\niris |&gt;\n  mutate(petal_area = Petal.Length * Petal.Width) |&gt;\n  as_tibble()\n\ntracemem[0x00000212ac05e468 -&gt; 0x000002129fcbf808]: initialize &lt;Anonymous&gt; mutate_cols mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \ntracemem[0x000002129fcbf808 -&gt; 0x000002129e834c38]: dplyr_new_list initialize &lt;Anonymous&gt; mutate_cols mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \ntracemem[0x000002129e834c38 -&gt; 0x000002129e348aa8]: dplyr_new_list initialize &lt;Anonymous&gt; mutate_cols mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \ntracemem[0x00000212ac05e468 -&gt; 0x000002129df7c418]: new_data_frame vec_data as.list dplyr_col_modify.data.frame dplyr_col_modify mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \ntracemem[0x000002129df7c418 -&gt; 0x000002129df7c808]: as.list.data.frame as.list dplyr_col_modify.data.frame dplyr_col_modify mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \n\n\n# A tibble: 150 × 6\n   Sepal.Length Sepal.Width Petal.Length Petal.Width Species petal_area\n          &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;fct&gt;        &lt;dbl&gt;\n 1          5.1         3.5          1.4         0.2 setosa        0.28\n 2          4.9         3            1.4         0.2 setosa        0.28\n 3          4.7         3.2          1.3         0.2 setosa        0.26\n 4          4.6         3.1          1.5         0.2 setosa        0.3 \n 5          5           3.6          1.4         0.2 setosa        0.28\n 6          5.4         3.9          1.7         0.4 setosa        0.68\n 7          4.6         3.4          1.4         0.3 setosa        0.42\n 8          5           3.4          1.5         0.2 setosa        0.3 \n 9          4.4         2.9          1.4         0.2 setosa        0.28\n10          4.9         3.1          1.5         0.1 setosa        0.15\n# ℹ 140 more rows\n\n\n\n\n\n\n\n\nImportantQ9:\n\n\n\nExperiment with different operations after invoking tracemem(). Can you get a feel for what operations induce copies?"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#last-time",
+    "href": "lectures/w3l2_controlFlow.html#last-time",
+    "title": "Control Flow",
+    "section": "Last Time",
+    "text": "Last Time\n\nAssignment\n\n&lt;- vs. =\n\nBinding and memory\n\nObject sizing\nConcatenation\nCopy-on-modify\nUnbinding\n\nObject size\n\n????"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#today",
+    "href": "lectures/w3l2_controlFlow.html#today",
+    "title": "Control Flow",
+    "section": "Today",
+    "text": "Today\n\nControl flow\n\nChoices\nLoops\n\n\nWe will focus on primarily Chapter 5 from Advanced R."
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#control-flow",
+    "href": "lectures/w3l2_controlFlow.html#control-flow",
+    "title": "Control Flow",
+    "section": "Control Flow",
+    "text": "Control Flow\n\nFancy talk for if/else statements and loops\n\n\nx &lt;- 1:10\n\nfor (i in 1:length(x)){\n  if (i %% 2 == 0){\n    print(\"even\")\n  } else {\n    print(\"odd\")\n  }\n}\n\n[1] \"odd\"\n[1] \"even\"\n[1] \"odd\"\n[1] \"even\"\n[1] \"odd\"\n[1] \"even\"\n[1] \"odd\"\n[1] \"even\"\n[1] \"odd\"\n[1] \"even\""
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#control-flow-1",
+    "href": "lectures/w3l2_controlFlow.html#control-flow-1",
+    "title": "Control Flow",
+    "section": "Control Flow",
+    "text": "Control Flow\n\nx &lt;- 1:10\n\nfor (i in 1:length(x)){\n  if (i %% 2 == 0){\n    print(\"even\")\n  } else {\n    print(\"odd\")\n  }\n}\n\n[1] \"odd\"\n[1] \"even\"\n[1] \"odd\"\n[1] \"even\"\n[1] \"odd\"\n[1] \"even\"\n[1] \"odd\"\n[1] \"even\"\n[1] \"odd\"\n[1] \"even\"\n\n\nQuestion 1: Describe what is going on in each part of the code step-by-step. What mechanisms are being used?"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#control-flow-2",
+    "href": "lectures/w3l2_controlFlow.html#control-flow-2",
+    "title": "Control Flow",
+    "section": "Control Flow",
+    "text": "Control Flow\n\nCan be seen in the following ways:\n\nChoices\n\nif/else and switch statements\nIncludes debugging actions (e.g. errors, tryCatch)\n\nLoops\n\nfor/while loops\n\n\nAllows us to get through one process"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#why-would-we-use-control-flow",
+    "href": "lectures/w3l2_controlFlow.html#why-would-we-use-control-flow",
+    "title": "Control Flow",
+    "section": "Why would we use control flow?",
+    "text": "Why would we use control flow?\n\nDifferent processes/outcomes for certain actions\n\ne.g. process control: stop machine if variance is high\ne.g. certain event on map: place unique symbol there\n\nRepetition across sequence\n\ne.g. multiply 3 to each element in array\n\nAutomation\n\ne.g. simulations"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#situation",
+    "href": "lectures/w3l2_controlFlow.html#situation",
+    "title": "Control Flow",
+    "section": "Situation",
+    "text": "Situation\n\nSuppose we play one half-inning of a baseball game. Keep in mind, we have the following:\n\n3 outs to end the half-inning\nFor each play, it results in a single, HR, or out (simple example)\n\n\n\nWe will use this as our motivating example for our understanding of choices and loops."
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#choices",
+    "href": "lectures/w3l2_controlFlow.html#choices",
+    "title": "Control Flow",
+    "section": "Choices",
+    "text": "Choices\n\nIn R: can be seen as if/else structure, ifelse() function, or switch() function\n\nCompletes task based on condition\ne.g. do this if single is hit, do this otherwise"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#ifelse-structure",
+    "href": "lectures/w3l2_controlFlow.html#ifelse-structure",
+    "title": "Control Flow",
+    "section": "if/else structure",
+    "text": "if/else structure\n\nif (condition){\n  # do something\n} else if (condition){\n  # do this thing\n} else {\n  # do this\n}\n\n\nWorks for conditions associated with singular values\n\nCannot do element-wise comparisons"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#example-ifelse-statement",
+    "href": "lectures/w3l2_controlFlow.html#example-ifelse-statement",
+    "title": "Control Flow",
+    "section": "Example: if/else statement",
+    "text": "Example: if/else statement\n\nWe can model the behavior of a single at-bat/play\n\n\nif (play == \"single\"){\n  onBase = onBase + 1\n} else if (play == \"homerun\"){\n  runs = onBase + runs + 1\n  onBase = 0\n} else {\n  outs = outs + 1\n}"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#activity-ifelse-statement",
+    "href": "lectures/w3l2_controlFlow.html#activity-ifelse-statement",
+    "title": "Control Flow",
+    "section": "Activity: if/else statement",
+    "text": "Activity: if/else statement\n\nif (play == \"single\"){\n  onBase = onBase + 1\n} else if (play == \"homerun\"){\n  runs = onBase + runs + 1\n  onBase = 0\n} else {\n  outs = outs + 1\n}\n\nQuestion 2: We’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3. Use some form of an if-else choice to do this."
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#ifelse",
+    "href": "lectures/w3l2_controlFlow.html#ifelse",
+    "title": "Control Flow",
+    "section": "ifelse()",
+    "text": "ifelse()\n\nSuppose I want to work with multiple logical values (i.e. element-wise comparison)\n\nUse ifelse() statement\n\nFirst argument: conditional\nSecond argument: result if element-wise condition is true\nThird argument: result if element-wise condition is false\n\n\n\n\nnums &lt;- c(2, 5, 3, 8, 1)\nifelse(nums %% 2 == 0, nums, 0)\n\n[1] 2 0 0 8 0"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#example-ifelse-statement-1",
+    "href": "lectures/w3l2_controlFlow.html#example-ifelse-statement-1",
+    "title": "Control Flow",
+    "section": "Example: if/else statement",
+    "text": "Example: if/else statement\n\nruns &lt;- c(0, 1, 0, 0, 0, 4, 0, 0, 0)\nscored &lt;- ifelse(runs &gt; 0, T, F)\nscored\n\n[1] FALSE  TRUE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#activity-ifelse-statement-1",
+    "href": "lectures/w3l2_controlFlow.html#activity-ifelse-statement-1",
+    "title": "Control Flow",
+    "section": "Activity: if/else statement",
+    "text": "Activity: if/else statement\n\nruns &lt;- c(0, 1, 0, 0, 0, 4, 0, 0, 0)\nscored &lt;- ifelse(runs &gt; 0, T, F)\nscored\n\n[1] FALSE  TRUE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE\n\n\nQuestion 3: Suppose if we have less than 0 runs, I want to output an NA. How can I change the ifelse() statement above to do this?"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#alternative-case_when",
+    "href": "lectures/w3l2_controlFlow.html#alternative-case_when",
+    "title": "Control Flow",
+    "section": "Alternative: case_when()",
+    "text": "Alternative: case_when()\n\nFrom dplyr package\n\n\nlibrary(dplyr)\ncase_when(runs &gt; 0 ~ \"True\", \n          runs == 0 ~ \"False\", \n          runs &lt; 0 ~ \"Runs are invalid.\")\n\n[1] \"False\" \"True\"  \"False\" \"False\" \"False\" \"True\"  \"False\" \"False\" \"False\""
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#switch",
+    "href": "lectures/w3l2_controlFlow.html#switch",
+    "title": "Control Flow",
+    "section": "switch()",
+    "text": "switch()\n\nUsed on a character to perform certain action\n\n\nstat = \"mean\"\nswitch(stat, \n       mean = mean(nums),\n       median = median(nums), \n       sd = sd(nums), \n       stop(\"Invalid stat request.\"))\n\n[1] 3.8"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#activity-switch",
+    "href": "lectures/w3l2_controlFlow.html#activity-switch",
+    "title": "Control Flow",
+    "section": "Activity: switch()",
+    "text": "Activity: switch()\nQuestion 4: Write a switch() function that takes a single character and does the following:\n\nPrint 1 for “single”\nPrint 4 for “home run”\nStop otherwise"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#loops",
+    "href": "lectures/w3l2_controlFlow.html#loops",
+    "title": "Control Flow",
+    "section": "Loops",
+    "text": "Loops\n\nIterating over items in a vector\n\nitem in array\nobject in sequence (e.g. i in 1:10)\n\nActions happen within loop\n\n\nfor (i in 1:10){\n  print(i)\n}\n\n[1] 1\n[1] 2\n[1] 3\n[1] 4\n[1] 5\n[1] 6\n[1] 7\n[1] 8\n[1] 9\n[1] 10"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#loops-1",
+    "href": "lectures/w3l2_controlFlow.html#loops-1",
+    "title": "Control Flow",
+    "section": "Loops",
+    "text": "Loops\n\nFor storing results from actions: use pre-filled/empty array\n\n\nresults &lt;- rep(NA, 10)\nfor (i in 1:10){\n  results[i] = i\n}"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#breaks",
+    "href": "lectures/w3l2_controlFlow.html#breaks",
+    "title": "Control Flow",
+    "section": "Breaks",
+    "text": "Breaks\n\nAdding next in if statement can break iteration, break stops for loop\n\nUseful if only utilizing some situations\n\n\n\nfor (i in 1:10){\n  if (i &lt; 3){\n    next\n  } else if (i &gt; 7){\n    break\n  }\n  print(i)\n}\n\n[1] 3\n[1] 4\n[1] 5\n[1] 6\n[1] 7"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#for-loop-notes",
+    "href": "lectures/w3l2_controlFlow.html#for-loop-notes",
+    "title": "Control Flow",
+    "section": "For-loop notes",
+    "text": "For-loop notes\n\nPre-allocating the output container is recommended\n\nReplacement is more efficient than adding to the output container\ne.g. vector(\"list\", length(x)), rep(-1, length(x))\n\nBe careful about the vector you iterate over\n\n: can iterate 1 up or 1 down\nSpecify which vector to iterate through"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#activity-loops",
+    "href": "lectures/w3l2_controlFlow.html#activity-loops",
+    "title": "Control Flow",
+    "section": "Activity: Loops",
+    "text": "Activity: Loops\n\nif (play == \"single\"){\n  onBase = onBase + 1\n} else if (play == \"homerun\"){\n  runs = onBase + runs + 1\n  onBase = 0\n} else {\n  outs = outs + 1\n}\n\nQuestion 5: Write a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for outs and runs in individual data structures.\nUse the following line of code to determine the play:\n\nplays &lt;- sample(c(\"single\", \"homerun\", \"out\"), 20, prob = c(0.25, 0.05, 0.7), replace = T)"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#while-loops-and-repeats",
+    "href": "lectures/w3l2_controlFlow.html#while-loops-and-repeats",
+    "title": "Control Flow",
+    "section": "While loops and repeats",
+    "text": "While loops and repeats\n\nTwo specific types of for loops:\n\nwhile loops: repeat until condition is not satisfied\nrepeat: repeat forever until break occurs"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#example-while-loop",
+    "href": "lectures/w3l2_controlFlow.html#example-while-loop",
+    "title": "Control Flow",
+    "section": "Example: while loop",
+    "text": "Example: while loop\n\nxVal = 6\nwhile(xVal &lt; 10){\n  print(xVal)\n  xVal &lt;- xVal + 1\n}\n\n[1] 6\n[1] 7\n[1] 8\n[1] 9"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#activity-while-loop",
+    "href": "lectures/w3l2_controlFlow.html#activity-while-loop",
+    "title": "Control Flow",
+    "section": "Activity: while loop",
+    "text": "Activity: while loop\n\nif (play == \"single\"){\n  onBase = onBase + 1\n} else if (play == \"homerun\"){\n  runs = onBase + runs + 1\n  onBase = 0\n} else {\n  outs = outs + 1\n}\n\nQuestion 6: Write a while-loop that continues the out operation until 3 outs are recorded, storing the results for outs and runs in individual data structures.\nUse the following line of code to determine a single play:\n\nplay &lt;- sample(c(\"single\", \"homerun\", \"out\"), 1, prob = c(0.25, 0.05, 0.7), replace = T)"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#the-argument-against-for-loops",
+    "href": "lectures/w3l2_controlFlow.html#the-argument-against-for-loops",
+    "title": "Control Flow",
+    "section": "The argument against for loops",
+    "text": "The argument against for loops\n\nR succeeds when using vectorized operations\n\ne.g. colSums(), adding two vectors together\nA for-loop does so element by element, making things slow\n\nIf possible:\n\nUse an apply() function\nUse the map() function"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#apply-function",
+    "href": "lectures/w3l2_controlFlow.html#apply-function",
+    "title": "Control Flow",
+    "section": "apply() function",
+    "text": "apply() function\n\nFunctional operation, usually done on a list (or data frame)\napply(x, margin, function)\n\nx is an array\nmargin specifies direction function will be applied over\n\n1 for function completed on each row, 2 on each column\n\nfunction is the function being applied to object"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#map-function",
+    "href": "lectures/w3l2_controlFlow.html#map-function",
+    "title": "Control Flow",
+    "section": "map() function",
+    "text": "map() function\n\n# For loop\ny &lt;- list()\nfor (i in seq_along(x)) {\n  y[[i]] &lt;- my_fun(i) \n}\n\n# Map\ny &lt;- map(x, my_fun)"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#example-matrix",
+    "href": "lectures/w3l2_controlFlow.html#example-matrix",
+    "title": "Control Flow",
+    "section": "Example: matrix",
+    "text": "Example: matrix\n\nmyMat &lt;- matrix(rnorm(100, 0, 1), nrow = 5, ncol = 20)\n\n\ntimerFor &lt;- Sys.time()\ncolumnSums &lt;- rep(-1, ncol(myMat))\nfor (i in 1:ncol(myMat)){\n  columnSums[i] &lt;- sum(myMat[, i])\n}\nSys.time() - timerFor\n\nTime difference of 0.004012108 secs"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#example-matrix-1",
+    "href": "lectures/w3l2_controlFlow.html#example-matrix-1",
+    "title": "Control Flow",
+    "section": "Example: matrix",
+    "text": "Example: matrix\n\ntimerApply &lt;- Sys.time()\napply(myMat, 2, sum)\n\n [1]  0.233230810 -0.037741957 -3.959677695  0.240398925 -2.028458866\n [6] -2.898748266 -0.189736376  2.622302096 -1.954573609  0.165418544\n[11]  2.677580601  1.766289736  0.639146689 -1.439831270  0.118125089\n[16] -0.006175908  3.665209169 -3.270030286  2.094859421  2.823578100\n\nSys.time() - timerApply\n\nTime difference of 0.001739025 secs"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#example-matrix-2",
+    "href": "lectures/w3l2_controlFlow.html#example-matrix-2",
+    "title": "Control Flow",
+    "section": "Example: matrix",
+    "text": "Example: matrix\n\ntimerColSums &lt;- Sys.time()\ncolSums(myMat)\n\n [1]  0.233230810 -0.037741957 -3.959677695  0.240398925 -2.028458866\n [6] -2.898748266 -0.189736376  2.622302096 -1.954573609  0.165418544\n[11]  2.677580601  1.766289736  0.639146689 -1.439831270  0.118125089\n[16] -0.006175908  3.665209169 -3.270030286  2.094859421  2.823578100\n\nSys.time() - timerColSums\n\nTime difference of 0.003336906 secs"
+  },
+  {
+    "objectID": "lectures/w3l2_controlFlow.html#for-now-and-monday",
+    "href": "lectures/w3l2_controlFlow.html#for-now-and-monday",
+    "title": "Control Flow",
+    "section": "For now and Monday:",
+    "text": "For now and Monday:\n\nRead Advanced R: chapter 6\nSecond problem set assigned\n\nDue next Friday, 2/20 at 11:59pm"
+  },
+  {
+    "objectID": "lectures/w1l2_intro.html#happy-snow-day",
+    "href": "lectures/w1l2_intro.html#happy-snow-day",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Happy Snow Day!!",
+    "text": "Happy Snow Day!!"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#for-now-and-next-week",
+    "href": "lectures/w1l1_intro.html#for-now-and-next-week",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "For Now and Next Week:",
+    "text": "For Now and Next Week:\n\nGitHub setup\n\nUse tech setup instructions\nComplete practice.qmd and exs1.qmd files\n\nRead through syllabus\nPre-course survey\nRead chapters 1, 3 of Advanced R\nOffice hours today from 3-4pm!!"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#happy-snow-day",
+    "href": "lectures/w1l1_intro.html#happy-snow-day",
+    "title": "Introduction, Tech Setup, Atomic Vectors",
+    "section": "Happy Snow Day!!",
+    "text": "Happy Snow Day!!"
   }
 ]

@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jericho Lawson">
-<meta name="dcterms.date" content="2026-01-28">
+<meta name="author" content="Jericho Lawson   Statistical &amp; Data Sciences, Smith College   Spring 2026  ">
 
-<title>Tech Setup (2 pts) – SDS 270: Programming for Data Science in R, Spring 2026</title>
+<title>Week 3, Lecture 2: ggplot2 – SDS 192: Introduction to Data Science, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">SDS 270: Programming for Data Science in R, Spring 2026</span>
+    <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -151,7 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"><iconify-icon icon="fa6-brands:slack"></iconify-icon></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com"> 
+    <a class="nav-link" href="https://github.com/"> 
 <span class="menu-text"><iconify-icon icon="fa6-brands:github"></iconify-icon></span></a>
   </li>  
 </ul>
@@ -171,13 +170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#slack" id="toc-slack" class="nav-link" data-scroll-target="#slack">Slack</a></li>
-  <li><a href="#r-and-rstudio" id="toc-r-and-rstudio" class="nav-link" data-scroll-target="#r-and-rstudio">R and RStudio</a></li>
-  <li><a href="#git-github-and-github-classroom" id="toc-git-github-and-github-classroom" class="nav-link" data-scroll-target="#git-github-and-github-classroom">git, GitHub, and GitHub Classroom</a>
-  <ul class="collapse">
-  <li><a href="#setting-up-your-r-environment" id="toc-setting-up-your-r-environment" class="nav-link" data-scroll-target="#setting-up-your-r-environment">Setting Up Your R Environment</a></li>
-  <li><a href="#setting-up-github-classroom-and-future-repositories" id="toc-setting-up-github-classroom-and-future-repositories" class="nav-link" data-scroll-target="#setting-up-github-classroom-and-future-repositories">Setting Up GitHub Classroom and Future Repositories</a></li>
-  </ul></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   </ul>
 </nav>
     </div>
@@ -186,8 +179,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tech Setup (2 pts)</h1>
-<p class="subtitle lead">SDS 270: Programming for Data Science in R, Spring 2026</p>
+<h1 class="title">Week 3, Lecture 2: <code>ggplot2</code></h1>
+<p class="subtitle lead">SDS 192: Introduction to Data Science</p>
 </div>
 
 
@@ -197,16 +190,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Jericho Lawson </p>
+             <p>Jericho Lawson<br> <span style="font-size: 70%;"> <a href="http://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> </span> Spring 2026 <br> </p>
           </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 28, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -216,176 +203,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Updates to this document are indicated in <span style="color:red;">red.</span></p>
-</div>
-</div>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>You will be setting up all software and applications that are needed to complete and submit assignments of various forms in SDS 270. We will set up the following tools in this setup:</p>
+<p>In this activity, you will generate and replicate several plots based on the California Housing dataset, which analyzes housing information from the 1990 U.S. census. More information can be found here: <a href="https://www.kaggle.com/datasets/camnugent/california-housing-prices">link</a></p>
+<p>Make sure to create a .qmd file in your Activities repository first.</p>
+<p>To import the dataset into your machine, do the following:</p>
+<ol type="1">
+<li>Import the ‘housing.csv’ file using the following URL and code:</li>
+</ol>
 <ul>
-<li>Slack</li>
-<li>R and RStudio (skip if you already have both)</li>
-<li>GitHub Classroom</li>
+<li>https://jericholawson.github.io/classes/sds192/data/housing.csv</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>As you get everything set up, if you run into any hiccups along the way, there are many ways to get help:</p>
-<ol type="1">
-<li>Ask questions in Slack. There will be a <code>#techissues</code> channel dedicated for this purpose.
-<ul>
-<li>Make sure to be specific in your issue. Indicate which step you are stuck on and include any screenshots.</li>
-</ul></li>
-<li>Feel free to DM me on Slack or via email. With some more complex issues, I can provide some guidance.</li>
-<li>Ask about these issues in student hours or at the Spinelli Center.</li>
-</ol>
-</div>
-</div>
-</section>
-<section id="slack" class="level2">
-<h2 class="anchored" data-anchor-id="slack">Slack</h2>
-<p>Slack will be used as a discussion forum, in which you can ask and answer clarifying questions to the whole class, provide perspectives on situations discussed in lab assignments, and find out announcements about the class on a day-to-day basis.</p>
-<p>If you run into hiccups with this part, Smith’s ITS department has some quick hints <a href="https://its.smith.edu/slack">here</a>.</p>
-<p>Nonetheless, to set up Slack, you will do the following:</p>
-<ol type="1">
-<li>Accept the Slack invitation via email from this course. Follow the directions in order to get into the course.</li>
-<li>You will see some of the following channels below. Go to the #general channel, go to my “Welcome” post, and reply to the thread with a random fact of your choice.</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/slackchannels.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
-</figure>
-</div>
-<ol start="3" type="1">
-<li><em>Optional, but recommended:</em> Turn on notifications from this workspace (this should already be toggled, but double-check to be sure.) Also, you may be encouraged to download and install Slack on your laptops and phones.</li>
-</ol>
-</section>
-<section id="r-and-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="r-and-rstudio">R and RStudio</h2>
-<p>R and RStudio will collectively make up the coding tools we will use to run through data science examples and assignments. R is the coding language that many statisticians and data scientists use to generate data visualizations, complete data wrangling, and run analyses. RStudio is the application that we use to interact with R, formally known as an IDE (i.e.&nbsp;Integrated Development Environment). We will use RStudio particularly when writing R code and walking through problems.</p>
-<p>We will need to download and install R and RStudio onto our laptops. If you are running a web-based operating system (e.g.&nbsp;ChromeOS), you will have to use <a href="https://posit.cloud/">Posit Cloud</a> to run R. Instructions to use Posit Cloud can be seen at the bottom of this section.</p>
-<p>For everyone else (e.g.&nbsp;Windows, Mac, Linux), you will download and install R and RStudio using these instructions:</p>
-<ol type="1">
-<li>Go to the following link <a href="https://posit.co/download/rstudio-desktop/">here</a>.</li>
-<li>Install R first by clicking on “Download and Install R”, which can be found on the left side of the page.</li>
-<li>You will be redirected to <a href="https://cran.rstudio.com/">https://cran.rstudio.com/</a>.
-<ul>
-<li>Windows: Click on the link to “Download R for Windows”, choose “install R for the first time”, then choose “Download R 4.5.2 for Windows”.</li>
-<li>MacOS: Click “Download R for (Mac) OS X”. Download the install package for version R-4.5.2. Read the information carefully to determine which of the two versions to download.</li>
-<li>Linux: Click on the link to “Download R for Linux”. You will need to choose the version of Linux that corresponds to your installation. Versions are available for Debian, RedHat, SUSE, and Ubuntu.</li>
-</ul></li>
-<li>Once the R file has been downloaded, please install R by opening the file. Follow all prompts as necessary, keeping things as defaulted as possible.</li>
-<li>Go back to the Posit webpage and follow step 2 on the page by clicking “Download RStudio Desktop for ____”. Once downloaded, install RStudio by opening the file. Follow all prompts as necessary.</li>
-</ol>
-<p>For those using Posit Cloud:</p>
-<ol type="1">
-<li>Click the Login button located at the top-right corner of the screen.</li>
-<li>Sign-in using either Google or GitHub.</li>
-</ol>
-<p>If you have trouble installing and downloading R/RStudio, we will have some time at the beginning of the first lab to walk through any issues you all have.</p>
-</section>
-<section id="git-github-and-github-classroom" class="level2">
-<h2 class="anchored" data-anchor-id="git-github-and-github-classroom">git, GitHub, and GitHub Classroom</h2>
-<p>We will be using git commands, GitHub, and GitHub classroom to collaborate with others on coding and projects, submit coding-relative activities and assignments, and get familiar with data science workflows.</p>
-<p>To differentiate between the terms, when referring to “git”, this refers to the software and commands associated with tracking changes in files during software development. The actions “push”, “pull”, “commit”, and others will pop up and we will discuss these in detail throughout the semester. GitHub refers to the application that utilizes the git system to aid in these processes. GitHub Classroom is a special use of GitHub that will allow for specific repositories to be linked to our classroom.</p>
-<p>A few actions need to happen to set these items up, which you’ll see in the subsections below.</p>
-<section id="setting-up-your-r-environment" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-your-r-environment">Setting Up Your R Environment</h3>
-<p>If you have any troubles, you can use the <a href="https://happygitwithr.com/">Happy Git with R</a> textbook for assistance.</p>
-<ol type="1">
-<li><p>Go to GitHub and create a GitHub account (if you don’t have one), preferably with your smith.edu account. Setup account details.</p></li>
-<li><p>Open RStudio on your laptop.</p></li>
-<li><p>Check to ensure you have git installed by opening RStudio and clicking on <code>Tools &gt; Global Options &gt; Git/SVN</code> tab. Check the top of the pane for a field for the Git executable. It should say something like: “/usr/bin/git” or “C:/Program Files/Git/”. If it says “(Not Found)” git is not installed.</p></li>
-<li><p>In the R console (bottom-left corner), you will input and hit Enter for each of these lines of code (replace what it is in the quotations with your info):</p></li>
-</ol>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"usethis"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(usethis)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"PUT GITHUB USERNAME HERE"</span>, <span class="at">user.email =</span> <span class="st">"PUT GITHUB EMAIL HERE"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>housing <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://jericholawson.github.io/classes/sds192/data/housing.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<ol type="1">
+<li><p>Identify the number of observations and variables in this dataset.</p></li>
+<li><p>Determine which variables are numerical and categorical.</p></li>
+<li><p>Recreate the following plot you see below using the <code>housing</code> dataset and <code>ggplot2</code>.</p></li>
+</ol>
+<p><img src="images/act5/plot1.png" class="img-fluid"></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># RECREATE PLOT HERE</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ol start="4" type="1">
+<li>Using code from the last problem, add to your code such that you are able to generate the following image:</li>
+</ol>
+<p><img src="images/act5/plot2.png" class="img-fluid"></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># RECREATE PLOT HERE</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Hint: Once you find the correct scale function, please look through the help file and find a diverging palette that matches the above chart.</p>
+<blockquote class="blockquote">
+<p>Question for Reflection: Note how in this plot, the x and y axis don’t start at 0. Why might it be ok here vs.&nbsp;in other kinds of plots?</p>
+</blockquote>
 <ol start="5" type="1">
-<li>Put the following line of code in the console:</li>
+<li>Recreate the following plot you see below using the <code>housing</code> dataset and <code>ggplot2</code>.</li>
 </ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_github_token</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Define a name for the token and set the expiration date to be 150 days from today’s date. Leave all other settings the same and generate the token.</p>
-<p>Once done, please save the token in some fashion. You will not see this token again once you leave the webpage.</p>
+<p><img src="images/act5/plot3.png" class="img-fluid"></p>
 <ol start="6" type="1">
-<li>Return to RStudio and run the following lines of code in the console:</li>
+<li>Create one of the following plots below based on some combination of variables <code>OCEAN_PROXIMITY</code>, <code>median_income</code>, and <code>housing_median_age</code>. Make sure to have an appropriate title, axis labels, and appropriate scaling. Consider what each point represents in the data.</li>
 </ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gitcreds)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gitcreds_set</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>When prompted for the token, paste the token you created into the console and hit Enter.</p>
-<p>If you are needing additional assistance, please use the following videos:</p>
-<ul>
-<li><a href="https://muse.ai/v/JLaUt3v-Configure-Git">Configuring git</a></li>
-<li><a href="https://muse.ai/v/evn3xvX-Create-a-Personal-Access-Token-PAT-on-GitHub">Personal Access Token (PAT)</a></li>
-<li><a href="https://muse.ai/v/NUGdUDd-Store-Personal-Access-Token-to-Connect-RStudio-and-GitHub">Storing PAT</a></li>
-</ul>
-</section>
-<section id="setting-up-github-classroom-and-future-repositories" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-github-classroom-and-future-repositories">Setting Up GitHub Classroom and Future Repositories</h3>
-<p>Your current and future RStudio environments are now linked to your GitHub account, providing you access to repositories on GitHub itself. With this in mind, we can now replicate repositories from GitHub in a process called <strong>cloning</strong>.</p>
-<ol start="7" type="1">
-<li>Use the following link below to access the SDS 270 repository from GitHub Classroom:
-<ul>
-<li><a href="https://classroom.github.com/a/EHsdPrD4">https://classroom.github.com/a/EHsdPrD4</a></li>
-</ul></li>
-</ol>
-<p>You will go through all necessary prompts. Feel free to use this video as a resource: <a href="https://www.youtube.com/watch?v=lsQ48kn-uD0">https://www.youtube.com/watch?v=lsQ48kn-uD0</a></p>
-<ol start="8" type="1">
-<li>Copy the URL for your SDS 270 GitHub repo. It should look like the following link:
-<ul>
-<li>https://github.com/sds270lawson/sds-270-repository-YOUR_USERNAME</li>
-</ul></li>
-<li>Go back to RStudio. At the top-left corner, click on File &gt; New Project &gt; Version Control &gt; git.</li>
-</ol>
-<p>Paste the URL into the first field, type a simple name for the folder in the second field, and choose an appropriate directory on your computer to house the repository. Then, click Create Project.</p>
-<ol start="10" type="1">
-<li>Install the <code>rmarkdown</code> package in RStudio by entering the following lines of code in the console.</li>
-</ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rmarkdown)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<ol start="11" type="1">
-<li><p>On the initial install, the Files tab will be in the lower right hand corner of RStudio. Open practice.qmd, and then follow the prompts in that file. Click Save.</p></li>
-<li><p>We will now pull, commit, and push changes to the remote repository on GitHub. To do so, go to the Git tab on the top-right corner. From there,</p>
-<ul>
-<li>Click on the blue downward arrow, which <em>pulls</em> updates from the remote repository. This ensures we have the most recent updates.</li>
-<li>Click on the stacked checkmark in the same area, which will allow you to <em>commit</em> changes to the remote repository. <em>Stage</em> each file in the left column by clicking on the checkbox and add a message in the right column that briefly specifies what changes you’ve made to the repository. Click Commit thereafter.</li>
-<li>Click on the green upward area, which <em>pushes</em> updates to the remote repository. A window will pop up, showing the status of the push. If successful, you should see those updated files in your GitHub repository. You can use the URL from step 8 to verify.</li>
-</ul></li>
-</ol>
-<p>If you are needing additional assistance, please use the following videos:</p>
-<ul>
-<li><a href="https://muse.ai/v/Way9iir-How-to-Connect-RStudio-Projects-with-GitHub-Repositories-GitHub-First">Configuring RStudio Projects</a></li>
-<li><a href="https://muse.ai/v/GrXBX2t-Make-a-Commit-and-View-More-History">Committing Files</a></li>
-<li><a href="https://muse.ai/v/UJmQE7i-General-Workflow-Push">Pushing Files</a></li>
-</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

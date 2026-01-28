@@ -9,8 +9,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.23">
 
-  <meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 1, Lecture 2   ">
-  <title>SDS 270: Programming for Data Science in R, Spring 2026 – Introduction, Tech Setup, Atomic Vectors</title>
+  <meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 3, Lecture 2   ">
+  <title>SDS 192: Introduction to Data Science, Spring 2026 – The Amazing World of ggplot2</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -95,7 +95,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d6e63345cf67137bc1108e1163542401.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-7612a07f8f44e9501993fad241a36b13.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -194,489 +194,395 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introduction, Tech Setup, Atomic Vectors</h1>
-  <p class="subtitle">SDS 270: Programming for Data Science in R</p>
+  <h1 class="title">The Amazing World of <code>ggplot2</code></h1>
+  <p class="subtitle">SDS 192: Introduction to Data Science</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 1, Lecture 2 </span> <br> 
+<br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 3, Lecture 2 </span> <br> 
 </div>
 </div>
 </div>
 
 </section>
-<section id="happy-snow-day" class="slide level2">
-<h2>Happy Snow Day!!</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/snow1.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/snow2.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div></div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/snow3.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</section>
-<section id="welcome" class="slide level2">
-<h2>Welcome!</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/sdslogo.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div><div class="column" style="width:60%;">
+<section id="last-time" class="slide level2">
+<h2>Last Time</h2>
 <ul>
-<li><strong>Course:</strong> SDS 270, Sect. 01</li>
-<li><strong>Times:</strong>
+<li>Data visualizations
 <ul>
-<li>M/W, 10:50am-12:05pm</li>
-</ul></li>
-</ul>
-</div></div>
-</section>
-<section id="welcome-1" class="slide level2">
-<h2>Welcome!</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<ul>
-<li><strong>Instructor:</strong> Jericho Lawson<br>
-</li>
-<li><strong>Location:</strong> McConnell 207<br>
-</li>
-<li><strong>Office Hours:</strong>
-<ul>
-<li>M, 3-4pm</li>
-<li>F 10am-12pm</li>
-</ul></li>
-<li><strong>Email:</strong> <a href="mailto:jlawson01@smith.edu">jlawson01@smith.edu</a></li>
-</ul>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/jericholawson.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="what-youve-done" class="slide level2">
-<h2>What you’ve done!</h2>
-<ul>
-<li>Data wrangling (i.e.&nbsp;<code>dplyr</code>)</li>
-<li>Data visualization (i.e.&nbsp;<code>ggplot2</code>)</li>
-<li>Universal programming concepts</li>
-<li>Data types</li>
-<li>Some structures in R (i.e.&nbsp;functions, if/else statements)</li>
-<li>Basic version control (i.e.&nbsp;GitHub)</li>
-</ul>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/ex1.png" class="quarto-figure quarto-figure-center" style="width:65.0%"></p>
-</figure>
-</div>
-<div class="columns">
-<div class="column" style="width:65%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/ex2.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
-</figure>
-</div>
-</div><div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/ex3.png" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
-</figure>
-</div>
-</div></div>
-<blockquote>
-<p>Sources: <a href="https://www.nytimes.com/interactive/2025/11/04/us/elections/results-virginia-governor.html">NYT</a>, <a href="https://compadre-db.org/">Compadre DB</a>, <a href="https://www.theatlantic.com/technology/2025/11/chatgpt-third-anniversary/685084/">The Atlantic</a></p>
-</blockquote>
-</section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/ex4.jpg" class="quarto-figure quarto-figure-center" style="width:65.0%"></p>
-</figure>
-</div>
-<div class="columns">
-<div class="column" style="width:65%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/ex5.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
-</figure>
-</div>
-</div><div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/ex6.png" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
-</figure>
-</div>
-</div></div>
-<blockquote>
-<p>Sources: <a href="https://posit.co/blog/shiny-python-in-positron/">Posit</a>, <a href="https://github.com/HzaCode/Athlytics">Athlytics Documentation</a>, <a href="https://adv-r.hadley.nz/base-types.html">Advanced R</a></p>
-</blockquote>
-</section>
-<section id="what-you-will-do" class="slide level2 smaller">
-<h2>What you will do!</h2>
-<ul>
-<li>Explore the functionality within R
-<ul>
-<li>How does R WORK?</li>
-</ul></li>
-<li>Write deeper-level R code
-<ul>
-<li>e.g.&nbsp;objects, functions, files</li>
-</ul></li>
-<li>Organize code and make it more efficient/robust
-<ul>
-<li>e.g.&nbsp;repository organization, debugging, advanced features</li>
-</ul></li>
-<li>Create an R package through collaborative work
-<ul>
-<li>through GitHub with intended theme and organization</li>
+<li>Introduction</li>
+<li>Taxonomy</li>
+<li>Conventions and critiques</li>
+<li>5NG</li>
+<li>Activity</li>
 </ul></li>
 </ul>
 </section>
-<section id="structure" class="slide level2">
-<h2>Structure</h2>
+<section id="for-today" class="slide level2 smaller">
+<h2>For Today</h2>
 <ul>
-<li>Lectures
+<li>Visualizations (a review)</li>
+<li><code>ggplot</code>
 <ul>
-<li>Slide decks</li>
-<li>In-class activities (10%)</li>
-<li>Demos</li>
-<li>Bring your computer!!</li>
+<li>What it is and why?</li>
+<li>Layering</li>
+<li>Syntax</li>
+<li>Aesthetics, scaling, and context</li>
+<li>Activity</li>
 </ul></li>
-<li>Outside class
+<li>base R (given time)
 <ul>
-<li>Readings</li>
-<li>Problem sets (20%)</li>
-</ul></li>
-</ul>
-</section>
-<section id="structure-cont." class="slide level2">
-<h2>Structure (cont.)</h2>
-<ul>
-<li>Exams
-<ul>
-<li>First exam (2/25): Closed-note written</li>
-<li>Second exam (3/30): Open-note, open-laptop</li>
-<li><em>May include oral parts</em></li>
-</ul></li>
-<li>Package
-<ul>
-<li>Series of checkpoints</li>
-<li>Demo and whole package with documentation</li>
+<li>Syntax</li>
 </ul></li>
 </ul>
 </section>
-<section id="textbooks" class="slide level2">
-<h2>Textbooks</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="the-amazing-world-of-ggplot" class="slide level2">
+<h2>The Amazing World of <code>ggplot</code></h2>
 <ul>
-<li><a href="https://adv-r.hadley.nz/">Advanced R</a></li>
+<li>System/package for creating graphics
+<ul>
+<li>Based on <em>The Grammar of Graphics</em></li>
+<li>Layers! Lots of them</li>
+<li>Used by statisticians and data scientists</li>
+</ul></li>
+<li>Part of <code>tidyverse</code>
+<ul>
+<li>Use <code>library(ggplot2)</code> to access in environment</li>
+</ul></li>
 </ul>
+</section>
+<section id="ggplot-vs.-base-r" class="slide level2">
+<h2><code>ggplot</code> vs.&nbsp;Base R</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/lec1textbookMain.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+<p><img data-src="images/lect5/ex6.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><a href="https://r-pkgs.org/">R Packages</a></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
+<div class="quarto-figure quarto-figure-left">
 <figure>
-<p><img data-src="images/lec1textbookSec.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+<p><img data-src="images/lect5/ex1.png" class="quarto-figure quarto-figure-left" style="width:80.0%"></p>
 </figure>
 </div>
-</div></div>
 </section>
-<section id="so-generative-ai" class="slide level2">
-<h2>So… generative AI?</h2>
+<section id="ggplot" class="slide level2">
+<h2><code>ggplot</code></h2>
 <ul>
-<li>Fine for pre-writing activities and code editing
+<li>We will generate plots using <code>ggplot</code></li>
+<li>data <span class="math inline">\(\rightarrow\)</span> mapping <span class="math inline">\(\rightarrow\)</span> layers
 <ul>
-<li>Prohibited on code structure, prose, exams, and package
-<ul>
-<li>Will be reported to AIB</li>
-</ul></li>
-</ul></li>
-<li>Think of generative AI as a tool, not your personal assistant</li>
-</ul>
-</section>
-<section id="resources" class="slide level2 smaller">
-<h2>Resources</h2>
-<ul>
-<li><a href="https://jericholawson.github.io/classes/sds270/s26">Website</a>
-<ul>
-<li>Certified Moodle hater</li>
-</ul></li>
-<li><a href="https://sds-270-01-202603.slack.com">Slack</a>
-<ul>
-<li>Discuss clarifying questions with class, message me with questions</li>
-</ul></li>
-<li>Student hours
-<ul>
-<li>M, 3-4pm and F, 10am-12pm</li>
-<li>McConnell 207</li>
-</ul></li>
-<li>Email
-<ul>
-<li>Can email me at <a href="mailto:jlawson01@smith.edu">jlawson01@smith.edu</a></li>
+<li>Start with data, specify its mapping to visual cues, layer with information</li>
 </ul></li>
 </ul>
 </section>
-<section id="who-am-i" class="slide level2 smaller">
-<h2>Who am I?</h2>
-<p>Call me Jericho, but if you prefer, Professor Lawson or Dr.&nbsp;Lawson is okay!</p>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/jerichoHikes.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
+<section id="ggplot-1" class="slide level2">
+<h2><code>ggplot</code></h2>
+
+<img data-src="images/lect6/layers.png" class="quarto-figure quarto-figure-center r-stretch"><ul>
+<li>Visuals are built upon each other using <code>+</code> operator</li>
+</ul>
+</section>
+<section id="motivating-dataset" class="slide level2">
+<h2>Motivating Dataset</h2>
+<ul>
+<li>This dataset comes from <a href="https://pioneervalleydata.org/data-download-page/">Pioneer Valley Data</a> and documents estimates of population characteristics for each municipality in the Pioneer Valley.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a></a>pioneer_valley_census_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/SDS-192-Intro/SDS-192-public-website/main/slides/datasets/pioneer_valley_census.csv"</span>)</span>
+<span id="cb1-4"><a></a>hampshire_census_data <span class="ot">&lt;-</span> pioneer_valley_census_data <span class="sc">%&gt;%</span> </span>
+<span id="cb1-5"><a></a>  <span class="fu">filter</span>(COUNTY <span class="sc">==</span> <span class="st">"Hampshire"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div><div class="column" style="width:70%;">
+</section>
+<section id="parts-i-and-ii-data-and-mapping" class="slide level2">
+<h2>Parts I and II: Data and Mapping</h2>
 <ul>
-<li>Lecturer of Statistical and Data Sciences</li>
-<li>Research interests: variable selection, imaging, machine learning</li>
-<li>My college journey:
+<li>We start with data and mapping through the <code>ggplot()</code> function
 <ul>
-<li>Ph.D.&nbsp;in Applied Statistics from UC Riverside</li>
-<li>M.S. in Statistics from UC Riverside</li>
-<li>B.S. in Applied Mathematics; Statistics and Data Science from University of Arizona</li>
+<li>Two required arguments:
+<ul>
+<li><code>data</code>: data frame or tibble used to produce plot</li>
+<li><code>mapping</code>: variables from data set associated with various aesthetics
+<ul>
+<li>Mappings defined within <code>aes()</code> function</li>
+<li>Specify <code>x</code> and <code>y</code> here for Cartesian plots</li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
-</div></div>
 </section>
-<section id="who-am-i-1" class="slide level2 smaller">
-<h2>Who am I?</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/jerichoHikes.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
+<section id="example-hampshire-county-data-data-mapping" class="slide level2 smaller">
+<h2>Example: Hampshire County Data (Data &amp; Mapping)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> hampshire_census_data,</span>
+<span id="cb2-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, <span class="at">y =</span> CEN_EARLYED))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
 </div>
-</div><div class="column" style="width:70%;">
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+<section id="learning-checks" class="slide level2">
+<h2>Learning Checks</h2>
 <ul>
-<li>From Arizona!!
-<ul>
-<li>Will either hear me talk about the state or the Suns</li>
-</ul></li>
-<li>Hiker, foodie, and explorer!</li>
+<li>What’s the scale of the x-axis in the plot you just created?</li>
+<li>What’s the scale of the y-axis?</li>
+<li>What else is needed in the plot?</li>
 </ul>
-</div></div>
+
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="part-iii-wheres-the-data-we-need-layers" class="slide level2">
+<h2>Part III: Where’s the Data? We Need Layers!</h2>
+<ul>
+<li>In the previous plot, we told <code>R</code> <em>what</em> variables to plot, but we didn’t indicate <em>how</em> to plot them.</li>
+<li>We need to stack <em>layers</em> on top of the data and mapping
+<ul>
+<li>Layer defines <em>geometry</em>, <em>statistical transformation</em> and <em>position adjustment</em></li>
+<li>Done via a <em>geom function</em> to be added (i.e.&nbsp;<code>+</code>) to our <code>ggplot</code> call</li>
+</ul></li>
+</ul>
 </section>
-<section id="activity" class="slide level2 smaller scrollable">
+<section id="layers-geom-function-with-the-5ngs" class="slide level2">
+<h2>Layers: <code>geom</code> Function with the 5NGs</h2>
+<ul>
+<li>Line graphs: <code>geom_line()</code></li>
+<li>Histograms: <code>geom_histogram()</code></li>
+<li>Bar plots: <code>geom_bar()</code>, <code>geom_col</code></li>
+<li>Box plots: <code>geom_boxplot()</code></li>
+<li>Scatter plots: <code>geom_point()</code></li>
+</ul>
+</section>
+<section id="example-hampshire-county-data-data-mapping-layering" class="slide level2 smaller">
+<h2>Example: Hampshire County Data (Data, Mapping, &amp; Layering)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># data, mapping, and layer</span></span>
+<span id="cb3-2"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> hampshire_census_data, </span>
+<span id="cb3-3"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, <span class="at">y =</span> CEN_EARLYED)) <span class="sc">+</span></span>
+<span id="cb3-4"><a></a>  <span class="fu">geom_col</span>() <span class="co"># adds bar plot layering</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<section id="learning-check" class="slide level2">
+<h2>Learning Check</h2>
+<ul>
+<li>What variables are mapped on to what <em>visual cues</em> in this plot?</li>
+<li>What else can be <em>improved/done</em> with this plot?</li>
+</ul>
+
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<section id="part-iv-scales" class="slide level2">
+<h2>Part IV: Scales</h2>
+<ul>
+<li>Scales are important for translating meaningful differences in data</li>
+<li>Functions are written as <code>scale_{aesthetic}_{type}()</code>
+<ul>
+<li>Terms of colors, intervals, etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="example-hampshire-county-data-with-scaling" class="slide level2 smaller">
+<h2>Example: Hampshire County Data (with Scaling)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> hampshire_census_data, </span>
+<span id="cb4-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, <span class="at">y =</span> CEN_EARLYED, <span class="at">fill =</span> CEN_POVRATE)) <span class="sc">+</span></span>
+<span id="cb4-3"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb4-4"><a></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"gray"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="co"># adds scaling based on fill</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<section id="part-v-facets" class="slide level2">
+<h2>Part V: Facets</h2>
+<ul>
+<li>Used to break data into different data sets, producing a grid of plots</li>
+<li>Useful for comparing difference between groups, works well for scatter plots</li>
+<li><code>facet_grid()</code></li>
+</ul>
+</section>
+<section id="example-pioneer-valley-data-with-facetting" class="slide level2 smaller">
+<h2>Example: <span style="color:red;">Pioneer Valley</span> Data (with Facetting)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> pioneer_valley_census_data, </span>
+<span id="cb5-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, </span>
+<span id="cb5-3"><a></a>           <span class="at">y =</span> CEN_EARLYED, <span class="at">fill =</span> CEN_POVRATE)) <span class="sc">+</span> </span>
+<span id="cb5-4"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb5-5"><a></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"gray"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb5-6"><a></a>  <span class="fu">facet_grid</span>(COUNTY <span class="sc">~</span> <span class="dv">1</span>) <span class="co"># divides bar plot into 3 different counties</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<section id="part-vi-coordinates" class="slide level2">
+<h2>Part VI: Coordinates</h2>
+<ul>
+<li>The standard coordinate system is Cartesian
+<ul>
+<li>May want to change at times</li>
+</ul></li>
+<li>More concerned about orientation
+<ul>
+<li><code>coord_flip()</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="example-hampshire-county-data-with-coordinate-flipping" class="slide level2 smaller">
+<h2>Example: Hampshire County Data (with Coordinate Flipping)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> hampshire_census_data, </span>
+<span id="cb6-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, </span>
+<span id="cb6-3"><a></a>           <span class="at">y =</span> CEN_EARLYED, <span class="at">fill =</span> CEN_POVRATE)) <span class="sc">+</span> </span>
+<span id="cb6-4"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb6-5"><a></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"gray"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb6-6"><a></a>  <span class="fu">coord_flip</span>() <span class="co"># flips coordinate system</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<section id="part-vii-theme" class="slide level2">
+<h2>Part VII: Theme</h2>
+<ul>
+<li>We may want to change the basic visuals not controlled by the data</li>
+<li><code>theme_*()</code>, <code>element_*()</code> functions with <code>theme()</code></li>
+<li>Most common use (even ChatGPT will use it): <code>theme_minimal()</code></li>
+</ul>
+</section>
+<section id="example-hampshire-county-data-with-theme-change" class="slide level2 smaller">
+<h2>Example: Hampshire County Data (with Theme Change)</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> hampshire_census_data, </span>
+<span id="cb7-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, </span>
+<span id="cb7-3"><a></a>           <span class="at">y =</span> CEN_EARLYED, <span class="at">fill =</span> CEN_POVRATE)) <span class="sc">+</span> </span>
+<span id="cb7-4"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb7-5"><a></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"gray"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb7-6"><a></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb7-7"><a></a>  <span class="fu">theme_minimal</span>() <span class="co"># adds minimal theme</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
+<section id="other-components-labels-and-titles" class="slide level2 smaller">
+<h2>Other Components: Labels and Titles</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> hampshire_census_data, </span>
+<span id="cb8-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, </span>
+<span id="cb8-3"><a></a>           <span class="at">y =</span> CEN_EARLYED, <span class="at">fill =</span> CEN_POVRATE)) <span class="sc">+</span> </span>
+<span id="cb8-4"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb8-5"><a></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"gray"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb8-6"><a></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb8-7"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb8-8"><a></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Hampshire County Early Education Enrollment Rates, 2018"</span>,</span>
+<span id="cb8-9"><a></a>       <span class="at">fill =</span> <span class="st">"Poverty Rate"</span>) <span class="sc">+</span></span>
+<span id="cb8-10"><a></a>  <span class="fu">xlab</span>(<span class="st">"Enrollment Rate for 3-4 yr old"</span>) <span class="sc">+</span></span>
+<span id="cb8-11"><a></a>  <span class="fu">ylab</span>(<span class="st">"Municipality in Hampshire County, MA"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<section id="aeshetics-vs.-attributes" class="slide level2">
+<h2>Aeshetics vs.&nbsp;Attributes</h2>
+<ul>
+<li>We can adjust the way the data appears on plots in two ways:
+<ul>
+<li>According to a variable:
+<ul>
+<li>This must be done inside of the <code>aes()</code> function</li>
+</ul></li>
+<li>In a fixed way:
+<ul>
+<li>This must be done outside of the <code>aes()</code> function</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="other-components-aesthetics" class="slide level2 smaller">
+<h2>Other Components: Aesthetics</h2>
+<ul>
+<li>We add visual cues to the plot in the <code>aes()</code> call</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> hampshire_census_data, </span>
+<span id="cb9-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, </span>
+<span id="cb9-3"><a></a>           <span class="at">y =</span> CEN_EARLYED, <span class="at">fill =</span> CEN_POVRATE)) <span class="sc">+</span> <span class="co"># fill here as example</span></span>
+<span id="cb9-4"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb9-5"><a></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"gray"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb9-6"><a></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb9-7"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb9-8"><a></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Hampshire County Early Education Enrollment Rates, 2018"</span>,</span>
+<span id="cb9-9"><a></a>       <span class="at">fill =</span> <span class="st">"Poverty Rate"</span>) <span class="sc">+</span></span>
+<span id="cb9-10"><a></a>  <span class="fu">xlab</span>(<span class="st">"Enrollment Rate for 3-4 yr old"</span>) <span class="sc">+</span></span>
+<span id="cb9-11"><a></a>  <span class="fu">ylab</span>(<span class="st">"Municipality in Hampshire County, MA"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<section id="other-components-attributes" class="slide level2 smaller">
+<h2>Other Components: Attributes</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> hampshire_census_data, </span>
+<span id="cb10-2"><a></a>       <span class="fu">aes</span>(<span class="at">x =</span> COMMUNITY, </span>
+<span id="cb10-3"><a></a>           <span class="at">y =</span> CEN_EARLYED, <span class="at">fill =</span> CEN_POVRATE)) <span class="sc">+</span> </span>
+<span id="cb10-4"><a></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.98</span>) <span class="sc">+</span> <span class="co"># changed sizing of columns</span></span>
+<span id="cb10-5"><a></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"gray"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb10-6"><a></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb10-7"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb10-8"><a></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Hampshire County Early Education Enrollment Rates, 2018"</span>,</span>
+<span id="cb10-9"><a></a>       <span class="at">fill =</span> <span class="st">"Poverty Rate"</span>) <span class="sc">+</span></span>
+<span id="cb10-10"><a></a>  <span class="fu">xlab</span>(<span class="st">"Enrollment Rate for 3-4 yr old"</span>) <span class="sc">+</span></span>
+<span id="cb10-11"><a></a>  <span class="fu">ylab</span>(<span class="st">"Municipality in Hampshire County, MA"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+
+</div>
+<img data-src="w3l2_ggplot_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<section id="endless-possibilities" class="slide level2">
+<h2>Endless Possibilities</h2>
+<ul>
+<li>You, probably: “Do I really have to memorize all of these stylistic functions?!”
+<ul>
+<li>Answer: <strong>No</strong></li>
+</ul></li>
+<li>Resources:
+<ul>
+<li>Cheatsheet: <a href="https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf"><code>ggplot2()</code> cheatsheet</a></li>
+<li>Help tab <a href="https://ggplot2.tidyverse.org/">documentation</a></li>
+<li>Google (and yes, generative AI)</li>
+</ul></li>
+</ul>
+</section>
+<section id="generative-ai" class="slide level2">
+<h2>Generative AI</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Best Practices of genAI Usage</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Prompt with a specific item that can add something to plot
+<ul>
+<li>e.g.&nbsp;what function is used to change the color scaling of a variable that is continuous in ggplot2?</li>
+</ul></li>
+<li>Do not ask the model to plot the whole thing for you
+<ul>
+<li>Can result in many small errors (which can cause all your code to run into errors)</li>
+</ul></li>
+<li>For the assignments and activities: use it sparingly (only use to find new functions/arguments) and cite usage when needed</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="activity" class="slide level2">
 <h2>Activity</h2>
-<p>Form groups of 2-3 with your peers near you. Complete the following tasks:</p>
-<ol type="1">
-<li>Introduce yourselves to each other! Mention your name, major, and one cool thing you did over the winter.</li>
-<li>For those, that have a laptop on you, attempt to complete the following:
 <ul>
-<li>Create a numeric vector that contains a sequence of numbers from 1 to 50.</li>
-<li>Determine how much memory is being used by R right now.</li>
-<li>Make a simple plot using the following data: 4, 7, 2, 5, 2, 3, 3, 5, 3, 2, 1, 8</li>
-</ul></li>
-<li>Discuss how you were able to complete these tasks.</li>
-</ol>
-</section>
-<section id="review" class="slide level2">
-<h2>Review</h2>
+<li>Seen on schedule
 <ul>
-<li>R is the coding language at hand
-<ul>
-<li>e.g.&nbsp;syntax, memory allocation</li>
-</ul></li>
-<li>RStudio is the IDE/application where we can interact with R
-<ul>
-<li>e.g.&nbsp;execution, view output, save files</li>
-<li>Other IDEs exist</li>
+<li>Or <a href="w3l2_act.qmd">here</a></li>
 </ul></li>
 </ul>
 </section>
-<section id="the-rstudio-interface" class="slide level2">
-<h2>The RStudio Interface</h2>
-
-<img data-src="images/lect1/rstudio.png" class="r-stretch"></section>
-<section id="objects-and-data-structures" class="slide level2">
-<h2>Objects and Data Structures</h2>
-<p><em>Activity:</em> In the same groups, list out all data structures in R.</p>
+<section id="for-now-and-friday" class="slide level2">
+<h2>For Now and Friday</h2>
 <ul>
-<li>i.e.&nbsp;the ways we can store various pieces of data in R</li>
-</ul>
-</section>
-<section id="vectors" class="slide level2">
-<h2>Vectors</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<li>Finish activity for today’s class</li>
+<li>Lab #1 due tonight at 11:59pm</li>
+<li>Reading Exercise #2 due Thursday at 11:59pm
 <ul>
-<li>Family of data types</li>
-<li>Atomic vectors or lists
-<ul>
-<li>We will focus on atomic vectors</li>
+<li>Seen on schedule</li>
 </ul></li>
-</ul>
-</div><div class="column" style="width:25%;">
-<p><img data-src="images/lect1/summary-tree-s3-1.png"></p>
-</div><div class="column" style="width:25%;">
-<p><img data-src="images/lect1/summary-tree-s3-2.png"></p>
-</div></div>
-</section>
-<section id="atomic-vectors" class="slide level2">
-<h2>Atomic Vectors</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<ul>
-<li>Elements must be of same type</li>
-<li>Can use <code>[]</code> to access elements</li>
-<li>Can be built via <code>c()</code></li>
-</ul>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/lect1/summary-tree-s3-1.png"></p>
-</div></div>
-</section>
-<section id="examples-concatenation" class="slide level2">
-<h2>Examples (Concatenation)</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">24</span>, <span class="dv">25</span>, <span class="dv">16</span>, <span class="dv">18</span>); a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 27 24 25 16 18</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(T, F, F, T); b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1]  TRUE FALSE FALSE  TRUE</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>c <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"everyone"</span>); c</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "hello"    "everyone"</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>d <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">27</span>L, <span class="dv">24</span>L, <span class="dv">25</span>L, <span class="dv">16</span>L, <span class="dv">18</span>L); d</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 27 24 25 16 18</code></pre>
-</div>
-</div>
-</section>
-<section id="testing-and-coercion" class="slide level2">
-<h2>Testing and Coercion</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">is.double</span>(b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] FALSE</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">as.double</span>(b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1 0 0 1</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">typeof</span>(b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "logical"</code></pre>
-</div>
-</div>
-</section>
-<section id="hierarchy-for-coercion" class="slide level2">
-<h2>Hierarchy for Coercion</h2>
-<p><em>Activity:</em> Use the <code>is.___()</code> and <code>as.___()</code> functions on each of the four objects to determine which type is the most flexible (all the way to the least flexible).</p>
-</section>
-<section id="attributes" class="slide level2">
-<h2>Attributes</h2>
-<ul>
-<li>Hold certain information about a vector (with <code>attributes()</code>)</li>
-</ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">attributes</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>NULL</code></pre>
-</div>
-</div>
-<ul>
-<li>Can add a new attribute with <code>attr(object, new_attribute)</code></li>
-</ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">attr</span>(a, <span class="st">"name"</span>) <span class="ot">&lt;-</span> <span class="st">"numbers"</span></span>
-<span id="cb17-2"><a></a><span class="fu">attributes</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$name
-[1] "numbers"</code></pre>
-</div>
-</div>
-</section>
-<section id="attributes-cont." class="slide level2">
-<h2>Attributes (cont.)</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">names</span>(a) <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span></span>
-<span id="cb19-2"><a></a><span class="fu">attributes</span>(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$name
-[1] "numbers"
-
-$names
-[1] "1" "2" "3" "4" "5"</code></pre>
-</div>
-</div>
-
-<img data-src="images/lect1/names.png" class="r-stretch"></section>
-<section id="object-assignment" class="slide level2">
-<h2>Object Assignment</h2>
-<p>Two ways you’ve seen object assignment:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>x <span class="ot">=</span> <span class="dv">13</span></span>
-<span id="cb21-2"><a></a>x <span class="ot">&lt;-</span> <span class="dv">13</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p><em>Question:</em> Why the difference?</p>
-</section>
-<section id="s3-atomic-vectors-and-special-classes" class="slide level2 smaller">
-<h2>S3 Atomic Vectors (and Special Classes)</h2>
-<ul>
-<li>S3: class of objects in R
-<ul>
-<li>Different from types in R</li>
-<li>Examples
-<ul>
-<li>Factors</li>
-<li>Dates</li>
-<li>NAs</li>
-</ul></li>
-</ul></li>
-</ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>c <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(c)</span>
-<span id="cb22-2"><a></a><span class="fu">levels</span>(c) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"everyone"</span>, <span class="st">"hello"</span>, <span class="st">"what"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<blockquote>
-<p>We’ll talk more about S3 objects in a few weeks!</p>
-</blockquote>
-</section>
-<section id="for-now-and-next-week" class="slide level2">
-<h2>For Now and Next Week:</h2>
-<ul>
-<li>GitHub setup
-<ul>
-<li>Use tech setup instructions</li>
-<li>Complete test.qmd and act1.qmd files</li>
-</ul></li>
-<li>Read through syllabus</li>
-<li>Pre-course survey</li>
-<li>Read chapters 1, 3 of Advanced R</li>
 </ul>
 
 
@@ -684,7 +590,7 @@ $names
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>SDS 270 | Introduction and Tech Setup</p>
+<p>SDS 192 | Data Visualizations</p>
 </div>
 </div></div>
 

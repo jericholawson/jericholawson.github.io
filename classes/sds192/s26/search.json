@@ -108,8 +108,8 @@
     "objectID": "lectures/w1l1_intro.html#welcome",
     "href": "lectures/w1l1_intro.html#welcome",
     "title": "Introductions",
-    "section": "",
-    "text": "Course: SDS 192, Sect. 02\nTimes:\n\nM, 1:40-2:55pm\nW/F, 1:20-2:35pm"
+    "section": "Welcome!",
+    "text": "Welcome!\n\n\n\n\n\n\n\n\n\nCourse: SDS 192, Sect. 02\nTimes:\n\nM, 1:40-2:55pm\nW/F, 1:20-2:35pm"
   },
   {
     "objectID": "lectures/w1l1_intro.html#welcome-1",
@@ -263,28 +263,28 @@
     "href": "schedule.html#week-2-what-is-r-and-github-22---26",
     "title": "Schedule",
     "section": "Week 2: What is R and GitHub? (2/2 - 2/6)",
-    "text": "Week 2: What is R and GitHub? (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4Friday, 2/6\n\n\n\n\n\n\n\n\nNoteLecture: Intro to R\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #1 (due Wednesday, 2/4 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: R and GitHub\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReading Exercises #1 (due Thursday, 2/5 at 11:59pm in activities repo)\n\nExercises #1 and #3 from Appendix B in Modern Data Science with R\n\nReadings #2 (due Sunday, 2/8 at 11:59pm on Perusall)\nLab #1 (due Wednesday, 2/4 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #2: GitHub\n\n\n\n\nInstructions\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 at 11:59pm on Perusall)\nLab #2 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate"
+    "text": "Week 2: What is R and GitHub? (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4Friday, 2/6\n\n\n\n\n\n\n\n\nNoteLecture: Intro to R\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: R and GitHub\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReading Exercises #1 (due Thursday, 2/5 at 11:59pm in activities repo)\n\nExercises #1 and #3 from Appendix B in Modern Data Science with R\n\nReadings #2 (due Sunday, 2/8 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\nInstructions\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 on Perusall at 11:59pm)\nLab #1 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate"
   },
   {
     "objectID": "schedule.html#week-3-data-visualization-the-basics-29---213",
     "href": "schedule.html#week-3-data-visualization-the-basics-29---213",
     "title": "Schedule",
     "section": "Week 3: Data Visualization, The Basics (2/9 - 2/13)",
-    "text": "Week 3: Data Visualization, The Basics (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11Friday, 2/13\n\n\nLecture #5: Data Visualization\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #1 (due Tuesday, 2/10 at 8:59pm)\n\n\n\n\n\n\n\n\n\n\n\nImportantQuiz #1\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture #6: Types of Data Visualizations\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #3 (due Sunday, 2/15 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLab #3: Visualization Aesthetics"
+    "text": "Week 3: Data Visualization, The Basics (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11Friday, 2/13\n\n\n\n\n\n\n\n\nNoteLecture: Data Visualization\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #1 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to ggplot\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReading Exercises #2 (due Thursday, 2/12 at 11:59pm in activities repo)\nReadings #3 (due Sunday, 2/15 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #2: GitHub\n\n\n\n\nInstructions\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #3 (due Sunday, 2/15 on Perusall at 11:59pm)\nLab #2 (due Wednesday, 2/18 at 11:59pm on GitHub Classroom)\nProject #1: Proposal (due Wednesday, 2/18 at 11:59pm in new GitHub repository shared with me)\n\nInstructions"
   },
   {
     "objectID": "schedule.html#week-4-data-visualizations-ggplot-216---220",
     "href": "schedule.html#week-4-data-visualizations-ggplot-216---220",
     "title": "Schedule",
     "section": "Week 4: Data Visualizations, ggplot (2/16 - 2/20)",
-    "text": "Week 4: Data Visualizations, ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\nLecture #7: Intro to ggplot\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Advanced ggplot2\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLab #4: Plotting Frequencies and Distributions"
+    "text": "Week 4: Data Visualizations, ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\nLecture #7: Types of Data Visualizations\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Advanced ggplot2\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLab #3: Visualization Aesthetics"
   },
   {
     "objectID": "schedule.html#week-5-data-wrangling-223---227",
     "href": "schedule.html#week-5-data-wrangling-223---227",
     "title": "Schedule",
     "section": "Week 5: Data Wrangling (2/23 - 2/27)",
-    "text": "Week 5: Data Wrangling (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25Friday, 2/27\n\n\nQuiz #2: Subsetting and Control Flow\nLecture #9: Intro to Data Wrangling\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #10: Data Wrangling\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #5 (due Sunday, 3/1 at 8:59pm)\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nProject Time"
+    "text": "Week 5: Data Wrangling (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25Friday, 2/27\n\n\nQuiz #2: Subsetting and Control Flow\nLecture #9: Intro to Data Wrangling\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #10: Data Wrangling\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #5 (due Sunday, 3/1 at 8:59pm)\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nLab #4: Plotting Frequencies and Distributions Project Time"
   },
   {
     "objectID": "schedule.html#week-6-data-joining-32---36",
@@ -354,7 +354,7 @@
     "href": "schedule.html#finals-52---59",
     "title": "Schedule",
     "section": "Finals: (5/2 - 5/9)",
-    "text": "Finals: (5/2 - 5/9)\n\nFinals Week\n\n\nGo do the final!\n\n\n\n–&gt;"
+    "text": "Finals: (5/2 - 5/9)\n\nFinals Week\n\n\nGo do the final!"
   },
   {
     "objectID": "lectures/w1l1_intro.html#for-wednesday-and-beyond",
@@ -640,8 +640,8 @@
     "objectID": "lectures/w2l1_introR.html#last-time",
     "href": "lectures/w2l1_introR.html#last-time",
     "title": "R Fundamentals",
-    "section": "",
-    "text": "Data fundamentals\n\nRectangular datasets\nObservations, variables, and values\nCategorical vs. discrete"
+    "section": "Last Time",
+    "text": "Last Time\n\nData fundamentals\n\nRectangular datasets\nObservations, variables, and values\nCategorical vs. discrete"
   },
   {
     "objectID": "lectures/w2l1_introR.html#today",
@@ -697,7 +697,7 @@
     "href": "lectures/w2l1_introR.html#values-vs.-vectors-vs.-data-frames",
     "title": "R Fundamentals",
     "section": "Values vs. Vectors vs. Data Frames",
-    "text": "Values vs. Vectors vs. Data Frames\n\nValuesVectorsData Frame\n\n\n\n\na single data point\nR understands values to be of a certain type:\n\ndouble: 3.29\ninteger: 3\ncharacter: “SDS 192”\nlogical: TRUE/FALSE\ndate-time: 1/23/84 01:23:01\n\n\n\n\n3.29 # double\n\n[1] 3.29\n\n3L # integer\n\n[1] 3\n\n\"SDS 192\" # character\n\n[1] \"SDS 192\"\n\nTRUE # logical\n\n[1] TRUE\n\nSys.Date() \n\n[1] \"2026-01-20\"\n\n\n\n\n\n\na 1-dimensional data object, listing a series of values\nall objects in a vector share the same type\nvector defined by listing entries (separated by commas) in the function c() (shorthand for concatenate/combine)\n\n\nc(1, 2, 3, 4)\n\n[1] 1 2 3 4\n\nc(\"Northampton\", \"Hadley\", \"Easthampton\", \"Amherst\")\n\n[1] \"Northampton\" \"Hadley\"      \"Easthampton\" \"Amherst\"    \n\n\n\n\n\n\n\na two-dimensional (rectangular) data object\nEvery column in a data frame is a vector\nColumn names act as a variable name for that vector (access via the $ accessor)\n\n\ndf\n\n  col1  col2 col3\n1    1  TRUE    a\n2    5 FALSE    b\n3    6  TRUE    c\n4    7  TRUE    d\n\ndf$col1\n\n[1] 1 5 6 7"
+    "text": "Values vs. Vectors vs. Data Frames\n\nValuesVectorsData Frame\n\n\n\na single data point\nR understands values to be of a certain type:\n\ndouble: 3.29\ninteger: 3\ncharacter: “SDS 192”\nlogical: TRUE/FALSE\ndate-time: 1/23/84 01:23:01\n\n\n\n3.29 # double\n\n[1] 3.29\n\n3L # integer\n\n[1] 3\n\n\"SDS 192\" # character\n\n[1] \"SDS 192\"\n\nTRUE # logical\n\n[1] TRUE\n\nSys.Date() \n\n[1] \"2026-01-20\"\n\n\n\n\n\na 1-dimensional data object, listing a series of values\nall objects in a vector share the same type\nvector defined by listing entries (separated by commas) in the function c() (shorthand for concatenate/combine)\n\n\nc(1, 2, 3, 4)\n\n[1] 1 2 3 4\n\nc(\"Northampton\", \"Hadley\", \"Easthampton\", \"Amherst\")\n\n[1] \"Northampton\" \"Hadley\"      \"Easthampton\" \"Amherst\"    \n\n\n\n\n\na two-dimensional (rectangular) data object\nEvery column in a data frame is a vector\nColumn names act as a variable name for that vector (access via the $ accessor)\n\n\ndf\n\n  col1  col2 col3\n1    1  TRUE    a\n2    5 FALSE    b\n3    6  TRUE    c\n4    7  TRUE    d\n\ndf$col1\n\n[1] 1 5 6 7"
   },
   {
     "objectID": "lectures/w2l1_introR.html#assigning-objects-to-variable-names",
@@ -795,14 +795,14 @@
     "href": "lectures/w2l1_introR.html#helpful-value-operations",
     "title": "R Fundamentals",
     "section": "Helpful Value Operations",
-    "text": "Helpful Value Operations\n\nNumeric ValuesCharacter Values\n\n\n\nR can work just like a calculator!\n\na &lt;- 2\nb &lt;- 3\n\nsum(a,b)\n\n[1] 5\n\n\nWhy does this produce an error?\n\nc &lt;- \"3\"\nsum(c, c)\n\nError in `sum()`:\n! invalid 'type' (character) of argument\n\n\n\n\n\n\nR can concatenate strings!\n\nword1 &lt;- \"Harry\"\nword2 &lt;- \"Sally\"\npaste(\"When\", word1, \"Met\", word2, sep = \" \")\n\n[1] \"When Harry Met Sally\""
+    "text": "Helpful Value Operations\n\nNumeric ValuesCharacter Values\n\n\nR can work just like a calculator!\n\na &lt;- 2\nb &lt;- 3\n\nsum(a,b)\n\n[1] 5\n\n\nWhy does this produce an error?\n\nc &lt;- \"3\"\nsum(c, c)\n\nError in `sum()`:\n! invalid 'type' (character) of argument\n\n\n\n\nR can concatenate strings!\n\nword1 &lt;- \"Harry\"\nword2 &lt;- \"Sally\"\npaste(\"When\", word1, \"Met\", word2, sep = \" \")\n\n[1] \"When Harry Met Sally\""
   },
   {
     "objectID": "lectures/w2l1_introR.html#helpful-vector-functions",
     "href": "lectures/w2l1_introR.html#helpful-vector-functions",
     "title": "R Fundamentals",
     "section": "Helpful Vector Functions",
-    "text": "Helpful Vector Functions\n\nAll VectorsNumeric VectorsCategorical Vectors\n\n\n\n\nclass() returns the class of the values in a vector\nlength() returns the number of values in a vector\nis.na() for each value, returns whether the value is an NA value\n\n\n\n\n\n\nsum() returns the sum of the values in a vector\nmax() returns the maximum value in a vector\nrank() returns the ranking of a value in a vector\nR has other functions for accomplishing statistical, mathematical, and ordering operations\n\n\n\n\n\n\nunique() returns the unique values of a vector\ntable() returns the distribution of unique values of a vector"
+    "text": "Helpful Vector Functions\n\nAll VectorsNumeric VectorsCategorical Vectors\n\n\n\nclass() returns the class of the values in a vector\nlength() returns the number of values in a vector\nis.na() for each value, returns whether the value is an NA value\n\n\n\n\nsum() returns the sum of the values in a vector\nmax() returns the maximum value in a vector\nrank() returns the ranking of a value in a vector\nR has other functions for accomplishing statistical, mathematical, and ordering operations\n\n\n\n\nunique() returns the unique values of a vector\ntable() returns the distribution of unique values of a vector"
   },
   {
     "objectID": "lectures/w2l1_introR.html#learning-check-3",
@@ -892,8 +892,8 @@
     "objectID": "lectures/w2l2_github.html#last-time",
     "href": "lectures/w2l2_github.html#last-time",
     "title": "R and GitHub",
-    "section": "",
-    "text": "Welcome to R!\n\nInterface\nBasics\n\nCoding in R\n\n“hello world!”\nObjects and data structures\nOperators and functions"
+    "section": "Last Time",
+    "text": "Last Time\n\nWelcome to R!\n\nInterface\nBasics\n\nCoding in R\n\n“hello world!”\nObjects and data structures\nOperators and functions"
   },
   {
     "objectID": "lectures/w2l2_github.html#activity",
@@ -1019,7 +1019,7 @@
     "href": "lectures/w2l2_github.html#git",
     "title": "R and GitHub",
     "section": "Git",
-    "text": "Git\n\n\n\nGit\n\nOpen source command line tool for version control\nInstalled on your local machine (OS-specific)\nDoes not require the use of any external tools\n\n\n\n\nGitHub\n\nWeb-hosting platform for git projects\nHosts repositories for publishing/sharing work with the broader coding community"
+    "text": "Git\n\n\nGit\n\nOpen source command line tool for version control\nInstalled on your local machine (OS-specific)\nDoes not require the use of any external tools\n\n\nGitHub\n\nWeb-hosting platform for git projects\nHosts repositories for publishing/sharing work with the broader coding community"
   },
   {
     "objectID": "lectures/w2l2_github.html#github-workflow",
@@ -1209,5 +1209,523 @@
     "title": "Datasets",
     "section": "For Monday",
     "text": "For Monday\n\nWork on Tech Setup\nMonday’s class: Lab on R and Datasets"
+  },
+  {
+    "objectID": "lectures/w1l1_intro.html#happy-snow-day",
+    "href": "lectures/w1l1_intro.html#happy-snow-day",
+    "title": "Introductions",
+    "section": "Happy Snow Day!!",
+    "text": "Happy Snow Day!!"
+  },
+  {
+    "objectID": "schedule.html#extra",
+    "href": "schedule.html#extra",
+    "title": "Schedule",
+    "section": "Extra",
+    "text": "Extra\n\n\n\n\n\n\nNoteLab #2: GitHub\n\n\n\n\nInstructions\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #2 (due Sunday, 2/8 at 11:59pm on Perusall)\nLab #2 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate\n\n\n\n\n–&gt;"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#last-time",
+    "href": "lectures/w3l1_visualization.html#last-time",
+    "title": "Intro to Data Visualizations",
+    "section": "Last Time",
+    "text": "Last Time\n\nMore behind R\n\nData imports\nMissing data\nOther topics\n\nWhat is a workflow?\n\nWhy?\nProcess\n\nGitHub\n\nWhat is it?\nActions"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#activity",
+    "href": "lectures/w3l1_visualization.html#activity",
+    "title": "Intro to Data Visualizations",
+    "section": "Activity",
+    "text": "Activity\n\nTalk to 2-3 people around you and discuss any questions you may have about using GitHub.\nPut any questions in the anonymous Google Form here"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#today",
+    "href": "lectures/w3l1_visualization.html#today",
+    "title": "Intro to Data Visualizations",
+    "section": "Today",
+    "text": "Today"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#for-today",
+    "href": "lectures/w3l1_visualization.html#for-today",
+    "title": "Intro to Data Visualizations",
+    "section": "For Today",
+    "text": "For Today\n\nData visualizations\n\nIntroduction\nTaxonomy\nConventions and critiques\n5NG\nActivity"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#what-is-data-visualization",
+    "href": "lectures/w3l1_visualization.html#what-is-data-visualization",
+    "title": "Intro to Data Visualizations",
+    "section": "What is Data Visualization?",
+    "text": "What is Data Visualization?\n\nThe translation of information into a graphical format\n\nInformation \\(\\rightarrow\\) graphics\n\nHelps analysts summarize and identify patterns across large datasets\nAlways involves critical judgment calls on the part of the designer"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#elements-of-data-graphics",
+    "href": "lectures/w3l1_visualization.html#elements-of-data-graphics",
+    "title": "Intro to Data Visualizations",
+    "section": "Elements of Data Graphics",
+    "text": "Elements of Data Graphics\n\nAesthetics (i.e. visual cues)\nScale\nContext 1\nCoordinate systems\n\nFramework drawn from: Yau, Nathan. 2013. Data Points: Visualization That Means Something. 1st edition. Indianapolis, IN: Wiley."
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#visual-cues",
+    "href": "lectures/w3l1_visualization.html#visual-cues",
+    "title": "Intro to Data Visualizations",
+    "section": "Visual Cues",
+    "text": "Visual Cues\n\n\n\nWhere is the data positioned on the plot?\nWhat is the length of shapes on the plot?\nHow large is the angle between vectors?\nWhich direction is the data going towards?\nWhat shapes/symbols appear on the plot?\nHow much area and volume do shapes take up on a plot?\nHow intense is the color or shade presented on the plot?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues",
+    "href": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues",
+    "title": "Intro to Data Visualizations",
+    "section": "Which variables are mapped onto what visual cues?",
+    "text": "Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues-1",
+    "href": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues-1",
+    "title": "Intro to Data Visualizations",
+    "section": "Which variables are mapped onto what visual cues?",
+    "text": "Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues-2",
+    "href": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues-2",
+    "title": "Intro to Data Visualizations",
+    "section": "Which variables are mapped onto what visual cues?",
+    "text": "Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues-3",
+    "href": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues-3",
+    "title": "Intro to Data Visualizations",
+    "section": "Which variables are mapped onto what visual cues?",
+    "text": "Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues-4",
+    "href": "lectures/w3l1_visualization.html#which-variables-are-mapped-onto-what-visual-cues-4",
+    "title": "Intro to Data Visualizations",
+    "section": "Which variables are mapped onto what visual cues?",
+    "text": "Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#coordinate-systems",
+    "href": "lectures/w3l1_visualization.html#coordinate-systems",
+    "title": "Intro to Data Visualizations",
+    "section": "Coordinate Systems",
+    "text": "Coordinate Systems\n\n\n\nOrganization of data points\nWe will focus primarily on a Cartesian system (i.e. rectangular coordinate system you are used to)\nOther systems: polar, geographic"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#scale",
+    "href": "lectures/w3l1_visualization.html#scale",
+    "title": "Intro to Data Visualizations",
+    "section": "Scale",
+    "text": "Scale\n\n\n\n“How does distance in the data graphic translate into meaningful differences in quantity?”\nThree choices:\n\nNumeric: linear, logarithmic, or percentage\nCategorical: nominal or ordinal\nTime: by time units or wrap-around"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#examples",
+    "href": "lectures/w3l1_visualization.html#examples",
+    "title": "Intro to Data Visualizations",
+    "section": "Examples",
+    "text": "Examples"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#context",
+    "href": "lectures/w3l1_visualization.html#context",
+    "title": "Intro to Data Visualizations",
+    "section": "Context",
+    "text": "Context\n\nThe “why” to data visualization\nInformation to carefully highlight what needs to be highlighted\n\nTitles, subtitles, axis labels, reference points, etc."
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#context-in-this-class",
+    "href": "lectures/w3l1_visualization.html#context-in-this-class",
+    "title": "Intro to Data Visualizations",
+    "section": "Context in This Class",
+    "text": "Context in This Class\nFive pieces of context MUST be in every plot you submit:\n\nThe data’s unit of observation\nUsing titles, axis labels\nVariables represented on the plot\nUsing axis/legend titles\nFilters applied to the data\nGeographic context of the data\nTemporal (date/time range) context of the date"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#context-in-this-class-cont.",
+    "href": "lectures/w3l1_visualization.html#context-in-this-class-cont.",
+    "title": "Intro to Data Visualizations",
+    "section": "Context in This Class (cont.)",
+    "text": "Context in This Class (cont.)"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#data-visualization-conventions",
+    "href": "lectures/w3l1_visualization.html#data-visualization-conventions",
+    "title": "Intro to Data Visualizations",
+    "section": "Data Visualization Conventions",
+    "text": "Data Visualization Conventions\n\nEdward Tufte, American statistician sometimes considered “father of data visualization”\nIntroduced the concept of “graphical integrity”\nHow do we present data as honestly as possible?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#lie-factor",
+    "href": "lectures/w3l1_visualization.html#lie-factor",
+    "title": "Intro to Data Visualizations",
+    "section": "Lie Factor",
+    "text": "Lie Factor\n\nLie Factor = (size of effect in graphic)/(size of effect in data)\nLie factor is greater when variations on a graph fail to match variations in data\n\n\nTufte, Visual Display of Quantitative Information\n5.3-0.6 / 0.6 * 100= 783 (graph)\n27.5-18 /18 *100 = 53 (data)\n783/53 = 14.8"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#inconsistent-scales",
+    "href": "lectures/w3l1_visualization.html#inconsistent-scales",
+    "title": "Intro to Data Visualizations",
+    "section": "Inconsistent Scales",
+    "text": "Inconsistent Scales\n\nExample from callingbullshit.org"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#presenting-data-out-of-context",
+    "href": "lectures/w3l1_visualization.html#presenting-data-out-of-context",
+    "title": "Intro to Data Visualizations",
+    "section": "Presenting Data Out of Context",
+    "text": "Presenting Data Out of Context\n\nExample from mediamatters.org"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#disproportionate-data-to-ink-ratio",
+    "href": "lectures/w3l1_visualization.html#disproportionate-data-to-ink-ratio",
+    "title": "Intro to Data Visualizations",
+    "section": "Disproportionate Data-to-Ink Ratio",
+    "text": "Disproportionate Data-to-Ink Ratio\n\nEnsure that the ink used on the data match the amount of data presented\nData-to-ink ratio = (ink used to represent data)/(ink used to print graphic)\nShould be as close as possible to 1\nAnother way to think about it: How much of this graph could I erase without losing data?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#disproportionate-data-to-ink-ratio-1",
+    "href": "lectures/w3l1_visualization.html#disproportionate-data-to-ink-ratio-1",
+    "title": "Intro to Data Visualizations",
+    "section": "Disproportionate Data-to-Ink Ratio",
+    "text": "Disproportionate Data-to-Ink Ratio"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#deviating-from-norms",
+    "href": "lectures/w3l1_visualization.html#deviating-from-norms",
+    "title": "Intro to Data Visualizations",
+    "section": "Deviating from Norms",
+    "text": "Deviating from Norms\n\nExample from callingbullshit.org"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#when-can-i-break-convention",
+    "href": "lectures/w3l1_visualization.html#when-can-i-break-convention",
+    "title": "Intro to Data Visualizations",
+    "section": "When Can I Break Convention??",
+    "text": "When Can I Break Convention??"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#types-of-graphs",
+    "href": "lectures/w3l1_visualization.html#types-of-graphs",
+    "title": "Intro to Data Visualizations",
+    "section": "Types of Graphs",
+    "text": "Types of Graphs\n\nThe 5NGs\n\n\nLine GraphsHistogramsBar PlotsBox PlotsScatter Plots"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#for-now-and-wednesday",
+    "href": "lectures/w3l1_visualization.html#for-now-and-wednesday",
+    "title": "Intro to Data Visualizations",
+    "section": "For Now and Wednesday",
+    "text": "For Now and Wednesday\n\nFinish activity for today’s class\nLab #1 due on Wednesday at 11:59pm"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#information-rightarrow-graphics",
+    "href": "lectures/w3l1_visualization.html#information-rightarrow-graphics",
+    "title": "Intro to Data Visualizations",
+    "section": "Information \\(\\rightarrow\\) Graphics",
+    "text": "Information \\(\\rightarrow\\) Graphics\n  &gt; Source: Silver Bulletin\nQuestion: What information is displayed in these maps? How is it being displayed?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#example",
+    "href": "lectures/w3l1_visualization.html#example",
+    "title": "Intro to Data Visualizations",
+    "section": "Example",
+    "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#example-1",
+    "href": "lectures/w3l1_visualization.html#example-1",
+    "title": "Intro to Data Visualizations",
+    "section": "Example",
+    "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#example-2",
+    "href": "lectures/w3l1_visualization.html#example-2",
+    "title": "Intro to Data Visualizations",
+    "section": "Example",
+    "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#example-3",
+    "href": "lectures/w3l1_visualization.html#example-3",
+    "title": "Intro to Data Visualizations",
+    "section": "Example",
+    "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#example-4",
+    "href": "lectures/w3l1_visualization.html#example-4",
+    "title": "Intro to Data Visualizations",
+    "section": "Example",
+    "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#activity-1",
+    "href": "lectures/w3l1_visualization.html#activity-1",
+    "title": "Intro to Data Visualizations",
+    "section": "Activity",
+    "text": "Activity\n\nSeen in schedule\n\nOr here\nSubmit in Slack"
+  },
+  {
+    "objectID": "lectures/w3l1_act.html",
+    "href": "lectures/w3l1_act.html",
+    "title": "Week 3, Lecture 1: Data Visualizations",
+    "section": "",
+    "text": "Today, you will be working in groups of 3-4 to examine and critique a data visualization. You will post the graphic and your analysis on Slack under #discussions.\n\nSelect a data visualization from one of the following resources below:\n\n\nNYT Graphics\nUSA Today Graphics\n538 Graphics\n\nOnce you find a data visualization, drop the link to the visualization in the discussions channel on Slack.\n\nIdentify the visual cues in the visualization, along with the scale. Note that visual cues are used to represent variations in the data, while scale refers to how the visual cues are differentiated.\n\nVisual cues include: position, length, angle, shape, size, color\nScales include: numeric, logarithmic, categorical, ordinal, percentage, date-time\n\nIdentify and summarize the context provided on the visualization. Are all five components of context represented?\n\nContext components include: units of observation, variables, filter, geographic context, temporal context.\n\nAre there any issues or concerns with the graphical integrity of the visualization? Discuss what these issues are and if they serve a purpose/narrative."
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html",
+    "href": "lectures/w3l1_visualization.html",
+    "title": "Intro to Data Visualizations",
+    "section": "",
+    "text": "More behind R\n\nData imports\nMissing data\nOther topics\n\nWhat is a workflow?\n\nWhy?\nProcess\n\nGitHub\n\nWhat is it?\nActions"
+  },
+  {
+    "objectID": "lectures/w3l1_visualization.html#footnotes",
+    "href": "lectures/w3l1_visualization.html#footnotes",
+    "title": "Intro to Data Visualizations",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFramework drawn from: Yau, Nathan. 2013. Data Points: Visualization That Means Something. 1st edition. Indianapolis, IN: Wiley.↩︎"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#last-time",
+    "href": "lectures/w3l2_ggplot.html#last-time",
+    "title": "The Amazing World of ggplot2",
+    "section": "Last Time",
+    "text": "Last Time\n\nData visualizations\n\nIntroduction\nTaxonomy\nConventions and critiques\n5NG\nActivity"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#for-today",
+    "href": "lectures/w3l2_ggplot.html#for-today",
+    "title": "The Amazing World of ggplot2",
+    "section": "For Today",
+    "text": "For Today\n\nVisualizations (a review)\nggplot\n\nWhat it is and why?\nLayering\nSyntax\nAesthetics, scaling, and context\nActivity\n\nbase R (given time)\n\nSyntax"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#the-amazing-world-of-ggplot",
+    "href": "lectures/w3l2_ggplot.html#the-amazing-world-of-ggplot",
+    "title": "The Amazing World of ggplot2",
+    "section": "The Amazing World of ggplot",
+    "text": "The Amazing World of ggplot\n\nSystem/package for creating graphics\n\nBased on The Grammar of Graphics\nLayers! Lots of them\nUsed by statisticians and data scientists\n\nPart of tidyverse\n\nUse library(ggplot2) to access in environment"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#ggplot-vs.-base-r",
+    "href": "lectures/w3l2_ggplot.html#ggplot-vs.-base-r",
+    "title": "The Amazing World of ggplot2",
+    "section": "ggplot vs. Base R",
+    "text": "ggplot vs. Base R"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#ggplot",
+    "href": "lectures/w3l2_ggplot.html#ggplot",
+    "title": "The Amazing World of ggplot2",
+    "section": "ggplot",
+    "text": "ggplot\n\nWe will generate plots using ggplot\ndata \\(\\rightarrow\\) mapping \\(\\rightarrow\\) layers\n\nStart with data, specify its mapping to visual cues, layer with information"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#ggplot-1",
+    "href": "lectures/w3l2_ggplot.html#ggplot-1",
+    "title": "The Amazing World of ggplot2",
+    "section": "ggplot",
+    "text": "ggplot\n\n\nVisuals are built upon each other using + operator"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#motivating-dataset",
+    "href": "lectures/w3l2_ggplot.html#motivating-dataset",
+    "title": "The Amazing World of ggplot2",
+    "section": "Motivating Dataset",
+    "text": "Motivating Dataset\n\nThis dataset comes from Pioneer Valley Data and documents estimates of population characteristics for each municipality in the Pioneer Valley.\n\n\nlibrary(ggplot2)\nlibrary(tidyverse)\npioneer_valley_census_data &lt;- read.csv(\"https://raw.githubusercontent.com/SDS-192-Intro/SDS-192-public-website/main/slides/datasets/pioneer_valley_census.csv\")\nhampshire_census_data &lt;- pioneer_valley_census_data %&gt;% \n  filter(COUNTY == \"Hampshire\")"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#parts-i-and-ii-data-and-mapping",
+    "href": "lectures/w3l2_ggplot.html#parts-i-and-ii-data-and-mapping",
+    "title": "The Amazing World of ggplot2",
+    "section": "Parts I and II: Data and Mapping",
+    "text": "Parts I and II: Data and Mapping\n\nWe start with data and mapping through the ggplot() function\n\nTwo required arguments:\n\ndata: data frame or tibble used to produce plot\nmapping: variables from data set associated with various aesthetics\n\nMappings defined within aes() function\nSpecify x and y here for Cartesian plots"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#example-hampshire-county-data-data-mapping",
+    "href": "lectures/w3l2_ggplot.html#example-hampshire-county-data-data-mapping",
+    "title": "The Amazing World of ggplot2",
+    "section": "Example: Hampshire County Data (Data & Mapping)",
+    "text": "Example: Hampshire County Data (Data & Mapping)\n\nggplot(data = hampshire_census_data,\n       aes(x = COMMUNITY, y = CEN_EARLYED))"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#learning-checks",
+    "href": "lectures/w3l2_ggplot.html#learning-checks",
+    "title": "The Amazing World of ggplot2",
+    "section": "Learning Checks",
+    "text": "Learning Checks\n\nWhat’s the scale of the x-axis in the plot you just created?\nWhat’s the scale of the y-axis?\nWhat else is needed in the plot?"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#part-iii-wheres-the-data-we-need-layers",
+    "href": "lectures/w3l2_ggplot.html#part-iii-wheres-the-data-we-need-layers",
+    "title": "The Amazing World of ggplot2",
+    "section": "Part III: Where’s the Data? We Need Layers!",
+    "text": "Part III: Where’s the Data? We Need Layers!\n\nIn the previous plot, we told R what variables to plot, but we didn’t indicate how to plot them.\nWe need to stack layers on top of the data and mapping\n\nLayer defines geometry, statistical transformation and position adjustment\nDone via a geom function to be added (i.e. +) to our ggplot call"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#layers-geom-function-with-the-5ngs",
+    "href": "lectures/w3l2_ggplot.html#layers-geom-function-with-the-5ngs",
+    "title": "The Amazing World of ggplot2",
+    "section": "Layers: geom Function with the 5NGs",
+    "text": "Layers: geom Function with the 5NGs\n\nLine graphs: geom_line()\nHistograms: geom_histogram()\nBar plots: geom_bar(), geom_col\nBox plots: geom_boxplot()\nScatter plots: geom_point()"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#example-hampshire-county-data-data-mapping-layering",
+    "href": "lectures/w3l2_ggplot.html#example-hampshire-county-data-data-mapping-layering",
+    "title": "The Amazing World of ggplot2",
+    "section": "Example: Hampshire County Data (Data, Mapping, & Layering)",
+    "text": "Example: Hampshire County Data (Data, Mapping, & Layering)\n\n# data, mapping, and layer\nggplot(data = hampshire_census_data, \n       aes(x = COMMUNITY, y = CEN_EARLYED)) +\n  geom_col() # adds bar plot layering"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#learning-check",
+    "href": "lectures/w3l2_ggplot.html#learning-check",
+    "title": "The Amazing World of ggplot2",
+    "section": "Learning Check",
+    "text": "Learning Check\n\nWhat variables are mapped on to what visual cues in this plot?\nWhat else can be improved/done with this plot?"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#part-iv-scales",
+    "href": "lectures/w3l2_ggplot.html#part-iv-scales",
+    "title": "The Amazing World of ggplot2",
+    "section": "Part IV: Scales",
+    "text": "Part IV: Scales\n\nScales are important for translating meaningful differences in data\nFunctions are written as scale_{aesthetic}_{type}()\n\nTerms of colors, intervals, etc."
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#example-hampshire-county-data-with-scaling",
+    "href": "lectures/w3l2_ggplot.html#example-hampshire-county-data-with-scaling",
+    "title": "The Amazing World of ggplot2",
+    "section": "Example: Hampshire County Data (with Scaling)",
+    "text": "Example: Hampshire County Data (with Scaling)\n\nggplot(data = hampshire_census_data, \n       aes(x = COMMUNITY, y = CEN_EARLYED, fill = CEN_POVRATE)) +\n  geom_col() +\n  scale_fill_gradient(low = \"gray\", high = \"blue\") # adds scaling based on fill"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#part-v-facets",
+    "href": "lectures/w3l2_ggplot.html#part-v-facets",
+    "title": "The Amazing World of ggplot2",
+    "section": "Part V: Facets",
+    "text": "Part V: Facets\n\nUsed to break data into different data sets, producing a grid of plots\nUseful for comparing difference between groups, works well for scatter plots\nfacet_grid()"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#example-pioneer-valley-data-with-facetting",
+    "href": "lectures/w3l2_ggplot.html#example-pioneer-valley-data-with-facetting",
+    "title": "The Amazing World of ggplot2",
+    "section": "Example: Pioneer Valley Data (with Facetting)",
+    "text": "Example: Pioneer Valley Data (with Facetting)\n\nggplot(data = pioneer_valley_census_data, \n       aes(x = COMMUNITY, \n           y = CEN_EARLYED, fill = CEN_POVRATE)) + \n  geom_col() +\n  scale_fill_gradient(low = \"gray\", high = \"blue\") +\n  facet_grid(COUNTY ~ 1) # divides bar plot into 3 different counties"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#part-vi-coordinates",
+    "href": "lectures/w3l2_ggplot.html#part-vi-coordinates",
+    "title": "The Amazing World of ggplot2",
+    "section": "Part VI: Coordinates",
+    "text": "Part VI: Coordinates\n\nThe standard coordinate system is Cartesian\n\nMay want to change at times\n\nMore concerned about orientation\n\ncoord_flip()"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#example-hampshire-county-data-with-coordinate-flipping",
+    "href": "lectures/w3l2_ggplot.html#example-hampshire-county-data-with-coordinate-flipping",
+    "title": "The Amazing World of ggplot2",
+    "section": "Example: Hampshire County Data (with Coordinate Flipping)",
+    "text": "Example: Hampshire County Data (with Coordinate Flipping)\n\nggplot(data = hampshire_census_data, \n       aes(x = COMMUNITY, \n           y = CEN_EARLYED, fill = CEN_POVRATE)) + \n  geom_col() +\n  scale_fill_gradient(low = \"gray\", high = \"blue\") +\n  coord_flip() # flips coordinate system"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#part-vii-theme",
+    "href": "lectures/w3l2_ggplot.html#part-vii-theme",
+    "title": "The Amazing World of ggplot2",
+    "section": "Part VII: Theme",
+    "text": "Part VII: Theme\n\nWe may want to change the basic visuals not controlled by the data\ntheme_*(), element_*() functions with theme()\nMost common use (even ChatGPT will use it): theme_minimal()"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#example-hampshire-county-data-with-theme-change",
+    "href": "lectures/w3l2_ggplot.html#example-hampshire-county-data-with-theme-change",
+    "title": "The Amazing World of ggplot2",
+    "section": "Example: Hampshire County Data (with Theme Change)",
+    "text": "Example: Hampshire County Data (with Theme Change)\n\nggplot(data = hampshire_census_data, \n       aes(x = COMMUNITY, \n           y = CEN_EARLYED, fill = CEN_POVRATE)) + \n  geom_col() +\n  scale_fill_gradient(low = \"gray\", high = \"blue\") +\n  coord_flip() +\n  theme_minimal() # adds minimal theme"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#other-components-labels-and-titles",
+    "href": "lectures/w3l2_ggplot.html#other-components-labels-and-titles",
+    "title": "The Amazing World of ggplot2",
+    "section": "Other Components: Labels and Titles",
+    "text": "Other Components: Labels and Titles\n\nggplot(data = hampshire_census_data, \n       aes(x = COMMUNITY, \n           y = CEN_EARLYED, fill = CEN_POVRATE)) + \n  geom_col() +\n  scale_fill_gradient(low = \"gray\", high = \"blue\") +\n  coord_flip() +\n  theme_minimal() +\n  labs(title = \"Hampshire County Early Education Enrollment Rates, 2018\",\n       fill = \"Poverty Rate\") +\n  xlab(\"Enrollment Rate for 3-4 yr old\") +\n  ylab(\"Municipality in Hampshire County, MA\")"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#aeshetics-vs.-attributes",
+    "href": "lectures/w3l2_ggplot.html#aeshetics-vs.-attributes",
+    "title": "The Amazing World of ggplot2",
+    "section": "Aeshetics vs. Attributes",
+    "text": "Aeshetics vs. Attributes\n\nWe can adjust the way the data appears on plots in two ways:\n\nAccording to a variable:\n\nThis must be done inside of the aes() function\n\nIn a fixed way:\n\nThis must be done outside of the aes() function"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#other-components-aesthetics",
+    "href": "lectures/w3l2_ggplot.html#other-components-aesthetics",
+    "title": "The Amazing World of ggplot2",
+    "section": "Other Components: Aesthetics",
+    "text": "Other Components: Aesthetics\n\nWe add visual cues to the plot in the aes() call\n\n\nggplot(data = hampshire_census_data, \n       aes(x = COMMUNITY, \n           y = CEN_EARLYED, fill = CEN_POVRATE)) + # fill here as example\n  geom_col() +\n  scale_fill_gradient(low = \"gray\", high = \"blue\") +\n  coord_flip() +\n  theme_minimal() +\n  labs(title = \"Hampshire County Early Education Enrollment Rates, 2018\",\n       fill = \"Poverty Rate\") +\n  xlab(\"Enrollment Rate for 3-4 yr old\") +\n  ylab(\"Municipality in Hampshire County, MA\")"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#other-components-attributes",
+    "href": "lectures/w3l2_ggplot.html#other-components-attributes",
+    "title": "The Amazing World of ggplot2",
+    "section": "Other Components: Attributes",
+    "text": "Other Components: Attributes\n\nggplot(data = hampshire_census_data, \n       aes(x = COMMUNITY, \n           y = CEN_EARLYED, fill = CEN_POVRATE)) + \n  geom_col(width = 0.98) + # changed sizing of columns\n  scale_fill_gradient(low = \"gray\", high = \"blue\") +\n  coord_flip() +\n  theme_minimal() +\n  labs(title = \"Hampshire County Early Education Enrollment Rates, 2018\",\n       fill = \"Poverty Rate\") +\n  xlab(\"Enrollment Rate for 3-4 yr old\") +\n  ylab(\"Municipality in Hampshire County, MA\")"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#endless-possibilities",
+    "href": "lectures/w3l2_ggplot.html#endless-possibilities",
+    "title": "The Amazing World of ggplot2",
+    "section": "Endless Possibilities",
+    "text": "Endless Possibilities\n\nYou, probably: “Do I really have to memorize all of these stylistic functions?!”\n\nAnswer: No\n\nResources:\n\nCheatsheet: ggplot2() cheatsheet\nHelp tab documentation\nGoogle (and yes, generative AI)"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#generative-ai",
+    "href": "lectures/w3l2_ggplot.html#generative-ai",
+    "title": "The Amazing World of ggplot2",
+    "section": "Generative AI",
+    "text": "Generative AI\n\n\n\n\n\n\nBest Practices of genAI Usage\n\n\n\nPrompt with a specific item that can add something to plot\n\ne.g. what function is used to change the color scaling of a variable that is continuous in ggplot2?\n\nDo not ask the model to plot the whole thing for you\n\nCan result in many small errors (which can cause all your code to run into errors)\n\nFor the assignments and activities: use it sparingly (only use to find new functions/arguments) and cite usage when needed"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#activity",
+    "href": "lectures/w3l2_ggplot.html#activity",
+    "title": "The Amazing World of ggplot2",
+    "section": "Activity",
+    "text": "Activity\n\nSeen on schedule\n\nOr here"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#for-now-and-monday",
+    "href": "lectures/w3l2_ggplot.html#for-now-and-monday",
+    "title": "Types of Data Visualizations",
+    "section": "For Now and Monday",
+    "text": "For Now and Monday\n\nFinish activity for today’s class\nLab #1 due tonight at 11:59pm\nReading Exercise #2 due Thursday at 11:59pm\n\nSeen on schedule"
+  },
+  {
+    "objectID": "lectures/w3l2_ggplot.html#for-now-and-friday",
+    "href": "lectures/w3l2_ggplot.html#for-now-and-friday",
+    "title": "The Amazing World of ggplot2",
+    "section": "For Now and Friday",
+    "text": "For Now and Friday\n\nFinish activity for today’s class\nLab #1 due tonight at 11:59pm\nReading Exercise #2 due Thursday at 11:59pm\n\nSeen on schedule"
+  },
+  {
+    "objectID": "lectures/w3l2_act.html",
+    "href": "lectures/w3l2_act.html",
+    "title": "Week 3, Lecture 2: ggplot2",
+    "section": "",
+    "text": "In this activity, you will generate and replicate several plots based on the California Housing dataset, which analyzes housing information from the 1990 U.S. census. More information can be found here: link\nMake sure to create a .qmd file in your Activities repository first.\nTo import the dataset into your machine, do the following:\n\nImport the ‘housing.csv’ file using the following URL and code:\n\n\nhttps://jericholawson.github.io/classes/sds192/data/housing.csv\n\n\nlibrary(ggplot2)\nhousing &lt;- read.csv(\"https://jericholawson.github.io/classes/sds192/data/housing.csv\")"
+  },
+  {
+    "objectID": "lectures/w3l2_act.html#introduction",
+    "href": "lectures/w3l2_act.html#introduction",
+    "title": "Week 3, Lecture 2: ggplot2",
+    "section": "",
+    "text": "In this activity, you will generate and replicate several plots based on the California Housing dataset, which analyzes housing information from the 1990 U.S. census. More information can be found here: link\nMake sure to create a .qmd file in your Activities repository first.\nTo import the dataset into your machine, do the following:\n\nImport the ‘housing.csv’ file using the following URL and code:\n\n\nhttps://jericholawson.github.io/classes/sds192/data/housing.csv\n\n\nlibrary(ggplot2)\nhousing &lt;- read.csv(\"https://jericholawson.github.io/classes/sds192/data/housing.csv\")"
+  },
+  {
+    "objectID": "lectures/w3l2_act.html#questions",
+    "href": "lectures/w3l2_act.html#questions",
+    "title": "Week 3, Lecture 2: ggplot2",
+    "section": "Questions",
+    "text": "Questions\n\nIdentify the number of observations and variables in this dataset.\nDetermine which variables are numerical and categorical.\nRecreate the following plot you see below using the housing dataset and ggplot2.\n\n\n\n# RECREATE PLOT HERE\n\n\nUsing code from the last problem, add to your code such that you are able to generate the following image:\n\n\n\n# RECREATE PLOT HERE\n\nHint: Once you find the correct scale function, please look through the help file and find a diverging palette that matches the above chart.\n\nQuestion for Reflection: Note how in this plot, the x and y axis don’t start at 0. Why might it be ok here vs. in other kinds of plots?\n\n\nRecreate the following plot you see below using the housing dataset and ggplot2.\n\n\n\nCreate one of the following plots below based on some combination of variables OCEAN_PROXIMITY, median_income, and housing_median_age. Make sure to have an appropriate title, axis labels, and appropriate scaling. Consider what each point represents in the data."
   }
 ]

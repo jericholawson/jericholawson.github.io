@@ -9,8 +9,8 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.23">
 
-  <meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 1, Lecture 1   ">
-  <title>SDS 192: Introduction to Data Science, Spring 2026 – Introductions</title>
+  <meta name="author" content="      Jericho Lawson    Statistical &amp; Data Sciences, Smith College  Spring 2026 | Week 3, Lecture 1   ">
+  <title>SDS 192: Introduction to Data Science, Spring 2026 – Intro to Data Visualizations</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,325 +128,399 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introductions</h1>
+  <h1 class="title">Intro to Data Visualizations</h1>
   <p class="subtitle">SDS 192: Introduction to Data Science</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 1, Lecture 1 </span> <br> 
+<br> <br> <br> Jericho Lawson <br> <span style="font-size: 65%;"> <a href="https://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> Spring 2026 | Week 3, Lecture 1 </span> <br> 
 </div>
 </div>
 </div>
 
 </section>
-<section id="happy-snow-day" class="slide level2">
-<h2>Happy Snow Day!!</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/snow1.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/snow2.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div></div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/lect1/snow3.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</section>
-<section id="welcome" class="slide level2">
-<h2>Welcome!</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../images/sdslogo.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div><div class="column" style="width:60%;">
+<section id="last-time" class="slide level2 smaller">
+<h2>Last Time</h2>
 <ul>
-<li><strong>Course:</strong> SDS 192, Sect. 02</li>
-<li><strong>Times:</strong>
+<li>More behind R
 <ul>
-<li>M, 1:40-2:55pm</li>
-<li>W/F, 1:20-2:35pm</li>
+<li>Data imports</li>
+<li>Missing data</li>
+<li>Other topics</li>
+</ul></li>
+<li>What is a workflow?
+<ul>
+<li>Why?</li>
+<li>Process</li>
+</ul></li>
+<li>GitHub
+<ul>
+<li>What is it?</li>
+<li>Actions</li>
 </ul></li>
 </ul>
-</div></div>
 </section>
-<section id="welcome-1" class="slide level2">
-<h2>Welcome!</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
+<section id="activity" class="slide level2">
+<h2>Activity</h2>
 <ul>
-<li><strong>Instructor:</strong> Jericho Lawson<br>
-</li>
-<li><strong>Location:</strong> McConnell 207<br>
-</li>
-<li><strong>Office Hours:</strong>
-<ul>
-<li>M, 3-4pm</li>
-<li>F, 10am-12pm</li>
-</ul></li>
-<li><strong>Email:</strong> <a href="mailto:jlawson01@smith.edu">jlawson01@smith.edu</a></li>
+<li>Talk to 2-3 people around you and discuss any questions you may have about using GitHub.</li>
+<li>Put any questions in the anonymous Google Form <a href="https://forms.gle/ZLuW2xM3P6xwS9Lh9">here</a></li>
 </ul>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/jericholawson.jpg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div></div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="today" class="slide level2 smaller">
+<h2>Today</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../images/lect1/ex1.png" class="quarto-figure quarto-figure-center" style="width:65.0%"></p>
+<p><img data-src="images/lect5/ex6.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 <div class="columns">
 <div class="column" style="width:65%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../images/lect1/ex2.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
-</figure>
-</div>
+<p><img data-src="images/lect5/ex1.png" class="quarto-figure quarto-figure-left" style="width:80.0%"> <img data-src="images/lect5/ex2.png" class="quarto-figure quarto-figure-left" style="width:80.0%"></p>
 </div><div class="column" style="width:35%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../images/lect1/ex3.png" class="quarto-figure quarto-figure-center" style="width:85.0%"></p>
-</figure>
-</div>
+<p><img data-src="images/lect5/ex4.png"> <img data-src="images/lect5/ex5.png"></p>
 </div></div>
-<blockquote>
-<p>Sources: <a href="https://www.nytimes.com/interactive/2025/11/04/us/elections/results-virginia-governor.html">NYT</a>, <a href="https://compadre-db.org/">Compadre DB</a>, <a href="https://www.theatlantic.com/technology/2025/11/chatgpt-third-anniversary/685084/">The Atlantic</a></p>
-</blockquote>
 </section>
-<section id="warm-up-activity-data-science" class="slide level2 scrollable">
-<h2>Warm-Up Activity: Data Science</h2>
-<p>Form groups of 2-3 with your peers near you. Complete the following tasks:</p>
-<ol type="1">
-<li>Introduce yourselves to each other! Mention your name, major, and one cool thing you did over winter break.</li>
-<li>On a piece of paper, write the names of all group members.</li>
-<li>Write down words, phrases, and ideas that come to mind when you hear “data science”.</li>
-</ol>
+<section id="for-today" class="slide level2">
+<h2>For Today</h2>
+<ul>
+<li>Data visualizations
+<ul>
+<li>Introduction</li>
+<li>Taxonomy</li>
+<li>Conventions and critiques</li>
+<li>5NG</li>
+<li>Activity</li>
+</ul></li>
+</ul>
 </section>
-<section id="what-is-data-science-common-view" class="slide level2">
-<h2>What is data science? Common view:</h2>
+<section id="what-is-data-visualization" class="slide level2">
+<h2>What is Data Visualization?</h2>
+<ul>
+<li>The <strong>translation</strong> of <strong>information</strong> into a <strong>graphical</strong> format
+<ul>
+<li>Information <span class="math inline">\(\rightarrow\)</span> graphics</li>
+</ul></li>
+<li>Helps analysts summarize and identify patterns across large datasets</li>
+<li>Always involves critical judgment calls on the part of the designer</li>
+</ul>
+</section>
+<section id="information-rightarrow-graphics" class="slide level2">
+<h2>Information <span class="math inline">\(\rightarrow\)</span> Graphics</h2>
+<p><img data-src="images/lect5/info.png"> <img data-src="images/lect5/graphic.jpg"> &gt; Source: <a href="https://www.natesilver.net/p/zohrans-high-risk-high-reward-strategy">Silver Bulletin</a></p>
+<p><strong>Question:</strong> What information is displayed in these maps? How is it being displayed?</p>
+</section>
+<section id="elements-of-data-graphics" class="slide level2 scrollable">
+<h2>Elements of Data Graphics</h2>
+<ul>
+<li>Aesthetics (i.e.&nbsp;visual cues)</li>
+<li>Scale</li>
+<li>Context <sup>1</sup></li>
+<li>Coordinate systems</li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Framework drawn from: Yau, Nathan. 2013. <em>Data Points: Visualization That Means Something</em>. 1st edition. Indianapolis, IN: Wiley.</p></li></ol></aside></section>
+<section id="visual-cues" class="slide level2 smaller">
+<h2>Visual Cues</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li>Interdisciplinary field combining computer science, mathematics/statistics, and domain expertise to extract meaningful information from unstructured data points</li>
+<li>Where is the data <strong>positioned</strong> on the plot?</li>
+<li>What is the <strong>length</strong> of shapes on the plot?</li>
+<li>How large is the <strong>angle</strong> between vectors?</li>
+<li>Which <strong>direction</strong> is the data going towards?</li>
+<li>What <strong>shapes/symbols</strong> appear on the plot?</li>
+<li>How much <strong>area</strong> and <strong>volume</strong> do shapes take up on a plot?</li>
+<li>How intense is the <strong>color</strong> or <strong>shade</strong> presented on the plot?</li>
 </ul>
 </div><div class="column" style="width:40%;">
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Data_science.png" width="400"></p>
+<p><img data-src="images/lect5/baddrawing0.png"></p>
 </div></div>
 </section>
-<section id="what-is-data-science-my-view" class="slide level2">
-<h2>What is data science? My view:</h2>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<p><strong>Question:</strong> Which variables are mapped onto what visual cues?</p>
+
+<img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
+<section id="example-1" class="slide level2">
+<h2>Example</h2>
+<p><strong>Question:</strong> Which variables are mapped onto what visual cues?</p>
+
+<img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="example-2" class="slide level2">
+<h2>Example</h2>
+<p><strong>Question:</strong> Which variables are mapped onto what visual cues?</p>
+
+<img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<section id="example-3" class="slide level2">
+<h2>Example</h2>
+<p><strong>Question:</strong> Which variables are mapped onto what visual cues?</p>
+
+<img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
+<section id="example-4" class="slide level2">
+<h2>Example</h2>
+<p><strong>Question:</strong> Which variables are mapped onto what visual cues?</p>
+
+<img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<section id="coordinate-systems" class="slide level2">
+<h2>Coordinate Systems</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li>Interdisciplinary field combining computer science, mathematics/statistics, and domain expertise to extract meaningful information from unstructured data points</li>
-<li><span style="color:red"> Includes the human aspect: use of aesthetics, situational context, and communication to explain the data to the world</span></li>
+<li>Organization of data points</li>
+<li>We will focus primarily on a Cartesian system (i.e.&nbsp;rectangular coordinate system you are used to)</li>
+<li>Other systems: polar, geographic</li>
 </ul>
 </div><div class="column" style="width:40%;">
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Data_science.png" width="400"></p>
+<p><img data-src="images/lect5/baddrawing1.png"></p>
 </div></div>
 </section>
-<section id="case-study-1-aclu-fights-discriminatory-housing" class="slide level2 smaller">
-<h2>Case Study 1: ACLU Fights Discriminatory Housing</h2>
-<div class="columns">
-<div class="column">
-<ul>
-<li>American Civil Liberties Union employs <a href="https://medium.com/aclu-tech-analytics/meet-the-aclu-analytics-team-4644d4f20dae">data scientists</a> to produce insights regarding discriminatory laws and practices</li>
-<li>Findings are presented in courts, legislatures, and public reports</li>
-<li>In <a href="https://www.aclu.org/blog/racial-justice/race-and-economic-justice/lawsuit-challenges-discriminatory-housing-policy">this study</a>, they use public data to show that excluding people with criminal records from housing can be viewed as a violation of the US Fair Housing Act.</li>
-</ul>
-</div><div class="column">
-<p><img data-src="https://www.aclu.org/sites/default/files/maps-desktop2.png"></p>
-</div></div>
-</section>
-<section id="case-study-2-epa-tracks-environmental-injustice" class="slide level2 smaller">
-<h2>Case Study 2: EPA Tracks Environmental Injustice</h2>
-<div class="columns">
-<div class="column">
-<ul>
-<li>Environmental Protection Agency hires <a href="https://www.epa.gov/careers/science-careers-epa">data scientists</a> to produce insights regarding environmental health risks</li>
-<li>Findings implicate environmental policies, funding allocations, and legal actions against states and industries</li>
-<li><a href="https://www.epa.gov/ejscreen">This tool</a>, visualizes environmental and demographic indicators to highlight communities experiencing environmental injustices.</li>
-</ul>
-</div><div class="column">
-<p><img data-src="https://www.epa.gov/system/files/images/2021-07/map_data.png" style="width:80.0%"></p>
-</div></div>
-</section>
-<section id="case-study-3-geena-davis-institute-studies-gender-biases-in-films" class="slide level2 smaller">
-<h2>Case Study 3: Geena Davis Institute Studies Gender Biases in Films</h2>
+<section id="scale" class="slide level2">
+<h2>Scale</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li>Geena Davis Institute collaborated with University of Southern California’s Signal Analysis and Interpretation Laboratory (SAIL)</li>
-<li>Developed a machine learning tool to measure representation of diverse groups in films by studying screen time and speaking</li>
+<li>“How does distance in the data graphic translate into meaningful differences in quantity?”</li>
+<li>Three choices:
+<ul>
+<li><strong>Numeric:</strong> linear, logarithmic, or percentage</li>
+<li><strong>Categorical:</strong> nominal or ordinal</li>
+<li><strong>Time:</strong> by time units or wrap-around</li>
+</ul></li>
 </ul>
+<!--
+-   *Linear*: Numeric values are evenly spaced on axis.
+-   *Logarithmic*: Numeric interval are spaced by a factor of the base of the logarithm.
+-   *Categorical*: Categorical values are discretely placed on axis.
+-   *Ordinal*: Categorical values are ordered on axis.
+-   *Percent*: Percentages of a whole are evenly spaced on axis.
+-   *Time*: Date/time values are placed on axis in years, months, days, hours, etc.
+-->
 </div><div class="column" style="width:40%;">
-<p><img data-src="https://geenadavisinstitute.org/wp-content/uploads/2023/12/Logo-1.svg" style="width:100.0%"></p>
+<p><img data-src="images/lect5/baddrawing2.png"></p>
 </div></div>
 </section>
-<section id="topics-covered-in-this-course" class="slide level2">
-<h2>Topics covered in this course</h2>
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
 <div class="columns">
-<div class="column" style="width:70%;">
-<ul>
-<li>Data visualization</li>
-<li>Data wrangling</li>
-<li>Programming with data (via R)</li>
-<li>Data retrieval</li>
-<li>Data science infrastructures and workflows</li>
-<li>Data science ethics</li>
-<li>Mapping</li>
-</ul>
-</div><div class="column" style="width:30%;">
-<p><img data-src="https://miro.medium.com/max/1400/1*g945d5qBHDh_HjvdXStvNg.jpeg"></p>
-</div></div>
-</section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning objectives</h2>
-<p><strong>Data visualization</strong></p>
-<ul>
-<li>Create informative and clean visuals via base R, advanced libraries</li>
-<li>Show appropriate statistics and metrics for support</li>
-</ul>
-<p><strong>Data wrangling</strong></p>
-<ul>
-<li>Develop proper wrangling techniques, including data transformation, cleaning, and joining</li>
-<li>Gather data in appropriate and ethical manners</li>
-</ul>
-</section>
-<section id="learning-objectives-1" class="slide level2">
-<h2>Learning objectives</h2>
-<p><strong>Workflow</strong></p>
-<ul>
-<li>Practice retrieval, R programming, GitHub, and light statistics</li>
-</ul>
-<p><strong>Data ethics</strong></p>
-<ul>
-<li>Identify best practices and ethical dilemmas, including contextual thinking, environmental concerns, and intellectual property</li>
-<li>Develop ethical ways to use generative AI</li>
-</ul>
-</section>
-<section id="who-am-i" class="slide level2 smaller">
-<h2>Who am I?</h2>
-<p>Call me Jericho, but if you prefer, Professor Lawson or Dr.&nbsp;Lawson is okay!</p>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
 <figure>
-<p><img data-src="../images/jerichoHikes.jpg" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
 </figure>
 </div>
-</div><div class="column" style="width:70%;">
-<ul>
-<li>Lecturer of Statistical and Data Sciences</li>
-<li>Research interests: variable selection, imaging, machine learning</li>
-<li>My college journey:
-<ul>
-<li>Ph.D.&nbsp;in Applied Statistics from UC Riverside</li>
-<li>M.S. in Statistics from UC Riverside</li>
-<li>B.S. in Applied Mathematics; Statistics and Data Science from University of Arizona</li>
-</ul></li>
-</ul>
-</div></div>
-</section>
-<section id="who-am-i-1" class="slide level2 smaller">
-<h2>Who am I?</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div class="quarto-figure quarto-figure-center">
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
 <figure>
-<p><img data-src="../images/jerichoHikes.jpg" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
 </figure>
 </div>
-</div><div class="column" style="width:70%;">
-<ul>
-<li>From Arizona!!
-<ul>
-<li>Will either hear me talk about the state or the Suns</li>
-</ul></li>
-<li>Hiker, foodie, and explorer!</li>
-</ul>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
 </div></div>
 </section>
-<section id="exercise" class="slide level2 scrollable">
-<h2>Exercise</h2>
-<p>On your feet! I’ll ask three questions about light-hearted pieces of information. For each question,</p>
-<ol type="1">
-<li>Group or order yourselves.</li>
-<li>Ponder about what characteristics you see with the groupings/orderings.</li>
-</ol>
-<!-- Did you leave the state? -->
-<!-- Cups of coffee drank -->
-<!-- 1 to 5: Motivation level currently -->
-</section>
-<section id="workflow" class="slide level2">
-<h2>Workflow</h2>
+<section id="context" class="slide level2">
+<h2>Context</h2>
 <ul>
-<li>Determine problem/issue</li>
-<li>Collect data</li>
-<li>Explore and clean the data</li>
-<li>Model the data</li>
-<li>Communicate results</li>
-</ul>
-<p><strong>Question?</strong> How was this done? Discuss amongst yourselves.</p>
-</section>
-<section id="tools" class="slide level2">
-<h2>Tools</h2>
+<li>The “why” to data visualization</li>
+<li>Information to carefully highlight what needs to be highlighted
 <ul>
-<li><strong>Determine problem/issue:</strong> Exploration of issues</li>
-<li><strong>Collect data:</strong> From online source (e.g.&nbsp;scraping, csv file)</li>
-<li><strong>Explore and clean the data:</strong> Use of R, wrangling</li>
-<li><strong>Model the data:</strong> Statistics, regression</li>
-<li><strong>Communicate results:</strong> Plots, tables, writing, presentations</li>
-</ul>
-</section>
-<section id="coding-agonizing-when-it-doesnt-work-satisfying-when-it-does" class="slide level2">
-<h2>Coding: agonizing when it doesn’t work, satisfying when it does</h2>
-<ul>
-<li>Think of code like a language.</li>
-<li>Coding can be incredibly frustrating.</li>
-<li>Coding has been exclusionary.</li>
-</ul>
-</section>
-<section id="for-friday-and-beyond" class="slide level2">
-<h2>For Friday and beyond</h2>
-<ul>
-<li>Navigate the course website</li>
-<li>Read through the syllabus</li>
-<li>Complete the pre-course survey and quiz
-<ul>
-<li>Due Friday at 11:59pm, link on website under Week 1</li>
+<li>Titles, subtitles, axis labels, reference points, etc.</li>
 </ul></li>
-<li>Join the Slack, Perusall, and GitHub classroom sites</li>
-<li>Run through the tech setup
+</ul>
+</section>
+<section id="context-in-this-class" class="slide level2">
+<h2>Context in This Class</h2>
+<p>Five pieces of context MUST be in every plot you submit:</p>
 <ul>
-<li>R and RStudio</li>
+<li>The data’s <strong>unit of observation</strong></li>
+<li>Using titles, axis labels</li>
+<li><strong>Variables</strong> represented on the plot</li>
+<li>Using axis/legend titles</li>
+<li><strong>Filters</strong> applied to the data</li>
+<li><strong>Geographic</strong> context of the data</li>
+<li><strong>Temporal</strong> (date/time range) context of the date</li>
+</ul>
+</section>
+<section id="context-in-this-class-cont." class="slide level2">
+<h2>Context in This Class (cont.)</h2>
+
+<img data-src="images/lect5/labels.png" class="r-stretch"></section>
+<section id="data-visualization-conventions" class="slide level2">
+<h2>Data Visualization Conventions</h2>
+<ul>
+<li>Edward Tufte, American statistician sometimes considered “father of data visualization”</li>
+<li>Introduced the concept of “graphical integrity”</li>
+<li>How do we present data as honestly as possible?</li>
+</ul>
+</section>
+<section id="lie-factor" class="slide level2">
+<h2>Lie Factor</h2>
+<ul>
+<li>Lie Factor = (size of effect in graphic)/(size of effect in data)</li>
+<li>Lie factor is greater when variations on a graph fail to match variations in data</li>
+</ul>
+
+<img data-src="https://infovis-wiki.net/w/images/0/05/Lie_factor_example1_image.jpg?20051025183704" width="400" class="r-stretch quarto-figure-center"><p class="caption">Tufte, <em>Visual Display of Quantitative Information</em></p><aside class="notes">
+<p>5.3-0.6 / 0.6 * 100= 783 (graph)</p>
+<p>27.5-18 /18 *100 = 53 (data)</p>
+<p>783/53 = 14.8</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="inconsistent-scales" class="slide level2">
+<h2>Inconsistent Scales</h2>
+
+<img data-src="https://www.callingbullshit.org/tools/img/linear_to_log.png" class="r-stretch quarto-figure-center"><p class="caption">Example from callingbullshit.org</p></section>
+<section id="presenting-data-out-of-context" class="slide level2">
+<h2>Presenting Data Out of Context</h2>
+
+<img data-src="http://cloudfront.mediamatters.org/static/uploader/image/2013/10/28/welfare-jobs-ff-1.jpg" class="r-stretch quarto-figure-center"><p class="caption">Example from mediamatters.org</p></section>
+<section id="disproportionate-data-to-ink-ratio" class="slide level2">
+<h2>Disproportionate Data-to-Ink Ratio</h2>
+<ul>
+<li>Ensure that the ink used on the data match the amount of data presented</li>
+<li>Data-to-ink ratio = (ink used to represent data)/(ink used to print graphic)</li>
+<li>Should be as close as possible to 1</li>
+<li>Another way to think about it: How much of this graph could I erase without losing data?</li>
+</ul>
+</section>
+<section id="disproportionate-data-to-ink-ratio-1" class="slide level2">
+<h2>Disproportionate Data-to-Ink Ratio</h2>
+
+<img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<section id="deviating-from-norms" class="slide level2">
+<h2>Deviating from Norms</h2>
+
+<img data-src="https://www.callingbullshit.org/tools/img/stand_your_ground.png" class="r-stretch quarto-figure-center"><p class="caption">Example from callingbullshit.org</p></section>
+<section id="when-can-i-break-convention" class="slide level2">
+<h2>When Can I Break Convention??</h2>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/b5C5dV9XVKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</section>
+<section id="types-of-graphs" class="slide level2 smaller">
+<h2>Types of Graphs</h2>
+<ul>
+<li>The 5NGs</li>
+</ul>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Line Graphs</a></li><li><a href="#tabset-1-2">Histograms</a></li><li><a href="#tabset-1-3">Bar Plots</a></li><li><a href="#tabset-1-4">Box Plots</a></li><li><a href="#tabset-1-5">Scatter Plots</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-14-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-3">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-15-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-4">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-16-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-5">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="w3l1_visualization_files/figure-revealjs/unnamed-chunk-17-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="activity-1" class="slide level2">
+<h2>Activity</h2>
+<ul>
+<li>Seen in schedule
+<ul>
+<li>Or <a href="../lectures/w3l1_act.html">here</a></li>
+<li>Submit in <strong>Slack</strong></li>
 </ul></li>
+</ul>
+</section>
+<section id="for-now-and-wednesday" class="slide level2">
+<h2>For Now and Wednesday</h2>
+<ul>
+<li>Finish activity for today’s class</li>
+<li>Lab #1 due on Wednesday at 11:59pm</li>
 </ul>
 
 
 </section>
+
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>SDS 192 | Introductions</p>
+<p>SDS 192 | Data Visualizations</p>
 </div>
 </div></div>
 
@@ -658,6 +732,82 @@
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
