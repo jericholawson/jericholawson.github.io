@@ -60,7 +60,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
   },
   {
     "objectID": "schedule.html#week-1-introduction-126---130",
@@ -256,7 +256,7 @@
     "href": "schedule.html#week-1-what-is-data-science-126---130",
     "title": "Schedule",
     "section": "",
-    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
+    "text": "Monday, 1/26Wednesday, 1/28Friday, 1/30\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and enjoy the snow!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Introductions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Data\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nPre-Course Survey (due Friday, 1/30 at 11:59pm)\nTech Setup (due Friday, 1/30 at 11:59pm)\nReadings #1 (due Tuesday, 2/1 on Perusall at 11:59pm)"
   },
   {
     "objectID": "schedule.html#week-2-what-is-r-and-github-22---26",
@@ -1201,7 +1201,7 @@
     "href": "lectures/w1l1_intro.html#for-friday-and-beyond",
     "title": "Introductions",
     "section": "For Friday and beyond",
-    "text": "For Friday and beyond\n\nNavigate the course website\nRead through the syllabus\nComplete the pre-course survey and quiz\n\nDue Friday at 11:59pm, link on website under Week 1\n\nJoin the Slack, Perusall, and GitHub classroom sites\nRun through the tech setup\n\nR and RStudio"
+    "text": "For Friday and beyond\n\nNavigate the course website\nRead through the syllabus\nComplete the pre-course survey and tech setup\n\nDue Friday at 11:59pm, link on website under Week 1\nJoin the Slack, Perusall, and GitHub classroom sites"
   },
   {
     "objectID": "lectures/w1l2_data.html#for-monday",
@@ -1727,5 +1727,12 @@
     "title": "Week 3, Lecture 2: ggplot2",
     "section": "Questions",
     "text": "Questions\n\nIdentify the number of observations and variables in this dataset.\nDetermine which variables are numerical and categorical.\nRecreate the following plot you see below using the housing dataset and ggplot2.\n\n\n\n# RECREATE PLOT HERE\n\n\nUsing code from the last problem, add to your code such that you are able to generate the following image:\n\n\n\n# RECREATE PLOT HERE\n\nHint: Once you find the correct scale function, please look through the help file and find a diverging palette that matches the above chart.\n\nQuestion for Reflection: Note how in this plot, the x and y axis don’t start at 0. Why might it be ok here vs. in other kinds of plots?\n\n\nRecreate the following plot you see below using the housing dataset and ggplot2.\n\n\n\nCreate one of the following plots below based on some combination of variables OCEAN_PROXIMITY, median_income, and housing_median_age. Make sure to have an appropriate title, axis labels, and appropriate scaling. Consider what each point represents in the data."
+  },
+  {
+    "objectID": "schedule.html#week-4-data-visualizations-with-ggplot-216---220",
+    "href": "schedule.html#week-4-data-visualizations-with-ggplot-216---220",
+    "title": "Schedule",
+    "section": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)",
+    "text": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\nLecture #7: Types of Data Visualizations\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Advanced ggplot2\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLab #3: Visualization Aesthetics"
   }
 ]
