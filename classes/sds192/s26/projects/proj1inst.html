@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jericho Lawson   Statistical &amp; Data Sciences, Smith College   Spring 2026    Document adopted from Lindsay Poirier">
+<meta name="author" content="Jericho Lawson">
+<meta name="dcterms.date" content="2026-01-29">
 
-<title>Class #2: Datasets – SDS 192: Introduction to Data Science, Spring 2026</title>
+<title>Project #1 (150 pts) – SDS 192: Introduction to Data Science, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -106,6 +72,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -164,16 +159,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#working-time" id="toc-working-time" class="nav-link" data-scroll-target="#working-time">Working Time</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#components" id="toc-components" class="nav-link" data-scroll-target="#components">Components</a>
+  <ul class="collapse">
+  <li><a href="#project-proposal-5-pts-due-wednesday-218-at-1159pm-via-github" id="toc-project-proposal-5-pts-due-wednesday-218-at-1159pm-via-github" class="nav-link" data-scroll-target="#project-proposal-5-pts-due-wednesday-218-at-1159pm-via-github">Project Proposal (5 pts; due Wednesday, 2/18 at 11:59pm via GitHub)</a></li>
+  <li><a href="#recording-25-pts-due-wednesday-34-at-1159pm-via-email" id="toc-recording-25-pts-due-wednesday-34-at-1159pm-via-email" class="nav-link" data-scroll-target="#recording-25-pts-due-wednesday-34-at-1159pm-via-email">Recording (25 pts; due Wednesday, 3/4 at 11:59pm via email)</a></li>
+  <li><a href="#project-repository-120-pts-due-wednesday-34-at-1159pm-via-github" id="toc-project-repository-120-pts-due-wednesday-34-at-1159pm-via-github" class="nav-link" data-scroll-target="#project-repository-120-pts-due-wednesday-34-at-1159pm-via-github">Project Repository (120 pts; due Wednesday, 3/4 at 11:59pm via GitHub)</a></li>
+  </ul></li>
+  <li><a href="#tips" id="toc-tips" class="nav-link" data-scroll-target="#tips">Tips</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Class #2: Datasets</h1>
-<p class="subtitle lead">SDS 192: Introduction to Data Science</p>
+<h1 class="title">Project #1 (150 pts)</h1>
+<p class="subtitle lead">SDS 192: Introduction to Data Science, Spring 2026</p>
 </div>
 
 
@@ -183,10 +193,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Jericho Lawson<br> <span style="font-size: 70%;"> <a href="http://www.smith.edu/sds">Statistical &amp; Data Sciences</a>, Smith College<br> </span> Spring 2026 <br> <span style="font-size: 70%;"> Document adopted from Lindsay Poirier </span></p>
+             <p>Jericho Lawson </p>
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 29, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -196,53 +212,226 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Today, we are going to work with a dataset that documents cases where NYC Urban Park Rangers respond to requests for animal assistance, relocation, and/or rescue. If you are unfamiliar with what an Urban Park Ranger does, you may want to check out this video!</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PRn0v8rNyPI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-<ol type="1">
-<li><p>Navigate to the <a href="https://data.cityofnewyork.us/Environment/Urban-Park-Ranger-Animal-Condition-Response/fuhs-xmg2">NYC Urban Park Ranger Animal Condition Response</a> dataset.</p></li>
-<li><p>Note the information listed in the “About this Dataset” section. This is administrative metadata.</p></li>
-<li><p>Note the attachment in this section with the file name: <code>UrbanParkRangerAnimalConditionResponse_DataDictionary_20181107.xlsx</code>. This contains descriptive metadata for this dataset.</p></li>
-<li><p>Click on the ‘Data’ tab at the top of the page. You can now see the data as a rectangular dataset.</p></li>
-<li><p>Answer the following questions on a sheet of paper in groups of 3-4:</p></li>
-</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Updates to this document are indicated in <span style="color:red;">red.</span></p>
+</div>
+</div>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>In this project, you will be analyzing a particular dataset and developing meaningful and clear visualizations that detail various trends and patterns within the data that inform the audience about particular issues. This will be framed within a workflow, in which you will import the data, write code to analyze and create plots, and format your files so that they are reproducible. By the end of this project, you will be able to:</p>
 <ul>
-<li>What is the unit of observation in this dataset? In other words, what does each row signify? How do you know?</li>
-<li>How frequently is this dataset updated? How do you know?</li>
-<li>What are the possible values for the Species Status variable in this dataset? How do you know?</li>
-<li>What is the value at index [3, 3] in this dataset? How do you know?</li>
-<li>Identify the index of one missing value in this dataset. How do you know?</li>
-<li>Identify one nominal variable, one ordinal variable, one discrete variable, and one continuous variable.</li>
+<li><strong>Navigate</strong> different forms of data documentation.</li>
+<li><strong>Recognize</strong> differences in variable types and how they get assigned to certain R objects.</li>
+<li><strong>Examine</strong> trends and patterns within the data through exploratory plotting in R.</li>
+<li><strong>Create</strong> clear and informative plots that highlight particular patterns in the data.</li>
+<li><strong>Summarize</strong> findings and ethical issues within data and its resources through a short video and report.</li>
 </ul>
-<ol start="6" type="1">
-<li>As a preview of what you will be able to do in a few weeks, here is a visualization of the most commons species for which services are requested in NYC!</li>
+<p>The project will contain the following parts:</p>
+<ul>
+<li><strong>Project Proposal</strong> (5 pts; due <em>Wednesday, 2/18</em> at 11:59pm) <!-- %- **Presentation and Slides** (30 pts; due *Monday, 10/28* at 8:59am; given Monday, 10/28 during discussion and lecture)
+    %- **Group Member Evaluations** (5 pts; due *Tuesday, 6/11* at 11:59pm) --></li>
+<li><strong>Video Summary</strong> (25 pts; due <em>Wednesday, 3/4</em> at 11:59pm)</li>
+<li><strong>Project Repository</strong> (120 pts; due <em>Wednesday, 3/4</em> at 11:59pm)</li>
+</ul>
+</section>
+<section id="working-time" class="level2">
+<h2 class="anchored" data-anchor-id="working-time">Working Time</h2>
+<p>Parts of 2-3 lectures will be dedicated to working on the project. Aside from these times, you will be tasked with working on this project outside of class.</p>
+<p>As questions/concerns arise during the project, ask your instructor for assistance and guidance. There will be some hints and pointers that can be given to assist you through the project.</p>
+</section>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<ol type="1">
+<li><p><strong>Choose a dataset.</strong> You will choose one of the following datasets to base your project on. The datasets are the following:</p>
+<ul>
+<li><a href="https://catalog.data.gov/dataset/mental-health-care-in-the-last-4-weeks">Mental Health Care in the Last 4 Weeks</a></li>
+<li><a href="https://catalog.data.gov/dataset/chicago-microlending-institute-cmi-microloans">Chicago Microlending Institute (CMI) Microloans</a></li>
+<li><a href="https://catalog.data.gov/dataset/mta-daily-ridership-data-beginning-2020">MTA Daily Ridership Data: 2020 - 2025</a></li>
+<li><a href="https://catalog.data.gov/dataset/emergency-department-volume-and-capacity">Emergency Department Volume and Capacity</a></li>
+</ul></li>
+<li><p><strong>Create a repository on GitHub.</strong> You will need to go to your <a href="https://github.com">GitHub</a> profile. On your profile, you will create a new repository by clicking “New” at the top-right hand corner of the screen.</p>
+<p><img src="images/Screenshot 2025-09-21 180946.png" class="img-fluid"> From there, you will put in the following specifications for your new repository:</p>
+<p><img src="Images/Screenshot 2025-09-21 181052.png" class="img-fluid"></p>
+<p>Then, create the repository.</p></li>
+<li><p><strong>Create new project in RStudio.</strong> You will now create a new project in RStudio based around your new repository. To do so, go to File <span class="math inline">\(\rightarrow\)</span> New Project <span class="math inline">\(\rightarrow\)</span> Version Control <span class="math inline">\(\rightarrow\)</span> Git. Copy the new repository URL and paste it into the first field. Name your project “project1” and place the new repository into a new folder on your laptop. Then, click “Create Project”.</p></li>
+<li><p><strong>Import data into R.</strong> You will need to download the .csv file from the data link above and import the data into R. Additionally, some of the datasets may contain missing observations, which will need to be omitted before you continue this project (depending on which variables you are looking at). More on this later. You will find the following pieces of code to be helpful:</p>
+<ul>
+<li><code>read.csv(filepath/name, header = TRUE)</code></li>
+<li><code>na.omit(object)</code></li>
+</ul>
+<p>You will need to place the .csv file you are referencing into a “data” folder in your project folder. Any references to your .csv file from code should have a file path of “data/yourData.csv”.</p></li>
+<li><p><strong>Get to know the data set.</strong> This will involve a combination of looking at the metadata and a snippet of the data itself. Consider the following questions as you examine the data:</p>
+<ul>
+<li>Who is the creator/maintainer of the data?</li>
+<li>What do the observations represent? How many variables are there?</li>
+<li>How many observations and variables are in the data set?</li>
+<li>What are the variables in there? What are the possible values in each variable?</li>
+<li>Identify the response or variable of interest in this data set.
+<ul>
+<li>This should be numerical.</li>
+</ul></li>
+<li>Are there missing values in the data set? If so, how many and is there a reason why this is the case?
+<ul>
+<li>If it appears to be random, you can omit the missing observations. If not, you will need to subset your data.</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Determine which variables to analyze.</strong> You will need to identify the main (continuous) variable of interest in your dataset. Once you do so, pick five more variables you want to analyze alongside the variable of interest. For these five variables, you must follow these rules:</p>
+<ul>
+<li>At least one variable must be categorical</li>
+<li>At least one variable must be continuous</li>
+</ul>
+<p>Note that you may need to discretize a variable or two, which involves making a new variable based on other variables.</p></li>
+<li><p><strong>Prepare the data set for analysis.</strong> Some data wrangling may need to be done, particularly if you are looking at certain subsets of the data or missing data exists. Your code should properly subset the data so that you are able to complete the data visualizations.</p></li>
+<li><p><strong>Create the data visualizations.</strong> You will need to create four visualizations, which should (1) facilitate a discussion of the variable of interest based on its own distribution/subset or when compared to other variables and (2) be concise, informative, and adhere to the principles of data visualization. For grading purposes, you should adhere to the following:</p>
+<ul>
+<li>At least three types of graphs need to be represented by your visualizations (e.g.&nbsp;bar, scatter, histogram, boxplot)</li>
+<li>The main variable of interest should be represented in some capacity in at least two plots. The other variables just need to be used at least once.</li>
+<li>Each plot should adhere to the five principles of context (see Lecture #4 for details)</li>
+<li>Each aesthetic or stylistic choice should add to the interpretability of the plot.</li>
+</ul></li>
+<li><p><strong>Analyze each of the visualizations.</strong> For each of the plots, you will consider the following questions:</p>
+<ul>
+<li>What can be said about the data? Trends? Patterns? Characteristics?</li>
+<li>What does this say about the situation at hand? How does this further your understanding of the topic?</li>
+</ul>
+<p>You will also consider the pitfalls of your analysis and data as a whole. This will include exposing potential biases, exclusions, and data collection procedures.</p></li>
 </ol>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>nyc_urban_ranger <span class="ot">&lt;-</span> </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read_csv</span>(<span class="st">"https://data.cityofnewyork.us/api/views/fuhs-xmg2/rows.csv"</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">name_repair =</span> make.names)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>nyc_urban_ranger <span class="sc">%&gt;%</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Species.Description) <span class="sc">%&gt;%</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Count =</span> <span class="fu">sum</span>(X..of.Animals)) <span class="sc">%&gt;%</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">10</span>, Count) <span class="sc">%&gt;%</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Species.Description, Count), <span class="at">y =</span> Count)) <span class="sc">+</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Top 10 Most Common Species for which NYC Urban Park Rangers Assistance is Requested, 2018-2021"</span>, <span class="at">x =</span> <span class="st">"Species"</span>, <span class="at">y =</span> <span class="st">"Count"</span>) <span class="sc">+</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">8</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="w1l2_act_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+</section>
+<section id="components" class="level2">
+<h2 class="anchored" data-anchor-id="components">Components</h2>
+<section id="project-proposal-5-pts-due-wednesday-218-at-1159pm-via-github" class="level3">
+<h3 class="anchored" data-anchor-id="project-proposal-5-pts-due-wednesday-218-at-1159pm-via-github">Project Proposal (5 pts; due Wednesday, 2/18 at 11:59pm via GitHub)</h3>
+<p>For this component, you will do two tasks:</p>
+<ul>
+<li>Share your repository to me on GitHub. To do so, go to your repository, then go to Settings -&gt; Collaborators. Click “Add People” and put in my username (@jericholawson).</li>
+<li>Create a .qmd file named <code>proposal.qmd</code> that answers the following in 3-4 sentences:
+<ul>
+<li>Which dataset will you use?</li>
+<li>What question are you trying to answer with this project?</li>
+<li>Which variables do you want to explore?</li>
+</ul></li>
+</ul>
+<p>These tasks must be done by the due date mentioned above. A project late day cannot be used here.</p>
+</section>
+<section id="recording-25-pts-due-wednesday-34-at-1159pm-via-email" class="level3">
+<h3 class="anchored" data-anchor-id="recording-25-pts-due-wednesday-34-at-1159pm-via-email">Recording (25 pts; due Wednesday, 3/4 at 11:59pm via email)</h3>
+<p>The recording will consist of you walking through each of your four data visualizations. In this 2-4 minute recording, you will talk briefly about the dataset, present the visualizations, and summarize what you found.</p>
+<p>The best (and preferable) way to creating this recording will be to record yourself in a Zoom meeting while sharing a slide deck of your plots and brief bullet points. Once you’ve created the recording, you can choose to turn in the following via email to me:</p>
+<ul>
+<li>A unlisted YouTube link</li>
+<li>A .mp4 recording straight from Zoom</li>
+</ul>
+<p>The slides/visuals you present should be almost exclusively the plots you’ve generated. If you do have some prose on your slides, it should be at most one bullet point for a slide if accompanied with a visual and three bullet points other wise.</p>
+<p>You will be graded based on the proficiency of the following criteria:</p>
+<ul>
+<li>(5 pts) Delivery: points are talked about clearly; done within 2-4 minutes</li>
+<li>(5 pts) Organization: slides are reduced to visualizations and minimal bullet-points; easy for the audience to interpret</li>
+<li>(15 pts) Content: recording goes through the following:
+<ul>
+<li>Context, with a brief introduction into the data set and problem</li>
+<li>Visualizations, with succinct and correct interpretations</li>
+<li>Analysis, with proper mention of stakeholders and impact</li>
+</ul></li>
+</ul>
+<p><em>Submit the recording to me via <a href="mailto:jlawson01@smith.edu">email</a> by Wednesday, 3/4 at 11:59pm.</em></p>
+<p>This task must be done by the due date mentioned above. In conjunction with the repository, a project late day may be used here if needed.</p>
+</section>
+<section id="project-repository-120-pts-due-wednesday-34-at-1159pm-via-github" class="level3">
+<h3 class="anchored" data-anchor-id="project-repository-120-pts-due-wednesday-34-at-1159pm-via-github">Project Repository (120 pts; due Wednesday, 3/4 at 11:59pm via GitHub)</h3>
+<p>The project repository will contain all of the work completed. This includes all code, the dataset, a README.md file, and a 2-4 page report of all work (in a report.md file). As such, the final version of your repository will have the following elements:</p>
+<ol type="1">
+<li><code>data</code> folder
+<ul>
+<li>The .csv file of the data set you chose</li>
+<li>The .csv file of the revised data set you used</li>
+</ul></li>
+<li><code>R</code> folder
+<ul>
+<li>At least one .qmd file that includes all code used to complete the data cleaning and visualizations</li>
+</ul></li>
+<li><code>plots</code> folder
+<ul>
+<li>Place all generated plots here.</li>
+</ul></li>
+<li><code>README.md</code> file</li>
+<li><code>Report</code> file</li>
+<li><code>Proposal</code> file</li>
+</ol>
+<p>A detailed account of what goes in each of the parts and how it should look is seen next.</p>
+<section id="data-folder-5-pts" class="level4">
+<h4 class="anchored" data-anchor-id="data-folder-5-pts">1. Data Folder (5 pts)</h4>
+<p>You will have a folder named ``data” that contains (1) the .csv file of the dataset you initially chose and (2) the .csv file of the dataset that contains relevant observations and variables you chose.</p>
+<p>The updated data set should contain no missing observations and have only the variables you analyzed.</p>
+</section>
+<section id="r-folder-5-pts" class="level4">
+<h4 class="anchored" data-anchor-id="r-folder-5-pts">2. R Folder (5 pts)</h4>
+<p>You will have a folder named “R” that contains all code necessary to run through data cleaning and visualization. At a minimum, you just need one .qmd file in here, meaning that all code can be placed into a single file. However, if you feel the need to divide your code up, you can do so here. Your code files should be named accordingly.</p>
+<p>R code needs to be organized properly, have proper variable names, and contain clean and simplified code. To this regard, any written code should be the product of your own and not through any use of generative AI. Penalties from the syllabus will apply here.</p>
+</section>
+<section id="readme-file-5-pts" class="level4">
+<h4 class="anchored" data-anchor-id="readme-file-5-pts">3. README File (5 pts)</h4>
+<p>In many repositories, the role of the README file is to provide the viewer a basic summary of what the repository is for and how it is structured. You can find more details about what a README file entails at the following <a href="https://www.makeareadme.com/">link</a>.</p>
+<p>In your README file, you will need a name, a one-paragraph description, an author, and an overview of the structure. This can be done in a .md file (seen in RStudio), where <code>#</code> creates headers in the file.</p>
+</section>
+<section id="plots-40-pts" class="level4">
+<h4 class="anchored" data-anchor-id="plots-40-pts">4. Plots (40 pts)</h4>
+<p>In the <code>plots</code> folder, you will place all four generated visualizations here. Keep the file names to the plots simple, such as naming them <code>plot1.png</code>.</p>
+<p>For each plot, you will be graded on the following:</p>
+<ul>
+<li>(5 pts) Appropriate variables plotted; adheres to basic principles in guideline #8</li>
+<li>(5 pts) Context is provided in clear and concise manner; adhers to basic principles in guideline #8</li>
+</ul>
+</section>
+<section id="report-65-pts" class="level4">
+<h4 class="anchored" data-anchor-id="report-65-pts">5. Report (65 pts)</h4>
+<p>This report will contain all of the analysis and discussion related to the question you are trying to answer with the dataset.</p>
+<p>Formatting-wise, your report should:</p>
+<ul>
+<li>(3 pts) Contain <em>2-4 pages</em> (with no title, abstract, or table of contents required)</li>
+<li>(2 pts) Be organized into multiple, sensible sections</li>
+</ul>
+<p>The report should have the following:</p>
+<ul>
+<li>(10 pts) Introduction
+<ul>
+<li>An introduction into the chosen dataset, including the dimensions, variables, and information of the dataset; adhering to questions mentioned in guideline #5.</li>
+<li>The question you’re trying to answer.</li>
+</ul></li>
+<li>(10 pts each) Analysis (of each plot)
+<ul>
+<li>Should include your analysis of the plot, adhering to guideline #9.</li>
+</ul></li>
+<li>(10 pts) Conclusion
+<ul>
+<li>Summarize your findings, examine pitfalls in data and process.</li>
+</ul></li>
+</ul>
+<p>You will need to share this repository to me (@jericholawson) on GitHub. This task must be done by the due date mentioned above. In conjunction with the recording, a project late day may be used here if needed.</p>
+</section>
+<section id="proposal-0-pts" class="level4">
+<h4 class="anchored" data-anchor-id="proposal-0-pts">6. Proposal (0 pts)</h4>
+<p>This is the same proposal you created initally.</p>
+</section>
+</section>
+</section>
+<section id="tips" class="level2">
+<h2 class="anchored" data-anchor-id="tips">Tips</h2>
+<ul>
+<li><strong>Start early and plan accordingly.</strong> This will make it easier to space out the workload, especially since we’re in the middle of the semester.</li>
+<li><strong>Talk to Jericho about pointers or concerns.</strong> Feel free to email me or come to office hours regarding some recommendations on your project.</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
