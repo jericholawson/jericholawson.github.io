@@ -263,7 +263,7 @@
     "href": "schedule.html#week-2-what-is-r-and-github-22---26",
     "title": "Schedule",
     "section": "Week 2: What is R and GitHub? (2/2 - 2/6)",
-    "text": "Week 2: What is R and GitHub? (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4Friday, 2/6\n\n\n\n\n\n\n\n\nNoteLecture: Intro to R\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Tuesday, 2/3 on Perusall at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: R and GitHub\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 2: What is R and GitHub? (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4Friday, 2/6\n\n\n\n\n\n\n\n\nNoteLecture: Intro to R\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #1 (due Tuesday, 2/3 on Perusall at 11:59pm)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: R and GitHub\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #1: R and Understanding Datasets\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-3-data-visualization-the-basics-29---213",
@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsTextbooksPerusall\n\n\n\n1: Introductions\n2: Intro to Data \n\n\n\n\n1: R and Understanding Datasets\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsTextbooksPerusall\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R \n\n\n\n\n1: R and Understanding Datasets\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -675,8 +675,8 @@
     "objectID": "lectures/w2l1_introR.html#a-classic-first-project-in-coding",
     "href": "lectures/w2l1_introR.html#a-classic-first-project-in-coding",
     "title": "R Fundamentals",
-    "section": "A classic first project in coding",
-    "text": "A classic first project in coding\n\nprint(\"Hello world!\")\n\n[1] \"Hello world!\""
+    "section": "A Classic First Project in Coding",
+    "text": "A Classic First Project in Coding\n\nprint(\"Hello world!\")\n\n[1] \"Hello world!\""
   },
   {
     "objectID": "lectures/w2l1_introR.html#r-is-so-much-more-than-hello-world",
@@ -690,14 +690,14 @@
     "href": "lectures/w2l1_introR.html#structure",
     "title": "R Fundamentals",
     "section": "Structure",
-    "text": "Structure\n\nNouns: objects (mostly)\nVerbs: functions, operations\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nmtcars |&gt; select(mpg, hp)\n\n                     mpg  hp\nMazda RX4           21.0 110\nMazda RX4 Wag       21.0 110\nDatsun 710          22.8  93\nHornet 4 Drive      21.4 110\nHornet Sportabout   18.7 175\nValiant             18.1 105\nDuster 360          14.3 245\nMerc 240D           24.4  62\nMerc 230            22.8  95\nMerc 280            19.2 123\nMerc 280C           17.8 123\nMerc 450SE          16.4 180\nMerc 450SL          17.3 180\nMerc 450SLC         15.2 180\nCadillac Fleetwood  10.4 205\nLincoln Continental 10.4 215\nChrysler Imperial   14.7 230\nFiat 128            32.4  66\nHonda Civic         30.4  52\nToyota Corolla      33.9  65\nToyota Corona       21.5  97\nDodge Challenger    15.5 150\nAMC Javelin         15.2 150\nCamaro Z28          13.3 245\nPontiac Firebird    19.2 175\nFiat X1-9           27.3  66\nPorsche 914-2       26.0  91\nLotus Europa        30.4 113\nFord Pantera L      15.8 264\nFerrari Dino        19.7 175\nMaserati Bora       15.0 335\nVolvo 142E          21.4 109"
+    "text": "Structure\n\nNouns: objects (mostly)\nVerbs: functions, operations\n\n\nlibrary(tidyverse)\nmtcars |&gt; select(mpg, hp)\n\n                     mpg  hp\nMazda RX4           21.0 110\nMazda RX4 Wag       21.0 110\nDatsun 710          22.8  93\nHornet 4 Drive      21.4 110\nHornet Sportabout   18.7 175\nValiant             18.1 105\nDuster 360          14.3 245\nMerc 240D           24.4  62\nMerc 230            22.8  95\nMerc 280            19.2 123\nMerc 280C           17.8 123\nMerc 450SE          16.4 180\nMerc 450SL          17.3 180\nMerc 450SLC         15.2 180\nCadillac Fleetwood  10.4 205\nLincoln Continental 10.4 215\nChrysler Imperial   14.7 230\nFiat 128            32.4  66\nHonda Civic         30.4  52\nToyota Corolla      33.9  65\nToyota Corona       21.5  97\nDodge Challenger    15.5 150\nAMC Javelin         15.2 150\nCamaro Z28          13.3 245\nPontiac Firebird    19.2 175\nFiat X1-9           27.3  66\nPorsche 914-2       26.0  91\nLotus Europa        30.4 113\nFord Pantera L      15.8 264\nFerrari Dino        19.7 175\nMaserati Bora       15.0 335\nVolvo 142E          21.4 109"
   },
   {
     "objectID": "lectures/w2l1_introR.html#values-vs.-vectors-vs.-data-frames",
     "href": "lectures/w2l1_introR.html#values-vs.-vectors-vs.-data-frames",
     "title": "R Fundamentals",
     "section": "Values vs. Vectors vs. Data Frames",
-    "text": "Values vs. Vectors vs. Data Frames\n\nValuesVectorsData Frame\n\n\n\na single data point\nR understands values to be of a certain type:\n\ndouble: 3.29\ninteger: 3\ncharacter: “SDS 192”\nlogical: TRUE/FALSE\ndate-time: 1/23/84 01:23:01\n\n\n\n3.29 # double\n\n[1] 3.29\n\n3L # integer\n\n[1] 3\n\n\"SDS 192\" # character\n\n[1] \"SDS 192\"\n\nTRUE # logical\n\n[1] TRUE\n\nSys.Date() \n\n[1] \"2026-01-20\"\n\n\n\n\n\na 1-dimensional data object, listing a series of values\nall objects in a vector share the same type\nvector defined by listing entries (separated by commas) in the function c() (shorthand for concatenate/combine)\n\n\nc(1, 2, 3, 4)\n\n[1] 1 2 3 4\n\nc(\"Northampton\", \"Hadley\", \"Easthampton\", \"Amherst\")\n\n[1] \"Northampton\" \"Hadley\"      \"Easthampton\" \"Amherst\"    \n\n\n\n\n\na two-dimensional (rectangular) data object\nEvery column in a data frame is a vector\nColumn names act as a variable name for that vector (access via the $ accessor)\n\n\ndf\n\n  col1  col2 col3\n1    1  TRUE    a\n2    5 FALSE    b\n3    6  TRUE    c\n4    7  TRUE    d\n\ndf$col1\n\n[1] 1 5 6 7"
+    "text": "Values vs. Vectors vs. Data Frames\n\nValuesVectorsData Frame\n\n\n\na single data point\nR understands values to be of a certain type:\n\ndouble: 3.29\ninteger: 3\ncharacter: “SDS 192”\nlogical: TRUE/FALSE\ndate-time: 1/23/84 01:23:01\n\n\n\n3.29 # double\n\n[1] 3.29\n\n3L # integer\n\n[1] 3\n\n\"SDS 192\" # character\n\n[1] \"SDS 192\"\n\nTRUE # logical\n\n[1] TRUE\n\nSys.Date() \n\n[1] \"2026-02-01\"\n\n\n\n\n\na 1-dimensional data object, listing a series of values\nall objects in a vector share the same type\nvector defined by listing entries (separated by commas) in the function c() (shorthand for concatenate/combine)\n\n\nc(1, 2, 3, 4)\n\n[1] 1 2 3 4\n\nc(\"Northampton\", \"Hadley\", \"Easthampton\", \"Amherst\")\n\n[1] \"Northampton\" \"Hadley\"      \"Easthampton\" \"Amherst\"    \n\n\n\n\n\na two-dimensional (rectangular) data object\nEvery column in a data frame is a vector\nColumn names act as a variable name for that vector (access via the $ accessor)\n\n\ndf\n\n  col1  col2 col3\n1    1  TRUE    a\n2    5 FALSE    b\n3    6  TRUE    c\n4    7  TRUE    d\n\ndf$col1\n\n[1] 1 5 6 7"
   },
   {
     "objectID": "lectures/w2l1_introR.html#assigning-objects-to-variable-names",
@@ -710,15 +710,15 @@
     "objectID": "lectures/w2l1_introR.html#learning-check",
     "href": "lectures/w2l1_introR.html#learning-check",
     "title": "R Fundamentals",
-    "section": "Learning check",
-    "text": "Learning check\nWhat kind of object is this in R? What is its type?\n\ntemps &lt;- c(47.3, 55.6, 48.3)"
+    "section": "Learning Check",
+    "text": "Learning Check\nWhat kind of object is this in R? What is its type?\n\ntemps &lt;- c(47.3, 55.6, 48.3)"
   },
   {
     "objectID": "lectures/w2l1_introR.html#learning-check-1",
     "href": "lectures/w2l1_introR.html#learning-check-1",
     "title": "R Fundamentals",
-    "section": "Learning check",
-    "text": "Learning check\nWhat would happen if I were to do the following in R?\n\nval &lt;- 34\nval &lt;- val + 1\n\n\nThis is called overwriting a variable."
+    "section": "Learning Check",
+    "text": "Learning Check\nWhat would happen if I were to do the following in R?\n\nval &lt;- 34\nval &lt;- val + 1\n\n\nThis is called overwriting a variable."
   },
   {
     "objectID": "lectures/w2l1_introR.html#where-can-i-find-these-data-objects-in-r",
@@ -745,8 +745,8 @@
     "objectID": "lectures/w2l1_introR.html#activity-mathematical-operators",
     "href": "lectures/w2l1_introR.html#activity-mathematical-operators",
     "title": "R Fundamentals",
-    "section": "Activity: Mathematical operators",
-    "text": "Activity: Mathematical operators\n\nThink and write down all possible operations you would do inside an algebra class."
+    "section": "Activity: Mathematical Operators",
+    "text": "Activity: Mathematical Operators\n\nThink and write down all possible operations you would do inside an algebra class."
   },
   {
     "objectID": "lectures/w2l1_introR.html#operators-in-r",
@@ -759,8 +759,8 @@
     "objectID": "lectures/w2l1_introR.html#what-is-a-function",
     "href": "lectures/w2l1_introR.html#what-is-a-function",
     "title": "R Fundamentals",
-    "section": "What is a function?",
-    "text": "What is a function?\n\nAn action done on an object to produce something\n\nInputs/arguments to outputs\ne.g. y = f(x)\ne.g. With $15, I bought a slice of pizza for $5. Now I have $10 left."
+    "section": "What is a Function?",
+    "text": "What is a Function?\n\nAn action done on an object to produce something\n\nInputs/arguments to outputs\ne.g. y = f(x)\ne.g. With $15, I bought a slice of pizza for $5. Now I have $10 left."
   },
   {
     "objectID": "lectures/w2l1_introR.html#structure-of-function",
@@ -863,7 +863,7 @@
   {
     "objectID": "lectures/w2l1_act.html",
     "href": "lectures/w2l1_act.html",
-    "title": "Class #3: Intro to R",
+    "title": "Class #2: Intro to R",
     "section": "",
     "text": "Load the following dataset into your R environment:\n\n\nmtcars\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n\nWith a group of 2-3 people, explore this dataset and find the following information (and where you got them from):\n\nNumber of observations and variables\nWhat does each row represent?\nA categorical and numeric variable\nInformation about the dataset (hint: use the Help tab)\n\n\nThink and write down all possible operations you would do inside an algebra class.\nConvert the following variable name into something descriptive in snake case:\n\n\na &lt;- round(pi, digits = 2)\n\nRun the code in your Console. How can we find this variable in RStudio once we run this code?\n\nSuppose I use this code to find the mean of the disp and drat columns from mtcars:\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\nsapply(select(mtcars, c(mpg, cyl)), mean)\n\n     mpg      cyl \n20.09062  6.18750 \n\n\nRe-write this code such that we use the piping operators.\n\nThe functions below are commonly used on vectors:\n\n\nlength()\nunique()\nsort()\npaste()\n\nFor each function, look at its help file and briefly explain what each function does when applied to a numeric vector.\nWhen done: Save, commit, and push this file to your activities repository."
   },
@@ -886,7 +886,7 @@
     "href": "lectures/w2l1_introR.html#for-now-and-wednesday",
     "title": "R Fundamentals",
     "section": "For Now and Wednesday",
-    "text": "For Now and Wednesday\n\nFinish activities for today’s class\nLab #1 due on Wednesday at 11:59pm"
+    "text": "For Now and Wednesday\n\nFinish activities for today’s class\nReading annotations due tomorrow at 11:59pm"
   },
   {
     "objectID": "lectures/w2l2_github.html#last-time",
@@ -1818,5 +1818,12 @@
     "title": "Datasets",
     "section": "Let’s Explore!",
     "text": "Let’s Explore!\n\nNYC Open Data on Community Food Banks"
+  },
+  {
+    "objectID": "lectures/w2l1_introR.html#objects-and-their-actions",
+    "href": "lectures/w2l1_introR.html#objects-and-their-actions",
+    "title": "R Fundamentals",
+    "section": "Objects and their Actions",
+    "text": "Objects and their Actions\n\nInformation is stored in various data structures\n\ne.g. value, data frame, list\nmtcars\n\nCan write functions to perform actions on these data structures\n\ne.g. calculations, printing/storing information\nselect()\n\n\n\nmtcars |&gt; select(mpg, hp)\n\n                     mpg  hp\nMazda RX4           21.0 110\nMazda RX4 Wag       21.0 110\nDatsun 710          22.8  93\nHornet 4 Drive      21.4 110\nHornet Sportabout   18.7 175\nValiant             18.1 105\nDuster 360          14.3 245\nMerc 240D           24.4  62\nMerc 230            22.8  95\nMerc 280            19.2 123\nMerc 280C           17.8 123\nMerc 450SE          16.4 180\nMerc 450SL          17.3 180\nMerc 450SLC         15.2 180\nCadillac Fleetwood  10.4 205\nLincoln Continental 10.4 215\nChrysler Imperial   14.7 230\nFiat 128            32.4  66\nHonda Civic         30.4  52\nToyota Corolla      33.9  65\nToyota Corona       21.5  97\nDodge Challenger    15.5 150\nAMC Javelin         15.2 150\nCamaro Z28          13.3 245\nPontiac Firebird    19.2 175\nFiat X1-9           27.3  66\nPorsche 914-2       26.0  91\nLotus Europa        30.4 113\nFord Pantera L      15.8 264\nFerrari Dino        19.7 175\nMaserati Bora       15.0 335\nVolvo 142E          21.4 109"
   }
 ]
