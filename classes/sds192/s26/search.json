@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsTextbooksPerusall\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R \n\n\n\n\n1: R and Understanding Datasets\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsTextbooksPerusallDatasets\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R \n\n\n\n\n1: R and Understanding Datasets\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -1825,5 +1825,432 @@
     "title": "R Fundamentals",
     "section": "Objects and their Actions",
     "text": "Objects and their Actions\n\nInformation is stored in various data structures\n\ne.g. value, data frame, list\nmtcars\n\nCan write functions to perform actions on these data structures\n\ne.g. calculations, printing/storing information\nselect()\n\n\n\nmtcars |&gt; select(mpg, hp)\n\n                     mpg  hp\nMazda RX4           21.0 110\nMazda RX4 Wag       21.0 110\nDatsun 710          22.8  93\nHornet 4 Drive      21.4 110\nHornet Sportabout   18.7 175\nValiant             18.1 105\nDuster 360          14.3 245\nMerc 240D           24.4  62\nMerc 230            22.8  95\nMerc 280            19.2 123\nMerc 280C           17.8 123\nMerc 450SE          16.4 180\nMerc 450SL          17.3 180\nMerc 450SLC         15.2 180\nCadillac Fleetwood  10.4 205\nLincoln Continental 10.4 215\nChrysler Imperial   14.7 230\nFiat 128            32.4  66\nHonda Civic         30.4  52\nToyota Corolla      33.9  65\nToyota Corona       21.5  97\nDodge Challenger    15.5 150\nAMC Javelin         15.2 150\nCamaro Z28          13.3 245\nPontiac Firebird    19.2 175\nFiat X1-9           27.3  66\nPorsche 914-2       26.0  91\nLotus Europa        30.4 113\nFord Pantera L      15.8 264\nFerrari Dino        19.7 175\nMaserati Bora       15.0 335\nVolvo 142E          21.4 109"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#last-time",
+    "href": "lectures/w4l1_freq.html#last-time",
+    "title": "Frequency Plots",
+    "section": "Last Time",
+    "text": "Last Time\n\nVisualizations (a review)\nggplot\n\nWhat it is and why?\nLayering\nSyntax\nAesthetics, scaling, and context\nActivity\n\nbase R (given time)\n\nSyntax"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#for-today",
+    "href": "lectures/w4l1_freq.html#for-today",
+    "title": "Frequency Plots",
+    "section": "For Today",
+    "text": "For Today\n\nFrequency plots\n\nHistograms\nBar plots\nMultivariate frequencies"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#frequency-plots",
+    "href": "lectures/w4l1_freq.html#frequency-plots",
+    "title": "Frequency Plots",
+    "section": "Frequency Plots",
+    "text": "Frequency Plots\n\nInvolve counting the values in a variable\n\nHistograms (geom_histogram())\nBar plots: (geom_bar(), geom_col)"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#dataset-for-today",
+    "href": "lectures/w4l1_freq.html#dataset-for-today",
+    "title": "Frequency Plots",
+    "section": "Dataset for Today",
+    "text": "Dataset for Today\n\nLoad in the nba2024.csv file from Moodle\n\n572 observations with 30 variables\n\nSteps:\n\nDownload nba2024.csv file from Moodle\nSave to folder of your choice\nCreate .qmd file in RStudio housed in same folder\nUse the following code to load in data\n\n\n\nnba_data &lt;- read.csv(\"../data/nba2024.csv\", header = T)"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#histogram",
+    "href": "lectures/w4l1_freq.html#histogram",
+    "title": "Frequency Plots",
+    "section": "Histogram",
+    "text": "Histogram\n\nVisualizes distribution of one numeric variable\nThree traits we note:\n\nCenter: where is the middle of our data?\n\ne.g. median, mean\n\nSpread: how spread out are our values?\n\ne.g. standard deviation, range\n\nShape: where is the bulk of the data? what about outliers?\n\ne.g. mode\n\n\nFive-number summary can help with inference: summary()"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#example",
+    "href": "lectures/w4l1_freq.html#example",
+    "title": "Frequency Plots",
+    "section": "Example",
+    "text": "Example\n\nActivity: Amongst groups of 2-3, describe elements within the histogram that you thing could be changed."
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#semantics-of-a-histogram",
+    "href": "lectures/w4l1_freq.html#semantics-of-a-histogram",
+    "title": "Frequency Plots",
+    "section": "Semantics of a Histogram",
+    "text": "Semantics of a Histogram\n\nbase R: hist(variable)\nggplot: geom_histogram()\n\nArguments within: binwidth, bins, orientation\nAspects that can be adjusted: text size, orientation"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#example-1",
+    "href": "lectures/w4l1_freq.html#example-1",
+    "title": "Frequency Plots",
+    "section": "Example",
+    "text": "Example\n\nCreate bins of width 10\n\nDetermine how many data points fall into each bin\nCount = height of bar\n\nAdd labels\nAdjust title size to 15pt"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#example-cont.",
+    "href": "lectures/w4l1_freq.html#example-cont.",
+    "title": "Frequency Plots",
+    "section": "Example (cont.)",
+    "text": "Example (cont.)\n\nset.seed(13)\ndf &lt;- data.frame(x = rnorm(100, mean = 50, sd = 20))\nggplot(df, aes(x = x)) +\n  geom_histogram(color = \"white\", binwidth = 10) +\n  theme(text = element_text(size = 20), title = element_text(size = 15)) +\n  labs(title = \"Histogram of X ~ N(50, 20)\", x = \"X\", y = \"Count\")"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#example-analysis",
+    "href": "lectures/w4l1_freq.html#example-analysis",
+    "title": "Frequency Plots",
+    "section": "Example: Analysis",
+    "text": "Example: Analysis\n\n\n\nset.seed(13)\ndf &lt;- data.frame(x = rnorm(100, mean = 50, sd = 20))\nggplot(df, aes(x = x)) +\n  geom_histogram(color = \"white\", binwidth = 10) +\n  theme(text = element_text(size = 20), title = element_text(size = 15)) +\n  labs(title = \"Histogram of X ~ N(50, 20)\", x = \"X\", y = \"Count\") +\n  geom_vline(aes(xintercept = mean(x)), color = \"red\")\n\n\n\n\n\n\n\n\n\n\nDiscuss center, shape, and spread\n\nCenter is around 50\nUnimodal\nMost values between 25 and 75"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#activity-create-your-own-histogram",
+    "href": "lectures/w4l1_freq.html#activity-create-your-own-histogram",
+    "title": "Frequency Plots",
+    "section": "Activity: Create your Own Histogram",
+    "text": "Activity: Create your Own Histogram\nUsing the nba_data, do the following:\n\nView the data and identify a variable that is numerical and continuous.\nUsing the ggplot() and geom_histogram() functions, create a histogram.\nPerform two adjustments to the histogram created in the last slide.\nAnalyze the center, shape, and spread of the histogram."
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#bar-plot",
+    "href": "lectures/w4l1_freq.html#bar-plot",
+    "title": "Frequency Plots",
+    "section": "Bar Plot",
+    "text": "Bar Plot\n\nVisualizes counts of a categorical variable\nTraits to note:\n\nNumber of categories\nMost and least appeared groups\nDistribution of counts\n\nTable can help with inference: table()"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#example-2",
+    "href": "lectures/w4l1_freq.html#example-2",
+    "title": "Frequency Plots",
+    "section": "Example",
+    "text": "Example\n\nActivity: Amongst groups of 2-3, describe elements within the bar plot that you thing could be changed."
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#semantics-of-a-bar-plot",
+    "href": "lectures/w4l1_freq.html#semantics-of-a-bar-plot",
+    "title": "Frequency Plots",
+    "section": "Semantics of a Bar plot",
+    "text": "Semantics of a Bar plot\n\nbase R: barplot(variable)\nggplot: geom_bar() if individualized, geom_col if summarized\n\nArguments within: position, just, stat\nAspects that can be adjusted: text size, orientation"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#example-3",
+    "href": "lectures/w4l1_freq.html#example-3",
+    "title": "Frequency Plots",
+    "section": "Example",
+    "text": "Example\n\nCreate number of bars based on number of groups\n\nCount number of data points in each group\nCount = height of bar\n\nAdd labels\nAdjust title size to 15pt"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#example-cont.-1",
+    "href": "lectures/w4l1_freq.html#example-cont.-1",
+    "title": "Frequency Plots",
+    "section": "Example (cont.)",
+    "text": "Example (cont.)\n\ndf &lt;- data.frame(x =c(\"a\", \"b\", \"c\", \"a\", \"c\", \"a\", \"a\", \"b\", \"c\", \"a\", \"b\", \"c\"))\nggplot(df, aes(x = x)) +\n  geom_bar(color = \"white\") +\n  theme(text = element_text(size = 20), title = element_text(size = 15)) +\n  labs(title = \"Bar Plot of X\", x = \"X\", y = \"Count\")"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#example-analysis-1",
+    "href": "lectures/w4l1_freq.html#example-analysis-1",
+    "title": "Frequency Plots",
+    "section": "Example: Analysis",
+    "text": "Example: Analysis\n\n\n\ndf &lt;- data.frame(x =c(\"a\", \"b\", \"c\", \"a\", \"c\", \"a\", \"a\", \"b\", \"c\", \"a\", \"b\", \"c\"))\nggplot(df, aes(x = x)) +\n  geom_bar(color = \"white\") +\n  theme(text = element_text(size = 20), title = element_text(size = 15)) +\n  labs(title = \"Bar Plot of X\", x = \"X\", y = \"Count\")\n\n\n\n\n\n\n\n\n\n\n5, 3, and 4 observations in groups a, b, and c respectively\nEvenly distributed"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#factor",
+    "href": "lectures/w4l1_freq.html#factor",
+    "title": "Frequency Plots",
+    "section": "factor()",
+    "text": "factor()\n\nWhen data is imported into R (or even when we create it), R may not interpret the data as categorical\n\nSolution: factor()\n\nType in R, special case of integer class\nProvides levels/groups\n\nExample: 0s, 1s, and 2s"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#factor-1",
+    "href": "lectures/w4l1_freq.html#factor-1",
+    "title": "Frequency Plots",
+    "section": "factor()",
+    "text": "factor()\n\n\nTo check:\n\nintData &lt;- c(0, 1, 2, 2, 1, 0)\nintData\n\n[1] 0 1 2 2 1 0\n\n\n\nIf no levels show, vector is of a non-factor type\n\n\nTo fix:\n\nintData &lt;- factor(intData)\nintData\n\n[1] 0 1 2 2 1 0\nLevels: 0 1 2\n\n\nQuestion: What do you notice?"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#activity-create-your-own-bar-plot",
+    "href": "lectures/w4l1_freq.html#activity-create-your-own-bar-plot",
+    "title": "Frequency Plots",
+    "section": "Activity: Create your Own Bar Plot",
+    "text": "Activity: Create your Own Bar Plot\nUsing the nba_data, do the following:\n\nView the data and identify a variable that is categorical.\n\nIf necessary, convert the column to a factor type.\n\nUsing the ggplot() and geom_bar() functions, create a bar plot.\nPerform two adjustments to the bar plot created in the last slide.\nAnalyze characteristics of the bar plot."
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#characteristics-of-a-ggplot",
+    "href": "lectures/w4l1_freq.html#characteristics-of-a-ggplot",
+    "title": "Frequency Plots",
+    "section": "Characteristics of a ggplot",
+    "text": "Characteristics of a ggplot\n\nAt a minimum, we have data, layers, and a mapping\n\nWe can play around with the scales, facets, coordinates, and themes"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#scaling-a-histogram",
+    "href": "lectures/w4l1_freq.html#scaling-a-histogram",
+    "title": "Frequency Plots",
+    "section": "Scaling a Histogram",
+    "text": "Scaling a Histogram\n\nggplot(nba_data, aes(x = PTS)) +\n  geom_histogram(bins = 10, color = \"white\") +\n  labs(title = \"Points per 36 Minutes of All NBA Players, 2024\", \n       x = \"Points per 36 Mins\",\n       y = \"Number of Players\") +\n  scale_x_sqrt()"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#faceting-a-histogram",
+    "href": "lectures/w4l1_freq.html#faceting-a-histogram",
+    "title": "Frequency Plots",
+    "section": "Faceting a Histogram",
+    "text": "Faceting a Histogram\n\nggplot(nba_data, aes(x = PTS)) +\n  geom_histogram(binwidth = 10, color = \"white\") +\n  labs(title = \"Points per 36 Minutes of All NBA Players, 2024\", \n       x = \"Points per 36 Mins\",\n       y = \"Number of Players\") +\n  facet_wrap(vars(Pos))\n\n\n\nOn your own, play around with one function that alters the coordinates and another that alters the theme."
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#labels-for-a-bar-plot",
+    "href": "lectures/w4l1_freq.html#labels-for-a-bar-plot",
+    "title": "Frequency Plots",
+    "section": "Labels for a Bar Plot",
+    "text": "Labels for a Bar Plot\n\nggplot(nba_data, aes(x = Pos)) +\n  geom_bar(color = \"white\") +\n  coord_flip() +\n  labs(title = \"Counts of Different Positions of All NBA Players, 2024\", \n       x = \"Position\",\n       y = \"Number of Players\")"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#stacked-bar-plot",
+    "href": "lectures/w4l1_freq.html#stacked-bar-plot",
+    "title": "Frequency Plots",
+    "section": "Stacked Bar Plot",
+    "text": "Stacked Bar Plot\n\nggplot(nba_data, aes(x = Tm, fill = Pos)) +\n  geom_bar(color = \"white\") +\n  coord_flip() +\n  labs(title = \"Counts of Different Positions across Teams\\nof All NBA Players, 2024\", \n       x = \"Position\",\n       y = \"Number of Players\") +\n  scale_fill_brewer(palette = 'Set3')"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#dodging",
+    "href": "lectures/w4l1_freq.html#dodging",
+    "title": "Frequency Plots",
+    "section": "Dodging",
+    "text": "Dodging\n\nggplot(nba_data[nba_data$Tm %in% c(\"BOS\", \"NYK\"), ], aes(x = Tm, fill = Pos)) +\n  geom_bar(color = \"white\", position = \"dodge\") +\n  coord_flip() +\n  labs(title = \"Counts of Different Positions across Teams\\nof All NBA Players, 2024\", \n       x = \"Position\",\n       y = \"Number of Players\") +\n  scale_fill_brewer(palette = 'Set3')"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#converting-to-percentages",
+    "href": "lectures/w4l1_freq.html#converting-to-percentages",
+    "title": "Frequency Plots",
+    "section": "Converting to Percentages",
+    "text": "Converting to Percentages\n\nggplot(nba_data[nba_data$Tm %in% c(\"BOS\", \"NYK\"), ], aes(x = Tm, fill = Pos)) +\n  geom_bar(color = \"white\", position = \"fill\") +\n  coord_flip() +\n  labs(title = \"Counts of Different Positions across Teams\\nof All NBA Players, 2024\", \n       x = \"Position\",\n       y = \"Proportion of Players\") +\n  scale_fill_brewer(palette = 'Set3')"
+  },
+  {
+    "objectID": "lectures/w4l1_freq.html#activity",
+    "href": "lectures/w4l1_freq.html#activity",
+    "title": "Frequency Plots",
+    "section": "Activity",
+    "text": "Activity\nIn groups of 2-3, determine how you can create a histogram and bar plot using the mtcars data frame.\n\nMake sure to include labels, a title, and one modification\nCode these plots up along with the other two Tactivities\nStage, commit, and push changes to Activities repository"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#last-time",
+    "href": "lectures/w4l2_boxScatter.html#last-time",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Last Time",
+    "text": "Last Time\n\nFrequency plots\n\nHistograms\nBar plots\nMultivariate frequencies"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#for-today",
+    "href": "lectures/w4l2_boxScatter.html#for-today",
+    "title": "Box Plots and Scatter Plots",
+    "section": "For Today",
+    "text": "For Today\n\nBox plots\n\nFive-number summaries\nAnalysis\n\nLine charts\n\nAcross time\n\nScatter plots\n\nCorrelation and trends"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#dataset-for-today",
+    "href": "lectures/w4l2_boxScatter.html#dataset-for-today",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Dataset for Today",
+    "text": "Dataset for Today\n\nBoston Housing data\n\nvia the mlbench library\n506 observations, 14 variables\nEstimate median housing values through other variables\n\nCreate a new .qmd file in your activities repository and name the file 2-18.qmd. Use the following code:\n\n\nlibrary(mlbench)\nlibrary(ggplot2)\ndata(BostonHousing2)"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#box-plot",
+    "href": "lectures/w4l2_boxScatter.html#box-plot",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Box Plot",
+    "text": "Box Plot\n\nVisualizes distribution of one numeric variable\n\nSimilar usage to histogram\nBetter at detecting benchmarks and comparison\nUsually can compare across groups\n\nThree traits we still note:\n\nCenter, shape, and spread\n\nFive-number summary helps with inference: summary()"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#parts-of-a-box-plot",
+    "href": "lectures/w4l2_boxScatter.html#parts-of-a-box-plot",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Parts of a Box Plot",
+    "text": "Parts of a Box Plot\n\nggplot(BostonHousing2, aes(x = medv)) +\n  geom_boxplot() + theme_classic() + \n  theme(axis.text.y = element_blank(),\n        axis.ticks.y = element_blank(),\n        axis.line.y = element_blank()) +\n  labs(x = \"Median Value of Owner-Occupied Homes ($1000s)\")"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#parts-of-a-box-plot-cont.",
+    "href": "lectures/w4l2_boxScatter.html#parts-of-a-box-plot-cont.",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Parts of a Box Plot (cont.)",
+    "text": "Parts of a Box Plot (cont.)\n\n\nsummary(BostonHousing2$medv)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   5.00   17.02   21.20   22.53   25.00   50.00 \n\nsummary(BostonHousing2$medv)[c(2, 5)] + c(-1, 1) * 1.5 * IQR(BostonHousing2$medv)\n\n1st Qu. 3rd Qu. \n 5.0625 36.9625"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#parts-of-a-box-plot-cont.-1",
+    "href": "lectures/w4l2_boxScatter.html#parts-of-a-box-plot-cont.-1",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Parts of a Box Plot (cont.)",
+    "text": "Parts of a Box Plot (cont.)\n\n\nMinimum: lowest (qualified) value in variable\n1st quartile: 25% of data falls beneath this point\nMedian: 50% of data falls beneath this point\n3rd quartile: 75% of data falls beneath this point\nMaximum: highest (qualified) value in variable"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#outliers",
+    "href": "lectures/w4l2_boxScatter.html#outliers",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Outliers",
+    "text": "Outliers\n\n\nOutliers: data points signficantly different from grouping of data\n\nCommon threshold: Those exceeding 1Q and 3Q by 1.5 times the interquartile range\n\ni.e. lower = \\(Q_1 - 1.5 * IQR = Q_1 - 1.5 * (Q_3 - Q_1)\\)\ni.e. upper = \\(Q_3 + 1.5 * IQR = Q_3 + 1.5 * (Q_3 - Q_1)\\)"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#why-median-and-iqr",
+    "href": "lectures/w4l2_boxScatter.html#why-median-and-iqr",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Why Median and IQR?",
+    "text": "Why Median and IQR?\n\nData is skewed\n\ne.g. housing prices, Poisson (rate) data\nMedian and IQR are more robust\n\nMean and variance can dramatically change with one outlier\n\n\n\n\nex1 = c(4.6, 4.5, 4.3, 4.2)\nmean(ex1); median(ex1)\n\n[1] 4.4\n\n\n[1] 4.4\n\nsd(ex1); IQR(ex1)\n\n[1] 0.1825742\n\n\n[1] 0.25"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#why-median-and-iqr-cont.",
+    "href": "lectures/w4l2_boxScatter.html#why-median-and-iqr-cont.",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Why Median and IQR? (cont.)",
+    "text": "Why Median and IQR? (cont.)\n\nData is skewed\n\ne.g. housing prices, Poisson (rate) data\nMedian and IQR are more robust\n\nMean and variance can dramatically change with one outlier\n\n\n\n\nex1 = c(ex1, 10.1)\nmean(ex1); median(ex1)\n\n[1] 5.54\n\n\n[1] 4.5\n\nsd(ex1); IQR(ex1)\n\n[1] 2.554016\n\n\n[1] 0.3"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#activity",
+    "href": "lectures/w4l2_boxScatter.html#activity",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Activity",
+    "text": "Activity\nIn the 2-18.qmd file:\n\nCreate a new code chunk and develop a box plot that looks at another numerical variable from the BostonHousing2 dataset."
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#grouped-boxplots",
+    "href": "lectures/w4l2_boxScatter.html#grouped-boxplots",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Grouped Boxplots",
+    "text": "Grouped Boxplots\n\nAdd second variable, which is a grouping variable\n\nUsed to do comparisons across groups\n\n\n\nggplot(BostonHousing2, aes(x = medv, y = chas)) +\n  geom_boxplot() + theme_classic() +\n  labs(x = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       y = \"Next to Charles River?\",\n       title = \"Median Value of Owner-Occupied Homes (in $1000s)\\nin Boston Census Tracts Near Charles River, 1970\")"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#grouped-boxplots-things-to-consider",
+    "href": "lectures/w4l2_boxScatter.html#grouped-boxplots-things-to-consider",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Grouped Boxplots: Things to Consider",
+    "text": "Grouped Boxplots: Things to Consider\n\n\n\nOutliers: number, context\nRanges, IQR: larger, smaller?\n\n\n\nMedians\nSymmetry\n\n\n\nggplot(BostonHousing2, aes(x = medv, y = chas)) +\n  geom_boxplot() + theme_classic() +\n  labs(x = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       y = \"Next to Charles River?\",\n       title = \"Median Value of Owner-Occupied Homes (in $1000s)\\nin Boston Census Tracts Near Charles River, 1970\")"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#scatter-plot",
+    "href": "lectures/w4l2_boxScatter.html#scatter-plot",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Scatter Plot",
+    "text": "Scatter Plot\n\nVisualizes distributions of two numeric variables\n\nCan be used to detect trends, patterns, and correlations\nUsed for regression\n\nFor relational purposes:\n\n\\(x\\) refers to independent variable (or predictor)\n\\(y\\) refers to dependent variable (or response)\nLooking for relationship between \\(x\\) and \\(y\\), leading to idea behind correlation\n\nCorrelation helps with inference: cor(x, y)"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#correlation",
+    "href": "lectures/w4l2_boxScatter.html#correlation",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Correlation",
+    "text": "Correlation\n\nDescribes relationship between two continuous variables\n\n\\(cor(x, y) = Cov(xy) / \\sqrt{s_x s_y}\\)\nLook at three traits:\n\nMagnitude: 0 indicates no relationship, 1 indicates perfect relationship\nDirection: - refers to decreasing trend from left to right, + is increasing\nLinearity: how much data “hugs” line of best fit"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#correlation-examples",
+    "href": "lectures/w4l2_boxScatter.html#correlation-examples",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Correlation Examples",
+    "text": "Correlation Examples"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#example-of-a-scatter-plot",
+    "href": "lectures/w4l2_boxScatter.html#example-of-a-scatter-plot",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Example of a Scatter Plot",
+    "text": "Example of a Scatter Plot\n\nggplot(BostonHousing2, aes(x = nox, y = medv)) +\n  geom_point() + theme_minimal() +\n  labs(x = \"Nitric Oxide Concentration (parts per 10mil)\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Nitric Oxide Concentration vs. Median Value of Owner-Occupied Homes\\nin Boston Census Tracts, 1970\")"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#example-of-a-scatter-plot-cont.",
+    "href": "lectures/w4l2_boxScatter.html#example-of-a-scatter-plot-cont.",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Example of a Scatter Plot (cont.)",
+    "text": "Example of a Scatter Plot (cont.)\n\nCan adjust for opacity to make point stand out\n\n\nggplot(BostonHousing2, aes(x = nox, y = medv)) +\n  geom_point(alpha = 0.3) + theme_minimal() +\n  labs(x = \"Nitric Oxide Concentration (parts per 10mil)\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Nitric Oxide Concentration vs. Median Value of Owner-Occupied Homes\\nin Boston Census Tracts, 1970\")"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#example-of-a-scatter-plot-cont.-1",
+    "href": "lectures/w4l2_boxScatter.html#example-of-a-scatter-plot-cont.-1",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Example of a Scatter Plot (cont.)",
+    "text": "Example of a Scatter Plot (cont.)\n\nCan create line of best fit and add correlation label\n\n\nggplot(BostonHousing2, aes(x = nox, y = medv)) +\n  geom_point(alpha = 0.3) + theme_minimal() +\n  labs(x = \"Nitric Oxide Concentration (parts per 10mil)\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Nitric Oxide Concentration vs. Median Value of Owner-Occupied Homes\\nin Boston Census Tracts, 1970\") +\n  geom_smooth(method = \"lm\") + \n  annotate(\"label\", x = 0.8, y = 50, size = 3, \n           label = paste(\"Corr.\", round(cor(BostonHousing2$nox, BostonHousing2$medv), 3)), color = \"red\", fontface = \"bold\")"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#example-of-a-scatter-plot-cont.-2",
+    "href": "lectures/w4l2_boxScatter.html#example-of-a-scatter-plot-cont.-2",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Example of a Scatter Plot (cont.)",
+    "text": "Example of a Scatter Plot (cont.)\n\nCan make color differ by another variable\n\nlstat: percentage of lower status of population\n\n\n\nggplot(BostonHousing2, aes(x = nox, y = medv, colour = lstat)) +\n  geom_point(alpha = 0.3) + theme_minimal() +\n  labs(x = \"Nitric Oxide Concentration (parts per 10mil)\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       colour = \"% Lower Status\",\n       title = \"Nitric Oxide Concentration vs. Median Value of Owner-Occupied Homes\\nin Boston Census Tracts, 1970\") +\n  geom_smooth(method = \"lm\", color = \"blue\") + \n  annotate(\"label\", x = 0.8, y = 50, size = 3, \n           label = paste(\"Corr.\", round(cor(BostonHousing2$nox, BostonHousing2$medv), 3)), color = \"red\", fontface = \"bold\")"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#line-chart",
+    "href": "lectures/w4l2_boxScatter.html#line-chart",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Line Chart",
+    "text": "Line Chart\n\nVisualizes trends of one variable across another variable (commonly time)\n\nSpecial case of a scatter plot\n\nOrder across points\n\n\nFocus on trend over the variable"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#example-of-a-line-chart",
+    "href": "lectures/w4l2_boxScatter.html#example-of-a-line-chart",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Example of a Line Chart",
+    "text": "Example of a Line Chart\n\nlakes = data.frame(year = 1875:1972, level = as.numeric(LakeHuron))\n\nggplot(lakes, aes(x = year, y = level)) + \n  geom_line() +\n  theme_minimal() +\n  labs(title = \"Levels (in ft) on Lake Huron, 1875-1972\") +\n  ylab(\"Level (ft)\") +\n  xlab(\"Year\")"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#bonus-spatial-maps",
+    "href": "lectures/w4l2_boxScatter.html#bonus-spatial-maps",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Bonus: Spatial Maps",
+    "text": "Bonus: Spatial Maps\n\nWe have data that can be placed onto a map\n\nWhat would those variables be?"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#example",
+    "href": "lectures/w4l2_boxScatter.html#example",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Example",
+    "text": "Example\n\n\n\nlibrary(maps)\nboston &lt;- map_data(\"county\", region = \"Massachusetts\")\n\nggplot(BostonHousing2, aes(x = lon, y = lat, colour = medv)) +\n  geom_polygon(data = boston,\n               aes(x = long, y = lat, group = group),\n               fill = NA, color = \"black\") +\n  geom_point(data = BostonHousing2, \n             aes(x = lon, y = lat, colour = medv),\n             alpha = 0.2) + theme_classic() +\n  coord_map(\"albers\",  lat0 = 45.5, lat1 = 29.5) +\n  labs(x = \"\",\n       y = \"\",\n       colour = \"Median\\nHousing\\nValues\\n($1000s)\",\n       title = \"Median Value of Owner-Occupied Homes\\n\nacross Boston Census Tracts, 1970\") +\n  theme(axis.text.x = element_blank(),\n        axis.ticks.x = element_blank(),\n        axis.line.x = element_blank(),\n        axis.text.y = element_blank(),\n        axis.ticks.y = element_blank(),\n        axis.line.y = element_blank())"
+  },
+  {
+    "objectID": "lectures/w4l2_boxScatter.html#activity-1",
+    "href": "lectures/w4l2_boxScatter.html#activity-1",
+    "title": "Box Plots and Scatter Plots",
+    "section": "Activity",
+    "text": "Activity\nIn groups of 2-3, create either your own line chart or scatter plot.\n\nMake sure to include labels, a title, and one modification\nCode these plots up along with the other activities\nStage, commit, and push changes to your activities repository"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#helpful-vector-functions",
+    "href": "lectures/w2l2_github.html#helpful-vector-functions",
+    "title": "R and GitHub",
+    "section": "Helpful Vector Functions",
+    "text": "Helpful Vector Functions\n\nAll VectorsNumeric VectorsCategorical Vectors\n\n\n\nclass() returns the class of the values in a vector\nlength() returns the number of values in a vector\nis.na() for each value, returns whether the value is an NA value\n\n\n\n\nsum() returns the sum of the values in a vector\nmax() returns the maximum value in a vector\nrank() returns the ranking of a value in a vector\nR has other functions for accomplishing statistical, mathematical, and ordering operations\n\n\n\n\nunique() returns the unique values of a vector\ntable() returns the distribution of unique values of a vector"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#learning-check",
+    "href": "lectures/w2l2_github.html#learning-check",
+    "title": "R and GitHub",
+    "section": "Learning Check",
+    "text": "Learning Check\nHow would I find the sum of the third column in this data frame, which I have named df?\n\n\n  col1 col2 col3\n1    1    2    3\n2    5    4    6\n3    7    6    9"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#helpful-data-frame-functions",
+    "href": "lectures/w2l2_github.html#helpful-data-frame-functions",
+    "title": "R and GitHub",
+    "section": "Helpful Data Frame Functions",
+    "text": "Helpful Data Frame Functions\n\nView(): Opens a tab to view the data frame as a table\nhead(): returns first six rows of dataset\nnames(): returns the dataset’s column names\nnrow(): returns the number of rows in the dataset\nncol(): returns the number of columns in the dataset"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#do-i-really-have-to-memorize-all-of-these-functions",
+    "href": "lectures/w2l2_github.html#do-i-really-have-to-memorize-all-of-these-functions",
+    "title": "R and GitHub",
+    "section": "Do I really have to memorize all of these functions?!",
+    "text": "Do I really have to memorize all of these functions?!\n\nNo. There are cheatsheets! See this cheatsheet for Base R.\nGoogle, ChatGPT, and various forums can also be used to discover new functions\n\ne.g. “what function can be used to order a vector in R?”"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#pipe-operator-in-r",
+    "href": "lectures/w2l2_github.html#pipe-operator-in-r",
+    "title": "R and GitHub",
+    "section": "Pipe Operator in R",
+    "text": "Pipe Operator in R\n\nFunnel objects into actions\n\ne.g. data structures into various functions\n|&gt; or %&gt;%\n\nUseful for nesting functions\n\n\nlength(unique(mtcars$am))\n\n[1] 2\n\nmtcars |&gt; pull(am) |&gt; unique() |&gt; length()\n\n[1] 2"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#missing-values",
+    "href": "lectures/w2l2_github.html#missing-values",
+    "title": "R and GitHub",
+    "section": "Missing Values",
+    "text": "Missing Values\n\nRemember that missing values still have a position in rectangular datasets\nMissing values get recorded as NA in R\n…but sometimes analysts put words or numbers in their datasets to indicate missingness:\n\n“NONE”\n-999\n“” &lt;- this is the most challenging to uncover!\n\n…but what happens when we try to perform functions on vectors that contain missing values?"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#missing-values-in-math-functions",
+    "href": "lectures/w2l2_github.html#missing-values-in-math-functions",
+    "title": "R and GitHub",
+    "section": "Missing Values in Math Functions",
+    "text": "Missing Values in Math Functions\nWe can use na.rm = TRUE to ignore NA values in math functions.\n\nvals &lt;- c(1, 2, NA, 4, NA, 6)\nsum(vals)\n\n[1] NA\n\nsum(vals, na.rm = TRUE)\n\n[1] 13"
+  },
+  {
+    "objectID": "lectures/w2l2_github.html#for-now-and-friday",
+    "href": "lectures/w2l2_github.html#for-now-and-friday",
+    "title": "R and GitHub",
+    "section": "For Now and Friday",
+    "text": "For Now and Friday\n\nFinish activity for today’s class\nFinish reading exercises by end of Thursday\n\nAppendix B, problems 1 and 3\n\nLab #1 will be introduced in Friday’s class!"
   }
 ]

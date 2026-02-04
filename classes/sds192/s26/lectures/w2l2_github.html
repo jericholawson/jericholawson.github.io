@@ -222,6 +222,122 @@
 </ul></li>
 </ul>
 </section>
+<section id="helpful-vector-functions" class="slide level2">
+<h2>Helpful Vector Functions</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">All Vectors</a></li><li><a href="#tabset-1-2">Numeric Vectors</a></li><li><a href="#tabset-1-3">Categorical Vectors</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<ul>
+<li><code>class()</code> returns the class of the values in a vector</li>
+<li><code>length()</code> returns the number of values in a vector</li>
+<li><code>is.na()</code> for each value, returns whether the value is an <code>NA</code> value</li>
+</ul>
+</div>
+<div id="tabset-1-2">
+<ul>
+<li><code>sum()</code> returns the sum of the values in a vector</li>
+<li><code>max()</code> returns the maximum value in a vector</li>
+<li><code>rank()</code> returns the ranking of a value in a vector</li>
+<li><code>R</code> has other functions for accomplishing statistical, mathematical, and ordering operations</li>
+</ul>
+</div>
+<div id="tabset-1-3">
+<ul>
+<li><code>unique()</code> returns the unique values of a vector</li>
+<li><code>table()</code> returns the distribution of unique values of a vector</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="learning-check" class="slide level2">
+<h2>Learning Check</h2>
+<p>How would I find the sum of the third column in this data frame, which I have named <code>df</code>?</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>  col1 col2 col3
+1    1    2    3
+2    5    4    6
+3    7    6    9</code></pre>
+</div>
+</div>
+</section>
+<section id="helpful-data-frame-functions" class="slide level2">
+<h2>Helpful Data Frame Functions</h2>
+<ul>
+<li><code>View()</code>: Opens a tab to view the data frame as a table</li>
+<li><code>head()</code>: returns first six rows of dataset</li>
+<li><code>names()</code>: returns the dataset’s column names</li>
+<li><code>nrow()</code>: returns the number of rows in the dataset</li>
+<li><code>ncol()</code>: returns the number of columns in the dataset</li>
+</ul>
+</section>
+<section id="do-i-really-have-to-memorize-all-of-these-functions" class="slide level2">
+<h2>Do I really have to memorize all of these functions?!</h2>
+<ul>
+<li>No.&nbsp;There are cheatsheets! See <a href="https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf">this cheatsheet</a> for Base <code>R</code>.</li>
+<li>Google, ChatGPT, and various forums can also be used to discover new functions
+<ul>
+<li>e.g.&nbsp;“what function can be used to order a vector in R?”</li>
+</ul></li>
+</ul>
+</section>
+<section id="pipe-operator-in-r" class="slide level2 smaller">
+<h2>Pipe Operator in <code>R</code></h2>
+<ul>
+<li>Funnel objects into actions
+<ul>
+<li>e.g.&nbsp;data structures into various functions</li>
+<li><code>|&gt;</code> or <code>%&gt;%</code></li>
+</ul></li>
+<li>Useful for nesting functions</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">length</span>(<span class="fu">unique</span>(mtcars<span class="sc">$</span>am))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>mtcars <span class="sc">|&gt;</span> <span class="fu">pull</span>(am) <span class="sc">|&gt;</span> <span class="fu">unique</span>() <span class="sc">|&gt;</span> <span class="fu">length</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</section>
+<section>
+<section id="missing-values-and-r-functions" class="title-slide slide level1 center">
+<h1>Missing Values and <code>R</code> Functions</h1>
+
+</section>
+<section id="missing-values" class="slide level2 smaller">
+<h2>Missing Values</h2>
+<ul>
+<li>Remember that missing values still have a position in rectangular datasets</li>
+<li>Missing values get recorded as <code>NA</code> in R</li>
+<li>…but sometimes analysts put words or numbers in their datasets to indicate missingness:
+<ul>
+<li>“NONE”</li>
+<li>-999</li>
+<li>“” &lt;- this is the most challenging to uncover!</li>
+</ul></li>
+<li>…but what happens when we try to perform functions on vectors that contain missing values?</li>
+</ul>
+</section>
+<section id="missing-values-in-math-functions" class="slide level2">
+<h2>Missing Values in Math Functions</h2>
+<p>We can use <code>na.rm = TRUE</code> to ignore NA values in math functions.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>vals <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="dv">4</span>, <span class="cn">NA</span>, <span class="dv">6</span>)</span>
+<span id="cb6-2"><a></a><span class="fu">sum</span>(vals)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">sum</span>(vals, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 13</code></pre>
+</div>
+</div>
+</section>
 <section id="activity" class="slide level2">
 <h2>Activity</h2>
 <ul>
@@ -257,7 +373,7 @@
 <li>Can check with <code>getwd()</code></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">getwd</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">getwd</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="working-directories-1" class="slide level2">
@@ -273,10 +389,10 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">setwd</span>(<span class="st">".."</span>) <span class="co"># to go back a folder</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">setwd</span>(<span class="st">".."</span>) <span class="co"># to go back a folder</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">setwd</span>(<span class="st">"C:/Users/jericho/Documents"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">setwd</span>(<span class="st">"C:/Users/jericho/Documents"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="r-projects" class="slide level2">
@@ -324,7 +440,7 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>nba_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"nba2024.csv"</span>, <span class="at">header =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>nba_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"nba2024.csv"</span>, <span class="at">header =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="absolute-paths" class="slide level2">
@@ -364,9 +480,9 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>hospital_costs_2018 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/SDS-192-Intro/SDS-192-public-website/main/slides/datasets/Hospital_Cost_Report_2018.csv"</span>)</span>
-<span id="cb5-2"><a></a></span>
-<span id="cb5-3"><a></a><span class="fu">head</span>(hospital_costs_2018[, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>hospital_costs_2018 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/SDS-192-Intro/SDS-192-public-website/main/slides/datasets/Hospital_Cost_Report_2018.csv"</span>)</span>
+<span id="cb14-2"><a></a></span>
+<span id="cb14-3"><a></a><span class="fu">head</span>(hospital_costs_2018[, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  rpt_rec_num Provider.CCN                 Hospital.Name        Street.Address
 1      623132        10032              WEDOWEE HOSPITAL 301 NORTH MAIN STREET
@@ -434,13 +550,13 @@
 <section id="example" class="slide level2">
 <h2>Example</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>cities <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Northampton"</span>, <span class="st">"Amherst"</span>, <span class="st">"Hadley"</span>)</span>
-<span id="cb7-2"><a></a>temps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">57</span>, <span class="dv">60</span>, <span class="cn">NA</span>)</span>
-<span id="cb7-3"><a></a>inter <span class="ot">&lt;-</span> <span class="fu">c</span>(T, F, F)</span>
-<span id="cb7-4"><a></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">city =</span> cities, <span class="at">temp =</span> temps, <span class="at">inter =</span> inter)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>cities <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Northampton"</span>, <span class="st">"Amherst"</span>, <span class="st">"Hadley"</span>)</span>
+<span id="cb16-2"><a></a>temps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">57</span>, <span class="dv">60</span>, <span class="cn">NA</span>)</span>
+<span id="cb16-3"><a></a>inter <span class="ot">&lt;-</span> <span class="fu">c</span>(T, F, F)</span>
+<span id="cb16-4"><a></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">city =</span> cities, <span class="at">temp =</span> temps, <span class="at">inter =</span> inter)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">na.omit</span>(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">na.omit</span>(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>         city temp inter
 1 Northampton   57  TRUE
@@ -448,8 +564,8 @@
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>data<span class="sc">$</span>temp <span class="ot">&lt;-</span> <span class="fu">replace</span>(data<span class="sc">$</span>temp, <span class="fu">is.na</span>(data<span class="sc">$</span>temp), <span class="fu">mean</span>(data<span class="sc">$</span>temp, <span class="at">na.rm =</span> T))</span>
-<span id="cb10-2"><a></a>data<span class="sc">$</span>temp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>data<span class="sc">$</span>temp <span class="ot">&lt;-</span> <span class="fu">replace</span>(data<span class="sc">$</span>temp, <span class="fu">is.na</span>(data<span class="sc">$</span>temp), <span class="fu">mean</span>(data<span class="sc">$</span>temp, <span class="at">na.rm =</span> T))</span>
+<span id="cb19-2"><a></a>data<span class="sc">$</span>temp</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 57.0 60.0 58.5</code></pre>
 </div>
@@ -466,10 +582,10 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>mtcars[mtcars<span class="sc">$</span>mpg <span class="sc">&lt;</span> <span class="dv">15</span>, ]</span>
-<span id="cb12-2"><a></a>mtcars[<span class="sc">!</span>(mtcars<span class="sc">$</span>mpg <span class="sc">&lt;</span> <span class="dv">15</span>), ]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>mtcars[mtcars<span class="sc">$</span>mpg <span class="sc">&lt;</span> <span class="dv">15</span>, ]</span>
+<span id="cb21-2"><a></a>mtcars[<span class="sc">!</span>(mtcars<span class="sc">$</span>mpg <span class="sc">&lt;</span> <span class="dv">15</span>), ]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section>
+</section></section>
 <section>
 <section id="version-control" class="title-slide slide level1 center">
 <h1>Version Control</h1>
@@ -643,15 +759,15 @@
 <p>Delete lines so that only desired code appears. Commit changes, and then push.</p>
 </blockquote>
 </section>
-<section id="for-now-and-wednesday" class="slide level2">
-<h2>For Now and Wednesday</h2>
+<section id="for-now-and-friday" class="slide level2">
+<h2>For Now and Friday</h2>
 <ul>
-<li>Finish activity for today’s class</li>
+<li>Finish <a href="../lectures/w2l2_act.html">activity</a> for today’s class</li>
 <li>Finish reading exercises by end of Thursday
 <ul>
 <li>Appendix B, problems 1 and 3</li>
 </ul></li>
-<li>Lab #1 due on Wednesday at 11:59pm</li>
+<li>Lab #1 will be introduced in Friday’s class!</li>
 </ul>
 
 
@@ -871,6 +987,82 @@
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
