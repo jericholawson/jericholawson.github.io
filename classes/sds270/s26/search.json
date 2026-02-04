@@ -193,7 +193,7 @@
     "href": "schedule.html#week-2-data-structures-assignment-22---26",
     "title": "Schedule",
     "section": "Week 2: Data Structures, Assignment (2/2 - 2/6)",
-    "text": "Week 2: Data Structures, Assignment (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\n\n\n\n\n\n\nNoteLecture: Lists\n\n\n\n\nSlides + Activities\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nComplete any remaining setup\nRead chapters 2, 4 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Frames and Subsetting\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due next Wednesday, 2/11 at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\n\nRead chapter 5 of Advanced R (before Monday’s class)"
+    "text": "Week 2: Data Structures, Assignment (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\n\n\n\n\n\n\nNoteLecture: Lists\n\n\n\n\nSlides + Activities\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nComplete any remaining setup\nRead chapters 2, 4 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Frames and Subsetting\n\n\n\n\nSlides\n\nDataset\n\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due next Wednesday, 2/11 at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\n\nRead chapter 5 of Advanced R (before Monday’s class)"
   },
   {
     "objectID": "schedule.html#week-3-control-flow-functions-29---213",
@@ -2371,5 +2371,33 @@
     "title": "Data Frames and Subsetting",
     "section": "For Now and Next Week:",
     "text": "For Now and Next Week:\n\nWork on exercises rest of time\n\nSeen in schedule for today on website (here)\n\nTemplate: here\n\n\nFirst problem set assigned (here)\n\nDue next Wednesday, 2/11 at 11:59pm\n\nRead chapter 5 of Advanced R before Monday’s class"
+  },
+  {
+    "objectID": "sets/set2.html",
+    "href": "sets/set2.html",
+    "title": "Set #2 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Friday, 2/20 at 11:59pm"
+  },
+  {
+    "objectID": "sets/set2.html#instructions",
+    "href": "sets/set2.html#instructions",
+    "title": "Set #2 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Friday, 2/20 at 11:59pm"
+  },
+  {
+    "objectID": "sets/set2.html#background",
+    "href": "sets/set2.html#background",
+    "title": "Set #2 (50 pts)",
+    "section": "Background",
+    "text": "Background\nThe second problem set will contain various problems related to the following:\n\nControl flow (Ch. 5, AR)\nFunctions (Ch. 6, AR)\n\nDo note that other traits of R may show up in these problems. Make sure to carefully read and follow directions for each problem.\nAll problems will center around the DOHMH Dog Bite Data collected by the Department of Health and Mental Hygiene in NYC. You can download the data and view its metadata here."
+  },
+  {
+    "objectID": "sets/set2.html#q1-data-preparation",
+    "href": "sets/set2.html#q1-data-preparation",
+    "title": "Set #2 (50 pts)",
+    "section": "Q1: Data Preparation",
+    "text": "Q1: Data Preparation\n\n\n\n\n\n\nImportant(a)\n\n\n\nload data in\n\ndogs &lt;- read.csv(\"../data/dogs.csv\")\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\ncreate function to find missing values in given vector\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nuse function with sapply\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\ncreate function named mean, taking particular mean of choice\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\ndiscuss issues"
   }
 ]

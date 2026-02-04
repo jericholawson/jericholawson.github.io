@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jericho Lawson">
+<meta name="dcterms.date" content="2026-02-04">
 
-<title>Schedule – SDS 270: Programming for Data Science in R, Spring 2026</title>
+<title>Set #2 (50 pts) – SDS 270: Programming for Data Science in R, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,19 +108,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">SDS 270: Programming for Data Science in R, Spring 2026</span>
     </a>
   </div>
@@ -94,19 +131,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
@@ -128,20 +165,43 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#q1-data-preparation" id="toc-q1-data-preparation" class="nav-link" data-scroll-target="#q1-data-preparation">Q1: Data Preparation</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
+<h1 class="title">Set #2 (50 pts)</h1>
+<p class="subtitle lead">SDS 270: Programming for Data Science in R, Spring 2026</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jericho Lawson </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 4, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -151,601 +211,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="week-1-introduction-atomic-vectors-126---130" class="level2">
-<h2 class="anchored" data-anchor-id="week-1-introduction-atomic-vectors-126---130">Week 1: Introduction, Atomic Vectors (1/26 - 1/30)</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Monday, 1/26</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Wednesday, 1/28</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: CANCELLED
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Enjoy the snow and stay warm!!</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
 <ul>
-<li>GitHub setup (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)
-<ul>
-<li><a href="./resources/tech-setup.html">Instructions</a></li>
-<li>Complete practice.qmd and exs1.qmd files</li>
-</ul></li>
-<li>Read through <a href="./syllabus.html">syllabus</a></li>
-<li><a href="https://forms.gle/GuTKyTTSvxnsbmag8">Pre-Course Survey</a> (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)</li>
-<li>Read chapters 1, 3 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before <span style="color:red;">next Monday’s</span> class)</li>
+<li>Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.</li>
+<li>Certain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.</li>
+<li>Refer to syllabus for late work deductions.</li>
+<li>Due date: <strong>Friday, 2/20 at 11:59pm</strong></li>
 </ul>
-</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Introduction, Tech Setup, Atomic Vectors
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w1l1_intro.html">Slides</a></li>
-<li><em>Note:</em> Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!</li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>GitHub setup (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)
-<ul>
-<li><a href="./resources/tech-setup.html">Instructions</a></li>
-<li>Complete practice.qmd and exs1.qmd files</li>
-</ul></li>
-<li>Read through <a href="./syllabus.html">syllabus</a></li>
-<li><a href="https://forms.gle/GuTKyTTSvxnsbmag8">Pre-Course Survey</a> (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)</li>
-<li>Read chapters 1, 3 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before <span style="color:red;">next Monday’s</span> class)</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
-<section id="week-2-data-structures-assignment-22---26" class="level2">
-<h2 class="anchored" data-anchor-id="week-2-data-structures-assignment-22---26">Week 2: Data Structures, Assignment (2/2 - 2/6)</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Monday, 2/2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Wednesday, 2/4</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>The second problem set will contain various problems related to the following:</p>
+<ul>
+<li>Control flow (Ch. 5, AR)</li>
+<li>Functions (Ch. 6, AR)</li>
+</ul>
+<p>Do note that other traits of R may show up in these problems. Make sure to carefully read and follow directions for each problem.</p>
+<p>All problems will center around the DOHMH Dog Bite Data collected by the Department of Health and Mental Hygiene in NYC. You can download the data and view its metadata <a href="https://data.cityofnewyork.us/Health/DOHMH-Dog-Bite-Data/rsgh-akpg/about_data">here</a>.</p>
+</section>
+<section id="q1-data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="q1-data-preparation">Q1: Data Preparation</h2>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Lists
+<span class="screen-reader-only">Important</span>(a)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w2l1_lists.html">Slides + Activities</a></li>
-</ul>
+<p>load data in</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dogs <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/dogs.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
+<span class="screen-reader-only">Important</span>(b)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Complete any remaining setup</li>
-<li>Read chapters 2, 4 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before Wednesday’s class)</li>
-</ul>
+<p>create function to find missing values in given vector</p>
 </div>
 </div>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Data Frames and Subsetting
+<span class="screen-reader-only">Important</span>(c)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w2l2_dataFrames.html">Slides</a>
-<ul>
-<li><a href="data/nfl25Pass.qmd">Dataset</a></li>
-</ul></li>
-<li><a href="./lectures/w2l2_act.html">Activity</a>
-<ul>
-<li><a href="lectures/w2l2_actTemp.qmd">Template</a></li>
-</ul></li>
-</ul>
+<p>use function with sapply</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
+<span class="screen-reader-only">Important</span>(d)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><a href="../sets/set1.qmd">Set #1</a> due next Wednesday, 2/11 at 11:59pm via your repository
-<ul>
-<li>Create new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository</li>
-</ul></li>
-<li>Read chapter 5 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before Monday’s class)</li>
-</ul>
+<p>create function named mean, taking particular mean of choice</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(e)
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>discuss issues</p>
 </div>
-<!--
-
-## Week 3: Assignment, Control Flow (2/9 - 2/13)
-
-::: {.panel-tabset}
-## Monday, 2/9
-
-::: {.callout-note}
-## Lecture: Assignment and Memory
-
-- [Slides](lectures/w2l2_memory.qmd)
-- [Activity](lectures/w2l2_act.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Set #1 due Wednesday, 2/11 at 11:59pm via your repository
-
-:::
-
-## Wednesday, 2/11
-
-::: {.callout-note}
-## Lecture: Control Flow
-
-- [Slides](lectures/w3l2_controlFlow.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Set #1 due tonight at 11:59pm via your repository
-- Read chapter 6 of [Advanced R](https://adv-r.hadley.nz/introduction.html) (before Monday's class)
-- Set #2 due next Friday, 2/20 at 11:59pm via your repository
-
-:::
-
-:::
-
-
-
-## Week 4: Functions, Iteration, Review (2/16 - 2/20)
-
-::: {.panel-tabset}
-## Monday, 2/16
-
-
-::: {.callout-note}
-## Lecture: Functions
-
-- [Slides](lectures/lect6.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-
-
-## Wednesday, 2/18
-
-::: {.callout-note}
-## Lecture: Functions Beyond
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-:::
-
-## Week 5: Exam #1, Functionals (2/23 - 2/27)
-
-::: {.panel-tabset}
-## Monday, 2/23
-
-::: {.callout-note}
-## Lecture: Iteration, Review
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 2/25
-
-::: {.callout-important}
-## Exam #1
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-
-
-:::
-
-::: {.callout-note}
-## Lecture: Functionals
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Week 6: Functionals, Environments (3/2 - 3/6)
-
-::: {.panel-tabset}
-## Monday, 3/2
-
-::: {.callout-note}
-## Lecture: More Functionals
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-
-## Wednesday, 3/4
-
-::: {.callout-note}
-## Lecture: Environments
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 7: Packages, Conditions, and OOP (3/9 - 3/13)
-
-::: {.panel-tabset}
-## Monday, 3/9
-
-::: {.callout-note}
-## Lecture: Packages and Conditions
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/11
-
-::: {.callout-note}
-## Lecture: OOP
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 8: Spring Break (3/16 - 3/20)
-
-::: {.panel-tabset}
-## Monday, 3/16
-
-::: {.callout-note}
-## Lecture #1: Introduction
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/18
-
-::: {.callout-note}
-## Lecture #1: Introduction
-
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 9: S3 Objects, Package Foundation (3/23 - 3/27)
-
-::: {.panel-tabset}
-## Monday, 3/23
-
-::: {.callout-note}
-## Lecture: S3 Objects
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/25
-
-::: {.callout-note}
-## Lecture: Package Foundation, Review
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 10: Packages - Description and Libraries (3/30 - 4/3)
-
-::: {.panel-tabset}
-## Monday, 3/30
-
-::: {.callout-important}
-## Exam #2
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/1
-
-::: {.callout-note}
-## Lecture: Description and Libraries
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-:::
-
-## Week 11: Packages - Code, Data, Manuals, Testing (4/6 - 4/10)
-
-::: {.panel-tabset}
-## Monday, 4/6
-
-::: {.callout-note}
-## Lecture: Code, Data, Manuals
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/8
-
-::: {.callout-note}
-## Lecture: Testing
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 12: Packages - Testing, Vignettes (4/13 - 4/17)
-
-::: {.panel-tabset}
-## Monday, 4/13
-
-::: {.callout-note}
-## Lecture: Testing
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/15
-
-::: {.callout-note}
-## Lecture: Vignettes
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 13: Packages - Project Time (4/20 - 4/24)
-
-::: {.panel-tabset}
-## Monday, 4/20
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/22
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 14: Packages - Project Time, Demonstrations (4/27 - 5/1)
-
-::: {.panel-tabset}
-## Monday, 4/27
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/29
-
-::: {.callout-note}
-## Demonstrations
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Finals: Package (5/2 - 5/9)
-
-::: {.panel-tabset}
-## To-Do
-
-:::
-
--->
+</div>
 
 
 </section>
