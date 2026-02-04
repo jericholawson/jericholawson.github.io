@@ -1,0 +1,161 @@
+---
+title: "Exercises from Week 2, Lecture 2: Subsetting"
+subtitle: "SDS 270"
+author: "Jericho Lawson"
+format: html
+---
+
+## Introduction
+
+In these exercises, we will be working with `starwars` tibble to learn how to subset in various manners.
+
+By the end of this lab, you will be able to:
+
+- subset a data frame and tibble based on positive, negative, logical, and character indexing
+- apply the `filter` and `select` functions via `dplyr`
+
+Load in the following libraries below to work on this lab: `tidyverse`
+
+```{r}
+library(tidyverse)
+```
+
+You will create a separate .qmd file and complete the following exercises that will then be committed and pushed in your SDS 270 repository.
+
+
+## Exercises
+
+For these exercises, you will be working exclusively with the `starwars` tibble. Answer the following questions below:
+
+::: {.callout-important}
+
+##### Q1
+
+Using a `dplyr` function, construct a tibble from `starwars` that only contains characters with blue eyes.
+
+```{r}
+#| output: false
+# Do not alter code right above.
+
+```
+
+:::
+
+::: {.callout-important}
+
+##### Q2
+
+Using a `dplyr` function, construct a tibble from `starwars` that only contains characters with blue eyes and a height below 100 cm. Then, display only the names of these characters.
+
+```{r}
+#| output: false
+# Do not alter code right above.
+
+```
+
+:::
+
+### Base R Subsetting vs. dplyr() functions
+
+In many applications, you will find R users that subset through the `[]`, `[[]]`, `$` symbols, but unless we know the type and functionality associated with the type, we will run across some errors.
+
+The next few exercises will showcase this. You will use the following objects in the next 3 exercises.
+
+```{r}
+num <- 5
+var <- "skin_color"
+```
+
+
+::: {.callout-important}
+
+##### Q3
+
+Using `starwars`, access the 5th column using the `num` object within the `[[]]`, `[]` and `$` operators. What do you notice?
+
+```{r}
+#| output: false
+#| eval: false
+# Do not alter code right above.
+
+```
+
+
+:::
+
+
+::: {.callout-important}
+
+##### Q4
+
+Using `starwars`, access the 5th column using the `var` object within the `[[]]`, `[]` and `$` operators. What do you notice?
+
+```{r}
+#| output: false
+#| eval: false
+# Do not alter code right above.
+
+```
+
+
+:::
+
+::: {.callout-important}
+
+##### Q5
+
+Using `starwars`, access the 5th column by name with one of the `dplyr` functions. What do you notice?
+
+```{r}
+#| output: false
+#| eval: false
+# Do not alter code right above.
+
+```
+
+
+:::
+
+
+### List-columns: `nest()` and `unnest()`
+
+We now look into list-columns, which are columns in which each element is composed of a list. When we think of a vector, most of the time we see a single value that is stored in an element. A list-column changes this. That value is now a list, which can be of any length we desire. 
+
+List-columns can be expanded by `unnest()`. This has the effect of lengthening the data frame (sort of like an accordion). Each row is duplicated for each unique value of each entry in the list-column.
+
+The `nest()` function performs the opposite operation of "rolling up" the data frame to create a new list-column. We did this in the intro of list-columns.
+
+::: {.callout-important}
+
+##### Q6
+
+Now using the `starwars` tibble, experiment with list-columns by expanding and contracting the other list-columns in the storms data frame.
+
+:::
+
+### Mapping over list columns
+Suppose now we want to add the numbers of films for each character to the `starwars` data set. A simple `mutate()` like this will not throw an error, but also won’t do what we want.
+
+```{r}
+oops <- starwars |>
+  mutate(num_films = length(films)) |>
+  arrange(desc(num_films)) |>
+  select(name, num_films)
+oops
+```
+
+This just made all of the entries equal to `length(films)`.
+
+```{r}
+all(oops$num_films == length(starwars$films))
+```
+
+To get this right, we need to `map()` inside our `mutate()`.
+
+```{r}
+starwars |>
+  mutate(num_films_actual = map_int(films, length)) |>
+  arrange(desc(num_films_actual)) |>
+  select(name, num_films_actual, films)
+```
+

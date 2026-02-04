@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jericho Lawson">
-<meta name="dcterms.date" content="2026-01-29">
+<meta name="dcterms.date" content="2026-02-03">
 
 <title>Set #1 (50 pts) – SDS 270: Programming for Data Science in R, Spring 2026</title>
 <style>
@@ -202,7 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 29, 2026</p>
+      <p class="date">February 3, 2026</p>
     </div>
   </div>
   
@@ -247,14 +247,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <p>Use the <code>typeof()</code> function to find the data type for each of the six columns in the macroinvertebrates data.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>        Sample_ID   Collection_Date Collection_Method         Lifestage 
-      "character"       "character"       "character"       "character" 
-      Bug_Size_mm             Taxon 
-         "double"       "character" </code></pre>
-</div>
-</div>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -299,9 +291,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="callout-body-container callout-body">
 <p>With the <code>chiroFive</code> dataset from the last part, we create the following copies and objects:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>chiroFiveCopy <span class="ot">&lt;-</span> chiroFive</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>chiroFive[<span class="dv">3</span>, <span class="dv">5</span>] <span class="ot">=</span> <span class="fl">6.0</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>chiroFiveCopy<span class="sc">$</span>Bug_Size_mm <span class="ot">&lt;-</span> chiroFive<span class="sc">$</span>Bug_Size_mm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>chiroFiveCopy <span class="ot">&lt;-</span> chiroFive</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>chiroFive[<span class="dv">3</span>, <span class="dv">5</span>] <span class="ot">=</span> <span class="fl">6.0</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>chiroFiveCopy<span class="sc">$</span>Bug_Size_mm <span class="ot">&lt;-</span> chiroFive<span class="sc">$</span>Bug_Size_mm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>For each line of code, explain how R stores and references both the <code>chiroFive</code> and <code>chiroFiveCopy</code> data frames, highlighting the changes as we go from one line to the next line.</p>
 </div>
@@ -333,22 +325,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <p>Convert the <code>chiroLarvae</code> data frame in part (a) to be a tibble specifically.</p>
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-</div>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -362,11 +338,6 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 <div class="callout-body-container callout-body">
 <p>Using one line of code, determine how many unique dates there are in the <code>chiroLarvae</code> dataset.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 16</code></pre>
-</div>
-</div>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -384,25 +355,6 @@ Attaching package: 'dplyr'</code></pre>
 <li>Using base R subsetting</li>
 <li>Using <code>dplyr</code> commands</li>
 </ul>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1,577 × 7
-   Sample_ID Collection_Date Collection_Method Lifestage Bug_Size_mm Taxon      
-   &lt;fct&gt;     &lt;date&gt;          &lt;fct&gt;             &lt;fct&gt;           &lt;dbl&gt; &lt;fct&gt;      
- 1 MST4_2017 2020-08-19      Kick net          Larvae            2.8 Chironomin…
- 2 MST4_2017 2020-08-19      Kick net          Larvae            1.8 Chironomin…
- 3 MST4_2017 2020-08-19      Kick net          Larvae            2   Chironomin…
- 4 MST4_2017 2020-08-19      Kick net          Larvae            3.2 Chironomin…
- 5 MST4_2017 2020-08-19      Kick net          Larvae            4.2 Chironomin…
- 6 MST4_2017 2020-08-19      Kick net          Larvae            4   Chironomin…
- 7 MST4_2017 2020-08-19      Kick net          Larvae            3.6 Chironomin…
- 8 MST4_2017 2020-08-19      Kick net          Larvae            3   Chironomin…
- 9 MST4_2017 2020-08-19      Kick net          Larvae            4.8 Orthocladi…
-10 MST4_2017 2020-08-19      Kick net          Larvae            2.2 Orthocladi…
-# ℹ 1,567 more rows
-# ℹ 1 more variable: bigBug &lt;chr&gt;</code></pre>
-</div>
-</div>
 </div>
 </div>
 </section>
@@ -437,120 +389,7 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Using the following operators <code>[[</code>, <code>[</code>, <code>$</code>, retrieve the taxon column from the <code>chiro100</code> data frame. No <code>dplyr</code> should be used here.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  [1] Hygrobatidae          Hygrobatidae          Lebertia             
-  [4] Sperchon              Sperchon              Chironomidae         
-  [7] Chironomidae          Chironomidae          Chironomidae         
- [10] Chironomidae          Chironominae          Chironominae         
- [13] Chironominae          Chironominae          Chironominae         
- [16] Chironominae          Chironominae          Chironominae         
- [19] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [22] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [25] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [28] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [31] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [34] Orthocladiinae        Tanypodinae           Clinocera            
- [37] Pericoma              Dicranota             Tipula               
- [40] Baetis                Baetis                Baetis               
- [43] Ephemerellidae        Heptageniidae         Heptageniidae        
- [46] Cinygmula             Epeorus               Capniidae            
- [49] Capniidae             Capniidae             Nemouridae           
- [52] Arcynopteryx compacta Arcynopteryx compacta Arcynopteryx compacta
- [55] Acentrella            Acentrella            Acentrella           
- [58] Oligochaeta           Oligochaeta           Oligochaeta          
- [61] Oligochaeta           Oligochaeta           Trombidiformes       
- [64] Hygrobatidae          Hygrobatidae          Lebertia             
- [67] Chironomidae          Chironomidae          Orthocladiinae       
- [70] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [73] Chelifera             Simulium              Simulium             
- [76] Simulium              Simulium              Tipula               
- [79] Tipula                Ephemerellidae        Capniidae            
- [82] Arcynopteryx compacta Acentrella            Acentrella           
- [85] Acentrella            Acentrella            Acentrella           
- [88] Acentrella            Acentrella            Acentrella           
- [91] Acentrella            Acentrella            Acentrella           
- [94] Probezzia             Hygrobatidae          Lebertia             
- [97] Sperchon              Orthocladiinae        Orthocladiinae       
-[100] Orthocladiinae       
-85 Levels: Acentrella Agabus Agraylea Ameletus Amiocentrus aspilus ... Zapada</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  [1] Hygrobatidae          Hygrobatidae          Lebertia             
-  [4] Sperchon              Sperchon              Chironomidae         
-  [7] Chironomidae          Chironomidae          Chironomidae         
- [10] Chironomidae          Chironominae          Chironominae         
- [13] Chironominae          Chironominae          Chironominae         
- [16] Chironominae          Chironominae          Chironominae         
- [19] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [22] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [25] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [28] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [31] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [34] Orthocladiinae        Tanypodinae           Clinocera            
- [37] Pericoma              Dicranota             Tipula               
- [40] Baetis                Baetis                Baetis               
- [43] Ephemerellidae        Heptageniidae         Heptageniidae        
- [46] Cinygmula             Epeorus               Capniidae            
- [49] Capniidae             Capniidae             Nemouridae           
- [52] Arcynopteryx compacta Arcynopteryx compacta Arcynopteryx compacta
- [55] Acentrella            Acentrella            Acentrella           
- [58] Oligochaeta           Oligochaeta           Oligochaeta          
- [61] Oligochaeta           Oligochaeta           Trombidiformes       
- [64] Hygrobatidae          Hygrobatidae          Lebertia             
- [67] Chironomidae          Chironomidae          Orthocladiinae       
- [70] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [73] Chelifera             Simulium              Simulium             
- [76] Simulium              Simulium              Tipula               
- [79] Tipula                Ephemerellidae        Capniidae            
- [82] Arcynopteryx compacta Acentrella            Acentrella           
- [85] Acentrella            Acentrella            Acentrella           
- [88] Acentrella            Acentrella            Acentrella           
- [91] Acentrella            Acentrella            Acentrella           
- [94] Probezzia             Hygrobatidae          Lebertia             
- [97] Sperchon              Orthocladiinae        Orthocladiinae       
-[100] Orthocladiinae       
-85 Levels: Acentrella Agabus Agraylea Ameletus Amiocentrus aspilus ... Zapada</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  [1] Hygrobatidae          Hygrobatidae          Lebertia             
-  [4] Sperchon              Sperchon              Chironomidae         
-  [7] Chironomidae          Chironomidae          Chironomidae         
- [10] Chironomidae          Chironominae          Chironominae         
- [13] Chironominae          Chironominae          Chironominae         
- [16] Chironominae          Chironominae          Chironominae         
- [19] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [22] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [25] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [28] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [31] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [34] Orthocladiinae        Tanypodinae           Clinocera            
- [37] Pericoma              Dicranota             Tipula               
- [40] Baetis                Baetis                Baetis               
- [43] Ephemerellidae        Heptageniidae         Heptageniidae        
- [46] Cinygmula             Epeorus               Capniidae            
- [49] Capniidae             Capniidae             Nemouridae           
- [52] Arcynopteryx compacta Arcynopteryx compacta Arcynopteryx compacta
- [55] Acentrella            Acentrella            Acentrella           
- [58] Oligochaeta           Oligochaeta           Oligochaeta          
- [61] Oligochaeta           Oligochaeta           Trombidiformes       
- [64] Hygrobatidae          Hygrobatidae          Lebertia             
- [67] Chironomidae          Chironomidae          Orthocladiinae       
- [70] Orthocladiinae        Orthocladiinae        Orthocladiinae       
- [73] Chelifera             Simulium              Simulium             
- [76] Simulium              Simulium              Tipula               
- [79] Tipula                Ephemerellidae        Capniidae            
- [82] Arcynopteryx compacta Acentrella            Acentrella           
- [85] Acentrella            Acentrella            Acentrella           
- [88] Acentrella            Acentrella            Acentrella           
- [91] Acentrella            Acentrella            Acentrella           
- [94] Probezzia             Hygrobatidae          Lebertia             
- [97] Sperchon              Orthocladiinae        Orthocladiinae       
-[100] Orthocladiinae       
-85 Levels: Acentrella Agabus Agraylea Ameletus Amiocentrus aspilus ... Zapada</code></pre>
-</div>
-</div>
+<p>For each of the following operators <code>[[</code>, <code>[</code>, <code>$</code>, retrieve the taxon column from the <code>chiro100</code> data frame. No <code>dplyr</code> should be used here.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -576,7 +415,7 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Investigate the <code>rbind</code> and <code>cbind</code> commands in R, using information from the help files and Advanced R. When doing so, please talk about the following:</p>
+<p>Investigate the <code>rbind</code> and <code>cbind</code> commands in R using information from the help files and <a href="https://adv-r.hadley.nz/">Advanced R</a>. When doing so, please talk about the following:</p>
 <ul>
 <li>A pragmatic description of how each command works</li>
 <li>A constructive description of how each command works (i.e.&nbsp;how does R actually bind these items?)</li>
@@ -612,11 +451,11 @@ Attaching package: 'dplyr'</code></pre>
 <div class="callout-body-container callout-body">
 <p>Complete each task below using a combination of functions and subsetting. You should have a filled vector named <code>meanTaxons</code> that is of length 25.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># FIND NUMBER OF UNIQUE TAXONS ON THIS LINE, ASSIGN TO TAXONS</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>meanTaxons <span class="ot">=</span> <span class="co"># REPLACE WITH EMPTY VECTOR OF LENGTH EQUAL TO LENGTH OF TAXONS</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(taxons)){</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  meanTaxons[i] <span class="ot">&lt;-</span> <span class="co"># REPLACE WITH MEAN OF </span><span class="al">BUG</span><span class="co"> SIZE FOR EACH taxons[i]</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># FIND NUMBER OF UNIQUE TAXONS ON THIS LINE, ASSIGN TO TAXONS</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>meanTaxons <span class="ot">=</span> <span class="co"># REPLACE WITH EMPTY VECTOR OF LENGTH EQUAL TO LENGTH OF TAXONS</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(taxons)){</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  meanTaxons[i] <span class="ot">&lt;-</span> <span class="co"># REPLACE WITH MEAN OF </span><span class="al">BUG</span><span class="co"> SIZE FOR EACH taxons[i]</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -636,17 +475,6 @@ Attaching package: 'dplyr'</code></pre>
 <li>Refine the <code>meanTaxons</code> vector such that the names are the unique taxons.</li>
 </ul>
 <p>From here, summarize the benefits and disadvantages of using each of these two data structures with regards to application, memory usage, and how information is stored.</p>
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'lobstr' was built under R version 4.4.3</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>7.63 kB</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>2.18 kB</code></pre>
-</div>
-</div>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -660,24 +488,6 @@ Attaching package: 'dplyr'</code></pre>
 </div>
 <div class="callout-body-container callout-body">
 <p>Repeat step (b), but using only <code>dplyr</code> commands. Recall that you are <strong>summarizing</strong> information from the data frame.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 25 × 2
-   Taxon                             avg
-   &lt;fct&gt;                           &lt;dbl&gt;
- 1 Agabus                           9.8 
- 2 Apatania                         5.4 
- 3 Baetis                           1.2 
- 4 Brachycentrus                    2   
- 5 Chelifera                        5.8 
- 6 Chironomidae                     3   
- 7 Chironominae                     3.49
- 8 Clinocera                        4.27
- 9 Dicranota                        6.95
-10 Ephemerella dorothea/excrucians  5.6 
-# ℹ 15 more rows</code></pre>
-</div>
-</div>
 </div>
 </div>
 <p>When finished, commit and push this file to your SDS 270 repository.</p>
