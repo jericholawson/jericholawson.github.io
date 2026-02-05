@@ -193,7 +193,7 @@
     "href": "schedule.html#week-2-data-structures-assignment-22---26",
     "title": "Schedule",
     "section": "Week 2: Data Structures, Assignment (2/2 - 2/6)",
-    "text": "Week 2: Data Structures, Assignment (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\n\n\n\n\n\n\nNoteLecture: Lists\n\n\n\n\nSlides + Activities\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nComplete any remaining setup\nRead chapters 2, 4 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Frames and Subsetting\n\n\n\n\nSlides\n\nDataset\n\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due next Wednesday, 2/11 at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\n\nRead chapter 5 of Advanced R (before Monday’s class)"
+    "text": "Week 2: Data Structures, Assignment (2/2 - 2/6)\n\nMonday, 2/2Wednesday, 2/4\n\n\n\n\n\n\n\n\nNoteLecture: Lists\n\n\n\n\nSlides + Activities\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nComplete any remaining setup\nRead chapters 2, 4 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Frames and Subsetting\n\n\n\n\nSlides\n\nDataset\n\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due next Wednesday, 2/11 at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\nMacroinvertebrates Dataset\n\nRead chapter 5 of Advanced R (before Monday’s class)"
   },
   {
     "objectID": "schedule.html#week-3-control-flow-functions-29---213",
@@ -893,28 +893,28 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooks\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting \n\n\n\n\n1: Set 1\n\n\n\nTBA\n\n\n\nAdvanced R\nR Packages"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksData\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting \n\n\n\n\n1: Set 1\n\n\n\nTBA\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates"
   },
   {
     "objectID": "sets/set1.html",
     "href": "sets/set1.html",
     "title": "Set #1 (50 pts)",
     "section": "",
-    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions."
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Wednesday, 2/11 at 11:59pm"
   },
   {
     "objectID": "sets/set1.html#instructions",
     "href": "sets/set1.html#instructions",
     "title": "Set #1 (50 pts)",
     "section": "",
-    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions."
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Wednesday, 2/11 at 11:59pm"
   },
   {
     "objectID": "sets/set1.html#background",
     "href": "sets/set1.html#background",
     "title": "Set #1 (50 pts)",
     "section": "Background",
-    "text": "Background\nThe first problem set will contain various problems related to the following:\n\nNames and values (Ch. 2, AR)\nVectors (Ch. 3, AR)\nSubsetting (Ch. 4, AR)\n\nMake sure to carefully read and follow directions for each problem.\nAll problems will center around the macroinvertebrates dataset, which is based on a study conducted by the Alaska Science Center over the last decade. The dataset contains lengths of macroinvertebrates collected from rivers in northwest Alaska using drift and kick nets during summer and fall 2015-2019. See the data documentation at this link.\nAfter getting the dataset from the course website, load in the dataset using the read.csv() command."
+    "text": "Background\nThe first problem set will contain various problems related to the following:\n\nNames and values (Ch. 2, AR)\nVectors (Ch. 3, AR)\nSubsetting (Ch. 4, AR)\n\nMake sure to carefully read and follow directions for each problem.\nAll problems will center around the macroinvertebrates dataset, which is based on a study conducted by the Alaska Science Center over the last decade. This dataset can be accessed here. The dataset contains lengths of macroinvertebrates collected from rivers in northwest Alaska using drift and kick nets during summer and fall 2015-2019. See the data documentation at this link.\nAfter getting the dataset from the course website, load in the dataset using the read.csv() command."
   },
   {
     "objectID": "sets/set1.html#q1",
@@ -2399,5 +2399,257 @@
     "title": "Set #2 (50 pts)",
     "section": "Q1: Data Preparation",
     "text": "Q1: Data Preparation\n\n\n\n\n\n\nImportant(a)\n\n\n\nload data in\n\ndogs &lt;- read.csv(\"../data/dogs.csv\")\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\ncreate function to find missing values in given vector\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nuse function with sapply\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\ncreate function named mean, taking particular mean of choice\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\ndiscuss issues"
+  },
+  {
+    "objectID": "lectures/w3l1_actTemp.html",
+    "href": "lectures/w3l1_actTemp.html",
+    "title": "Exercises from Week 3, Lecture 1: Names and Values",
+    "section": "",
+    "text": "For these exercises, we will learn how to use the lobstr package to get information about objects in our environment.\nGoal: By the end of these exercises, you will be able to determine whether an operation makes a copy, and compute the amount of memory each object occupies.\nYou will create a separate .qmd file and complete the following exercises that will then be committed and pushed in your SDS 270 repository."
+  },
+  {
+    "objectID": "lectures/w3l1_actTemp.html#introduction",
+    "href": "lectures/w3l1_actTemp.html#introduction",
+    "title": "Exercises from Week 3, Lecture 1: Names and Values",
+    "section": "",
+    "text": "For these exercises, we will learn how to use the lobstr package to get information about objects in our environment.\nGoal: By the end of these exercises, you will be able to determine whether an operation makes a copy, and compute the amount of memory each object occupies.\nYou will create a separate .qmd file and complete the following exercises that will then be committed and pushed in your SDS 270 repository."
+  },
+  {
+    "objectID": "lectures/w3l1_actTemp.html#exercises",
+    "href": "lectures/w3l1_actTemp.html#exercises",
+    "title": "Exercises from Week 3, Lecture 1: Names and Values",
+    "section": "Exercises",
+    "text": "Exercises\n\nMeasuring Memory\nFirst, load the lobstr package. This package contains many functions that will make it easier for us to figure out what R is doing under the hood. Also load the tidyverse package.\n\nlibrary(lobstr)\n\nWarning: package 'lobstr' was built under R version 4.4.3\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nYour workspace should be empty.\n\n\n\n\n\n\nImportantQ1:\n\n\n\nUse ls() to list the objects in your workspace. If it is not empty, use the broom icon in the Environment tab in RStudio to empty it.\n\n# PUT SOLUTION HERE\n\n\n\nBefore we do anything, how much memory is being used by our R session?\n\nmem_used()\n\n85.34 MB\n\n\nRecall that a byte is eight bits. A byte is a very small amount of information, typically used to store one character. A kilobyte is 1000 bytes, and a megabyte is 1000 kilobytes, etc. You should familiarize yourself briefly with the orders of magnitude of data.\nNow suppose we add some things to our workspace. We can add objects, functions, or load packages. Does loading a package increase the memory used by our session?\n\n\n\n\n\n\nImportantQ2:\n\n\n\nUse the library() command to load the broom package. Then check the memory usage with mem_used(). Does loading a package increase the amount of memory used? By how much?\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ3:\n\n\n\nWhat about loading a data set? Use the data() command to load the iris data set. Does that increase the memory usage? By how much?\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ4:\n\n\n\nUse obj_size() to measure the amount of memory that iris takes up. Was the increase you observed previously equal to this amount?\n\n# PUT SOLUTION HERE\n\n\n\n\n\nMaking Copies\nAs much fun as it is to make copies, each copy occupies memory. Generally, we want to minimize the amount of memory that our code needs to run.\nLet’s store the amount of memory we are currently using.\n\nbefore &lt;- mem_used()\n\nNote the memory location of the iris data frame.\n\nref(iris)\n\n█ [1:0x24bb2e1f3f8] &lt;df[,5]&gt; \n├─Sepal.Length = [2:0x24ba95e8860] &lt;dbl&gt; \n├─Sepal.Width = [3:0x24ba95e6f60] &lt;dbl&gt; \n├─Petal.Length = [4:0x24ba95e7460] &lt;dbl&gt; \n├─Petal.Width = [5:0x24ba95e9260] &lt;dbl&gt; \n└─Species = [6:0x24ba76e1610] &lt;fct&gt; \n\n\nNote that we can bind a second name my_iris to the iris data frame, without making a copy.\n\nmy_iris &lt;- iris\nref(my_iris)\n\n█ [1:0x24bb2e1f3f8] &lt;df[,5]&gt; \n├─Sepal.Length = [2:0x24ba95e8860] &lt;dbl&gt; \n├─Sepal.Width = [3:0x24ba95e6f60] &lt;dbl&gt; \n├─Petal.Length = [4:0x24ba95e7460] &lt;dbl&gt; \n├─Petal.Width = [5:0x24ba95e9260] &lt;dbl&gt; \n└─Species = [6:0x24ba76e1610] &lt;fct&gt; \n\n\nNow let’s change the data frame in a way that forces a copy to be made.\n\nmy_iris &lt;- my_iris |&gt;\n  mutate(sepal_area = Sepal.Length * Sepal.Width)\nref(my_iris)\n\n█ [1:0x24bb0048cd8] &lt;df[,6]&gt; \n├─Sepal.Length = [2:0x24ba95e8860] &lt;dbl&gt; \n├─Sepal.Width = [3:0x24ba95e6f60] &lt;dbl&gt; \n├─Petal.Length = [4:0x24ba95e7460] &lt;dbl&gt; \n├─Petal.Width = [5:0x24ba95e9260] &lt;dbl&gt; \n├─Species = [6:0x24ba76e1610] &lt;fct&gt; \n└─sepal_area = [7:0x24ba95eb560] &lt;dbl&gt; \n\n\nNote that the memory locations of my_iris and iris are not the same anymore. However, the memory locations of the underlying vectors are the same!\n\n\n\n\n\n\nImportantQ5:\n\n\n\nUse before and mem_used() to calculate how much extra memory the copy of my_iris occupies.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ6:\n\n\n\nIs the difference you observed above equal to the size of the new column we created? Why or why not?\n\n# PUT SOLUTION HERE\n\n\n\nDifferent representations of the same data may have different memory footprints. Suppose we change the iris data set into its long format.\n\niris_long &lt;- iris |&gt;\n  pivot_longer(-Species, names_to = \"type\", values_to = \"measurement\")\n\n\n\n\n\n\n\nImportantQ7:\n\n\n\nDoes iris_long take up the same amount of memory as iris? Why or why not?\n\n# PUT SOLUTION HERE\n\n\n\nWe know that tibbles are like data.frames. Do they take up the same amount of memory?\n\nbefore &lt;- mem_used()\niris_tbl &lt;- iris_long |&gt;\n  as_tibble()\nmem_used() - before\n\n-6.70 kB\n\nclass(iris_tbl)\n\n[1] \"tbl_df\"     \"tbl\"        \"data.frame\"\n\n\nDoes converting a data.frame to a tbl force a copy?\n\nref(iris_tbl)\n\n█ [1:0x24baef8daa8] &lt;tibble[,3]&gt; \n├─Species = [2:0x24ba70e6250] &lt;fct&gt; \n├─type = [3:0x24ba6dddf50] &lt;chr&gt; \n└─measurement = [4:0x24ba6dd6d50] &lt;dbl&gt; \n\nref(iris_long)\n\n█ [1:0x24bafe18d38] &lt;tibble[,3]&gt; \n├─Species = [2:0x24ba70e6250] &lt;fct&gt; \n├─type = [3:0x24ba6dddf50] &lt;chr&gt; \n└─measurement = [4:0x24ba6dd6d50] &lt;dbl&gt; \n\n\n\n\n\n\n\n\nImportantQ8:\n\n\n\nDiscuss how using a tibble changes the memory footprint relative to using a data.frame.\nPUT SOLUTION HERE\n\n\n\n\nTracing memory\nUnfortunately, due to various complications and optimizations, it’s not always possible to reason ahead of time about whether R will make a copy of an object. Instead, we can use the tracemem() function to have R tell us whether it makes a copy and why.\nFirst, note the memory location of iris.\n\ntracemem(iris)\n\n[1] \"&lt;0000024BB2E1F3F8&gt;\"\n\n\nWe are now tracing this memory location. Some types of computations we make on iris do not require making a copy.\n\niris |&gt;\n  pull(Petal.Length) |&gt;\n  mean()\n\n[1] 3.758\n\n\nHowever, if we modify iris using mutate(), a copy does get made.\n\niris |&gt;\n  mutate(petal_area = Petal.Length * Petal.Width) |&gt;\n  as_tibble()\n\ntracemem[0x0000024bb2e1f3f8 -&gt; 0x0000024bac137708]: initialize &lt;Anonymous&gt; mutate_cols mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \ntracemem[0x0000024bac137708 -&gt; 0x0000024bac1378c8]: dplyr_new_list initialize &lt;Anonymous&gt; mutate_cols mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \ntracemem[0x0000024bac1378c8 -&gt; 0x0000024bac132978]: dplyr_new_list initialize &lt;Anonymous&gt; mutate_cols mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \ntracemem[0x0000024bb2e1f3f8 -&gt; 0x0000024ba7a868b8]: new_data_frame vec_data as.list dplyr_col_modify.data.frame dplyr_col_modify mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \ntracemem[0x0000024ba7a868b8 -&gt; 0x0000024ba7a86998]: as.list.data.frame as.list dplyr_col_modify.data.frame dplyr_col_modify mutate.data.frame mutate as_tibble eval eval withVisible withCallingHandlers eval eval with_handlers doWithOneRestart withOneRestart withRestartList doWithOneRestart withOneRestart withRestartList withRestarts &lt;Anonymous&gt; evaluate in_dir in_input_dir eng_r block_exec call_block process_group withCallingHandlers with_options &lt;Anonymous&gt; process_file &lt;Anonymous&gt; &lt;Anonymous&gt; execute .main \n\n\n# A tibble: 150 × 6\n   Sepal.Length Sepal.Width Petal.Length Petal.Width Species petal_area\n          &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;fct&gt;        &lt;dbl&gt;\n 1          5.1         3.5          1.4         0.2 setosa        0.28\n 2          4.9         3            1.4         0.2 setosa        0.28\n 3          4.7         3.2          1.3         0.2 setosa        0.26\n 4          4.6         3.1          1.5         0.2 setosa        0.3 \n 5          5           3.6          1.4         0.2 setosa        0.28\n 6          5.4         3.9          1.7         0.4 setosa        0.68\n 7          4.6         3.4          1.4         0.3 setosa        0.42\n 8          5           3.4          1.5         0.2 setosa        0.3 \n 9          4.4         2.9          1.4         0.2 setosa        0.28\n10          4.9         3.1          1.5         0.1 setosa        0.15\n# ℹ 140 more rows\n\n\n\n\n\n\n\n\nImportantQ9:\n\n\n\nExperiment with different operations after invoking tracemem(). Can you get a feel for what operations induce copies?\nPUT SOLUTION HERE"
+  },
+  {
+    "objectID": "lectures/w3l2_act.html",
+    "href": "lectures/w3l2_act.html",
+    "title": "Exercises from Week 3, Lecture 2: Control Flow",
+    "section": "",
+    "text": "ImportantQ1:\n\n\n\nDescribe what is going on in each part of the code step-by-step. What mechanisms are being used?\n\n\n\n\n\n\n\n\nImportantQ2:\n\n\n\nWe’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3. Use some form of an if-else choice to do this.\n\n\n\n\n\n\n\n\nImportantQ3:\n\n\n\nSuppose if we have less than 0 runs, I want to output an NA. How can I change the ifelse() statement above to do this?\n\n\n\n\n\n\n\n\nImportantQ4:\n\n\n\nWrite a switch() function that takes a single character and does the following:\n\nPrint 1 for “single”\nPrint 4 for “home run”\nStop otherwise\n\n\n\n\n\n\n\n\n\nImportantQ5:\n\n\n\nWrite a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for outs and runs in individual data structures.\n\n\n\n\n\n\n\n\nImportantQ6:\n\n\n\nWrite a while-loop that continues the out operation until 3 outs are recorded, storing the results for outs and runs in individual data structures."
+  },
+  {
+    "objectID": "lectures/w3l2_act.html#exercises",
+    "href": "lectures/w3l2_act.html#exercises",
+    "title": "Exercises from Week 3, Lecture 2: Control Flow",
+    "section": "",
+    "text": "ImportantQ1:\n\n\n\nDescribe what is going on in each part of the code step-by-step. What mechanisms are being used?\n\n\n\n\n\n\n\n\nImportantQ2:\n\n\n\nWe’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3. Use some form of an if-else choice to do this.\n\n\n\n\n\n\n\n\nImportantQ3:\n\n\n\nSuppose if we have less than 0 runs, I want to output an NA. How can I change the ifelse() statement above to do this?\n\n\n\n\n\n\n\n\nImportantQ4:\n\n\n\nWrite a switch() function that takes a single character and does the following:\n\nPrint 1 for “single”\nPrint 4 for “home run”\nStop otherwise\n\n\n\n\n\n\n\n\n\nImportantQ5:\n\n\n\nWrite a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for outs and runs in individual data structures.\n\n\n\n\n\n\n\n\nImportantQ6:\n\n\n\nWrite a while-loop that continues the out operation until 3 outs are recorded, storing the results for outs and runs in individual data structures."
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#last-time",
+    "href": "lectures/w4l1_functions.html#last-time",
+    "title": "Control Flow",
+    "section": "Last Time",
+    "text": "Last Time\n\nControl flow\n\nChoices\nLoops"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#today",
+    "href": "lectures/w4l1_functions.html#today",
+    "title": "Control Flow",
+    "section": "Today",
+    "text": "Today\n\nFunctions\n\nComponents\nLexical scoping\n\n\nWe will focus on primarily Chapter 6 from Advanced R."
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#functions",
+    "href": "lectures/w4l1_functions.html#functions",
+    "title": "Control Flow",
+    "section": "Functions",
+    "text": "Functions\n\nBuilt to run specific actions on given inputs to produce outputs/outcomes\n\n\nmyFunct &lt;- function(x, y, z){\n  # Body\n  if (x &lt; y){\n    val &lt;- x + y/z\n  } else {\n    val &lt;- y + x/z\n  }\n  return(val)\n}"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#function-components",
+    "href": "lectures/w4l1_functions.html#function-components",
+    "title": "Control Flow",
+    "section": "Function Components",
+    "text": "Function Components\n\n\n\nArguments (i.e. formals)\n\nInputs to the function\nDo not need to declare types\n\nBody\n\nWhat goes on in the function\nHave return() function\n\nEnvironment\n\nBehind the scenes\nDetermine how function finds values associated with names\n\n\n\n\n# Formals\nmyFunct &lt;- function(x, y, z){\n  # Body\n  if (x &lt; y){\n    val &lt;- x + y/z\n  } else {\n    val &lt;- y + x/z\n  }\n  return(val)\n}"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#exception-primitive-functions",
+    "href": "lectures/w4l1_functions.html#exception-primitive-functions",
+    "title": "Control Flow",
+    "section": "Exception: Primitive Functions",
+    "text": "Exception: Primitive Functions\n\nCall C code specifically\n\nUsing older infrastructure\nAll within base package\n\n\n\ntypeof(sum)\n\n[1] \"builtin\""
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#function-composition",
+    "href": "lectures/w4l1_functions.html#function-composition",
+    "title": "Control Flow",
+    "section": "Function Composition",
+    "text": "Function Composition\n\nThink of it like a math function\n\nf(g(x))\n\nCan nest: f(g(x))\nCan use intermediate objects: y &lt;- g(x); f(y)\nCan pipe: x |&gt; g() |&gt; f()"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#example-function-composition",
+    "href": "lectures/w4l1_functions.html#example-function-composition",
+    "title": "Control Flow",
+    "section": "Example: Function Composition",
+    "text": "Example: Function Composition\n\nx &lt;- 2\n\nsqrt(exp(x)) # Nesting\n\n[1] 2.718282\n\ny &lt;- exp(x); sqrt(y) # Intermediate\n\n[1] 2.718282\n\nx |&gt; exp() |&gt; sqrt() # Piping\n\n[1] 2.718282"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#scoping",
+    "href": "lectures/w4l1_functions.html#scoping",
+    "title": "Control Flow",
+    "section": "Scoping",
+    "text": "Scoping\n\nRemember assignment?\n\n\nvect &lt;- c(2, 5, 3, 2, 1)\n\n\nWe investigate scoping\n\nHow do we find the value associated with the name?"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#lexical-scoping",
+    "href": "lectures/w4l1_functions.html#lexical-scoping",
+    "title": "Control Flow",
+    "section": "Lexical Scoping",
+    "text": "Lexical Scoping\n\nLexical?\n\n“parse-time”, not “run-time”\n\nFollowing four rules:\n\nName masking\nFunctions vs. variables\nA fresh start\nDynamic lookup"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#name-masking",
+    "href": "lectures/w4l1_functions.html#name-masking",
+    "title": "Control Flow",
+    "section": "1. Name Masking",
+    "text": "1. Name Masking\n\nNames masked until needed\n\nObject names masked in function environment if defined in function\nFunction \\(\\rightarrow\\) outer function \\(\\rightarrow\\) package \\(\\rightarrow\\) environment\n\n\n\nx &lt;- 5; y &lt;- 6; z &lt;- 7\n\nmyFunct2 &lt;- function(){\n  x &lt;- 1; y &lt;- 2; z &lt;- 3\n  return(c(x, y, z))\n}\n\nmyFunct2()\n\n[1] 1 2 3"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#functions-vs.-variables",
+    "href": "lectures/w4l1_functions.html#functions-vs.-variables",
+    "title": "Control Flow",
+    "section": "2. Functions vs. Variables",
+    "text": "2. Functions vs. Variables\n\nScoping applies to functions AND variables\nFunction vs. variable?\n\n() \\(\\rightarrow\\) uses function object\n\n\n\nmyFunct4 &lt;- function(x){x + 1}\n\nmyFunct3 &lt;- function(){\n  myFunct4 &lt;- function(x){x + 10}\n  return(myFunct4(10))\n}\n\nmyFunct3()\n\n[1] 20"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#a-fresh-start",
+    "href": "lectures/w4l1_functions.html#a-fresh-start",
+    "title": "Control Flow",
+    "section": "3. A Fresh Start",
+    "text": "3. A Fresh Start\n\nNew call = new environment\n\nMemoryless between function calls\n\n\n\na &lt;- 10\nmyFunct5 &lt;- function(){\n  a &lt;- a + 1\n  a\n}\n\nmyFunct5()\n\n[1] 11\n\nmyFunct5()\n\n[1] 11\n\n\n\nQuestion: How can we update the value of a for the next function call?"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#dynamic-lookup",
+    "href": "lectures/w4l1_functions.html#dynamic-lookup",
+    "title": "Control Flow",
+    "section": "4. Dynamic Lookup",
+    "text": "4. Dynamic Lookup\n\nProcrastinate and check functionality when needed\n\nR looks for values when function is called, not defined\nFunction mistakes will not be apparent until you run it\n\n\n\na &lt;- 15\nmyFunct5()\n\n[1] 16\n\na &lt;- 20\nmyFunct5()\n\n[1] 21"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#extension-explicit-calling",
+    "href": "lectures/w4l1_functions.html#extension-explicit-calling",
+    "title": "Control Flow",
+    "section": "Extension: Explicit Calling",
+    "text": "Extension: Explicit Calling\n\nThis extends to creating functions of same name as others\n\n\nstats &lt;- c(1, 2, 3, 4, 5)\nmean &lt;- function(x){return(1)}\nmean(stats)\n\n[1] 1\n\n\n\nSolution: reference package where function comes from\n\n\nbase::mean(stats)\n\n[1] 3"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#for-now-and-tuesday",
+    "href": "lectures/w4l1_functions.html#for-now-and-tuesday",
+    "title": "Control Flow",
+    "section": "For now and Tuesday:",
+    "text": "For now and Tuesday:\n\nWork on Exercises #11: The Dots (due Tuesday at 2:45pm)\nReadings: Chapters 7, 8\nQuiz on Tuesday\n\nOn functions\nClosed-note, written\nStudy guide on Moodle"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#for-now-and-monday",
+    "href": "lectures/w4l1_functions.html#for-now-and-monday",
+    "title": "Control Flow",
+    "section": "For now and Monday:",
+    "text": "For now and Monday:\n\nRead Advanced R: chapter 6\nSecond problem set assigned\n\nDue next Friday, 2/20 at 11:59pm"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#function-components-1",
+    "href": "lectures/w4l1_functions.html#function-components-1",
+    "title": "Control Flow",
+    "section": "Function Components",
+    "text": "Function Components\n\nargs(myFunct)\n\nfunction (x, y, z) \nNULL\n\nbody(myFunct)\n\n{\n    if (x &lt; y) {\n        val &lt;- x + y/z\n    }\n    else {\n        val &lt;- y + x/z\n    }\n    return(val)\n}\n\nenvironment(myFunct)\n\n&lt;environment: R_GlobalEnv&gt;"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#r-is-lazy",
+    "href": "lectures/w4l1_functions.html#r-is-lazy",
+    "title": "Control Flow",
+    "section": "R is Lazy!",
+    "text": "R is Lazy!\n\nArguments only evaluated if accessed\n\nLeads to undiagnosed errors\n\nPromises are used\n\nDelayed computation\nEnvironment for called function\nCached values"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#example",
+    "href": "lectures/w4l1_functions.html#example",
+    "title": "Control Flow",
+    "section": "Example",
+    "text": "Example\n\nWhat issues do we have here?\n\n\naddFunct &lt;- function(x, y, z){\n  x + y\n}\n\naddFunct(2, 3)\n\n[1] 5"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#the-dots-...",
+    "href": "lectures/w4l1_functions.html#the-dots-...",
+    "title": "Control Flow",
+    "section": "The Dots (...)",
+    "text": "The Dots (...)\n\nPasses arguments to other functions\n\nUses?\n\nNesting functions\nAccessing methods of other parent classes\n\ne.g. apply() functions\n\nUseful for S3 generics\n\nNeed a way to allow methods to take arbitrary extra arguments"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#the-dots-...-1",
+    "href": "lectures/w4l1_functions.html#the-dots-...-1",
+    "title": "Control Flow",
+    "section": "The Dots (...)",
+    "text": "The Dots (...)\n\nsubVals &lt;- function(y, z){\n  y - z\n}\n\naddVals &lt;- function(x, ...){\n  res = subVals(...)\n  return(c(x, res))\n}\n\naddVals(x = 3, y = 2, z = 1)\n\n[1] 3 1"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#capture-the-dots",
+    "href": "lectures/w4l1_functions.html#capture-the-dots",
+    "title": "Control Flow",
+    "section": "Capture the Dots",
+    "text": "Capture the Dots\n\ncatch_the_dots &lt;- function(...){\n  list(...)\n}\n\ncatch_the_dots(whatever = \"hi\", \"bye\")\n\n$whatever\n[1] \"hi\"\n\n[[2]]\n[1] \"bye\""
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#generic-functions-and-dots",
+    "href": "lectures/w4l1_functions.html#generic-functions-and-dots",
+    "title": "Control Flow",
+    "section": "Generic Functions and Dots",
+    "text": "Generic Functions and Dots\n\nCan use arguments that a generic function doesn’t accept initially\n\n\nargs(plot)\n\nfunction (x, y, ...) \nNULL\n\nplot(rnorm(20), rnorm(20), main = \"Random Plot\")"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#check-arguments",
+    "href": "lectures/w4l1_functions.html#check-arguments",
+    "title": "Control Flow",
+    "section": "Check Arguments",
+    "text": "Check Arguments\n\nbody(plot)\n\nUseMethod(\"plot\")\n\nargs(plot.default)\n\nfunction (x, y = NULL, type = \"p\", xlim = NULL, ylim = NULL, \n    log = \"\", main = NULL, sub = NULL, xlab = NULL, ylab = NULL, \n    ann = par(\"ann\"), axes = TRUE, frame.plot = axes, panel.first = NULL, \n    panel.last = NULL, asp = NA, xgap.axis = NA, ygap.axis = NA, \n    ...) \nNULL"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#exiting-a-function",
+    "href": "lectures/w4l1_functions.html#exiting-a-function",
+    "title": "Control Flow",
+    "section": "Exiting a Function",
+    "text": "Exiting a Function\n\nMostly returns a value or throws an error\n\nImplicit or explicit return (with return())\n\n\n\ndivides &lt;- function(x, y){\n  x / y # implicit return\n}\n\ndivides &lt;- function(x, y){\n  return(x / y) # explicit return\n}"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#invisibility",
+    "href": "lectures/w4l1_functions.html#invisibility",
+    "title": "Control Flow",
+    "section": "Invisibility",
+    "text": "Invisibility\n\nUse invisible() to prevent automatic printing\n\n\n\n\ndivides &lt;- function(x, y){\n  x / y # implicit return\n}\ndivides(8, 4)\n\n[1] 2\n\n\n\n\ndivides &lt;- function(x, y){\n  invisible(x / y)\n}\ndivides(8, 4)\n\n\n\nprint(divides(8, 4))\n\n[1] 2\n\n(divides(8, 4))\n\n[1] 2"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#errors-and-exit-handlers",
+    "href": "lectures/w4l1_functions.html#errors-and-exit-handlers",
+    "title": "Control Flow",
+    "section": "Errors and Exit Handlers",
+    "text": "Errors and Exit Handlers\n\nTo throw an error: stop()\nTo set up an exit handler: on.exit()\n\nUndoes changes done in global state\n\n\n\nerrorFunct &lt;- function(x){\n  stop(\"Error!\")\n}\n\nerrorFunct2 &lt;- function(x){\n  on.exit(cat(\"Goodbye!\\n\"), add = T)\n  stop(\"Error!\")\n}\n\nerrorFunct(5)\n\nError in `errorFunct()`:\n! Error!\n\nerrorFunct2(5)\n\nError in `errorFunct2()`:\n! Error!"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#function-forms",
+    "href": "lectures/w4l1_functions.html#function-forms",
+    "title": "Control Flow",
+    "section": "Function Forms",
+    "text": "Function Forms\n\nPrefix: f(x, y)\nInfix: x %f% y\nReplacement: f(x) &lt;- y\nSpecial: if, [[, for"
+  },
+  {
+    "objectID": "lectures/w4l1_functions.html#for-now-and-tuesday-1",
+    "href": "lectures/w4l1_functions.html#for-now-and-tuesday-1",
+    "title": "Control Flow",
+    "section": "For now and Tuesday:",
+    "text": "For now and Tuesday:\n\nWork on exercises #9: Functions (due Thursday at 2:45pm)"
+  },
+  {
+    "objectID": "lectures/w3l2_actTemp.html",
+    "href": "lectures/w3l2_actTemp.html",
+    "title": "Exercises from Week 3, Lecture 2: Control Flow",
+    "section": "",
+    "text": "ImportantQ1:\n\n\n\nDescribe what is going on in each part of the code step-by-step. What mechanisms are being used?\n\n\n\n\n\n\n\n\nImportantQ2:\n\n\n\nWe’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3. Use some form of an if-else choice to do this.\n\n\n\n\n\n\n\n\nImportantQ3:\n\n\n\nSuppose if we have less than 0 runs, I want to output an NA. How can I change the ifelse() statement above to do this?\n\n\n\n\n\n\n\n\nImportantQ4:\n\n\n\nWrite a switch() function that takes a single character and does the following:\n\nPrint 1 for “single”\nPrint 4 for “home run”\nStop otherwise\n\n\n\n\n\n\n\n\n\nImportantQ5:\n\n\n\nWrite a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for outs and runs in individual data structures.\n\n\n\n\n\n\n\n\nImportantQ6:\n\n\n\nWrite a while-loop that continues the out operation until 3 outs are recorded, storing the results for outs and runs in individual data structures."
+  },
+  {
+    "objectID": "lectures/w3l2_actTemp.html#exercises",
+    "href": "lectures/w3l2_actTemp.html#exercises",
+    "title": "Exercises from Week 3, Lecture 2: Control Flow",
+    "section": "",
+    "text": "ImportantQ1:\n\n\n\nDescribe what is going on in each part of the code step-by-step. What mechanisms are being used?\n\n\n\n\n\n\n\n\nImportantQ2:\n\n\n\nWe’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3. Use some form of an if-else choice to do this.\n\n\n\n\n\n\n\n\nImportantQ3:\n\n\n\nSuppose if we have less than 0 runs, I want to output an NA. How can I change the ifelse() statement above to do this?\n\n\n\n\n\n\n\n\nImportantQ4:\n\n\n\nWrite a switch() function that takes a single character and does the following:\n\nPrint 1 for “single”\nPrint 4 for “home run”\nStop otherwise\n\n\n\n\n\n\n\n\n\nImportantQ5:\n\n\n\nWrite a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for outs and runs in individual data structures.\n\n\n\n\n\n\n\n\nImportantQ6:\n\n\n\nWrite a while-loop that continues the out operation until 3 outs are recorded, storing the results for outs and runs in individual data structures."
   }
 ]
