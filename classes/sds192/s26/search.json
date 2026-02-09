@@ -270,7 +270,7 @@
     "href": "schedule.html#week-3-data-visualization-the-basics-29---213",
     "title": "Schedule",
     "section": "Week 3: Data Visualization, The Basics (2/9 - 2/13)",
-    "text": "Week 3: Data Visualization, The Basics (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11Friday, 2/13\n\n\n\n\n\n\n\n\nNoteLecture: Data Visualization\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #1 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to ggplot\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReading Exercises #2 (due Thursday, 2/12 at 11:59pm in activities repo)\nReadings #3 (due Sunday, 2/15 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #2: GitHub\n\n\n\n\nInstructions\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #3 (due Sunday, 2/15 on Perusall at 11:59pm)\nLab #2 (due Wednesday, 2/18 at 11:59pm on GitHub Classroom)\nProject #1: Proposal (due Wednesday, 2/18 at 11:59pm in new GitHub repository shared with me)\n\nInstructions"
+    "text": "Week 3: Data Visualization, The Basics (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11Friday, 2/13\n\n\n\n\n\n\n\n\nNoteLecture: Data Visualization\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #1 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to ggplot\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #2: GitHub\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-4-data-visualizations-ggplot-216---220",
@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsTextbooksPerusallDatasets\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsTextbooksPerusallDatasets\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -1227,49 +1227,49 @@
   {
     "objectID": "lectures/w3l1_visualization.html#last-time",
     "href": "lectures/w3l1_visualization.html#last-time",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Last Time",
     "text": "Last Time\n\nMore behind R\n\nData imports\nMissing data\nOther topics\n\nWhat is a workflow?\n\nWhy?\nProcess\n\nGitHub\n\nWhat is it?\nActions"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#activity",
     "href": "lectures/w3l1_visualization.html#activity",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Activity",
     "text": "Activity\n\nTalk to 2-3 people around you and discuss any questions you may have about using GitHub.\nPut any questions in the anonymous Google Form here"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#today",
     "href": "lectures/w3l1_visualization.html#today",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Today",
     "text": "Today"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#for-today",
     "href": "lectures/w3l1_visualization.html#for-today",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "For Today",
     "text": "For Today\n\nData visualizations\n\nIntroduction\nTaxonomy\nConventions and critiques\n5NG\nActivity"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#what-is-data-visualization",
     "href": "lectures/w3l1_visualization.html#what-is-data-visualization",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "What is Data Visualization?",
     "text": "What is Data Visualization?\n\nThe translation of information into a graphical format\n\nInformation \\(\\rightarrow\\) graphics\n\nHelps analysts summarize and identify patterns across large datasets\nAlways involves critical judgment calls on the part of the designer"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#elements-of-data-graphics",
     "href": "lectures/w3l1_visualization.html#elements-of-data-graphics",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Elements of Data Graphics",
     "text": "Elements of Data Graphics\n\nAesthetics (i.e. visual cues)\nScale\nContext 1\nCoordinate systems\n\nFramework drawn from: Yau, Nathan. 2013. Data Points: Visualization That Means Something. 1st edition. Indianapolis, IN: Wiley."
   },
   {
     "objectID": "lectures/w3l1_visualization.html#visual-cues",
     "href": "lectures/w3l1_visualization.html#visual-cues",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Visual Cues",
     "text": "Visual Cues\n\n\n\nWhere is the data positioned on the plot?\nWhat is the length of shapes on the plot?\nHow large is the angle between vectors?\nWhich direction is the data going towards?\nWhat shapes/symbols appear on the plot?\nHow much area and volume do shapes take up on a plot?\nHow intense is the color or shade presented on the plot?"
   },
@@ -1311,161 +1311,161 @@
   {
     "objectID": "lectures/w3l1_visualization.html#coordinate-systems",
     "href": "lectures/w3l1_visualization.html#coordinate-systems",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Coordinate Systems",
     "text": "Coordinate Systems\n\n\n\nOrganization of data points\nWe will focus primarily on a Cartesian system (i.e. rectangular coordinate system you are used to)\nOther systems: polar, geographic"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#scale",
     "href": "lectures/w3l1_visualization.html#scale",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Scale",
     "text": "Scale\n\n\n\n“How does distance in the data graphic translate into meaningful differences in quantity?”\nThree choices:\n\nNumeric: linear, logarithmic, or percentage\nCategorical: nominal or ordinal\nTime: by time units or wrap-around"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#examples",
     "href": "lectures/w3l1_visualization.html#examples",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Examples",
     "text": "Examples"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#context",
     "href": "lectures/w3l1_visualization.html#context",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Context",
     "text": "Context\n\nThe “why” to data visualization\nInformation to carefully highlight what needs to be highlighted\n\nTitles, subtitles, axis labels, reference points, etc."
   },
   {
     "objectID": "lectures/w3l1_visualization.html#context-in-this-class",
     "href": "lectures/w3l1_visualization.html#context-in-this-class",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Context in This Class",
     "text": "Context in This Class\nFive pieces of context MUST be in every plot you submit:\n\nThe data’s unit of observation\nUsing titles, axis labels\nVariables represented on the plot\nUsing axis/legend titles\nFilters applied to the data\nGeographic context of the data\nTemporal (date/time range) context of the date"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#context-in-this-class-cont.",
     "href": "lectures/w3l1_visualization.html#context-in-this-class-cont.",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Context in This Class (cont.)",
     "text": "Context in This Class (cont.)"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#data-visualization-conventions",
     "href": "lectures/w3l1_visualization.html#data-visualization-conventions",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Data Visualization Conventions",
     "text": "Data Visualization Conventions\n\nEdward Tufte, American statistician sometimes considered “father of data visualization”\nIntroduced the concept of “graphical integrity”\nHow do we present data as honestly as possible?"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#lie-factor",
     "href": "lectures/w3l1_visualization.html#lie-factor",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Lie Factor",
     "text": "Lie Factor\n\nLie Factor = (size of effect in graphic)/(size of effect in data)\nLie factor is greater when variations on a graph fail to match variations in data\n\n\nTufte, Visual Display of Quantitative Information\n5.3-0.6 / 0.6 * 100= 783 (graph)\n27.5-18 /18 *100 = 53 (data)\n783/53 = 14.8"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#inconsistent-scales",
     "href": "lectures/w3l1_visualization.html#inconsistent-scales",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Inconsistent Scales",
     "text": "Inconsistent Scales\n\nExample from callingbullshit.org"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#presenting-data-out-of-context",
     "href": "lectures/w3l1_visualization.html#presenting-data-out-of-context",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Presenting Data Out of Context",
     "text": "Presenting Data Out of Context\n\nExample from mediamatters.org"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#disproportionate-data-to-ink-ratio",
     "href": "lectures/w3l1_visualization.html#disproportionate-data-to-ink-ratio",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Disproportionate Data-to-Ink Ratio",
     "text": "Disproportionate Data-to-Ink Ratio\n\nEnsure that the ink used on the data match the amount of data presented\nData-to-ink ratio = (ink used to represent data)/(ink used to print graphic)\nShould be as close as possible to 1\nAnother way to think about it: How much of this graph could I erase without losing data?"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#disproportionate-data-to-ink-ratio-1",
     "href": "lectures/w3l1_visualization.html#disproportionate-data-to-ink-ratio-1",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Disproportionate Data-to-Ink Ratio",
     "text": "Disproportionate Data-to-Ink Ratio"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#deviating-from-norms",
     "href": "lectures/w3l1_visualization.html#deviating-from-norms",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Deviating from Norms",
     "text": "Deviating from Norms\n\nExample from callingbullshit.org"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#when-can-i-break-convention",
     "href": "lectures/w3l1_visualization.html#when-can-i-break-convention",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "When Can I Break Convention??",
     "text": "When Can I Break Convention??"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#types-of-graphs",
     "href": "lectures/w3l1_visualization.html#types-of-graphs",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Types of Graphs",
     "text": "Types of Graphs\n\nThe 5NGs\n\n\nLine GraphsHistogramsBar PlotsBox PlotsScatter Plots"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#for-now-and-wednesday",
     "href": "lectures/w3l1_visualization.html#for-now-and-wednesday",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "For Now and Wednesday",
     "text": "For Now and Wednesday\n\nFinish activity for today’s class\nLab #1 due on Wednesday at 11:59pm"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#information-rightarrow-graphics",
     "href": "lectures/w3l1_visualization.html#information-rightarrow-graphics",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Information \\(\\rightarrow\\) Graphics",
     "text": "Information \\(\\rightarrow\\) Graphics\n  &gt; Source: Silver Bulletin\nQuestion: What information is displayed in these maps? How is it being displayed?"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#example",
     "href": "lectures/w3l1_visualization.html#example",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Example",
     "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#example-1",
     "href": "lectures/w3l1_visualization.html#example-1",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Example",
     "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#example-2",
     "href": "lectures/w3l1_visualization.html#example-2",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Example",
     "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#example-3",
     "href": "lectures/w3l1_visualization.html#example-3",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Example",
     "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#example-4",
     "href": "lectures/w3l1_visualization.html#example-4",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Example",
     "text": "Example\nQuestion: Which variables are mapped onto what visual cues?"
   },
   {
     "objectID": "lectures/w3l1_visualization.html#activity-1",
     "href": "lectures/w3l1_visualization.html#activity-1",
-    "title": "Intro to Data Visualizations",
+    "title": "Intro to Data Visualization",
     "section": "Activity",
     "text": "Activity\n\nSeen in schedule\n\nOr here\nSubmit in Slack"
   },
