@@ -684,7 +684,7 @@
 <span id="cb31-5"><a></a>}</span>
 <span id="cb31-6"><a></a><span class="fu">Sys.time</span>() <span class="sc">-</span> timerFor</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.004012108 secs</code></pre>
+<pre><code>Time difference of 0.004645824 secs</code></pre>
 </div>
 </div>
 </section>
@@ -694,14 +694,14 @@
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a>timerApply <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
 <span id="cb33-2"><a></a><span class="fu">apply</span>(myMat, <span class="dv">2</span>, sum)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  0.233230810 -0.037741957 -3.959677695  0.240398925 -2.028458866
- [6] -2.898748266 -0.189736376  2.622302096 -1.954573609  0.165418544
-[11]  2.677580601  1.766289736  0.639146689 -1.439831270  0.118125089
-[16] -0.006175908  3.665209169 -3.270030286  2.094859421  2.823578100</code></pre>
+<pre><code> [1]  0.88255626  3.88214449  2.08956316 -2.88664397  1.97067704  0.84412565
+ [7] -1.49181587  1.26069445  0.04672141  0.20355485  1.47214258 -1.65042630
+[13]  0.46537354 -0.29851003  0.89359364  0.32361483 -1.42974245 -1.62818126
+[19] -2.97755034  3.15017930</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">Sys.time</span>() <span class="sc">-</span> timerApply</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.001739025 secs</code></pre>
+<pre><code>Time difference of 0.002253056 secs</code></pre>
 </div>
 </div>
 </section>
@@ -711,14 +711,14 @@
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a>timerColSums <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
 <span id="cb37-2"><a></a><span class="fu">colSums</span>(myMat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  0.233230810 -0.037741957 -3.959677695  0.240398925 -2.028458866
- [6] -2.898748266 -0.189736376  2.622302096 -1.954573609  0.165418544
-[11]  2.677580601  1.766289736  0.639146689 -1.439831270  0.118125089
-[16] -0.006175908  3.665209169 -3.270030286  2.094859421  2.823578100</code></pre>
+<pre><code> [1]  0.88255626  3.88214449  2.08956316 -2.88664397  1.97067704  0.84412565
+ [7] -1.49181587  1.26069445  0.04672141  0.20355485  1.47214258 -1.65042630
+[13]  0.46537354 -0.29851003  0.89359364  0.32361483 -1.42974245 -1.62818126
+[19] -2.97755034  3.15017930</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">Sys.time</span>() <span class="sc">-</span> timerColSums</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.003336906 secs</code></pre>
+<pre><code>Time difference of 0.001476049 secs</code></pre>
 </div>
 </div>
 </section>

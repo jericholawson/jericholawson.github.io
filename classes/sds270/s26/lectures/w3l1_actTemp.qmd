@@ -1,0 +1,231 @@
+---
+title: "Exercises from Week 3, Lecture 1: Names and Values"
+subtitle: "SDS 270"
+author: "Jericho Lawson"
+format: html
+---
+
+## Introduction
+
+For these exercises, we will learn how to use the `lobstr` package to get information about objects in our environment.
+
+**Goal:** By the end of these exercises, you will be able to determine whether an operation makes a copy, and compute the amount of memory each object occupies.
+
+You will create a separate .qmd file and complete the following exercises that will then be committed and pushed in your SDS 270 repository.
+
+## Exercises
+
+### Measuring Memory
+
+First, load the `lobstr` package. This package contains many functions that will make it easier for us to figure out what R is doing under the hood. Also load the `tidyverse` package.
+
+```{r}
+library(lobstr)
+library(tidyverse)
+```
+
+Your workspace should be empty.
+
+::: {.callout-important}
+##### Q1:
+
+Use `ls()` to list the objects in your workspace. If it is not empty, use the broom icon in the Environment tab in RStudio to empty it.
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+Before we do anything, how much memory is being used by our R session?
+
+```{r}
+mem_used()
+```
+
+Recall that a byte is eight bits. A byte is a very small amount of information, typically used to store one character. A kilobyte is 1000 bytes, and a megabyte is 1000 kilobytes, etc. You should familiarize yourself briefly with the orders of magnitude of data.
+
+Now suppose we add some things to our workspace. We can add objects, functions, or load packages. Does loading a package increase the memory used by our session?
+
+::: {.callout-important}
+##### Q2:
+
+Use the `library()` command to load the broom package. Then check the memory usage with `mem_used()`. Does loading a package increase the amount of memory used? By how much?
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+
+:::
+
+
+::: {.callout-important}
+
+##### Q3:
+
+What about loading a data set? Use the `data()` command to load the `iris` data set. Does that increase the memory usage? By how much?
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+
+::: {.callout-important}
+
+##### Q4:
+
+Use `obj_size()` to measure the amount of memory that `iris` takes up. Was the increase you observed previously equal to this amount?
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+
+### Making Copies
+
+As much fun as it is to make copies, each copy occupies memory. Generally, we want to minimize the amount of memory that our code needs to run.
+
+Let’s store the amount of memory we are currently using.
+
+```{r}
+before <- mem_used()
+```
+
+Note the memory location of the `iris` data frame.
+
+```{r}
+ref(iris)
+```
+
+Note that we can bind a second name `my_iris` to the `iris` data frame, without making a copy.
+
+```{r}
+my_iris <- iris
+ref(my_iris)
+```
+
+Now let’s change the data frame in a way that forces a copy to be made.
+
+```{r}
+my_iris <- my_iris |>
+  mutate(sepal_area = Sepal.Length * Sepal.Width)
+ref(my_iris)
+```
+
+
+Note that the memory locations of `my_iris` and `iris` are not the same anymore. However, the memory locations of the underlying vectors are the same!
+
+::: {.callout-important}
+
+##### Q5:
+
+Use `before` and `mem_used()` to calculate how much extra memory the copy of `my_iris` occupies.
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+
+::: {.callout-important}
+
+##### Q6:
+
+Is the difference you observed above equal to the size of the new column we created? Why or why not?
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+Different representations of the same data may have different memory footprints. Suppose we change the iris data set into its long format.
+
+```{r}
+iris_long <- iris |>
+  pivot_longer(-Species, names_to = "type", values_to = "measurement")
+```
+
+::: {.callout-important}
+
+##### Q7:
+
+Does `iris_long` take up the same amount of memory as `iris`? Why or why not?
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+We know that tibbles are like `data.frame`s. Do they take up the same amount of memory?
+
+```{r}
+before <- mem_used()
+iris_tbl <- iris_long |>
+  as_tibble()
+mem_used() - before
+
+class(iris_tbl)
+```
+
+Does converting a `data.frame` to a `tbl` force a copy?
+
+```{r}
+ref(iris_tbl)
+ref(iris_long)
+```
+
+::: {.callout-important}
+
+##### Q8:
+
+Discuss how using a tibble changes the memory footprint relative to using a `data.frame`.
+
+PUT SOLUTION HERE
+
+:::
+
+### Tracing memory
+
+Unfortunately, due to various complications and optimizations, it’s not always possible to reason ahead of time about whether R will make a copy of an object. Instead, we can use the `tracemem()` function to have R tell us whether it makes a copy and why.
+
+First, note the memory location of iris.
+
+
+```{r}
+tracemem(iris)
+```
+
+We are now tracing this memory location. Some types of computations we make on `iris` do not require making a copy.
+
+```{r}
+iris |>
+  pull(Petal.Length) |>
+  mean()
+```
+
+However, if we modify iris using `mutate()`, a copy does get made.
+
+```{r}
+iris |>
+  mutate(petal_area = Petal.Length * Petal.Width) |>
+  as_tibble()
+```
+
+::: {.callout-important}
+
+##### Q9:
+
+Experiment with different operations after invoking `tracemem()`. Can you get a feel for what operations induce copies?
+
+PUT SOLUTION HERE
+
+
+:::
