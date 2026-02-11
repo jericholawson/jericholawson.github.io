@@ -270,7 +270,7 @@
     "href": "schedule.html#week-3-data-visualization-the-basics-29---213",
     "title": "Schedule",
     "section": "Week 3: Data Visualization, The Basics (2/9 - 2/13)",
-    "text": "Week 3: Data Visualization, The Basics (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11Friday, 2/13\n\n\n\n\n\n\n\n\nNoteLecture: Data Visualization\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #1 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to ggplot\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #2: GitHub\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 3: Data Visualization, The Basics (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11Friday, 2/13\n\n\n\n\n\n\n\n\nNoteLecture: Data Visualization\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #1 (due Wednesday, 2/11 at 11:59pm)\n\nTemplate\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to ggplot\n\n\n\n\nSlides\nActivity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReading Exercises #2 (due Thursday, 2/12 at 11:59pm in activities repo)\nExercise #3 from Chapter 2 in Modern Data Science with R\n\nFind the two charts/graphs specifically from r/dataisbeautiful. Make sure to cite them in some fashion.\n\nReadings #3 (due Sunday, 2/15 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #2: GitHub\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-4-data-visualizations-ggplot-216---220",
@@ -1733,7 +1733,7 @@
     "href": "schedule.html#week-4-data-visualizations-with-ggplot-216---220",
     "title": "Schedule",
     "section": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)",
-    "text": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\nLecture #7: Types of Data Visualizations\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLecture #8: Advanced ggplot2\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #4 (due Sunday, 2/22 at 8:59pm)\nHW #2 (due Sunday, 2/22 at 8:59pm)\n\n\n\n\n\nLab #3: Visualization Aesthetics"
+    "text": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\n\n\n\n\n\n\nNoteLecture: Frequency Plots\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Box and Scatter Plots\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #3: Visualization Aesthetics\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule-abc.html",
@@ -1761,7 +1761,7 @@
     "href": "projects/proj1inst.html#background",
     "title": "Project #1 (150 pts)",
     "section": "Background",
-    "text": "Background\nIn this project, you will be analyzing a particular dataset and developing meaningful and clear visualizations that detail various trends and patterns within the data that inform the audience about particular issues. This will be framed within a workflow, in which you will import the data, write code to analyze and create plots, and format your files so that they are reproducible. By the end of this project, you will be able to:\n\nNavigate different forms of data documentation.\nRecognize differences in variable types and how they get assigned to certain R objects.\nExamine trends and patterns within the data through exploratory plotting in R.\nCreate clear and informative plots that highlight particular patterns in the data.\nSummarize findings and ethical issues within data and its resources through a short video and report.\n\nThe project will contain the following parts:\n\nProject Proposal (5 pts; due Wednesday, 2/18 at 11:59pm) \nVideo Summary (25 pts; due Wednesday, 3/4 at 11:59pm)\nProject Repository (120 pts; due Wednesday, 3/4 at 11:59pm)"
+    "text": "Background\nIn this project, you will be analyzing a particular dataset and developing meaningful and clear visualizations that detail various trends and patterns within the data that inform the audience about particular issues. This will be framed within a workflow, in which you will import the data, write code to analyze and create plots, and format your files so that they are reproducible. By the end of this project, you will be able to:\n\nNavigate different forms of data documentation.\nRecognize differences in variable types and how they get assigned to certain R objects.\nExamine trends and patterns within the data through exploratory plotting in R.\nCreate clear and informative plots that highlight particular patterns in the data.\nSummarize findings and ethical issues within data and its resources through a short video and report.\n\nThe project will contain the following parts:\n\nProject Proposal (5 pts; due Friday, 2/20 at 11:59pm) \nVideo Summary (25 pts; due Friday, 3/6 at 11:59pm)\nProject Repository (120 pts; due Friday, 3/6 at 11:59pm)"
   },
   {
     "objectID": "projects/proj1inst.html#working-time",
@@ -1782,7 +1782,7 @@
     "href": "projects/proj1inst.html#components",
     "title": "Project #1 (150 pts)",
     "section": "Components",
-    "text": "Components\n\nProject Proposal (5 pts; due Wednesday, 2/18 at 11:59pm via GitHub)\nFor this component, you will do two tasks:\n\nShare your repository to me on GitHub. To do so, go to your repository, then go to Settings -&gt; Collaborators. Click “Add People” and put in my username (@jericholawson).\nCreate a .qmd file named proposal.qmd that answers the following in 3-4 sentences:\n\nWhich dataset will you use?\nWhat question are you trying to answer with this project?\nWhich variables do you want to explore?\n\n\nThese tasks must be done by the due date mentioned above. A project late day cannot be used here.\n\n\nRecording (25 pts; due Wednesday, 3/4 at 11:59pm via email)\nThe recording will consist of you walking through each of your four data visualizations. In this 2-4 minute recording, you will talk briefly about the dataset, present the visualizations, and summarize what you found.\nThe best (and preferable) way to creating this recording will be to record yourself in a Zoom meeting while sharing a slide deck of your plots and brief bullet points. Once you’ve created the recording, you can choose to turn in the following via email to me:\n\nA unlisted YouTube link\nA .mp4 recording straight from Zoom\n\nThe slides/visuals you present should be almost exclusively the plots you’ve generated. If you do have some prose on your slides, it should be at most one bullet point for a slide if accompanied with a visual and three bullet points other wise.\nYou will be graded based on the proficiency of the following criteria:\n\n(5 pts) Delivery: points are talked about clearly; done within 2-4 minutes\n(5 pts) Organization: slides are reduced to visualizations and minimal bullet-points; easy for the audience to interpret\n(15 pts) Content: recording goes through the following:\n\nContext, with a brief introduction into the data set and problem\nVisualizations, with succinct and correct interpretations\nAnalysis, with proper mention of stakeholders and impact\n\n\nSubmit the recording to me via email by Wednesday, 3/4 at 11:59pm.\nThis task must be done by the due date mentioned above. In conjunction with the repository, a project late day may be used here if needed.\n\n\nProject Repository (120 pts; due Wednesday, 3/4 at 11:59pm via GitHub)\nThe project repository will contain all of the work completed. This includes all code, the dataset, a README.md file, and a 2-4 page report of all work (in a report.md file). As such, the final version of your repository will have the following elements:\n\ndata folder\n\nThe .csv file of the data set you chose\nThe .csv file of the revised data set you used\n\nR folder\n\nAt least one .qmd file that includes all code used to complete the data cleaning and visualizations\n\nplots folder\n\nPlace all generated plots here.\n\nREADME.md file\nReport file\nProposal file\n\nA detailed account of what goes in each of the parts and how it should look is seen next.\n\n1. Data Folder (5 pts)\nYou will have a folder named ``data” that contains (1) the .csv file of the dataset you initially chose and (2) the .csv file of the dataset that contains relevant observations and variables you chose.\nThe updated data set should contain no missing observations and have only the variables you analyzed.\n\n\n2. R Folder (5 pts)\nYou will have a folder named “R” that contains all code necessary to run through data cleaning and visualization. At a minimum, you just need one .qmd file in here, meaning that all code can be placed into a single file. However, if you feel the need to divide your code up, you can do so here. Your code files should be named accordingly.\nR code needs to be organized properly, have proper variable names, and contain clean and simplified code. To this regard, any written code should be the product of your own and not through any use of generative AI. Penalties from the syllabus will apply here.\n\n\n3. README File (5 pts)\nIn many repositories, the role of the README file is to provide the viewer a basic summary of what the repository is for and how it is structured. You can find more details about what a README file entails at the following link.\nIn your README file, you will need a name, a one-paragraph description, an author, and an overview of the structure. This can be done in a .md file (seen in RStudio), where # creates headers in the file.\n\n\n4. Plots (40 pts)\nIn the plots folder, you will place all four generated visualizations here. Keep the file names to the plots simple, such as naming them plot1.png.\nFor each plot, you will be graded on the following:\n\n(5 pts) Appropriate variables plotted; adheres to basic principles in guideline #8\n(5 pts) Context is provided in clear and concise manner; adhers to basic principles in guideline #8\n\n\n\n5. Report (65 pts)\nThis report will contain all of the analysis and discussion related to the question you are trying to answer with the dataset.\nFormatting-wise, your report should:\n\n(3 pts) Contain 2-4 pages (with no title, abstract, or table of contents required)\n(2 pts) Be organized into multiple, sensible sections\n\nThe report should have the following:\n\n(10 pts) Introduction\n\nAn introduction into the chosen dataset, including the dimensions, variables, and information of the dataset; adhering to questions mentioned in guideline #5.\nThe question you’re trying to answer.\n\n(10 pts each) Analysis (of each plot)\n\nShould include your analysis of the plot, adhering to guideline #9.\n\n(10 pts) Conclusion\n\nSummarize your findings, examine pitfalls in data and process.\n\n\nYou will need to share this repository to me (@jericholawson) on GitHub. This task must be done by the due date mentioned above. In conjunction with the recording, a project late day may be used here if needed.\n\n\n6. Proposal (0 pts)\nThis is the same proposal you created initally."
+    "text": "Components\n\nProject Proposal (5 pts; due Friday, 2/20 at 11:59pm via GitHub)\nFor this component, you will do two tasks:\n\nShare your repository to me on GitHub. To do so, go to your repository, then go to Settings -&gt; Collaborators. Click “Add People” and put in my username (@jericholawson).\nCreate a .qmd file named proposal.qmd that answers the following in 3-4 sentences:\n\nWhich dataset will you use?\nWhat question are you trying to answer with this project?\nWhich variables do you want to explore?\n\n\nThese tasks must be done by the due date mentioned above. A project late day cannot be used here.\n\n\nRecording (25 pts; due Friday, 3/6 at 11:59pm via email)\nThe recording will consist of you walking through each of your four data visualizations. In this 2-4 minute recording, you will talk briefly about the dataset, present the visualizations, and summarize what you found.\nThe best (and preferable) way to creating this recording will be to record yourself in a Zoom meeting while sharing a slide deck of your plots and brief bullet points. Once you’ve created the recording, you can choose to turn in the following via email to me:\n\nA unlisted YouTube link\nA .mp4 recording straight from Zoom\n\nThe slides/visuals you present should be almost exclusively the plots you’ve generated. If you do have some prose on your slides, it should be at most one bullet point for a slide if accompanied with a visual and three bullet points other wise.\nYou will be graded based on the proficiency of the following criteria:\n\n(5 pts) Delivery: points are talked about clearly; done within 2-4 minutes\n(5 pts) Organization: slides are reduced to visualizations and minimal bullet-points; easy for the audience to interpret\n(15 pts) Content: recording goes through the following:\n\nContext, with a brief introduction into the data set and problem\nVisualizations, with succinct and correct interpretations\nAnalysis, with proper mention of stakeholders and impact\n\n\nSubmit the recording to me via email by Friday, 3/6 at 11:59pm.\nThis task must be done by the due date mentioned above. In conjunction with the repository, a project late day may be used here if needed.\n\n\nProject Repository (120 pts; due Friday, 3/6 at 11:59pm via GitHub)\nThe project repository will contain all of the work completed. This includes all code, the dataset, a README.md file, and a 2-4 page report of all work (in a report.md file). As such, the final version of your repository will have the following elements:\n\ndata folder\n\nThe .csv file of the data set you chose\nThe .csv file of the revised data set you used\n\nR folder\n\nAt least one .qmd file that includes all code used to complete the data cleaning and visualizations\n\nplots folder\n\nPlace all generated plots here.\n\nREADME.md file\nReport file\nProposal file\n\nA detailed account of what goes in each of the parts and how it should look is seen next.\n\n1. Data Folder (5 pts)\nYou will have a folder named ``data” that contains (1) the .csv file of the dataset you initially chose and (2) the .csv file of the dataset that contains relevant observations and variables you chose.\nThe updated data set should contain no missing observations and have only the variables you analyzed.\n\n\n2. R Folder (5 pts)\nYou will have a folder named “R” that contains all code necessary to run through data cleaning and visualization. At a minimum, you just need one .qmd file in here, meaning that all code can be placed into a single file. However, if you feel the need to divide your code up, you can do so here. Your code files should be named accordingly.\nR code needs to be organized properly, have proper variable names, and contain clean and simplified code. To this regard, any written code should be the product of your own and not through any use of generative AI. Penalties from the syllabus will apply here.\n\n\n3. README File (5 pts)\nIn many repositories, the role of the README file is to provide the viewer a basic summary of what the repository is for and how it is structured. You can find more details about what a README file entails at the following link.\nIn your README file, you will need a name, a one-paragraph description, an author, and an overview of the structure. This can be done in a .md file (seen in RStudio), where # creates headers in the file.\n\n\n4. Plots (40 pts)\nIn the plots folder, you will place all four generated visualizations here. Keep the file names to the plots simple, such as naming them plot1.png.\nFor each plot, you will be graded on the following:\n\n(5 pts) Appropriate variables plotted; adheres to basic principles in guideline #8\n(5 pts) Context is provided in clear and concise manner; adhers to basic principles in guideline #8\n\n\n\n5. Report (65 pts)\nThis report will contain all of the analysis and discussion related to the question you are trying to answer with the dataset.\nFormatting-wise, your report should:\n\n(3 pts) Contain 2-4 pages (with no title, abstract, or table of contents required)\n(2 pts) Be organized into multiple, sensible sections\n\nThe report should have the following:\n\n(10 pts) Introduction\n\nAn introduction into the chosen dataset, including the dimensions, variables, and information of the dataset; adhering to questions mentioned in guideline #5.\nThe question you’re trying to answer.\n\n(10 pts each) Analysis (of each plot)\n\nShould include your analysis of the plot, adhering to guideline #9.\n\n(10 pts) Conclusion\n\nSummarize your findings, examine pitfalls in data and process.\n\n\nYou will need to share this repository to me (@jericholawson) on GitHub. This task must be done by the due date mentioned above. In conjunction with the recording, a project late day may be used here if needed.\n\n\n6. Proposal (0 pts)\nThis is the same proposal you created initally."
   },
   {
     "objectID": "projects/proj1inst.html#tips",
@@ -2308,5 +2308,614 @@
     "title": "Lab #3: Visualization Aesthetics (30 pts)",
     "section": "Faceting",
     "text": "Faceting\nFaceting involves breaking out a single plot into multiple smaller plots based on the value in a variable. Faceting is very helpful when we have a categorical variable with many distinct values. If we tried to color by that variable, the colors would likely be indistinguishable from one another. For instance, check out what happens when we try to color by the COUNTY_CODE_003_L variable below.\n\nnbi_ma |&gt;\n  ggplot(aes(x = YEAR_BUILT_027, \n             y = STRUCTURAL_EVAL_067, \n             col = COUNTY_CODE_003_L)) +\n  geom_point(alpha = 0.5, size = 0.5, position = \"jitter\") +\n  labs(title = \"Highway Bridge Conditions, MA, 2024\",\n       x = \"Year Built\", \n       y = \"Structural Evaluation\",\n       col = \"County\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\nThere are so many counties that it’s extremely challenging to distinguish between colors on this plot. In this case, instead of using a color aesthetic, we facet the plot by adding + facet_wrap(vars(COUNTY_CODE_003_L)) to the ggplot() object. Check out what happens when we do that below.\n\nnbi_ma |&gt;\n  ggplot(aes(x = YEAR_BUILT_027, \n             y = STRUCTURAL_EVAL_067)) +\n  geom_point(alpha = 0.1, size = 0.5, position = \"jitter\") +\n  labs(title = \"Highway Bridge Conditions, MA, 2024\",\n       x = \"Year Built\", \n       y = \"Structural Evaluation\") +\n  theme_minimal() +\n  facet_wrap(vars(COUNTY_CODE_003_L))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantQuestion 10 (3 pts)\n\n\n\nFacet the plot below by STRUCTURE_KIND_043A_L to see the degree of structural deficiencies for different kinds of highway bridges of different ages in Massachusetts.\n\nnbi_ma |&gt;\n  ggplot(aes(x = YEAR_BUILT_027, \n             y = STRUCTURAL_EVAL_067)) +\n  geom_point(alpha = 0.1, size = 0.5, position = \"jitter\") +\n  labs(title = \"Highway Bridge Conditions, MA 2024\",\n       x = \"Year Built\", \n       y = \"Structural Evaluation\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nFederal regulations require that highway bridges and public road bridges in the United States must be inspected every two years, and bridge inspectors must follow a strict set of guidelines when performing a bridge inspection. If a bridge is discovered to have certain structural deficiencies, it may be shut down or may require more frequent inspections. Despite these widespread safety standards, we still sometimes see catastrophic bridge failures or discover critical bridge conditions that could potentially put lives at risk. This could result from human error, low vigilance or attention to detail during inspections, lack of understanding/adherence to inspection standards, or inspection equipment malfunctions. What kinds of interventions do you think should be put in place to ensure the accountability of bridge inspection data? What kinds of policies, practices, or programs could help to minimize mistakes or encourage that mistakes be fixed promptly? Share your ideas on our discussions Slack channel."
+  },
+  {
+    "objectID": "schedule.html#week-5-visuals-data-wrangling-223---227",
+    "href": "schedule.html#week-5-visuals-data-wrangling-223---227",
+    "title": "Schedule",
+    "section": "Week 5: Visuals, Data Wrangling (2/23 - 2/27)",
+    "text": "Week 5: Visuals, Data Wrangling (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25Friday, 2/27\n\n\n\n\n\n\n\n\nNoteLecture: Wrapup on Visuals; Intro to Data Wrangling\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Wrangling\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #4: Plotting Frequencies and Distributions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#last-time",
+    "href": "lectures/w5l1_visualsWrangling.html#last-time",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Last Time",
+    "text": "Last Time\n\nBox plots\n\nFive-number summaries\nAnalysis\n\nLine charts\n\nAcross time\n\nScatter plots\n\nCorrelation and trends"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#for-today",
+    "href": "lectures/w5l1_visualsWrangling.html#for-today",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "For Today",
+    "text": "For Today\n\nAdvanced ggplot2\n\nOverplotting\nResources\n\nData wrangling\n\nWhat is it?\nThe six verbs"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#more-stuff-in-ggplot2",
+    "href": "lectures/w5l1_visualsWrangling.html#more-stuff-in-ggplot2",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "More Stuff in ggplot2",
+    "text": "More Stuff in ggplot2\n\nWe’ve discussed the following:\n\nSyntax to plots in ggplot2\nUsing the 5 named graphs\nVarious edits\n\nLet’s explore the following:\n\nSpecific issues and tricks\nOther plots\nResources"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#dataset-for-today",
+    "href": "lectures/w5l1_visualsWrangling.html#dataset-for-today",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Dataset for Today",
+    "text": "Dataset for Today\n\nBoston Housing data\n\nvia the mlbench library\n506 observations, 14 variables\nEstimate median housing values through other variables\n\nCreate a new .qmd file and name the file w5l1_act.qmd. Use the following code:\n\n\nlibrary(mlbench)\nlibrary(ggplot2)\ndata(BostonHousing2)"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#overplotting",
+    "href": "lectures/w5l1_visualsWrangling.html#overplotting",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Overplotting",
+    "text": "Overplotting\nSuppose we have the following plot:\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point() + theme_minimal() +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\")"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#overplotting-solution-opacity",
+    "href": "lectures/w5l1_visualsWrangling.html#overplotting-solution-opacity",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Overplotting Solution: Opacity",
+    "text": "Overplotting Solution: Opacity\n\nAdjusting the opacity of the points\n\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(alpha = 0.2) + theme_minimal() +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\")"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#overplotting-solution-jitter",
+    "href": "lectures/w5l1_visualsWrangling.html#overplotting-solution-jitter",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Overplotting Solution: Jitter",
+    "text": "Overplotting Solution: Jitter\n\nWe can add in small noise to separate out groupings\n\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) + \n  theme_minimal() +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\")"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#thematic-elements",
+    "href": "lectures/w5l1_visualsWrangling.html#thematic-elements",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Thematic Elements",
+    "text": "Thematic Elements\n\n\nArguments\n\naxis.title.x\ntitle\naxis.ticks.x\naxis.line.x\nlegend.background\n…and more and more\n\n\nFunctions\n\nelement_blank()\nelement_text()\nelement_point()\nelement_geom()\n\n\nElements\n\ncolour\nsize\nhjust\nangle"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#sizing",
+    "href": "lectures/w5l1_visualsWrangling.html#sizing",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Sizing",
+    "text": "Sizing\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\") + theme_minimal() +\n  theme(plot.title = element_text(size = 15, colour = \"red\"))"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#intervals",
+    "href": "lectures/w5l1_visualsWrangling.html#intervals",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Intervals",
+    "text": "Intervals\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\") + theme_minimal() +\n  theme(plot.title = element_text(size = 15, colour = \"red\")) +\n   scale_x_continuous(breaks = seq(0, 100, by = 10))"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#label-angles",
+    "href": "lectures/w5l1_visualsWrangling.html#label-angles",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Label Angles",
+    "text": "Label Angles\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\") + theme_minimal() +\n  theme(plot.title = element_text(size = 15, colour = \"red\"),\n        axis.text.x = element_text(angle = 45)) +\n   scale_x_continuous(breaks = seq(0, 100, by = 10))"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#centering",
+    "href": "lectures/w5l1_visualsWrangling.html#centering",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Centering",
+    "text": "Centering\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\") + theme_minimal() +\n  theme(plot.title = element_text(size = 15, colour = \"red\", hjust = 0.5),\n        axis.text.x = element_text(angle = 45)) +\n   scale_x_continuous(breaks = seq(0, 100, by = 10))"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#activity",
+    "href": "lectures/w5l1_visualsWrangling.html#activity",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Activity",
+    "text": "Activity\nIn the w5l1_act.qmd file:\n\nCreate a new code chunk and adjust the following plot you see below, using various items mentioned before:\n\n\nggplot(BostonHousing2, aes(x = medv, y = chas)) +\n  geom_boxplot() + theme_classic()"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#other-plots-density-plot",
+    "href": "lectures/w5l1_visualsWrangling.html#other-plots-density-plot",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Other Plots!: Density Plot",
+    "text": "Other Plots!: Density Plot\n\nSmoother form of histogram; provides density of the data\n\nHas relations to looking at pdfs in statistics courses!\n\n\n\nggplot(BostonHousing2, aes(x = zn)) +\n  geom_density() +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       title = \"Distribution of Proportion of Residential Land\\nZoned for Large Lots in Boston Census Tracts, 1970\") + theme_minimal()"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#other-plots-heat-map",
+    "href": "lectures/w5l1_visualsWrangling.html#other-plots-heat-map",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Other Plots!: Heat Map",
+    "text": "Other Plots!: Heat Map\n\nUsed to show values across a grid\n\nUseful for correlation matrices\n\n\n\nlibrary(reshape)\ncorData &lt;- cor(BostonHousing2[, 5:9])\ncorDataMelted &lt;- melt(corData)\n\nggplot(corDataMelted, aes(x = X1, y = X2, fill = value)) +\n  geom_tile() + xlab(\"\") + ylab(\"\") +\n  labs(title = \"Correlation Matrix of 5 Variables of Boston Census Tracts, 1970\",\n       fill = \"Correlation\") + theme_classic()"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#other-plots-violin-plot",
+    "href": "lectures/w5l1_visualsWrangling.html#other-plots-violin-plot",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Other Plots!: Violin Plot",
+    "text": "Other Plots!: Violin Plot\n\nClever way to show distribution across groups\n\n\nggplot(BostonHousing2, aes(x = medv, y = chas, fill = chas)) +\n  geom_violin() + theme_classic() +\n  labs(x = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       y = \"Next to Charles River?\",\n       fill = \"Next to\\nCharles\\nRiver?\",\n       title = \"Median Value of Owner-Occupied Homes (in $1000s)\\nin Boston Census Tracts Near Charles River, 1970\")"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#resources",
+    "href": "lectures/w5l1_visualsWrangling.html#resources",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Resources",
+    "text": "Resources\n\nReference page online: link\nggplot 2 Textbook: link\n\n3rd edition is work in progress!\n\nCheatsheet: link"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#data-wrangling",
+    "href": "lectures/w5l1_visualsWrangling.html#data-wrangling",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Data Wrangling",
+    "text": "Data Wrangling\n\nA process for transforming a dataset from its original form into a more relevant form.\n\n\nSource: NAM-IT"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#data-is-messy",
+    "href": "lectures/w5l1_visualsWrangling.html#data-is-messy",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Data is Messy!",
+    "text": "Data is Messy!\n\nWe are messy\n\nData, processes, views, government\n\nQuestion: Think of 1-2 actions/situations that can result in issues with our data."
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#the-messiness",
+    "href": "lectures/w5l1_visualsWrangling.html#the-messiness",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "The Messiness",
+    "text": "The Messiness\n - Our focus for today: transformation!"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#lets-tidy-the-data",
+    "href": "lectures/w5l1_visualsWrangling.html#lets-tidy-the-data",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Let’s Tidy the Data!",
+    "text": "Let’s Tidy the Data!\n\nOrder them by some metric\nSubset certain variables or observations based on some criteria\nCreate columns based on other variables\nSummarize data into meaningful tables"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#dplyr-the-grammar-of-data-manipulation",
+    "href": "lectures/w5l1_visualsWrangling.html#dplyr-the-grammar-of-data-manipulation",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "dplyr: The Grammar of Data Manipulation",
+    "text": "dplyr: The Grammar of Data Manipulation\n\nManipulation is good!\n\n…well, in the context of data wrangling\n\ndplyr is an R package used for data manipulation\n\nCommon verbs used as function names for actions on data\nTo install: install.packages('dplyr')\n\n\n\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#the-piping-operator",
+    "href": "lectures/w5l1_visualsWrangling.html#the-piping-operator",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "The Piping Operator",
+    "text": "The Piping Operator\n\n%&gt;% or |&gt;\n\nUseful when multiple actions are done on object in succession\n\n\n\nmean(mtcars$mpg)\n\n[1] 20.09062\n\nmtcars$mpg |&gt; mean()\n\n[1] 20.09062"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#motivating-dataset",
+    "href": "lectures/w5l1_visualsWrangling.html#motivating-dataset",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Motivating Dataset",
+    "text": "Motivating Dataset\n\nmidwest data set in ggplot2 package\n\n437 midwest counties with 28 variables\nDemographic information of midwest U.S. counties from 2000 U.S. census\n\n\n\nlibrary(tidyverse)\ndata(midwest)"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#lets-tidy-the-data---the-six-verbs",
+    "href": "lectures/w5l1_visualsWrangling.html#lets-tidy-the-data---the-six-verbs",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Let’s Tidy the Data! - The Six Verbs",
+    "text": "Let’s Tidy the Data! - The Six Verbs\n\nOrder them by some metric\n\narrange()\n\nSubset certain variables or observations based on some criteria\n\nselect() for variables, filter() for observations\n\nCreate columns based on other variables\n\nmutate()\n\nSummarize data into meaningful tables\n\nsummarize() and group_by()"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#arrange",
+    "href": "lectures/w5l1_visualsWrangling.html#arrange",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1   561 ADAMS    IL    0.052    66090      1271.    63917     1702            98\n2   663 ADAMS    IN    0.021    31095      1481.    30530       36            42\n3  2009 ADAMS    OH    0.035    25371       725.    25212       47            67\n4  2981 ADAMS    WI    0.041    15682       382.    15001      375           125\n5  1197 ALCONA   MI    0.041    10145       247.    10026       27            56\n6   562 ALEXAND… IL    0.014    10626       759      7054     3496            19\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#arrange-1",
+    "href": "lectures/w5l1_visualsWrangling.html#arrange-1",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(state, county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1   561 ADAMS    IL    0.052    66090      1271.    63917     1702            98\n2   562 ALEXAND… IL    0.014    10626       759      7054     3496            19\n3   563 BOND     IL    0.022    14991       681.    14477      429            35\n4   564 BOONE    IL    0.017    30806      1812.    29344      127            46\n5   565 BROWN    IL    0.018     5836       324.     5264      547            14\n6   566 BUREAU   IL    0.05     35688       714.    35157       50            65\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#arrange-2",
+    "href": "lectures/w5l1_visualsWrangling.html#arrange-2",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(desc(state), county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1  2981 ADAMS    WI    0.041    15682       382.    15001      375           125\n2  2982 ASHLAND  WI    0.054    16307       302.    14749       17          1478\n3  2983 BARRON   WI    0.053    40750       769.    40346       40           209\n4  2984 BAYFIELD WI    0.089    14008       157.    12707       29          1240\n5  2985 BROWN    WI    0.032   194594      6081.   186621     1012          3869\n6  2986 BUFFALO  WI    0.04     13584       340.    13521        5            22\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#subsetting-data-select-filter",
+    "href": "lectures/w5l1_visualsWrangling.html#subsetting-data-select-filter",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Subsetting data: select(), filter()",
+    "text": "Subsetting data: select(), filter()\n\nSubsetting involves selecting relevant variables and observations for analysis"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#select",
+    "href": "lectures/w5l1_visualsWrangling.html#select",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "select()",
+    "text": "select()\n\nSelect variables (columns) of interest\n\nEach argument is a variable to keep\nBase R analog: data[, c(\"var1\", \"var2\", ...)]"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#select-1",
+    "href": "lectures/w5l1_visualsWrangling.html#select-1",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "select()",
+    "text": "select()\n\nSelect variables (columns) of interest\n\nEach argument is a variable to keep\nBase R analog: data[, c(\"var1\", \"var2\", ...)]\n\n\n\nmidwest |&gt;\n  select(county, state, poptotal, percbelowpoverty, percollege) |&gt;\n  head()\n\n# A tibble: 6 × 5\n  county    state poptotal percbelowpoverty percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;            &lt;dbl&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090            13.2        19.6\n2 ALEXANDER IL       10626            32.2        11.2\n3 BOND      IL       14991            12.1        17.0\n4 BOONE     IL       30806             7.21       17.3\n5 BROWN     IL        5836            13.5        14.5\n6 BUREAU    IL       35688            10.4        18.9"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#filter",
+    "href": "lectures/w5l1_visualsWrangling.html#filter",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\nRetrieves observations (rows) according to a certain criteria that we provide\n\nBased on value from another column, range of values from another continuous columns\nBase R analog: data[condition ,]"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#filter-1",
+    "href": "lectures/w5l1_visualsWrangling.html#filter-1",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\n== for matching; &gt;, &gt;=, &lt;, &lt;= for numeric cutoffs\n\n&, | for merging statements together\ne.g. only want Illinois counties with populations above 10,000\n\nstate == \"IL\" & poptotal &gt; 10000"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#aside-truth-tables",
+    "href": "lectures/w5l1_visualsWrangling.html#aside-truth-tables",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Aside: truth tables",
+    "text": "Aside: truth tables\n\nUsed for showing truth in compounded statements\n\nSeen in discrete math (and proofwriting)\n\n\n\n\n\n\n\nAnd (&)\n\n\n\n\n\n\nOr (|)\n\n\n\n\nSource: Millersville University"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#filter-2",
+    "href": "lectures/w5l1_visualsWrangling.html#filter-2",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\nRetrieves observations (rows) according to a certain criteria that we provide\n\nBased on value from another column, range of values from another continuous columns\ne.g. only want Illinois counties with populations above 10,000\n\n\n\nmidwest |&gt;\n  select(county, state, poptotal, percbelowpoverty, percollege) |&gt;\n  filter(state == \"IL\" & poptotal &gt; 10000) |&gt;\n  head()\n\n# A tibble: 6 × 5\n  county    state poptotal percbelowpoverty percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;            &lt;dbl&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090            13.2        19.6\n2 ALEXANDER IL       10626            32.2        11.2\n3 BOND      IL       14991            12.1        17.0\n4 BOONE     IL       30806             7.21       17.3\n5 BUREAU    IL       35688            10.4        18.9\n6 CARROLL   IL       16805            11.7        16.2"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#mutate",
+    "href": "lectures/w5l1_visualsWrangling.html#mutate",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "mutate()",
+    "text": "mutate()\n\nCreates a new variable (column) in a data frame and fills values according to criteria we provide\nSet name equal to mutation\n\ne.g. newVar = oldVar / 10000\n\nUseful for:\n\nconsolidating grouped variables\ncreating dummy variables (i.e. discretizing)\n\nBase R analog: data$newVar = ..."
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#mutate-1",
+    "href": "lectures/w5l1_visualsWrangling.html#mutate-1",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "mutate()",
+    "text": "mutate()\n\nCreates a new variable (column) in a data frame and fills values according to criteria we provide\nSet name equal to mutation\n\ne.g. proportion of high-school degree holders with college degrees\n\n\n\nmidwest |&gt;\n  mutate(propDegreeOfHS = percollege / perchsd) |&gt;\n  select(county, state, poptotal, propDegreeOfHS) |&gt;\n  head()\n\n# A tibble: 6 × 4\n  county    state poptotal propDegreeOfHS\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;          &lt;dbl&gt;\n1 ADAMS     IL       66090          0.261\n2 ALEXANDER IL       10626          0.188\n3 BOND      IL       14991          0.246\n4 BOONE     IL       30806          0.229\n5 BROWN     IL        5836          0.210\n6 BUREAU    IL       35688          0.247"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#aggregating-data-summarize-group_by",
+    "href": "lectures/w5l1_visualsWrangling.html#aggregating-data-summarize-group_by",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Aggregating data: summarize(), group_by()",
+    "text": "Aggregating data: summarize(), group_by()\n\nInvolves compiling and summarizing data"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#summarize",
+    "href": "lectures/w5l1_visualsWrangling.html#summarize",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "summarize()",
+    "text": "summarize()\n\ncomputes a value across a vector of values and stores it in a new data frame\nBase R analog: any summary function (e.g. mean, nrow, max)"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#summarize-1",
+    "href": "lectures/w5l1_visualsWrangling.html#summarize-1",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "summarize()",
+    "text": "summarize()\n\ncomputes a value across a vector of values and stores it in a new data frame\n\n\nmidwest |&gt;\n  summarize(numCounties = n(),\n            meanPercAsian = mean(percasian),\n            medianPercAsian = median(percasian))\n\n# A tibble: 1 × 3\n  numCounties meanPercAsian medianPercAsian\n        &lt;int&gt;         &lt;dbl&gt;           &lt;dbl&gt;\n1         437         0.487           0.297"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#group_by",
+    "href": "lectures/w5l1_visualsWrangling.html#group_by",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "group_by()",
+    "text": "group_by()\n\nGroups observations with a shared value in a variable\n\nGrouping only changes the metadata of a data frame\nWe combine group_by() with other functions to transform the data frame\n\nValues remain in groups unless we ungroup() it\n\nTypically at end of piping sequence unless we use ungroup()\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  select(county, state, poptotal, percollege) |&gt;\n  head()\n\n# A tibble: 6 × 4\n# Groups:   state [1]\n  county    state poptotal percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090       19.6\n2 ALEXANDER IL       10626       11.2\n3 BOND      IL       14991       17.0\n4 BOONE     IL       30806       17.3\n5 BROWN     IL        5836       14.5\n6 BUREAU    IL       35688       18.9"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#group_by-summarize",
+    "href": "lectures/w5l1_visualsWrangling.html#group_by-summarize",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "group_by() |> summarize()",
+    "text": "group_by() |&gt; summarize()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and summarize(), we can perform operations within groups\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  summarize(numCounties = n(),\n            meanPercAsian = mean(percasian),\n            medianPercAsian = median(percasian))\n\n# A tibble: 5 × 4\n  state numCounties meanPercAsian medianPercAsian\n  &lt;chr&gt;       &lt;int&gt;         &lt;dbl&gt;           &lt;dbl&gt;\n1 IL            102         0.564           0.278\n2 IN             92         0.383           0.254\n3 MI             83         0.507           0.310\n4 OH             88         0.433           0.353\n5 WI             72         0.556           0.286"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#group_by-filter",
+    "href": "lectures/w5l1_visualsWrangling.html#group_by-filter",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "group_by() |> filter()",
+    "text": "group_by() |&gt; filter()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and filter() we can filter within groups\n\ne.g. filter counties based on their populations being higher than the state means\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  filter(poptotal &gt; mean(poptotal)) |&gt;\n  select(county, state, poptotal)\n\n# A tibble: 94 × 3\n# Groups:   state [5]\n   county    state poptotal\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;\n 1 CHAMPAIGN IL      173025\n 2 COOK      IL     5105067\n 3 DU PAGE   IL      781666\n 4 KANE      IL      317471\n 5 LAKE      IL      516418\n 6 MCHENRY   IL      183241\n 7 MCLEAN    IL      129180\n 8 MACON     IL      117206\n 9 MADISON   IL      249238\n10 PEORIA    IL      182827\n# ℹ 84 more rows"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#group_by-mutate",
+    "href": "lectures/w5l1_visualsWrangling.html#group_by-mutate",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "group_by() |> mutate()",
+    "text": "group_by() |&gt; mutate()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and mutate() we can perform operations within groups and add the resulting variable to the data frame\n\ne.g. create column that shows how many SDs above or below mean of % with high school degree\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  mutate(sdHS = (perchsd - mean(perchsd)) / sd(perchsd)) |&gt;\n  select(county, state, poptotal, sdHS)\n\n# A tibble: 437 × 4\n# Groups:   state [5]\n   county    state poptotal   sdHS\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;\n 1 ADAMS     IL       66090  0.289\n 2 ALEXANDER IL       10626 -2.20 \n 3 BOND      IL       14991 -0.646\n 4 BOONE     IL       30806  0.349\n 5 BROWN     IL        5836 -0.722\n 6 BUREAU    IL       35688  0.536\n 7 CALHOUN   IL        5322 -1.70 \n 8 CARROLL   IL       16805  0.426\n 9 CASS      IL       13437 -0.170\n10 CHAMPAIGN IL      173025  2.30 \n# ℹ 427 more rows"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#ungroup",
+    "href": "lectures/w5l1_visualsWrangling.html#ungroup",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "ungroup()",
+    "text": "ungroup()\n\nungroup() returns data frame object to focus on individual-level transformations\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  mutate(sdHS = (perchsd - mean(perchsd)) / sd(perchsd)) |&gt;\n  select(county, state, poptotal, sdHS) |&gt;\n  ungroup()\n\n# A tibble: 437 × 4\n   county    state poptotal   sdHS\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;\n 1 ADAMS     IL       66090  0.289\n 2 ALEXANDER IL       10626 -2.20 \n 3 BOND      IL       14991 -0.646\n 4 BOONE     IL       30806  0.349\n 5 BROWN     IL        5836 -0.722\n 6 BUREAU    IL       35688  0.536\n 7 CALHOUN   IL        5322 -1.70 \n 8 CARROLL   IL       16805  0.426\n 9 CASS      IL       13437 -0.170\n10 CHAMPAIGN IL      173025  2.30 \n# ℹ 427 more rows"
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#activity-1",
+    "href": "lectures/w5l1_visualsWrangling.html#activity-1",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Activity",
+    "text": "Activity\n\nWork through the w5l1_act.qmd file on Moodle\n\nWill center on the BostonHousing data frame\nUse code from this lecture to guide you through\nTurn in by the end of the period"
+  },
+  {
+    "objectID": "lectures/w5l2_act.html",
+    "href": "lectures/w5l2_act.html",
+    "title": "Week 5, Lecture 2: Data Wrangling",
+    "section": "",
+    "text": "Use the following code below to load in the midwest data. Answer the following wrangling questions below:\n\nlibrary(tidyverse)\ndata(midwest)"
+  },
+  {
+    "objectID": "lectures/w5l2_act.html#introduction",
+    "href": "lectures/w5l2_act.html#introduction",
+    "title": "Week 5, Lecture 2: Data Wrangling",
+    "section": "",
+    "text": "Use the following code below to load in the midwest data. Answer the following wrangling questions below:\n\nlibrary(tidyverse)\ndata(midwest)"
+  },
+  {
+    "objectID": "lectures/w5l2_act.html#questions",
+    "href": "lectures/w5l2_act.html#questions",
+    "title": "Week 5, Lecture 2: Data Wrangling",
+    "section": "Questions",
+    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nUsing the help documentation for midwest, identify variables related to the following:\n\ncounty name\nstate to which the county belongs to\npercent of population with known poverty status\npercent with professional degree\nwhether county is in metropolitan area\n\nOnce done, select those columns using dplyr functions.\n\n\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nWith the columns selected from Q1, arrange the dataset based on the percent of populace with a professional degree in descending order, followed by percent of populace with known poverty status in ascending order.\n\n\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nAdding to what was created in Q1, keep counties that are not in a metropolitan area and have less than 5% of the populace with a professional degree.\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nTack a new column named popProf that contains the number of people who have a professional degree. Then, show only the county, state, and new column.\nHint: You will need two variables from the dataset to do this operation.\n\n\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nCreate a table that shows the following metrics in each state:\n\nNumber of counties\nTotal population\nMedian percent with known poverty status\nProportion of counties that are in metro area"
+  },
+  {
+    "objectID": "lectures/w5l2_act.html#turn-in",
+    "href": "lectures/w5l2_act.html#turn-in",
+    "title": "Week 5, Lecture 2: Data Wrangling",
+    "section": "Turn-in",
+    "text": "Turn-in\nSave the .qmd file inside your activities repository. Please stage, commit, and push to GitHub."
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html",
+    "href": "lectures/w5l2_wrangling.html",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "",
+    "text": "Advanced ggplot2\n\nOverplotting\nResources\n\nData wrangling\n\nWhat is it?\nThe six verbs"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#last-time",
+    "href": "lectures/w5l2_wrangling.html#last-time",
+    "title": "Data Wrangling",
+    "section": "Last Time",
+    "text": "Last Time\n\nAdvanced ggplot2\n\nOverplotting\nResources\n\nData wrangling\n\nWhat is it?\nThe six verbs"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#for-today",
+    "href": "lectures/w5l2_wrangling.html#for-today",
+    "title": "Data Wrangling",
+    "section": "For Today",
+    "text": "For Today\n\nData wrangling\n\nOrdering\nSubsetting\nCreating\nSummarizing\n\nExamples"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#motivating-dataset",
+    "href": "lectures/w5l2_wrangling.html#motivating-dataset",
+    "title": "Data Wrangling",
+    "section": "Motivating Dataset",
+    "text": "Motivating Dataset\n\nmidwest data set in ggplot2 package\n\n437 midwest counties with 28 variables\nDemographic information of midwest U.S. counties from 2000 U.S. census\n\n\n\nlibrary(tidyverse)\ndata(midwest)"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#lets-tidy-the-data---the-six-verbs",
+    "href": "lectures/w5l2_wrangling.html#lets-tidy-the-data---the-six-verbs",
+    "title": "Data Wrangling",
+    "section": "Let’s Tidy the Data! - The Six Verbs",
+    "text": "Let’s Tidy the Data! - The Six Verbs\n\nOrder them by some metric\n\narrange()\n\nSubset certain variables or observations based on some criteria\n\nselect() for variables, filter() for observations\n\nCreate columns based on other variables\n\nmutate()\n\nSummarize data into meaningful tables\n\nsummarize() and group_by()"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#arrange",
+    "href": "lectures/w5l2_wrangling.html#arrange",
+    "title": "Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1   561 ADAMS    IL    0.052    66090      1271.    63917     1702            98\n2   663 ADAMS    IN    0.021    31095      1481.    30530       36            42\n3  2009 ADAMS    OH    0.035    25371       725.    25212       47            67\n4  2981 ADAMS    WI    0.041    15682       382.    15001      375           125\n5  1197 ALCONA   MI    0.041    10145       247.    10026       27            56\n6   562 ALEXAND… IL    0.014    10626       759      7054     3496            19\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#arrange-1",
+    "href": "lectures/w5l2_wrangling.html#arrange-1",
+    "title": "Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(state, county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1   561 ADAMS    IL    0.052    66090      1271.    63917     1702            98\n2   562 ALEXAND… IL    0.014    10626       759      7054     3496            19\n3   563 BOND     IL    0.022    14991       681.    14477      429            35\n4   564 BOONE    IL    0.017    30806      1812.    29344      127            46\n5   565 BROWN    IL    0.018     5836       324.     5264      547            14\n6   566 BUREAU   IL    0.05     35688       714.    35157       50            65\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#arrange-2",
+    "href": "lectures/w5l2_wrangling.html#arrange-2",
+    "title": "Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(desc(state), county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1  2981 ADAMS    WI    0.041    15682       382.    15001      375           125\n2  2982 ASHLAND  WI    0.054    16307       302.    14749       17          1478\n3  2983 BARRON   WI    0.053    40750       769.    40346       40           209\n4  2984 BAYFIELD WI    0.089    14008       157.    12707       29          1240\n5  2985 BROWN    WI    0.032   194594      6081.   186621     1012          3869\n6  2986 BUFFALO  WI    0.04     13584       340.    13521        5            22\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#subsetting-data-select-filter",
+    "href": "lectures/w5l2_wrangling.html#subsetting-data-select-filter",
+    "title": "Data Wrangling",
+    "section": "Subsetting Data: select(), filter()",
+    "text": "Subsetting Data: select(), filter()\n\nSubsetting involves selecting relevant variables and observations for analysis"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#select",
+    "href": "lectures/w5l2_wrangling.html#select",
+    "title": "Data Wrangling",
+    "section": "select()",
+    "text": "select()\n\nSelect variables (columns) of interest\n\nEach argument is a variable to keep\nBase R analog: data[, c(\"var1\", \"var2\", ...)]"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#select-1",
+    "href": "lectures/w5l2_wrangling.html#select-1",
+    "title": "Data Wrangling",
+    "section": "select()",
+    "text": "select()\n\nSelect variables (columns) of interest\n\nEach argument is a variable to keep\nBase R analog: data[, c(\"var1\", \"var2\", ...)]\n\n\n\nmidwest |&gt;\n  select(county, state, poptotal, percbelowpoverty, percollege) |&gt;\n  head()\n\n# A tibble: 6 × 5\n  county    state poptotal percbelowpoverty percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;            &lt;dbl&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090            13.2        19.6\n2 ALEXANDER IL       10626            32.2        11.2\n3 BOND      IL       14991            12.1        17.0\n4 BOONE     IL       30806             7.21       17.3\n5 BROWN     IL        5836            13.5        14.5\n6 BUREAU    IL       35688            10.4        18.9"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#filter",
+    "href": "lectures/w5l2_wrangling.html#filter",
+    "title": "Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\nRetrieves observations (rows) according to a certain criteria that we provide\n\nBased on value from another column, range of values from another continuous columns\nBase R analog: data[condition ,]"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#filter-1",
+    "href": "lectures/w5l2_wrangling.html#filter-1",
+    "title": "Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\n== for matching; &gt;, &gt;=, &lt;, &lt;= for numeric cutoffs\n\n&, | for merging statements together\ne.g. only want Illinois counties with populations above 10,000\n\nstate == \"IL\" & poptotal &gt; 10000"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#aside-truth-tables",
+    "href": "lectures/w5l2_wrangling.html#aside-truth-tables",
+    "title": "Data Wrangling",
+    "section": "Aside: Truth Tables",
+    "text": "Aside: Truth Tables\n\nUsed for showing truth in compounded statements\n\nSeen in discrete math (and proofwriting)\n\n\n\n\n\n\n\nAnd (&)\n\n\n\n\n\n\nOr (|)\n\n\n\n\nSource: Millersville University"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#filter-2",
+    "href": "lectures/w5l2_wrangling.html#filter-2",
+    "title": "Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\nRetrieves observations (rows) according to a certain criteria that we provide\n\nBased on value from another column, range of values from another continuous columns\ne.g. only want Illinois counties with populations above 10,000\n\n\n\nmidwest |&gt;\n  select(county, state, poptotal, percbelowpoverty, percollege) |&gt;\n  filter(state == \"IL\" & poptotal &gt; 10000) |&gt;\n  head()\n\n# A tibble: 6 × 5\n  county    state poptotal percbelowpoverty percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;            &lt;dbl&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090            13.2        19.6\n2 ALEXANDER IL       10626            32.2        11.2\n3 BOND      IL       14991            12.1        17.0\n4 BOONE     IL       30806             7.21       17.3\n5 BUREAU    IL       35688            10.4        18.9\n6 CARROLL   IL       16805            11.7        16.2"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#mutate",
+    "href": "lectures/w5l2_wrangling.html#mutate",
+    "title": "Data Wrangling",
+    "section": "mutate()",
+    "text": "mutate()\n\nCreates a new variable (column) in a data frame and fills values according to criteria we provide\nSet name equal to mutation\n\ne.g. newVar = oldVar / 10000\n\nUseful for:\n\nconsolidating grouped variables\ncreating dummy variables (i.e. discretizing)\n\nBase R analog: data$newVar = ..."
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#mutate-1",
+    "href": "lectures/w5l2_wrangling.html#mutate-1",
+    "title": "Data Wrangling",
+    "section": "mutate()",
+    "text": "mutate()\n\nCreates a new variable (column) in a data frame and fills values according to criteria we provide\nSet name equal to mutation\n\ne.g. proportion of high-school degree holders with college degrees\n\n\n\nmidwest |&gt;\n  mutate(propDegreeOfHS = percollege / perchsd) |&gt;\n  select(county, state, poptotal, propDegreeOfHS) |&gt;\n  head()\n\n# A tibble: 6 × 4\n  county    state poptotal propDegreeOfHS\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;          &lt;dbl&gt;\n1 ADAMS     IL       66090          0.261\n2 ALEXANDER IL       10626          0.188\n3 BOND      IL       14991          0.246\n4 BOONE     IL       30806          0.229\n5 BROWN     IL        5836          0.210\n6 BUREAU    IL       35688          0.247"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#aggregating-data-summarize-group_by",
+    "href": "lectures/w5l2_wrangling.html#aggregating-data-summarize-group_by",
+    "title": "Data Wrangling",
+    "section": "Aggregating Data: summarize(), group_by()",
+    "text": "Aggregating Data: summarize(), group_by()\n\nInvolves compiling and summarizing data"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#summarize",
+    "href": "lectures/w5l2_wrangling.html#summarize",
+    "title": "Data Wrangling",
+    "section": "summarize()",
+    "text": "summarize()\n\ncomputes a value across a vector of values and stores it in a new data frame\nBase R analog: any summary function (e.g. mean, nrow, max)"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#summarize-1",
+    "href": "lectures/w5l2_wrangling.html#summarize-1",
+    "title": "Data Wrangling",
+    "section": "summarize()",
+    "text": "summarize()\n\ncomputes a value across a vector of values and stores it in a new data frame\n\n\nmidwest |&gt;\n  summarize(numCounties = n(),\n            meanPercAsian = mean(percasian),\n            medianPercAsian = median(percasian))\n\n# A tibble: 1 × 3\n  numCounties meanPercAsian medianPercAsian\n        &lt;int&gt;         &lt;dbl&gt;           &lt;dbl&gt;\n1         437         0.487           0.297"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#group_by",
+    "href": "lectures/w5l2_wrangling.html#group_by",
+    "title": "Data Wrangling",
+    "section": "group_by()",
+    "text": "group_by()\n\nGroups observations with a shared value in a variable\n\nGrouping only changes the metadata of a data frame\nWe combine group_by() with other functions to transform the data frame\n\nValues remain in groups unless we ungroup() it\n\nTypically at end of piping sequence unless we use ungroup()\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  select(county, state, poptotal, percollege) |&gt;\n  head()\n\n# A tibble: 6 × 4\n# Groups:   state [1]\n  county    state poptotal percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090       19.6\n2 ALEXANDER IL       10626       11.2\n3 BOND      IL       14991       17.0\n4 BOONE     IL       30806       17.3\n5 BROWN     IL        5836       14.5\n6 BUREAU    IL       35688       18.9"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#group_by-summarize",
+    "href": "lectures/w5l2_wrangling.html#group_by-summarize",
+    "title": "Data Wrangling",
+    "section": "group_by() |> summarize()",
+    "text": "group_by() |&gt; summarize()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and summarize(), we can perform operations within groups\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  summarize(numCounties = n(),\n            meanPercAsian = mean(percasian),\n            medianPercAsian = median(percasian))\n\n# A tibble: 5 × 4\n  state numCounties meanPercAsian medianPercAsian\n  &lt;chr&gt;       &lt;int&gt;         &lt;dbl&gt;           &lt;dbl&gt;\n1 IL            102         0.564           0.278\n2 IN             92         0.383           0.254\n3 MI             83         0.507           0.310\n4 OH             88         0.433           0.353\n5 WI             72         0.556           0.286"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#group_by-filter",
+    "href": "lectures/w5l2_wrangling.html#group_by-filter",
+    "title": "Data Wrangling",
+    "section": "group_by() |> filter()",
+    "text": "group_by() |&gt; filter()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and filter() we can filter within groups\n\ne.g. filter counties based on their populations being higher than the state means\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  filter(poptotal &gt; mean(poptotal)) |&gt;\n  select(county, state, poptotal)\n\n# A tibble: 94 × 3\n# Groups:   state [5]\n   county    state poptotal\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;\n 1 CHAMPAIGN IL      173025\n 2 COOK      IL     5105067\n 3 DU PAGE   IL      781666\n 4 KANE      IL      317471\n 5 LAKE      IL      516418\n 6 MCHENRY   IL      183241\n 7 MCLEAN    IL      129180\n 8 MACON     IL      117206\n 9 MADISON   IL      249238\n10 PEORIA    IL      182827\n# ℹ 84 more rows"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#group_by-mutate",
+    "href": "lectures/w5l2_wrangling.html#group_by-mutate",
+    "title": "Data Wrangling",
+    "section": "group_by() |> mutate()",
+    "text": "group_by() |&gt; mutate()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and mutate() we can perform operations within groups and add the resulting variable to the data frame\n\ne.g. create column that shows how many SDs above or below mean of % with high school degree\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  mutate(sdHS = (perchsd - mean(perchsd)) / sd(perchsd)) |&gt;\n  select(county, state, poptotal, sdHS)\n\n# A tibble: 437 × 4\n# Groups:   state [5]\n   county    state poptotal   sdHS\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;\n 1 ADAMS     IL       66090  0.289\n 2 ALEXANDER IL       10626 -2.20 \n 3 BOND      IL       14991 -0.646\n 4 BOONE     IL       30806  0.349\n 5 BROWN     IL        5836 -0.722\n 6 BUREAU    IL       35688  0.536\n 7 CALHOUN   IL        5322 -1.70 \n 8 CARROLL   IL       16805  0.426\n 9 CASS      IL       13437 -0.170\n10 CHAMPAIGN IL      173025  2.30 \n# ℹ 427 more rows"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#ungroup",
+    "href": "lectures/w5l2_wrangling.html#ungroup",
+    "title": "Data Wrangling",
+    "section": "ungroup()",
+    "text": "ungroup()\n\nungroup() returns data frame object to focus on individual-level transformations\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  mutate(sdHS = (perchsd - mean(perchsd)) / sd(perchsd)) |&gt;\n  select(county, state, poptotal, sdHS) |&gt;\n  ungroup()\n\n# A tibble: 437 × 4\n   county    state poptotal   sdHS\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;\n 1 ADAMS     IL       66090  0.289\n 2 ALEXANDER IL       10626 -2.20 \n 3 BOND      IL       14991 -0.646\n 4 BOONE     IL       30806  0.349\n 5 BROWN     IL        5836 -0.722\n 6 BUREAU    IL       35688  0.536\n 7 CALHOUN   IL        5322 -1.70 \n 8 CARROLL   IL       16805  0.426\n 9 CASS      IL       13437 -0.170\n10 CHAMPAIGN IL      173025  2.30 \n# ℹ 427 more rows"
+  },
+  {
+    "objectID": "lectures/w5l2_wrangling.html#activity",
+    "href": "lectures/w5l2_wrangling.html#activity",
+    "title": "Data Wrangling",
+    "section": "Activity",
+    "text": "Activity\n\nWork through the w5l2_act.qmd file on Moodle\n\nWill center on the midwest data frame\nUse code from this lecture to guide you through\nTurn in by the end of the period"
+  },
+  {
+    "objectID": "lectures/w5l2_actTemp.html",
+    "href": "lectures/w5l2_actTemp.html",
+    "title": "Week 5, Lecture 2: Data Wrangling",
+    "section": "",
+    "text": "Use the following code below to load in the midwest data. Answer the following wrangling questions below:\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\ndata(midwest)"
+  },
+  {
+    "objectID": "lectures/w5l2_actTemp.html#introduction",
+    "href": "lectures/w5l2_actTemp.html#introduction",
+    "title": "Week 5, Lecture 2: Data Wrangling",
+    "section": "",
+    "text": "Use the following code below to load in the midwest data. Answer the following wrangling questions below:\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\ndata(midwest)"
+  },
+  {
+    "objectID": "lectures/w5l2_actTemp.html#questions",
+    "href": "lectures/w5l2_actTemp.html#questions",
+    "title": "Week 5, Lecture 2: Data Wrangling",
+    "section": "Questions",
+    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nUsing the help documentation for midwest, identify variables related to the following:\n\ncounty name\nstate to which the county belongs to\npercent of population with known poverty status\npercent with professional degree\nwhether county is in metropolitan area\n\nOnce done, select those columns using dplyr functions.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nWith the columns selected from Q1, arrange the dataset based on the percent of populace with a professional degree in descending order, followed by percent of populace with known poverty status in ascending order.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nAdding to what was created in Q1, keep counties that are not in a metropolitan area and have less than 5% of the populace with a professional degree.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nTack a new column named popProf that contains the number of people who have a professional degree. Then, show only the county, state, and new column.\nHint: You will need two variables from the dataset to do this operation.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nCreate a table that shows the following metrics in each state:\n\nNumber of counties\nTotal population\nMedian percent with known poverty status\nProportion of counties that are in metro area\n\n\n# PUT SOLUTION HERE"
+  },
+  {
+    "objectID": "lectures/w5l2_actTemp.html#turn-in",
+    "href": "lectures/w5l2_actTemp.html#turn-in",
+    "title": "Week 5, Lecture 2: Data Wrangling",
+    "section": "Turn-in",
+    "text": "Turn-in\nSave the .qmd file inside your activities repository. Please stage, commit, and push to GitHub."
+  },
+  {
+    "objectID": "lectures/w5l1_visualsWrangling.html#for-now-and-wednesday",
+    "href": "lectures/w5l1_visualsWrangling.html#for-now-and-wednesday",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "For Now and Wednesday",
+    "text": "For Now and Wednesday\n\nFinish activity for today’s class\nLab #3 due Wednesday at 11:59pm"
+  },
+  {
+    "objectID": "labs/lab4/index.html",
+    "href": "labs/lab4/index.html",
+    "title": "Lab #4: Visualization Aesthetics (30 pts)",
+    "section": "",
+    "text": "Read the ggplot cheatsheets\nProduce and interpret univariate plots\nProduce and interpret multivariate plots\nSummarize and interpret variation and co-variation from observation of plots\nContextualize plots with descriptive labels and titles"
+  },
+  {
+    "objectID": "labs/lab4/index.html#introduction",
+    "href": "labs/lab4/index.html#introduction",
+    "title": "Lab #4: Visualization Aesthetics (30 pts)",
+    "section": "",
+    "text": "Read the ggplot cheatsheets\nProduce and interpret univariate plots\nProduce and interpret multivariate plots\nSummarize and interpret variation and co-variation from observation of plots\nContextualize plots with descriptive labels and titles"
+  },
+  {
+    "objectID": "labs/lab4/index.html#review-of-key-terms",
+    "href": "labs/lab4/index.html#review-of-key-terms",
+    "title": "Lab #4: Visualization Aesthetics (30 pts)",
+    "section": "Review of Key Terms",
+    "text": "Review of Key Terms\n\nMultivariate Plots\n\nPlots that summarize and visualize the distribution and relationship between multiple variables\n\nUnivariate Plots\n\nPlots that summarize and visualize the distribution of a single variable\n\nVariation\n\nThe degree to which categorical or numeric values vary across data"
+  },
+  {
+    "objectID": "labs/lab4/index.html#home-mortgage-disclosure-act-hmda",
+    "href": "labs/lab4/index.html#home-mortgage-disclosure-act-hmda",
+    "title": "Lab #4: Visualization Aesthetics (30 pts)",
+    "section": "Home Mortgage Disclosure Act (HMDA)",
+    "text": "Home Mortgage Disclosure Act (HMDA)\nIn the United States, homeownership can offer a pathway to promoting stability and social mobility. However, historically, opportunities for purchasing a home have been unequally distributed along racial and ethnic lines. In a practice known as redlining, some banks in the mid-twentieth century would make decisions about who would be approved for loans based on the perceived “riskiness” of the neighborhoods they lived in; risk was often determined by the racial makeup of the neighborhood. This discrimination in lending enforced the racial segregation of communities and made it much more difficult for Black and other minority individuals to secure access to a financial asset that could be passed down in their families. With limited access to this opportunity for securing generational wealth, we still feel the affects of redlining today - even though racially-motivated redlining was prohibited by the Fair Housing Act in 1968.\nIn order to monitor for fair lending practices, in 1975, the Home Mortgage Disclosure Act was passed, requiring lending institutions to publicly disclose data about their lending - reporting each loan application they receive, whether the loan was approved or denied, and demographic information on the borrowers. This data is currently published annually by the Consumer Federal Protection Bureau, and a number of organizations monitor it to determine if there are continued forms of racial discrimination in who has access to home loans.\nIn this lab, we are going to examine Home Mortgage Disclosure Act data from 2024 in Mississippi. Recently, a study by Lending Tree showed that Black homebuyers in Mississippi face some of the highest loan denial rates in the country:\n\n\nEach row in this dataset is one mortgage application, and variables describing the demographics of the applicant, details about the loan, and whether or not the loan was approved are included in the data. When denied, the reasons for denial are also included. For consistency in comparisons, I’ve filtered this dataset down to only include 30-year conventional, first-lien, single-family, non-commercial loans that are either for a home purchase or a home improvement. The data documentation for this dataset is quite thick, so I will provide you with a data dictionary for today.\n\n\n\n\n\n\n\nVARIABLE NAME\nDESCRIPTION\n\n\n\n\nderived_ethnicity\nSingle aggregated ethnicity categorization derived from applicant/borrower and co-applicant/co-borrower ethnicity fields\n\n\nderived_race\nSingle aggregated race categorization derived from applicant/borrower and co-applicant/co-borrower race fields\n\n\nderived_sex\nSingle aggregated sex categorization derived from applicant/borrower and co-applicant/co-borrower sex fields\n\n\naction_taken\nThe action taken on the covered loan or application\n\n\nloan_purpose\nThe purpose of covered loan or application\n\n\nloan_amount\nThe amount of the covered loan, or the amount applied for\n\n\nloan_to_value_ratio\nThe ratio of the total amount of debt secured by the property to the value of the property relied on in making the credit decision\n\n\nincome\nThe gross annual income, in thousands of dollars, relied on in making the credit decision, or if a credit decision was not made, the gross annual income relied on in processing the application\n\n\ndebt_to_income_ratio\nThe ratio, as a percentage, of the applicant’s or borrower’s total monthly debt to the total monthly income relied on in making the credit decision\n\n\ntract_minority_population_percent\nPercentage of minority population to total population for tract, rounded to two decimal places\n\n\ndenial_reason\nThe principal reason, or reasons, for denial"
+  },
+  {
+    "objectID": "labs/lab4/index.html#setting-up-your-environment",
+    "href": "labs/lab4/index.html#setting-up-your-environment",
+    "title": "Lab #4: Visualization Aesthetics (30 pts)",
+    "section": "Setting Up Your Environment",
+    "text": "Setting Up Your Environment\n\nRun the code below to the import the 2024 Home Mortgage Disclosure Act data for Mississippi into R. It may take a few moments to load. Call me or one of the data assistants over if you get an error.\n\n\nlibrary(tidyverse)\nlibrary(RColorBrewer)\n\nhmda_ms_2024 &lt;- read.csv(\"https://ffiec.cfpb.gov/v2/data-browser-api/view/csv?states=MS&years=2024\") |&gt;\n  filter(loan_type == 1 & \n           lien_status == 1 & \n           conforming_loan_limit == 'C' & \n           derived_dwelling_category %in% c(\"Single Family (1-4 Units):Site-Built\", \n                                            \"Single Family (1-4 Units):Manufactured\") & \n           business_or_commercial_purpose == 2 &\n           loan_purpose %in% c(1, 2)) |&gt;\n  select(lei,\n         county_code,\n         derived_ethnicity,\n         derived_race,\n         derived_sex,\n         action_taken,\n         loan_purpose,\n         loan_amount,\n         interest_rate,\n         property_value,\n         loan_to_value_ratio,\n         denial_reason.1,\n         denial_reason.2,\n         denial_reason.3,\n         denial_reason.4,\n         income,\n         debt_to_income_ratio) |&gt;\n  mutate(loan_purpose = recode(loan_purpose, \n                               \"1\" = \"Home Purchase\",\n                               \"2\" = \"Home improvement\",\n                               .default = NA_character_)) |&gt;\n  mutate(action_taken = recode(action_taken, \n                               \"1\" = \"Loan originated\", \n                               \"2\" = \"Application approved but not accepted\",\n                               \"3\" = \"Application denied\",\n                               \"4\" = \"Application withdrawn by applicant\",\n                               \"5\" = \"File closed for incompleteness\",\n                               \"6\" = \"Purchased loan\",\n                               \"7\" = \"Preapproval request denied\",\n                               \"8\" = \"Preapproval request approved but not accepted\",\n                               .default = NA_character_)) |&gt;\n  mutate(denial_reason.1 = recode(denial_reason.1, \n                                  \"1\" = \"Debt-to-income ratio\",\n                                  \"2\" = \"Employment history\",\n                                  \"3\" = \"Credit history\",\n                                  \"4\" = \"Collateral\",\n                                  \"5\" = \"Insufficient cash (downpayment, closing costs)\",\n                                  \"6\" = \"Unverifiable information\",\n                                  \"7\" = \"Credit application incomplete\",\n                                  \"8\" = \"Mortgage insurance denied\",\n                                  \"9\" = \"Other\",\n                                  \"10\" = \"Not applicable\",\n                               .default = NA_character_)) |&gt;\n  rowwise() |&gt;\n  mutate(denial_reason = case_when(any(!is.na(c_across(c(denial_reason.2,\n                                                         denial_reason.3,\n                                                         denial_reason.4)))) ~ \"Multiple\",\n      TRUE ~ denial_reason.1)) |&gt;\n  ungroup() |&gt;\n  mutate(loan_to_value_ratio = as.numeric(loan_to_value_ratio),\n         property_value = as.numeric(property_value)) |&gt;\n  mutate(debt_to_income_ratio = case_when(debt_to_income_ratio %in% c(\"36\", \"37\", \"38\",\"39\",\"40\",\"41\") ~ \"36%-41%\",\n                                          debt_to_income_ratio %in% c(\"42\",\"43\",\"44\",\"45\",\"46\",\"47\",\"48\",\"49\") ~ \"42%-49%\",\n                                          TRUE ~ debt_to_income_ratio)) |&gt;\n  mutate(debt_to_income_ratio = factor(debt_to_income_ratio, levels = c(\"Exempt\",\n                                                                        \"&lt;20%\",\n                                                                        \"20%-&lt;30%\",\n                                                                        \"30%-&lt;36%\",\n                                                                        \"36%-41%\",\n                                                                        \"42%-49%\",\n                                                                        \"50%-60%\",\n                                                                        \"&gt;60%\"))) |&gt;\n  select(-c(denial_reason.1, \n            denial_reason.2, \n            denial_reason.3, \n            denial_reason.4))\n\nWe’re going to start our analysis with univariate plotting. Specifically, we are going to produce data visualizations that count the number of observations in a dataset that fall into specific groupings. When grouping observations by a categorical variable, we will produce a bar plot. Remember when labeling that these plots visualize frequency. They use the height aesthetic to visualize us how many rows in a variable have a certain value.\nLet’s start by comparing how many home loans were for home purchases vs. the number for home improvements.\n\n\n\n\n\n\nImportantQuestion 1 (2.5 pts)\n\n\n\nIn the code below, create a bar plot that visualizes how many home loans were for home purchases vs. the number for home improvements. Determine the variable that should appear on the x-axis, along with the geom function that can be used to create a bar plot. Fill in the blanks to ensure your plot has the appropriate context.\n\nhmda_ms_2024 |&gt;\n  ggplot(aes(x = _____)) +\n  _____() +\n  labs(title = \"Home Mortgage Disclosure Act Applications, [FILL GEOGRAPHY], [FILL YEAR]\",\n       x = \"[FILL X-AXIS VARIABLE]\",\n       y = \"Count of [FILL WHAT's BEING COUNTED?]\") +\n  theme_minimal()\n\n\n\nNow let’s look at the number of applicants of each race.\n\n\n\n\n\n\nImportantQuestion 2 (2.5 pts)\n\n\n\nCreate a plot below that counts the number of applicants of each race. Be sure to give it a descriptive title and labels covering all 5 essential components of data context. You can use the code you wrote above as a template to get you started. You’ll probably notice that the labels of your plot overlap. You can add + coord_flip() to the end of your code to flip the plot so that the bars are horizontal rather than vertical. This should help with legibility.\n\n# Create plot here\n\n\n\nIn the last plot, we visualized the frequency of a categorical variable. When grouping observations into intervals of a numeric variable, we will produce a histogram. For instance, let’s say we want to know the distribution of loan amounts that applicants requested in Mississippi in 2024. With a histogram, I can visualize how many loan applications requested $0-$100000, &gt;$100000-$200000, and so on. Histograms use the height aesthetic to visualize how many rows in a variable fall into each of these numeric bins.\n\n\n\n\n\n\nImportantQuestion 3 (2.5 pts)\n\n\n\nIn the code below, create a histogram that visualizes the distribution of loan amounts. Determine the variable that should appear on the x-axis, along with the geom function that can be used to create a histogram. Set the binwidth to create numeric intervals of 100000. Fill in the blanks to ensure your plot has the appropriate context.\n\nhmda_ms_2024  |&gt; \n  ggplot(aes(x = _____)) +\n  _____(binwidth = _____) +\n  labs(title = \"Home Mortgage Disclosure Act Applications, [FILL GEOGRAPHY], [FILL YEAR]\",\n       x = \"[FILL X-AXIS VARIABLE]\",\n       y = \"Count of [FILL WHAT's BEING COUNTED?]\",\n       caption = str_wrap(\"This histogram displays the distribution of home loan amounts requested by Mississippi applicants in 2024. The plot shows that the majority of applicants requested loans under $250,000. Since the average home loan size in the U.S. in 2024 was $252,505, this indicates that average requested home loan sizes in MS were smaller in comparison to the country as a whole.\", 120)) +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nA good plot caption does three things. First, it describes what the plot is and the variables displayed on it. Second, it articulates at least one fact from the plot. Third, it interprets the significance of that fact. The caption that I provided for the last plot follows this template:\n(describe) This histogram displays the distribution of home loan amounts requested by Mississippi applicants in 2024. (articulate fact) The plot shows that the majority of applicants requested loans under $250,000. (interpret significance) Since the average home loan size in the U.S. in 2024 was $252,505, this indicates that average requested home loan sizes in MS were smaller in comparison to the country as a whole.\n\n\nLoan to value ratio is a measure that indicates the percentage of a property’s value that a borrower requests of a lending institution. So let’s say I want to buy a property with a value of $100,000; I plan to put down $20,000, and I request a loan for $80,000. The loan to value ratio would be 80. Typically, when borrowers can put more down, it is considered a less risky loan.\n\n\n\n\n\n\nImportantQuestion 4 (2.5 pts)\n\n\n\nCreate a plot below that shows the distribution of loan to value ratios (in intervals of 10). Be sure to give it a descriptive title and labels covering all 5 essential components of data context. Also add a caption to describe the percentage of a loan’s property that borrowers most often request when applying for a loan.\nYou can use the code you wrote above as a template to get you started. Note that there were 20 outlier loans where borrowers requested more than double property’s value. There was even one loan where the applicant requested 14 times the property’s value. All of these loans were denied. Below I’ve given you some code to filter out these outliers in order to make the plot more legible.\n\nhmda_ms_2024 |&gt;\n  filter(loan_to_value_ratio &lt; 200) |&gt;\n# Fill remaining lines here\n\n\n\nLet’s move on to some multivariate plotting. Remember that we can add further variables to a plot via a number of different aesthetics (e.g. color: fill= or col=; size: size=; position: x= or y=, small multiples: + facet_wrap(vars(...)) ). Whenever we add further data to a plot, we should be on the lookout for overplotting.\n\n\n\n\n\n\nImportantQuestion 5 (2.5 pts)\n\n\n\nCreate a stacked barplot below that counts both the race of the applicants and the action taken in regards to the loan. Be sure to give it a descriptive title and labels covering all 5 essential components of data context. I’ve given you some code below to move the legend to the bottom of the plot, to reduce the legend size, and to set the number of rows that appear in the legend.\n\nhmda_ms_2024 |&gt;\n# Fill remaining lines here\n  coord_flip() +\n  theme(legend.position = \"bottom\",\n        legend.text = element_text(size = 6), \n        legend.title = element_text(size = 8),\n        legend.key.size = unit(0.4, \"cm\")) +\n  guides(fill=guide_legend(nrow=4))\n\n\n\nWe learned earlier in this lab that there were more white applicants than applicants of other races applying for loans in Mississippi in 2024. If we only look at counts of approvals or denials then we don’t know if differences in approval numbers are due to disparities in who is getting loans or due to there just being more applicants of a particular race. For this reason, we are more interested in the percentage of approvals for each race and the percentage of denials for each race. This is more comparable across races than counts.\n\n\n\n\n\n\nImportantQuestion 6 (2.5 pts)\n\n\n\nCopy the plot that you created above into the code chunk below, and then adjust the position of the bars to “fill” in order to normalize their height. Add a caption that summarizes your findings.\n\n# Create plot here\n\n\n\nNow let’s move on to comparing how requested loan amounts differ across race. To do so, we are going to create a boxplot that compares summary statistics (i.e. minimum, maximum, median, 1st quartile, 3rd quartile, and outliers) of the loan amounts requested by applicants of each race.\n\n\n\n\n\n\nImportantQuestion 7 (2.5 pts)\n\n\n\nFill in the code below to create a boxplot that visualizes how the distributions of requested loan amounts differed across race. Add a caption that summarizes your findings.\n\nhmda_ms_2024 |&gt;\n  ggplot(aes(x = derived_race, __________)) +\n  __________ +\n  coord_flip() +\n  labs(title = \"Home Mortgage Disclosure Act Applications, Mississippi, 2024\",\n       x = \"Race of Applicant\",\n       y = _________,\n       caption = _________) +\n  theme_minimal() \n\n\n\nIn the past several exercises, we have been creating plots that count the number of rows in a variable have a certain value. …but what if our dataset presents aggregated data - where those counts have already been given to us? For instance, I wrote some code below to create a dataset where the counts of individuals of each race that were denied loans is already calculated, along with the percentage of individuals that were denied loans. I also created a dataset where the counts of individuals of each race and sex that were denied loans is already calculated, along with the percentage. You’ll learn more about these functions in a few weeks. Take a look at these datasets below, and consider how they compare them to the data that we started with.\n\nhmda_denial_by_race &lt;-\n  hmda_ms_2024 |&gt;\n  group_by(derived_race) |&gt;\n  summarize(total_denied = sum(action_taken == \"Application denied\"),\n            percent_denied = sum(action_taken == \"Application denied\")/n())\n\nhmda_denial_by_race_sex &lt;-\n  hmda_ms_2024 |&gt;\n  filter(derived_race != \"Free Form Text Only\") |&gt; #There were only 3 denials with free form text for race in MS in 2024, and they have been removed here for plot legibility\n  group_by(derived_race, derived_sex) |&gt;\n  summarize(total_denied = sum(action_taken == \"Application denied\"),\n            percent_denied = sum(action_taken == \"Application denied\")/n())\n\nhmda_denial_by_race\n\n# A tibble: 9 × 3\n  derived_race                              total_denied percent_denied\n  &lt;chr&gt;                                            &lt;int&gt;          &lt;dbl&gt;\n1 2 or more minority races                            33          0.516\n2 American Indian or Alaska Native                    49          0.476\n3 Asian                                               78          0.162\n4 Black or African American                         4643          0.478\n5 Free Form Text Only                                  3          1    \n6 Joint                                              114          0.317\n7 Native Hawaiian or Other Pacific Islander           10          0.233\n8 Race Not Available                                 615          0.103\n9 White                                             3954          0.225\n\nhmda_denial_by_race_sex\n\n# A tibble: 31 × 4\n# Groups:   derived_race [8]\n   derived_race                     derived_sex      total_denied percent_denied\n   &lt;chr&gt;                            &lt;chr&gt;                   &lt;int&gt;          &lt;dbl&gt;\n 1 2 or more minority races         Female                     15          0.556\n 2 2 or more minority races         Joint                       6          0.429\n 3 2 or more minority races         Male                        8          0.471\n 4 2 or more minority races         Sex Not Availab…            4          0.667\n 5 American Indian or Alaska Native Female                     20          0.476\n 6 American Indian or Alaska Native Joint                       7          0.778\n 7 American Indian or Alaska Native Male                       21          0.429\n 8 American Indian or Alaska Native Sex Not Availab…            1          0.333\n 9 Asian                            Female                     20          0.149\n10 Asian                            Joint                      16          0.139\n# ℹ 21 more rows\n\n\nWhen counts have already been calculated for us, we need to use a different type of plot to visualize these counts. We don’t need the plot function to count the rows with each value; we just need it to set the height of the bar to a numeric value provided in our dataset. We will create column plots below to do this.\n\n\n\n\n\n\nImportantQuestion 8 (2.5 pts)\n\n\n\nIn the code below, fill in the blanks to set the height of each bar to the percent of individuals in a particular race whose mortgage was denied. Select a geom function to create a column chart. Be sure to fill in the correct labels.\n\nhmda_denial_by_race |&gt;\n  ggplot(aes(x = derived_race, _______)) +\n  _______ +\n  labs(title = \"Home Mortgage Disclosure Act Applications, Mississippi, 2024\",\n       x = \"Race of Applicant\",\n       y = \"___________\",\n       caption = str_wrap(\"This column plot visualizes the denial rates of home mortgage applications in MS in 2024. The plot shows that Black or African American applicants, American Indian or Alaska Native applicants, or applicants of 2 or more minority races were all denied mortgage at double the rate of White applicants. This may indicate disparities in lending practices.\", 120)) +\n  theme_minimal() +\n  coord_flip()\n\n\n\nWhile this gives us some insight into disparities in lending practices, we can’t see how multiple aspects of a person’s identity might factor in to these distinctions. The concept of intersectionality - introduced by civil rights scholar Kimberle Crenshaw in the late 1980s - considers how people of certain overlapping social identities may face unique forms of discrimination. Let’s take a look at how this data changes when we also consider sex in relation to denial rates.\n\n\n\n\n\n\nImportantQuestion 9 (2.5 pts)\n\n\n\nCopy your code above, replacing the hmda_denial_by_race data frame with hmda_denial_by_race_sex. Using the fill aesthetic, add the variable for describing the applicants’ sex to the plot. Set the position of the columns to \"dodge\", and be sure to add a label for the fill aesthetic. Adjust the caption to summarize your findings.\n\n# Create plot here\n\n\n\nIn reviewing data like this, some banks have explained the disparities by suggesting that certain groups of applicants are more likely to have lower credit scores, less cash for down payments, or more debt in relation to their income. Let’s take a look at the reasons that Mississippi banks denied mortgage loans in 2024.\n\n\n\n\n\n\nImportantQuestion 10 (2.5 pts)\n\n\n\nCreate a plot below that visualizes how many applicants of each race were denied mortgages for each denial reason. Be sure to give it a descriptive title and labels covering all 5 essential components of data context. You may wish to borrow some of your previous code to adjust the plot for legibility. I’ve given you some code below to filter the data frame to just those mortgage applications that were denied.\n\nhmda_ms_2024 |&gt;\n  filter(action_taken == \"Application denied\") |&gt;\n#Fill remaining lines here\n\n\n\nFrom this plot, you should learn that the top three reasons for denials were: 1) Multiple (meaning some combination of other denial reasons), 2) Credit history, and 3) Debt-to-income ratio. This dataset does not release information about applicants’ credit histories. However, we can take a look at the outcomes of applications from applicants with different debt-to-income ratios compared across races.\nDebt-to-income ratio refers to how much debt a person has in relation to the money they earn in income. A high debt-to-income ratio indicates that someone may not be pulling in enough income to pay off their debts, while a low debt-to-income ratio indicates that their income can reasonably help them pay off their debts. Banks are often hesitant to lend to individuals with high debt-to-income ratios.\n\n\n\n\n\n\nImportantQuestion 11 (2.5 pts)\n\n\n\nBelow I’ve given you some code to produce a plot that visualizes the percent of mortgage applications that resulted in each action (e.g. loan originated, denied, etc.), broken out by the debt-to-income ratio of the applicant. Referring to last week’s lab, add a line to this code to facet this plot by race. For which races was the denial rate higher for applicants with a lower than 50% debt-to-income ratio? Adjust the fact and interpretation presented in the caption with your response.\n\nhmda_ms_2024 |&gt;\n  ggplot(aes(x = debt_to_income_ratio, fill = action_taken)) +\n  geom_bar(position = \"fill\") +\n  coord_flip() +\n  #Add line to facet here\n  labs(title = \"Home Mortgage Disclosure Act Applications, Mississippi, 2024\",\n       x = \"Debt-to-Income Ratio\",\n       y = \"Percent of Mortgage Applications\",\n       fill = \"Action Taken\", \n       caption = str_wrap(\"This bar plot visualizes the percent of mortgage applications that resulted in each action, broken out by the debt-to-income ratio of the applicant. From this plot, we can see that most applicants with a debt-to-income ratio of 50% or higher were denied loans, and most applicants with a debt-to-income ratio of lower than 50% had their loans originated. This shows that banks are less likely to lend to applicants with higher debt-to-income ratios.\",width = 120)) +\n  theme_minimal() +\n  theme(legend.position = \"bottom\",\n        legend.text = element_text(size = 8), \n        legend.title = element_text(size = 8),\n        legend.key.size = unit(0.4, \"cm\"),\n        plot.caption = element_text(size = 8)) +\n  guides(fill=guide_legend(nrow = 3))\n\n\n\n\n\n\n\n\n\n\nFinally, let’s take a look at differences in what borrowers owe when their mortgages are approved. A number of factors influence the interest rates that borrowers pay on their loans (including credit history, income, debt-to-income ratio, and loan term). Higher debt-to-income ratios often result in higher interest rates.\n\n\n\n\n\n\nImportantQuestion 12 (2.5 pts)\n\n\n\nBelow I’ve given you some code to produce a plot that visualizes how the distributions of interest rates differed across debt-to-income ratios when loans were approved. Referring to last week’s lab, add a line to this code to facet this plot by race. For which races were the interest rates higher even with lower debt-to-income ratios? Adjust the fact and interpretation presented in the caption with your response.\n\nhmda_ms_2024 |&gt;\n  filter(action_taken == \"Loan originated\") |&gt;\n  ggplot(aes(x = debt_to_income_ratio, y = interest_rate)) +\n  geom_boxplot() +\n  coord_flip() +\n  labs(title = \"Home Mortgage Disclosure Act Applications, Mississippi, 2024\",\n       x = \"Debt-to-Income Ratio\",\n       y = \"Interest Rate\",\n       caption = str_wrap(\"These boxplots visualize the distribution of interest rates for loans originated in MS in 2024, broken out by the debt-to-income ratio of the applicant. From this plot, we can see that the median interest rate for borrowers with a debt-to-income ratio of under 50% was around 7%. Median interest rates increased for borrowers with a debt-to-income ratio of over 50%. This shows that a high debt-to-income ratio may be one factor contributing to higher interest rates.\",width = 120)) +\n  theme_minimal() \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nThis dataset makes loan-level data about individual sensitive financial information available to the public. To reduce the risk that borrowers may be identified in the data, the CFPB removes certain variables before publication, such as the loan’s unique identifier, the property address, the applicant’s credit score, and any free-form text that the applicant writes on the application. Applicants do not have the option to opt-out of their data being disclosed in this dataset. If it were possible to re-identify individual applicants in this dataset, what would be the risks to the public disclosure of their information? Which applicants would be the most vulnerable? How should we think about the balance between the social value of this public data disclosure and the possible risks to those represented in it? Share your ideas on our discussions Slack channel."
   }
 ]
