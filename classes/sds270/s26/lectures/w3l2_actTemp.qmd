@@ -1,0 +1,61 @@
+---
+title: "Exercises from Week 3, Lecture 2: Control Flow"
+subtitle: "SDS 270"
+author: "Jericho Lawson"
+format: html
+---
+
+## Exercises
+
+::: {.callout-important}
+##### Q1:
+
+Describe what is going on in each part of the code step-by-step. What mechanisms are being used?
+
+:::
+
+::: {.callout-important}
+##### Q2:
+
+We'll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3. Use some form of an if-else choice to do this.
+
+
+:::
+
+
+
+::: {.callout-important}
+##### Q3:
+
+Suppose if we have less than 0 runs, I want to output an NA. How can I change the `ifelse()` statement above to do this?
+
+:::
+
+
+::: {.callout-important}
+##### Q4:
+
+Write a `switch()` function that takes a single character and does the following:
+
+- Print 1 for "single"
+- Print 4 for "home run"
+- Stop otherwise
+
+:::
+
+
+::: {.callout-important}
+##### Q5:
+
+Write a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for `outs` and `runs` in individual data structures.
+
+:::
+
+
+::: {.callout-important}
+##### Q6:
+
+Write a while-loop that continues the `out` operation until 3 outs are recorded, storing the results for `outs` and `runs` in individual data structures.
+
+:::
+

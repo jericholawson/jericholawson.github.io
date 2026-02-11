@@ -335,7 +335,7 @@
 <li>Suppose we play one half-inning of a baseball game. Keep in mind, we have the following:
 <ul>
 <li>3 outs to end the half-inning</li>
-<li>For each play, it results in a single, HR, or out (simple example)</li>
+<li>For each play, it results in a single, HR, or out</li>
 </ul></li>
 </ul>
 <blockquote>
@@ -398,7 +398,7 @@
 <span id="cb7-7"><a></a>  outs <span class="ot">=</span> outs <span class="sc">+</span> <span class="dv">1</span></span>
 <span id="cb7-8"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p><strong>Question 2:</strong> We’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3. Use some form of an if-else choice to do this.</p>
+<p><strong>Question 2:</strong> We’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3 and keep this value the same. Use some form of an if-else choice to do this.</p>
 </section>
 <section id="ifelse" class="slide level2">
 <h2><code>ifelse()</code></h2>
@@ -444,33 +444,18 @@
 </div>
 <p><strong>Question 3:</strong> Suppose if we have less than 0 runs, I want to output an NA. How can I change the <code>ifelse()</code> statement above to do this?</p>
 </section>
-<section id="alternative-case_when" class="slide level2">
-<h2>Alternative: <code>case_when()</code></h2>
-<ul>
-<li>From <code>dplyr</code> package</li>
-</ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb14-2"><a></a><span class="fu">case_when</span>(runs <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"True"</span>, </span>
-<span id="cb14-3"><a></a>          runs <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"False"</span>, </span>
-<span id="cb14-4"><a></a>          runs <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"Runs are invalid."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "False" "True"  "False" "False" "False" "True"  "False" "False" "False"</code></pre>
-</div>
-</div>
-</section>
 <section id="switch" class="slide level2">
 <h2><code>switch()</code></h2>
 <ul>
 <li>Used on a character to perform certain action</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>stat <span class="ot">=</span> <span class="st">"mean"</span></span>
-<span id="cb16-2"><a></a><span class="cf">switch</span>(stat, </span>
-<span id="cb16-3"><a></a>       <span class="at">mean =</span> <span class="fu">mean</span>(nums),</span>
-<span id="cb16-4"><a></a>       <span class="at">median =</span> <span class="fu">median</span>(nums), </span>
-<span id="cb16-5"><a></a>       <span class="at">sd =</span> <span class="fu">sd</span>(nums), </span>
-<span id="cb16-6"><a></a>       <span class="fu">stop</span>(<span class="st">"Invalid stat request."</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>stat <span class="ot">=</span> <span class="st">"mean"</span></span>
+<span id="cb14-2"><a></a><span class="cf">switch</span>(stat, </span>
+<span id="cb14-3"><a></a>       <span class="at">mean =</span> <span class="fu">mean</span>(nums),</span>
+<span id="cb14-4"><a></a>       <span class="at">median =</span> <span class="fu">median</span>(nums), </span>
+<span id="cb14-5"><a></a>       <span class="at">sd =</span> <span class="fu">sd</span>(nums), </span>
+<span id="cb14-6"><a></a>       <span class="fu">stop</span>(<span class="st">"Invalid stat request."</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.8</code></pre>
 </div>
@@ -481,9 +466,19 @@
 <p><strong>Question 4:</strong> Write a <code>switch()</code> function that takes a single character and does the following:</p>
 <ul>
 <li>Print 1 for “single”</li>
-<li>Print 4 for “home run”</li>
+<li>Print 4 for “homerun”</li>
 <li>Stop otherwise</li>
 </ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>result <span class="ot">=</span> <span class="st">"single"</span></span>
+<span id="cb16-2"><a></a><span class="cf">switch</span>(result, </span>
+<span id="cb16-3"><a></a>       <span class="at">single =</span> <span class="dv">1</span>,</span>
+<span id="cb16-4"><a></a>       <span class="at">homerun =</span> <span class="dv">4</span>,</span>
+<span id="cb16-5"><a></a>       <span class="fu">stop</span>(<span class="st">"Invalid request."</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+</div>
 </section>
 <section id="loops" class="slide level2">
 <h2>Loops</h2>
@@ -578,7 +573,7 @@
 <span id="cb23-7"><a></a>  outs <span class="ot">=</span> outs <span class="sc">+</span> <span class="dv">1</span></span>
 <span id="cb23-8"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p><strong>Question 5:</strong> Write a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for <code>outs</code> and <code>runs</code> in individual data structures.</p>
+<p><strong>Question 5:</strong> Write a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for <code>outs</code>, <code>runs</code>, and <code>onBase</code> in individual data structures.</p>
 <p>Use the following line of code to determine the play:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>plays <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"single"</span>, <span class="st">"homerun"</span>, <span class="st">"out"</span>), <span class="dv">20</span>, <span class="at">prob =</span> <span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.05</span>, <span class="fl">0.7</span>), <span class="at">replace =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -684,7 +679,7 @@
 <span id="cb31-5"><a></a>}</span>
 <span id="cb31-6"><a></a><span class="fu">Sys.time</span>() <span class="sc">-</span> timerFor</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.004645824 secs</code></pre>
+<pre><code>Time difference of 0.004554987 secs</code></pre>
 </div>
 </div>
 </section>
@@ -694,14 +689,14 @@
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a>timerApply <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
 <span id="cb33-2"><a></a><span class="fu">apply</span>(myMat, <span class="dv">2</span>, sum)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  0.88255626  3.88214449  2.08956316 -2.88664397  1.97067704  0.84412565
- [7] -1.49181587  1.26069445  0.04672141  0.20355485  1.47214258 -1.65042630
-[13]  0.46537354 -0.29851003  0.89359364  0.32361483 -1.42974245 -1.62818126
-[19] -2.97755034  3.15017930</code></pre>
+<pre><code> [1]  1.41931117 -1.51899360 -3.02341028  0.09376649 -3.47430001  0.64742259
+ [7] -0.17570781 -2.87438074  4.82618115  1.81195314 -1.83610927 -1.72337986
+[13] -1.39468213  2.13417283  2.70411084 -1.29884175 -1.48850790 -1.97107454
+[19]  1.66920736 -3.28214425</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a><span class="fu">Sys.time</span>() <span class="sc">-</span> timerApply</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.002253056 secs</code></pre>
+<pre><code>Time difference of 0.00204587 secs</code></pre>
 </div>
 </div>
 </section>
@@ -711,14 +706,14 @@
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a>timerColSums <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>()</span>
 <span id="cb37-2"><a></a><span class="fu">colSums</span>(myMat)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  0.88255626  3.88214449  2.08956316 -2.88664397  1.97067704  0.84412565
- [7] -1.49181587  1.26069445  0.04672141  0.20355485  1.47214258 -1.65042630
-[13]  0.46537354 -0.29851003  0.89359364  0.32361483 -1.42974245 -1.62818126
-[19] -2.97755034  3.15017930</code></pre>
+<pre><code> [1]  1.41931117 -1.51899360 -3.02341028  0.09376649 -3.47430001  0.64742259
+ [7] -0.17570781 -2.87438074  4.82618115  1.81195314 -1.83610927 -1.72337986
+[13] -1.39468213  2.13417283  2.70411084 -1.29884175 -1.48850790 -1.97107454
+[19]  1.66920736 -3.28214425</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">Sys.time</span>() <span class="sc">-</span> timerColSums</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 0.001476049 secs</code></pre>
+<pre><code>Time difference of 0.001921892 secs</code></pre>
 </div>
 </div>
 </section>
@@ -726,7 +721,7 @@
 <h2>For now and Monday:</h2>
 <ul>
 <li>Read <a href="https://adv-r.hadley.nz/">Advanced R</a>: chapter 6</li>
-<li>Second problem set assigned
+<li>Second problem set will be assigned on Friday
 <ul>
 <li>Due next Friday, 2/20 at 11:59pm</li>
 </ul></li>

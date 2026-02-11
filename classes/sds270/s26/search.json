@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksData\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n\n\n\n\n1: Set 1\n\n\n\nTBA\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksData\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n\n\n\n\n1: Set 1\n\n\n\nTBA\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)"
   },
   {
     "objectID": "sets/set1.html",
@@ -2118,7 +2118,7 @@
     "href": "lectures/w3l2_controlFlow.html#situation",
     "title": "Control Flow",
     "section": "Situation",
-    "text": "Situation\n\nSuppose we play one half-inning of a baseball game. Keep in mind, we have the following:\n\n3 outs to end the half-inning\nFor each play, it results in a single, HR, or out (simple example)\n\n\n\nWe will use this as our motivating example for our understanding of choices and loops."
+    "text": "Situation\n\nSuppose we play one half-inning of a baseball game. Keep in mind, we have the following:\n\n3 outs to end the half-inning\nFor each play, it results in a single, HR, or out\n\n\n\nWe will use this as our motivating example for our understanding of choices and loops."
   },
   {
     "objectID": "lectures/w3l2_controlFlow.html#choices",
@@ -2146,7 +2146,7 @@
     "href": "lectures/w3l2_controlFlow.html#activity-ifelse-statement",
     "title": "Control Flow",
     "section": "Activity: if/else statement",
-    "text": "Activity: if/else statement\n\nif (play == \"single\"){\n  onBase = onBase + 1\n} else if (play == \"homerun\"){\n  runs = onBase + runs + 1\n  onBase = 0\n} else {\n  outs = outs + 1\n}\n\nQuestion 2: We’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3. Use some form of an if-else choice to do this."
+    "text": "Activity: if/else statement\n\nif (play == \"single\"){\n  onBase = onBase + 1\n} else if (play == \"homerun\"){\n  runs = onBase + runs + 1\n  onBase = 0\n} else {\n  outs = outs + 1\n}\n\nQuestion 2: We’ll add to the specific scenario of hitting a single, where we need to tally up a run if the number of people on base is equal to 3 and keep this value the same. Use some form of an if-else choice to do this."
   },
   {
     "objectID": "lectures/w3l2_controlFlow.html#ifelse",
@@ -2188,7 +2188,7 @@
     "href": "lectures/w3l2_controlFlow.html#activity-switch",
     "title": "Control Flow",
     "section": "Activity: switch()",
-    "text": "Activity: switch()\nQuestion 4: Write a switch() function that takes a single character and does the following:\n\nPrint 1 for “single”\nPrint 4 for “home run”\nStop otherwise"
+    "text": "Activity: switch()\nQuestion 4: Write a switch() function that takes a single character and does the following:\n\nPrint 1 for “single”\nPrint 4 for “homerun”\nStop otherwise\n\n\nresult = \"single\"\nswitch(result, \n       single = 1,\n       homerun = 4,\n       stop(\"Invalid request.\"))\n\n[1] 1"
   },
   {
     "objectID": "lectures/w3l2_controlFlow.html#loops",
@@ -2223,7 +2223,7 @@
     "href": "lectures/w3l2_controlFlow.html#activity-loops",
     "title": "Control Flow",
     "section": "Activity: Loops",
-    "text": "Activity: Loops\n\nif (play == \"single\"){\n  onBase = onBase + 1\n} else if (play == \"homerun\"){\n  runs = onBase + runs + 1\n  onBase = 0\n} else {\n  outs = outs + 1\n}\n\nQuestion 5: Write a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for outs and runs in individual data structures.\nUse the following line of code to determine the play:\n\nplays &lt;- sample(c(\"single\", \"homerun\", \"out\"), 20, prob = c(0.25, 0.05, 0.7), replace = T)"
+    "text": "Activity: Loops\n\nif (play == \"single\"){\n  onBase = onBase + 1\n} else if (play == \"homerun\"){\n  runs = onBase + runs + 1\n  onBase = 0\n} else {\n  outs = outs + 1\n}\n\nQuestion 5: Write a for-loop on the revised if-else chain that runs through this process 20 times, storing the results for outs, runs, and onBase in individual data structures.\nUse the following line of code to determine the play:\n\nplays &lt;- sample(c(\"single\", \"homerun\", \"out\"), 20, prob = c(0.25, 0.05, 0.7), replace = T)"
   },
   {
     "objectID": "lectures/w3l2_controlFlow.html#while-loops-and-repeats",
@@ -2272,28 +2272,28 @@
     "href": "lectures/w3l2_controlFlow.html#example-matrix",
     "title": "Control Flow",
     "section": "Example: matrix",
-    "text": "Example: matrix\n\nmyMat &lt;- matrix(rnorm(100, 0, 1), nrow = 5, ncol = 20)\n\n\ntimerFor &lt;- Sys.time()\ncolumnSums &lt;- rep(-1, ncol(myMat))\nfor (i in 1:ncol(myMat)){\n  columnSums[i] &lt;- sum(myMat[, i])\n}\nSys.time() - timerFor\n\nTime difference of 0.004645824 secs"
+    "text": "Example: matrix\n\nmyMat &lt;- matrix(rnorm(100, 0, 1), nrow = 5, ncol = 20)\n\n\ntimerFor &lt;- Sys.time()\ncolumnSums &lt;- rep(-1, ncol(myMat))\nfor (i in 1:ncol(myMat)){\n  columnSums[i] &lt;- sum(myMat[, i])\n}\nSys.time() - timerFor\n\nTime difference of 0.004554987 secs"
   },
   {
     "objectID": "lectures/w3l2_controlFlow.html#example-matrix-1",
     "href": "lectures/w3l2_controlFlow.html#example-matrix-1",
     "title": "Control Flow",
     "section": "Example: matrix",
-    "text": "Example: matrix\n\ntimerApply &lt;- Sys.time()\napply(myMat, 2, sum)\n\n [1]  0.88255626  3.88214449  2.08956316 -2.88664397  1.97067704  0.84412565\n [7] -1.49181587  1.26069445  0.04672141  0.20355485  1.47214258 -1.65042630\n[13]  0.46537354 -0.29851003  0.89359364  0.32361483 -1.42974245 -1.62818126\n[19] -2.97755034  3.15017930\n\nSys.time() - timerApply\n\nTime difference of 0.002253056 secs"
+    "text": "Example: matrix\n\ntimerApply &lt;- Sys.time()\napply(myMat, 2, sum)\n\n [1]  1.41931117 -1.51899360 -3.02341028  0.09376649 -3.47430001  0.64742259\n [7] -0.17570781 -2.87438074  4.82618115  1.81195314 -1.83610927 -1.72337986\n[13] -1.39468213  2.13417283  2.70411084 -1.29884175 -1.48850790 -1.97107454\n[19]  1.66920736 -3.28214425\n\nSys.time() - timerApply\n\nTime difference of 0.00204587 secs"
   },
   {
     "objectID": "lectures/w3l2_controlFlow.html#example-matrix-2",
     "href": "lectures/w3l2_controlFlow.html#example-matrix-2",
     "title": "Control Flow",
     "section": "Example: matrix",
-    "text": "Example: matrix\n\ntimerColSums &lt;- Sys.time()\ncolSums(myMat)\n\n [1]  0.88255626  3.88214449  2.08956316 -2.88664397  1.97067704  0.84412565\n [7] -1.49181587  1.26069445  0.04672141  0.20355485  1.47214258 -1.65042630\n[13]  0.46537354 -0.29851003  0.89359364  0.32361483 -1.42974245 -1.62818126\n[19] -2.97755034  3.15017930\n\nSys.time() - timerColSums\n\nTime difference of 0.001476049 secs"
+    "text": "Example: matrix\n\ntimerColSums &lt;- Sys.time()\ncolSums(myMat)\n\n [1]  1.41931117 -1.51899360 -3.02341028  0.09376649 -3.47430001  0.64742259\n [7] -0.17570781 -2.87438074  4.82618115  1.81195314 -1.83610927 -1.72337986\n[13] -1.39468213  2.13417283  2.70411084 -1.29884175 -1.48850790 -1.97107454\n[19]  1.66920736 -3.28214425\n\nSys.time() - timerColSums\n\nTime difference of 0.001921892 secs"
   },
   {
     "objectID": "lectures/w3l2_controlFlow.html#for-now-and-monday",
     "href": "lectures/w3l2_controlFlow.html#for-now-and-monday",
     "title": "Control Flow",
     "section": "For now and Monday:",
-    "text": "For now and Monday:\n\nRead Advanced R: chapter 6\nSecond problem set assigned\n\nDue next Friday, 2/20 at 11:59pm"
+    "text": "For now and Monday:\n\nRead Advanced R: chapter 6\nSecond problem set will be assigned on Friday\n\nDue next Friday, 2/20 at 11:59pm"
   },
   {
     "objectID": "lectures/w1l2_intro.html#happy-snow-day",
@@ -2391,14 +2391,14 @@
     "href": "sets/set2.html#background",
     "title": "Set #2 (50 pts)",
     "section": "Background",
-    "text": "Background\nThe second problem set will contain various problems related to the following:\n\nControl flow (Ch. 5, AR)\nFunctions (Ch. 6, AR)\n\nDo note that other traits of R may show up in these problems. Make sure to carefully read and follow directions for each problem.\nAll problems will center around the DOHMH Dog Bite Data collected by the Department of Health and Mental Hygiene in NYC. You can download the data and view its metadata here."
+    "text": "Background\nThe second problem set will contain various problems related to the following:\n\nControl flow (Ch. 5, AR)\nFunctions (Ch. 6, AR)\nFunctionals (partly, Ch. 9, AR)\n\nDo note that other traits of R may show up in these problems. Make sure to carefully read and follow directions for each problem.\nAll problems will center around the DOHMH Dog Bite Data collected by the Department of Health and Mental Hygiene in NYC. You can download the data and view its metadata here.\nAdditionally, you will use the following packages below:\n\nlibrary(tidyverse)\nlibrary(lobstr)"
   },
   {
     "objectID": "sets/set2.html#q1-data-preparation",
     "href": "sets/set2.html#q1-data-preparation",
     "title": "Set #2 (50 pts)",
     "section": "Q1: Data Preparation",
-    "text": "Q1: Data Preparation\n\n\n\n\n\n\nImportant(a)\n\n\n\nload data in\n\ndogs &lt;- read.csv(\"../data/dogs.csv\")\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\ncreate function to find missing values in given vector\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nuse function with sapply\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\ncreate function named mean, taking particular mean of choice\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\ndiscuss issues"
+    "text": "Q1: Data Preparation\n\n\n\n\n\n\nImportant(a)\n\n\n\nGather the data from the resource mentioned above and load the data into your global environment. Name the dataset dogs.\n\ndogs &lt;- read.csv(\"../data/dogs.csv\")\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nCreate a function named countMissing that takes in some atomic vector x and a singular value val and counts the number of times val shows up in the atomic vector x. You will return that number as a double value named count.\nFor any x that is not an atomic vector, return a message (as a character) that states that x is of the wrong type.\n\ncountMissing &lt;- function(x, val){\n  if (typeof(x) %in% c(\"integer\", \"double\", \"character\", \"logical\")){\n    count &lt;- sum(x == val)\n    return(count)\n  }\n  return(\"x is of the wrong type.\")\n}\n\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nFind out how missing values are handled in the dogs data (i.e. what is a missing value labeled as?). Then, use the countMissing function to find the number of missing values in the Breed column of the dogs data.\n\ncountMissing(dogs$Breed, \"\")\n\n[1] 2276\n\n\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nAs an extension to part (c), find the number of missing values in each column in dogs using a for-loop.\n\nmissing &lt;- c()\nfor (i in 1:ncol(dogs)){\n  missing &lt;- c(missing, countMissing(dogs[[i]], \"\"))\n}\nmissing\n\n[1]     0     0     0  2276 17965     0     0     0 10579\n\n\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nIn part (d), explain how the for-loop works on the dogs data using the countMissing function.\n\n\n\n\n\n\n\n\nImportant(f)\n\n\n\nRepeat parts (d) and (e), but use a functional instead of a for-loop.\n\nsapply(dogs, countMissing, \"\")\n\n  UniqueID DateOfBite    Species      Breed        Age     Gender SpayNeuter \n         0          0          0       2276      17965          0          0 \n   Borough    ZipCode \n         0      10579"
   },
   {
     "objectID": "lectures/w3l1_actTemp.html",
@@ -2657,7 +2657,7 @@
     "href": "schedule.html#week-3-assignment-control-flow-29---213",
     "title": "Schedule",
     "section": "Week 3: Assignment, Control Flow (2/9 - 2/13)",
-    "text": "Week 3: Assignment, Control Flow (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\n\n\n\n\n\n\nNoteLecture: Assignment and Memory\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due Wednesday, 2/11 at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\nMacroinvertebrates Dataset\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Control Flow\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 3: Assignment, Control Flow (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\n\n\n\n\n\n\nNoteLecture: Assignment and Memory\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due Wednesday, 2/11 at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\nMacroinvertebrates Dataset\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Control Flow\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due tonight at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\nMacroinvertebrates Dataset\n\nRead chapter 6 of Advanced R (before Monday’s class)"
   },
   {
     "objectID": "schedule.html#week-5-iteration-and-exam-1-223---227",
@@ -3071,5 +3071,47 @@
     "title": "Set #1 (50 pts)",
     "section": "Notes",
     "text": "Notes\n\n2/9: For questions 2-4, the original dataset refers to the dataset you first loaded in. The assigned names for those questions can and should include those not just of the Chironomidae taxon."
+  },
+  {
+    "objectID": "sets/set2.html#q2-the-dates",
+    "href": "sets/set2.html#q2-the-dates",
+    "title": "Set #2 (50 pts)",
+    "section": "Q2: The Dates",
+    "text": "Q2: The Dates\n\n\n\n\n\n\nImportant(a)\n\n\n\nUse the separate() function from the dplyr package to break the DateOfBite column into three columns: Month, Day, and Year. Keep the old column when doing so.\n\n# Separate to month day year\ndogs &lt;- dogs |&gt; separate(DateOfBite, c(\"Month\", \"Day\", \"Year\"), remove = FALSE)\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nCreate an if-else chain of statements that would convert a value named month into an two-digit number as a character corresponding to the month and reassign that double back to month. Thus,\n\nmonth as “January” \\(\\rightarrow\\) month as “01”\nmonth as “February” \\(\\rightarrow\\) month as “02”\n…\nmonth as “December” \\(\\rightarrow\\) month as “12”\n\n\n# Build if statement structure jan --&gt; 01\nif (month == \"January\"){\n  month = \"01\"\n} else if (month == \"February\"){\n  month = \"02\"\n} else if (month == \"March\"){\n  month = \"03\"\n} else if (month == \"April\"){\n  month = \"04\"\n} else if (month == \"May\"){\n  month = \"05\"\n} else if (month == \"June\"){\n  month = \"06\"\n} else if (month == \"July\"){\n  month = \"07\"\n} else if (month == \"August\"){\n  month = \"08\"\n} else if (month == \"September\"){\n  month = \"09\"\n} else if (month == \"October\"){\n  month = \"10\"\n} else if (month == \"November\"){\n  month = \"11\"\n} else {\n  month = \"12\"\n}\n\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nModify code you’ve created from part (b) such that…\n\nThe if-else chain is engrained inside a for-loop, which iterates through all observations in the dogs dataset\nWe perform comparison and re-assignment to each element in the Month column\n\n\n# Combine together\nfor (i in 1:nrow(dogs)){\n  if (dogs$Month[i] == \"January\"){\n    dogs$Month[i] = \"01\"\n  } else if (dogs$Month[i] == \"February\"){\n    dogs$Month[i] = \"02\"\n  } else if (dogs$Month[i] == \"March\"){\n    dogs$Month[i] = \"03\"\n  } else if (dogs$Month[i] == \"April\"){\n    dogs$Month[i] = \"04\"\n  } else if (dogs$Month[i] == \"May\"){\n    dogs$Month[i] = \"05\"\n  } else if (dogs$Month[i] == \"June\"){\n    dogs$Month[i] = \"06\"\n  } else if (dogs$Month[i] == \"July\"){\n    dogs$Month[i] = \"07\"\n  } else if (dogs$Month[i] == \"August\"){\n    dogs$Month[i] = \"08\"\n  } else if (dogs$Month[i] == \"September\"){\n    dogs$Month[i] = \"09\"\n  } else if (dogs$Month[i] == \"October\"){\n    dogs$Month[i] = \"10\"\n  } else if (dogs$Month[i] == \"November\"){\n    dogs$Month[i] = \"11\"\n  } else {\n    dogs$Month[i] = \"12\"\n  }\n}\n\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nUse the unite() function from the dplyr package to combine the Month, Day, and Year columns into one column named date.\n\n# Unite date\ndogs &lt;- dogs |&gt; unite(col = \"date\", Month, Day, Year, sep = \"-\")\n\n# Create date object\n#dogs$date &lt;- as.Date(dogs$date, format = \"%m-%d-%Y\")\n\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nRedo parts (a-d) by using the case_match() and mutate() functions from dplyr in lieu of the if-else and for-loops. Additionally, combine the parts so they follow a chronological with the use of the piping operator and unite the columns into a column named date2.\n\ndogs &lt;- dogs |&gt; \n  separate(DateOfBite, c(\"Month\", \"Day\", \"Year\"), remove = FALSE) |&gt;   \n  mutate(Month = case_match(Month, \n                            \"January\" ~ \"01\",\n                            \"February\" ~ \"02\",\n                            \"March\" ~ \"03\",\n                            \"April\" ~ \"04\",\n                            \"May\" ~ \"05\",\n                            \"June\" ~ \"06\",\n                            \"July\" ~ \"07\",\n                            \"August\" ~ \"08\",\n                            \"September\" ~ \"09\",\n                            \"October\" ~ \"10\",\n                            \"November\" ~ \"11\",\n                            \"December\" ~ \"12\")) |&gt;\n  unite(col = \"date2\", Month, Day, Year, sep = \"-\")\n\n\n\n\n\n\n\n\n\nImportant(f)\n\n\n\nDiscuss the efficiency and storage implications of using each of the two methods to modify the DateOfBite column."
+  },
+  {
+    "objectID": "sets/set2.html#q3",
+    "href": "sets/set2.html#q3",
+    "title": "Set #2 (50 pts)",
+    "section": "Q3:",
+    "text": "Q3:\nIn this question, we want to create frequency tables regarding the borough where the bite occurred, in which we have a frequency table for each gender mentioned in the dataset. In other words,\n\ntapply(dogs$Borough, dogs$Gender, table)\n\n$F\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n          770           985          1163           238          1204 \nStaten Island \n          405 \n\n$M\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n         1984          2584          2777           538          3343 \nStaten Island \n         1115 \n\n$U\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n         3271          3748          3754           706          4105 \nStaten Island \n         1343 \n\n#dogs |&gt; group_by(Gender, Borough) |&gt; summarize(count = n())\n\nAs you might have guessed, we’ll do this the convoluted (and the straight-forward way).\n\n\n\n\n\n\nImportant(a)\n\n\n\nReplicate the table above by writing code that utilizes the following:\n\nA list of size 3 that stores a frequency table of dog bites across boroughs in each element.\nA loop that iterates through each observation in the dogs dataset.\nA base R choice structure that…\n\nIncreases the number of dog bites in that borough within the gender\n\n\nHint: Consider how the list (and the elements within the list will be built). From there, consider how we would access the element in the element of the list, using the gender and current iteration to do so.\n\ndogBiteList &lt;- list()\n\nfor (i in 1:nrow(dogs)){\n  if (!(dogs$Gender[i] %in% names(dogBiteList))){\n    dogBiteList[[dogs$Gender[i]]] = rep(0, 6)\n  }\n  if (dogs$Borough[i] == \"Bronx\"){\n    dogBiteList[[dogs$Gender[i]]][1] = dogBiteList[[dogs$Gender[i]]][1] + 1\n  } else if (dogs$Borough[i] == \"Brooklyn\"){\n    dogBiteList[[dogs$Gender[i]]][2] = dogBiteList[[dogs$Gender[i]]][2] + 1\n  } else if (dogs$Borough[i] == \"Manhattan\"){\n    dogBiteList[[dogs$Gender[i]]][3] = dogBiteList[[dogs$Gender[i]]][3] + 1\n  } else if (dogs$Borough[i] == \"Other\"){\n    dogBiteList[[dogs$Gender[i]]][4] = dogBiteList[[dogs$Gender[i]]][4] + 1\n  } else if (dogs$Borough[i] == \"Queens\"){\n    dogBiteList[[dogs$Gender[i]]][5] = dogBiteList[[dogs$Gender[i]]][5] + 1\n  } else {\n    dogBiteList[[dogs$Gender[i]]][6] = dogBiteList[[dogs$Gender[i]]][6] + 1\n  }\n}\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nIdentify a functional that will allow you to run a function on each group related to a variable. Then, use this functional to produce the same list as seen in the introduction of this question.\n\ntapply(dogs$Borough, dogs$Gender, table)\n\n$F\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n          770           985          1163           238          1204 \nStaten Island \n          405 \n\n$M\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n         1984          2584          2777           538          3343 \nStaten Island \n         1115 \n\n$U\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n         3271          3748          3754           706          4105 \nStaten Island \n         1343"
+  },
+  {
+    "objectID": "sets/set2.html#q4-gambling",
+    "href": "sets/set2.html#q4-gambling",
+    "title": "Set #2 (50 pts)",
+    "section": "Q4: Gambling",
+    "text": "Q4: Gambling\nLet’s go gambling! We will create functions that run through two different types of games: one that involves a deck of cards and another that involves a spinning wheel.\nThis question involves using the sample() function in various ways. Read through the documentation to become familiar with how we would sample from a discrete number of outcomes with some probability.\n\n\n\n\n\n\nImportant(a)\n\n\n\nCreate a function named cards that takes in the following arguments:\n\nwager: amount of money wagered\ncolor: “red” or “black”\nnumber: 1, 2, …, 13 (assume aces are 1, jacks are 11, queens are 12, and kings are 13)\n\nYou will use sample() functions to return a color and number (assume the probabilities are of equal chance). Return winnings, which will be of a combination of these outcomes minus the wager:\n\nIf card is “red”, bettor wins three times their wager.\nIf card is a face card, bettor wins half their wager.\nIf card is “black” and a 10, bettor wins half their wager.\nAnything else results in no winnings.\n\nFor example, if a red jack is drawn, then the player wins 3.5x their wager back and we will return what they earned minus the wager they put in. As such, $10 wagered will return $25 in winnings.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nCreate a function named wheel that takes in the following arguments:\n\nwager: amount of money wagered\n\nReturn winnings, which will be the net gain of the following spin probabilities:\n\n10% chance that they win five times their wager\n20% chance that they win their wager back\n70% chance that they win no money back\n\nFor example, if $10 is wagered and they win on the 5x spot, they will get a net $40 in return.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nCreate a function named game that passes arguments without addressing them to the card and wheel games within the function. Use a sample() function with an if-else chain to determine which type of game they play, with the following specifications:\n\n30% chance they play cards\n70% chance they play the wheel\n\nReturn their net gain after playing the game.\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nUse the replicate() function to play the game 1000 times, with a wager of $10 each time. Take the cumsum() and plot these results across the number of iterations.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nRe-do part (c) by using a vectorized if or switch.\n\n\nWhen finished, commit and push this file to your SDS 270 repository."
+  },
+  {
+    "objectID": "sets/set2.html#q1-whats-missing",
+    "href": "sets/set2.html#q1-whats-missing",
+    "title": "Set #2 (50 pts)",
+    "section": "Q1: What’s Missing",
+    "text": "Q1: What’s Missing\nThis question centers on finding missing values from the dataset, but using certain choices and iteration we’ve mentioned in class. The whole question will center on the dogs dataset (that you will import in part (a)).\n\n\n\n\n\n\nImportant(a)\n\n\n\nGather the data from the resource mentioned above and load the data into your global environment. Name the dataset dogs.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nCreate a function named countMissing that takes in some atomic vector x and a singular value val and counts the number of times val shows up in the atomic vector x. You will return that number as a double value named count.\nFor any x that is not an atomic vector, return a message (as a character) that states that x is of the wrong type.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nFind out how missing values are handled in the dogs data (i.e. what is a missing value labeled as?). Then, use the countMissing function to find the number of missing values in the Breed column of the dogs data.\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nAs an extension to part (c), find the number of missing values in each column in dogs using a for-loop.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nIn part (d), explain how the for-loop works on the dogs data using the countMissing function.\n\n\n\n\n\n\n\n\nImportant(f)\n\n\n\nRepeat parts (d) and (e), but use a functional instead of a for-loop."
+  },
+  {
+    "objectID": "sets/set2.html#q2-dates",
+    "href": "sets/set2.html#q2-dates",
+    "title": "Set #2 (50 pts)",
+    "section": "Q2: Dates",
+    "text": "Q2: Dates\nWe now focus on data tidying but with an in-depth look at how certain functions can be written alternatively. We will once again use the dogs dataset.\n\n\n\n\n\n\nImportant(a)\n\n\n\nUse the separate() function from the dplyr package to break the DateOfBite column into three columns: Month, Day, and Year. Keep the old column when doing so.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nCreate an if-else chain of statements that would convert a value named month into a two-digit number as a character corresponding to the month and reassign that double back to month. Thus,\n\nmonth as “January” \\(\\rightarrow\\) month as “01”\nmonth as “February” \\(\\rightarrow\\) month as “02”\n…\nmonth as “December” \\(\\rightarrow\\) month as “12”\n\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nModify code you’ve created from part (b) such that…\n\nThe if-else chain is engrained inside a for-loop, which iterates through all observations in the dogs dataset\nWe perform comparison and re-assignment to each element in the Month column\n\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nUse the unite() function from the dplyr package to combine the Month, Day, and Year columns into one column named date that links them together with -.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nRedo parts (a-d) by using the case_match() and mutate() functions from dplyr in lieu of the if-else chain and for-loops. Additionally, combine the parts so they follow a chronological order with the use of the piping operator and unite the columns into a column named date2.\n\n\n\n\n\n\n\n\nImportant(f)\n\n\n\nDiscuss the efficiency and storage implications of using each of the two methods to modify the DateOfBite column."
+  },
+  {
+    "objectID": "sets/set2.html#q3-dog-bites-across-boroughs-and-gender",
+    "href": "sets/set2.html#q3-dog-bites-across-boroughs-and-gender",
+    "title": "Set #2 (50 pts)",
+    "section": "Q3: Dog Bites across Boroughs and Gender",
+    "text": "Q3: Dog Bites across Boroughs and Gender\nIn this question, we will create frequency tables regarding the borough where the bite occurred, in which we have a frequency table for each gender mentioned in the dataset. In other words,\n\n\n$F\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n          770           985          1163           238          1204 \nStaten Island \n          405 \n\n$M\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n         1984          2584          2777           538          3343 \nStaten Island \n         1115 \n\n$U\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n         3271          3748          3754           706          4105 \nStaten Island \n         1343 \n\n\nAs you might have guessed, we’ll do this the convoluted (and the straight-forward) way.\n\n\n\n\n\n\nImportant(a)\n\n\n\nReplicate the table above by writing code that utilizes the following:\n\nA list of size 3 that stores a frequency table of dog bites across boroughs in each element.\nA loop that iterates through each observation in the dogs dataset.\nA base R choice structure that…\n\nIncreases the number of dog bites in that borough within the gender\n\n\nHint: Consider how the list (and the elements within the list will be built). From there, consider how we would access the element in the element of the list, using the gender and current iteration to do so.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nIdentify a functional that will allow you to run a function on each group related to a variable. Then, use this functional to produce the same list as seen in the introduction of this question."
   }
 ]
