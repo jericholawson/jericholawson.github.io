@@ -1712,14 +1712,14 @@
     "href": "lectures/w3l2_act.html",
     "title": "Week 3, Lecture 2: ggplot2",
     "section": "",
-    "text": "In this activity, you will generate and replicate several plots based on the California Housing dataset, which analyzes housing information from the 1990 U.S. census. More information can be found here: link\nMake sure to create a .qmd file in your Activities repository first.\nTo import the dataset into your machine, do the following:\n\nImport the ‘housing.csv’ file using the following URL and code:\n\n\nhttps://jericholawson.github.io/classes/sds192/data/housing.csv\n\n\nlibrary(ggplot2)\nhousing &lt;- read.csv(\"https://jericholawson.github.io/classes/sds192/data/housing.csv\")"
+    "text": "In this activity, you will generate and replicate several plots based on the California Housing dataset, which analyzes housing information from the 1990 U.S. census. More information can be found here: link\nMake sure to create a .qmd file in your Activities repository first.\nTo import the dataset into your machine, do the following:\n\nImport the ‘housing.csv’ file using the following URL and code:\n\n\nhttps://jericholawson.github.io/classes/sds192/s26/data/housing.csv\n\n\nlibrary(ggplot2)\nhousing &lt;- read.csv(\"https://jericholawson.github.io/classes/sds192/s26/data/housing.csv\")"
   },
   {
     "objectID": "lectures/w3l2_act.html#introduction",
     "href": "lectures/w3l2_act.html#introduction",
     "title": "Week 3, Lecture 2: ggplot2",
     "section": "",
-    "text": "In this activity, you will generate and replicate several plots based on the California Housing dataset, which analyzes housing information from the 1990 U.S. census. More information can be found here: link\nMake sure to create a .qmd file in your Activities repository first.\nTo import the dataset into your machine, do the following:\n\nImport the ‘housing.csv’ file using the following URL and code:\n\n\nhttps://jericholawson.github.io/classes/sds192/data/housing.csv\n\n\nlibrary(ggplot2)\nhousing &lt;- read.csv(\"https://jericholawson.github.io/classes/sds192/data/housing.csv\")"
+    "text": "In this activity, you will generate and replicate several plots based on the California Housing dataset, which analyzes housing information from the 1990 U.S. census. More information can be found here: link\nMake sure to create a .qmd file in your Activities repository first.\nTo import the dataset into your machine, do the following:\n\nImport the ‘housing.csv’ file using the following URL and code:\n\n\nhttps://jericholawson.github.io/classes/sds192/s26/data/housing.csv\n\n\nlibrary(ggplot2)\nhousing &lt;- read.csv(\"https://jericholawson.github.io/classes/sds192/s26/data/housing.csv\")"
   },
   {
     "objectID": "lectures/w3l2_act.html#questions",
