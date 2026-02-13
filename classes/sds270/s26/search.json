@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksData\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n\n\n\n\n1: Set 1\n\n\n\nTBA\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksData\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n\n\n\n\n1: Set 1\n2: Set 2\n\n\n\nTBA\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)"
   },
   {
     "objectID": "sets/set1.html",
@@ -2657,7 +2657,7 @@
     "href": "schedule.html#week-3-assignment-control-flow-29---213",
     "title": "Schedule",
     "section": "Week 3: Assignment, Control Flow (2/9 - 2/13)",
-    "text": "Week 3: Assignment, Control Flow (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\n\n\n\n\n\n\nNoteLecture: Assignment and Memory\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due Wednesday, 2/11 at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\nMacroinvertebrates Dataset\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Control Flow\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due tonight at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\nMacroinvertebrates Dataset\n\nRead chapter 6 of Advanced R (before Monday’s class)"
+    "text": "Week 3: Assignment, Control Flow (2/9 - 2/13)\n\nMonday, 2/9Wednesday, 2/11\n\n\n\n\n\n\n\n\nNoteLecture: Assignment and Memory\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due Wednesday, 2/11 at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\nMacroinvertebrates Dataset\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Control Flow\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #1 due tonight at 11:59pm via your repository\n\nCreate new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository\nMacroinvertebrates Dataset\n\nRead chapter 6 of Advanced R (before Monday’s class)\nSet #2 due next Friday, 2/20 at 11:59pm via your repository\n\nCreate new .qmd file named “set2.qmd”, type answers in document, and stage/commit/push in repository\nDog Bite Data"
   },
   {
     "objectID": "schedule.html#week-5-iteration-and-exam-1-223---227",
@@ -3113,5 +3113,243 @@
     "title": "Set #2 (50 pts)",
     "section": "Q3: Dog Bites across Boroughs and Gender",
     "text": "Q3: Dog Bites across Boroughs and Gender\nIn this question, we will create frequency tables regarding the borough where the bite occurred, in which we have a frequency table for each gender mentioned in the dataset. In other words,\n\n\n$F\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n          770           985          1163           238          1204 \nStaten Island \n          405 \n\n$M\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n         1984          2584          2777           538          3343 \nStaten Island \n         1115 \n\n$U\n\n        Bronx      Brooklyn     Manhattan         Other        Queens \n         3271          3748          3754           706          4105 \nStaten Island \n         1343 \n\n\nAs you might have guessed, we’ll do this the convoluted (and the straight-forward) way.\n\n\n\n\n\n\nImportant(a)\n\n\n\nReplicate the table above by writing code that utilizes the following:\n\nA list of size 3 that stores a frequency table of dog bites across boroughs in each element.\nA loop that iterates through each observation in the dogs dataset.\nA base R choice structure that…\n\nIncreases the number of dog bites in that borough within the gender\n\n\nHint: Consider how the list (and the elements within the list will be built). From there, consider how we would access the element in the element of the list, using the gender and current iteration to do so.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nIdentify a functional that will allow you to run a function on each group related to a variable. Then, use this functional to produce the same list as seen in the introduction of this question."
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#last-time",
+    "href": "lectures/w5l1_mapReview.html#last-time",
+    "title": "Functionals - map()",
+    "section": "Last Time",
+    "text": "Last Time\n\nFunctionals\n\nWhat they are\nUsage\n\napply() statements\n\nWhat they are\nDifferent types\nExamples"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#today",
+    "href": "lectures/w5l1_mapReview.html#today",
+    "title": "Functionals - map()",
+    "section": "Today",
+    "text": "Today\n\nmap() statements\n\nWhat they are\nDifferent types\nExamples\n\n\n\nWe will focus on primarily Chapter 9 from Advanced R."
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#functional-types",
+    "href": "lectures/w5l1_mapReview.html#functional-types",
+    "title": "Functionals - map()",
+    "section": "Functional types",
+    "text": "Functional types\n\n\napply()\n\nbase R family of functionals\n\napply(), lapply(), vapply(), tapply(), replicate()\n\n\n\nmap()\n\nFrom purrr (which is part of tidyverse)\n\nmap(), map2(), pmap(), walk()"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#map",
+    "href": "lectures/w5l1_mapReview.html#map",
+    "title": "Functionals - map()",
+    "section": "map()",
+    "text": "map()\n\nSimilar to lapply()\n\nApply function to each element of list"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#map-with-scalar-second-argument",
+    "href": "lectures/w5l1_mapReview.html#map-with-scalar-second-argument",
+    "title": "Functionals - map()",
+    "section": "map() with scalar second argument",
+    "text": "map() with scalar second argument"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#map-with-vector-second-argument",
+    "href": "lectures/w5l1_mapReview.html#map-with-vector-second-argument",
+    "title": "Functionals - map()",
+    "section": "map() with vector second argument",
+    "text": "map() with vector second argument"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#map-examples",
+    "href": "lectures/w5l1_mapReview.html#map-examples",
+    "title": "Functionals - map()",
+    "section": "map() examples",
+    "text": "map() examples\n\nmap_int(starwars$films, length)\n\n [1] 5 6 7 4 5 3 3 1 1 6 3 2 5 4 1 3 3 1 5 5 3 1 1 2 1 2 1 1 1 1 1 3 1 3 2 1 1 1\n[39] 2 1 1 2 1 1 3 1 1 1 1 3 3 3 2 2 2 1 3 2 1 1 1 2 2 1 1 2 2 1 1 1 1 1 1 2 1 1\n[77] 2 1 1 2 2 1 1 1 1 1 1\n\nmap_chr(mpg, typeof)\n\nmanufacturer        model        displ         year          cyl        trans \n \"character\"  \"character\"     \"double\"    \"integer\"    \"integer\"  \"character\" \n         drv          cty          hwy           fl        class \n \"character\"    \"integer\"    \"integer\"  \"character\"  \"character\" \n\nmap(1:3, `^`, 2)\n\n[[1]]\n[1] 1\n\n[[2]]\n[1] 4\n\n[[3]]\n[1] 9"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#map2-with-scalar-third-argument",
+    "href": "lectures/w5l1_mapReview.html#map2-with-scalar-third-argument",
+    "title": "Functionals - map()",
+    "section": "map2() with scalar third argument",
+    "text": "map2() with scalar third argument\n\nCombing through two different arrays at the same time"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#map2-examples",
+    "href": "lectures/w5l1_mapReview.html#map2-examples",
+    "title": "Functionals - map()",
+    "section": "map2() examples",
+    "text": "map2() examples\n\nstarwars |&gt;\n  select(species, sex, gender) |&gt;\n  head(5)\n\n# A tibble: 5 × 3\n  species sex    gender   \n  &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;    \n1 Human   male   masculine\n2 Droid   none   masculine\n3 Droid   none   masculine\n4 Human   male   masculine\n5 Human   female feminine \n\ncis &lt;- function(sex, gender, num_chars) {\n  stringr::str_sub(sex, 1, num_chars) == stringr::str_sub(gender, 1, num_chars)\n}\nmap2_lgl(starwars$sex, starwars$gender, cis, num_chars = 1)\n\n [1]  TRUE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE  TRUE\n[13]  TRUE  TRUE  TRUE FALSE  TRUE    NA  TRUE  TRUE  TRUE FALSE  TRUE  TRUE\n[25]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE\n[37]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE\n[49]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE    NA    NA\n[61]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE\n[73]  TRUE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE    NA  TRUE  TRUE  TRUE\n[85]  TRUE FALSE  TRUE"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#map2-examples-1",
+    "href": "lectures/w5l1_mapReview.html#map2-examples-1",
+    "title": "Functionals - map()",
+    "section": "map2() examples",
+    "text": "map2() examples\n\nmap2_lgl(starwars$sex, starwars$gender, cis, num_chars = 3)\n\n [1] FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE\n[13] FALSE FALSE FALSE FALSE FALSE    NA FALSE FALSE FALSE FALSE FALSE FALSE\n[25] FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE\n[37] FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE  TRUE FALSE FALSE FALSE\n[49] FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE    NA    NA\n[61] FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE  TRUE FALSE FALSE  TRUE\n[73]  TRUE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE    NA FALSE FALSE  TRUE\n[85] FALSE FALSE  TRUE\n\nmap2_dbl(1:3, 0:2, `^`)\n\n[1] 1 2 9"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#walk2",
+    "href": "lectures/w5l1_mapReview.html#walk2",
+    "title": "Functionals - map()",
+    "section": "walk2()",
+    "text": "walk2()"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#walk2-1",
+    "href": "lectures/w5l1_mapReview.html#walk2-1",
+    "title": "Functionals - map()",
+    "section": "walk2()",
+    "text": "walk2()\n\n# img is a named list of 23 ggplots\nto_print &lt;- tibble(\n  name = names(img), \n  img = img,\n  filename = paste0(name, \".jpg\"),\n  path = fs::path(here::here(filename))\n)\n\nwalk2(\n  to_print$img, to_print$path,\n  ggsave, width = 10, height = 6, dpi = 600\n)"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#pmap",
+    "href": "lectures/w5l1_mapReview.html#pmap",
+    "title": "Functionals - map()",
+    "section": "pmap()",
+    "text": "pmap()"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#pmap-example",
+    "href": "lectures/w5l1_mapReview.html#pmap-example",
+    "title": "Functionals - map()",
+    "section": "pmap() example",
+    "text": "pmap() example\n\nstarwars |&gt;\n  select(sex, gender) |&gt;\n  pmap_lgl(cis, num_chars = 1)\n\n [1]  TRUE FALSE FALSE  TRUE  TRUE  TRUE  TRUE FALSE  TRUE  TRUE  TRUE  TRUE\n[13]  TRUE  TRUE  TRUE FALSE  TRUE    NA  TRUE  TRUE  TRUE FALSE  TRUE  TRUE\n[25]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE\n[37]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE\n[49]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE    NA    NA\n[61]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE\n[73]  TRUE FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE    NA  TRUE  TRUE  TRUE\n[85]  TRUE FALSE  TRUE"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#pmap-example-1",
+    "href": "lectures/w5l1_mapReview.html#pmap-example-1",
+    "title": "Functionals - map()",
+    "section": "pmap() example",
+    "text": "pmap() example\n\nparams &lt;- tibble(\n  mean = -1:1,\n  sd = c(0.5, 1, 2)\n)\n\npmap(params, rnorm, n = 1000) |&gt;\n  map_dbl(mean)\n\n[1] -1.01759521  0.02774658  1.01490980"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#cheatsheet",
+    "href": "lectures/w5l1_mapReview.html#cheatsheet",
+    "title": "Functionals - map()",
+    "section": "Cheatsheet",
+    "text": "Cheatsheet\n\nCheatsheet"
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#for-now-and-wednesday",
+    "href": "lectures/w5l1_mapReview.html#for-now-and-wednesday",
+    "title": "Functionals - map()",
+    "section": "For Now and Wednesday:",
+    "text": "For Now and Wednesday:\n\nReview\nExam #1!!\n\nWednesday\n75 minutes"
+  },
+  {
+    "objectID": "lectures/w5l1_act.html",
+    "href": "lectures/w5l1_act.html",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "",
+    "text": "We will utilize CO2 concentration data from Mauna Loa between 1959-1997. More information about the dataset can be found by using ?co2. Run the following code below to create a data frame with that co2 data:\n\nlibrary(purrr)\nco2_df &lt;- as.data.frame(matrix(co2, nrow = 39, ncol = 12, byrow = T))\nrownames(co2_df) &lt;- 1959:1997\ncolnames(co2_df) &lt;- c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n                   \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\")\n\nWith this data frame, we will find out how we can use the various map() functions to complete particular analytical tasks.\n\n\n\n\n\n\nImportantQ1\n\n\n\nUsing the co2_df dataset, subset the data into two different datasets, with the following specifications:\n\nco2_60s: Data from 1960-1969\nco2_70s: Data from 1970-1979\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nGenerate a summary of every single month (column) from the co2_60s data.\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nCreate a function that takes the mean of the difference of two atomic vectors (as inputs x, y) and returns this mean. Then, use one of the map() functions to apply the created function on the co2_60s and co2_70smonths.\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nFind the minimum monthly CO2 level across the years in the co2_60s data."
+  },
+  {
+    "objectID": "lectures/w5l1_act.html#introduction",
+    "href": "lectures/w5l1_act.html#introduction",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "",
+    "text": "We will utilize CO2 concentration data from Mauna Loa between 1959-1997. More information about the dataset can be found by using ?co2. Run the following code below to create a data frame with that co2 data:\n\nlibrary(purrr)\nco2_df &lt;- as.data.frame(matrix(co2, nrow = 39, ncol = 12, byrow = T))\nrownames(co2_df) &lt;- 1959:1997\ncolnames(co2_df) &lt;- c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n                   \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\")\n\nWith this data frame, we will find out how we can use the various map() functions to complete particular analytical tasks.\n\n\n\n\n\n\nImportantQ1\n\n\n\nUsing the co2_df dataset, subset the data into two different datasets, with the following specifications:\n\nco2_60s: Data from 1960-1969\nco2_70s: Data from 1970-1979\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nGenerate a summary of every single month (column) from the co2_60s data.\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nCreate a function that takes the mean of the difference of two atomic vectors (as inputs x, y) and returns this mean. Then, use one of the map() functions to apply the created function on the co2_60s and co2_70smonths.\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nFind the minimum monthly CO2 level across the years in the co2_60s data."
+  },
+  {
+    "objectID": "lectures/w5l1_act.html#turn-in",
+    "href": "lectures/w5l1_act.html#turn-in",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "lectures/w5l1_actTemp.html",
+    "href": "lectures/w5l1_actTemp.html",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "",
+    "text": "We will utilize CO2 concentration data from Mauna Loa between 1959-1997. More information about the dataset can be found by using ?co2. Run the following code below to create a data frame with that co2 data:\n\nlibrary(purrr)\nco2_df &lt;- as.data.frame(matrix(co2, nrow = 39, ncol = 12, byrow = T))\nrownames(co2_df) &lt;- 1959:1997\ncolnames(co2_df) &lt;- c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n                   \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\")\n\nWith this data frame, we will find out how we can use the various map() functions to complete particular analytical tasks.\n\n\n\n\n\n\nImportantQ1\n\n\n\nUsing the co2_df dataset, subset the data into two different datasets, with the following specifications:\n\nco2_60s: Data from 1960-1969\nco2_70s: Data from 1970-1979\n\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nGenerate a summary of every single month (column) from the co2_60s data.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nCreate a function that takes the mean of the difference of two atomic vectors (as inputs x, y) and returns this mean. Then, use one of the map() functions to apply the created function on the co2_60s and co2_70smonths.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nFind the minimum monthly CO2 level across the years in the co2_60s data.\n\n# PUT SOLUTION HERE"
+  },
+  {
+    "objectID": "lectures/w5l1_actTemp.html#introduction",
+    "href": "lectures/w5l1_actTemp.html#introduction",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "",
+    "text": "We will utilize CO2 concentration data from Mauna Loa between 1959-1997. More information about the dataset can be found by using ?co2. Run the following code below to create a data frame with that co2 data:\n\nlibrary(purrr)\nco2_df &lt;- as.data.frame(matrix(co2, nrow = 39, ncol = 12, byrow = T))\nrownames(co2_df) &lt;- 1959:1997\ncolnames(co2_df) &lt;- c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n                   \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\")\n\nWith this data frame, we will find out how we can use the various map() functions to complete particular analytical tasks.\n\n\n\n\n\n\nImportantQ1\n\n\n\nUsing the co2_df dataset, subset the data into two different datasets, with the following specifications:\n\nco2_60s: Data from 1960-1969\nco2_70s: Data from 1970-1979\n\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nGenerate a summary of every single month (column) from the co2_60s data.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nCreate a function that takes the mean of the difference of two atomic vectors (as inputs x, y) and returns this mean. Then, use one of the map() functions to apply the created function on the co2_60s and co2_70smonths.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nFind the minimum monthly CO2 level across the years in the co2_60s data.\n\n# PUT SOLUTION HERE"
+  },
+  {
+    "objectID": "lectures/w5l1_actTemp.html#turn-in",
+    "href": "lectures/w5l1_actTemp.html#turn-in",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#activity",
+    "href": "lectures/w5l1_mapReview.html#activity",
+    "title": "Functionals - map()",
+    "section": "Activity",
+    "text": "Activity\nWe’ll use the CO2 data below to use the various map() functions:\n\nlibrary(purrr)\nco2_df &lt;- as.data.frame(matrix(co2, nrow = 39, ncol = 12, byrow = T))\nrownames(co2_df) &lt;- 1959:1997\ncolnames(co2_df) &lt;- c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n                   \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\")\n\n\nUsing the co2_df dataset, subset the data into two different datasets, with the following specifications:\n\n\nco2_60s: Data from 1960-1969\nco2_70s: Data from 1970-1979\n\n\nGenerate a summary of every single month (column) from the co2_60s data.\nCreate a function that takes the mean of the difference of two atomic vectors (as inputs x, y) and returns this mean. Then, use one of the map() functions to apply the created function on the co2_60s and co2_70smonths.\nFind the minimum monthly CO2 level across the years in the co2_60s data."
+  },
+  {
+    "objectID": "resources/studyGuide1.html",
+    "href": "resources/studyGuide1.html",
+    "title": "Study Guide for Exam #1",
+    "section": "",
+    "text": "The first exam will focus on concepts and exercises from the following topics/chapters:\n\nNames and values (Ch. 2, AR)\nVectors (Ch. 3, AR)\nSubsetting (Ch. 4, AR)\nControl flow (Ch. 5, AR)\nFunctions (Ch. 6, AR)\nFunctionals (Ch. 9, AR)\n\nExpect problems to be of a similar form to the HW problems, but with less emphasis on precise code and more emphasis on problem-solving and connecting concepts together. This means you will be working with particular datasets, but will be writing in prose about how to work through a problem (e.g. psuedo-code, sentences) over code.\nThere will be four questions on the exam and you will have 75 minutes to complete the exam. This will be a closed-note exam, with no access to any resources whatever. Most questions will be centered around a particular dataset, with information regarding some characteristics and all variables. Please read this information before tackling the problems."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#background",
+    "href": "resources/studyGuide1.html#background",
+    "title": "Study Guide for Exam #1",
+    "section": "",
+    "text": "The first exam will focus on concepts and exercises from the following topics/chapters:\n\nNames and values (Ch. 2, AR)\nVectors (Ch. 3, AR)\nSubsetting (Ch. 4, AR)\nControl flow (Ch. 5, AR)\nFunctions (Ch. 6, AR)\nFunctionals (Ch. 9, AR)\n\nExpect problems to be of a similar form to the HW problems, but with less emphasis on precise code and more emphasis on problem-solving and connecting concepts together. This means you will be working with particular datasets, but will be writing in prose about how to work through a problem (e.g. psuedo-code, sentences) over code.\nThere will be four questions on the exam and you will have 75 minutes to complete the exam. This will be a closed-note exam, with no access to any resources whatever. Most questions will be centered around a particular dataset, with information regarding some characteristics and all variables. Please read this information before tackling the problems."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#background-1",
+    "href": "resources/studyGuide1.html#background-1",
+    "title": "Study Guide for Exam #1",
+    "section": "Background",
+    "text": "Background\nThe dataset we will focus our analysis on is a dataset regarding seven different dry beans and their characteristics over time. You can see a real synposis here:\n\nSeven different types of dry beans were used in this research, taking into account the features such as form, shape, type, and structure by the market situation. A computer vision system was developed to distinguish seven different registered varieties of dry beans with similar features in order to obtain uniform seed classification. For the classification model, images of 13,611 grains of 7 different registered dry beans were taken with a high-resolution camera. Bean images obtained by computer vision system were subjected to segmentation and feature extraction stages, and a total of 16 features; 12 dimensions and 4 shape forms, were obtained from the grains. Link\n\nArea: The area of a bean zone and the number of pixels within its boundaries (double) Perimeter: Bean circumference is defined as the length of its border (double) MajorAxisLength: The distance between the ends of the longest line that can be drawn from a bean (double) MinorAxisLength: The longest line that can be drawn from the bean while standing perpendicular to the main axis (double) AspectRatio: Defines the relationship between MajorAxisLength and MinorAxisLength (double) Eccentricity: Eccentricity of the ellipse having the same moments as the region (double) ConvexArea: Number of pixels in the smallest convex polygon that can contain the area of a bean seed (integer) EquivDiameter: Equivalent diameter: The diameter of a circle having the same area as a bean seed area (double) Extent: The ratio of the pixels in the bounding box to the bean area (double) Solidity: Also known as convexity. The ratio of the pixels in the convex shell to those found in beans (double) Roundness: Calculated with the following formula: \\(\\frac{4 \\pi A}{P^2}\\) (double) Compactness: Measures the roundness of an object (units of Ed/L, double) ShapeFactor1: (double) ShapeFactor2: (double) ShapeFactor3: (double) ShapeFactor4: (double) Class: Seker, Barbunya, Bombay, Cali, Dermosan, Horoz, and Sira (character)"
+  },
+  {
+    "objectID": "resources/studyGuide1.html#q1-data-preparation-40-pts",
+    "href": "resources/studyGuide1.html#q1-data-preparation-40-pts",
+    "title": "Study Guide for Exam #1",
+    "section": "Q1: Data Preparation (40 pts)",
+    "text": "Q1: Data Preparation (40 pts)\n\nHighlight the main differences between atomic vector and list objects.\nLet the Area and Perimeter be the first two columns in the dataset. Describe two ways we can access the areas and perimeters of all observations with an Area between 30,000 and 40,000 (inclusive).\nDescribe how memory is allocated for data2 and data3 when we run the following code at each of the checkpoints (labeled #CP _).\n\n\nWrite pseudo-code/code that would print the summary of the AspectRatio for each group of the Class column in our data object.\n\n\nDescribe what would happen in the moment and with the data if we ran the following command:"
+  },
+  {
+    "objectID": "resources/studyGuide1.html#q2-sorting",
+    "href": "resources/studyGuide1.html#q2-sorting",
+    "title": "Study Guide for Exam #1",
+    "section": "Q2: Sorting",
+    "text": "Q2: Sorting\n\nSort by MajorAxisLength, MinorAxisLength, put in two data frames\nKeep most extreme cases\nCreate function to take in variable and data to print out top 3"
+  },
+  {
+    "objectID": "resources/studyGuide1.html#q3-evaluating-changes-in-script",
+    "href": "resources/studyGuide1.html#q3-evaluating-changes-in-script",
+    "title": "Study Guide for Exam #1",
+    "section": "Q3: Evaluating Changes in Script",
+    "text": "Q3: Evaluating Changes in Script"
+  },
+  {
+    "objectID": "resources/studyGuide1.html#q4-building-a-whole-script",
+    "href": "resources/studyGuide1.html#q4-building-a-whole-script",
+    "title": "Study Guide for Exam #1",
+    "section": "Q4: Building A Whole Script",
+    "text": "Q4: Building A Whole Script\n\n(5 pts) Provide the code/pseudocode with the appropriate symbols that would allow us to access the Day_of_week variable while retaining the data.frame type.\n\n\n(5 pts) Provide the code/pseudocode with the appropriate symbols that would allow us to access the Day_of_week variable and its type.\n\n\n(10 pts) Suppose we want to store the summary of each non-character variable in a pre-allocated list through the use of a for-loop. Critique the code below and spot areas in which problems may occur.\n\n\nsummaries &lt;- vector(mode = \"list\", length = ncol(data))\nfor (i in c(1, ncol(data))){\n  summaries &lt;- summary(data[i])\n}\n\n\n(8 pts) Discuss how we can use a functional to perform the same task as seen in part (c).\n(7 pts) The summary() function can take in a variety of arguments to be sent downstream to function calls nested within it depending on the object we are wanting a summary of. Address how we can handle these arguments if we were constructing the summary() function."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#q3-functions",
+    "href": "resources/studyGuide1.html#q3-functions",
+    "title": "Study Guide for Exam #1",
+    "section": "Q3: Functions",
+    "text": "Q3: Functions\n\n(16 pts) Suppose we create code that defines new objects in R and creates a new function to run through a calculation:\n\nFor each sub-part (4 pts each), write what the output will be when running the following line in R:\n\nsimpleCalc(x, y, z)\nsimpleCalc(x = 7, y, z)\nx\nx + simpleCalc(x = 2, y = 1, z)\n\n\n(9 pts) Re-write the simpleCalc function in part (a) such that we’re treating x and y as doubles of a length greater than 1. You do not need to account for the re-assignment of x to 3.\n\n\n(10 pts) Suppose we remove the simpleCalc() function from our global environment. Describe the implications and consequences of this action with regard to memory allocation."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#q4-building-code",
+    "href": "resources/studyGuide1.html#q4-building-code",
+    "title": "Study Guide for Exam #1",
+    "section": "Q4: Building Code",
+    "text": "Q4: Building Code\nSketch out a script (of code/pseudocode and comments) that accomplishes the following:\n\nI want to create an object in R that looks at every single day of the week (e.g. Monday, Tuesday, …, Sunday) and houses the following: a five-number summary of the usage, a generic list of timestamps that indicate any outliers, and a frequency table of the types of loads during these days of the week.\n\nIn this sketch, specify what data/coding structures you will use and how they will accomplish the task. Consider appropriate ways to accomplish these tasks."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#q5-extra-credit-5-pts",
+    "href": "resources/studyGuide1.html#q5-extra-credit-5-pts",
+    "title": "Study Guide for Exam #1",
+    "section": "Q5: Extra Credit (5 pts)",
+    "text": "Q5: Extra Credit (5 pts)\nDescribe a concept, small or large, that was not seen in this exam that you can elaborate on in 1-2 sentences."
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jericho Lawson">
-<meta name="dcterms.date" content="2026-02-08">
+<meta name="dcterms.date" content="2026-02-10">
 
 <title>Set #2 (50 pts) – SDS 270: Programming for Data Science in R, Spring 2026</title>
 <style>
@@ -107,6 +107,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -172,10 +201,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
   <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
-  <li><a href="#q1-data-preparation" id="toc-q1-data-preparation" class="nav-link" data-scroll-target="#q1-data-preparation">Q1: Data Preparation</a></li>
-  <li><a href="#q2" id="toc-q2" class="nav-link" data-scroll-target="#q2">Q2:</a></li>
-  <li><a href="#q4" id="toc-q4" class="nav-link" data-scroll-target="#q4">Q4</a></li>
-  <li><a href="#q5-maybe" id="toc-q5-maybe" class="nav-link" data-scroll-target="#q5-maybe">Q5 (maybe?)</a></li>
+  <li><a href="#q1-whats-missing" id="toc-q1-whats-missing" class="nav-link" data-scroll-target="#q1-whats-missing">Q1: What’s Missing</a></li>
+  <li><a href="#q2-dates" id="toc-q2-dates" class="nav-link" data-scroll-target="#q2-dates">Q2: Dates</a></li>
+  <li><a href="#q3-dog-bites-across-boroughs-and-gender" id="toc-q3-dog-bites-across-boroughs-and-gender" class="nav-link" data-scroll-target="#q3-dog-bites-across-boroughs-and-gender">Q3: Dog Bites across Boroughs and Gender</a></li>
+  <li><a href="#q4-gambling" id="toc-q4-gambling" class="nav-link" data-scroll-target="#q4-gambling">Q4: Gambling</a></li>
   </ul>
 </nav>
     </div>
@@ -202,7 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 8, 2026</p>
+      <p class="date">February 10, 2026</p>
     </div>
   </div>
   
@@ -229,12 +258,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Control flow (Ch. 5, AR)</li>
 <li>Functions (Ch. 6, AR)</li>
+<li>Functionals (partly, Ch. 9, AR)</li>
 </ul>
 <p>Do note that other traits of R may show up in these problems. Make sure to carefully read and follow directions for each problem.</p>
 <p>All problems will center around the DOHMH Dog Bite Data collected by the Department of Health and Mental Hygiene in NYC. You can download the data and view its metadata <a href="https://data.cityofnewyork.us/Health/DOHMH-Dog-Bite-Data/rsgh-akpg/about_data">here</a>.</p>
+<p>Additionally, you will use the following packages below:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lobstr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
-<section id="q1-data-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="q1-data-preparation">Q1: Data Preparation</h2>
+<section id="q1-whats-missing" class="level2">
+<h2 class="anchored" data-anchor-id="q1-whats-missing">Q1: What’s Missing</h2>
+<p>This question centers on finding missing values from the dataset, but using certain choices and iteration we’ve mentioned in class. The whole question will center on the <code>dogs</code> dataset (that you will import in part (a)).</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -245,10 +281,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>load data in</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>dogs <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/dogs.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<p>Gather the data from the resource mentioned above and load the data into your global environment. Name the dataset <code>dogs</code>.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -261,7 +294,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>create function to find missing values in given vector</p>
+<p>Create a function named <code>countMissing</code> that takes in some atomic vector <code>x</code> and a singular value <code>val</code> and counts the number of times <code>val</code> shows up in the atomic vector <code>x</code>. You will return that number as a double value named <code>count</code>.</p>
+<p>For any <code>x</code> that is not an atomic vector, return a message (as a character) that states that <code>x</code> is of the wrong type.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -274,7 +308,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>use function with sapply</p>
+<p>Find out how missing values are handled in the <code>dogs</code> data (i.e.&nbsp;what is a missing value labeled as?). Then, use the <code>countMissing</code> function to find the number of missing values in the <code>Breed</code> column of the <code>dogs</code> data.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -287,7 +321,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>create function named mean, taking particular mean of choice</p>
+<p>As an extension to part (c), find the number of missing values in each column in <code>dogs</code> using a for-loop.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -300,152 +334,277 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>discuss issues</p>
+<p>In part (d), explain how the for-loop works on the <code>dogs</code> data using the <code>countMissing</code> function.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(f)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Repeat parts (d) and (e), but use a functional instead of a for-loop.</p>
 </div>
 </div>
 </section>
-<section id="q2" class="level2">
-<h2 class="anchored" data-anchor-id="q2">Q2:</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Separate to month day year</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dogs <span class="ot">&lt;-</span> dogs <span class="sc">|&gt;</span> <span class="fu">separate</span>(DateOfBite, <span class="fu">c</span>(<span class="st">"Month"</span>, <span class="st">"Day"</span>, <span class="st">"Year"</span>))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Build if statement structure jan --&gt; 01</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"January"</span>){</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"01"</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"February"</span>){</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"02"</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"March"</span>){</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"03"</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"April"</span>){</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"04"</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"May"</span>){</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"05"</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"June"</span>){</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"06"</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"July"</span>){</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"07"</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"August"</span>){</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"08"</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"September"</span>){</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"09"</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"October"</span>){</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"10"</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (month <span class="sc">==</span> <span class="st">"November"</span>){</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"11"</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  month <span class="ot">=</span> <span class="st">"12"</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine together</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(dogs)){</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"January"</span>){</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"01"</span></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"February"</span>){</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"02"</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"March"</span>){</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"03"</span></span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"April"</span>){</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"04"</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"May"</span>){</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"05"</span></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"June"</span>){</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"06"</span></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"July"</span>){</span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"07"</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"August"</span>){</span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"08"</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"September"</span>){</span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"09"</span></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"October"</span>){</span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"10"</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Month[i] <span class="sc">==</span> <span class="st">"November"</span>){</span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"11"</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    dogs<span class="sc">$</span>Month[i] <span class="ot">=</span> <span class="st">"12"</span></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Unite date</span></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>dogs <span class="ot">&lt;-</span> dogs <span class="sc">|&gt;</span> <span class="fu">unite</span>(<span class="at">col =</span> <span class="st">"date"</span>, Month, Day, Year, <span class="at">sep =</span> <span class="st">"-"</span>)</span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="co"># Create date object</span></span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="co">#dogs$date &lt;- as.Date(dogs$date, format = "%m-%d-%Y")</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="q2-dates" class="level2">
+<h2 class="anchored" data-anchor-id="q2-dates">Q2: Dates</h2>
+<p>We now focus on data tidying but with an in-depth look at how certain functions can be written alternatively. We will once again use the <code>dogs</code> dataset.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dogs<span class="sc">$</span>date)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>dogBiteList <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(dogs)){</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span>(dogs<span class="sc">$</span>date[i] <span class="sc">%in%</span> <span class="fu">names</span>(dogBiteList))){</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    dogBiteList[[dogs<span class="sc">$</span>date[i]]] <span class="ot">=</span> <span class="fu">rep</span>(<span class="dv">0</span>, <span class="dv">6</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (dogs<span class="sc">$</span>Borough[i] <span class="sc">==</span> <span class="st">"Bronx"</span>){</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">1</span>] <span class="ot">=</span> dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">1</span>] <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Borough[i] <span class="sc">==</span> <span class="st">"Brooklyn"</span>){</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">2</span>] <span class="ot">=</span> dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">2</span>] <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Borough[i] <span class="sc">==</span> <span class="st">"Manhattan"</span>){</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">3</span>] <span class="ot">=</span> dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">3</span>] <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Borough[i] <span class="sc">==</span> <span class="st">"Other"</span>){</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">4</span>] <span class="ot">=</span> dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">4</span>] <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (dogs<span class="sc">$</span>Borough[i] <span class="sc">==</span> <span class="st">"Queens"</span>){</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">5</span>] <span class="ot">=</span> dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">5</span>] <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">6</span>] <span class="ot">=</span> dogBiteList[[dogs<span class="sc">$</span>date[i]]][<span class="dv">6</span>] <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(a)
 </div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(dogs<span class="sc">$</span>date)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(dogs<span class="sc">$</span>Borough)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(dogs<span class="sc">$</span>Borough, dogs<span class="sc">$</span>date, table)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use the <code>separate()</code> function from the <code>dplyr</code> package to break the <code>DateOfBite</code> column into three columns: <code>Month</code>, <code>Day</code>, and <code>Year</code>. Keep the old column when doing so.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(b)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create an if-else chain of statements that would convert a value named <code>month</code> into a two-digit number as a character corresponding to the month and reassign that double back to <code>month</code>. Thus,</p>
+<ul>
+<li><code>month</code> as “January” <span class="math inline">\(\rightarrow\)</span> <code>month</code> as “01”</li>
+<li><code>month</code> as “February” <span class="math inline">\(\rightarrow\)</span> <code>month</code> as “02”</li>
+<li>…</li>
+<li><code>month</code> as “December” <span class="math inline">\(\rightarrow\)</span> <code>month</code> as “12”</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(c)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Modify code you’ve created from part (b) such that…</p>
+<ul>
+<li>The if-else chain is engrained inside a for-loop, which iterates through all observations in the <code>dogs</code> dataset</li>
+<li>We perform comparison and re-assignment to each element in the <code>Month</code> column</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(d)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use the <code>unite()</code> function from the <code>dplyr</code> package to combine the <code>Month</code>, <code>Day</code>, and <code>Year</code> columns into one column named <code>date</code> that links them together with <code>-</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(e)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Redo parts (a-d) by using the <code>case_match()</code> and <code>mutate()</code> functions from <code>dplyr</code> in lieu of the if-else chain and for-loops. Additionally, combine the parts so they follow a chronological order with the use of the piping operator and unite the columns into a column named <code>date2</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(f)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Discuss the efficiency and storage implications of using each of the two methods to modify the <code>DateOfBite</code> column.</p>
+</div>
 </div>
 </section>
-<section id="q4" class="level2">
-<h2 class="anchored" data-anchor-id="q4">Q4</h2>
+<section id="q3-dog-bites-across-boroughs-and-gender" class="level2">
+<h2 class="anchored" data-anchor-id="q3-dog-bites-across-boroughs-and-gender">Q3: Dog Bites across Boroughs and Gender</h2>
+<p>In this question, we will create frequency tables regarding the borough where the bite occurred, in which we have a frequency table for each gender mentioned in the dataset. In other words,</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>subgame <span class="ot">&lt;-</span> <span class="cf">function</span>(color, number, wager){</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (color <span class="sc">==</span> <span class="st">"red"</span>){</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    win <span class="ot">=</span> wager</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (number <span class="sc">&gt;=</span> <span class="dv">2</span> <span class="sc">&amp;</span> number <span class="sc">&lt;=</span> <span class="dv">10</span>){</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>      win <span class="ot">=</span> <span class="sc">-</span>wager</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      win <span class="ot">=</span> <span class="dv">0</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(win)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>game <span class="ot">&lt;-</span> <span class="cf">function</span>(money, ...){</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  spin <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">size =</span> <span class="dv">1</span>, <span class="at">prob =</span> <span class="fu">c</span>(<span class="fl">0.2</span>, <span class="fl">0.7</span>, <span class="fl">0.1</span>))</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (spin <span class="sc">==</span> <span class="dv">1</span>){</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    money <span class="ot">=</span> money <span class="sc">+</span> <span class="dv">5</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (spin <span class="sc">==</span> <span class="dv">2</span>){</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    color <span class="ot">=</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"black"</span>), <span class="dv">1</span>)</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    number <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">13</span>, <span class="dv">1</span>)</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    money <span class="ot">=</span> money <span class="sc">+</span> <span class="fu">subgame</span>(color, number, ...)</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    money <span class="ot">=</span> <span class="dv">0</span></span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(money)</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$F
+
+        Bronx      Brooklyn     Manhattan         Other        Queens 
+          770           985          1163           238          1204 
+Staten Island 
+          405 
+
+$M
+
+        Bronx      Brooklyn     Manhattan         Other        Queens 
+         1984          2584          2777           538          3343 
+Staten Island 
+         1115 
+
+$U
+
+        Bronx      Brooklyn     Manhattan         Other        Queens 
+         3271          3748          3754           706          4105 
+Staten Island 
+         1343 </code></pre>
 </div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">game</span>(<span class="dv">20</span>, <span class="at">wager =</span> <span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>spin <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">size =</span> <span class="dv">1</span>, <span class="at">prob =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="fl">0.4</span>, <span class="fl">0.1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>As you might have guessed, we’ll do this the convoluted (and the straight-forward) way.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">replicate</span>(<span class="dv">10</span>, <span class="fu">game</span>(<span class="dv">20</span>, <span class="at">wager =</span> <span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(a)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Replicate the table above by writing code that utilizes the following:</p>
+<ul>
+<li>A list of size 3 that stores a frequency table of dog bites across boroughs in each element.</li>
+<li>A loop that iterates through each observation in the <code>dogs</code> dataset.</li>
+<li>A base R choice structure that…
+<ul>
+<li>Increases the number of dog bites in that borough within the gender</li>
+</ul></li>
+</ul>
+<p>Hint: Consider how the list (and the elements within the list will be built). From there, consider how we would access the element in the element of the list, using the gender and current iteration to do so.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(b)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Identify a functional that will allow you to run a function on each <strong>group</strong> related to a variable. Then, use this functional to produce the same list as seen in the introduction of this question.</p>
+</div>
 </div>
 </section>
-<section id="q5-maybe" class="level2">
-<h2 class="anchored" data-anchor-id="q5-maybe">Q5 (maybe?)</h2>
+<section id="q4-gambling" class="level2">
+<h2 class="anchored" data-anchor-id="q4-gambling">Q4: Gambling</h2>
+<p>Let’s go gambling! We will create functions that run through two different types of games: one that involves a deck of cards and another that involves a spinning wheel.</p>
+<p>This question involves using the <code>sample()</code> function in various ways. Read through the documentation to become familiar with how we would sample from a discrete number of outcomes with some probability.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(a)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create a function named <code>cards</code> that takes in the following arguments:</p>
+<ul>
+<li><code>wager</code>: amount of money wagered</li>
+<li><code>color</code>: “red” or “black”</li>
+<li><code>number</code>: 1, 2, …, 13 (assume aces are 1, jacks are 11, queens are 12, and kings are 13)</li>
+</ul>
+<p>You will use <code>sample()</code> functions to return a color and number (assume the probabilities are of equal chance). Return <code>winnings</code>, which will be of a combination of these outcomes minus the wager:</p>
+<ul>
+<li>If card is “red”, bettor wins three times their wager.</li>
+<li>If card is a face card, bettor wins half their wager.</li>
+<li>If card is “black” and a 10, bettor wins half their wager.</li>
+<li>Anything else results in no winnings.</li>
+</ul>
+<p>For example, if a red jack is drawn, then the player wins 3.5x their wager back and we will return what they earned minus the wager they put in. As such, $10 wagered will return $25 in winnings.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(b)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create a function named <code>wheel</code> that takes in the following arguments:</p>
+<ul>
+<li><code>wager</code>: amount of money wagered</li>
+</ul>
+<p>Return <code>winnings</code>, which will be the net gain of the following spin probabilities:</p>
+<ul>
+<li>10% chance that they win five times their wager</li>
+<li>20% chance that they win their wager back</li>
+<li>70% chance that they win no money back</li>
+</ul>
+<p>For example, if $10 is wagered and they win on the 5x spot, they will get a net $40 in return.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(c)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create a function named <code>game</code> that <em>passes</em> arguments without addressing them to the <code>card</code> and <code>wheel</code> games within the function. Use a <code>sample()</code> function with an if-else chain to determine which type of game they play, with the following specifications:</p>
+<ul>
+<li>30% chance they play cards</li>
+<li>70% chance they play the wheel</li>
+</ul>
+<p>Return their net gain after playing the game.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(d)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use the <code>replicate()</code> function to play the game 1000 times, with a wager of $10 each time. Take the <code>cumsum()</code> and plot these results across the number of iterations.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(e)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Re-do part (c) by using a vectorized if or switch.</p>
+</div>
+</div>
+<p>When finished, commit and push this file to your SDS 270 repository.</p>
 
 
 </section>
