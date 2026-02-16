@@ -1,0 +1,321 @@
+---
+title: "Exercises from Week 4, Lecture 1: Functions"
+subtitle: "SDS 270"
+format: html
+---
+
+
+## Introduction
+
+In these exercises, we will learn how to find out about functions and the principles of lexical scoping. We will investigate a use of the dots.
+
+**Goal:** By the end of this lab, you should be able to retrieve information about functions and understand how lexical scoping works in R.
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+```
+
+## Learning about Functions
+There are many functions in R, and nobody knows how all of them work. From time to time it is helpful to retrieve information about these functions. The documentation in `help()` is great to read, but it doesn’t always provide the information you need.
+
+### Arguments
+
+The first question you may have is what arguments a function takes. We can learn this by running `args()` on the bare name of the function.
+
+```{r}
+args(dplyr::filter)
+```
+
+```{r}
+args(print)
+```
+
+Note that for S3 generic function like `print()`, you can also find the arguments for specific methods.
+
+```{r}
+args(print.data.frame)
+```
+
+## Exercises
+
+::: {.callout-important}
+
+### Q1
+
+Find the arguments for `tidyr::pivot_longer()`.
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+::: {.callout-important}
+
+### Q2
+
+Think of another function whose arguments you always forget. Find them using `args()`.
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+### The Body
+The `body()` function returns the actual code that runs inside a function. There are a several reasons why you might want to see this:
+
+- It’s the only way to actually see what a function is doing
+- Reading other people’s code is a great way to improve your own ability to write code
+- If the documentation doesn’t answer your question, perhaps the code will
+- Inspecting the code inside a function will help you to think more like a developer, as opposed to a user.
+
+```{r}
+body(tibble)
+```
+
+Note that a function may call unexported functions (e.g., `tibble_quos()`) that you won’t recognize. Since the function is not exported, you have to use the triple colon operator to view its source.
+
+```{r}
+body(tibble:::tibble_quos)
+```
+
+If you try to view the body of an S3 generic function, you will find that it is rather short.
+
+```{r}
+body(print)
+```
+
+A generic function usually doesn’t do anything other than call one of its methods. Those methods have the interesting code.
+
+```{r}
+body(print.data.frame)
+```
+
+```{r}
+body(print.default)
+```
+
+::: {.callout-important}
+
+### Q3
+
+Inspect the code for the `summary` method for an `lm` object. Do you see where the $R^2$ is computed?
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+### The Environment
+It is also important to know in what environment a function is created. The `environment()` function tells us.
+
+```{r}
+environment(print)
+```
+
+```{r}
+environment(filter)
+```
+
+We’ll learn more about environments in the next chapter.
+
+## Scoping
+
+R uses lexical scoping. This means that when R looks for the value of names, it depends on the state of things when the function is defined.
+
+### Name Masking
+R looks for variables inside a function definition first (local variables), but if it can’t find them, it looks in the parent environment. In this case, when `my_fun()` is executed, R looks for the value of `global_var`. Many programming languages will throw an error in this situation, because `global_var` is not defined in the environment created by `my_fun()`. However, R just keeps looking for `global_var` in the parent environment (which in this case is the global environment).
+
+```{r}
+global_var <- 21
+
+my_fun <- function(x) {
+  x + global_var
+}
+
+my_fun(3)
+```
+
+```{r}
+environment(my_fun)
+```
+
+Note also that if we try to re-define `global_var` inside the function definition, we are masking the name `global_var`.
+
+```{r}
+my_fun2 <- function(x) {
+  global_var <- 99
+  x + global_var
+}
+
+my_fun2(3)
+```
+
+Note the difference reported by `findGlobals()`.
+
+```{r}
+codetools::findGlobals(my_fun)
+```
+
+```{r}
+codetools::findGlobals(my_fun2)
+```
+
+
+### A Fresh Start
+
+Local variables that are created inside a function never see the light of day in the parent environment.
+
+```{r}
+my_fun3 <- function(x) {
+  local_var <- 7
+  x + global_var
+}
+
+my_fun3(3)
+```
+
+```{r}
+#| error: true
+local_var
+```
+
+::: {.callout-important}
+
+### Q4
+
+Why would it be a bad idea to allow the value of local variables to persist outside of the function?
+
+PUT SOLUTION HERE
+
+:::
+
+### Dynamic Lookup
+
+Because of name masking, values of objects in the parent environment can affect the behavior of a function. This behavior is often useful in data analysis scripts, but can be problematic in more formal programming.
+
+This means that if we reset the value of `global_var`, we change the behavior of `my_fun()`.
+
+```{r}
+global_var <- 15
+
+my_fun(3)
+```
+
+::: {.callout-important}
+
+### Q5
+
+Give an example of a situation in which dynamic lookup is helpful.
+
+PUT SOLUTION HERE
+
+:::
+
+::: {.callout-important}
+
+### Q6
+
+Give an example of a situation in which dynamic lookup could be problematic.
+
+PUT SOLUTION HERE
+
+:::
+
+## The Dots
+The dots (`...`) are a way of collecting an arbitrary set of arguments to a function. There are two main purposes as to why you might want to have the dots as an arguments to your function.
+
+First, note that you can convert the dots into a named list within your function using the `list()` function.
+
+```{r}
+catch_the_dots <- function(...) {
+  list(...)
+}
+
+catch_the_dots(whatever = "hi")
+```
+
+### Passing the Dots
+
+You might want to pass the dots to another function from within your function. This is typically useful when you want to leverage the functionality of an existing function, without having to specify all of its arguments. For example, suppose we want to add theming to a `ggplot`. One way to do that would be to extend the `scale_color_manual()` function and hard-code the official Smith colors.
+
+First, note that `scale_color_manual()` takes the dots as an argument.
+
+```{r}
+args(ggplot2::scale_color_manual)
+```
+
+Moreover, it passes the dots to `manual_scale()`:
+
+```{r}
+body(ggplot2::scale_color_manual)
+```
+
+Which in turn passes the dots to `discrete_scale()`:
+
+```{r}
+body(ggplot2:::manual_scale)
+```
+
+Which actually does the work (Note that having 3 colons `:::` allows you to access functions in an R package that aren’t `@export`ed, i.e. are kept hidden from the user in the function’s roxygen2 code).
+
+```{r}
+body(ggplot2::discrete_scale)
+```
+
+According to the [Smith College Visual Identity program](https://www.smith.edu/your-campus/offices-services/communications-marketing/brand-guidelines), the official Smith colors are: #002855, #F2A900.
+
+Thus, we can create a `scale_color_smith()` function that leverages `scale_color_manual()` by hard-coding the official Smith color values. But in order to get this to work, we have to pass the dots so that `scale_color_manual()` can do all the work that it normally does! Otherwise, we would have to copy the source of `scale_color_manual()` – but that would be inefficient and brittle.
+
+```{r}
+scale_color_smith <- function(...) {
+  ggplot2::scale_color_manual(
+    ..., 
+    values = c("#002855", "#F2A900")
+  )
+}
+
+```
+
+We can then use our custom function. Note that since it only has two colors, it won’t work if it is mapped to a categorical variable with more than two levels.
+
+```{r}
+starwars |>
+  filter(species %in% c("Human", "Droid")) |> 
+  ggplot(aes(x = height, y = mass, color = species)) + 
+  geom_point() + 
+  scale_color_smith()
+```
+
+::: {.callout-important}
+
+### Q7
+
+Write the corresponding function `scale_fill_smith()` and test it.
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+
+:::
+
+::: {.callout-important}
+
+### Q8
+
+Write a `scale_color_gradient_smith()` function that produces a gradient scale from Smith blue to Smith gold.
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+## Turn-In
+
+Stage, commit, and push your template file to your SDS 270 repository.
