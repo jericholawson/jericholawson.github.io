@@ -2839,14 +2839,14 @@
     "href": "lectures/w4l1_act.html",
     "title": "Exercises from Week 4, Lecture 1: Functions",
     "section": "",
-    "text": "In these exercises, we will learn how to find out about functions and the principles of lexical scoping. We will investigate a use of the dots.\nGoal: By the end of this lab, you should be able to retrieve information about functions and understand how lexical scoping works in R."
+    "text": "Finish these exercises by the end of the day (at 11:59pm)."
   },
   {
     "objectID": "lectures/w4l1_act.html#introduction",
     "href": "lectures/w4l1_act.html#introduction",
     "title": "Exercises from Week 4, Lecture 1: Functions",
-    "section": "",
-    "text": "In these exercises, we will learn how to find out about functions and the principles of lexical scoping. We will investigate a use of the dots.\nGoal: By the end of this lab, you should be able to retrieve information about functions and understand how lexical scoping works in R."
+    "section": "Introduction",
+    "text": "Introduction\nIn these exercises, we will learn how to find out about functions and the principles of lexical scoping. We will investigate a use of the dots.\nGoal: By the end of this lab, you should be able to retrieve information about functions and understand how lexical scoping works in R."
   },
   {
     "objectID": "lectures/w4l1_act.html#learning-about-functions",
@@ -2909,7 +2909,7 @@
     "href": "lectures/w4l1_functions.html#for-now-and-wednesday",
     "title": "Functions",
     "section": "For Now and Wednesday:",
-    "text": "For Now and Wednesday:\n\nActivity with template\nRead Advanced R: chapter 9 (sections 1, 7)\nSecond problem set due Friday, 2/20 at 11:59pm"
+    "text": "For Now and Wednesday:\n\nActivity with template by 11:59pm today\nRead Advanced R: chapter 9 (sections 1, 7)\nSecond problem set due Friday, 2/20 at 11:59pm"
   },
   {
     "objectID": "lectures/w4l2_act.html",
@@ -3035,7 +3035,7 @@
     "href": "schedule.html#week-4-functions-and-functionals-216---220",
     "title": "Schedule",
     "section": "Week 4: Functions and Functionals (2/16 - 2/20)",
-    "text": "Week 4: Functions and Functionals (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18\n\n\n\n\n\n\n\n\nNoteLecture: Functions\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 9 of Advanced R (before Wednesday’s class)\nSet #2 due Friday, 2/20 at 11:59pm via your repository\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Functionals\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 4: Functions and Functionals (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18\n\n\n\n\n\n\n\n\nNoteLecture: Functions\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nFinish in-class exercises by 11:59pm tonight via your repository\nRead chapter 9 of Advanced R (before Wednesday’s class)\nSet #2 due Friday, 2/20 at 11:59pm via your repository\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Functionals\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "sets/set2.html#q2",
@@ -3364,27 +3364,34 @@
     "href": "lectures/w4l1_functions.html#q6-from-wednesdays-lecture",
     "title": "Functions",
     "section": "Q6 from Wednesday’s Lecture",
-    "text": "Q6 from Wednesday’s Lecture\nWrite a while-loop that continues the out operation until 3 outs are recorded, storing the results for outs and runs in individual data structures.\n\nouts = 0\nonBase = 0\nruns = 0\nwhile (outs &lt; 3){\n  play &lt;- sample(c(\"single\", \"homerun\", \"out\"), 1, prob = c(0.25, 0.05, 0.7), replace = T)\n  if (play == \"single\"){\n    onBase = onBase + 1\n  } else if (play == \"homerun\"){\n    runs = onBase + runs + 1\n    onBase = 0\n  } else {\n    outs = outs + 1\n  }\n}\nruns; onBase; outs\n\n[1] 1\n\n\n[1] 0\n\n\n[1] 3"
+    "text": "Q6 from Wednesday’s Lecture\nWrite a while-loop that continues the out operation until 3 outs are recorded, storing the results for outs and runs in individual data structures.\n\nouts = 0\nonBase = 0\nruns = 0\nwhile (outs &lt; 3){\n  play &lt;- sample(c(\"single\", \"homerun\", \"out\"), 1, prob = c(0.25, 0.05, 0.7), replace = T)\n  if (play == \"single\"){\n    onBase = onBase + 1\n  } else if (play == \"homerun\"){\n    runs = onBase + runs + 1\n    onBase = 0\n  } else {\n    outs = outs + 1\n  }\n}\nruns; onBase; outs\n\n[1] 0\n\n\n[1] 0\n\n\n[1] 3"
   },
   {
     "objectID": "lectures/w4l1_functions.html#from-hw-1-memory-allocation",
     "href": "lectures/w4l1_functions.html#from-hw-1-memory-allocation",
     "title": "Functions",
     "section": "From HW #1: Memory Allocation",
-    "text": "From HW #1: Memory Allocation\n\nchiroFiveCopy &lt;- chiroFive\n\n\n\n\nref(chiroFive)\n\n█ [1:0x290e3a29c68] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x290e3164040] &lt;chr&gt; \n├─Collection_Date = [3:0x290e18eee10] &lt;chr&gt; \n├─Collection_Method = [4:0x290e38dd040] &lt;chr&gt; \n├─Lifestage = [5:0x290e3c6a050] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x290e18c7040] &lt;dbl&gt; \n└─Taxon = [7:0x290e19c6800] &lt;chr&gt; \n\n\n\n\nref(chiroFiveCopy)\n\n█ [1:0x290e3a29c68] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x290e3164040] &lt;chr&gt; \n├─Collection_Date = [3:0x290e18eee10] &lt;chr&gt; \n├─Collection_Method = [4:0x290e38dd040] &lt;chr&gt; \n├─Lifestage = [5:0x290e3c6a050] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x290e18c7040] &lt;dbl&gt; \n└─Taxon = [7:0x290e19c6800] &lt;chr&gt;"
+    "text": "From HW #1: Memory Allocation\n\nchiroFiveCopy &lt;- chiroFive\n\n\n\n\nref(chiroFive)\n\n█ [1:0x29e0a426bc8] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x29e08695040] &lt;chr&gt; \n├─Collection_Date = [3:0x29e082ec7d0] &lt;chr&gt; \n├─Collection_Method = [4:0x29e08705e10] &lt;chr&gt; \n├─Lifestage = [5:0x29e08af11e0] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x29e08af4e50] &lt;dbl&gt; \n└─Taxon = [7:0x29e08fd3ed0] &lt;chr&gt; \n\n\n\n\nref(chiroFiveCopy)\n\n█ [1:0x29e0a426bc8] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x29e08695040] &lt;chr&gt; \n├─Collection_Date = [3:0x29e082ec7d0] &lt;chr&gt; \n├─Collection_Method = [4:0x29e08705e10] &lt;chr&gt; \n├─Lifestage = [5:0x29e08af11e0] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x29e08af4e50] &lt;dbl&gt; \n└─Taxon = [7:0x29e08fd3ed0] &lt;chr&gt;"
   },
   {
     "objectID": "lectures/w4l1_functions.html#from-hw-1-memory-allocation-cont.",
     "href": "lectures/w4l1_functions.html#from-hw-1-memory-allocation-cont.",
     "title": "Functions",
     "section": "From HW #1: Memory Allocation (cont.)",
-    "text": "From HW #1: Memory Allocation (cont.)\n\nchiroFive[3, 5] = 6.0\n\n\n\n\nref(chiroFive)\n\n█ [1:0x290e9651928] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x290e3164040] &lt;chr&gt; \n├─Collection_Date = [3:0x290e18eee10] &lt;chr&gt; \n├─Collection_Method = [4:0x290e38dd040] &lt;chr&gt; \n├─Lifestage = [5:0x290e3c6a050] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x290e35d4f70] &lt;dbl&gt; \n└─Taxon = [7:0x290e19c6800] &lt;chr&gt; \n\n\n\n\nref(chiroFiveCopy)\n\n█ [1:0x290e3a29c68] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x290e3164040] &lt;chr&gt; \n├─Collection_Date = [3:0x290e18eee10] &lt;chr&gt; \n├─Collection_Method = [4:0x290e38dd040] &lt;chr&gt; \n├─Lifestage = [5:0x290e3c6a050] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x290e18c7040] &lt;dbl&gt; \n└─Taxon = [7:0x290e19c6800] &lt;chr&gt;"
+    "text": "From HW #1: Memory Allocation (cont.)\n\nchiroFive[3, 5] = 6.0\n\n\n\n\nref(chiroFive)\n\n█ [1:0x29e1124da08] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x29e08695040] &lt;chr&gt; \n├─Collection_Date = [3:0x29e082ec7d0] &lt;chr&gt; \n├─Collection_Method = [4:0x29e08705e10] &lt;chr&gt; \n├─Lifestage = [5:0x29e08af11e0] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x29e082d31f0] &lt;dbl&gt; \n└─Taxon = [7:0x29e08fd3ed0] &lt;chr&gt; \n\n\n\n\nref(chiroFiveCopy)\n\n█ [1:0x29e0a426bc8] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x29e08695040] &lt;chr&gt; \n├─Collection_Date = [3:0x29e082ec7d0] &lt;chr&gt; \n├─Collection_Method = [4:0x29e08705e10] &lt;chr&gt; \n├─Lifestage = [5:0x29e08af11e0] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x29e08af4e50] &lt;dbl&gt; \n└─Taxon = [7:0x29e08fd3ed0] &lt;chr&gt;"
   },
   {
     "objectID": "lectures/w4l1_functions.html#from-hw-1-memory-allocation-cont.-1",
     "href": "lectures/w4l1_functions.html#from-hw-1-memory-allocation-cont.-1",
     "title": "Functions",
     "section": "From HW #1: Memory Allocation (cont.)",
-    "text": "From HW #1: Memory Allocation (cont.)\n\nchiroFiveCopy$Bug_Size_mm &lt;- chiroFive$Bug_Size_mm\n\n\n\n\nref(chiroFive)\n\n█ [1:0x290e9651928] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x290e3164040] &lt;chr&gt; \n├─Collection_Date = [3:0x290e18eee10] &lt;chr&gt; \n├─Collection_Method = [4:0x290e38dd040] &lt;chr&gt; \n├─Lifestage = [5:0x290e3c6a050] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x290e35d4f70] &lt;dbl&gt; \n└─Taxon = [7:0x290e19c6800] &lt;chr&gt; \n\n\n\n\nref(chiroFiveCopy)\n\n█ [1:0x290e9702148] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x290e3164040] &lt;chr&gt; \n├─Collection_Date = [3:0x290e18eee10] &lt;chr&gt; \n├─Collection_Method = [4:0x290e38dd040] &lt;chr&gt; \n├─Lifestage = [5:0x290e3c6a050] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x290e35d4f70] &lt;dbl&gt; \n└─Taxon = [7:0x290e19c6800] &lt;chr&gt;"
+    "text": "From HW #1: Memory Allocation (cont.)\n\nchiroFiveCopy$Bug_Size_mm &lt;- chiroFive$Bug_Size_mm\n\n\n\n\nref(chiroFive)\n\n█ [1:0x29e1124da08] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x29e08695040] &lt;chr&gt; \n├─Collection_Date = [3:0x29e082ec7d0] &lt;chr&gt; \n├─Collection_Method = [4:0x29e08705e10] &lt;chr&gt; \n├─Lifestage = [5:0x29e08af11e0] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x29e082d31f0] &lt;dbl&gt; \n└─Taxon = [7:0x29e08fd3ed0] &lt;chr&gt; \n\n\n\n\nref(chiroFiveCopy)\n\n█ [1:0x29e11304228] &lt;df[,6]&gt; \n├─Sample_ID = [2:0x29e08695040] &lt;chr&gt; \n├─Collection_Date = [3:0x29e082ec7d0] &lt;chr&gt; \n├─Collection_Method = [4:0x29e08705e10] &lt;chr&gt; \n├─Lifestage = [5:0x29e08af11e0] &lt;chr&gt; \n├─Bug_Size_mm = [6:0x29e082d31f0] &lt;dbl&gt; \n└─Taxon = [7:0x29e08fd3ed0] &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w4l1_act.html#note",
+    "href": "lectures/w4l1_act.html#note",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "",
+    "text": "Finish these exercises by the end of the day (at 11:59pm)."
   }
 ]

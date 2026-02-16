@@ -4,6 +4,9 @@ subtitle: "SDS 270"
 format: html
 ---
 
+## Note
+
+Finish these exercises by the end of the day (at 11:59pm).
 
 ## Introduction
 
