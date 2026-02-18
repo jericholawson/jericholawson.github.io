@@ -1,0 +1,129 @@
+---
+title: "Exercises from Week 4, Lecture 2: Functionals"
+subtitle: "SDS 270"
+format: html
+---
+
+## Introduction
+
+In these exercises, we will explore particular examples where the use of a functional improves the efficiency and interpretability of the code.
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+```
+
+## Combing through Datasets
+
+Suppose we are looking through the following three datasets (all as objects in base R):
+
+- `mtcars`
+- `iris`
+- `trees`
+
+In these data sets, we will gather some basic information.
+
+::: {.callout-important}
+
+### Q1
+
+Create an object named `datasets` that has an appropriate data structure that can house all three datasets specified. 
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+### Using a For Loop
+
+::: {.callout-important}
+
+### Q2
+
+Create an empty vector of length 3 that will store the number of observations in each of the datasets. From there, write a for-loop that gathers the number of observations in each dataset, storing that number inside the created vector.
+
+Write this in between the `Sys.time` code.
+
+```{r}
+begin_for <- Sys.time()
+
+# PUT SOLUTION HERE
+
+time_for <- Sys.time() - begin_for
+```
+
+:::
+
+### Using `apply()`
+
+::: {.callout-important}
+
+### Q3
+
+Redo Q2 by using an appropriate `apply()` statement instead.
+
+```{r}
+begin_apply <- Sys.time()
+
+# PUT SOLUTION HERE
+
+time_apply <- Sys.time() - begin_apply
+```
+
+:::
+
+### Comparing the Two Methods
+
+::: {.callout-important}
+
+### Q4
+
+Compare the two methods with regard to efficiency and code. Which method is faster? What are some pros and cons of using either method?
+
+PUT SOLUTION HERE
+
+:::
+
+## Metadata for the User
+
+Let's expand on the ideas seen previously by extracting several tidbits of information from the datasets to print to the user. 
+
+::: {.callout-important}
+
+### Q5
+
+Come up with four different pieces of information about a dataset that may be useful to an analyst at first glance.
+
+PUT SOLUTION HERE
+
+:::
+
+::: {.callout-important}
+
+### Q6
+
+Using what you typed up for Q5, create a function that takes in some dataset as `x` and returns all aforementioned information in an appropriate data structure.
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+
+:::
+
+::: {.callout-important}
+
+### Q7
+
+Write an appropriate `apply()` statement that uses your function from Q6 on each dataset in your `datasets` object.
+
+```{r}
+# PUT SOLUTION HERE
+```
+:::
+
+## Turn-In
+
+Stage, commit, and push your template file to your SDS 270 repository.

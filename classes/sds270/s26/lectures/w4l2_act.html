@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Schedule – SDS 270: Programming for Data Science in R, Spring 2026</title>
+<title>Exercises from Week 4, Lecture 2: Functionals – SDS 270: Programming for Data Science in R, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,19 +71,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">SDS 270: Programming for Data Science in R, Spring 2026</span>
     </a>
   </div>
@@ -94,19 +94,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
@@ -128,13 +128,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#combing-through-datasets" id="toc-combing-through-datasets" class="nav-link" data-scroll-target="#combing-through-datasets">Combing through Datasets</a>
+  <ul class="collapse">
+  <li><a href="#using-a-for-loop" id="toc-using-a-for-loop" class="nav-link" data-scroll-target="#using-a-for-loop">Using a For Loop</a></li>
+  <li><a href="#using-apply" id="toc-using-apply" class="nav-link" data-scroll-target="#using-apply">Using <code>apply()</code></a></li>
+  <li><a href="#comparing-the-two-methods" id="toc-comparing-the-two-methods" class="nav-link" data-scroll-target="#comparing-the-two-methods">Comparing the Two Methods</a></li>
+  </ul></li>
+  <li><a href="#metadata-for-the-user" id="toc-metadata-for-the-user" class="nav-link" data-scroll-target="#metadata-for-the-user">Metadata for the User</a></li>
+  <li><a href="#turn-in" id="toc-turn-in" class="nav-link" data-scroll-target="#turn-in">Turn-In</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
+<h1 class="title">Exercises from Week 4, Lecture 2: Functionals</h1>
+<p class="subtitle lead">SDS 270</p>
 </div>
 
 
@@ -151,709 +168,136 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="week-1-introduction-atomic-vectors-126---130" class="level2">
-<h2 class="anchored" data-anchor-id="week-1-introduction-atomic-vectors-126---130">Week 1: Introduction, Atomic Vectors (1/26 - 1/30)</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Monday, 1/26</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Wednesday, 1/28</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: CANCELLED
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Enjoy the snow and stay warm!!</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>In these exercises, we will explore particular examples where the use of a functional improves the efficiency and interpretability of the code.</p>
+</section>
+<section id="combing-through-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="combing-through-datasets">Combing through Datasets</h2>
+<p>Suppose we are looking through the following three datasets (all as objects in base R):</p>
 <ul>
-<li>GitHub setup (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)
-<ul>
-<li><a href="./resources/tech-setup.html">Instructions</a></li>
-<li>Complete practice.qmd and exs1.qmd files</li>
-</ul></li>
-<li>Read through <a href="./syllabus.html">syllabus</a></li>
-<li><a href="https://forms.gle/GuTKyTTSvxnsbmag8">Pre-Course Survey</a> (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)</li>
-<li>Read chapters 1, 3 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before <span style="color:red;">next Monday’s</span> class)</li>
+<li><code>mtcars</code></li>
+<li><code>iris</code></li>
+<li><code>trees</code></li>
 </ul>
-</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="callout callout-style-default callout-note callout-titled">
+<p>In these data sets, we will gather some basic information.</p>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Introduction, Tech Setup, Atomic Vectors
+<span class="screen-reader-only">Important</span>Q1
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w1l1_intro.html">Slides</a></li>
-<li><em>Note:</em> Office hours will be held from 3-4pm today in McConnell 207. Feel free to stop by!</li>
-</ul>
+<p>Create an object named <code>datasets</code> that has an appropriate data structure that can house all three datasets specified.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
+<section id="using-a-for-loop" class="level3">
+<h3 class="anchored" data-anchor-id="using-a-for-loop">Using a For Loop</h3>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
+<span class="screen-reader-only">Important</span>Q2
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>GitHub setup (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)
-<ul>
-<li><a href="./resources/tech-setup.html">Instructions</a></li>
-<li>Complete practice.qmd and exs1.qmd files</li>
-</ul></li>
-<li>Read through <a href="./syllabus.html">syllabus</a></li>
-<li><a href="https://forms.gle/GuTKyTTSvxnsbmag8">Pre-Course Survey</a> (due <span style="color:red;">Friday, 1/30 at 11:59pm</span>)</li>
-<li>Read chapters 1, 3 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before <span style="color:red;">next Monday’s</span> class)</li>
-</ul>
-</div>
-</div>
-</div>
+<p>Create an empty vector of length 3 that will store the number of observations in each of the datasets. From there, write a for-loop that gathers the number of observations in each dataset, storing that number inside the created vector.</p>
+<p>Write this in between the <code>Sys.time</code> code.</p>
 </div>
 </div>
 </section>
-<section id="week-2-data-structures-assignment-22---26" class="level2">
-<h2 class="anchored" data-anchor-id="week-2-data-structures-assignment-22---26">Week 2: Data Structures, Assignment (2/2 - 2/6)</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Monday, 2/2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Wednesday, 2/4</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="using-apply" class="level3">
+<h3 class="anchored" data-anchor-id="using-apply">Using <code>apply()</code></h3>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Lists
+<span class="screen-reader-only">Important</span>Q3
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w2l1_lists.html">Slides + Activities</a></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Complete any remaining setup</li>
-<li>Read chapters 2, 4 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before Wednesday’s class)</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Data Frames and Subsetting
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w2l2_dataFrames.html">Slides</a>
-<ul>
-<li><a href="data/nfl25Pass.csv">Dataset</a></li>
-</ul></li>
-<li><a href="./lectures/w2l2_act.html">Activity</a>
-<ul>
-<li><a href="lectures/w2l2_actTemp.qmd">Template</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="./sets/set1.html">Set #1</a> due next Wednesday, 2/11 at 11:59pm via your repository
-<ul>
-<li>Create new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository</li>
-<li><a href=".\data/macroinvertebrates.csv">Macroinvertebrates Dataset</a></li>
-</ul></li>
-<li>Read chapter 5 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before Monday’s class)</li>
-</ul>
-</div>
-</div>
-</div>
+<p>Redo Q2 by using an appropriate <code>apply()</code> statement instead.</p>
 </div>
 </div>
 </section>
-<section id="week-3-assignment-control-flow-29---213" class="level2">
-<h2 class="anchored" data-anchor-id="week-3-assignment-control-flow-29---213">Week 3: Assignment, Control Flow (2/9 - 2/13)</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Monday, 2/9</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Wednesday, 2/11</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="comparing-the-two-methods" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-the-two-methods">Comparing the Two Methods</h3>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Assignment and Memory
+<span class="screen-reader-only">Important</span>Q4
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w3l1_memory.html">Slides</a></li>
-<li><a href="./lectures/w3l1_act.html">Activity</a>
-<ul>
-<li><a href="lectures/w3l1_actTemp.qmd">Template</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="./sets/set1.html">Set #1</a> due Wednesday, 2/11 at 11:59pm via your repository
-<ul>
-<li>Create new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository</li>
-<li><a href=".\data/macroinvertebrates.csv">Macroinvertebrates Dataset</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Control Flow
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w3l2_controlFlow.html">Slides</a></li>
-<li><a href="./lectures/w3l2_act.html">Activity</a>
-<ul>
-<li><a href="lectures/w3l2_actTemp.qmd">Template</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="./sets/set1.html">Set #1</a> due tonight at 11:59pm via your repository
-<ul>
-<li>Create new .qmd file named “set1.qmd”, type answers in document, and stage/commit/push in repository</li>
-<li><a href=".\data/macroinvertebrates.csv">Macroinvertebrates Dataset</a></li>
-</ul></li>
-<li>Read chapter 6 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before Monday’s class)</li>
-<li><a href="./sets/set2.html">Set #2</a> due next Friday, 2/20 at 11:59pm via your repository
-<ul>
-<li>Create new .qmd file named “set2.qmd”, type answers in document, and stage/commit/push in repository</li>
-<li><a href="https://data.cityofnewyork.us/Health/DOHMH-Dog-Bite-Data/rsgh-akpg/about_data">Dog Bite Data</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
+<p>Compare the two methods with regard to efficiency and code. Which method is faster? What are some pros and cons of using either method?</p>
 </div>
 </div>
 </section>
-<section id="week-4-functions-and-functionals-216---220" class="level2">
-<h2 class="anchored" data-anchor-id="week-4-functions-and-functionals-216---220">Week 4: Functions and Functionals (2/16 - 2/20)</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Monday, 2/16</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Wednesday, 2/18</a></li></ul>
-<div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<div class="callout callout-style-default callout-note callout-titled">
+</section>
+<section id="metadata-for-the-user" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-for-the-user">Metadata for the User</h2>
+<p>Let’s expand on the ideas seen previously by extracting several tidbits of information from the datasets to print to the user.</p>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Functions
+<span class="screen-reader-only">Important</span>Q5
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w4l1_functions.html">Slides</a></li>
-<li><a href="./lectures/w4l1_act.html">Activity</a>
-<ul>
-<li><a href="lectures/w4l1_actTemp.qmd">Template</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Finish in-class exercises by 11:59pm tonight via your repository</li>
-<li>Read chapter 9 of <a href="https://adv-r.hadley.nz/introduction.html">Advanced R</a> (before Wednesday’s class)</li>
-<li><a href="./sets/set2.html">Set #2</a> due Friday, 2/20 at 11:59pm via your repository
-<ul>
-<li>Create new .qmd file named “set2.qmd”, type answers in document, and stage/commit/push in repository</li>
-<li><a href="https://data.cityofnewyork.us/Health/DOHMH-Dog-Bite-Data/rsgh-akpg/about_data">Dog Bite Data</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Lecture: Functionals
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="./lectures/w4l2_functionals.html">Slides</a></li>
-<li><a href="./lectures/w4l2_act.html">Activity</a>
-<ul>
-<li><a href="lectures/w4l2_actTemp.qmd">Template</a></li>
-</ul></li>
-<li><a href="./resources/studyGuide1.html">Study Guide for Exam #1</a></li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>To-Do/Due
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Set #2 due Friday at 11:59pm via your repository
-<ul>
-<li>Create new .qmd file named “set2.qmd”, type answers in document, and stage/commit/push in repository</li>
-<li><a href="https://data.cityofnewyork.us/Health/DOHMH-Dog-Bite-Data/rsgh-akpg/about_data">Dog Bite Data</a></li>
-</ul></li>
-<li>Work on <a href="./resources/studyGuide1.html">study guide</a> for next Wednesday’s exam
-<ul>
-<li>We will discuss some solutions in Monday’s class</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p>Come up with four different pieces of information about a dataset that may be useful to an analyst at first glance.</p>
 <!--
 
-## Week 5: Iteration and Exam #1 (2/23 - 2/27)
-
-::: {.panel-tabset}
-## Monday, 2/23
-
-::: {.callout-note}
-## Lecture: Iteration, Review
-
-- [Slides](lectures/w5l1_iteration.qmd)
-- [Activity](lectures/w5l1_act.qmd)
-  - [Template](lectures/w5l1_actTemp.qmd)
-- [Study Guide for Exam #1](exams/sg1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Study for exam!!
-
-:::
-
-## Wednesday, 2/25
-
-::: {.callout-important}
-## Exam #1
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-- Read chapter 7 of [Advanced R](https://adv-r.hadley.nz/introduction.html) (before Monday's class)
-
-:::
-
-
-:::
-
-
-## Week 6: Functionals, Environments (3/2 - 3/6)
-
-::: {.panel-tabset}
-## Monday, 3/2
-
-::: {.callout-note}
-## Lecture: Functionals
-
-- [Slides](lectures/w4l1_functions.qmd)
-- [Activity](lectures/w4l1_act.qmd)
-  - [Template](lectures/w4l1_actTemp.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/4
-
-::: {.callout-note}
-## Lecture: More Functionals
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-:::
-
-## Week 7: Packages, Conditions, and OOP (3/9 - 3/13)
-
-::: {.panel-tabset}
-## Monday, 3/9
-
-::: {.callout-note}
-## Lecture: Packages and Conditions
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/11
-
-::: {.callout-note}
-## Lecture: Environments
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-:::
-
-## Week 8: Spring Break (3/16 - 3/20)
-
-::: {.panel-tabset}
-## Monday, 3/16
-
-::: {.callout-note}
-## NO CLASS
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 3/18
-
-::: {.callout-note}
-## NO CLASS
-
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 9: S3 Objects, Package Foundation (3/23 - 3/27)
-
-::: {.panel-tabset}
-## Monday, 3/23
-
-::: {.callout-note}
-## Lecture: OOP/S3
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-
-## Wednesday, 3/25
-
-::: {.callout-note}
-## Lecture: S3 Objects, Review
-
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-:::
-
-## Week 10: Packages - Description and Libraries (3/30 - 4/3)
-
-::: {.panel-tabset}
-## Monday, 3/30
-
-::: {.callout-important}
-## Exam #2
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/1
-
-::: {.callout-note}
-## Lecture: Description and Libraries
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-:::
-:::
-
-## Week 11: Packages - Code, Data, Manuals, Testing (4/6 - 4/10)
-
-::: {.panel-tabset}
-## Monday, 4/6
-
-::: {.callout-note}
-## Lecture: Code, Data, Manuals
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/8
-
-::: {.callout-note}
-## Lecture: Testing
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 12: Packages - Testing, Vignettes (4/13 - 4/17)
-
-::: {.panel-tabset}
-## Monday, 4/13
-
-::: {.callout-note}
-## Lecture: Testing
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/15
-
-::: {.callout-note}
-## Lecture: Vignettes
-
-- [Slides](lectures/w1l1.qmd)
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 13: Packages - Project Time (4/20 - 4/24)
-
-::: {.panel-tabset}
-## Monday, 4/20
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/22
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Week 14: Packages - Project Time, Demonstrations (4/27 - 5/1)
-
-::: {.panel-tabset}
-## Monday, 4/27
-
-::: {.callout-note}
-## Project Time
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-
-## Wednesday, 4/29
-
-::: {.callout-note}
-## Demonstrations
-
-:::
-
-::: {.callout-warning}
-## To-Do/Due
-
-
-:::
-:::
-
-## Finals: Package (5/2 - 5/9)
-
-::: {.panel-tabset}
-## To-Do
-
-:::
+- dimensions
+- number of numeric variables
+- summary of variable types
+- variable names
 
 -->
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q6
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using what you typed up for Q5, create a function that takes in some dataset as <code>x</code> and returns all aforementioned information in an appropriate data structure.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q7
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write an appropriate <code>apply()</code> statement that uses your function from Q6 on each dataset in your <code>datasets</code> object.</p>
+</div>
+</div>
+</section>
+<section id="turn-in" class="level2">
+<h2 class="anchored" data-anchor-id="turn-in">Turn-In</h2>
+<p>Stage, commit, and push your template file to your SDS 270 repository.</p>
 
 
 </section>
