@@ -1,0 +1,450 @@
+---
+title: "Box Plots and Scatter Plots"
+subtitle: "SDS 192: Introduction to Data Science"
+author: "<br/> <br/> <br/>
+  Jericho Lawson
+  <br/>
+  <span style = 'font-size: 65%;'>
+  [Statistical & Data Sciences](https://www.smith.edu/sds), Smith College<br/>
+  Spring 2026 | Week 4, Lecture 2 </span> <br/>"
+format: 
+  revealjs:
+    scrollable: true
+    footer: "SDS 192 | Frequency Plots"
+    slide-number: true
+    theme: [dark, custom.scss]
+editor: source
+execute:
+  echo: true
+---
+
+## Last Time
+
+- Frequency plots
+  - Histograms
+  - Bar plots
+  - Multivariate frequencies
+
+## For Today
+
+- Box plots
+  - Five-number summaries
+  - Analysis
+- Line charts
+  - Across time
+- Scatter plots
+  - Correlation and trends
+
+## Dataset for Today
+
+- Boston Housing data
+  - via the `mlbench` library
+  - 506 observations, 14 variables
+  - Estimate median housing values through other variables
+- Create a new .qmd file in your activities repository and name the file     `2-18.qmd`. Use the following code:
+
+```{r}
+library(mlbench)
+library(ggplot2)
+data(BostonHousing2)
+```
+
+## Box Plot
+
+- Visualizes *distribution* of one **numeric** variable
+  - Similar usage to histogram
+  - Better at detecting benchmarks and comparison
+  - Usually can compare **across groups**
+- Three traits we still note:
+  - Center, shape, and spread
+- Five-number summary helps with inference: `summary()`
+
+## Parts of a Box Plot
+
+```{r fig.height=3, fig.width=8}
+ggplot(BostonHousing2, aes(x = medv)) +
+  geom_boxplot() + theme_classic() + 
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line.y = element_blank()) +
+  labs(x = "Median Value of Owner-Occupied Homes ($1000s)")
+```
+
+## Parts of a Box Plot (cont.) {.smaller}
+
+```{r fig.height=3, fig.width=8}
+#| echo: false
+ggplot(BostonHousing2, aes(x = medv)) +
+  geom_boxplot() + theme_classic() + 
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line.y = element_blank()) +
+  labs(x = "Median Value of Owner-Occupied Homes ($1000s)") +
+  geom_vline(aes(xintercept = min(medv)), 
+              color = "red", 
+             linetype="dashed") +
+  geom_vline(aes(xintercept = max(medv)), 
+              color = "red", 
+             linetype="dashed") + 
+  geom_vline(aes(xintercept = median(medv)), 
+              color = "orange", 
+             linetype="dashed") + 
+  geom_vline(aes(xintercept = quantile(medv)[2]), 
+              color = "purple", 
+             linetype="dashed") +
+  geom_vline(aes(xintercept = quantile(medv)[4]), 
+              color = "purple", 
+             linetype="dashed") +
+  annotate("label", x = min(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Min", color = "red", fontface = "bold") +
+  annotate("label", x = quantile(BostonHousing2$medv, 0.25), y = 0.1, size = 3, 
+           label = "1Q", color = "purple", fontface = "bold") +
+  annotate("label", x = median(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Median", color = "orange", fontface = "bold") +
+  annotate("label", x = quantile(BostonHousing2$medv, 0.75), y = 0.1, size = 3, 
+           label = "3Q", color = "purple", fontface = "bold") +
+  annotate("label", x = max(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Max", color = "red", fontface = "bold")
+```
+
+```{r}
+summary(BostonHousing2$medv)
+summary(BostonHousing2$medv)[c(2, 5)] + c(-1, 1) * 1.5 * IQR(BostonHousing2$medv)
+```
+
+## Parts of a Box Plot (cont.) {.smaller}
+
+```{r fig.height=3, fig.width=8}
+#| echo: false
+ggplot(BostonHousing2, aes(x = medv)) +
+  geom_boxplot() + theme_classic() + 
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line.y = element_blank()) +
+  labs(x = "Median Value of Owner-Occupied Homes ($1000s)") +
+  geom_vline(aes(xintercept = min(medv)), 
+              color = "red", 
+             linetype="dashed") +
+  geom_vline(aes(xintercept = max(medv)), 
+              color = "red", 
+             linetype="dashed") + 
+  geom_vline(aes(xintercept = median(medv)), 
+              color = "orange", 
+             linetype="dashed") + 
+  geom_vline(aes(xintercept = quantile(medv)[2]), 
+              color = "purple", 
+             linetype="dashed") +
+  geom_vline(aes(xintercept = quantile(medv)[4]), 
+              color = "purple", 
+             linetype="dashed") +
+  annotate("label", x = min(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Min", color = "red", fontface = "bold") +
+  annotate("label", x = quantile(BostonHousing2$medv, 0.25), y = 0.1, size = 3, 
+           label = "1Q", color = "purple", fontface = "bold") +
+  annotate("label", x = median(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Median", color = "orange", fontface = "bold") +
+  annotate("label", x = quantile(BostonHousing2$medv, 0.75), y = 0.1, size = 3, 
+           label = "3Q", color = "purple", fontface = "bold") +
+  annotate("label", x = max(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Max", color = "red", fontface = "bold")
+```
+
+- **Minimum:** lowest (qualified) value in variable
+- **1st quartile:** 25\% of data falls beneath this point
+- **Median:** 50\% of data falls beneath this point
+- **3rd quartile:** 75\% of data falls beneath this point
+- **Maximum:** highest (qualified) value in variable
+
+## Outliers {.smaller}
+
+```{r fig.height=3, fig.width=8}
+#| echo: false
+ggplot(BostonHousing2, aes(x = medv)) +
+  geom_boxplot() + theme_classic() + 
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line.y = element_blank()) +
+  labs(x = "Median Value of Owner-Occupied Homes ($1000s)") +
+  geom_vline(aes(xintercept = min(medv)), 
+              color = "red", 
+             linetype="dashed") +
+  geom_vline(aes(xintercept = max(medv)), 
+              color = "red", 
+             linetype="dashed") + 
+  geom_vline(aes(xintercept = median(medv)), 
+              color = "orange", 
+             linetype="dashed") + 
+  geom_vline(aes(xintercept = quantile(medv)[2]), 
+              color = "purple", 
+             linetype="dashed") +
+  geom_vline(aes(xintercept = quantile(medv)[4]), 
+              color = "purple", 
+             linetype="dashed") +
+  annotate("label", x = min(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Min", color = "red", fontface = "bold") +
+  annotate("label", x = quantile(BostonHousing2$medv, 0.25), y = 0.1, size = 3, 
+           label = "1Q", color = "purple", fontface = "bold") +
+  annotate("label", x = median(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Median", color = "orange", fontface = "bold") +
+  annotate("label", x = quantile(BostonHousing2$medv, 0.75), y = 0.1, size = 3, 
+           label = "3Q", color = "purple", fontface = "bold") +
+  annotate("label", x = max(BostonHousing2$medv), y = 0.1, size = 3, 
+           label = "Max", color = "red", fontface = "bold")
+```
+
+- **Outliers:** data points signficantly different from grouping of data
+  - Common threshold: Those exceeding 1Q and 3Q by 1.5 times the interquartile range
+    - i.e. lower = $Q_1 - 1.5 * IQR = Q_1 - 1.5 * (Q_3 - Q_1)$
+    - i.e. upper = $Q_3 + 1.5 * IQR = Q_3 + 1.5 * (Q_3 - Q_1)$
+
+## Why Median and IQR?
+
+- Data is skewed
+  - e.g. housing prices, Poisson (rate) data
+  - Median and IQR are more *robust*
+    - Mean and variance can dramatically change with one outlier
+    
+```{r}
+ex1 = c(4.6, 4.5, 4.3, 4.2)
+mean(ex1); median(ex1)
+sd(ex1); IQR(ex1)
+```
+
+## Why Median and IQR? (cont.)
+
+- Data is skewed
+  - e.g. housing prices, Poisson (rate) data
+  - Median and IQR are more *robust*
+    - Mean and variance can dramatically change with one outlier
+
+```{r}
+ex1 = c(ex1, 10.1)
+mean(ex1); median(ex1)
+sd(ex1); IQR(ex1)
+```
+
+## Activity
+
+In the `2-18.qmd` file:
+
+- Create a new code chunk and develop a box plot that looks at another numerical variable from the `BostonHousing2` dataset.
+
+## Grouped Boxplots {.smaller}
+
+- Add second variable, which is a grouping variable
+  - Used to do comparisons across groups
+
+```{r fig.height=3, fig.width=8}
+ggplot(BostonHousing2, aes(x = medv, y = chas)) +
+  geom_boxplot() + theme_classic() +
+  labs(x = "Median Value of Owner-Occupied Homes ($1000s)",
+       y = "Next to Charles River?",
+       title = "Median Value of Owner-Occupied Homes (in $1000s)\nin Boston Census Tracts Near Charles River, 1970")
+```
+
+## Grouped Boxplots: Things to Consider {.smaller}
+
+::: columns
+
+::: {.column width="60%"}
+
+- Outliers: number, context
+- Ranges, IQR: larger, smaller?
+
+:::
+::: {.column width="40%"}
+
+- Medians
+- Symmetry
+
+:::
+:::
+
+```{r fig.height=3, fig.width=8}
+ggplot(BostonHousing2, aes(x = medv, y = chas)) +
+  geom_boxplot() + theme_classic() +
+  labs(x = "Median Value of Owner-Occupied Homes ($1000s)",
+       y = "Next to Charles River?",
+       title = "Median Value of Owner-Occupied Homes (in $1000s)\nin Boston Census Tracts Near Charles River, 1970")
+```
+
+## Scatter Plot {.smaller}
+
+- Visualizes *distributions* of two **numeric** variables
+  - Can be used to detect trends, patterns, and correlations
+  - Used for regression
+- For relational purposes:
+  - $x$ refers to independent variable (or predictor)
+  - $y$ refers to dependent variable (or response)
+  - Looking for relationship between $x$ and $y$, leading to idea behind **correlation**
+- Correlation helps with inference: `cor(x, y)`
+
+## Correlation
+
+- Describes relationship between two continuous variables
+  - $cor(x, y) = Cov(xy) / \sqrt{s_x s_y}$
+  - Look at three traits:
+    - *Magnitude*: 0 indicates no relationship, 1 indicates perfect relationship
+    - *Direction*: `-` refers to decreasing trend from left to right, `+` is increasing
+    - *Linearity*: how much data "hugs" line of best fit
+    
+## Correlation Examples
+
+![](images/lect7/correlation.png)
+
+## Example of a Scatter Plot {.smaller}
+
+```{r fig.height=4, fig.width=8}
+ggplot(BostonHousing2, aes(x = nox, y = medv)) +
+  geom_point() + theme_minimal() +
+  labs(x = "Nitric Oxide Concentration (parts per 10mil)",
+       y = "Median Value of Owner-Occupied Homes ($1000s)",
+       title = "Nitric Oxide Concentration vs. Median Value of Owner-Occupied Homes\nin Boston Census Tracts, 1970")
+```
+
+## Example of a Scatter Plot (cont.) {.smaller}
+
+- Can adjust for opacity to make point stand out
+
+```{r fig.height=4, fig.width=8}
+ggplot(BostonHousing2, aes(x = nox, y = medv)) +
+  geom_point(alpha = 0.3) + theme_minimal() +
+  labs(x = "Nitric Oxide Concentration (parts per 10mil)",
+       y = "Median Value of Owner-Occupied Homes ($1000s)",
+       title = "Nitric Oxide Concentration vs. Median Value of Owner-Occupied Homes\nin Boston Census Tracts, 1970")
+```
+
+## Example of a Scatter Plot (cont.) {.smaller}
+
+- Can create line of best fit and add correlation label
+
+```{r fig.height=4, fig.width=8}
+ggplot(BostonHousing2, aes(x = nox, y = medv)) +
+  geom_point(alpha = 0.3) + theme_minimal() +
+  labs(x = "Nitric Oxide Concentration (parts per 10mil)",
+       y = "Median Value of Owner-Occupied Homes ($1000s)",
+       title = "Nitric Oxide Concentration vs. Median Value of Owner-Occupied Homes\nin Boston Census Tracts, 1970") +
+  geom_smooth(method = "lm") + 
+  annotate("label", x = 0.8, y = 50, size = 3, 
+           label = paste("Corr.", round(cor(BostonHousing2$nox, BostonHousing2$medv), 3)), color = "red", fontface = "bold")
+```
+
+## Example of a Scatter Plot (cont.) {.smaller}
+
+- Can make color differ by another variable
+  - `lstat`: percentage of lower status of population
+  
+```{r fig.height=4, fig.width=8}
+ggplot(BostonHousing2, aes(x = nox, y = medv, colour = lstat)) +
+  geom_point(alpha = 0.3) + theme_minimal() +
+  labs(x = "Nitric Oxide Concentration (parts per 10mil)",
+       y = "Median Value of Owner-Occupied Homes ($1000s)",
+       colour = "% Lower Status",
+       title = "Nitric Oxide Concentration vs. Median Value of Owner-Occupied Homes\nin Boston Census Tracts, 1970") +
+  geom_smooth(method = "lm", color = "blue") + 
+  annotate("label", x = 0.8, y = 50, size = 3, 
+           label = paste("Corr.", round(cor(BostonHousing2$nox, BostonHousing2$medv), 3)), color = "red", fontface = "bold")
+```
+
+## Line Chart
+
+- Visualizes *trends* of one variable across another variable (commonly time)
+  - Special case of a scatter plot
+    - Order across points
+- Focus on trend over the variable
+
+## Example of a Line Chart
+
+```{r fig.height=4, fig.width=8}
+lakes = data.frame(year = 1875:1972, level = as.numeric(LakeHuron))
+
+ggplot(lakes, aes(x = year, y = level)) + 
+  geom_line() +
+  theme_minimal() +
+  labs(title = "Levels (in ft) on Lake Huron, 1875-1972") +
+  ylab("Level (ft)") +
+  xlab("Year")
+```
+
+## Bonus: Spatial Maps
+
+- We have data that can be placed onto a map
+  - What would those variables be?
+  
+## Example {.smaller}
+
+::: columns
+
+::: {.column width="56%"}
+
+```{r fig.height=4, fig.width=8}
+#| eval: false
+library(maps)
+boston <- map_data("county", region = "Massachusetts")
+
+ggplot(BostonHousing2, aes(x = lon, y = lat, colour = medv)) +
+  geom_polygon(data = boston,
+               aes(x = long, y = lat, group = group),
+               fill = NA, color = "black") +
+  geom_point(data = BostonHousing2, 
+             aes(x = lon, y = lat, colour = medv),
+             alpha = 0.2) + theme_classic() +
+  coord_map("albers",  lat0 = 45.5, lat1 = 29.5) +
+  labs(x = "",
+       y = "",
+       colour = "Median\nHousing\nValues\n($1000s)",
+       title = "Median Value of Owner-Occupied Homes\n
+across Boston Census Tracts, 1970") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.line.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line.y = element_blank())
+
+```
+
+
+:::
+
+::: {.column width="44%"}
+
+```{r fig.height=6, fig.width=6}
+#| echo: false
+library(maps)
+boston <- map_data("county", region = "Massachusetts")
+
+ggplot(BostonHousing2, aes(x = lon, y = lat, colour = medv)) +
+  geom_polygon(data = boston,
+               aes(x = long, y = lat, group = group),
+               fill = NA, color = "black") +
+  geom_point(data = BostonHousing2, 
+             aes(x = lon, y = lat, colour = medv),
+             alpha = 0.2) + theme_classic() +
+  coord_map("albers",  lat0 = 45.5, lat1 = 29.5) +
+  labs(x = "",
+       y = "",
+       colour = "Median\nHousing\nValues\n($1000s)",
+       title = "Median Value of Owner-Occupied Homes\n
+across Boston Census Tracts, 1970") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.line.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line.y = element_blank())
+
+```
+
+:::
+:::
+
+## Activity
+
+In groups of 2-3, create either your own line chart or scatter plot.
+
+- Make sure to include labels, a title, and one modification
+- Code these plots up along with the other activities
+- Stage, commit, and push changes to your activities repository
+
+
