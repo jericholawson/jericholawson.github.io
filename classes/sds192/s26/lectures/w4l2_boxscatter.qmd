@@ -41,7 +41,7 @@ execute:
   - via the `mlbench` library
   - 506 observations, 14 variables
   - Estimate median housing values through other variables
-- Create a new .qmd file in your activities repository and name the file     `2-18.qmd`. Use the following code:
+- Create a new .qmd file in your activities repository and name the file     `2-18.qmd`. Use the following code below:
 
 ```{r}
 library(mlbench)

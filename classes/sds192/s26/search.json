@@ -2041,7 +2041,7 @@
     "href": "lectures/w4l2_boxScatter.html#dataset-for-today",
     "title": "Box Plots and Scatter Plots",
     "section": "Dataset for Today",
-    "text": "Dataset for Today\n\nBoston Housing data\n\nvia the mlbench library\n506 observations, 14 variables\nEstimate median housing values through other variables\n\nCreate a new .qmd file in your activities repository and name the file 2-18.qmd. Use the following code:\n\n\nlibrary(mlbench)\nlibrary(ggplot2)\ndata(BostonHousing2)"
+    "text": "Dataset for Today\n\nBoston Housing data\n\nvia the mlbench library\n506 observations, 14 variables\nEstimate median housing values through other variables\n\nCreate a new .qmd file in your activities repository and name the file 2-18.qmd. Use the following code below:\n\n\nlibrary(mlbench)\nlibrary(ggplot2)\ndata(BostonHousing2)"
   },
   {
     "objectID": "lectures/w4l2_boxScatter.html#box-plot",
