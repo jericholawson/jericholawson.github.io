@@ -291,14 +291,14 @@
     "href": "schedule.html#week-6-data-joining-32---36",
     "title": "Schedule",
     "section": "Week 6: Data Joining (3/2 - 3/6)",
-    "text": "Week 6: Data Joining (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4Friday, 3/6\n\n\nLecture #11: Data Joining\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #12: Problem Solving\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLab #5: Data Wrangling (and Joining)"
+    "text": "Week 6: Data Joining (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4Friday, 3/6\n\n\n\n\n\n\n\n\nNoteLecture: Data Joining\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Problem-Solving\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteProject Working Time and Lab #5\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-7-statistics-and-exam-1-39---313",
     "href": "schedule.html#week-7-statistics-and-exam-1-39---313",
     "title": "Schedule",
     "section": "Week 7: Statistics and Exam #1 (3/9 - 3/13)",
-    "text": "Week 7: Statistics and Exam #1 (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11Friday, 3/13\n\n\nLecture #13: Statistics\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #14: Review\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nExam #1: In-Class"
+    "text": "Week 7: Statistics and Exam #1 (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11Friday, 3/13\n\n\n\n\n\n\n\n\nNoteLab #5\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-8-spring-break-316---319",
@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsTextbooksPerusallDatasets\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsTextbooksPerusallDatasets\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n12: Data Problem-Solving\n13: Review for Exam #1\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -1733,7 +1733,7 @@
     "href": "schedule.html#week-4-data-visualizations-with-ggplot-216---220",
     "title": "Schedule",
     "section": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)",
-    "text": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\n\n\n\n\n\n\nNoteLecture: Frequency Plots\n\n\n\n\nSlides + Activity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #2 (due Wednesday, 2/18 at 11:59pm)\nProject #1: Proposal (due Friday, 2/20 at 11:59pm in new GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Box and Scatter Plots\n\n\n\n\nSlides + Activity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #2 (due Wednesday, 2/18 at 11:59pm)\nProject #1: Proposal (due Friday, 2/20 at 11:59pm in new GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\nReadings #4 (due Sunday, 2/22 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #3: Visualization Aesthetics\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 4: Data Visualizations with ggplot (2/16 - 2/20)\n\nMonday, 2/16Wednesday, 2/18Friday, 2/20\n\n\n\n\n\n\n\n\nNoteLecture: Frequency Plots\n\n\n\n\nSlides + Activity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #2 (due Wednesday, 2/18 at 11:59pm)\nProject #1: Proposal (due Friday, 2/20 at 11:59pm in new GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Box and Scatter Plots\n\n\n\n\nSlides + Activity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #2 (due Wednesday, 2/18 at 11:59pm)\nProject #1: Proposal (due Friday, 2/20 at 11:59pm in new GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\nReadings #4 (due Sunday, 2/22 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #3: Visualization Aesthetics\n\n\n\n\nInstructions\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nProject #1: Proposal (due tonight at 11:59pm in new GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\nReadings #4 (due Sunday, 2/22 at 11:59pm on Perusall)\nLab #3 (due Wednesday, 2/25 at 11:59pm)\n\nTemplate\n\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions"
   },
   {
     "objectID": "schedule-abc.html",
@@ -2924,5 +2924,411 @@
     "title": "Week 3, Lecture 1",
     "section": "",
     "text": "mtcars\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\nwhich(mtcars$mpg &lt; 15) # positive\n\n[1]  7 15 16 17 24\n\n-which(mtcars$mpg &lt; 15) # negative\n\n[1]  -7 -15 -16 -17 -24\n\nmtcars$mpg &lt; 15 # logical\n\n [1] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE\n[13] FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE\n[25] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE\n\nmtcars[mtcars$mpg &lt; 15, ]\n\n                     mpg cyl disp  hp drat    wt  qsec vs am gear carb\nDuster 360          14.3   8  360 245 3.21 3.570 15.84  0  0    3    4\nCadillac Fleetwood  10.4   8  472 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8  460 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8  440 230 3.23 5.345 17.42  0  0    3    4\nCamaro Z28          13.3   8  350 245 3.73 3.840 15.41  0  0    3    4"
+  },
+  {
+    "objectID": "schedule.html#wednesday-34",
+    "href": "schedule.html#wednesday-34",
+    "title": "Schedule",
+    "section": "Wednesday, 3/4",
+    "text": "Wednesday, 3/4\n\n\n\n\n\n\nNoteLecture: Problem-Solving\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "schedule.html#friday-36",
+    "href": "schedule.html#friday-36",
+    "title": "Schedule",
+    "section": "Friday, 3/6",
+    "text": "Friday, 3/6\n\n\n\n\n\n\nNoteProject Working Time and Lab #5\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n:::"
+  },
+  {
+    "objectID": "schedule.html#wednesday-311",
+    "href": "schedule.html#wednesday-311",
+    "title": "Schedule",
+    "section": "Wednesday, 3/11",
+    "text": "Wednesday, 3/11\n\n\n\n\n\n\nNoteLecture: Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "schedule.html#friday-313",
+    "href": "schedule.html#friday-313",
+    "title": "Schedule",
+    "section": "Friday, 3/13",
+    "text": "Friday, 3/13\n\n\n\n\n\n\nNoteExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n:::"
+  },
+  {
+    "objectID": "schedule.html#week-8-spring-break-316---320",
+    "href": "schedule.html#week-8-spring-break-316---320",
+    "title": "Schedule",
+    "section": "Week 8: Spring Break! (3/16 - 3/20)",
+    "text": "Week 8: Spring Break! (3/16 - 3/20)\n\nMonday, 3/16Wednesday, 3/18Friday, 3/20\n\n\n\n\n\n\n\n\nNoteNo Class!\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteNo Class!\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteNo Class!\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "schedule.html#week-7-review-and-exam-1-39---313",
+    "href": "schedule.html#week-7-review-and-exam-1-39---313",
+    "title": "Schedule",
+    "section": "Week 7: Review and Exam #1 (3/9 - 3/13)",
+    "text": "Week 7: Review and Exam #1 (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11Friday, 3/13\n\n\n\n\n\n\n\n\nNoteLab #5\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#last-time",
+    "href": "lectures/w6l1_joining.html#last-time",
+    "title": "Data Joining",
+    "section": "Last Time",
+    "text": "Last Time\n\nData wrangling\n\nOrdering\nSubsetting\nCreating\nSummarizing\n\nExamples"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#for-today",
+    "href": "lectures/w6l1_joining.html#for-today",
+    "title": "Data Joining",
+    "section": "For Today",
+    "text": "For Today\n\nData joining\n\nRationale\nDifferent types of joins\nR examples"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#motivating-datasets",
+    "href": "lectures/w6l1_joining.html#motivating-datasets",
+    "title": "Data Joining",
+    "section": "Motivating Datasets",
+    "text": "Motivating Datasets\n\nDownload template\n\n\nWhat do you notice about them? Why might they be useful to consider together?\n\n\nlibrary(tidyverse)\nct_school_attendance &lt;- read.csv(\"https://data.ct.gov/resource/t4hx-jd4c.csv?$limit=3000\") %&gt;%\n  filter(studentgroup == \"All Students\" & reportingdistrictname != \"Connecticut\")\nct_school_learning_model &lt;-\n  read.csv(\"https://data.ct.gov/resource/5q7h-u2ac.csv?$where=update_date=%272020-09-17%27\") |&gt;\n  rename(fully_remote = percent_students_fully_remote)"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#remember-we-are-messy",
+    "href": "lectures/w6l1_joining.html#remember-we-are-messy",
+    "title": "Data Joining",
+    "section": "Remember, we are messy",
+    "text": "Remember, we are messy\n\nMany levels of organization for an organization/agency of any size\n\nWe might want to have a view of all (composed of many data sets)\nData joining!"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#joining-datasets",
+    "href": "lectures/w6l1_joining.html#joining-datasets",
+    "title": "Data Joining",
+    "section": "Joining Datasets",
+    "text": "Joining Datasets\n\nUp until this point, we have been working with data in single tables\nSometimes related data can be spread across multiple tables that we wish to bring together for different kinds of analysis\nUse of dplyr\n\n\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#keys-to-success",
+    "href": "lectures/w6l1_joining.html#keys-to-success",
+    "title": "Data Joining",
+    "section": "Keys (to success)",
+    "text": "Keys (to success)\n\nThe key is having a unique column shared across tables that we can join on\n\ne.g. ID, name"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#keys",
+    "href": "lectures/w6l1_joining.html#keys",
+    "title": "Data Joining",
+    "section": "Keys",
+    "text": "Keys\n\nAre there any problems with using these keys?\n\n\n\n\nct_school_attendance %&gt;% \n  select(reportingdistrictcode) %&gt;% \n  head()\n\n  reportingdistrictcode\n1               0010011\n2               0020011\n3               0030011\n4               0040011\n5               0050011\n6               0070011\n\n\n\n\nct_school_learning_model %&gt;% \n  select(district_code) %&gt;% \n  head()\n\n  district_code\n1       2190012\n2         80011\n3         10011\n4         20011\n5         30011\n6         40011"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#keys-1",
+    "href": "lectures/w6l1_joining.html#keys-1",
+    "title": "Data Joining",
+    "section": "Keys",
+    "text": "Keys\n\nNeed to have consistent type for key in both data frames\n\n\nct_school_attendance &lt;- ct_school_attendance |&gt;\n  mutate(reportingdistrictcode = \n           as.integer(reportingdistrictcode))\n\n\n\n\nct_school_attendance |&gt;\n  select(reportingdistrictcode) |&gt;\n  head()\n\n  reportingdistrictcode\n1                 10011\n2                 20011\n3                 30011\n4                 40011\n5                 50011\n6                 70011\n\n\n\n\nct_school_learning_model |&gt;\n  select(district_code) |&gt;\n  head()\n\n  district_code\n1       2190012\n2         80011\n3         10011\n4         20011\n5         30011\n6         40011"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#join",
+    "href": "lectures/w6l1_joining.html#join",
+    "title": "Data Joining",
+    "section": "Join",
+    "text": "Join\n\nct_school_attendance |&gt;\n  inner_join(ct_school_learning_model, \n             by = c(\"reportingdistrictcode\" = \"district_code\")) |&gt;\n  select(reportingdistrictcode, attrate_202021, fully_remote) |&gt;\n  head()\n\n  reportingdistrictcode attrate_202021 fully_remote\n1                 10011         0.9680          13%\n2                 20011         0.8923          32%\n3                 30011         0.9550          30%\n4                 40011         0.9621          19%\n5                 50011         0.9698          12%\n6                 70011         0.9542          13%"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#different-kinds-of-joins",
+    "href": "lectures/w6l1_joining.html#different-kinds-of-joins",
+    "title": "Data Joining",
+    "section": "Different Kinds of Joins",
+    "text": "Different Kinds of Joins\n\ninner_join()\nleft_join()\nright_join()\nfull_join()\nanti_join()"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#inner-join",
+    "href": "lectures/w6l1_joining.html#inner-join",
+    "title": "Data Joining",
+    "section": "Inner Join",
+    "text": "Inner Join\n\ninner_join()\n\nAttaching columns together based on a shared key\n\nIf observation isn’t shared, it is removed"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#outer-joins",
+    "href": "lectures/w6l1_joining.html#outer-joins",
+    "title": "Data Joining",
+    "section": "Outer Joins",
+    "text": "Outer Joins\n\n\n\nAttaching columns together based on a shared key\n\nIf observation isn’t shared but needs to be included, we have the following options:"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#outer-joins-1",
+    "href": "lectures/w6l1_joining.html#outer-joins-1",
+    "title": "Data Joining",
+    "section": "Outer Joins",
+    "text": "Outer Joins\n\n\n\nleft_join()\n\nMaintains observations from first data frame, not from second if they are not shared\n\nright_join()\n\nMaintains observations from second data frame, not from first if they are not shared\n\nfull_join()\n\nMaintains observations from both data frames, results in NAs for variables that do not exist for given observation"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#one-to-many-relationships",
+    "href": "lectures/w6l1_joining.html#one-to-many-relationships",
+    "title": "Data Joining",
+    "section": "One-to-many relationships",
+    "text": "One-to-many relationships"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#many-to-many-relationships",
+    "href": "lectures/w6l1_joining.html#many-to-many-relationships",
+    "title": "Data Joining",
+    "section": "Many-to-many relationships",
+    "text": "Many-to-many relationships"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#anti-joins",
+    "href": "lectures/w6l1_joining.html#anti-joins",
+    "title": "Data Joining",
+    "section": "Anti-joins",
+    "text": "Anti-joins\n\nReturns first data frame with no matches with second data frame\n\n\n\n\nct_school_attendance %&gt;%\n  anti_join(ct_school_learning_model, by = c(\"reportingdistrictcode\" = \"district_code\")) %&gt;%\n  select(reportingdistrictcode)\n\n  reportingdistrictcode\n1               2310018\n2               3360015\n3               3470015\n\n\n\n\nct_school_learning_model %&gt;%\n  anti_join(ct_school_attendance, by = c(\"district_code\" = \"reportingdistrictcode\")) %&gt;%\n  select(district_code) %&gt;%\n  head()\n\n  district_code\n1         46821\n2         46921\n3        100161\n4        170561\n5        170821\n6        190161"
+  },
+  {
+    "objectID": "lectures/w6l1_joining.html#activity",
+    "href": "lectures/w6l1_joining.html#activity",
+    "title": "Data Joining",
+    "section": "Activity",
+    "text": "Activity\n\nWork through the exercises\n\nTemplate\nDownload the following three datasets:\n\nwnba1\nwnba2\nwnbaStars\n\nUse code from this lecture to guide you through\nTurn in by the end of the period"
+  },
+  {
+    "objectID": "lectures/w6l1_act.html",
+    "href": "lectures/w6l1_act.html",
+    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "section": "",
+    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+  },
+  {
+    "objectID": "lectures/w6l1_act.html#introduction",
+    "href": "lectures/w6l1_act.html#introduction",
+    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "section": "",
+    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+  },
+  {
+    "objectID": "lectures/w6l1_act.html#questions",
+    "href": "lectures/w6l1_act.html#questions",
+    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "section": "Questions",
+    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nJoin the wnba2 and wnbaStars data frames together, removing any players not shared between the two. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnba2 but excluding those from wnbaStars that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnbaStars but excluding those from wnba2 that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from both data frames. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nMerge the wnba1 and wnba2 datasets together. Using code from the activity in the last lecture, summarize the following for each position:\n\nNumber of players\nMedian PTS\nMedian TOV\n\n\n#PUT CODE HERE"
+  },
+  {
+    "objectID": "lectures/w6l1_act.html#turn-in",
+    "href": "lectures/w6l1_act.html#turn-in",
+    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "section": "Turn-in",
+    "text": "Turn-in\nSave the .qmd file inside your activities repository. Please stage, commit, and push to GitHub."
+  },
+  {
+    "objectID": "lectures/w6l1_actTemp.html",
+    "href": "lectures/w6l1_actTemp.html",
+    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "section": "",
+    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+  },
+  {
+    "objectID": "lectures/w6l1_actTemp.html#introduction",
+    "href": "lectures/w6l1_actTemp.html#introduction",
+    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "section": "",
+    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+  },
+  {
+    "objectID": "lectures/w6l1_actTemp.html#questions",
+    "href": "lectures/w6l1_actTemp.html#questions",
+    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "section": "Questions",
+    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nJoin the wnba2 and wnbaStars data frames together, removing any players not shared between the two. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnba2 but excluding those from wnbaStars that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnbaStars but excluding those from wnba2 that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from both data frames. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nMerge the wnba1 and wnba2 datasets together. Using code from the activity in the last lecture, summarize the following for each position:\n\nNumber of players\nMedian PTS\nMedian TOV\n\n\n#PUT CODE HERE"
+  },
+  {
+    "objectID": "lectures/w6l1_actTemp.html#turn-in",
+    "href": "lectures/w6l1_actTemp.html#turn-in",
+    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "section": "Turn-in",
+    "text": "Turn-in\nSave the .qmd file inside your activities repository. Please stage, commit, and push to GitHub."
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#last-time",
+    "href": "lectures/w6l2_ps.html#last-time",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Last Time",
+    "text": "Last Time\n\nData joining\n\nRationale\nDifferent types of joins\nR examples"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#today",
+    "href": "lectures/w6l2_ps.html#today",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Today",
+    "text": "Today\n\nOther useful functions\nProblem-solving\nTime to work on project"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#a-summary",
+    "href": "lectures/w6l2_ps.html#a-summary",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "A Summary",
+    "text": "A Summary\n\n\nData wrangling:\n\narrange()\nselect(), filter()\nmutate()\nsummarize(), group_by()\n\n\nData joining:\n\ninner_join()\nleft_join()\nright_join()\nfull_join()\nanti_join()"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#motivating-datasets",
+    "href": "lectures/w6l2_ps.html#motivating-datasets",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Motivating Datasets",
+    "text": "Motivating Datasets\nWe will use player data from the 2024 and 2025 WNBA seasons, using the…\n\nwnba1\nwnba2\nwnbaStars\n\n\nlibrary(tidyverse)\nwnba1 &lt;- read.csv(\"../data/wnba1.csv\")\nwnba2 &lt;- read.csv(\"../data/wnba2.csv\")\nwnbaStars &lt;- read.csv(\"../data/wnbaStars.csv\")\n\n\nExample variables:\n\nMP: minutes played\nPTS: points per 36 minutes\n\nMore information: link"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#slicing",
+    "href": "lectures/w6l2_ps.html#slicing",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Slicing",
+    "text": "Slicing\n\nWorks similarly to the head() function\nRetrieves observations based on position\n\n\nwnba1 |&gt; \n  slice(2:5) |&gt; \n  select(Player, Team, PTS)\n\n            Player Team  PTS\n1    Rebecca Allen  PHO 10.7\n2 Laeticia Amihere  ATL  8.2\n3     Ariel Atkins  WAS 18.0\n4       Amy Atwell  PHO  9.2"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#other-operators-for-filter",
+    "href": "lectures/w6l2_ps.html#other-operators-for-filter",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Other Operators for filter()",
+    "text": "Other Operators for filter()\n\nis.na(): used to identify NAs in data\n\n\nwnba1 |&gt; \n  mutate(Team = wnba1 |&gt; pull(Team) |&gt; replace(3:5, NA)) |&gt; # I'm cheating here\n  filter(is.na(Team)) |&gt; \n  select(Player, Team, PTS) |&gt;\n  head()\n\n            Player Team  PTS\n1 Laeticia Amihere &lt;NA&gt;  8.2\n2     Ariel Atkins &lt;NA&gt; 18.0\n3       Amy Atwell &lt;NA&gt;  9.2\n\n\n\n%in%: used to determine if elements in one object exist at least one in other object\n\n\nwnba1 |&gt; \n  filter(Team %in% c(\"PHO\", \"ATL\")) |&gt; \n  select(Player, Team, PTS) |&gt;\n  head()\n\n            Player Team  PTS\n1    Rebecca Allen  PHO 10.7\n2 Laeticia Amihere  ATL  8.2\n3       Amy Atwell  PHO  9.2\n4    Maya Caldwell  ATL 11.6\n5    Jordin Canada  ATL 12.2\n6     Tina Charles  ATL 18.0"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#mutating-into-cases",
+    "href": "lectures/w6l2_ps.html#mutating-into-cases",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Mutating into Cases",
+    "text": "Mutating into Cases\nWe may discretize a continuous variable by creating a dummy variable:\n\nmutate() and ifelse() functions\n\n\nwnba1 |&gt; \n  mutate(Bench = ifelse(PTS &lt;= 10, 1, 0)) |&gt; \n  select(Player, Team, PTS, Bench) |&gt;\n  head()\n\n            Player Team  PTS Bench\n1    Lindsay Allen  CHI 10.0     1\n2    Rebecca Allen  PHO 10.7     0\n3 Laeticia Amihere  ATL  8.2     1\n4     Ariel Atkins  WAS 18.0     0\n5       Amy Atwell  PHO  9.2     1\n6   Shakira Austin  WAS 21.3     0"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#mutating-into-multiple-cases",
+    "href": "lectures/w6l2_ps.html#mutating-into-multiple-cases",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Mutating into Multiple Cases",
+    "text": "Mutating into Multiple Cases\nWe may discretize a continuous variable by creating a dummy variable:\n\nmutate() and case_when() functions\ncondition ~ value for each case\n\n\nwnba1 |&gt; \n  mutate(Star = case_when(PTS &gt; 15 ~ \"star\", \n                          PTS &gt; 10 ~ \"starter\",\n                          PTS &lt;= 10 ~ \"bench\")) |&gt; \n  select(Player, Team, PTS, Star) |&gt;\n  head()\n\n            Player Team  PTS    Star\n1    Lindsay Allen  CHI 10.0   bench\n2    Rebecca Allen  PHO 10.7 starter\n3 Laeticia Amihere  ATL  8.2   bench\n4     Ariel Atkins  WAS 18.0    star\n5       Amy Atwell  PHO  9.2   bench\n6   Shakira Austin  WAS 21.3    star"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#binding-rows",
+    "href": "lectures/w6l2_ps.html#binding-rows",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Binding Rows",
+    "text": "Binding Rows\nAt times, you may have multiple data frames that have separate observations\n\nCan use bind_rows()\nBase R analog: rbind()\n\n\nwnba1 |&gt; \n  bind_rows(wnba2) |&gt; \n  select(Player, Team, PTS) |&gt;\n  slice((nrow(wnba1) - 2):(nrow(wnba1) + 2))\n\n          Player Team  PTS\n1   Odyssey Sims  TOT 15.5\n2     Sug Sutton  TOT  6.4\n3 Celeste Taylor  TOT  6.4\n4  Kierstan Bell  LVA 14.2\n5 Caitlin Bickle  CON  0.0"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#rename",
+    "href": "lectures/w6l2_ps.html#rename",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "rename()",
+    "text": "rename()\nUse rename() to rename specific columns if needed:\n\nwnba1 |&gt; \n  rename(Points = PTS) |&gt;\n  select(Player, Team, Points) |&gt;\n  head()\n\n            Player Team Points\n1    Lindsay Allen  CHI   10.0\n2    Rebecca Allen  PHO   10.7\n3 Laeticia Amihere  ATL    8.2\n4     Ariel Atkins  WAS   18.0\n5       Amy Atwell  PHO    9.2\n6   Shakira Austin  WAS   21.3"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#more-on-data-wrangling-and-joining",
+    "href": "lectures/w6l2_ps.html#more-on-data-wrangling-and-joining",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "More on Data wrangling and Joining",
+    "text": "More on Data wrangling and Joining\n\nData wranging (dplyr) cheatsheet: link"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#problem-solving",
+    "href": "lectures/w6l2_ps.html#problem-solving",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Problem-Solving",
+    "text": "Problem-Solving\nGet into groups of 2-3 and have one person create a .qmd file that will be submitted at the end of the period. Make sure to:\n\nWrite your names in the author section\nLoad in the three data sets"
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#exercise-1",
+    "href": "lectures/w6l2_ps.html#exercise-1",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #1",
+    "text": "Exercise #1\nWrite code that generates the following result amongst 2024 and 2025 players with these things in mind:\n\nKeep players who played more than 20 games as a starter\nCreate a new column that labels a player as “protective” if their number of turnovers is below 2 and “careless” otherwise\nRetain the player name, team name, position, points, rebounds, assists, and the new column\n\nYou should have an 51x7 data frame. Assign this result to wnba1Ref."
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#exercise-2",
+    "href": "lectures/w6l2_ps.html#exercise-2",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #2",
+    "text": "Exercise #2\nWrite code that generates a specific outcome based on only the stars:\n\nFocus only on players from “PHO” and “SEA”\nOrder them by name\n\nYou should have a 3x18 data frame."
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#exercise-3",
+    "href": "lectures/w6l2_ps.html#exercise-3",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #3",
+    "text": "Exercise #3\nWrite code that generates a specific outcome based on your result in exercise #1:\n\nFilter based on these teams: “IND”, “NYL”, “LAS”\nGroup them based on team and position\nShow the number in each subgroup\nList the averages of the following statistics:\n\nPoints\nAssists\nRebounds\n\n\nYou should have a 9x6 data frame."
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#exercise-4",
+    "href": "lectures/w6l2_ps.html#exercise-4",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #4",
+    "text": "Exercise #4\nWrite code that allows you to return a dataset that lists the following summary statistics for each position of the list of players who is in wnba1 (and not wnba1Ref):\n\nNumber of players per position\nAverage points (per 36 minutes played)\nProportion of those with fewer than 1 TOV\n\nYou should have a 7x4 data frame."
+  },
+  {
+    "objectID": "lectures/w6l2_ps.html#exercise-5",
+    "href": "lectures/w6l2_ps.html#exercise-5",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #5",
+    "text": "Exercise #5\nWrite code that allows you to return a dataset that does the following:\n\nJoins the wnba1 and wnbaStars together, looking at membership in both\nGroups by their team\nIdentifies the number of players, maximum points, and proportion of guards on each team\nKeeps teams who had a player score more than 22 points in either year\n\nYou should have a 2x4 data frame."
+  },
+  {
+    "objectID": "lectures/w7l1_review.html#last-time",
+    "href": "lectures/w7l1_review.html#last-time",
+    "title": "Review",
+    "section": "Last Time",
+    "text": "Last Time\n\nOther useful functions\nProblem-solving\nTime to work on project"
+  },
+  {
+    "objectID": "lectures/w7l1_review.html#today",
+    "href": "lectures/w7l1_review.html#today",
+    "title": "Review",
+    "section": "Today",
+    "text": "Today\n\nReview"
+  },
+  {
+    "objectID": "lectures/w7l1_review.html#tbd",
+    "href": "lectures/w7l1_review.html#tbd",
+    "title": "Review",
+    "section": "TBD",
+    "text": "TBD"
+  },
+  {
+    "objectID": "labs/lab5/index.html",
+    "href": "labs/lab5/index.html",
+    "title": "Lab #5: Exploratory Data Analysis (30 pts)",
+    "section": "",
+    "text": "In 1968, the Supreme Court case Terry v. Ohio ruled that a police officer could stop an individual without “probable cause” but with “reasonable suspicion” the suspect had committed a crime. Further, an officer could frisk an individual without “probable cause” but with “reasonable suspicion” the suspect was carrying a weapon. In the early 1990s, stop, question, and frisk became a widely prevalent tactic in policing in NYC. However, as the practice expanded in the 2000s, civil rights organizations began calling attention to the ways in which it was fueling the over-policing of NYC neighborhoods, along with racial profiling.\nIn 2011, David Floyd and David Ourlicht filed a class action lawsuit (on behalf of themselves and other minority civilians in NYC) against the City of New York, Police Commissioner Raymond Kelly, Mayor Michael Bloomberg, and a number of NYPD officers. Their argument was that the NYPD had stopped them without “reasonable suspicion” and that the defendants had sanctioned policies for stopping civilians on the basis of race or national origin. Honorable Shira A. Scheindlin, who oversaw the US District Court Case, ultimately ruled that stop and frisk was being carried out in an unconstitutional way. The officer-reported data that we will examine in this lab was leveraged as key evidence throughout this case.\nIn this lab, you will apply the 6 data wrangling verbs we learned this week in order to analyze data regarding NYPD stop, question, and frisk. Specifically, we will replicate data analysis performed by the NYCLU in 2011 to demonstrate how the practice was being carried out unconstitutionally in New York. We are specifically going to look at three issues:\n\nHow many times did the NYPD stop an individual in 2011?\nIn how many 2011 stops was the stopped individual found to be guilty of a crime?\nIn how many 2011 stops that involved a frisk was the individual found to be carrying a weapon?\n\nWe are also going to examine the racial breakdown for each of these three questions to assess the extent to which stop and frisk was being carried out in a discriminatory way in 2011.\n\n\n\nApply data wrangling verbs to subset and aggregate data\nConsider the implications of racial categorization"
+  },
+  {
+    "objectID": "labs/lab5/index.html#introduction",
+    "href": "labs/lab5/index.html#introduction",
+    "title": "Lab #5: Exploratory Data Analysis (30 pts)",
+    "section": "",
+    "text": "In 1968, the Supreme Court case Terry v. Ohio ruled that a police officer could stop an individual without “probable cause” but with “reasonable suspicion” the suspect had committed a crime. Further, an officer could frisk an individual without “probable cause” but with “reasonable suspicion” the suspect was carrying a weapon. In the early 1990s, stop, question, and frisk became a widely prevalent tactic in policing in NYC. However, as the practice expanded in the 2000s, civil rights organizations began calling attention to the ways in which it was fueling the over-policing of NYC neighborhoods, along with racial profiling.\nIn 2011, David Floyd and David Ourlicht filed a class action lawsuit (on behalf of themselves and other minority civilians in NYC) against the City of New York, Police Commissioner Raymond Kelly, Mayor Michael Bloomberg, and a number of NYPD officers. Their argument was that the NYPD had stopped them without “reasonable suspicion” and that the defendants had sanctioned policies for stopping civilians on the basis of race or national origin. Honorable Shira A. Scheindlin, who oversaw the US District Court Case, ultimately ruled that stop and frisk was being carried out in an unconstitutional way. The officer-reported data that we will examine in this lab was leveraged as key evidence throughout this case.\nIn this lab, you will apply the 6 data wrangling verbs we learned this week in order to analyze data regarding NYPD stop, question, and frisk. Specifically, we will replicate data analysis performed by the NYCLU in 2011 to demonstrate how the practice was being carried out unconstitutionally in New York. We are specifically going to look at three issues:\n\nHow many times did the NYPD stop an individual in 2011?\nIn how many 2011 stops was the stopped individual found to be guilty of a crime?\nIn how many 2011 stops that involved a frisk was the individual found to be carrying a weapon?\n\nWe are also going to examine the racial breakdown for each of these three questions to assess the extent to which stop and frisk was being carried out in a discriminatory way in 2011.\n\n\n\nApply data wrangling verbs to subset and aggregate data\nConsider the implications of racial categorization"
+  },
+  {
+    "objectID": "labs/lab5/index.html#review-of-key-terms",
+    "href": "labs/lab5/index.html#review-of-key-terms",
+    "title": "Lab #5: Exploratory Data Analysis (30 pts)",
+    "section": "Review of Key Terms",
+    "text": "Review of Key Terms\n\n\n\n\n\n\nTip\n\n\n\nYou may wish to reference this Data Wrangling Cheatsheet when completing this lab.\n\n\n\nfilter\n\nfilters to rows (observations) that meet a certain criteria\n\nselect\n\nkeeps only selected variables (columns)\n\narrange\n\nsorts values in a variable (column)\n\nsummarize\n\ncalculates a single value by performing an operation across a variable (column); summarizing by n() calculates the number of observations in the column\n\ngroup_by\n\ngroups rows (observations) by shared values in a variable (column); when paired with summarize(), performs an operation in each group\n\nmutate\n\ncreates a new variable (column) and assigns values according to criteria we provide"
+  },
+  {
+    "objectID": "labs/lab5/index.html#stop-question-and-frisk-dataset",
+    "href": "labs/lab5/index.html#stop-question-and-frisk-dataset",
+    "title": "Lab #5: Exploratory Data Analysis (30 pts)",
+    "section": "Stop, Question, and Frisk Dataset",
+    "text": "Stop, Question, and Frisk Dataset\nEvery time an officer stops a civilian in NYC, the officer is supposed to complete a UF-250 form (see image below) outlining the details of the stop.\n\n\n\nSource: UF250 Side 1, Dan Nguyen’s Blog\n\n\n\n\n\nSource: UF250 Side 2, Dan Nguyen’s Blog\n\n\nAs a result of some high profile police shootings in the late 1990s and mid-2000s, both the New York State Attorney General’s Office and the New York Civil Liberties Union began to examine NYPD stop and frisk activity for racial profiling. With pressure from these organizations, in the mid-2000s, information recorded on UF-250 forms began getting reported in public databases.\nSince then, the NYCLU has been using the data to conduct annual reports investigating the degree of racial profiling in stop and frisk activity in NYC. Through this research, they have been able to show that stops increased almost 700% from 2002 to 2011 - the year that marked the height of stop and frisk activity in NYC.\nWhen the NYPD’s use of stop and frisk went before the US District Court in the early 2010s, these public databases were integral in proving that stop and frisk was being carried out in NYC in an unconstitutional way. The ruling mandated that the NYPD create a policy outlining when stops were authorized, and since the practice has declined."
+  },
+  {
+    "objectID": "labs/lab5/index.html#setting-up-your-environment",
+    "href": "labs/lab5/index.html#setting-up-your-environment",
+    "title": "Lab #5: Exploratory Data Analysis (30 pts)",
+    "section": "Setting Up Your Environment",
+    "text": "Setting Up Your Environment\n\nRun the code below to load today’s data frames into your environment.\n\n\nlibrary(tidyverse)\n\nsqf_url &lt;- \"https://www1.nyc.gov/assets/nypd/downloads/zip/analysis_and_planning/stop-question-frisk/sqf-2011-csv.zip\"\ntemp &lt;- tempfile()\ndownload.file(sqf_url, temp)\nsqf_zip &lt;- unzip(temp, \"2011.csv\")\nsqf_2011 &lt;- read.csv(sqf_zip, stringsAsFactors = FALSE) \nsqf_2011_race_cat &lt;- read.csv(\"https://raw.githubusercontent.com/lindsaypoirier/STS-101/master/Data/SQF/sqf_race_categories.csv\", stringsAsFactors = FALSE) \nrm(sqf_url)\nrm(temp)\nrm(sqf_zip)\n\n\nWe will analyze data for all stops in 2011. This data can be found here. However, we’re only going to be considering a subset of the columns. Review the data dictionary for the columns we’re using in this analysis.\n\n\n\n\n\n\n\n\n\nVARIABLE\nDEFINITION\nPOSSIBLE VALUES\n\n\n\n\npct\nPrecinct of the stop\n1:123\n\n\narrestsum\nWas an arrest made or summons issued?\n1 = Yes\n0 = No\n\n\nfrisked\nWas suspect frisked?\n1 = Yes\n0 = No\n\n\nwpnfound\nWas a weapon found on suspect?\n1 = Yes\n0 = No\n\n\nrace_cat\nSuspect’s race\nAMERICAN INDIAN/ALASKAN NATIVE\nASIAN/PACIFIC ISLANDER\nBLACK\nBLACK-HISPANIC\nOTHER\nWHITE\nWHITE-HISPANIC\n\n\nage\nSuspect’s age\n999 indicates a missing value\n\n\n\n\nThe original dataset codes each race with a single letter. Run the code below to add a column called race_cat that writes out each racial category in accordance with the data documentation. It also replaces every instance of “Y” in the dataset with 1 and every instance of “N” with 0. This will allow us to sum the Yes’s in the dataset. You’ll learn more about how this code works in coming weeks.\n\n\nsqf_2011 &lt;- \n  sqf_2011 |&gt; \n  select(pct, race, age, frisked, pistol, riflshot, asltweap, knifcuti, machgun, othrweap, sumissue, arstmade) |&gt;\n  left_join(sqf_2011_race_cat, by = \"race\") |&gt;\n  mutate(across(frisked:arstmade, \n         ~ case_when(. == \"Y\" ~ 1, . == \"N\" ~ 0)))\nrm(sqf_2011_race_cat)\n\n\nNavigate to the NYCLU’s webpage documenting statistics from analysis of annual stop and frisk data. Scroll to the data for 2011. In today’s lab, we are going to replicate their analysis in an attempt to produce/verify these numbers."
+  },
+  {
+    "objectID": "labs/lab5/index.html#analysis",
+    "href": "labs/lab5/index.html#analysis",
+    "title": "Lab #5: Exploratory Data Analysis (30 pts)",
+    "section": "Analysis",
+    "text": "Analysis\nTerry v. Ohio ruled that officers with “reasonable suspicion” that a stopped individual was carrying a weapon may frisk that individual for weapons.\nIn order to assess how “reasonable suspicion” was being applied in NYC in 2011, we are eventually going to analyze how many 2011 stops resulted in a frisk, how many frisks resulted in a weapon found on an individual, and how many stops resulted in either an arrest or summons.\nThe original dataset had separate variables for indicating whether a pistol, rifle, assault weapon, knife, machine gun, or other weapon was found on a suspect. We will create a variable equal to 1 if any of these weapons were found on the suspect. Further, the original dataset had separate variables for indicating whether a stop resulted in an arrest made or summons issued. We will create a variable equal to 1 if either occurred.\n\n\n\n\n\n\nImportantQuestion 1 (3 pts)\n\n\n\nAdd two new columns. The first should indicate whether a weapon was found, and the second should indicate whether an arrest/summons was made.\n\nsqf_2011 &lt;- \n  sqf_2011 |&gt;\n  #Add a variable for weapon found\n  _____(wpnfound = case_when(pistol == 1 |\n                               riflshot == 1 | \n                               asltweap == 1 |\n                               knifcuti == 1 | \n                               machgun == 1 | \n                               othrweap == 1 ~ 1,\n                             TRUE ~ 0))\nsqf_2011 &lt;- \n  sqf_2011 |&gt;\n  #Add a variable for arrest made or summons issued\n  _____(arrestsumm = case_when(sumissue == 1 | \n                                arstmade == 1 ~ 1,\n                               TRUE ~ 0))\n\n\n\n\n\n\n\n\n\nTip\n\n\n\ncase_when() allows us to assign values based on whether certain criteria is met. Here is the basic formula:\n\ncase_when(\n  &lt;criteria to check&gt; ~ &lt;set to this value if criteria is met&gt;, \n  TRUE ~ &lt;set to this value if criteria is not met&gt;\n  )\n\nCheck out the code above. In the first line of code, we set the value for wpnfound to 1 if the first criteria is met (i.e. if pistol equals 1 or riflshot equals 1, and so on.) Otherwise, we set the value for wpnfound to 0.\n\n\nNow that you’ve run this code, open up the data frame in the View window. What is the unit of observation in this dataset? What variables describe each row?\nWe don’t need all of these columns in this data frame for this analysis. In fact, to replicate the NYCLU’s 2011 analysis, we only need six columns from this data frame.\n\n\n\n\n\n\nImportantQuestion 2 (3 pts)\n\n\n\nSubset the dataset to the six variables listed in the data dictionary above.\n\nsqf_2011 &lt;-\n  sqf_2011 |&gt;\n  _____(pct, arrestsumm, _____, wpnfound, race_cat, _____)\n\n\n\nIn order to be able to determine the percentage of stops that resulted in a frisk, weapon found, or arrest/summons, we are going to need to know how many total stops were conducted in NYC in 2011. We are going to store that value in the variable total_stops so that we can refer to it later.\n\n\n\n\n\n\nImportantQuestion 3 (3 pts)\n\n\n\nCalculate the number of stops in 2011. If you are not sure which function to use below, you may want to refer to the list of Summary functions in the the Data Wrangling cheatsheet. Remember that each row in the data frame is a stop.\n\ntotal_stops &lt;-\n  sqf_2011 |&gt;\n  summarize(Count = _____) |&gt;\n  pull()\n\ntotal_stops\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nsummarize() will return a data frame with the summarized value. Remember a data frame is a two-dimensional table with rows and columns (even if it’s a 1x1 table). If we want just the value, we can call pull() to extract the value from that two–dimensional table.\n\n\nRecall that for stops to be legally justified, officers must have “reasonable suspicion” that an individual committed a crime. This means that officers must be able to offer “specific and articulable facts,” along with rational inferences based on those facts, that an individual had committed a crime, in order to justify a stop. Reasonable suspicion requires more than a ‘hunch’.\nFor this reason, one of first metrics that the NYCLU calculates in their reports is the number and percentage of stops in which in the stopped individuals turned out to be innocent.\n\n\n\n\n\n\nImportantQuestion 4 (3 pts)\n\n\n\nHow many stops did not result in an arrest or summons in 2011? What percentage of stops did not result in an arrest or summons?\n\nsqf_2011 |&gt;\n  #Subset to rows where suspect innocent\n  _____(arrestsumm _____ 0) |&gt; \n  #Calculate number of observations\n  _____(total_innocent = n(), \n            percent_innocent = _____ / total_stops * 100)\n\n\n\nIn order to assess how stop and frisk may be carried out in a discriminatory way, the NYCLU’s reports go on to look at stops through the lens of a number of demographic indicators, including the age, race, gender, and ethnicity of the individuals stopped. For starters, let’s look at how many young people (14-24) were stopped in NYC in 2011.\n\n\n\n\n\n\nImportantQuestion 5 (3 pts)\n\n\n\nIn how many stops were the individuals aged 14-24? In what percentage of stops were the individuals aged 14-24?\n\nsqf_2011 |&gt;\n  #Subset to rows where suspect age 14-24\n  _____(age _____ 14 & age _____ 24) |&gt; \n  #Calculate number of observations and percentage of observations\n  _____(total_14_24 = _____, \n            percent_14_24 = n() / total_stops * 100)\n\n\n\nWhy doesn’t this match the values we see on the NYCLU website?\nNote the following from the NYCLU’s 2011 report on Stop, Question, and Frisk data:\n\n“In a negligible number of cases, race and age information is not recorded in the database. Throughout this report, percentages of race and age are percentages of those cases where race and age are recorded, not of all stops.”\n\nNote that it is very common in government datasets for missing values to get coded as 999 or -999. Here we want to exclude those values in the age column.\n\n\n\n\n\n\nImportantQuestion 6 (3 pts)\n\n\n\nFix the code below to calculate the correct number of stops for individuals 14-24.\n\ntotal_stops_age_recorded &lt;-\n  sqf_2011 |&gt;\n  #Subset to rows where age is not 999\n  _____(age _____ 999) |&gt; \n  summarize(Count = n()) |&gt;\n  pull()\n\nsqf_2011 |&gt;\n  filter(age &gt;= 14 & age &lt;= 24) |&gt;\n  summarize(total_14_24 = n(), \n            percent_14_24 = n() / total_stops_age_recorded * 100)\n\n\n\nThis still doesn’t match the values we see on the website, but it does match the values we see in the NYCLU’s 2011 report on Stop, Question, and Frisk data. This is typically when I would reach out to a representative at the NYCLU to inquire about the discrepancy.\n\n\n\n\n\n\nImportantQuestion 7 (3 pts)\n\n\n\nHow many stops were there per race in 2011? What percentage of stops per race in 2011? Arrange by number of stops in descending order.\n\ntotal_stops_race_recorded &lt;-\n  sqf_2011 |&gt;\n  #Subset to rows where race_cat is not NA or \"OTHER\"\n  filter(_____(race_cat) & race_cat _____ \"OTHER\") |&gt; \n  summarize(Count = n()) |&gt;\n  pull()\n\nsqf_2011 |&gt;\n  #Subset to rows where race_cat is not NA or \"OTHER\"\n  _____(_____(race_cat) & race_cat _____ \"OTHER\") |&gt; \n  #Group by race\n  _____(race_cat) |&gt; \n  #Calculate number of observations\n  _____(stops = n(), \n            percent_stops = n() / total_stops_race_recorded * 100) |&gt;\n  #Sort by stops in descending order\n  _____(_____(stops)) \n\n\n\nNote how this dataset categorizes race. Many different government datasets categorize race in many different ways. How we categorize race matters for how we can talk about discrimination and racial profiling. Imagine if WHITE was not categorized separately from WHITE-HISPANIC. The values in this dataset would appear very differently!\nWhen compiling their report, the NYCLU chose to aggregate two racial categories in this dataset into the one category - Latinx - in order to advance certain claims regarding discrimination. What we should remember is that these racial categories are not reported by those stopped; they are recorded by officers stopping individuals. They may not reflect how individuals identify themselves.\n\n\n\n\n\n\nImportantQuestion 8 (3 pts)\n\n\n\nIn how many stops were the individuals identified as Latinx (i.e. “WHITE-HISPANIC” or “BLACK-HISPANIC”)? In what percentage of stops were the individuals identified as Latinx?\n\nsqf_2011 |&gt;\n  #Subset to rows where race_cat is \"WHITE-HISPANIC\" or \"BLACK-HISPANIC\"\n  _____(race_cat _____ c(\"WHITE-HISPANIC\", \"BLACK-HISPANIC\")) |&gt; \n  #Calculate number of observations\n  _____(stops_Latinx = _____, \n            percent_Latinx = n() / total_stops_race_recorded * 100)\n\n\n\nAs a final consideration, we are going to calculate some summary statistics to further our understanding of the discriminatory ways in which this practice was being carried out. To so so, we are going to look at a racial breakdown of which stops resulted in an arrest/summons, and which frisks resulted in a weapon found.\n\n\n\n\n\n\nImportantQuestion 9 (3 pts)\n\n\n\nWhat percentage of stops in 2011 resulted in a frisk per race? What percentage of stops in 2011 resulted in a weapon found per race? What percentage of stops in 2011 resulted in an arrest or summons per race? In your resulting data table, each row should be a race, and there should be columns for stops, percent_stops, percent_frisked, percent_wpnfound , and percent_arrestsumm.\n\n# Write code here. \n\n\n\n\n\n\n\n\n\nImportantQuestion 10 (3 pts)\n\n\n\nBelow, in 2-3 sentences, summarize what you learn from reviewing the summary statistics from the code above. What does this tell us about the constitutionality of 2011 stop and frisk activity in NYC?\n\n# PUT ANSWER HERE\n\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nIn her ruling in the 2011 District Court case Floyd vs. the City of New York, Honorable Shira Sheidlen remarked the following regarding the database of stops we analyzed today:\n\nBecause it is impossible to individually analyze each of those stops, plaintiffs’ case was based on the imperfect information contained in the NYPD’s database of forms (“UF-250s”) that officers are required to prepare after each stop. The central flaws in this database all skew toward underestimating the number of unconstitutional stops that occur: the database is incomplete, in that officers do not prepare a UF-250 for every stop they make; it is one-sided, in that the UF250 only records the officer’s version of the story; the UF-250 permits the officer to merely check a series of boxes, rather than requiring the officer to explain the basis for her suspicion; and many of the boxes on the form are inherently subjective and vague (such as “furtive movements”). Nonetheless, the analysis of the UF-250 database reveals that at least 200,000 stops were made without reasonable suspicion.\n\nWhat are some of the consequences of the incompleteness and/or one-sided nature of this dataset? How should we think about and communicate its flaws vs its value? How might this data collection program be redesigned so as to represent more diverse perspectives? Share your ideas on our discussions Slack channel."
+  },
+  {
+    "objectID": "labs/lab5/index.html#extra-content",
+    "href": "labs/lab5/index.html#extra-content",
+    "title": "Lab #5: Exploratory Data Analysis (30 pts)",
+    "section": "Extra Content",
+    "text": "Extra Content\nIf you finish early, I encourage you to attempt to plot some of this data below using ggplot()!"
   }
 ]
