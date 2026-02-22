@@ -634,7 +634,7 @@
     "href": "index.html#announcements",
     "title": "SDS 192: Introduction to Data Science",
     "section": "Announcements",
-    "text": "Announcements\n\n1/25: No class on Monday the 26th due to the snowstorm. Stay warm!"
+    "text": "Announcements\n\n2/22: No class on Monday the 23rd due to the blizzard. Work on the project in the meantime; we will talk about advanced graphics and an introduction to data wrangling on Wednesday. Stay warm and safe!\n1/25: No class on Monday the 26th due to the snowstorm. Stay warm!"
   },
   {
     "objectID": "lectures/w2l1_introR.html#last-time",
@@ -2965,7 +2965,7 @@
     "href": "schedule.html#week-7-review-and-exam-1-39---313",
     "title": "Schedule",
     "section": "Week 7: Review and Exam #1 (3/9 - 3/13)",
-    "text": "Week 7: Review and Exam #1 (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11Friday, 3/13\n\n\n\n\n\n\n\n\nNoteLab #5\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 7: Review and Exam #1 (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11Friday, 3/13\n\n\n\n\n\n\n\n\nNoteProblem Solving and Lab #5\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "lectures/w6l1_joining.html#last-time",
@@ -3089,28 +3089,28 @@
   {
     "objectID": "lectures/w6l1_act.html",
     "href": "lectures/w6l1_act.html",
-    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "title": "Week 6, Lecture 1: Data Wrangling",
     "section": "",
-    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+    "text": "Use the following code below to load in the midwest data. Answer the following wrangling questions below:\n\nlibrary(tidyverse)\ndata(midwest)"
   },
   {
     "objectID": "lectures/w6l1_act.html#introduction",
     "href": "lectures/w6l1_act.html#introduction",
-    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "title": "Week 6, Lecture 1: Data Wrangling",
     "section": "",
-    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+    "text": "Use the following code below to load in the midwest data. Answer the following wrangling questions below:\n\nlibrary(tidyverse)\ndata(midwest)"
   },
   {
     "objectID": "lectures/w6l1_act.html#questions",
     "href": "lectures/w6l1_act.html#questions",
-    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "title": "Week 6, Lecture 1: Data Wrangling",
     "section": "Questions",
-    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nJoin the wnba2 and wnbaStars data frames together, removing any players not shared between the two. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnba2 but excluding those from wnbaStars that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnbaStars but excluding those from wnba2 that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from both data frames. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nMerge the wnba1 and wnba2 datasets together. Using code from the activity in the last lecture, summarize the following for each position:\n\nNumber of players\nMedian PTS\nMedian TOV\n\n\n#PUT CODE HERE"
+    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nUsing the help documentation for midwest, identify variables related to the following:\n\ncounty name\nstate to which the county belongs to\npercent of population with known poverty status\npercent with professional degree\nwhether county is in metropolitan area\n\nOnce done, select those columns using dplyr functions.\n\n\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nWith the columns selected from Q1, arrange the dataset based on the percent of populace with a professional degree in descending order, followed by percent of populace with known poverty status in ascending order.\n\n\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nAdding to what was created in Q1, keep counties that are not in a metropolitan area and have less than 5% of the populace with a professional degree.\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nTack a new column named popProf that contains the number of people who have a professional degree. Then, show only the county, state, and new column.\nHint: You will need two variables from the dataset to do this operation.\n\n\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nCreate a table that shows the following metrics in each state:\n\nNumber of counties\nTotal population\nMedian percent with known poverty status\nProportion of counties that are in metro area"
   },
   {
     "objectID": "lectures/w6l1_act.html#turn-in",
     "href": "lectures/w6l1_act.html#turn-in",
-    "title": "Activities from Week 6, Lecture 1: Data Joining",
+    "title": "Week 6, Lecture 1: Data Wrangling",
     "section": "Turn-in",
     "text": "Turn-in\nSave the .qmd file inside your activities repository. Please stage, commit, and push to GitHub."
   },
@@ -3330,5 +3330,698 @@
     "title": "Lab #5: Exploratory Data Analysis (30 pts)",
     "section": "Extra Content",
     "text": "Extra Content\nIf you finish early, I encourage you to attempt to plot some of this data below using ggplot()!"
+  },
+  {
+    "objectID": "lectures/w7l2_review.html#last-time",
+    "href": "lectures/w7l2_review.html#last-time",
+    "title": "Review",
+    "section": "Last Time",
+    "text": "Last Time\n\nOther useful functions\nProblem-solving\nTime to work on project"
+  },
+  {
+    "objectID": "lectures/w7l2_review.html#today",
+    "href": "lectures/w7l2_review.html#today",
+    "title": "Review",
+    "section": "Today",
+    "text": "Today\n\nReview"
+  },
+  {
+    "objectID": "lectures/w7l2_review.html#tbd",
+    "href": "lectures/w7l2_review.html#tbd",
+    "title": "Review",
+    "section": "TBD",
+    "text": "TBD"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#last-time",
+    "href": "lectures/w7l1_ps.html#last-time",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Last Time",
+    "text": "Last Time\n\nData joining\n\nRationale\nDifferent types of joins\nR examples"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#today",
+    "href": "lectures/w7l1_ps.html#today",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Today",
+    "text": "Today\n\nOther useful functions\nProblem-solving\nTime to work on project"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#a-summary",
+    "href": "lectures/w7l1_ps.html#a-summary",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "A Summary",
+    "text": "A Summary\n\n\nData wrangling:\n\narrange()\nselect(), filter()\nmutate()\nsummarize(), group_by()\n\n\nData joining:\n\ninner_join()\nleft_join()\nright_join()\nfull_join()\nanti_join()"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#motivating-datasets",
+    "href": "lectures/w7l1_ps.html#motivating-datasets",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Motivating Datasets",
+    "text": "Motivating Datasets\nWe will use player data from the 2024 and 2025 WNBA seasons, using the…\n\nwnba1\nwnba2\nwnbaStars\n\n\nlibrary(tidyverse)\nwnba1 &lt;- read.csv(\"../data/wnba1.csv\")\nwnba2 &lt;- read.csv(\"../data/wnba2.csv\")\nwnbaStars &lt;- read.csv(\"../data/wnbaStars.csv\")\n\n\nExample variables:\n\nMP: minutes played\nPTS: points per 36 minutes\n\nMore information: link"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#slicing",
+    "href": "lectures/w7l1_ps.html#slicing",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Slicing",
+    "text": "Slicing\n\nWorks similarly to the head() function\nRetrieves observations based on position\n\n\nwnba1 |&gt; \n  slice(2:5) |&gt; \n  select(Player, Team, PTS)\n\n            Player Team  PTS\n1    Rebecca Allen  PHO 10.7\n2 Laeticia Amihere  ATL  8.2\n3     Ariel Atkins  WAS 18.0\n4       Amy Atwell  PHO  9.2"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#other-operators-for-filter",
+    "href": "lectures/w7l1_ps.html#other-operators-for-filter",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Other Operators for filter()",
+    "text": "Other Operators for filter()\n\nis.na(): used to identify NAs in data\n\n\nwnba1 |&gt; \n  mutate(Team = wnba1 |&gt; pull(Team) |&gt; replace(3:5, NA)) |&gt; # I'm cheating here\n  filter(is.na(Team)) |&gt; \n  select(Player, Team, PTS) |&gt;\n  head()\n\n            Player Team  PTS\n1 Laeticia Amihere &lt;NA&gt;  8.2\n2     Ariel Atkins &lt;NA&gt; 18.0\n3       Amy Atwell &lt;NA&gt;  9.2\n\n\n\n%in%: used to determine if elements in one object exist at least one in other object\n\n\nwnba1 |&gt; \n  filter(Team %in% c(\"PHO\", \"ATL\")) |&gt; \n  select(Player, Team, PTS) |&gt;\n  head()\n\n            Player Team  PTS\n1    Rebecca Allen  PHO 10.7\n2 Laeticia Amihere  ATL  8.2\n3       Amy Atwell  PHO  9.2\n4    Maya Caldwell  ATL 11.6\n5    Jordin Canada  ATL 12.2\n6     Tina Charles  ATL 18.0"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#mutating-into-cases",
+    "href": "lectures/w7l1_ps.html#mutating-into-cases",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Mutating into Cases",
+    "text": "Mutating into Cases\nWe may discretize a continuous variable by creating a dummy variable:\n\nmutate() and ifelse() functions\n\n\nwnba1 |&gt; \n  mutate(Bench = ifelse(PTS &lt;= 10, 1, 0)) |&gt; \n  select(Player, Team, PTS, Bench) |&gt;\n  head()\n\n            Player Team  PTS Bench\n1    Lindsay Allen  CHI 10.0     1\n2    Rebecca Allen  PHO 10.7     0\n3 Laeticia Amihere  ATL  8.2     1\n4     Ariel Atkins  WAS 18.0     0\n5       Amy Atwell  PHO  9.2     1\n6   Shakira Austin  WAS 21.3     0"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#mutating-into-multiple-cases",
+    "href": "lectures/w7l1_ps.html#mutating-into-multiple-cases",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Mutating into Multiple Cases",
+    "text": "Mutating into Multiple Cases\nWe may discretize a continuous variable by creating a dummy variable:\n\nmutate() and case_when() functions\ncondition ~ value for each case\n\n\nwnba1 |&gt; \n  mutate(Star = case_when(PTS &gt; 15 ~ \"star\", \n                          PTS &gt; 10 ~ \"starter\",\n                          PTS &lt;= 10 ~ \"bench\")) |&gt; \n  select(Player, Team, PTS, Star) |&gt;\n  head()\n\n            Player Team  PTS    Star\n1    Lindsay Allen  CHI 10.0   bench\n2    Rebecca Allen  PHO 10.7 starter\n3 Laeticia Amihere  ATL  8.2   bench\n4     Ariel Atkins  WAS 18.0    star\n5       Amy Atwell  PHO  9.2   bench\n6   Shakira Austin  WAS 21.3    star"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#binding-rows",
+    "href": "lectures/w7l1_ps.html#binding-rows",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Binding Rows",
+    "text": "Binding Rows\nAt times, you may have multiple data frames that have separate observations\n\nCan use bind_rows()\nBase R analog: rbind()\n\n\nwnba1 |&gt; \n  bind_rows(wnba2) |&gt; \n  select(Player, Team, PTS) |&gt;\n  slice((nrow(wnba1) - 2):(nrow(wnba1) + 2))\n\n          Player Team  PTS\n1   Odyssey Sims  TOT 15.5\n2     Sug Sutton  TOT  6.4\n3 Celeste Taylor  TOT  6.4\n4  Kierstan Bell  LVA 14.2\n5 Caitlin Bickle  CON  0.0"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#rename",
+    "href": "lectures/w7l1_ps.html#rename",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "rename()",
+    "text": "rename()\nUse rename() to rename specific columns if needed:\n\nwnba1 |&gt; \n  rename(Points = PTS) |&gt;\n  select(Player, Team, Points) |&gt;\n  head()\n\n            Player Team Points\n1    Lindsay Allen  CHI   10.0\n2    Rebecca Allen  PHO   10.7\n3 Laeticia Amihere  ATL    8.2\n4     Ariel Atkins  WAS   18.0\n5       Amy Atwell  PHO    9.2\n6   Shakira Austin  WAS   21.3"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#more-on-data-wrangling-and-joining",
+    "href": "lectures/w7l1_ps.html#more-on-data-wrangling-and-joining",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "More on Data wrangling and Joining",
+    "text": "More on Data wrangling and Joining\n\nData wranging (dplyr) cheatsheet: link"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#problem-solving",
+    "href": "lectures/w7l1_ps.html#problem-solving",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Problem-Solving",
+    "text": "Problem-Solving\nGet into groups of 2-3 and have one person create a .qmd file that will be submitted at the end of the period. Make sure to:\n\nWrite your names in the author section\nLoad in the three data sets"
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#exercise-1",
+    "href": "lectures/w7l1_ps.html#exercise-1",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #1",
+    "text": "Exercise #1\nWrite code that generates the following result amongst 2024 and 2025 players with these things in mind:\n\nKeep players who played more than 20 games as a starter\nCreate a new column that labels a player as “protective” if their number of turnovers is below 2 and “careless” otherwise\nRetain the player name, team name, position, points, rebounds, assists, and the new column\n\nYou should have an 51x7 data frame. Assign this result to wnba1Ref."
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#exercise-2",
+    "href": "lectures/w7l1_ps.html#exercise-2",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #2",
+    "text": "Exercise #2\nWrite code that generates a specific outcome based on only the stars:\n\nFocus only on players from “PHO” and “SEA”\nOrder them by name\n\nYou should have a 3x18 data frame."
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#exercise-3",
+    "href": "lectures/w7l1_ps.html#exercise-3",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #3",
+    "text": "Exercise #3\nWrite code that generates a specific outcome based on your result in exercise #1:\n\nFilter based on these teams: “IND”, “NYL”, “LAS”\nGroup them based on team and position\nShow the number in each subgroup\nList the averages of the following statistics:\n\nPoints\nAssists\nRebounds\n\n\nYou should have a 9x6 data frame."
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#exercise-4",
+    "href": "lectures/w7l1_ps.html#exercise-4",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #4",
+    "text": "Exercise #4\nWrite code that allows you to return a dataset that lists the following summary statistics for each position of the list of players who is in wnba1 (and not wnba1Ref):\n\nNumber of players per position\nAverage points (per 36 minutes played)\nProportion of those with fewer than 1 TOV\n\nYou should have a 7x4 data frame."
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html#exercise-5",
+    "href": "lectures/w7l1_ps.html#exercise-5",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "Exercise #5",
+    "text": "Exercise #5\nWrite code that allows you to return a dataset that does the following:\n\nJoins the wnba1 and wnbaStars together, looking at membership in both\nGroups by their team\nIdentifies the number of players, maximum points, and proportion of guards on each team\nKeeps teams who had a player score more than 22 points in either year\n\nYou should have a 2x4 data frame."
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#last-time",
+    "href": "lectures/w6l2_joining.html#last-time",
+    "title": "Data Joining",
+    "section": "Last Time",
+    "text": "Last Time\n\nData wrangling\n\nOrdering\nSubsetting\nCreating\nSummarizing\n\nExamples"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#for-today",
+    "href": "lectures/w6l2_joining.html#for-today",
+    "title": "Data Joining",
+    "section": "For Today",
+    "text": "For Today\n\nData joining\n\nRationale\nDifferent types of joins\nR examples"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#motivating-datasets",
+    "href": "lectures/w6l2_joining.html#motivating-datasets",
+    "title": "Data Joining",
+    "section": "Motivating Datasets",
+    "text": "Motivating Datasets\n\nDownload template\n\n\nWhat do you notice about them? Why might they be useful to consider together?\n\n\nlibrary(tidyverse)\nct_school_attendance &lt;- read.csv(\"https://data.ct.gov/resource/t4hx-jd4c.csv?$limit=3000\") %&gt;%\n  filter(studentgroup == \"All Students\" & reportingdistrictname != \"Connecticut\")\nct_school_learning_model &lt;-\n  read.csv(\"https://data.ct.gov/resource/5q7h-u2ac.csv?$where=update_date=%272020-09-17%27\") |&gt;\n  rename(fully_remote = percent_students_fully_remote)"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#remember-we-are-messy",
+    "href": "lectures/w6l2_joining.html#remember-we-are-messy",
+    "title": "Data Joining",
+    "section": "Remember, we are messy",
+    "text": "Remember, we are messy\n\nMany levels of organization for an organization/agency of any size\n\nWe might want to have a view of all (composed of many data sets)\nData joining!"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#joining-datasets",
+    "href": "lectures/w6l2_joining.html#joining-datasets",
+    "title": "Data Joining",
+    "section": "Joining Datasets",
+    "text": "Joining Datasets\n\nUp until this point, we have been working with data in single tables\nSometimes related data can be spread across multiple tables that we wish to bring together for different kinds of analysis\nUse of dplyr\n\n\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#keys-to-success",
+    "href": "lectures/w6l2_joining.html#keys-to-success",
+    "title": "Data Joining",
+    "section": "Keys (to success)",
+    "text": "Keys (to success)\n\nThe key is having a unique column shared across tables that we can join on\n\ne.g. ID, name"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#keys",
+    "href": "lectures/w6l2_joining.html#keys",
+    "title": "Data Joining",
+    "section": "Keys",
+    "text": "Keys\n\nAre there any problems with using these keys?\n\n\n\n\nct_school_attendance %&gt;% \n  select(reportingdistrictcode) %&gt;% \n  head()\n\n  reportingdistrictcode\n1               0010011\n2               0020011\n3               0030011\n4               0040011\n5               0050011\n6               0070011\n\n\n\n\nct_school_learning_model %&gt;% \n  select(district_code) %&gt;% \n  head()\n\n  district_code\n1       2190012\n2         80011\n3         10011\n4         20011\n5         30011\n6         40011"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#keys-1",
+    "href": "lectures/w6l2_joining.html#keys-1",
+    "title": "Data Joining",
+    "section": "Keys",
+    "text": "Keys\n\nNeed to have consistent type for key in both data frames\n\n\nct_school_attendance &lt;- ct_school_attendance |&gt;\n  mutate(reportingdistrictcode = \n           as.integer(reportingdistrictcode))\n\n\n\n\nct_school_attendance |&gt;\n  select(reportingdistrictcode) |&gt;\n  head()\n\n  reportingdistrictcode\n1                 10011\n2                 20011\n3                 30011\n4                 40011\n5                 50011\n6                 70011\n\n\n\n\nct_school_learning_model |&gt;\n  select(district_code) |&gt;\n  head()\n\n  district_code\n1       2190012\n2         80011\n3         10011\n4         20011\n5         30011\n6         40011"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#join",
+    "href": "lectures/w6l2_joining.html#join",
+    "title": "Data Joining",
+    "section": "Join",
+    "text": "Join\n\nct_school_attendance |&gt;\n  inner_join(ct_school_learning_model, \n             by = c(\"reportingdistrictcode\" = \"district_code\")) |&gt;\n  select(reportingdistrictcode, attrate_202021, fully_remote) |&gt;\n  head()\n\n  reportingdistrictcode attrate_202021 fully_remote\n1                 10011         0.9680          13%\n2                 20011         0.8923          32%\n3                 30011         0.9550          30%\n4                 40011         0.9621          19%\n5                 50011         0.9698          12%\n6                 70011         0.9542          13%"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#different-kinds-of-joins",
+    "href": "lectures/w6l2_joining.html#different-kinds-of-joins",
+    "title": "Data Joining",
+    "section": "Different Kinds of Joins",
+    "text": "Different Kinds of Joins\n\ninner_join()\nleft_join()\nright_join()\nfull_join()\nanti_join()"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#inner-join",
+    "href": "lectures/w6l2_joining.html#inner-join",
+    "title": "Data Joining",
+    "section": "Inner Join",
+    "text": "Inner Join\n\ninner_join()\n\nAttaching columns together based on a shared key\n\nIf observation isn’t shared, it is removed"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#outer-joins",
+    "href": "lectures/w6l2_joining.html#outer-joins",
+    "title": "Data Joining",
+    "section": "Outer Joins",
+    "text": "Outer Joins\n\n\n\nAttaching columns together based on a shared key\n\nIf observation isn’t shared but needs to be included, we have the following options:"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#outer-joins-1",
+    "href": "lectures/w6l2_joining.html#outer-joins-1",
+    "title": "Data Joining",
+    "section": "Outer Joins",
+    "text": "Outer Joins\n\n\n\nleft_join()\n\nMaintains observations from first data frame, not from second if they are not shared\n\nright_join()\n\nMaintains observations from second data frame, not from first if they are not shared\n\nfull_join()\n\nMaintains observations from both data frames, results in NAs for variables that do not exist for given observation"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#one-to-many-relationships",
+    "href": "lectures/w6l2_joining.html#one-to-many-relationships",
+    "title": "Data Joining",
+    "section": "One-to-many relationships",
+    "text": "One-to-many relationships"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#many-to-many-relationships",
+    "href": "lectures/w6l2_joining.html#many-to-many-relationships",
+    "title": "Data Joining",
+    "section": "Many-to-many relationships",
+    "text": "Many-to-many relationships"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#anti-joins",
+    "href": "lectures/w6l2_joining.html#anti-joins",
+    "title": "Data Joining",
+    "section": "Anti-joins",
+    "text": "Anti-joins\n\nReturns first data frame with no matches with second data frame\n\n\n\n\nct_school_attendance %&gt;%\n  anti_join(ct_school_learning_model, by = c(\"reportingdistrictcode\" = \"district_code\")) %&gt;%\n  select(reportingdistrictcode)\n\n  reportingdistrictcode\n1               2310018\n2               3360015\n3               3470015\n\n\n\n\nct_school_learning_model %&gt;%\n  anti_join(ct_school_attendance, by = c(\"district_code\" = \"reportingdistrictcode\")) %&gt;%\n  select(district_code) %&gt;%\n  head()\n\n  district_code\n1         46821\n2         46921\n3        100161\n4        170561\n5        170821\n6        190161"
+  },
+  {
+    "objectID": "lectures/w6l2_joining.html#activity",
+    "href": "lectures/w6l2_joining.html#activity",
+    "title": "Data Joining",
+    "section": "Activity",
+    "text": "Activity\n\nWork through the exercises\n\nTemplate\nDownload the following three datasets:\n\nwnba1\nwnba2\nwnbaStars\n\nUse code from this lecture to guide you through\nTurn in by the end of the period"
+  },
+  {
+    "objectID": "lectures/w6l2_act.html",
+    "href": "lectures/w6l2_act.html",
+    "title": "Activities from Week 6, Lecture 2: Data Joining",
+    "section": "",
+    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+  },
+  {
+    "objectID": "lectures/w6l2_act.html#introduction",
+    "href": "lectures/w6l2_act.html#introduction",
+    "title": "Activities from Week 6, Lecture 2: Data Joining",
+    "section": "",
+    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+  },
+  {
+    "objectID": "lectures/w6l2_act.html#questions",
+    "href": "lectures/w6l2_act.html#questions",
+    "title": "Activities from Week 6, Lecture 2: Data Joining",
+    "section": "Questions",
+    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nJoin the wnba2 and wnbaStars data frames together, removing any players not shared between the two. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnba2 but excluding those from wnbaStars that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnbaStars but excluding those from wnba2 that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from both data frames. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nMerge the wnba1 and wnba2 datasets together. Using code from the activity in the last lecture, summarize the following for each position:\n\nNumber of players\nMedian PTS\nMedian TOV\n\n\n#PUT CODE HERE"
+  },
+  {
+    "objectID": "lectures/w6l2_act.html#turn-in",
+    "href": "lectures/w6l2_act.html#turn-in",
+    "title": "Activities from Week 6, Lecture 2: Data Joining",
+    "section": "Turn-in",
+    "text": "Turn-in\nSave the .qmd file inside your activities repository. Please stage, commit, and push to GitHub."
+  },
+  {
+    "objectID": "schedule.html#week-5-advanced-visuals-223---227",
+    "href": "schedule.html#week-5-advanced-visuals-223---227",
+    "title": "Schedule",
+    "section": "Week 5: Advanced Visuals (2/23 - 2/27)",
+    "text": "Week 5: Advanced Visuals (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25Friday, 2/27\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\n\nStay warm and safe!!\nWork on the project in the meantime\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #3 (due Wednesday, 2/25 at 11:59pm)\n\nTemplate\n\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Advanced Visuals and Intro to Data Wrangling\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #3 (due tonight at 11:59pm)\n\nTemplate\n\nReadings #5 (due Sunday, 3/1 at 11:59pm on Perusall)\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #4: Plotting Frequencies and Distributions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "schedule.html#week-6-data-wranglingjoining-32---36",
+    "href": "schedule.html#week-6-data-wranglingjoining-32---36",
+    "title": "Schedule",
+    "section": "Week 6: Data Wrangling/Joining (3/2 - 3/6)",
+    "text": "Week 6: Data Wrangling/Joining (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4Friday, 3/6\n\n\n\n\n\n\n\n\nNoteLecture: Data Wrangling\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Joining\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteProject Working Time and Lab #5\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "lectures/w6l2_actTemp.html",
+    "href": "lectures/w6l2_actTemp.html",
+    "title": "Activities from Week 6, Lecture 2: Data Joining",
+    "section": "",
+    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+  },
+  {
+    "objectID": "lectures/w6l2_actTemp.html#introduction",
+    "href": "lectures/w6l2_actTemp.html#introduction",
+    "title": "Activities from Week 6, Lecture 2: Data Joining",
+    "section": "",
+    "text": "Use the read.csv() function in the code chunk below to load in the wnba1, wnba2, and wnbaStars datasets. Make sure that the data sets are in the appropriate directory.\n\n#PUT CODE HERE\n\nData has been subsetted and filtered from the following source here. The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.\nAnswer the following wrangling questions below."
+  },
+  {
+    "objectID": "lectures/w6l2_actTemp.html#questions",
+    "href": "lectures/w6l2_actTemp.html#questions",
+    "title": "Activities from Week 6, Lecture 2: Data Joining",
+    "section": "Questions",
+    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1\n\n\n\nJoin the wnba2 and wnbaStars data frames together, removing any players not shared between the two. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 2\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnba2 but excluding those from wnbaStars that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 3\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from wnbaStars but excluding those from wnba2 that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 4\n\n\n\nJoin the wnba2 and wnbaStars data frames together, keeping all players from both data frames. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.\n\n#PUT CODE HERE\n\n\n\n\n\n\n\n\n\nImportantQuestion 5\n\n\n\nMerge the wnba1 and wnba2 datasets together. Using code from the activity in the last lecture, summarize the following for each position:\n\nNumber of players\nMedian PTS\nMedian TOV\n\n\n#PUT CODE HERE"
+  },
+  {
+    "objectID": "lectures/w6l2_actTemp.html#turn-in",
+    "href": "lectures/w6l2_actTemp.html#turn-in",
+    "title": "Activities from Week 6, Lecture 2: Data Joining",
+    "section": "Turn-in",
+    "text": "Turn-in\nSave the .qmd file inside your activities repository. Please stage, commit, and push to GitHub."
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#last-time",
+    "href": "lectures/w6l1_wrangling.html#last-time",
+    "title": "Data Wrangling",
+    "section": "Last Time",
+    "text": "Last Time\n\nAdvanced ggplot2\n\nOverplotting\nResources\n\nData wrangling\n\nWhat is it?\nThe six verbs"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#for-today",
+    "href": "lectures/w6l1_wrangling.html#for-today",
+    "title": "Data Wrangling",
+    "section": "For Today",
+    "text": "For Today\n\nData wrangling\n\nOrdering\nSubsetting\nCreating\nSummarizing\n\nExamples"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#motivating-dataset",
+    "href": "lectures/w6l1_wrangling.html#motivating-dataset",
+    "title": "Data Wrangling",
+    "section": "Motivating Dataset",
+    "text": "Motivating Dataset\n\nmidwest data set in ggplot2 package\n\n437 midwest counties with 28 variables\nDemographic information of midwest U.S. counties from 2000 U.S. census\n\n\n\nlibrary(tidyverse)\ndata(midwest)"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#lets-tidy-the-data---the-six-verbs",
+    "href": "lectures/w6l1_wrangling.html#lets-tidy-the-data---the-six-verbs",
+    "title": "Data Wrangling",
+    "section": "Let’s Tidy the Data! - The Six Verbs",
+    "text": "Let’s Tidy the Data! - The Six Verbs\n\nOrder them by some metric\n\narrange()\n\nSubset certain variables or observations based on some criteria\n\nselect() for variables, filter() for observations\n\nCreate columns based on other variables\n\nmutate()\n\nSummarize data into meaningful tables\n\nsummarize() and group_by()"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#arrange",
+    "href": "lectures/w6l1_wrangling.html#arrange",
+    "title": "Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1   561 ADAMS    IL    0.052    66090      1271.    63917     1702            98\n2   663 ADAMS    IN    0.021    31095      1481.    30530       36            42\n3  2009 ADAMS    OH    0.035    25371       725.    25212       47            67\n4  2981 ADAMS    WI    0.041    15682       382.    15001      375           125\n5  1197 ALCONA   MI    0.041    10145       247.    10026       27            56\n6   562 ALEXAND… IL    0.014    10626       759      7054     3496            19\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#arrange-1",
+    "href": "lectures/w6l1_wrangling.html#arrange-1",
+    "title": "Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(state, county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1   561 ADAMS    IL    0.052    66090      1271.    63917     1702            98\n2   562 ALEXAND… IL    0.014    10626       759      7054     3496            19\n3   563 BOND     IL    0.022    14991       681.    14477      429            35\n4   564 BOONE    IL    0.017    30806      1812.    29344      127            46\n5   565 BROWN    IL    0.018     5836       324.     5264      547            14\n6   566 BUREAU   IL    0.05     35688       714.    35157       50            65\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#arrange-2",
+    "href": "lectures/w6l1_wrangling.html#arrange-2",
+    "title": "Data Wrangling",
+    "section": "arrange()",
+    "text": "arrange()\n\narrange() sorts rows according to values in a column\n\nSorts in ascending order (numeric) or alphabetically (character).\ndesc() changes it to descending order\nAdditional arguments results in subsequent ordering\nBase R analog: sort()\n\n\n\nmidwest |&gt;\n  arrange(desc(state), county) |&gt;\n  head()\n\n# A tibble: 6 × 28\n    PID county   state  area poptotal popdensity popwhite popblack popamerindian\n  &lt;int&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;         &lt;int&gt;\n1  2981 ADAMS    WI    0.041    15682       382.    15001      375           125\n2  2982 ASHLAND  WI    0.054    16307       302.    14749       17          1478\n3  2983 BARRON   WI    0.053    40750       769.    40346       40           209\n4  2984 BAYFIELD WI    0.089    14008       157.    12707       29          1240\n5  2985 BROWN    WI    0.032   194594      6081.   186621     1012          3869\n6  2986 BUFFALO  WI    0.04     13584       340.    13521        5            22\n# ℹ 19 more variables: popasian &lt;int&gt;, popother &lt;int&gt;, percwhite &lt;dbl&gt;,\n#   percblack &lt;dbl&gt;, percamerindan &lt;dbl&gt;, percasian &lt;dbl&gt;, percother &lt;dbl&gt;,\n#   popadults &lt;int&gt;, perchsd &lt;dbl&gt;, percollege &lt;dbl&gt;, percprof &lt;dbl&gt;,\n#   poppovertyknown &lt;int&gt;, percpovertyknown &lt;dbl&gt;, percbelowpoverty &lt;dbl&gt;,\n#   percchildbelowpovert &lt;dbl&gt;, percadultpoverty &lt;dbl&gt;,\n#   percelderlypoverty &lt;dbl&gt;, inmetro &lt;int&gt;, category &lt;chr&gt;"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#subsetting-data-select-filter",
+    "href": "lectures/w6l1_wrangling.html#subsetting-data-select-filter",
+    "title": "Data Wrangling",
+    "section": "Subsetting Data: select(), filter()",
+    "text": "Subsetting Data: select(), filter()\n\nSubsetting involves selecting relevant variables and observations for analysis"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#select",
+    "href": "lectures/w6l1_wrangling.html#select",
+    "title": "Data Wrangling",
+    "section": "select()",
+    "text": "select()\n\nSelect variables (columns) of interest\n\nEach argument is a variable to keep\nBase R analog: data[, c(\"var1\", \"var2\", ...)]"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#select-1",
+    "href": "lectures/w6l1_wrangling.html#select-1",
+    "title": "Data Wrangling",
+    "section": "select()",
+    "text": "select()\n\nSelect variables (columns) of interest\n\nEach argument is a variable to keep\nBase R analog: data[, c(\"var1\", \"var2\", ...)]\n\n\n\nmidwest |&gt;\n  select(county, state, poptotal, percbelowpoverty, percollege) |&gt;\n  head()\n\n# A tibble: 6 × 5\n  county    state poptotal percbelowpoverty percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;            &lt;dbl&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090            13.2        19.6\n2 ALEXANDER IL       10626            32.2        11.2\n3 BOND      IL       14991            12.1        17.0\n4 BOONE     IL       30806             7.21       17.3\n5 BROWN     IL        5836            13.5        14.5\n6 BUREAU    IL       35688            10.4        18.9"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#filter",
+    "href": "lectures/w6l1_wrangling.html#filter",
+    "title": "Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\nRetrieves observations (rows) according to a certain criteria that we provide\n\nBased on value from another column, range of values from another continuous columns\nBase R analog: data[condition ,]"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#filter-1",
+    "href": "lectures/w6l1_wrangling.html#filter-1",
+    "title": "Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\n== for matching; &gt;, &gt;=, &lt;, &lt;= for numeric cutoffs\n\n&, | for merging statements together\ne.g. only want Illinois counties with populations above 10,000\n\nstate == \"IL\" & poptotal &gt; 10000"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#aside-truth-tables",
+    "href": "lectures/w6l1_wrangling.html#aside-truth-tables",
+    "title": "Data Wrangling",
+    "section": "Aside: Truth Tables",
+    "text": "Aside: Truth Tables\n\nUsed for showing truth in compounded statements\n\nSeen in discrete math (and proofwriting)\n\n\n\n\n\n\n\nAnd (&)\n\n\n\n\n\n\nOr (|)\n\n\n\n\nSource: Millersville University"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#filter-2",
+    "href": "lectures/w6l1_wrangling.html#filter-2",
+    "title": "Data Wrangling",
+    "section": "filter()",
+    "text": "filter()\n\nRetrieves observations (rows) according to a certain criteria that we provide\n\nBased on value from another column, range of values from another continuous columns\ne.g. only want Illinois counties with populations above 10,000\n\n\n\nmidwest |&gt;\n  select(county, state, poptotal, percbelowpoverty, percollege) |&gt;\n  filter(state == \"IL\" & poptotal &gt; 10000) |&gt;\n  head()\n\n# A tibble: 6 × 5\n  county    state poptotal percbelowpoverty percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;            &lt;dbl&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090            13.2        19.6\n2 ALEXANDER IL       10626            32.2        11.2\n3 BOND      IL       14991            12.1        17.0\n4 BOONE     IL       30806             7.21       17.3\n5 BUREAU    IL       35688            10.4        18.9\n6 CARROLL   IL       16805            11.7        16.2"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#mutate",
+    "href": "lectures/w6l1_wrangling.html#mutate",
+    "title": "Data Wrangling",
+    "section": "mutate()",
+    "text": "mutate()\n\nCreates a new variable (column) in a data frame and fills values according to criteria we provide\nSet name equal to mutation\n\ne.g. newVar = oldVar / 10000\n\nUseful for:\n\nconsolidating grouped variables\ncreating dummy variables (i.e. discretizing)\n\nBase R analog: data$newVar = ..."
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#mutate-1",
+    "href": "lectures/w6l1_wrangling.html#mutate-1",
+    "title": "Data Wrangling",
+    "section": "mutate()",
+    "text": "mutate()\n\nCreates a new variable (column) in a data frame and fills values according to criteria we provide\nSet name equal to mutation\n\ne.g. proportion of high-school degree holders with college degrees\n\n\n\nmidwest |&gt;\n  mutate(propDegreeOfHS = percollege / perchsd) |&gt;\n  select(county, state, poptotal, propDegreeOfHS) |&gt;\n  head()\n\n# A tibble: 6 × 4\n  county    state poptotal propDegreeOfHS\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;          &lt;dbl&gt;\n1 ADAMS     IL       66090          0.261\n2 ALEXANDER IL       10626          0.188\n3 BOND      IL       14991          0.246\n4 BOONE     IL       30806          0.229\n5 BROWN     IL        5836          0.210\n6 BUREAU    IL       35688          0.247"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#aggregating-data-summarize-group_by",
+    "href": "lectures/w6l1_wrangling.html#aggregating-data-summarize-group_by",
+    "title": "Data Wrangling",
+    "section": "Aggregating Data: summarize(), group_by()",
+    "text": "Aggregating Data: summarize(), group_by()\n\nInvolves compiling and summarizing data"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#summarize",
+    "href": "lectures/w6l1_wrangling.html#summarize",
+    "title": "Data Wrangling",
+    "section": "summarize()",
+    "text": "summarize()\n\ncomputes a value across a vector of values and stores it in a new data frame\nBase R analog: any summary function (e.g. mean, nrow, max)"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#summarize-1",
+    "href": "lectures/w6l1_wrangling.html#summarize-1",
+    "title": "Data Wrangling",
+    "section": "summarize()",
+    "text": "summarize()\n\ncomputes a value across a vector of values and stores it in a new data frame\n\n\nmidwest |&gt;\n  summarize(numCounties = n(),\n            meanPercAsian = mean(percasian),\n            medianPercAsian = median(percasian))\n\n# A tibble: 1 × 3\n  numCounties meanPercAsian medianPercAsian\n        &lt;int&gt;         &lt;dbl&gt;           &lt;dbl&gt;\n1         437         0.487           0.297"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#group_by",
+    "href": "lectures/w6l1_wrangling.html#group_by",
+    "title": "Data Wrangling",
+    "section": "group_by()",
+    "text": "group_by()\n\nGroups observations with a shared value in a variable\n\nGrouping only changes the metadata of a data frame\nWe combine group_by() with other functions to transform the data frame\n\nValues remain in groups unless we ungroup() it\n\nTypically at end of piping sequence unless we use ungroup()\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  select(county, state, poptotal, percollege) |&gt;\n  head()\n\n# A tibble: 6 × 4\n# Groups:   state [1]\n  county    state poptotal percollege\n  &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;      &lt;dbl&gt;\n1 ADAMS     IL       66090       19.6\n2 ALEXANDER IL       10626       11.2\n3 BOND      IL       14991       17.0\n4 BOONE     IL       30806       17.3\n5 BROWN     IL        5836       14.5\n6 BUREAU    IL       35688       18.9"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#group_by-summarize",
+    "href": "lectures/w6l1_wrangling.html#group_by-summarize",
+    "title": "Data Wrangling",
+    "section": "group_by() |> summarize()",
+    "text": "group_by() |&gt; summarize()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and summarize(), we can perform operations within groups\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  summarize(numCounties = n(),\n            meanPercAsian = mean(percasian),\n            medianPercAsian = median(percasian))\n\n# A tibble: 5 × 4\n  state numCounties meanPercAsian medianPercAsian\n  &lt;chr&gt;       &lt;int&gt;         &lt;dbl&gt;           &lt;dbl&gt;\n1 IL            102         0.564           0.278\n2 IN             92         0.383           0.254\n3 MI             83         0.507           0.310\n4 OH             88         0.433           0.353\n5 WI             72         0.556           0.286"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#group_by-filter",
+    "href": "lectures/w6l1_wrangling.html#group_by-filter",
+    "title": "Data Wrangling",
+    "section": "group_by() |> filter()",
+    "text": "group_by() |&gt; filter()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and filter() we can filter within groups\n\ne.g. filter counties based on their populations being higher than the state means\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  filter(poptotal &gt; mean(poptotal)) |&gt;\n  select(county, state, poptotal)\n\n# A tibble: 94 × 3\n# Groups:   state [5]\n   county    state poptotal\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;\n 1 CHAMPAIGN IL      173025\n 2 COOK      IL     5105067\n 3 DU PAGE   IL      781666\n 4 KANE      IL      317471\n 5 LAKE      IL      516418\n 6 MCHENRY   IL      183241\n 7 MCLEAN    IL      129180\n 8 MACON     IL      117206\n 9 MADISON   IL      249238\n10 PEORIA    IL      182827\n# ℹ 84 more rows"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#group_by-mutate",
+    "href": "lectures/w6l1_wrangling.html#group_by-mutate",
+    "title": "Data Wrangling",
+    "section": "group_by() |> mutate()",
+    "text": "group_by() |&gt; mutate()\n\ngroup_by() groups observations with a shared value in a variable\nWhen we combine group_by() and mutate() we can perform operations within groups and add the resulting variable to the data frame\n\ne.g. create column that shows how many SDs above or below mean of % with high school degree\n\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  mutate(sdHS = (perchsd - mean(perchsd)) / sd(perchsd)) |&gt;\n  select(county, state, poptotal, sdHS)\n\n# A tibble: 437 × 4\n# Groups:   state [5]\n   county    state poptotal   sdHS\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;\n 1 ADAMS     IL       66090  0.289\n 2 ALEXANDER IL       10626 -2.20 \n 3 BOND      IL       14991 -0.646\n 4 BOONE     IL       30806  0.349\n 5 BROWN     IL        5836 -0.722\n 6 BUREAU    IL       35688  0.536\n 7 CALHOUN   IL        5322 -1.70 \n 8 CARROLL   IL       16805  0.426\n 9 CASS      IL       13437 -0.170\n10 CHAMPAIGN IL      173025  2.30 \n# ℹ 427 more rows"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#ungroup",
+    "href": "lectures/w6l1_wrangling.html#ungroup",
+    "title": "Data Wrangling",
+    "section": "ungroup()",
+    "text": "ungroup()\n\nungroup() returns data frame object to focus on individual-level transformations\n\n\nmidwest |&gt;\n  group_by(state) |&gt;\n  mutate(sdHS = (perchsd - mean(perchsd)) / sd(perchsd)) |&gt;\n  select(county, state, poptotal, sdHS) |&gt;\n  ungroup()\n\n# A tibble: 437 × 4\n   county    state poptotal   sdHS\n   &lt;chr&gt;     &lt;chr&gt;    &lt;int&gt;  &lt;dbl&gt;\n 1 ADAMS     IL       66090  0.289\n 2 ALEXANDER IL       10626 -2.20 \n 3 BOND      IL       14991 -0.646\n 4 BOONE     IL       30806  0.349\n 5 BROWN     IL        5836 -0.722\n 6 BUREAU    IL       35688  0.536\n 7 CALHOUN   IL        5322 -1.70 \n 8 CARROLL   IL       16805  0.426\n 9 CASS      IL       13437 -0.170\n10 CHAMPAIGN IL      173025  2.30 \n# ℹ 427 more rows"
+  },
+  {
+    "objectID": "lectures/w6l1_wrangling.html#activity",
+    "href": "lectures/w6l1_wrangling.html#activity",
+    "title": "Data Wrangling",
+    "section": "Activity",
+    "text": "Activity\n\nWork through the w5l2_act.qmd file on Moodle\n\nWill center on the midwest data frame\nUse code from this lecture to guide you through\nTurn in by the end of the period"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html",
+    "href": "lectures/w5l2_visualsWrangling.html",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "",
+    "text": "Box plots\n\nFive-number summaries\nAnalysis\n\nLine charts\n\nAcross time\n\nScatter plots\n\nCorrelation and trends"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#last-time",
+    "href": "lectures/w5l2_visualsWrangling.html#last-time",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Last Time",
+    "text": "Last Time\n\nBox plots\n\nFive-number summaries\nAnalysis\n\nLine charts\n\nAcross time\n\nScatter plots\n\nCorrelation and trends"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#for-today",
+    "href": "lectures/w5l2_visualsWrangling.html#for-today",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "For Today",
+    "text": "For Today\n\nAdvanced ggplot2\n\nOverplotting\nResources\n\nData wrangling\n\nWhat is it?\nThe six verbs"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#more-stuff-in-ggplot2",
+    "href": "lectures/w5l2_visualsWrangling.html#more-stuff-in-ggplot2",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "More Stuff in ggplot2",
+    "text": "More Stuff in ggplot2\n\nWe’ve discussed the following:\n\nSyntax to plots in ggplot2\nUsing the 5 named graphs\nVarious edits\n\nLet’s explore the following:\n\nSpecific issues and tricks\nOther plots\nResources"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#dataset-for-today",
+    "href": "lectures/w5l2_visualsWrangling.html#dataset-for-today",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Dataset for Today",
+    "text": "Dataset for Today\n\nBoston Housing data\n\nvia the mlbench library\n506 observations, 14 variables\nEstimate median housing values through other variables\n\nCreate a new .qmd file and name the file w5l1_act.qmd. Use the following code:\n\n\nlibrary(mlbench)\nlibrary(ggplot2)\ndata(BostonHousing2)"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#overplotting",
+    "href": "lectures/w5l2_visualsWrangling.html#overplotting",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Overplotting",
+    "text": "Overplotting\nSuppose we have the following plot:\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point() + theme_minimal() +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\")"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#overplotting-solution-opacity",
+    "href": "lectures/w5l2_visualsWrangling.html#overplotting-solution-opacity",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Overplotting Solution: Opacity",
+    "text": "Overplotting Solution: Opacity\n\nAdjusting the opacity of the points\n\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(alpha = 0.2) + theme_minimal() +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\")"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#overplotting-solution-jitter",
+    "href": "lectures/w5l2_visualsWrangling.html#overplotting-solution-jitter",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Overplotting Solution: Jitter",
+    "text": "Overplotting Solution: Jitter\n\nWe can add in small noise to separate out groupings\n\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) + \n  theme_minimal() +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\")"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#thematic-elements",
+    "href": "lectures/w5l2_visualsWrangling.html#thematic-elements",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Thematic Elements",
+    "text": "Thematic Elements\n\n\nArguments\n\naxis.title.x\ntitle\naxis.ticks.x\naxis.line.x\nlegend.background\n…and more and more\n\n\nFunctions\n\nelement_blank()\nelement_text()\nelement_point()\nelement_geom()\n\n\nElements\n\ncolour\nsize\nhjust\nangle"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#sizing",
+    "href": "lectures/w5l2_visualsWrangling.html#sizing",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Sizing",
+    "text": "Sizing\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\") + theme_minimal() +\n  theme(plot.title = element_text(size = 15, colour = \"red\"))"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#intervals",
+    "href": "lectures/w5l2_visualsWrangling.html#intervals",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Intervals",
+    "text": "Intervals\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\") + theme_minimal() +\n  theme(plot.title = element_text(size = 15, colour = \"red\")) +\n   scale_x_continuous(breaks = seq(0, 100, by = 10))"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#label-angles",
+    "href": "lectures/w5l2_visualsWrangling.html#label-angles",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Label Angles",
+    "text": "Label Angles\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\") + theme_minimal() +\n  theme(plot.title = element_text(size = 15, colour = \"red\"),\n        axis.text.x = element_text(angle = 45)) +\n   scale_x_continuous(breaks = seq(0, 100, by = 10))"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#centering",
+    "href": "lectures/w5l2_visualsWrangling.html#centering",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Centering",
+    "text": "Centering\n\nggplot(BostonHousing2, aes(x = zn, y = medv)) +\n  geom_point(size = 0.5, position = position_jitter(width = 0.1, height = 0.1, seed = 0)) +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       y = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       title = \"Prop. of Residential Land Zoned for Large Lots vs. Median Value\\nof Owner-Occupied Homes in Boston Census Tracts, 1970\") + theme_minimal() +\n  theme(plot.title = element_text(size = 15, colour = \"red\", hjust = 0.5),\n        axis.text.x = element_text(angle = 45)) +\n   scale_x_continuous(breaks = seq(0, 100, by = 10))"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#activity",
+    "href": "lectures/w5l2_visualsWrangling.html#activity",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Activity",
+    "text": "Activity\nIn the w5l1_act.qmd file:\n\nCreate a new code chunk and adjust the following plot you see below, using various items mentioned before:\n\n\nggplot(BostonHousing2, aes(x = medv, y = chas)) +\n  geom_boxplot() + theme_classic()"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#other-plots-density-plot",
+    "href": "lectures/w5l2_visualsWrangling.html#other-plots-density-plot",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Other Plots!: Density Plot",
+    "text": "Other Plots!: Density Plot\n\nSmoother form of histogram; provides density of the data\n\nHas relations to looking at pdfs in statistics courses!\n\n\n\nggplot(BostonHousing2, aes(x = zn)) +\n  geom_density() +\n  labs(x = \"Prop. of Residential Land Zoned for Lots &gt; 25,000 Sq. Ft.\",\n       title = \"Distribution of Proportion of Residential Land\\nZoned for Large Lots in Boston Census Tracts, 1970\") + theme_minimal()"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#other-plots-heat-map",
+    "href": "lectures/w5l2_visualsWrangling.html#other-plots-heat-map",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Other Plots!: Heat Map",
+    "text": "Other Plots!: Heat Map\n\nUsed to show values across a grid\n\nUseful for correlation matrices\n\n\n\nlibrary(reshape)\ncorData &lt;- cor(BostonHousing2[, 5:9])\ncorDataMelted &lt;- melt(corData)\n\nggplot(corDataMelted, aes(x = X1, y = X2, fill = value)) +\n  geom_tile() + xlab(\"\") + ylab(\"\") +\n  labs(title = \"Correlation Matrix of 5 Variables of Boston Census Tracts, 1970\",\n       fill = \"Correlation\") + theme_classic()"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#other-plots-violin-plot",
+    "href": "lectures/w5l2_visualsWrangling.html#other-plots-violin-plot",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Other Plots!: Violin Plot",
+    "text": "Other Plots!: Violin Plot\n\nClever way to show distribution across groups\n\n\nggplot(BostonHousing2, aes(x = medv, y = chas, fill = chas)) +\n  geom_violin() + theme_classic() +\n  labs(x = \"Median Value of Owner-Occupied Homes ($1000s)\",\n       y = \"Next to Charles River?\",\n       fill = \"Next to\\nCharles\\nRiver?\",\n       title = \"Median Value of Owner-Occupied Homes (in $1000s)\\nin Boston Census Tracts Near Charles River, 1970\")"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#resources",
+    "href": "lectures/w5l2_visualsWrangling.html#resources",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Resources",
+    "text": "Resources\n\nReference page online: link\nggplot 2 Textbook: link\n\n3rd edition is work in progress!\n\nCheatsheet: link"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#data-wrangling",
+    "href": "lectures/w5l2_visualsWrangling.html#data-wrangling",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Data Wrangling",
+    "text": "Data Wrangling\n\nA process for transforming a dataset from its original form into a more relevant form.\n\n\nSource: NAM-IT"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#data-is-messy",
+    "href": "lectures/w5l2_visualsWrangling.html#data-is-messy",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Data is Messy!",
+    "text": "Data is Messy!\n\nWe are messy\n\nData, processes, views, government\n\nQuestion: Think of 1-2 actions/situations that can result in issues with our data."
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#the-messiness",
+    "href": "lectures/w5l2_visualsWrangling.html#the-messiness",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "The Messiness",
+    "text": "The Messiness\n - Our focus for today: transformation!"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#lets-tidy-the-data",
+    "href": "lectures/w5l2_visualsWrangling.html#lets-tidy-the-data",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Let’s Tidy the Data!",
+    "text": "Let’s Tidy the Data!\n\nOrder them by some metric\nSubset certain variables or observations based on some criteria\nCreate columns based on other variables\nSummarize data into meaningful tables"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#dplyr-the-grammar-of-data-manipulation",
+    "href": "lectures/w5l2_visualsWrangling.html#dplyr-the-grammar-of-data-manipulation",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "dplyr: The Grammar of Data Manipulation",
+    "text": "dplyr: The Grammar of Data Manipulation\n\nManipulation is good!\n\n…well, in the context of data wrangling\n\ndplyr is an R package used for data manipulation\n\nCommon verbs used as function names for actions on data\nTo install: install.packages('dplyr')\n\n\n\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#the-piping-operator",
+    "href": "lectures/w5l2_visualsWrangling.html#the-piping-operator",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "The Piping Operator",
+    "text": "The Piping Operator\n\n%&gt;% or |&gt;\n\nUseful when multiple actions are done on object in succession\n\n\n\nmean(mtcars$mpg)\n\n[1] 20.09062\n\nmtcars$mpg |&gt; mean()\n\n[1] 20.09062"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#motivating-dataset",
+    "href": "lectures/w5l2_visualsWrangling.html#motivating-dataset",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Motivating Dataset",
+    "text": "Motivating Dataset\n\nmidwest data set in ggplot2 package\n\n437 midwest counties with 28 variables\nDemographic information of midwest U.S. counties from 2000 U.S. census\n\n\n\nlibrary(tidyverse)\ndata(midwest)"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#lets-tidy-the-data---the-six-verbs",
+    "href": "lectures/w5l2_visualsWrangling.html#lets-tidy-the-data---the-six-verbs",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "Let’s Tidy the Data! - The Six Verbs",
+    "text": "Let’s Tidy the Data! - The Six Verbs\n\nOrder them by some metric\n\narrange()\n\nSubset certain variables or observations based on some criteria\n\nselect() for variables, filter() for observations\n\nCreate columns based on other variables\n\nmutate()\n\nSummarize data into meaningful tables\n\nsummarize() and group_by()"
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#for-now-and-wednesday",
+    "href": "lectures/w5l2_visualsWrangling.html#for-now-and-wednesday",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "For Now and Wednesday",
+    "text": "For Now and Wednesday\n\nFinish activity for today’s class\nLab #3 due Wednesday at 11:59pm"
   }
 ]
