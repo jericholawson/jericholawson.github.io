@@ -130,7 +130,7 @@
     "href": "schedule.html#week-8-spring-break-316---320",
     "title": "Schedule",
     "section": "Week 8: Spring Break (3/16 - 3/20)",
-    "text": "Week 8: Spring Break (3/16 - 3/20)\n\nMonday, 3/16Wednesday, 3/18\n\n\n\n\n\n\n\n\nNoteNO CLASS\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteNO CLASS\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 8: Spring Break (3/16 - 3/20)\n\nMonday, 3/16Wednesday, 3/18\n\n\n\n\n\n\n\n\nNoteNO CLASS\n\n\n\nEnjoy spring break! :)\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteNO CLASS\n\n\n\nEnjoy spring break! :)\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-9-s3-objects-package-foundation-323---327",
@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply) \n\n\n\n\n1: Set 1\n2: Set 2\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n\n\n\n\n\n1: Set 1\n2: Set 2\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
   },
   {
     "objectID": "sets/set1.html",
@@ -3217,7 +3217,7 @@
     "href": "lectures/w5l1_mapReview.html#pmap-example-1",
     "title": "Functionals - map()",
     "section": "pmap() example",
-    "text": "pmap() example\n\nparams &lt;- tibble(\n  mean = -1:1,\n  sd = c(0.5, 1, 2)\n)\n\npmap(params, rnorm, n = 1000) |&gt;\n  map_dbl(mean)\n\n[1] -1.01759521  0.02774658  1.01490980"
+    "text": "pmap() example\n\nparams &lt;- tibble(\n  mean = -1:1,\n  sd = c(0.5, 1, 2)\n)\n\npmap(params, rnorm, n = 1000) |&gt;\n  map_dbl(mean)\n\n[1] -0.99061632 -0.03768776  0.99456949"
   },
   {
     "objectID": "lectures/w5l1_mapReview.html#cheatsheet",
@@ -3833,7 +3833,7 @@
     "href": "schedule.html#week-5-iteration-223---227",
     "title": "Schedule",
     "section": "Week 5: Iteration (2/23 - 2/27)",
-    "text": "Week 5: Iteration (2/23 - 2/27)\n\n\n\n\n\n\nImportantImportant Change\n\n\n\n\nExam #1 has been MOVED to Monday, 3/2 due to the snow day.\n\nNo class on Monday, 2/25.\nRest of functionals and review will be covered on Wednesday, 2/27.\n\n\n\n\n\nMonday, 2/23Wednesday, 2/25\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and safe!!\n\nStudy Guide for Exam #1\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nWork on study guide for next Monday’s exam\n\nWe will discuss some solutions in Wednesday’s class\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Iteration, Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nStudy for exam!"
+    "text": "Week 5: Iteration (2/23 - 2/27)\n\n\n\n\n\n\nImportantImportant Change\n\n\n\n\nExam #1 has been MOVED to Monday, 3/2 due to the snow day.\n\nNo class on Monday, 2/25.\nRest of functionals and review will be covered on Wednesday, 2/27.\n\n\n\n\n\nMonday, 2/23Wednesday, 2/25\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\nStay warm and safe!!\n\nStudy Guide for Exam #1\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nWork on study guide for next Monday’s exam\n\nWe will discuss some solutions in Wednesday’s class\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Iteration, Review\n\n\n\n\nSlides\nActivity\n\nTemplate\n\nStudy Guide for Exam #1\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nStudy for exam!"
   },
   {
     "objectID": "schedule.html#week-6-exam-1-environments-32---36",
@@ -3841,5 +3841,488 @@
     "title": "Schedule",
     "section": "Week 6: Exam #1, Environments (3/2 - 3/6)",
     "text": "Week 6: Exam #1, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\nGood luck!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#last-time",
+    "href": "lectures/w7l1_conditions.html#last-time",
+    "title": "Conditions",
+    "section": "Last Time",
+    "text": "Last Time\n\nEnvironments\n\nWhat they are?\nThe categories\n\nGlobal\nPackage\nNamespace\nFunction"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#today",
+    "href": "lectures/w7l1_conditions.html#today",
+    "title": "Conditions",
+    "section": "Today",
+    "text": "Today\n\nConditions\n\nWhat are they?\nCategories:\n\nErrors\nWarnings\nMessages\n\nIgnoring and handling errors\n\ntry()\ntryCatch()\n\n\n\n\nWe will focus on primarily Chapter 8 from Advanced R."
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#behind-an-error",
+    "href": "lectures/w7l1_conditions.html#behind-an-error",
+    "title": "Conditions",
+    "section": "Behind an Error",
+    "text": "Behind an Error\n\ndata &lt;- read.csv(\"gimmedata.csv\")\n\nError in `file()`:\n! cannot open the connection\n\n\nQuestions to consider:\n\nHow are errors generated in R?\nHow do we try and catch these errors?\nHow do we diagnose these errors?\n\nWe will focus on the first two questions."
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#condition-types",
+    "href": "lectures/w7l1_conditions.html#condition-types",
+    "title": "Conditions",
+    "section": "Condition Types",
+    "text": "Condition Types\n\n\nThree types of conditions:\n\nErrors (i.e. stop())\nWarnings (i.e. warning())\nMessages (i.e. message())\n\n\nCatching errors:\n\ntry()\ntryCatch()"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#errors",
+    "href": "lectures/w7l1_conditions.html#errors",
+    "title": "Conditions",
+    "section": "Errors",
+    "text": "Errors\n\nStops process altogether due to incompatibility\n\ne.g. cannot open connection\ne.g. object not found\n\nCan create our own error messages via stop()"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#errors-1",
+    "href": "lectures/w7l1_conditions.html#errors-1",
+    "title": "Conditions",
+    "section": "Errors",
+    "text": "Errors\n\naboveMean &lt;- function(x){\n  mean(x &gt; mean(x))\n}\n\n\nQuestion: What problems may arise when using the function on some input x?"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#errors-2",
+    "href": "lectures/w7l1_conditions.html#errors-2",
+    "title": "Conditions",
+    "section": "Errors",
+    "text": "Errors\n\naboveMean &lt;- function(x){\n  if (type_of(x) != \"double\" & type_of(x) != \"integer\"){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  }\n  mean(x &gt; mean(x))\n}"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#errors-3",
+    "href": "lectures/w7l1_conditions.html#errors-3",
+    "title": "Conditions",
+    "section": "Errors",
+    "text": "Errors\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `type_of()`:\n! could not find function \"type_of\"\n\naboveMean(x = c(3, 3, 3, 9))  \n\nError in `type_of()`:\n! could not find function \"type_of\"\n\n\n\nErrors should be used when we expect an action that will break our functionality\n\nWithout them: unexpected behavior; caught by other uninformative errors"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#warnings",
+    "href": "lectures/w7l1_conditions.html#warnings",
+    "title": "Conditions",
+    "section": "Warnings",
+    "text": "Warnings\n\nSignals something is wrong, but continues process regardless\n\ne.g. compatibility with specific R versions\ne.g. longer object length is not multiple of shorter object length\n\nCan create our own warnings via warning()"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#warnings-1",
+    "href": "lectures/w7l1_conditions.html#warnings-1",
+    "title": "Conditions",
+    "section": "Warnings",
+    "text": "Warnings\n\naboveMean &lt;- function(x){\n  mean(x &gt; mean(x))\n}\n\n\nQuestion: What unusual behavior may arise when using the function on some input x?"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#warnings-2",
+    "href": "lectures/w7l1_conditions.html#warnings-2",
+    "title": "Conditions",
+    "section": "Warnings",
+    "text": "Warnings\n\naboveMean &lt;- function(x){\n  if (!(type_of(x) %in% c(\"double\", \"integer\", \"logical\"))){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  } else if (type_of(x) == \"logical\"){\n    warning(\"Not recommended due to repetition of code.\")\n  }\n  mean(x &gt; mean(x))\n}"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#warnings-3",
+    "href": "lectures/w7l1_conditions.html#warnings-3",
+    "title": "Conditions",
+    "section": "Warnings",
+    "text": "Warnings\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `type_of()`:\n! could not find function \"type_of\"\n\naboveMean(x = c(T, F, T, F, F, F))  \n\nError in `type_of()`:\n! could not find function \"type_of\"\n\n\n\nWarnings should be used when we expect unexpected behavior with our function\n\nWithout them: should not break function; will lead to confusion on user’s part"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#messages",
+    "href": "lectures/w7l1_conditions.html#messages",
+    "title": "Conditions",
+    "section": "Messages",
+    "text": "Messages\n\nCompletely informational\n\ne.g. info about the tibble\n\nCan create our own messages via message()"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#messages-1",
+    "href": "lectures/w7l1_conditions.html#messages-1",
+    "title": "Conditions",
+    "section": "Messages",
+    "text": "Messages\n\naboveMean &lt;- function(x){\n  if (!(type_of(x) %in% c(\"double\", \"integer\", \"logical\"))){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  } else if (type_of(x) == \"logical\"){\n    warning(\"Not recommended due to repetition of code.\")\n  }\n  \n  result &lt;- mean(x &gt; mean(x))\n  if (result &lt;= 0.25){\n    message(\"There appears to be evidence of right-skeweness or outliers.\")\n  }\n\n  return(result)\n}"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#messages-2",
+    "href": "lectures/w7l1_conditions.html#messages-2",
+    "title": "Conditions",
+    "section": "Messages",
+    "text": "Messages\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `type_of()`:\n! could not find function \"type_of\"\n\naboveMean(x = c(T, F, T, F, F, F))  \n\nError in `type_of()`:\n! could not find function \"type_of\"\n\naboveMean(x = c(3, 3, 3, 3, 3, 3, 3, 21))\n\nError in `type_of()`:\n! could not find function \"type_of\"\n\n\n\nMessages should be used when we want to provide any information worth displaying to the user\n\nWithout them: Nothing bad happens"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#ignoring-errors-via-try",
+    "href": "lectures/w7l1_conditions.html#ignoring-errors-via-try",
+    "title": "Conditions",
+    "section": "Ignoring Errors via try()",
+    "text": "Ignoring Errors via try()\n\nAllows for execution to continue\n\nWhat issues may arise from this?\n\n\n\nf1 &lt;- function(x) {\n  try(log(x))\n  print(x)\n}\n\nf1(\"x\")"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#ignoring-errors-via-try-1",
+    "href": "lectures/w7l1_conditions.html#ignoring-errors-via-try-1",
+    "title": "Conditions",
+    "section": "Ignoring Errors via try()",
+    "text": "Ignoring Errors via try()\n\nf1 &lt;- function(x) {\n  try(log(x))\n  print(x)\n}\n\nf1(\"x\")\n\nError in log(x) : non-numeric argument to mathematical function\n[1] \"x\""
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#handling-conditions",
+    "href": "lectures/w7l1_conditions.html#handling-conditions",
+    "title": "Conditions",
+    "section": "Handling Conditions",
+    "text": "Handling Conditions\n\nUse tryCatch() to handle errors and exit safely\n\nError function comes first\nSecond argument is the code that is being evaluated\n\n\n\nf3 &lt;- function(x) {\n  tryCatch(\n    error = function(cnd) {\n      # stuff to do when error occurs\n      NA\n    },\n    # what you are actually trying to do\n    log(x)\n  )\n}\n\nf3(\"x\")\n\n[1] NA\n\nf3(4)\n\n[1] 1.386294"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html#for-now-and-wednesday",
+    "href": "lectures/w7l1_conditions.html#for-now-and-wednesday",
+    "title": "Conditions",
+    "section": "For Now and Wednesday:",
+    "text": "For Now and Wednesday:\n\nComplete the exercises\n\nTemplate\n\nRead Advanced R: chapter 12\nThird problem set due Friday, 3/13 at 11:59pm"
+  },
+  {
+    "objectID": "lectures/w7l1_act.html",
+    "href": "lectures/w7l1_act.html",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "",
+    "text": "In these exercises, we will learn how to handle conditions.\nGoal: By the end of this lab, you should be able to handle an error and return from it gracefully.\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "lectures/w7l1_act.html#introduction",
+    "href": "lectures/w7l1_act.html#introduction",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "",
+    "text": "In these exercises, we will learn how to handle conditions.\nGoal: By the end of this lab, you should be able to handle an error and return from it gracefully.\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "lectures/w7l1_act.html#three-types-of-conditions",
+    "href": "lectures/w7l1_act.html#three-types-of-conditions",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Three types of conditions",
+    "text": "Three types of conditions\nRecall that there are three main types of conditions in R:\n\nerror: will terminate the function immediately and throw an error\nwarning: will continue to execute the function, but will warn you about what happened afterwards\nmessage: will immediately display a message about what is happening.\n\nThe following function will compute the number of unique values in whatever columns in a data frame you select. The first argument is the data frame, and the second argument is the dots, which are simply passed to select().\nNote that this function may display a message, a warning(), or an error depending on what happens.\n\nunique_values &lt;- function(.data, ...) {\n  x &lt;- .data |&gt;\n    select(...)\n  \n  if (ncol(x) == ncol(.data)) {\n    warning(\"All columns selected!\")\n  }\n  \n  if (ncol(x) &lt; 1) {\n    stop(\"No columns selected.\")\n  }\n\n  message(paste(\"Computing on\", ncol(x), \"columns...\"))  \n  map_int(x, n_distinct)\n}\n\n\n\n\n\n\n\nImportantQ1\n\n\n\nExamine the code for unique_values() carefully. Explain how the function works.\n\n\nIf we give this function no valid selection, we will throw an error.\n\nunique_values(starwars)\n\nError in `unique_values()`:\n! No columns selected.\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nWas the error in the previous example thrown by unique_values() or by select()? How do you know?\n\n\nIf we select all of the columns in the data frame, then we get a warning. However, the code still executes.\n\nunique_values(starwars, everything())\n\nWarning in unique_values(starwars, everything()): All columns selected!\n\n\nComputing on 14 columns...\n\n\n      name     height       mass hair_color skin_color  eye_color birth_year \n        87         46         39         12         31         15         37 \n       sex     gender  homeworld    species      films   vehicles  starships \n         5          3         49         38         24         11         16 \n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nWhy does the warning message show up before the results? Why does the warning message show up before the message, when the line of code with message() came after the call to warning() in the function?\n\n\nSince unique_values() passes the dots to select(), we can leverage all of the functionality of the select helpers!\n\nunique_values(starwars, contains(\"n\"))\n\nComputing on 3 columns...\n\n\n      name skin_color     gender \n        87         31          3 \n\n\nHowever, if we pass garbage to select(), then of course select() will still throw an error.\n\nunique_values(starwars, i_love_r)\n\nError in `select()`:\n! Can't select columns that don't exist.\n✖ Column `i_love_r` doesn't exist.\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nConsider the difference in the output between the previous example and unique_values(starwars). What is different?"
+  },
+  {
+    "objectID": "lectures/w7l1_act.html#catching-errors",
+    "href": "lectures/w7l1_act.html#catching-errors",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Catching errors",
+    "text": "Catching errors\nInstead of just failing whenever the user passes bad arguments to select(), we might want to catch those errors and do something with them. Here, we use a tryCatch() statement to provide some additional information about what went wrong, and to continue with the original data frame if the select() statement failed.\n\nunique_values_safe &lt;- function(.data, ...) {\n  x &lt;- tryCatch(\n    error = function(cnd) {\n      warning(\"Attempt to select column has failed\")\n      message(\"Here is what we know about the error\")\n      str(cnd)\n      .data\n    },\n    .data |&gt;\n      select(...)\n  )\n  \n  if (ncol(x) == ncol(.data)) {\n    warning(\"All columns selected!\")\n  }\n  \n  if (ncol(x) &lt; 1) {\n    stop(\"No columns selected.\")\n  }\n\n  message(paste(\"Computing on\", ncol(x), \"columns...\"))  \n  map_int(x, n_distinct)\n}\n\nNow, even though an error still occurs, we still get output.\n\nunique_values_safe(starwars, i_love_r)\n\nWarning in value[[3L]](cond): Attempt to select column has failed\n\n\nHere is what we know about the error\n\n\nList of 11\n $ message         : chr \"\"\n $ trace           :Classes 'rlang_trace', 'rlib_trace', 'tbl' and 'data.frame':    24 obs. of  6 variables:\n  ..$ call       :List of 24\n  .. ..$ : language unique_values_safe(starwars, i_love_r)\n  .. ..$ : language tryCatch(error = function(cnd) {     warning(\"Attempt to select column has failed\") ...\n  .. ..$ : language tryCatchList(expr, classes, parentenv, handlers)\n  .. ..$ : language tryCatchOne(expr, names, parentenv, handlers[[1L]])\n  .. ..$ : language doTryCatch(return(expr), name, parentenv, handler)\n  .. ..$ : language select(.data, ...)\n  .. ..$ : language select.data.frame(.data, ...)\n  .. ..$ : language tidyselect::eval_select(expr(c(...)), data = .data, error_call = error_call)\n  .. ..$ : language eval_select_impl(data, names(data), as_quosure(expr, env), include = include,      exclude = exclude, strict = st| __truncated__ ...\n  .. ..$ : language with_subscript_errors(out &lt;- vars_select_eval(vars, expr, strict = strict,      data = x, name_spec = name_spec, | __truncated__ ...\n  .. ..$ : language withCallingHandlers(expr, vctrs_error_subscript = function(cnd) {     cnd$subscript_action &lt;- subscript_action(type) ...\n  .. ..$ : language vars_select_eval(vars, expr, strict = strict, data = x, name_spec = name_spec,      uniquely_named = uniquely_nam| __truncated__ ...\n  .. ..$ : language walk_data_tree(expr, data_mask, context_mask)\n  .. ..$ : language eval_c(expr, data_mask, context_mask)\n  .. ..$ : language reduce_sels(node, data_mask, context_mask, init = init)\n  .. ..$ : language walk_data_tree(new, data_mask, context_mask)\n  .. ..$ : language as_indices_sel_impl(out, vars = vars, strict = strict, data = data, allow_predicates = allow_predicates,      cal| __truncated__\n  .. ..$ : language as_indices_impl(x, vars, call = call, arg = arg, strict = strict)\n  .. ..$ : language chr_as_locations(x, vars, call = call, arg = arg)\n  .. ..$ : language vctrs::vec_as_location(x, n = length(vars), names = vars, call = call,      arg = arg)\n  .. ..$ : language `&lt;fn&gt;`()\n  .. ..$ : language stop_subscript_oob(i = i, subscript_type = subscript_type, names = names,      subscript_action = subscript_actio| __truncated__ ...\n  .. ..$ : language stop_subscript(class = \"vctrs_error_subscript_oob\", i = i, subscript_type = subscript_type,      ..., call = call)\n  .. ..$ : language abort(class = c(class, \"vctrs_error_subscript\"), i = i, ..., call = call)\n  ..$ parent     : int [1:24] 0 1 2 3 4 1 1 7 8 9 ...\n  ..$ visible    : logi [1:24] TRUE TRUE TRUE TRUE TRUE TRUE ...\n  ..$ namespace  : chr [1:24] NA \"base\" \"base\" \"base\" ...\n  ..$ scope      : chr [1:24] \"global\" \"::\" \"local\" \"local\" ...\n  ..$ error_frame: logi [1:24] FALSE FALSE FALSE FALSE FALSE FALSE ...\n  ..- attr(*, \"version\")= int 2\n $ parent          : NULL\n $ i               : chr \"i_love_r\"\n $ subscript_type  : chr \"character\"\n $ names           : chr [1:14] \"name\" \"height\" \"mass\" \"hair_color\" ...\n $ subscript_action: chr \"select\"\n $ subscript_arg   : chr \"i_love_r\"\n $ rlang           :List of 1\n  ..$ inherit: logi TRUE\n $ call            : language select(.data, ...)\n $ subscript_elt   : chr \"column\"\n - attr(*, \"class\")= chr [1:5] \"vctrs_error_subscript_oob\" \"vctrs_error_subscript\" \"rlang_error\" \"error\" ...\n\n\nWarning in unique_values_safe(starwars, i_love_r): All columns selected!\n\n\nComputing on 14 columns...\n\n\n      name     height       mass hair_color skin_color  eye_color birth_year \n        87         46         39         12         31         15         37 \n       sex     gender  homeworld    species      films   vehicles  starships \n         5          3         49         38         24         11         16 \n\n\nWhether this output is sensible is an open question for the developer. In this case I think it is probably not sensible.\n\n\n\n\n\n\nImportantQ5\n\n\n\nWhy might it be a better idea to fail with an error in the previous example instead of continuing with the full data frame?"
+  },
+  {
+    "objectID": "lectures/w7l1_act.html#turn-in",
+    "href": "lectures/w7l1_act.html#turn-in",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "schedule.html#week-7-conditions-and-object-oriented-programming-oop-39---313",
+    "href": "schedule.html#week-7-conditions-and-object-oriented-programming-oop-39---313",
+    "title": "Schedule",
+    "section": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)",
+    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "lectures/w7l1_actTemp.html",
+    "href": "lectures/w7l1_actTemp.html",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "",
+    "text": "In these exercises, we will learn how to handle conditions.\nGoal: By the end of this lab, you should be able to handle an error and return from it gracefully.\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "lectures/w7l1_actTemp.html#introduction",
+    "href": "lectures/w7l1_actTemp.html#introduction",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "",
+    "text": "In these exercises, we will learn how to handle conditions.\nGoal: By the end of this lab, you should be able to handle an error and return from it gracefully.\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "lectures/w7l1_actTemp.html#three-types-of-conditions",
+    "href": "lectures/w7l1_actTemp.html#three-types-of-conditions",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Three types of conditions",
+    "text": "Three types of conditions\nRecall that there are three main types of conditions in R:\n\nerror: will terminate the function immediately and throw an error\nwarning: will continue to execute the function, but will warn you about what happened afterwards\nmessage: will immediately display a message about what is happening.\n\nThe following function will compute the number of unique values in whatever columns in a data frame you select. The first argument is the data frame, and the second argument is the dots, which are simply passed to select().\nNote that this function may display a message, a warning(), or an error depending on what happens.\n\nunique_values &lt;- function(.data, ...) {\n  x &lt;- .data |&gt;\n    select(...)\n  \n  if (ncol(x) == ncol(.data)) {\n    warning(\"All columns selected!\")\n  }\n  \n  if (ncol(x) &lt; 1) {\n    stop(\"No columns selected.\")\n  }\n\n  message(paste(\"Computing on\", ncol(x), \"columns...\"))  \n  map_int(x, n_distinct)\n}\n\n\n\n\n\n\n\nImportantQ1\n\n\n\nExamine the code for unique_values() carefully. Explain how the function works.\nPUT SOLUTION HERE\n\n\nIf we give this function no valid selection, we will throw an error.\n\nunique_values(starwars)\n\nError in `unique_values()`:\n! No columns selected.\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nWas the error in the previous example thrown by unique_values() or by select()? How do you know?\nPUT SOLUTION HERE\n\n\nIf we select all of the columns in the data frame, then we get a warning. However, the code still executes.\n\nunique_values(starwars, everything())\n\nWarning in unique_values(starwars, everything()): All columns selected!\n\n\nComputing on 14 columns...\n\n\n      name     height       mass hair_color skin_color  eye_color birth_year \n        87         46         39         12         31         15         37 \n       sex     gender  homeworld    species      films   vehicles  starships \n         5          3         49         38         24         11         16 \n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nWhy does the warning message show up before the results? Why does the warning message show up before the message, when the line of code with message() came after the call to warning() in the function?\nPUT SOLUTION HERE\n\n\nSince unique_values() passes the dots to select(), we can leverage all of the functionality of the select helpers!\n\nunique_values(starwars, contains(\"n\"))\n\nComputing on 3 columns...\n\n\n      name skin_color     gender \n        87         31          3 \n\n\nHowever, if we pass garbage to select(), then of course select() will still throw an error.\n\nunique_values(starwars, i_love_r)\n\nError in `select()`:\n! Can't select columns that don't exist.\n✖ Column `i_love_r` doesn't exist.\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nConsider the difference in the output between the previous example and unique_values(starwars). What is different?\nPUT SOLUTION HERE"
+  },
+  {
+    "objectID": "lectures/w7l1_actTemp.html#catching-errors",
+    "href": "lectures/w7l1_actTemp.html#catching-errors",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Catching errors",
+    "text": "Catching errors\nInstead of just failing whenever the user passes bad arguments to select(), we might want to catch those errors and do something with them. Here, we use a tryCatch() statement to provide some additional information about what went wrong, and to continue with the original data frame if the select() statement failed.\n\nunique_values_safe &lt;- function(.data, ...) {\n  x &lt;- tryCatch(\n    error = function(cnd) {\n      warning(\"Attempt to select column has failed\")\n      message(\"Here is what we know about the error\")\n      str(cnd)\n      .data\n    },\n    .data |&gt;\n      select(...)\n  )\n  \n  if (ncol(x) == ncol(.data)) {\n    warning(\"All columns selected!\")\n  }\n  \n  if (ncol(x) &lt; 1) {\n    stop(\"No columns selected.\")\n  }\n\n  message(paste(\"Computing on\", ncol(x), \"columns...\"))  \n  map_int(x, n_distinct)\n}\n\nNow, even though an error still occurs, we still get output.\n\nunique_values_safe(starwars, i_love_r)\n\nWarning in value[[3L]](cond): Attempt to select column has failed\n\n\nHere is what we know about the error\n\n\nList of 11\n $ message         : chr \"\"\n $ trace           :Classes 'rlang_trace', 'rlib_trace', 'tbl' and 'data.frame':    24 obs. of  6 variables:\n  ..$ call       :List of 24\n  .. ..$ : language unique_values_safe(starwars, i_love_r)\n  .. ..$ : language tryCatch(error = function(cnd) {     warning(\"Attempt to select column has failed\") ...\n  .. ..$ : language tryCatchList(expr, classes, parentenv, handlers)\n  .. ..$ : language tryCatchOne(expr, names, parentenv, handlers[[1L]])\n  .. ..$ : language doTryCatch(return(expr), name, parentenv, handler)\n  .. ..$ : language select(.data, ...)\n  .. ..$ : language select.data.frame(.data, ...)\n  .. ..$ : language tidyselect::eval_select(expr(c(...)), data = .data, error_call = error_call)\n  .. ..$ : language eval_select_impl(data, names(data), as_quosure(expr, env), include = include,      exclude = exclude, strict = st| __truncated__ ...\n  .. ..$ : language with_subscript_errors(out &lt;- vars_select_eval(vars, expr, strict = strict,      data = x, name_spec = name_spec, | __truncated__ ...\n  .. ..$ : language withCallingHandlers(expr, vctrs_error_subscript = function(cnd) {     cnd$subscript_action &lt;- subscript_action(type) ...\n  .. ..$ : language vars_select_eval(vars, expr, strict = strict, data = x, name_spec = name_spec,      uniquely_named = uniquely_nam| __truncated__ ...\n  .. ..$ : language walk_data_tree(expr, data_mask, context_mask)\n  .. ..$ : language eval_c(expr, data_mask, context_mask)\n  .. ..$ : language reduce_sels(node, data_mask, context_mask, init = init)\n  .. ..$ : language walk_data_tree(new, data_mask, context_mask)\n  .. ..$ : language as_indices_sel_impl(out, vars = vars, strict = strict, data = data, allow_predicates = allow_predicates,      cal| __truncated__\n  .. ..$ : language as_indices_impl(x, vars, call = call, arg = arg, strict = strict)\n  .. ..$ : language chr_as_locations(x, vars, call = call, arg = arg)\n  .. ..$ : language vctrs::vec_as_location(x, n = length(vars), names = vars, call = call,      arg = arg)\n  .. ..$ : language `&lt;fn&gt;`()\n  .. ..$ : language stop_subscript_oob(i = i, subscript_type = subscript_type, names = names,      subscript_action = subscript_actio| __truncated__ ...\n  .. ..$ : language stop_subscript(class = \"vctrs_error_subscript_oob\", i = i, subscript_type = subscript_type,      ..., call = call)\n  .. ..$ : language abort(class = c(class, \"vctrs_error_subscript\"), i = i, ..., call = call)\n  ..$ parent     : int [1:24] 0 1 2 3 4 1 1 7 8 9 ...\n  ..$ visible    : logi [1:24] TRUE TRUE TRUE TRUE TRUE TRUE ...\n  ..$ namespace  : chr [1:24] NA \"base\" \"base\" \"base\" ...\n  ..$ scope      : chr [1:24] \"global\" \"::\" \"local\" \"local\" ...\n  ..$ error_frame: logi [1:24] FALSE FALSE FALSE FALSE FALSE FALSE ...\n  ..- attr(*, \"version\")= int 2\n $ parent          : NULL\n $ i               : chr \"i_love_r\"\n $ subscript_type  : chr \"character\"\n $ names           : chr [1:14] \"name\" \"height\" \"mass\" \"hair_color\" ...\n $ subscript_action: chr \"select\"\n $ subscript_arg   : chr \"i_love_r\"\n $ rlang           :List of 1\n  ..$ inherit: logi TRUE\n $ call            : language select(.data, ...)\n $ subscript_elt   : chr \"column\"\n - attr(*, \"class\")= chr [1:5] \"vctrs_error_subscript_oob\" \"vctrs_error_subscript\" \"rlang_error\" \"error\" ...\n\n\nWarning in unique_values_safe(starwars, i_love_r): All columns selected!\n\n\nComputing on 14 columns...\n\n\n      name     height       mass hair_color skin_color  eye_color birth_year \n        87         46         39         12         31         15         37 \n       sex     gender  homeworld    species      films   vehicles  starships \n         5          3         49         38         24         11         16 \n\n\nWhether this output is sensible is an open question for the developer. In this case I think it is probably not sensible.\n\n\n\n\n\n\nImportantQ5\n\n\n\nWhy might it be a better idea to fail with an error in the previous example instead of continuing with the full data frame?\nPUT SOLUTION HERE"
+  },
+  {
+    "objectID": "lectures/w7l1_actTemp.html#turn-in",
+    "href": "lectures/w7l1_actTemp.html#turn-in",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#last-time",
+    "href": "lectures/w7l2_oop.html#last-time",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Last Time",
+    "text": "Last Time\n\nConditions\n\nWhat are they?\nCategories:\n\nErrors\nWarnings\nMessages\n\nIgnoring and handling errors\n\ntry()\ntryCatch()"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#today",
+    "href": "lectures/w7l2_oop.html#today",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Today",
+    "text": "Today\n\nObject-oriented programming\n\nWhat it is?\nDifferent object types\nAbilities\n\nS3 objects\n\nFunctionality\nWhy?\n\n\n\nWe will focus on primarily Chapters 12-13 from Advanced R."
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#til-now",
+    "href": "lectures/w7l2_oop.html#til-now",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "’Til Now",
+    "text": "’Til Now\n\nLimited ourselves to hard-set abilities and types in R\n\nThrough packages, data types, functions\n\nSuppose we want objects with their own attributes and methods\n\nHow do we enable this behavior?"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#object-oriented-programming",
+    "href": "lectures/w7l2_oop.html#object-oriented-programming",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Object-Oriented Programming",
+    "text": "Object-Oriented Programming\n\n\n\nCreate objects of a class\n\nInstance is created: consists of identity, attributes, and behaviors\n\nBase and OO objects\n\nOO objects have a class attribute"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#object-oriented-programming-1",
+    "href": "lectures/w7l2_oop.html#object-oriented-programming-1",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Object-Oriented Programming",
+    "text": "Object-Oriented Programming\n\n\n\nUse of abstraction, encapsulation, and inheritance\n\nCertain traits we want hidden (i.e. abstraction)\nPackaged into an object (i.e. encapsulation)\nShare traits with other object types (i.e. inheritance)"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#examples",
+    "href": "lectures/w7l2_oop.html#examples",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Examples",
+    "text": "Examples\n\nUse of sloop package\n\n\nlibrary(sloop)\n\n\nsloop::otype(1:20)\n\n[1] \"base\"\n\nsloop::otype(mean)\n\n[1] \"base\"\n\nsloop::otype(iris)\n\n[1] \"S3\""
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#examples-1",
+    "href": "lectures/w7l2_oop.html#examples-1",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Examples",
+    "text": "Examples\n\nUse of sloop package\n\n\nlibrary(sloop)\n\n\nsloop::s3_class(1:20)\n\n[1] \"integer\" \"numeric\"\n\nsloop::s3_class(mean)\n\n[1] \"function\"\n\nsloop::s3_class(iris)\n\n[1] \"data.frame\""
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#examples-2",
+    "href": "lectures/w7l2_oop.html#examples-2",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Examples",
+    "text": "Examples\n\nbadAddition &lt;- function(x, y){\n  x + y - 2\n}\nsloop::otype(badAddition)\n\n[1] \"base\"\n\nsloop::s3_class(badAddition)\n\n[1] \"function\"\n\n\n\nQuestion: Why is this a base object?"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#base-types",
+    "href": "lectures/w7l2_oop.html#base-types",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Base Types",
+    "text": "Base Types\n\nALL objects have base types\n\nVectors: NULL, logical, double, integer, …\nFunctions: closure, bullitin, special\n\nSo…\n\nWhy can’t we add new types?"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#the-class-systems",
+    "href": "lectures/w7l2_oop.html#the-class-systems",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "The Class Systems",
+    "text": "The Class Systems\nR has several class systems – three of them of importance; one of them we will focus in detail:\n\nS3: user-friendly, programmer-friendly\nS4: more complex, greater payoff with encapsulation\nR6: removes R’s copy-on-modify behavior; mutable"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#basic-principles-of-oop",
+    "href": "lectures/w7l2_oop.html#basic-principles-of-oop",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Basic Principles of OOP",
+    "text": "Basic Principles of OOP\n\nClass: a kind of object\n\nIn R: numeric, factor, data.frame\n\nMethod: function operating on objects of specific class\n\nIn R: mean() for numerics or logicals\n\n(Multiple) inheritance: objects can belong to one or more classes; can share attributes\n\nParent and child classes\nIn R: tbl is a child class of data.frame"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#real-life-example",
+    "href": "lectures/w7l2_oop.html#real-life-example",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Real-Life Example",
+    "text": "Real-Life Example\n\nA car can be considered an object…\n\nAnd each car takes on the definition of a car (e.g. class)\nWith its VIN, make, model, and color (e.g. attributes)\nAnd packaged together with actions you can take, such as driving (e.g. methods)\nWith elements shared among other vehicle types (e.g. inheritance)"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#activityexercise",
+    "href": "lectures/w7l2_oop.html#activityexercise",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Activity/Exercise",
+    "text": "Activity/Exercise\nIn groups of 2-3, think of two (real-world) objects that are adjacent to a car in some fashion. Consider the following:\n\nFor each (real-world) object, what attributes and functions does this object have?\nFor one function for each object, what is needed to start and end the function?\nWhat connects the (real-world) objects together with a car object?\n\nMake sure to answer these questions in the exercises .qmd file for this class."
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#the-steps-in-r-defining-a-class",
+    "href": "lectures/w7l2_oop.html#the-steps-in-r-defining-a-class",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "The Steps in R: Defining a Class",
+    "text": "The Steps in R: Defining a Class\n\nNeed to define an object as a certain class\n\nS3: Set class(x) to a concatenated vector of the name of your new class and the current classes\nS4: setClass(name, slots)\nR6: R6class(name, attributes/methods)"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#the-steps-in-r-defining-attributes-and-methods",
+    "href": "lectures/w7l2_oop.html#the-steps-in-r-defining-attributes-and-methods",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "The Steps in R: Defining Attributes and Methods",
+    "text": "The Steps in R: Defining Attributes and Methods\n\nNeed to define attributes and methods\n\nUse of generic and class-specific methods\n\nGeneric: captures method to use for specific class\nClass-specific: finds method to use for specific class\nDefault: standard fallback if method cannot be found for specific class\n\nAttributes can be defined as key-value pairs in a list"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#the-steps-in-r-inheritance",
+    "href": "lectures/w7l2_oop.html#the-steps-in-r-inheritance",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "The Steps in R: Inheritance",
+    "text": "The Steps in R: Inheritance\n\nAdd to class attribute\n\nAt beginning of character vector: child-class\nAt end of character vector: parent-class\n\nWe will follow an order of inheritance starting from the children to parent classes"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#generic-functions",
+    "href": "lectures/w7l2_oop.html#generic-functions",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Generic Functions",
+    "text": "Generic Functions\n\nGeneric functions have methods written for specific classes\nWhen you call a generic function:\n\nR uses class() to determine the class of your object\nR looks for a method that will work for the first class\nIf it can’t find one, it will look for the second class and so forth\n\nIf it can’t find one, it will call the default method"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#defining-a-method",
+    "href": "lectures/w7l2_oop.html#defining-a-method",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Defining a Method",
+    "text": "Defining a Method\n\nS3 object has a generic summary() function\n\nWe will be making our own!\n\n\n\nsloop::is_s3_generic(\"summary\")\n\n[1] TRUE\n\nargs(\"summary\")\n\nfunction (object, ...) \nNULL"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#defining-a-method-1",
+    "href": "lectures/w7l2_oop.html#defining-a-method-1",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Defining a Method",
+    "text": "Defining a Method\n\n# Create a summary function for a my_lm class\nsummary.my_lm &lt;- function(object, ...) {\n  message(\"Doesn't show significance.\")\n  object$coefficients\n}"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#defining-a-method-and-class",
+    "href": "lectures/w7l2_oop.html#defining-a-method-and-class",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Defining a Method (and Class)",
+    "text": "Defining a Method (and Class)\n\nCreating a (S3) class: Add to or define class() for object\n\n\n# Generate mod, revise class of mod to add my_lm, print summary\nmod &lt;- lm(mpg ~ disp, data = mtcars)\nclass(mod) &lt;- c(\"my_lm\", class(mod))\nsummary(mod)\n\n(Intercept)        disp \n29.59985476 -0.04121512"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#use-of-nextmethod",
+    "href": "lectures/w7l2_oop.html#use-of-nextmethod",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Use of NextMethod()",
+    "text": "Use of NextMethod()\n\nNextMethod() provides a connection to output from a parent class\n\n\nsummary.my_lm &lt;- function(object, ...) {\n  message(\"Doesn't show significance.\")\n  NextMethod() # uses summary output from next class\n}\n\nsummary(mod)\n\n\nCall:\nlm(formula = mpg ~ disp, data = mtcars)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-4.8922 -2.2022 -0.9631  1.6272  7.2305 \n\nCoefficients:\n             Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 29.599855   1.229720  24.070  &lt; 2e-16 ***\ndisp        -0.041215   0.004712  -8.747 9.38e-10 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 3.251 on 30 degrees of freedom\nMultiple R-squared:  0.7183,    Adjusted R-squared:  0.709 \nF-statistic: 76.51 on 1 and 30 DF,  p-value: 9.38e-10"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#defining-a-new-generic-function",
+    "href": "lectures/w7l2_oop.html#defining-a-new-generic-function",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Defining a New Generic Function",
+    "text": "Defining a New Generic Function\n\nNeed standardly-named function, followed by functions correspond to class\n\nmyFunct, myFunct.myClass\nA default function would be recommended here too!\n\n\n\n# Creates generic function with rmse as name\nrmse &lt;- function(x, ...) {\n  UseMethod(\"rmse\")\n}\n\n# Creates method for lm object\nrmse.lm &lt;- function(x, ...) {\n  sqrt(mean(x$residuals^2))\n}\n\n# Test it out!\nrmse(mod)\n\n[1] 3.148207"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#default-function",
+    "href": "lectures/w7l2_oop.html#default-function",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Default Function",
+    "text": "Default Function\n\nThink of it as a “catch-all”\n\n\nrmse(4)\n\nError in `UseMethod()`:\n! no applicable method for 'rmse' applied to an object of class \"c('double', 'numeric')\"\n\n\n\nrmse.default &lt;- function(x, ...){\n  print(\"No output specified for this function.\")\n}\n\n\nrmse(4)\n\n[1] \"No output specified for this function.\""
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#method-use-the-structure",
+    "href": "lectures/w7l2_oop.html#method-use-the-structure",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Method Use: The Structure",
+    "text": "Method Use: The Structure\n\nmyFunct &lt;- function(x, ...){\n  UseMethod(\"myFunct\")\n}\n\nmyFunct.myClass &lt;- function(x, ...){\n  print(x) # do actions on x for class\n  NextMethod(\"myFunct\") # access to method in parent class\n}\n\nmyFunct.default &lt;- function(x, ...){\n  print(x) # catch all\n}"
+  },
+  {
+    "objectID": "lectures/w7l2_oop.html#happy-spring-break",
+    "href": "lectures/w7l2_oop.html#happy-spring-break",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Happy Spring Break!",
+    "text": "Happy Spring Break!\n\nComplete the exercises\n\nTemplate\n\nRead Advanced R: chapter 13\nThird problem set due Friday, 3/13 at 11:59pm\n\nEnjoy the break!"
+  },
+  {
+    "objectID": "lectures/w7l2_act.html",
+    "href": "lectures/w7l2_act.html",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "",
+    "text": "In these exercises, we will learn how to write methods for S3 generics.\nGoal: by the end of this lab, you should be able to…\n\nwrite your own S3 generic methods and functions, and\nidentify pieces that make up object-oriented programming.\n\n(Install and) load in the following libraries below to work on this lab: sloop, tidyverse, emoji, and crayon\n\nlibrary(sloop)\nlibrary(tidyverse)\nlibrary(emoji)\nlibrary(crayon)"
+  },
+  {
+    "objectID": "lectures/w7l2_act.html#introduction",
+    "href": "lectures/w7l2_act.html#introduction",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "",
+    "text": "In these exercises, we will learn how to write methods for S3 generics.\nGoal: by the end of this lab, you should be able to…\n\nwrite your own S3 generic methods and functions, and\nidentify pieces that make up object-oriented programming.\n\n(Install and) load in the following libraries below to work on this lab: sloop, tidyverse, emoji, and crayon\n\nlibrary(sloop)\nlibrary(tidyverse)\nlibrary(emoji)\nlibrary(crayon)"
+  },
+  {
+    "objectID": "lectures/w7l2_act.html#exercises-set-i",
+    "href": "lectures/w7l2_act.html#exercises-set-i",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "Exercises: Set I",
+    "text": "Exercises: Set I\nThese exercises will be completed during lecture.\nIn groups of 2-3, think of two (real-world) objects that are adjacent to a car in some fashion. Consider the following:\n\n\n\n\n\n\nImportantQ1\n\n\n\n\nFor each (real-world) object, what attributes and functions does this object have?\n\nPUT ANSWER HERE\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\n\nFor one function for each object, what is needed to start and end the function?\n\nPUT ANSWER HERE\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\n\nWhat connects the (real-world) objects together with a car object?\n\nPUT ANSWER HERE"
+  },
+  {
+    "objectID": "lectures/w7l2_act.html#exercises-set-ii",
+    "href": "lectures/w7l2_act.html#exercises-set-ii",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "Exercises: Set II",
+    "text": "Exercises: Set II\nThere are many methods for the print() generic available:\n\ns3_methods_generic(\"print\")\n\n# A tibble: 333 × 4\n   generic class             visible source             \n   &lt;chr&gt;   &lt;chr&gt;             &lt;lgl&gt;   &lt;chr&gt;              \n 1 print   acf               FALSE   registered S3method\n 2 print   activeConcordance FALSE   registered S3method\n 3 print   AES               FALSE   registered S3method\n 4 print   all_vars          FALSE   registered S3method\n 5 print   anova             FALSE   registered S3method\n 6 print   any_vars          FALSE   registered S3method\n 7 print   aov               FALSE   registered S3method\n 8 print   aovlist           FALSE   registered S3method\n 9 print   ar                FALSE   registered S3method\n10 print   Arima             FALSE   registered S3method\n# ℹ 323 more rows\n\n\nOther common S3 generics include summary() and plot():\n\ns3_methods_generic(\"summary\")\n\n# A tibble: 43 × 4\n   generic class                 visible source             \n   &lt;chr&gt;   &lt;chr&gt;                 &lt;lgl&gt;   &lt;chr&gt;              \n 1 summary aov                   TRUE    stats              \n 2 summary aovlist               FALSE   registered S3method\n 3 summary aspell                FALSE   registered S3method\n 4 summary check_packages_in_dir FALSE   registered S3method\n 5 summary connection            TRUE    base               \n 6 summary data.frame            TRUE    base               \n 7 summary Date                  TRUE    base               \n 8 summary default               TRUE    base               \n 9 summary Duration              FALSE   registered S3method\n10 summary ecdf                  FALSE   registered S3method\n# ℹ 33 more rows\n\ns3_methods_generic(\"plot\")\n\n# A tibble: 36 × 4\n   generic class         visible source             \n   &lt;chr&gt;   &lt;chr&gt;         &lt;lgl&gt;   &lt;chr&gt;              \n 1 plot    acf           FALSE   registered S3method\n 2 plot    data.frame    FALSE   registered S3method\n 3 plot    decomposed.ts FALSE   registered S3method\n 4 plot    default       TRUE    graphics           \n 5 plot    dendrogram    FALSE   registered S3method\n 6 plot    density       FALSE   registered S3method\n 7 plot    ecdf          TRUE    stats              \n 8 plot    factor        FALSE   registered S3method\n 9 plot    formula       FALSE   registered S3method\n10 plot    function      TRUE    graphics           \n# ℹ 26 more rows\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nTry to think of another generic function that you’ve worked with in the past. Use s3_methods_generic() to find its available methods. [Note that you might have to load other packages to find the methods or the generic that you recall.]\n\n# ANSWER HERE\n\n\n\nIn addition to listing the methods for a particular generic, we can find all the methods that are defined for a particular class using s3_methods_class():\n\ns3_methods_class(\"tbl_df\")\n\n# A tibble: 21 × 4\n   generic       class  visible source             \n   &lt;chr&gt;         &lt;chr&gt;  &lt;lgl&gt;   &lt;chr&gt;              \n 1 $             tbl_df FALSE   registered S3method\n 2 $&lt;-           tbl_df FALSE   registered S3method\n 3 [             tbl_df FALSE   registered S3method\n 4 [[            tbl_df FALSE   registered S3method\n 5 [[&lt;-          tbl_df FALSE   registered S3method\n 6 [&lt;-           tbl_df FALSE   registered S3method\n 7 arrange_      tbl_df FALSE   registered S3method\n 8 as.data.frame tbl_df FALSE   registered S3method\n 9 distinct_     tbl_df FALSE   registered S3method\n10 filter_       tbl_df FALSE   registered S3method\n# ℹ 11 more rows\n\n\nNote that while the methods for a particular generic are most likely written by many different developers in many different packages, the methods for a particular class are most likely written by the same set of developers of a single package.\n\nMethod dispatch\nIf you are ever unsure of which method is actually being run when you invoke a generic, use s3_dispatch() to figure out what is going on.\n\ns3_dispatch(print(starwars))\n\n   print.tbl_df\n=&gt; print.tbl\n * print.data.frame\n * print.default\n\ns3_dispatch(print(mtcars))\n\n=&gt; print.data.frame\n * print.default\n\n\n\n\n\n\n\n\nImportantQ5\n\n\n\nWhy do the previous two examples show a different list of available methods?\nPUT ANSWER HERE\n\n\n\n\n\n\n\n\nImportantQ6\n\n\n\nWhy doesn’t print.data.frame() get called on starwars?\nPUT ANSWER HERE\n\n\n\n\nUsing a method\nFirst, we’ll learn about two fun packages: emoji and crayon.\n\nemoji\nThe emoji package allows you print an emoji via the emoji() function. To display an emoji, call it by name:\n\nemoji(\"star\")\n\n[1] \"⭐\"\n\nemoji(\"dog\")\n\n[1] \"🐶\"\n\nemoji(\"basketball\")\n\n[1] \"🏀\"\n\n\nYou can see the full list of available emojis in the tibble returned by emojis.\n\nemojis |&gt; View()\n\n\n\n\n\n\n\nImportantQ7\n\n\n\nFind an emoji that you like and use emoji() to print it here.\n\n# PUT ANSWER HERE\n\n\n\n\n\ncrayon\nThe crayon package allows you to print in color in the console. For a complicated example of what you can do, consider the tidyverse logo:\n\ntidyverse_logo()\n\n⬢ __  _    __   .    ⬡           ⬢  . \n / /_(_)__/ /_ ___  _____ _______ ___ \n/ __/ / _  / // / |/ / -_) __(_-&lt;/ -_)\n\\__/_/\\_,_/\\_, /|___/\\__/_/ /___/\\__/ \n     ⬢  . /___/      ⬡      .       ⬢ \n\n\nFor a simpler, example, you can write your name in blue. Be sure to wrap the text in cat() (or message()) to send it to the console.\n\ncat(crayon::blue(\"Jericho\"))\n\nJericho\n\n\n\n\n\n\n\n\nImportantQ8\n\n\n\nPick a color from the crayon package and write something using that color.\n\n# PUT ANSWER HERE\n\n\n\n\n\n\nDefining a method\nNow we will define a simple print() method that will only be invoked for objects of class sds270. This method will simply print a colorful message to the console, and then invoke the NextMethod() available.\n\nprint.sds270 &lt;- function(x, ...) {\n  cat(\n    crayon::magenta(\n      \"Jericho\", \n      emoji::emoji(\"heart\"), \n      \"s programming in R!\\n\"\n    )\n  )\n  NextMethod()\n}\n\nTo use it, we just have to create an object of type sds270, and then call print(). Remember that in R you can simply modify the class attribute of any object!\n\nclass(starwars) &lt;- c(\"sds270\", class(starwars))\nstarwars\n\nJericho ❤️ s programming in R!\n# A tibble: 87 × 14\n   name     height  mass hair_color skin_color eye_color birth_year sex   gender\n   &lt;chr&gt;     &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n 1 Luke Sk…    172    77 blond      fair       blue            19   male  mascu…\n 2 C-3PO       167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n 3 R2-D2        96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n 4 Darth V…    202   136 none       white      yellow          41.9 male  mascu…\n 5 Leia Or…    150    49 brown      light      brown           19   fema… femin…\n 6 Owen La…    178   120 brown, gr… light      blue            52   male  mascu…\n 7 Beru Wh…    165    75 brown      light      blue            47   fema… femin…\n 8 R5-D4        97    32 &lt;NA&gt;       white, red red             NA   none  mascu…\n 9 Biggs D…    183    84 black      light      brown           24   male  mascu…\n10 Obi-Wan…    182    77 auburn, w… fair       blue-gray       57   male  mascu…\n# ℹ 77 more rows\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;\n\n\nNote that this method works on objects of any underlying class!!\n\nclass(Titanic)\n\n[1] \"table\"\n\nclass(Titanic) &lt;- c(\"sds270\", class(Titanic))\nTitanic\n\nJericho ❤️ s programming in R!\n, , Age = Child, Survived = No\n\n      Sex\nClass  Male Female\n  1st     0      0\n  2nd     0      0\n  3rd    35     17\n  Crew    0      0\n\n, , Age = Adult, Survived = No\n\n      Sex\nClass  Male Female\n  1st   118      4\n  2nd   154     13\n  3rd   387     89\n  Crew  670      3\n\n, , Age = Child, Survived = Yes\n\n      Sex\nClass  Male Female\n  1st     5      1\n  2nd    11     13\n  3rd    13     14\n  Crew    0      0\n\n, , Age = Adult, Survived = Yes\n\n      Sex\nClass  Male Female\n  1st    57    140\n  2nd    14     80\n  3rd    75     76\n  Crew  192     20\n\n\n\n\n\n\n\n\nImportantQ9\n\n\n\nDefine your own print() method for objects having class [your GitHub username]. Then add your class name to an object’s listing of classes and print out that object.\n\n# PUT ANSWER HERE\n\n\n\n\n\nDefining a new generic\nIn lecture, we defined a method for an existing generic function. Now, we will define a new generic function.\n\nprint_emoji &lt;- function(x, ...) {\n  UseMethod(\"print_emoji\")\n}\n\nSince we haven’t defined any methods yet, the function won’t actually work! However, we can start by writing a default method that will simply call the existing print() generic.\n\nprint_emoji.default &lt;- function(x, ...) {\n  print(x, ...)\n}\n\nNow our print_emoji() function will work.\n\nprint_emoji(starwars)\n\nJericho ❤️ s programming in R!\n# A tibble: 87 × 14\n   name     height  mass hair_color skin_color eye_color birth_year sex   gender\n   &lt;chr&gt;     &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n 1 Luke Sk…    172    77 blond      fair       blue            19   male  mascu…\n 2 C-3PO       167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n 3 R2-D2        96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n 4 Darth V…    202   136 none       white      yellow          41.9 male  mascu…\n 5 Leia Or…    150    49 brown      light      brown           19   fema… femin…\n 6 Owen La…    178   120 brown, gr… light      blue            52   male  mascu…\n 7 Beru Wh…    165    75 brown      light      blue            47   fema… femin…\n 8 R5-D4        97    32 &lt;NA&gt;       white, red red             NA   none  mascu…\n 9 Biggs D…    183    84 black      light      brown           24   male  mascu…\n10 Obi-Wan…    182    77 auburn, w… fair       blue-gray       57   male  mascu…\n# ℹ 77 more rows\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;\n\n\n\n\n\n\n\n\nImportantQ10\n\n\n\nIn the default method for print_emoji(), can we use NextMethod() instead of print()? Why or why not?\nPUT ANSWER HERE\n\n\n\n\n\n\n\n\nImportantQ11\n\n\n\nWrite a print_emoji() method for data.frames.\n\n# PUT ANSWER HERE"
+  },
+  {
+    "objectID": "lectures/w7l2_act.html#turn-in",
+    "href": "lectures/w7l2_act.html#turn-in",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "lectures/w5l1_mapReview.html#for-now-and-monday",
+    "href": "lectures/w5l1_mapReview.html#for-now-and-monday",
+    "title": "Functionals - map()",
+    "section": "For Now and Monday:",
+    "text": "For Now and Monday:\n\nReview\nExam #1!!\n\nWednesday\n75 minutes"
+  },
+  {
+    "objectID": "sets/set3.html",
+    "href": "sets/set3.html",
+    "title": "Set #3 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Friday, 3/13 at 11:59pm"
+  },
+  {
+    "objectID": "sets/set3.html#instructions",
+    "href": "sets/set3.html#instructions",
+    "title": "Set #3 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Friday, 3/13 at 11:59pm"
+  },
+  {
+    "objectID": "sets/set3.html#background",
+    "href": "sets/set3.html#background",
+    "title": "Set #3 (50 pts)",
+    "section": "Background",
+    "text": "Background\nThe third problem set will contain various problems related to the following:\n\nEnvironments (Ch. 7, AR)\nConditions (Ch. 8, AR)\nObject-oriented programming (Ch. 12-13, AR)\n\nDo note that other traits of R will show up in these problems. Make sure to carefully read and follow directions for each problem.\nAll problems will center around a dataset containing population estimates from 2025 at the neighborhood level in the city of Boston. You can download the data and view its metadata here.\nAdditionally, you will use the following packages below and use read.csv() to download the data below:\n\nlibrary(tidyverse)\nlibrary(sloop)"
+  },
+  {
+    "objectID": "sets/set3.html#q1-functions",
+    "href": "sets/set3.html#q1-functions",
+    "title": "Set #3 (50 pts)",
+    "section": "Q1: Functions",
+    "text": "Q1: Functions\nWe start at the function level, creating functions that we can use on the boston dataset specifically.\n\n\n\n\n\n\nImportant(a)\n\n\n\nCreate a function that returns the population totals for a neighborhood x across a specific indicator indicator (e.g. education, income). The function serves two purposes:\n\nSimplifies user input so they do not have to manually gather names from the dataset itself\nShows the population distribution across an indicator\n\nA few things: yes, there are 306 variables. Your function only needs to have options to look at a maximum of 5 different cross-sections, with each cross-section highlighting the totality of that neighborhood’s (sub)population. For example, you can have users specify an indicator that looks exclusively at females across an age range. Your function should pick the right columns and return population totals for females at each age range.\nYour function should employ appropriate data structures, syntax, and actions. However, you have a lot of flexibility for how to accomplish this task.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nExtending the functionality of part (a), create an example of the following:\n\nAn error.\nA warning.\nA message.\n\nTest the updated function on three different calls, with each one corresponding to the right condition.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun your function on a neighborhood of your choice. Then, create a new function that plots an appropriate graph of the population distribution.\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nRun your function from parts (a) and (b) on all neighborhoods in the boston dataset using an appropriate functional."
+  },
+  {
+    "objectID": "sets/set3.html#q2-environments-for-boston-data",
+    "href": "sets/set3.html#q2-environments-for-boston-data",
+    "title": "Set #3 (50 pts)",
+    "section": "Q2: Environments for Boston Data",
+    "text": "Q2: Environments for Boston Data\nWe now jump up to the environment level, creating objects within the environment itself to explore its functionality.\n\n\n\n\n\n\nImportant(a)\n\n\n\nCreate an environment that contains the following:\n\nObject containing metadata about the boston dataset\nThe boston dataset\nA function that can be used on the boston dataset\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nCreate a new function named mean inside your newly-created environment that takes the average of the total populations of all neighborhoods. No input is required.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun the newly-created mean() function.\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nRun base R’s mean() function on the boston dataset.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nDescribe R’s process for picking the right mean() function to use when adding all components in the first four parts to your global environment."
+  },
+  {
+    "objectID": "sets/set3.html#q3-class-for-neighborhood",
+    "href": "sets/set3.html#q3-class-for-neighborhood",
+    "title": "Set #3 (50 pts)",
+    "section": "Q3: Class for Neighborhood",
+    "text": "Q3: Class for Neighborhood\nWe now jump to classes, creating objects of a distinct class to associate with attributes and methods.\n\n\n\n\n\n\nImportant(a)\n\n\n\nFor the boston dataset, define a class of your choice and add it to the current classes that exist for boston.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nWrite a new method for the class of your choice that is not associated with any other name. Consider that you may have to define other functions to complete the use of this method.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun the method you created in part (b) on:\n\nThe boston dataset\nThe mtcars dataset\nAny other item\n\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nCreate an appropriate object that contains relevant information to a neighborhood in the dataset. Then, assign that object to a new class named neighborhood.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nCreate a print() method for the neighborhood class that adds to output from the default method and parent classes."
+  },
+  {
+    "objectID": "sets/set3.html#q4-help-file",
+    "href": "sets/set3.html#q4-help-file",
+    "title": "Set #3 (50 pts)",
+    "section": "Q4: Help File",
+    "text": "Q4: Help File\n\n\n\n\n\n\nImportant(a)\n\n\n\nWrite documentation (in the white-space below) for one of the objects you created in this HW assignment so far. Take the time to look at help files of common functions or objects (e.g. mtcars, mean(), filter()) to see the details and formatting of the help file. Your documentation should have the following:\n\nDescription\nUsage\nArguments\nDetails\nValue\nExamples\n\nYes, we have not covered help files yet, but this will be an introduction into what to consider when making a package. Do not make documentation that will be perfect, but do include aspects that would be useful for someone else to reference when using your object."
+  },
+  {
+    "objectID": "sets/set3.html#turn-in",
+    "href": "sets/set3.html#turn-in",
+    "title": "Set #3 (50 pts)",
+    "section": "Turn-In",
+    "text": "Turn-In\nWhen finished, commit and push this file to your SDS 270 repository."
   }
 ]

@@ -1,0 +1,77 @@
+---
+title: "Exercises from Week 5, Lecture 1: Functionals - `map()`"
+subtitle: "SDS 270"
+author: "NAME HERE"
+format: html
+---
+
+## Introduction
+
+We will utilize CO2 concentration data from Mauna Loa between 1959-1997. More information about the dataset can be found by using `?co2`. Run the following code below to create a data frame with that `co2` data:
+
+```{r, message = FALSE, warning = FALSE}
+library(purrr)
+co2_df <- as.data.frame(matrix(co2, nrow = 39, ncol = 12, byrow = T))
+rownames(co2_df) <- 1959:1997
+colnames(co2_df) <- c("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+```
+
+With this data frame, we will find out how we can use the various `map()` functions to complete particular analytical tasks. 
+
+::: {.callout-important}
+
+### Q1
+
+Using the `co2_df` dataset, subset the data into two different datasets, with the following specifications:
+
+- `co2_60s`: Data from 1960-1969
+- `co2_70s`: Data from 1970-1979
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+::: {.callout-important}
+
+### Q2
+
+Generate a summary of every single month (column) from the `co2_60s` data. 
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+::: {.callout-important}
+
+### Q3
+
+Create a function that takes the mean of the difference of two atomic vectors (as inputs `x`, `y`) and returns this mean. Then, use one of the `map()` functions to apply the created function on the `co2_60s` and `co2_70s`months.
+
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+::: {.callout-important}
+
+### Q4
+
+Find the `minimum` monthly CO2 level across the years in the `co2_60s` data.
+
+```{r}
+# PUT SOLUTION HERE
+```
+
+:::
+
+
+## Turn-In
+
+Stage, commit, and push your template file to your SDS 270 repository.
