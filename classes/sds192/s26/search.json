@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsTextbooksPerusallDatasets\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n12: Data Problem-Solving\n13: Review for Exam #1\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsTextbooksPerusallDatasets\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -3623,7 +3623,7 @@
     "href": "schedule.html#week-5-advanced-visuals-223---227",
     "title": "Schedule",
     "section": "Week 5: Advanced Visuals (2/23 - 2/27)",
-    "text": "Week 5: Advanced Visuals (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25Friday, 2/27\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\n\nStay warm and safe!!\nWork on the project in the meantime\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #3 (due Wednesday, 2/25 at 11:59pm)\n\nTemplate\n\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Advanced Visuals and Intro to Data Wrangling\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #3 (due tonight at 11:59pm)\n\nTemplate\n\nReadings #5 (due Sunday, 3/1 at 11:59pm on Perusall)\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #4: Plotting Frequencies and Distributions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 5: Advanced Visuals (2/23 - 2/27)\n\nMonday, 2/23Wednesday, 2/25Friday, 2/27\n\n\n\n\n\n\n\n\nNoteLecture: CANCELLED\n\n\n\n\nStay warm and safe!!\nWork on the project in the meantime\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #3 (due Wednesday, 2/25 at 11:59pm)\n\nTemplate\n\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Advanced Visuals and Intro to Data Wrangling\n\n\n\n\nSlides + Activity\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #3 (due tonight at 11:59pm)\n\nTemplate\n\nReadings #5 (due Sunday, 3/1 at 11:59pm on Perusall)\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #4: Plotting Frequencies and Distributions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-6-data-wranglingjoining-32---36",
@@ -3868,7 +3868,7 @@
     "href": "lectures/w5l2_visualsWrangling.html#dataset-for-today",
     "title": "Data Visualization & Data Wrangling",
     "section": "Dataset for Today",
-    "text": "Dataset for Today\n\nBoston Housing data\n\nvia the mlbench library\n506 observations, 14 variables\nEstimate median housing values through other variables\n\nCreate a new .qmd file and name the file w5l1_act.qmd. Use the following code:\n\n\nlibrary(mlbench)\nlibrary(ggplot2)\ndata(BostonHousing2)"
+    "text": "Dataset for Today\n\nBoston Housing data\n\nvia the mlbench library\n506 observations, 14 variables\nEstimate median housing values through other variables\n\nCreate a new .qmd file and name the file w5l2_act.qmd. Use the following code:\n\n\nlibrary(mlbench)\nlibrary(ggplot2)\ndata(BostonHousing2)"
   },
   {
     "objectID": "lectures/w5l2_visualsWrangling.html#overplotting",
@@ -3931,7 +3931,7 @@
     "href": "lectures/w5l2_visualsWrangling.html#activity",
     "title": "Data Visualization & Data Wrangling",
     "section": "Activity",
-    "text": "Activity\nIn the w5l1_act.qmd file:\n\nCreate a new code chunk and adjust the following plot you see below, using various items mentioned before:\n\n\nggplot(BostonHousing2, aes(x = medv, y = chas)) +\n  geom_boxplot() + theme_classic()"
+    "text": "Activity\nIn the w5l2_act.qmd file:\n\nCreate a new code chunk and adjust the following plot you see below, using various items mentioned before:\n\n\nggplot(BostonHousing2, aes(x = medv, y = chas)) +\n  geom_boxplot() + theme_classic()"
   },
   {
     "objectID": "lectures/w5l2_visualsWrangling.html#other-plots-density-plot",
@@ -4023,5 +4023,54 @@
     "title": "Data Visualization & Data Wrangling",
     "section": "For Now and Wednesday",
     "text": "For Now and Wednesday\n\nFinish activity for today’s class\nLab #3 due Wednesday at 11:59pm"
+  },
+  {
+    "objectID": "resources/studyGuide1.html",
+    "href": "resources/studyGuide1.html",
+    "title": "Study Guide for Exam #1",
+    "section": "",
+    "text": "The midterm (i.e. exam #1) will be given out during class on Friday, March 13th. You will have 75 minutes to complete the exam and you may bring a one-page cheatsheet to the exam along with a calculator and writing utensil.\nExpect the exam to contain mostly free-response questions, with occasional multiple-choice/matching parts sprinkled in there. With the free-response questions, expect there to be 3-5 parts per question. Each question will revolve around some dataset or situation. To that end, expect around 4-5 questions in the exam itself.\nExpect problems to be of a problem-solving nature, where you’ll familiarize yourself with the given datasets and work through problems with the use of pseudocode/code, diagrams, and written answers. You do not need to know precise code, but you will need to be familiar with how code is structured and the approximate functions needed to conduct a task. For instance, when trying to create a box plot with appropriate labels and aesthetics, you want to highlight that…\n\nI need to use some labs function to put labels for the axes and title\nI need to access the data and assign variables to the appropriate aesthetics\nI will be using a geom_box() function to create the box plot\n\nPractice problems have been provided at the bottom of this document."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#overview",
+    "href": "resources/studyGuide1.html#overview",
+    "title": "Study Guide for Exam #1",
+    "section": "",
+    "text": "The midterm (i.e. exam #1) will be given out during class on Friday, March 13th. You will have 75 minutes to complete the exam and you may bring a one-page cheatsheet to the exam along with a calculator and writing utensil.\nExpect the exam to contain mostly free-response questions, with occasional multiple-choice/matching parts sprinkled in there. With the free-response questions, expect there to be 3-5 parts per question. Each question will revolve around some dataset or situation. To that end, expect around 4-5 questions in the exam itself.\nExpect problems to be of a problem-solving nature, where you’ll familiarize yourself with the given datasets and work through problems with the use of pseudocode/code, diagrams, and written answers. You do not need to know precise code, but you will need to be familiar with how code is structured and the approximate functions needed to conduct a task. For instance, when trying to create a box plot with appropriate labels and aesthetics, you want to highlight that…\n\nI need to use some labs function to put labels for the axes and title\nI need to access the data and assign variables to the appropriate aesthetics\nI will be using a geom_box() function to create the box plot\n\nPractice problems have been provided at the bottom of this document."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#topics",
+    "href": "resources/studyGuide1.html#topics",
+    "title": "Study Guide for Exam #1",
+    "section": "Topics",
+    "text": "Topics\nThe midterm will focus on concepts and exercises from the following topics:\n\nData basics\n\nReading data documentation\nValues (e.g. units of observation, types of variables)\nParts of a data frame (e.g. rows, columns, headers)\nMissing data\n\nData visualization\n\nUse of appropriate variables for plot aesthetics\nAdjustment of plot attributes\nScales, facets, and themes\nDealing with overplotting\nColor palettes\nGraphical integrity (e.g. lie factor, data-to-ink ratio)\nProper use of ggplot2\nAnalysis tools (e.g. measures of spread/center, summary tables)\nRecognizing and using different types of plots\n\nGitHub\n\ngit vocabulary\nParts of a collaborative GitHub workflow\nAddressing and resolving push/pull errors\nFile organization\n\nData Wrangling\n\nSix data wrangling verbs\nFive join functions (and when to use them)\nProblem solving\n\nR\n\nUse of ggplot2 and dplyr\nTypes of data in R (e.g. doubles, logicals, characters)\nBasic statistics (e.g. mean, median)\nOperators (e.g. piping, assignment, relational)"
+  },
+  {
+    "objectID": "resources/studyGuide1.html#exam-rules",
+    "href": "resources/studyGuide1.html#exam-rules",
+    "title": "Study Guide for Exam #1",
+    "section": "Exam Rules",
+    "text": "Exam Rules\n\nYou have 75 minutes to complete this exam.\nYou are allowed only one 8.5 by 11 inch sheet of notes, front and back.\nNo computers, cellphones, or other internet-connected devices. This exam is closed-note and to be individually completed.\nGive your best effort and attempt every question, laying out your thought-process for questions/parts that may be ambiguous for you. Partial credit may be awarded."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#dataset-and-metadata-for-practice-questions",
+    "href": "resources/studyGuide1.html#dataset-and-metadata-for-practice-questions",
+    "title": "Study Guide for Exam #1",
+    "section": "Dataset and Metadata for Practice Questions",
+    "text": "Dataset and Metadata for Practice Questions\nThe nycschools dataset contains 1,829 observations of 11 variables, with the following information for each of the variables:\n\ndbn: district borough number\nschool_name: name of school\ntotal_parent_response_rate: response rate from parents\ntotal_teacher_response_rate: response rate from teachers\ntotal_student_response_rate: response rate from students\ncollaborative_teachers_score: average of responses for collaboration from 1-5\neffective_school_leadership: average of responses for effective school leadership from 1-5\nrigorous_instruction_score: average of responses for rigorous instruction from 1-5\nsupportive_environment_score: average of responses for a supportive environment from 1-5\nstrong_family_community_ties: average of responses for strong community ties from 1-5\ntrust_score: average of responses for overall trust from 1-5\n\nFrom the NYC Department of Education:\n\nEvery year, all parents, all teachers, and students in grades 6 - 12 take the NYC School Survey. The survey ranks among the largest surveys of any kind ever conducted nationally. Survey results provide insight into a school’s learning environment and contribute a measure of diversification that goes beyond test scores on the Progress Report. NYC School Survey results contribute 10% - 15% of a school’s Progress Report grade (the exact contribution to the Progress Report is dependent on school type). Survey questions assess the community’s opinions on academic expectations, communication, engagement, and safety and respect. School leaders can use survey results to better understand their own school’s strengths and target areas for improvement.\n\n\nThe NYC School Survey helps school leaders understand what key members of the school community say about the learning environment at each school. The information captured by the survey is designed to support a dialogue among all members of the school community about how to make the school a better place to learn."
+  },
+  {
+    "objectID": "resources/studyGuide1.html#practice-questions",
+    "href": "resources/studyGuide1.html#practice-questions",
+    "title": "Study Guide for Exam #1",
+    "section": "Practice Questions",
+    "text": "Practice Questions\n\n1. Answer the following parts in regard to the nycschools dataset.\n\nGiven the context of the data, provide an example of an ordinal that could be included in the dataset.\nThere are values labeled as -999 in the dataset, indicating a missing value. Describe how we would handle these missing values.\nA data analyst wants to remove any data from neighborhoods they deem as “unimportant” despite preparing an analysis about the state of all K-12 schools in NYC. In 1-2 sentences, discuss the ethical implications of these actions.\nSuppose we want to include data about the demographic makeup of the school’s student body to the analysis. Assuming we also have the school_name in this additional data frame, describe how we can combine this data into our current data.\n\n\n\n2. Answer the following parts in regard to the nycschools dataset.\n\nSuppose we want to look at schools with a trust score over 3.5, create a new column that assigns low to schools with a student response rate less than 50% and high otherwise, and order schools in alphabetical order. Write pseudo-code or code, using the appropriate variables and functions/tasks, to generate these results.\nSuppose I want to build a scatter plot that shows the average teacher response rate against the average student response rate, with the trust score color coded. Fill in the blanks to generate the basic plot.\n\n\nggplot(nycschools, aes(x = ___________________________________, \n                       y = ___________________________________, \n                       color = ___________________________________)) +\n  ________________()\n\n\nContinuing off the code from the last part, develop a descriptive title and labels for the plot.\n\n\nlabs(title = \"________________________________________________________\",\n     x = \"________________________________________________________\",\n     y = \"________________________________________________________\",\n     color = \"________________________________________________________\")\n\nThe next three parts will center around this particular graph:\n\nggplot(nycschools, aes(x = Trust.Score, y = highRate, col = highRate)) +\n  geom_boxplot() + \n  theme_classic() +\n  labs(title = \"Average Trust Score across NYC Schools with Low and High Student Response Rates, 2019\",\n       x = \"Trust Score (Avg.)\",\n       y = \"Low/High Student Response Categories\",\n       col = \"Response\\nCategories\")\n\n\n\n\n\n\n\n\n\nIdentify which variables correspond to each of the three aesthetics in this chart.\nProvide 1-2 sentences that summarize the results from this chart, using at least one statistic/metric approximately.\nDescribe one way using pseudocode/code that we can change the colors for the following categories."
+  },
+  {
+    "objectID": "lectures/w5l2_visualsWrangling.html#for-now-and-friday",
+    "href": "lectures/w5l2_visualsWrangling.html#for-now-and-friday",
+    "title": "Data Visualization & Data Wrangling",
+    "section": "For Now and Friday",
+    "text": "For Now and Friday\n\nFinish activity for today’s class\nLab #3 due tonight at 11:59pm\nReadings #5 due Sunday, 2/22 at 11:59pm"
   }
 ]
