@@ -1,50 +1,45 @@
 ---
-title: "Activities from Week 6, Lecture 1: Data Joining"
+title: "Week 6, Lecture 1: Data Wrangling"
 subtitle: "SDS 192: Introduction to Data Science"
 author: "NAME HERE"
-format:
-  html:
-    code-fold: false
-execute: 
-  echo: true
-knitr:
-  opts_chunk: 
-    message: false
-editor: source
 ---
 
 ## Introduction
 
-Use the `read.csv()` function in the code chunk below to load in the `wnba1`, `wnba2`, and `wnbaStars` datasets. Make sure that the data sets are in the appropriate directory.
+Use the following code below to load in the `midwest` data. Answer the following wrangling questions below:
 
 ```{r}
-#PUT CODE HERE
+library(tidyverse)
+data(midwest)
 ```
-
-Data has been subsetted and filtered from the following source [here](https://www.basketball-reference.com/wnba/years/2024_per_minute.html). The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.
-
-Answer the following wrangling questions below.
 
 ## Questions
 
 ::: {.callout-important}
 ###### Question 1
 
-Join the `wnba2` and `wnbaStars` data frames together, removing any players not shared between the two. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.
+Using the help documentation for `midwest`, identify variables related to the following:
+
+- county name
+- state to which the county belongs to
+- percent of population with known poverty status
+- percent with professional degree
+- whether county is in metropolitan area
+
+Once done, select those columns using `dplyr` functions.
 
 ```{r}
-#PUT CODE HERE
+# PUT SOLUTION HERE
 ```
-
 :::
 
 ::: {.callout-important}
 ###### Question 2
 
-Join the `wnba2` and `wnbaStars` data frames together, keeping all players from `wnba2` but excluding those from `wnbaStars` that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.
+With the columns selected from Q1, arrange the dataset based on the percent of populace with a professional degree in descending order, followed by percent of populace with known poverty status in ascending order.
 
 ```{r}
-#PUT CODE HERE
+# PUT SOLUTION HERE
 ```
 
 :::
@@ -52,10 +47,10 @@ Join the `wnba2` and `wnbaStars` data frames together, keeping all players from 
 ::: {.callout-important}
 ###### Question 3
 
-Join the `wnba2` and `wnbaStars` data frames together, keeping all players from `wnbaStars` but excluding those from `wnba2` that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.
+Adding to what was created in Q1, keep counties that are not in a metropolitan area and have less than 5\% of the populace with a professional degree.
 
 ```{r}
-#PUT CODE HERE
+# PUT SOLUTION HERE
 ```
 
 :::
@@ -63,10 +58,12 @@ Join the `wnba2` and `wnbaStars` data frames together, keeping all players from 
 ::: {.callout-important}
 ###### Question 4
 
-Join the `wnba2` and `wnbaStars` data frames together, keeping all players from both data frames. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.
+Tack a new column named `popProf` that contains the number of people who have a professional degree. Then, show only the county, state, and new column.
+
+Hint: You will need two variables from the dataset to do this operation.
 
 ```{r}
-#PUT CODE HERE
+# PUT SOLUTION HERE
 ```
 
 :::
@@ -74,14 +71,15 @@ Join the `wnba2` and `wnbaStars` data frames together, keeping all players from 
 ::: {.callout-important}
 ###### Question 5
 
-Merge the `wnba1` and `wnba2` datasets together. Using code from the activity in the last lecture, summarize the following for each position:
+Create a table that shows the following metrics in each state:
 
-- Number of players
-- Median PTS
-- Median TOV
+- Number of counties
+- Total population
+- Median percent with known poverty status
+- Proportion of counties that are in metro area
 
 ```{r}
-#PUT CODE HERE
+# PUT SOLUTION HERE
 ```
 
 :::
