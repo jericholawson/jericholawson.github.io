@@ -1,0 +1,55 @@
+---
+title: "Exercises from Week 6, Lecture 1: Environments"
+subtitle: "SDS 270"
+author: "NAME HERE"
+format: html
+---
+
+## Packages
+
+```{r}
+library(rlang)
+```
+
+::: {.callout-important}
+
+### Q1
+
+Load in a package of your choice. Then run the following:
+
+```{r, eval = FALSE}
+search()
+```
+
+Answer the following questions:
+
+- How is the package ordered relative to the rest of the environments?
+- If there is more than one package associated with what you loaded: why do you think the developers chose the order they did?
+
+
+:::
+
+::: {.callout-important}
+
+### Q2
+
+Let’s write a function that returns the environment that runs during its execution. Note that this is **not** the global environment.
+
+```{r, eval = FALSE}
+func_env <- function() {
+  x <- "what?"
+  current_env()
+}
+
+env_print(func_env())
+```
+
+- What is the parent environment of the execution environment shown above?
+
+
+:::
+
+
+## Turn-In
+
+Stage, commit, and push your template file to your SDS 270 repository.

@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n\n\n\n\n\n1: Set 1\n2: Set 2\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n\n\n\n\n\n1: Set 1\n2: Set 2\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
   },
   {
     "objectID": "sets/set1.html",
@@ -3483,7 +3483,7 @@
     "href": "lectures/w6l1_environments.html#today",
     "title": "Environments",
     "section": "Today",
-    "text": "Today\n\nEnvironments\n\nWhat they are?\nThe categories\n\nGlobal\nPackage\nNamespace\nFunction\n\n\n\n\nWe will focus on primarily Chapter 7 from Advanced R."
+    "text": "Today\n\nEnvironments\n\nWhat they are?\nThe categories\n\nGlobal\nPackage\nNamespace\nFunction\n\nActivities\n\nExam feedback\n\n\nWe will focus on primarily Chapter 7 from Advanced R."
   },
   {
     "objectID": "lectures/w6l1_environments.html#environment-basics",
@@ -3504,7 +3504,7 @@
     "href": "lectures/w6l1_environments.html#environment-1",
     "title": "Environments",
     "section": "Environment",
-    "text": "Environment\n\ne1\n\n&lt;environment: 0x0000012fec54f5e0&gt;\n\nenv_names(e1)\n\n[1] \"blueSky\" \"car\"     \"temp\"    \"city\"   \n\n\nTo see what is in an environment, use env_print().\n\nenv_print(e1)\n\n&lt;environment: 0x0000012fec54f5e0&gt;\nParent: &lt;environment: global&gt;\nBindings:\n• blueSky: &lt;lgl&gt;\n• car: &lt;chr&gt;\n• temp: &lt;dbl&gt;\n• city: &lt;chr&gt;"
+    "text": "Environment\n\ne1\n\n&lt;environment: 0x000001ce2454f148&gt;\n\nenv_names(e1)\n\n[1] \"blueSky\" \"car\"     \"temp\"    \"city\"   \n\n\nTo see what is in an environment, use env_print().\n\nenv_print(e1)\n\nOn your own: Run env_print() in the console. What does it show?"
   },
   {
     "objectID": "lectures/w6l1_environments.html#types-of-environments",
@@ -3532,7 +3532,7 @@
     "href": "lectures/w6l1_environments.html#exercise-trace-the-path",
     "title": "Environments",
     "section": "Exercise: Trace the Path",
-    "text": "Exercise: Trace the Path\nLoad in a package of your choice. Then run the following:\n\nsearch()\n\nAnswer the following questions:\n\nHow is the package ordered relative to the rest of the environments?\nIf there is more than one package associated with what you loaded: why do you think the developers chose the order they did?"
+    "text": "Exercise: Trace the Path\nLoad in a package of your choice. Then run the following:\n\nsearch()\n\nAnswer the following questions (in template file):\n\nHow is the package ordered relative to the rest of the environments?\nIf there is more than one package associated with what you loaded: why do you think the developers chose the order they did?"
   },
   {
     "objectID": "lectures/w6l1_environments.html#package-environments",
@@ -3546,14 +3546,14 @@
     "href": "lectures/w6l1_environments.html#function-environment",
     "title": "Environments",
     "section": "Function Environment",
-    "text": "Function Environment\n\n\n\nWhere the function is defined\n\n\nfn_env(stats::sd)\n\n&lt;environment: namespace:stats&gt;\n\nenvironment(sd)\n\n&lt;environment: namespace:stats&gt;"
+    "text": "Function Environment\n\n\n\nWhere the function is defined\nBinds current environment when it is created\n\n\nfn_env(stats::sd)\n\n&lt;environment: namespace:stats&gt;\n\nenvironment(sd)\n\n&lt;environment: namespace:stats&gt;"
   },
   {
     "objectID": "lectures/w6l1_environments.html#namespace-environments",
     "href": "lectures/w6l1_environments.html#namespace-environments",
     "title": "Environments",
     "section": "Namespace Environments",
-    "text": "Namespace Environments\n\n\n\nWhat is available to the function\n\nControlled by developer\n\n\n\nsd\n\nfunction (x, na.rm = FALSE) \nsqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), \n    na.rm = na.rm))\n&lt;bytecode: 0x0000012fee8a57e8&gt;\n&lt;environment: namespace:stats&gt;\n\nfind(\"sqrt\")\n\n[1] \"package:base\"\n\nfind(\"sd\")\n\n[1] \"package:stats\"\n\nfind(\"is.vector\")\n\n[1] \"package:base\""
+    "text": "Namespace Environments\n\nWhat is available to the function\n\nControlled by developer\n\nTakes precedence over other packages\n\n\n\n\nsd\n\nfunction (x, na.rm = FALSE) \nsqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), \n    na.rm = na.rm))\n&lt;bytecode: 0x000001ce2465fb20&gt;\n&lt;environment: namespace:stats&gt;\n\nfind(\"sqrt\")\n\n[1] \"package:base\"\n\nfind(\"sd\")\n\n[1] \"package:stats\"\n\nfind(\"is.vector\")\n\n[1] \"package:base\""
   },
   {
     "objectID": "lectures/w6l1_environments.html#namespace-environments-1",
@@ -3574,7 +3574,7 @@
     "href": "lectures/w6l1_environments.html#exercise",
     "title": "Environments",
     "section": "Exercise",
-    "text": "Exercise\nLet’s write a function that returns the environment that runs during its execution. Note that this is not the global environment.\n\nfunc_env &lt;- function() {\n  x &lt;- \"what?\"\n  current_env()\n}\n\nenv_print(func_env())\n\n&lt;environment: 0x0000012fef70edd8&gt;\nParent: &lt;environment: global&gt;\nBindings:\n• x: &lt;chr&gt;\n\n\n\nWhat is the parent environment of the execution environment shown above?"
+    "text": "Exercise\nLet’s write a function that returns the environment that runs during its execution. Note that this is not the global environment.\n\nfunc_env &lt;- function() {\n  x &lt;- \"what?\"\n  current_env()\n}\n\nenv_print(func_env())\n\n\nWhat is the parent environment of the execution environment shown above?"
   },
   {
     "objectID": "lectures/w6l1_environments.html#keep-these-in-mind",
@@ -3840,7 +3840,7 @@
     "href": "schedule.html#week-6-exam-1-environments-32---36",
     "title": "Schedule",
     "section": "Week 6: Exam #1, Environments (3/2 - 3/6)",
-    "text": "Week 6: Exam #1, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\nGood luck!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 7 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 6: Exam #1, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\nGood luck!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 7 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\nSlides\nActivities/Template\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 8 of Advanced R (before Monday’s class)"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#last-time",
@@ -4387,5 +4387,383 @@
     "title": "Package (400 pts)",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAs the main summative assessment of this course, you will work in groups of 2-3 to develop and create an R package that is reproducible, clear, robust, and readable. By the end of this assignment, you should be able to:\n\nCreate readable and clear files for each component of an R package, including R scripts, data, tests, manuals, and vignettes\nWork in a collaborative environment using git and GitHub\nDemonstrate a package and how it runs to a general audience\n\nYou will receive feedback on the functionality, clarity, robustness, and readability of your code and documentation through a series of checkpoints. More on that in the Components section."
+  },
+  {
+    "objectID": "lectures/w6l1_environments.html#types-of-environments-1",
+    "href": "lectures/w6l1_environments.html#types-of-environments-1",
+    "title": "Environments",
+    "section": "Types of Environments",
+    "text": "Types of Environments\n\nMost environments are not created by you; they’re created by R\nTypes:\n\nGlobal\nPackage\nFunction\nNamespace\nExecution"
+  },
+  {
+    "objectID": "lectures/w6l1_environments.html#activity-ordering-of-environments",
+    "href": "lectures/w6l1_environments.html#activity-ordering-of-environments",
+    "title": "Environments",
+    "section": "Activity: Ordering of Environments",
+    "text": "Activity: Ordering of Environments\nIn pairs,\n\nCreate your own environment in R, which contains a built-in data frame, your own function, and one other object.\nRun your own function on the data frame inside the new environment.\n\nConsider that this has similarities to a list.\n\nAssume this environment you created is a namespace environment for your own package. Discuss why this environment should be called upon first when using your own function. What happens when this is not the case?"
+  },
+  {
+    "objectID": "lectures/w6l1_environments.html#today-1",
+    "href": "lectures/w6l1_environments.html#today-1",
+    "title": "Environments",
+    "section": "Today",
+    "text": "Today\n\nEnvironments\n\nWhat they are?\nThe categories\n\nGlobal\nPackage\nNamespace\nFunction\n\n\n\n\nWe will focus on primarily Chapter 7 from Advanced R."
+  },
+  {
+    "objectID": "lectures/w6l1_examFeedback.html#type-vs.-class",
+    "href": "lectures/w6l1_examFeedback.html#type-vs.-class",
+    "title": "Exam #1 Feedback",
+    "section": "Type vs. Class",
+    "text": "Type vs. Class\n\nType refers to an internal representation of an object in R\n\nList, atomic vectors (double, integer, logical, etc.)\n\nClass refers to an external representation of an object in R\n\nAn attribute associated with the object"
+  },
+  {
+    "objectID": "lectures/w6l1_examFeedback.html#type-vs.-class-1",
+    "href": "lectures/w6l1_examFeedback.html#type-vs.-class-1",
+    "title": "Exam #1 Feedback",
+    "section": "Type vs. Class",
+    "text": "Type vs. Class\n\ntypeof(mtcars)\n\n[1] \"list\"\n\nclass(mtcars)\n\n[1] \"data.frame\""
+  },
+  {
+    "objectID": "lectures/w6l1_examFeedback.html#data-frame-accessing-elements",
+    "href": "lectures/w6l1_examFeedback.html#data-frame-accessing-elements",
+    "title": "Exam #1 Feedback",
+    "section": "Data Frame: Accessing Elements",
+    "text": "Data Frame: Accessing Elements\n\nYou only have two dimensions\n\nAccessing the column will result in some atomic vector\n\n\n\nmtcars$mpg[1, ]\n\nError in `mtcars$mpg[1, ]`:\n! incorrect number of dimensions\n\nmtcars$mpg[, 1]\n\nError in `mtcars$mpg[, 1]`:\n! incorrect number of dimensions"
+  },
+  {
+    "objectID": "lectures/w6l1_examFeedback.html#spot-the-errors",
+    "href": "lectures/w6l1_examFeedback.html#spot-the-errors",
+    "title": "Exam #1 Feedback",
+    "section": "Spot the Errors",
+    "text": "Spot the Errors\n\nsummaries &lt;- vector(mode = \"list\", length = ncol(mtcars))\nfor (i in c(1, ncol(mtcars))){\n  summaries &lt;- summary(mtcars[i])\n}"
+  },
+  {
+    "objectID": "lectures/w6l1_examFeedback.html#spot-the-errors-1",
+    "href": "lectures/w6l1_examFeedback.html#spot-the-errors-1",
+    "title": "Exam #1 Feedback",
+    "section": "Spot the Errors",
+    "text": "Spot the Errors\n\nsummaries &lt;- vector(mode = \"list\", length = sum(sapply(mtcars, typeof) != \"character\"))\nind = 1\nfor (i in 1:ncol(mtcars)){\n  if (typeof(mtcars[, i]) != \"character\"){\n    summaries[[ind]] &lt;- summary(mtcars[, i])\n    ind = ind + 1\n  }\n}\nsummaries\n\n[[1]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  10.40   15.43   19.20   20.09   22.80   33.90 \n\n[[2]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  4.000   4.000   6.000   6.188   8.000   8.000 \n\n[[3]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   71.1   120.8   196.3   230.7   326.0   472.0 \n\n[[4]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   52.0    96.5   123.0   146.7   180.0   335.0 \n\n[[5]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  2.760   3.080   3.695   3.597   3.920   4.930 \n\n[[6]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  1.513   2.581   3.325   3.217   3.610   5.424 \n\n[[7]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  14.50   16.89   17.71   17.85   18.90   22.90 \n\n[[8]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n 0.0000  0.0000  0.0000  0.4375  1.0000  1.0000 \n\n[[9]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n 0.0000  0.0000  0.0000  0.4062  1.0000  1.0000 \n\n[[10]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  3.000   3.000   4.000   3.688   4.000   5.000 \n\n[[11]]\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  1.000   2.000   2.000   2.812   4.000   8.000"
+  },
+  {
+    "objectID": "lectures/w6l1_examFeedback.html#garbage-collector",
+    "href": "lectures/w6l1_examFeedback.html#garbage-collector",
+    "title": "Exam #1 Feedback",
+    "section": "Garbage Collector",
+    "text": "Garbage Collector\n\nUsed when objects are no longer being used\n\nHappens after removing bindings from global environment"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#last-time",
+    "href": "lectures/w9l1_s3.html#last-time",
+    "title": "S3 Class System",
+    "section": "Last Time",
+    "text": "Last Time\n\nObject-oriented programming\n\nWhat it is?\nDifferent object types\nAbilities\n\nS3 objects\n\nFunctionality\nWhy?"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#today",
+    "href": "lectures/w9l1_s3.html#today",
+    "title": "S3 Class System",
+    "section": "Today",
+    "text": "Today\n\nS3 objects\n\nOther features\n\nPackages\n\nWhy?\nAnatomy\nExamples\n\nExercises\n\nExploration of package\n\n\n\nWe will focus primarily on chapter 13 from Advanced R (and chapter 1 from R Packages)."
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#last-time-1",
+    "href": "lectures/w9l1_s3.html#last-time-1",
+    "title": "S3 Class System",
+    "section": "Last Time",
+    "text": "Last Time\n\nObject-oriented programming\n\nWhat it is?\nDifferent object types\n\nS3 objects\n\nFunctionality\nWhy?"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#s3-a-review",
+    "href": "lectures/w9l1_s3.html#s3-a-review",
+    "title": "S3 Class System",
+    "section": "S3: A Review",
+    "text": "S3: A Review\n\nS3 objects\n\nObject-oriented\nLax from a coding perspective\n\nClass, method, inheritance\n\ne.g. a car class with particular characteristics\ne.g. driving a car\ne.g. bicycle and car classes share attributes with a vehicle class"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#activity",
+    "href": "lectures/w9l1_s3.html#activity",
+    "title": "S3 Class System",
+    "section": "Activity",
+    "text": "Activity\nI have an object of the class tree that has the following attributes and methods:\n\nSpecies name, average lifespan, height\nWant to print out its name (with print()) and find difference of heights between two trees (with diff())\n\nCreate all the necessary code that will allow us to have these attributes and methods.\n\nCreate a new .qmd file named w9l1_act.qmd and you will put responses from this activity in there."
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#s3-car-example",
+    "href": "lectures/w9l1_s3.html#s3-car-example",
+    "title": "S3 Class System",
+    "section": "S3: Car Example",
+    "text": "S3: Car Example\n\nCreate an instance of a car class (with attributes)\n\n\nmyCar &lt;- list(make = \"Toyota\", model = \"Corolla\", year = 2020)\nclass(myCar) &lt;- \"car\"\nmyCar\n\n$make\n[1] \"Toyota\"\n\n$model\n[1] \"Corolla\"\n\n$year\n[1] 2020\n\nattr(,\"class\")\n[1] \"car\""
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#s3-car-example-1",
+    "href": "lectures/w9l1_s3.html#s3-car-example-1",
+    "title": "S3 Class System",
+    "section": "S3: Car Example",
+    "text": "S3: Car Example\n\nCreate a method for the car class\n\n\n# Generic function creation\nprintModel &lt;- function(object) {\n  UseMethod(\"printModel\")\n}\n\n# Specific function for car class\nprintModel.car &lt;- function(object){\n  paste(\"Your model is a\", object$model)\n}\n\n# Use printModel on myCar\nprintModel(myCar)\n\n[1] \"Your model is a Corolla\"\n\n\nQuestion: What happens if I use printModel() on a non-car object?"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#s3-car-example-2",
+    "href": "lectures/w9l1_s3.html#s3-car-example-2",
+    "title": "S3 Class System",
+    "section": "S3: Car Example",
+    "text": "S3: Car Example\n\nInheritance\n\n\nmyCar2 &lt;- list(make = \"Honda\", model = \"Accord\", year = 2020, vehicle = \"car\")\nclass(myCar2) &lt;- c(\"car\", \"vehicle\")\nprintModel(myCar2)\n\n[1] \"Your model is a Accord\""
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#s3-car-example-3",
+    "href": "lectures/w9l1_s3.html#s3-car-example-3",
+    "title": "S3 Class System",
+    "section": "S3: Car Example",
+    "text": "S3: Car Example\n\n# Generic function creation\nprintType &lt;- function(object) {\n  UseMethod(\"printType\")\n}\n\n# Specific function for car class\nprintType.vehicle &lt;- function(object){\n  paste(\"Your vehicle is a\", object$vehicle)\n}"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#s3-car-example-4",
+    "href": "lectures/w9l1_s3.html#s3-car-example-4",
+    "title": "S3 Class System",
+    "section": "S3: Car Example",
+    "text": "S3: Car Example\n\nprintType(myCar2)\n\n[1] \"Your vehicle is a car\"\n\ninherits(myCar2, \"car\")\n\n[1] TRUE\n\ninherits(myCar2, \"vehicle\")\n\n[1] TRUE"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#too-much-flexibility-in-creating-a-class",
+    "href": "lectures/w9l1_s3.html#too-much-flexibility-in-creating-a-class",
+    "title": "S3 Class System",
+    "section": "(Too Much?) Flexibility in Creating a Class",
+    "text": "(Too Much?) Flexibility in Creating a Class\n\nS3 class creation involves the concatenation of an undefined class to current selection of classes\n\n\nclass(mtcars) &lt;- c(\"exData\", class(mtcars))\nclass(mtcars)\n\n[1] \"exData\"     \"data.frame\"\n\n\n\nQuestion: What problems can occur here for both the user and developer?"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#controlling-class-creation",
+    "href": "lectures/w9l1_s3.html#controlling-class-creation",
+    "title": "S3 Class System",
+    "section": "Controlling Class Creation",
+    "text": "Controlling Class Creation\n\nUse of a constructor, validator, and helper\n\nAll aid in associating object with your class"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#controlling-class-creation-1",
+    "href": "lectures/w9l1_s3.html#controlling-class-creation-1",
+    "title": "S3 Class System",
+    "section": "Controlling Class Creation",
+    "text": "Controlling Class Creation\n\nHelper: user-friendly way to associate class with object\n\nmyClass()\n\nConstructor: low-level, checks for structural traits\n\nnew_myClass()\n\nValidator: involves deeper-level checks\n\nvalidate_myClass()"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#constructor",
+    "href": "lectures/w9l1_s3.html#constructor",
+    "title": "S3 Class System",
+    "section": "Constructor",
+    "text": "Constructor\n\nUsed to formally build instance of class\n\n\nnew_car &lt;- function(x, make, model, year) {\n  structure(list(name = x, \n                 make = make, \n                 model = model, \n                 year = year), class = \"car\")\n}"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#constructor-cont.",
+    "href": "lectures/w9l1_s3.html#constructor-cont.",
+    "title": "S3 Class System",
+    "section": "Constructor (cont.)",
+    "text": "Constructor (cont.)\n\nnewCar &lt;- new_car(\"Bluey\", \"Honda\", \"Accord\", 2020)\nnewCar\n\n$name\n[1] \"Bluey\"\n\n$make\n[1] \"Honda\"\n\n$model\n[1] \"Accord\"\n\n$year\n[1] 2020\n\nattr(,\"class\")\n[1] \"car\"\n\n\n\nNote that this will not be defined by the user necessarily\n\nNeed to create helper for this"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#helper",
+    "href": "lectures/w9l1_s3.html#helper",
+    "title": "S3 Class System",
+    "section": "Helper",
+    "text": "Helper\n\nUser can use this function to create object of class\n\n\ncar &lt;- function(x, make, model, year) {\n  x &lt;- as.character(x)\n  make &lt;- as.character(make)\n  model &lt;- as.character(model)\n  year &lt;- as.double(year)\n  new_car(x, make, model, year)\n}"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#helper-cont.",
+    "href": "lectures/w9l1_s3.html#helper-cont.",
+    "title": "S3 Class System",
+    "section": "Helper (cont.)",
+    "text": "Helper (cont.)\n\ncar(\"Bluey\", \"Honda\", \"Accord\", 2020)\n\n$name\n[1] \"Bluey\"\n\n$make\n[1] \"Honda\"\n\n$model\n[1] \"Accord\"\n\n$year\n[1] 2020\n\nattr(,\"class\")\n[1] \"car\""
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#validate",
+    "href": "lectures/w9l1_s3.html#validate",
+    "title": "S3 Class System",
+    "section": "Validate",
+    "text": "Validate\n\nUsed for more rigorous check\n\n\nvalidate_car &lt;- function(x) {\n\n  if (!(x$make %in% c(\"Toyota\", \"Honda\", \"Ford\"))) {\n    stop(\n      \"Car make must be from following list: Toyota, Honda, Ford.\",\n      call. = FALSE\n    )\n  }\n\n  x\n}"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#validate-cont.",
+    "href": "lectures/w9l1_s3.html#validate-cont.",
+    "title": "S3 Class System",
+    "section": "Validate (cont.)",
+    "text": "Validate (cont.)\n\nvalidate_car(newCar)\n\n$name\n[1] \"Bluey\"\n\n$make\n[1] \"Honda\"\n\n$model\n[1] \"Accord\"\n\n$year\n[1] 2020\n\nattr(,\"class\")\n[1] \"car\""
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#validate-cont.-1",
+    "href": "lectures/w9l1_s3.html#validate-cont.-1",
+    "title": "S3 Class System",
+    "section": "Validate (cont.)",
+    "text": "Validate (cont.)\n\nvalidate_car(new_car(\"other\", \"Subaru\", \"Impreza\", 2020))\n\nError:\n! Car make must be from following list: Toyota, Honda, Ford."
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#exercise",
+    "href": "lectures/w9l1_s3.html#exercise",
+    "title": "S3 Class System",
+    "section": "Exercise",
+    "text": "Exercise\nContinuing off of the tree class, do the following:\n\nConstruct a helper, constructor, and validator.\n\n\nUse the w9l1_act.qmd file you created earlier and put responses from this activity in there."
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#another-shift-to-package-development",
+    "href": "lectures/w9l1_s3.html#another-shift-to-package-development",
+    "title": "S3 Class System",
+    "section": "Another Shift to Package Development",
+    "text": "Another Shift to Package Development\n\n\n\nAdvanced R\n\n\n\n\n\n\n\n\n[1] \"❌\"\n\n\n\n\nR Packages\n\n\n\n\n\n\n\n\n[1] \"✔️\""
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#r-packages-an-intro",
+    "href": "lectures/w9l1_s3.html#r-packages-an-intro",
+    "title": "S3 Class System",
+    "section": "R Packages: An Intro",
+    "text": "R Packages: An Intro\n\n“bundles together code, data, documentation, and tests, and is easy to share with others”\nOpen-source\nOrganization purposes\n\n\n“Seriously, it doesn’t have to be about sharing your code (although that is an added benefit!). It is about saving yourself time.” -Hilary Parker"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#youre-a-developer-now",
+    "href": "lectures/w9l1_s3.html#youre-a-developer-now",
+    "title": "S3 Class System",
+    "section": "You’re a Developer Now!",
+    "text": "You’re a Developer Now!\n\nInside a package vs. outside of it\n\nHow we access objects, functions, other packages, etc. will be different\nWhat do you want the user to do?\nHow does your code behave to deliver the result?"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#youre-a-developer-now-1",
+    "href": "lectures/w9l1_s3.html#youre-a-developer-now-1",
+    "title": "S3 Class System",
+    "section": "You’re a Developer Now!",
+    "text": "You’re a Developer Now!\n\n# User\nprint.car(x)\n\n\n# Developer\nprint.car &lt;- function(x, ...){\n  message(\"You have a car!\")\n  NextMethod()\n}"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#packages-to-use",
+    "href": "lectures/w9l1_s3.html#packages-to-use",
+    "title": "S3 Class System",
+    "section": "Packages to Use",
+    "text": "Packages to Use\n\nusethis: For package automation and development\ndevtools: For package setup\ntestthat: For testing\nroxygen2: For documentation"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#package-breakdown",
+    "href": "lectures/w9l1_s3.html#package-breakdown",
+    "title": "S3 Class System",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package\n\nCheatsheet: link"
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#exercises-an-investigation",
+    "href": "lectures/w9l1_s3.html#exercises-an-investigation",
+    "title": "S3 Class System",
+    "section": "Exercises: An Investigation",
+    "text": "Exercises: An Investigation\nIn your same pairings (or by yourself),\n\nLook through the following archive of R packages: link\n\nClick on a package that is of interest to you and download the tar.gz file onto your computer.\nFor each of the seven components discussed earlier:\n\nWrite down a few sentences describing what you see and how this would be useful to\n\nthe user, and\nthe developer.\n\n\n\nUse the w9l1_act.qmd file you created earlier and put responses from this activity in there."
+  },
+  {
+    "objectID": "lectures/w9l1_s3.html#exam-2-preview",
+    "href": "lectures/w9l1_s3.html#exam-2-preview",
+    "title": "S3 Class System",
+    "section": "Exam #2 Preview",
+    "text": "Exam #2 Preview"
+  },
+  {
+    "objectID": "lectures/w6l1_environments.html#for-now-and-monday",
+    "href": "lectures/w6l1_environments.html#for-now-and-monday",
+    "title": "Environments",
+    "section": "For Now and Monday",
+    "text": "For Now and Monday\n\nComplete the exercises\nRead Advanced R: chapter 8\nSet #3 will be assigned by this weekend\n\nDue Friday, 3/13 at 11:59pm"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html",
+    "href": "lectures/w9l2_packageIntro.html",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "",
+    "text": "S3 objects\n\nOther features\n\nPackages\n\nWhy?\nAnatomy\nExamples"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#last-time",
+    "href": "lectures/w9l2_packageIntro.html#last-time",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "",
+    "text": "S3 objects\n\nOther features\n\nPackages\n\nWhy?\nAnatomy\nExamples"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#today",
+    "href": "lectures/w9l2_packageIntro.html#today",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Today",
+    "text": "Today\n\nPackages\n\nBreakdown of seven parts\nExercises: Building the R package"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#package-breakdown",
+    "href": "lectures/w9l2_packageIntro.html#package-breakdown",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Package breakdown",
+    "text": "Package breakdown\n\nDESCRIPTION: summary of work\nNAMESPACE: self-containment\nR/: all code\ntests/: tests for code\nman/: manual for code\nvignettes/: articles\ndata/: any data needed\n\nCheatsheet: link"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#description",
+    "href": "lectures/w9l2_packageIntro.html#description",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "DESCRIPTION",
+    "text": "DESCRIPTION\n\nContains a summary of the work\nProvides the following:\n\nTitle\nDescription\nVersion number\nImports\nAuthor\nand more!"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#description-1",
+    "href": "lectures/w9l2_packageIntro.html#description-1",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "DESCRIPTION",
+    "text": "DESCRIPTION"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#namespace",
+    "href": "lectures/w9l2_packageIntro.html#namespace",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "NAMESPACE",
+    "text": "NAMESPACE\n\nMakes your packages self-contained\nCan use devtools::document() to generate namespace automatically\n\nResults from creating R files"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#r",
+    "href": "lectures/w9l2_packageIntro.html#r",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "R/",
+    "text": "R/\n\nAll R code is housed here through .R scripts\n\nA single file for each R function\nuse_r(\"function_name\")"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#r-example",
+    "href": "lectures/w9l2_packageIntro.html#r-example",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "R/: example",
+    "text": "R/: example"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#tests",
+    "href": "lectures/w9l2_packageIntro.html#tests",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "tests",
+    "text": "tests\n\nTests to make sure your functions are working properly\n\nuse_test() to create test file"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#man",
+    "href": "lectures/w9l2_packageIntro.html#man",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "man",
+    "text": "man\n\nDocumentation for your code\n\nDoes so for each function (automatically with roxygen2)\nContains the following:\n\nDescription\nUsage\nArguments\nDetails\nValue\nNote\nReferences\nExamples"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#example-man",
+    "href": "lectures/w9l2_packageIntro.html#example-man",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "Example: man",
+    "text": "Example: man"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#vignettes",
+    "href": "lectures/w9l2_packageIntro.html#vignettes",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "vignettes",
+    "text": "vignettes\n\nExplanations of the functionality of your package\nUser-friendly versions of help files (with more functionality)\n\nusethis::use_vignette(\"my-vignette\")\nCreates R Markdown document to add code and text"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#data",
+    "href": "lectures/w9l2_packageIntro.html#data",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "data",
+    "text": "data\n\nAny data used in your package\n\nStored datasets\nDatasets for examples\nusethis::use_data(data) for some data"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#for-now-and-tuesday",
+    "href": "lectures/w9l2_packageIntro.html#for-now-and-tuesday",
+    "title": "Object-Oriented Programming (OOP)",
+    "section": "For now and Tuesday:",
+    "text": "For now and Tuesday:\n\nWork on exercises #7: Making an R Package (due Tuesday at 2:45pm)\nRead Advanced R: chapter 5\nRead R Packages: chapters 16\nComplete questions on above chapters in Moodle by Tuesday at 2:45pm\n\nTurn in .qmd and rendered .html file to\n\nQuiz next Thursday at beginning of class!\n\nWill be open-note coding quiz"
   }
 ]
