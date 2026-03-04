@@ -1,0 +1,91 @@
+---
+title: "Activities from Week 6, Lecture 2: Data Joining"
+subtitle: "SDS 192: Introduction to Data Science"
+author: "NAME HERE"
+format:
+  html:
+    code-fold: false
+execute: 
+  echo: true
+knitr:
+  opts_chunk: 
+    message: false
+editor: source
+---
+
+## Introduction
+
+Use the `read.csv()` function in the code chunk below to load in the `wnba1`, `wnba2`, and `wnbaStars` datasets. Make sure that the data sets are in the appropriate directory.
+
+```{r}
+#PUT CODE HERE
+```
+
+Data has been subsetted and filtered from the following source [here](https://www.basketball-reference.com/wnba/years/2024_per_minute.html). The data corresponds to per-36 minute data from all players that participated in the 2024 WNBA season. For most variables, they have been scaled on a per-36 minute basis to account for the different minute totals that each player will have throughout the season. As you will see, each dataset has some information from the whole dataset seen at the source. We will use data joining techniques to piece together some of this data.
+
+Answer the following wrangling questions below.
+
+## Questions
+
+::: {.callout-important}
+###### Question 1
+
+Join the `wnba2` and `wnbaStars` data frames together, removing any players not shared between the two. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.
+
+```{r}
+#PUT CODE HERE
+```
+
+:::
+
+::: {.callout-important}
+###### Question 2
+
+Join the `wnba2` and `wnbaStars` data frames together, keeping all players from `wnba2` but excluding those from `wnbaStars` that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.
+
+```{r}
+#PUT CODE HERE
+```
+
+:::
+
+::: {.callout-important}
+###### Question 3
+
+Join the `wnba2` and `wnbaStars` data frames together, keeping all players from `wnbaStars` but excluding those from `wnba2` that are not shared. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.
+
+```{r}
+#PUT CODE HERE
+```
+
+:::
+
+::: {.callout-important}
+###### Question 4
+
+Join the `wnba2` and `wnbaStars` data frames together, keeping all players from both data frames. Then, select the columns associated with the team, player, points, rebounds, and assists. Report on the number of players in this shared dataset.
+
+```{r}
+#PUT CODE HERE
+```
+
+:::
+
+::: {.callout-important}
+###### Question 5
+
+Merge the `wnba1` and `wnba2` datasets together. Using code from the activity in the last lecture, summarize the following for each position:
+
+- Number of players
+- Median PTS
+- Median TOV
+
+```{r}
+#PUT CODE HERE
+```
+
+:::
+
+## Turn-in
+
+Save the .qmd file inside your activities repository. Please stage, commit, and push to GitHub.
