@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jericho Lawson">
+<meta name="dcterms.date" content="2026-02-23">
 
-<title>Resources – SDS 192: Introduction to Data Science, Spring 2026</title>
+<title>Study Guide for Exam #1 – SDS 192: Introduction to Data Science, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,19 +108,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
     </a>
   </div>
@@ -94,19 +131,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./resources.html" aria-current="page"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
@@ -128,20 +165,45 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">Topics</a></li>
+  <li><a href="#exam-rules" id="toc-exam-rules" class="nav-link" data-scroll-target="#exam-rules">Exam Rules</a></li>
+  <li><a href="#dataset-and-metadata-for-practice-questions" id="toc-dataset-and-metadata-for-practice-questions" class="nav-link" data-scroll-target="#dataset-and-metadata-for-practice-questions">Dataset and Metadata for Practice Questions</a></li>
+  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">Practice Questions</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources</h1>
+<h1 class="title">Study Guide for Exam #1</h1>
+<p class="subtitle lead">SDS 192: Introduction to Data Science, Spring 2026</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jericho Lawson </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 23, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -151,82 +213,154 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Slides</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Labs</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Projects</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Exam Prep</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The midterm (i.e.&nbsp;exam #1) will be given out during class on Friday, March 13th. You will have 75 minutes to complete the exam and you may bring a one-page cheatsheet to the exam along with a calculator and writing utensil.</p>
+<p>Expect the exam to contain mostly free-response questions, with occasional multiple-choice/matching parts sprinkled in there. With the free-response questions, expect there to be 3-5 parts per question. Each question will revolve around some dataset or situation. To that end, expect around 4-5 questions in the exam itself.</p>
+<p>Expect problems to be of a problem-solving nature, where you’ll familiarize yourself with the given datasets and work through problems with the use of pseudocode/code, diagrams, and written answers. You do not need to know precise code, but you will need to be familiar with how code is structured and the approximate functions needed to conduct a task. For instance, when trying to create a box plot with appropriate labels and aesthetics, you want to highlight that…</p>
 <ul>
-<li>1: <a href="./lectures/w1l1_intro.html">Introductions</a></li>
-<li>2: <a href="./lectures/w1l2_data.html">Intro to Data</a></li>
-<li>3: <a href="./lectures/w2l1_introR.html">Intro to R</a></li>
-<li>4: <a href="./lectures/w2l2_github.html">R and GitHub</a></li>
-<li>5: <a href="./lectures/w3l1_visualization.html">Intro to Data Visualization</a></li>
-<li>6: <a href="./lectures/w3l2_ggplot.html">ggplot2</a></li>
-<li>7: <a href="./lectures/w4l1_freq.html">Histograms, Bar Plots</a></li>
-<li>8: <a href="./lectures/w4l2_boxScatter.html">Box Plots, Line Charts, Scatter Plots</a></li>
-<li>9: <a href="./lectures/w5l2_visualsWrangling.html">Advanced ggplot2 &amp; Data Wrangling</a></li>
-<li>10: <a href="./lectures/w6l1_wrangling.html">Data Wrangling</a></li>
-<li>11: <a href="./lectures/w6l2_joining.html">Data Joining</a></li>
+<li>I need to use some <code>labs</code> function to put labels for the axes and title</li>
+<li>I need to access the data and assign variables to the appropriate aesthetics</li>
+<li>I will be using a <code>geom_box()</code> function to create the box plot</li>
 </ul>
-<!--
-- 12: [Data Problem-Solving](lectures/w6l2_ps.qmd)
-- 13: [Review for Exam #1](lectures/w7l1_review.qmd)
--->
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Practice problems have been provided at the bottom of this document.</p>
+</section>
+<section id="topics" class="level2">
+<h2 class="anchored" data-anchor-id="topics">Topics</h2>
+<p>The midterm will focus on concepts and exercises from the following topics:</p>
 <ul>
-<li>1: <a href="labs/lab1">R and Understanding Datasets</a>
+<li>Data basics
 <ul>
-<li><a href="labs/lab1/lab1.qmd">Template for Download</a></li>
+<li>Reading data documentation</li>
+<li>Values (e.g.&nbsp;units of observation, types of variables)</li>
+<li>Parts of a data frame (e.g.&nbsp;rows, columns, headers)</li>
+<li>Missing data</li>
 </ul></li>
-<li>2: <a href="labs/lab2">GitHub</a></li>
-<li>3: <a href="labs/lab3">Visualization Aesthetics</a></li>
-<li>4: <a href="labs/lab4">Plotting Frequencies and Distributions</a></li>
-<li>5: Data Wrangling and Joining</li>
-<li>6: Data Tidying</li>
-<li>7: Programming with Data</li>
-<li>8: Generative AI</li>
-<li>9: Point Mapping</li>
-<li>10: Polygon Mapping</li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<li>Data visualization
 <ul>
-<li><a href="./projects/proj1inst.html">Project #1</a></li>
-</ul>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<li>Use of appropriate variables for plot aesthetics</li>
+<li>Adjustment of plot attributes</li>
+<li>Scales, facets, and themes</li>
+<li>Dealing with overplotting</li>
+<li>Color palettes</li>
+<li>Graphical integrity (e.g.&nbsp;lie factor, data-to-ink ratio)</li>
+<li>Proper use of <code>ggplot2</code></li>
+<li>Analysis tools (e.g.&nbsp;measures of spread/center, summary tables)</li>
+<li>Recognizing and using different types of plots</li>
+</ul></li>
+<li>GitHub
 <ul>
-<li><a href="./resources/studyGuide1.html">Study Guide</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Textbooks</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Perusall</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Datasets</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<li><code>git</code> vocabulary</li>
+<li>Parts of a collaborative GitHub workflow</li>
+<li>Addressing and resolving push/pull errors</li>
+<li>File organization</li>
+</ul></li>
+<li>Data Wrangling
 <ul>
-<li><a href="https://mdsr-book.github.io/mdsr3e/">Modern Data Science</a></li>
-<li><a href="https://moderndive.com/v2/">Modern Dive</a></li>
-<li><a href="https://rafalab.dfci.harvard.edu/dsbook-part-1/">Introduction to Data Science: Data Analysis and Prediction Algorithms with R</a></li>
-</ul>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<li>Six data wrangling verbs</li>
+<li>Five join functions (and when to use them)</li>
+<li>Problem solving</li>
+</ul></li>
+<li>R
 <ul>
-<li><a href="https://moodle.smith.edu/mod/lti/view.php?id=1428812">Access</a></li>
+<li>Use of <code>ggplot2</code> and <code>dplyr</code></li>
+<li>Types of data in R (e.g.&nbsp;doubles, logicals, characters)</li>
+<li>Basic statistics (e.g.&nbsp;mean, median)</li>
+<li>Operators (e.g.&nbsp;piping, assignment, relational)</li>
+</ul></li>
 </ul>
-</div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+</section>
+<section id="exam-rules" class="level2">
+<h2 class="anchored" data-anchor-id="exam-rules">Exam Rules</h2>
 <ul>
-<li><a href="data/nba2024.csv">NBA, 2024 Season</a></li>
+<li>You have 75 minutes to complete this exam.</li>
+<li>You are allowed only one 8.5 by 11 inch sheet of notes, front and back.</li>
+<li>No computers, cellphones, or other internet-connected devices. This exam is closed-note and to be individually completed.</li>
+<li>Give your best effort and attempt every question, laying out your thought-process for questions/parts that may be ambiguous for you. Partial credit may be awarded.</li>
 </ul>
+</section>
+<section id="dataset-and-metadata-for-practice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-and-metadata-for-practice-questions">Dataset and Metadata for Practice Questions</h2>
+<p>The <code>nycschools</code> dataset contains 1,829 observations of 11 variables, with the following information for each of the variables:</p>
+<ul>
+<li><code>dbn</code>: district borough number</li>
+<li><code>school_name</code>: name of school</li>
+<li><code>total_parent_response_rate</code>: response rate from parents</li>
+<li><code>total_teacher_response_rate</code>: response rate from teachers</li>
+<li><code>total_student_response_rate</code>: response rate from students</li>
+<li><code>collaborative_teachers_score</code>: average of responses for collaboration from 1-5</li>
+<li><code>effective_school_leadership</code>: average of responses for effective school leadership from 1-5</li>
+<li><code>rigorous_instruction_score</code>: average of responses for rigorous instruction from 1-5</li>
+<li><code>supportive_environment_score</code>: average of responses for a supportive environment from 1-5</li>
+<li><code>strong_family_community_ties</code>: average of responses for strong community ties from 1-5</li>
+<li><code>trust_score</code>: average of responses for overall trust from 1-5</li>
+</ul>
+<p>From the NYC Department of Education:</p>
+<blockquote class="blockquote">
+<p>Every year, all parents, all teachers, and students in grades 6 - 12 take the NYC School Survey. The survey ranks among the largest surveys of any kind ever conducted nationally. Survey results provide insight into a school’s learning environment and contribute a measure of diversification that goes beyond test scores on the Progress Report. NYC School Survey results contribute 10% - 15% of a school’s Progress Report grade (the exact contribution to the Progress Report is dependent on school type). Survey questions assess the community’s opinions on academic expectations, communication, engagement, and safety and respect. School leaders can use survey results to better understand their own school’s strengths and target areas for improvement.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The NYC School Survey helps school leaders understand what key members of the school community say about the learning environment at each school. The information captured by the survey is designed to support a dialogue among all members of the school community about how to make the school a better place to learn.</p>
+</blockquote>
+</section>
+<section id="practice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="practice-questions">Practice Questions</h2>
+<section id="answer-the-following-parts-in-regard-to-the-nycschools-dataset." class="level5">
+<h5 class="anchored" data-anchor-id="answer-the-following-parts-in-regard-to-the-nycschools-dataset.">1. Answer the following parts in regard to the <code>nycschools</code> dataset.</h5>
+<ol type="a">
+<li><p>Given the context of the data, provide an example of an ordinal that could be included in the dataset.</p></li>
+<li><p>There are values labeled as <code>-999</code> in the dataset, indicating a missing value. Describe how we would handle these missing values.</p></li>
+<li><p>A data analyst wants to remove any data from neighborhoods they deem as “unimportant” despite preparing an analysis about the state of all K-12 schools in NYC. In 1-2 sentences, discuss the ethical implications of these actions.</p></li>
+<li><p>Suppose we want to include data about the demographic makeup of the school’s student body to the analysis. Assuming we also have the <code>school_name</code> in this additional data frame, describe how we can combine this data into our current data.</p></li>
+</ol>
+</section>
+<section id="answer-the-following-parts-in-regard-to-the-nycschools-dataset.-1" class="level5">
+<h5 class="anchored" data-anchor-id="answer-the-following-parts-in-regard-to-the-nycschools-dataset.-1">2. Answer the following parts in regard to the <code>nycschools</code> dataset.</h5>
+<ol type="a">
+<li><p>Suppose we want to look at schools with a trust score over 3.5, create a new column that assigns <code>low</code> to schools with a student response rate less than 50% and <code>high</code> otherwise, and order schools in alphabetical order. Write pseudo-code or code, using the appropriate variables and functions/tasks, to generate these results.</p></li>
+<li><p>Suppose I want to build a scatter plot that shows the average teacher response rate against the average student response rate, with the trust score color coded. Fill in the blanks to generate the basic plot.</p></li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(nycschools, <span class="fu">aes</span>(<span class="at">x =</span> ___________________________________, </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">y =</span> ___________________________________, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">color =</span> ___________________________________)) <span class="sc">+</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">________________</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ol start="3" type="a">
+<li>Continuing off the code from the last part, develop a descriptive title and labels for the plot.</li>
+</ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"________________________________________________________"</span>,</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">x =</span> <span class="st">"________________________________________________________"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">y =</span> <span class="st">"________________________________________________________"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">color =</span> <span class="st">"________________________________________________________"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The next three parts will center around this particular graph:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(nycschools, <span class="fu">aes</span>(<span class="at">x =</span> Trust.Score, <span class="at">y =</span> highRate, <span class="at">col =</span> highRate)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Average Trust Score across NYC Schools with Low and High Student Response Rates, 2019"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Trust Score (Avg.)"</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Low/High Student Response Categories"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">col =</span> <span class="st">"Response</span><span class="sc">\n</span><span class="st">Categories"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="studyGuide1_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
 </div>
+<ol start="4" type="a">
+<li>Identify which variables correspond to each of the three aesthetics in this chart.</li>
+<li>Provide 1-2 sentences that summarize the results from this chart, using at least one statistic/metric approximately.</li>
+<li>Describe one way using pseudocode/code that we can change the colors for the following categories.</li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
