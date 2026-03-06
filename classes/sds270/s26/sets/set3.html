@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jericho Lawson">
+<meta name="dcterms.date" content="2026-03-05">
 
-<title>Resources – SDS 270: Programming for Data Science in R, Spring 2026</title>
+<title>Set #3 (50 pts) – SDS 270: Programming for Data Science in R, Spring 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,19 +108,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">SDS 270: Programming for Data Science in R, Spring 2026</span>
     </a>
   </div>
@@ -94,19 +131,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./resources.html" aria-current="page"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
@@ -128,20 +165,47 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#q1-functions" id="toc-q1-functions" class="nav-link" data-scroll-target="#q1-functions">Q1: Functions</a></li>
+  <li><a href="#q2-environments-for-boston-data" id="toc-q2-environments-for-boston-data" class="nav-link" data-scroll-target="#q2-environments-for-boston-data">Q2: Environments for Boston Data</a></li>
+  <li><a href="#q3-classes" id="toc-q3-classes" class="nav-link" data-scroll-target="#q3-classes">Q3: Classes</a></li>
+  <li><a href="#q4-help-file" id="toc-q4-help-file" class="nav-link" data-scroll-target="#q4-help-file">Q4: Help File</a></li>
+  <li><a href="#turn-in" id="toc-turn-in" class="nav-link" data-scroll-target="#turn-in">Turn-In</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources</h1>
+<h1 class="title">Set #3 (50 pts)</h1>
+<p class="subtitle lead">SDS 270: Programming for Data Science in R, Spring 2026</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jericho Lawson </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 5, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -151,65 +215,296 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Slides</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Sets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Package</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Textbooks</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">Exam Prep</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
 <ul>
-<li>1: <a href="./lectures/w1l1_intro.html">Introduction, Tech Setup, Atomic Vectors</a></li>
-<li>2: <a href="./lectures/w2l1_lists.html">Lists</a></li>
-<li>3: <a href="./lectures/w2l2_dataFrames.html">Data Frames and Subsetting</a></li>
-<li>4: <a href="./lectures/w3l1_memory.html">Assignment and Memory</a></li>
-<li>5: <a href="./lectures/w3l2_controlFlow.html">Control Flow</a></li>
-<li>6: <a href="./lectures/w4l1_functions.html">Functions</a></li>
-<li>7: <a href="./lectures/w4l2_functionals.html">Functionals (apply)</a></li>
-<li>8: <a href="./lectures/w5l1_mapReview.html">Functionals (map)</a></li>
-<li>9: <a href="./lectures/w6l1_environments.html">Environments</a></li>
+<li>Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.</li>
+<li>Certain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.</li>
+<li>Refer to syllabus for late work deductions.</li>
+<li>Due date: <strong>Friday, 3/13 at 11:59pm</strong></li>
 </ul>
-<!--
-- 10: [Conditions](lectures/w6l2_conditions.qmd)
--->
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+</section>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>The third problem set will contain various problems related to the following:</p>
 <ul>
-<li>1: <a href="./sets/set1.html">Set 1</a></li>
-<li>2: <a href="./sets/set2.html">Set 2</a></li>
-<li>3: <a href="./sets/set3.html">Set 3</a></li>
+<li>Environments (Ch. 7, AR)</li>
+<li>Conditions (Ch. 8, AR)</li>
+<li>Object-oriented programming (Ch. 12-13, AR)</li>
 </ul>
-<!--
-- 4: [Set 4](sets/set3.qmd)
--->
+<p>Other topics we’ve discussed earlier in the semester may show up in these problems. Make sure to carefully read and follow directions for each problem.</p>
+<p>All problems center around a dataset containing population estimates from 2025 at the neighborhood level in the city of Boston. You can download the data and view its metadata <a href="https://data.boston.gov/dataset/2025-boston-population-estimates-neighborhood-level">here</a>.</p>
+<p>Additionally, you will use the following packages below and the <code>read.csv()</code> to download the data below:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sloop)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rlang)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<!--
-- [Instructions](package/instructions.qmd)
--->
+</section>
+<section id="q1-functions" class="level2">
+<h2 class="anchored" data-anchor-id="q1-functions">Q1: Functions</h2>
+<p>We start at the function level, creating functions that we can use on the <code>boston</code> dataset specifically.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(a)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create a function named <code>crossSection</code> that returns population totals for a neighborhood <code>x</code> across a specific indicator <code>indicator</code> (e.g.&nbsp;education, income). The function serves two purposes:</p>
 <ul>
-<li><a href="https://adv-r.hadley.nz/">Advanced R</a></li>
-<li><a href="https://r-pkgs.org/">R Packages</a></li>
+<li>Provides the user with a general idea about certain cross-sections of a neighborhood based on certain categories.</li>
+<li>Simplifies user input down to a neighborhood and a category.</li>
+</ul>
+<p>A few things: yes, there are 306 variables. Your function only needs to have options to look at a maximum of <em>5 different cross-sections</em>, with each cross-section highlighting the <em>totality</em> of that neighborhood’s (sub)population. For example, one cross-section might an look exclusively at females across an age range. Your function would pick the corresponding columns and return population totals for females at each age range.</p>
+<p>Your function should employ appropriate data structures, syntax, and actions while accomplishing the task above.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(b)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Extending the functionality of part (a), implement an example of the following:</p>
+<ul>
+<li>An error.</li>
+<li>A warning.</li>
+<li>A message.</li>
+</ul>
+<p>Test the updated function on three different calls, with each one corresponding to the right condition.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(c)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Run your <code>crossSection</code> function on a neighborhood and indicator of your choice. Then, create a new function that plots an appropriate graph of the population distribution. This can use <code>baseR</code> or <code>ggplot2</code> commands.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(d)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Run your <code>crossSection</code> function on all neighborhoods (with the same indicator) in the <code>boston</code> dataset using an appropriate functional.</p>
+</div>
+</div>
+</section>
+<section id="q2-environments-for-boston-data" class="level2">
+<h2 class="anchored" data-anchor-id="q2-environments-for-boston-data">Q2: Environments for Boston Data</h2>
+<p>We now shift to environments, creating objects within the environment itself to explore its functionality.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(a)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create an environment that contains the following:</p>
+<ul>
+<li>Object containing some metadata about the <code>boston</code> dataset</li>
+<li>The <code>boston</code> dataset</li>
+<li>A function that can be used on the <code>boston</code> dataset</li>
 </ul>
 </div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(b)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create a new function named <code>mean</code> inside your newly-created environment that prints a message that states if any NAs were removed, followed by returning the average of the total populations of all neighborhoods with base R’s <code>mean</code> function. No input is required.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(c)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Run the newly-created <code>mean()</code> function from your created environment.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(d)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Run base R’s <code>mean()</code> function on the total populations of all neighborhoods in the <code>boston</code> dataset.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(e)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create another <code>mean()</code> function in your global environment. Then, run this <code>mean()</code> function on the total populations of all neighborhoods in the <code>boston</code> dataset.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(f)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Describe R’s process for picking the right <code>mean()</code> function when…</p>
 <ul>
-<li><a href=".\data/macroinvertebrates.csv">Macroinvertebrates</a></li>
-<li><a href="https://data.cityofnewyork.us/Health/DOHMH-Dog-Bite-Data/rsgh-akpg/about_data">Dog Bite Data (via NYC Open Data)</a></li>
+<li>You start within the the newly created environment.</li>
+<li>You start from your global environment.</li>
 </ul>
 </div>
-<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+</div>
+</section>
+<section id="q3-classes" class="level2">
+<h2 class="anchored" data-anchor-id="q3-classes">Q3: Classes</h2>
+<p>We now jump to classes, creating objects of a distinct class to associate with attributes and methods.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(a)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For the <code>boston</code> dataset, define a class of your choice and add it to the array of current classes that exist for <code>boston</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(b)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write a new method for the class of your choice (with a name not commonly used in other packages). Consider that you may have to define other functions to complete the use of this method.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(c)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Run the method you created in part (b) on:</p>
 <ul>
-<li><a href="./resources/studyGuide1.html">Study Guide for Exam #1</a>
-<ul>
-<li><a href="resources/practiceExam1.pdf">Practice Exam</a></li>
-</ul></li>
+<li>The <code>boston</code> dataset</li>
+<li>The <code>mtcars</code> dataset</li>
+<li>Any other item</li>
 </ul>
 </div>
 </div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(d)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create an appropriate object that contains relevant information to a neighborhood of your choice in the dataset. Then, assign that object to a new class named <code>neighborhood</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(e)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create a <code>print()</code> method for the <code>neighborhood</code> class that adds to output from the default method and parent classes.</p>
+</div>
+</div>
+</section>
+<section id="q4-help-file" class="level2">
+<h2 class="anchored" data-anchor-id="q4-help-file">Q4: Help File</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>(a)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write documentation (in the white-space below) for one of the objects/functions you created in this HW assignment so far. Take the time to look at help files of common functions or objects (e.g.&nbsp;<code>mtcars</code>, <code>mean()</code>, <code>filter()</code>) to see the details and formatting of the help file. Your documentation should have the following:</p>
+<ul>
+<li>Description</li>
+<li>Usage</li>
+<li>Arguments</li>
+<li>Details</li>
+<li>Value</li>
+<li>Examples</li>
+</ul>
+<p>Yes, we have not covered help files yet, but this will be an introduction into what to consider when making a package. You do not need to write documentation that is perfect, but it should incorporate aspects useful for someone else to reference when using your object.</p>
+</div>
+</div>
+</section>
+<section id="turn-in" class="level2">
+<h2 class="anchored" data-anchor-id="turn-in">Turn-In</h2>
+<p>When finished, commit and push this file to your SDS 270 repository.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

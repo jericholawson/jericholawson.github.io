@@ -137,7 +137,7 @@
     "href": "schedule.html#week-9-s3-objects-package-foundation-323---327",
     "title": "Schedule",
     "section": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)",
-    "text": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25\n\n\n\n\n\n\n\n\nNoteLecture: OOP/S3\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: S3 Objects, Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25\n\n\n\n\n\n\n\n\nNoteLecture: S3\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Packages\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-10-packages---description-and-libraries-330---43",
@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n\n\n\n\n\n1: Set 1\n2: Set 2\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
   },
   {
     "objectID": "sets/set1.html",
@@ -3840,7 +3840,7 @@
     "href": "schedule.html#week-6-exam-1-environments-32---36",
     "title": "Schedule",
     "section": "Week 6: Exam #1, Environments (3/2 - 3/6)",
-    "text": "Week 6: Exam #1, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\nGood luck!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 7 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\nSlides\nActivities/Template\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 8 of Advanced R (before Monday’s class)"
+    "text": "Week 6: Exam #1, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\nGood luck!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 7 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\nSlides\nActivities/Template\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 8 of Advanced R (before Monday’s class)\nSet #3 due next Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#last-time",
@@ -4015,7 +4015,7 @@
     "href": "schedule.html#week-7-conditions-and-object-oriented-programming-oop-39---313",
     "title": "Schedule",
     "section": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)",
-    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 12 of Advanced R (before Wednesday’s class)\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)"
   },
   {
     "objectID": "lectures/w7l1_actTemp.html",
@@ -4274,35 +4274,35 @@
     "href": "sets/set3.html",
     "title": "Set #3 (50 pts)",
     "section": "",
-    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Friday, 3/13 at 11:59pm"
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Friday, 3/13 at 11:59pm"
   },
   {
     "objectID": "sets/set3.html#instructions",
     "href": "sets/set3.html#instructions",
     "title": "Set #3 (50 pts)",
     "section": "",
-    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file and its knitted .html counterpart by committing and pushing both files to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Friday, 3/13 at 11:59pm"
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nDue date: Friday, 3/13 at 11:59pm"
   },
   {
     "objectID": "sets/set3.html#background",
     "href": "sets/set3.html#background",
     "title": "Set #3 (50 pts)",
     "section": "Background",
-    "text": "Background\nThe third problem set will contain various problems related to the following:\n\nEnvironments (Ch. 7, AR)\nConditions (Ch. 8, AR)\nObject-oriented programming (Ch. 12-13, AR)\n\nDo note that other traits of R will show up in these problems. Make sure to carefully read and follow directions for each problem.\nAll problems will center around a dataset containing population estimates from 2025 at the neighborhood level in the city of Boston. You can download the data and view its metadata here.\nAdditionally, you will use the following packages below and use read.csv() to download the data below:\n\nlibrary(tidyverse)\nlibrary(sloop)\nlibrary(rlang)"
+    "text": "Background\nThe third problem set will contain various problems related to the following:\n\nEnvironments (Ch. 7, AR)\nConditions (Ch. 8, AR)\nObject-oriented programming (Ch. 12-13, AR)\n\nOther topics we’ve discussed earlier in the semester may show up in these problems. Make sure to carefully read and follow directions for each problem.\nAll problems center around a dataset containing population estimates from 2025 at the neighborhood level in the city of Boston. You can download the data and view its metadata here.\nAdditionally, you will use the following packages below and the read.csv() to download the data below:\n\nlibrary(tidyverse)\nlibrary(sloop)\nlibrary(rlang)"
   },
   {
     "objectID": "sets/set3.html#q1-functions",
     "href": "sets/set3.html#q1-functions",
     "title": "Set #3 (50 pts)",
     "section": "Q1: Functions",
-    "text": "Q1: Functions\nWe start at the function level, creating functions that we can use on the boston dataset specifically.\n\n\n\n\n\n\nImportant(a)\n\n\n\nCreate a function that returns the population totals for a neighborhood x across a specific indicator indicator (e.g. education, income). The function serves two purposes:\n\nSimplifies user input so they do not have to manually gather names from the dataset itself\nShows the population distribution across an indicator\n\nA few things: yes, there are 306 variables. Your function only needs to have options to look at a maximum of 5 different cross-sections, with each cross-section highlighting the totality of that neighborhood’s (sub)population. For example, you can have users specify an indicator that looks exclusively at females across an age range. Your function should pick the right columns and return population totals for females at each age range.\nYour function should employ appropriate data structures, syntax, and actions. However, you have a lot of flexibility for how to accomplish this task.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nExtending the functionality of part (a), create an example of the following:\n\nAn error.\nA warning.\nA message.\n\nTest the updated function on three different calls, with each one corresponding to the right condition.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun your function on a neighborhood and indicator of your choice. Then, create a new function that plots an appropriate graph of the population distribution.\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nRun your function from parts (a) and (b) on all neighborhoods (with the same indicator) in the boston dataset using an appropriate functional."
+    "text": "Q1: Functions\nWe start at the function level, creating functions that we can use on the boston dataset specifically.\n\n\n\n\n\n\nImportant(a)\n\n\n\nCreate a function named crossSection that returns population totals for a neighborhood x across a specific indicator indicator (e.g. education, income). The function serves two purposes:\n\nProvides the user with a general idea about certain cross-sections of a neighborhood based on certain categories.\nSimplifies user input down to a neighborhood and a category.\n\nA few things: yes, there are 306 variables. Your function only needs to have options to look at a maximum of 5 different cross-sections, with each cross-section highlighting the totality of that neighborhood’s (sub)population. For example, one cross-section might an look exclusively at females across an age range. Your function would pick the corresponding columns and return population totals for females at each age range.\nYour function should employ appropriate data structures, syntax, and actions while accomplishing the task above.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nExtending the functionality of part (a), implement an example of the following:\n\nAn error.\nA warning.\nA message.\n\nTest the updated function on three different calls, with each one corresponding to the right condition.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun your crossSection function on a neighborhood and indicator of your choice. Then, create a new function that plots an appropriate graph of the population distribution. This can use baseR or ggplot2 commands.\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nRun your crossSection function on all neighborhoods (with the same indicator) in the boston dataset using an appropriate functional."
   },
   {
     "objectID": "sets/set3.html#q2-environments-for-boston-data",
     "href": "sets/set3.html#q2-environments-for-boston-data",
     "title": "Set #3 (50 pts)",
     "section": "Q2: Environments for Boston Data",
-    "text": "Q2: Environments for Boston Data\nWe now jump up to the environment level, creating objects within the environment itself to explore its functionality.\n\n\n\n\n\n\nImportant(a)\n\n\n\nCreate an environment that contains the following:\n\nObject containing metadata about the boston dataset\nThe boston dataset\nA function that can be used on the boston dataset\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nCreate a new function named mean inside your newly-created environment that prints a message about any NAs removed, followed by returning the average of the total populations of all neighborhoods with base R’s mean function. No input is required.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun the newly-created mean() function from your created environment.\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nRun base R’s mean() function on the total populations of all neighborhoods in the boston dataset.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nCreate another mean() function in your global environment. Then, run this mean() function on the total populations of all neighborhoods in the boston dataset.\n\n\n\n\n\n\n\n\nImportant(f)\n\n\n\nDescribe R’s process for picking the right mean() function to use when adding all components in the first four parts to your global environment."
+    "text": "Q2: Environments for Boston Data\nWe now shift to environments, creating objects within the environment itself to explore its functionality.\n\n\n\n\n\n\nImportant(a)\n\n\n\nCreate an environment that contains the following:\n\nObject containing some metadata about the boston dataset\nThe boston dataset\nA function that can be used on the boston dataset\n\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nCreate a new function named mean inside your newly-created environment that prints a message that states if any NAs were removed, followed by returning the average of the total populations of all neighborhoods with base R’s mean function. No input is required.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun the newly-created mean() function from your created environment.\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nRun base R’s mean() function on the total populations of all neighborhoods in the boston dataset.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nCreate another mean() function in your global environment. Then, run this mean() function on the total populations of all neighborhoods in the boston dataset.\n\n\n\n\n\n\n\n\nImportant(f)\n\n\n\nDescribe R’s process for picking the right mean() function when…\n\nYou start within the the newly created environment.\nYou start from your global environment."
   },
   {
     "objectID": "sets/set3.html#q3-class-for-neighborhood",
@@ -4316,7 +4316,7 @@
     "href": "sets/set3.html#q4-help-file",
     "title": "Set #3 (50 pts)",
     "section": "Q4: Help File",
-    "text": "Q4: Help File\n\n\n\n\n\n\nImportant(a)\n\n\n\nWrite documentation (in the white-space below) for one of the objects/functions you created in this HW assignment so far. Take the time to look at help files of common functions or objects (e.g. mtcars, mean(), filter()) to see the details and formatting of the help file. Your documentation should have the following:\n\nDescription\nUsage\nArguments\nDetails\nValue\nExamples\n\nYes, we have not covered help files yet, but this will be an introduction into what to consider when making a package. You do not need to make perfect documentation, but do include aspects that would be useful for someone else to reference when using your object."
+    "text": "Q4: Help File\n\n\n\n\n\n\nImportant(a)\n\n\n\nWrite documentation (in the white-space below) for one of the objects/functions you created in this HW assignment so far. Take the time to look at help files of common functions or objects (e.g. mtcars, mean(), filter()) to see the details and formatting of the help file. Your documentation should have the following:\n\nDescription\nUsage\nArguments\nDetails\nValue\nExamples\n\nYes, we have not covered help files yet, but this will be an introduction into what to consider when making a package. You do not need to write documentation that is perfect, but it should incorporate aspects useful for someone else to reference when using your object."
   },
   {
     "objectID": "sets/set3.html#turn-in",
@@ -4330,14 +4330,14 @@
     "href": "sets/set3.html#q3-classes",
     "title": "Set #3 (50 pts)",
     "section": "Q3: Classes",
-    "text": "Q3: Classes\nWe now jump to classes, creating objects of a distinct class to associate with attributes and methods.\n\n\n\n\n\n\nImportant(a)\n\n\n\nFor the boston dataset, define a class of your choice and add it to the current classes that exist for boston.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nWrite a new method for the class of your choice that is not associated with any other name. Consider that you may have to define other functions to complete the use of this method.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun the method you created in part (b) on:\n\nThe boston dataset\nThe mtcars dataset\nAny other item\n\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nCreate an appropriate object that contains relevant information to a neighborhood of your choice in the dataset. Then, assign that object to a new class named neighborhood.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nCreate a print() method for the neighborhood class that adds to output from the default method and parent classes."
+    "text": "Q3: Classes\nWe now jump to classes, creating objects of a distinct class to associate with attributes and methods.\n\n\n\n\n\n\nImportant(a)\n\n\n\nFor the boston dataset, define a class of your choice and add it to the array of current classes that exist for boston.\n\n\n\n\n\n\n\n\nImportant(b)\n\n\n\nWrite a new method for the class of your choice (with a name not commonly used in other packages). Consider that you may have to define other functions to complete the use of this method.\n\n\n\n\n\n\n\n\nImportant(c)\n\n\n\nRun the method you created in part (b) on:\n\nThe boston dataset\nThe mtcars dataset\nAny other item\n\n\n\n\n\n\n\n\n\nImportant(d)\n\n\n\nCreate an appropriate object that contains relevant information to a neighborhood of your choice in the dataset. Then, assign that object to a new class named neighborhood.\n\n\n\n\n\n\n\n\nImportant(e)\n\n\n\nCreate a print() method for the neighborhood class that adds to output from the default method and parent classes."
   },
   {
     "objectID": "package/instructions.html",
     "href": "package/instructions.html",
     "title": "Package (400 pts)",
     "section": "",
-    "text": "The time has come!! You will be working in groups of 2-3 to create a sound, reproducible, and complete R package on a topic or interest of your choice. Here are the following elements:\n\nProposal and Outline (20 pts, due Friday, 3/27 at 11:59pm)\n\nProposal on topic in mind, with basic functionality of package. An outline will scheme out how the package will work and which functions might be created to accomplish its goal.\n\nCheckpoint #1: Minimum Viable Project (20 pts, due Monday, 4/13 at 11:59pm)\n\nOwn repository set up with multiple commits from each member in group\nBasic framework is configured, with an attempt at each component\nPass R CMD check (no errors, no warnings, minimal notes)\n\nRehearsal (30 pts, given during allotted times on Monday, 4/20)\n\n10 minute conversation with Jericho regarding package and R concepts\nIntroduction into package, followed by Q&A about its components\n\nCheckpoint #2: More Complete Viable Project (20 pts, due Friday, 4/24 at 11:59pm)\n\nSteady progress towards finished product\n\nDemonstration (60 pts, given in-class on Wednesday, 4/29)\n\n5-8 minute demo walking through package\n\nFinal package (250 pts, due Wednesday, 5/6 at 11:59pm)\n\nThe repository (representing your package) will have the following components by the last turn-in:\n\nSetup-related items\n\nDESCRIPTION.md\nLICENSE\nNAMESPACE\n\nDocumentation\n\nREADME.md file (describing main components/rationale to package)\nmanuals/ (i.e. help files)\n\nCreated for all function files and objects\n\nvignettes/ (i.e. tutorial file)\n\nOne main vignette walking through a thorough example of the package\n\n\nBack-end\n\nR/\n\n.R scripts to accomplish 8-10 tasks (consisting of one or multiple scripts)\n\ntests/\n\nAppropriate testing on all function files (via testthat)\n\ndata/\n\nAt least one real/simulated dataset that your package is centered around\n\n\n\nAfter the second exam, in-class time will be split up differently, where the first 20-25 minutes of class will be spent on a mini-lecture, while the rest of the time will be given to y’all to work on your packages. In this time, you are free to collaborate with your group members and/or consult with me about the package."
+    "text": "The time has come!! You will be working in groups of 2-3 to create a sound, reproducible, and complete R package on a topic or interest of your choice. Here are the following elements:\n\nProposal and Outline (20 pts, due Monday, 3/30 at 11:59pm)\n\nProposal on topic in mind, with basic functionality of package. An outline will scheme out how the package will work and which functions might be created to accomplish its goal.\n\nCheckpoint #1: Minimum Viable Project (20 pts, due Monday, 4/13 at 11:59pm)\n\nOwn repository set up with multiple commits from each member in group\nBasic framework is configured, with an attempt at each component\nPass R CMD check (no errors, no warnings, minimal notes)\n\nRehearsal (30 pts, given during allotted times on Monday, 4/20)\n\n10 minute conversation with Jericho regarding package and R concepts\nIntroduction into package, followed by Q&A about its components\n\nCheckpoint #2: More Complete Viable Project (20 pts, due Friday, 4/24 at 11:59pm)\n\nSteady progress towards finished product\n\nDemonstration (60 pts, given in-class on Wednesday, 4/29)\n\n5-8 minute demo walking through package\n\nFinal package (250 pts, due Wednesday, 5/6 at 11:59pm)\n\nThe repository (representing your package) will have the following components by the last turn-in:\n\nSetup-related items\n\nDESCRIPTION.md\nLICENSE\nNAMESPACE\n\nDocumentation\n\nREADME.md file (describing main components/rationale to package)\nmanuals/ (i.e. help files)\n\nCreated for all function files and objects\n\nvignettes/ (i.e. tutorial file)\n\nOne main vignette walking through a thorough example of the package\n\n\nBack-end\n\nR/\n\n.R scripts to accomplish 8-10 tasks (consisting of one or multiple scripts)\n\ntests/\n\nAppropriate testing on all function files (via testthat)\n\ndata/\n\nAt least one real/simulated dataset that your package is centered around\n\n\n\nAfter the second exam, in-class time will be split up differently, where the first 20-25 minutes of class will be spent on a mini-lecture, while the rest of the time will be given to y’all to work on your packages. In this time, you are free to collaborate with your group members and/or consult with me about the package."
   },
   {
     "objectID": "package/instructions.html#tldr",
@@ -4358,21 +4358,21 @@
     "href": "package/instructions.html#guidelines",
     "title": "Package (400 pts)",
     "section": "Guidelines",
-    "text": "Guidelines\n\n1. Form your group and determine topic.\nYou will form groups of 2-3 to work with for the project. From there, y’all will determine a topic and potential functions to center a package around.\nThe package can relate to a personal or academic interest, some statistical or analytical tool, build upon an existing package, or other items. Consult with me if you need guidance on the topic. In previous iterations of this course, the following topics have been explored:\n\nAnalyzing video game sales across the globe\nExploring Olympic data\nWorking with Federal Election Commission data\nExpanding the Pokedex for Pokemon\nProviding functionality for ASCII art via R\n\nYou can explore a couple packages in-depth from last semester to see the package structure and its content:\n\nhealthCensus\nhistoricalBorders\n\nYou can also consider some of the packages seen in CRAN itself.\n\n\n2. Set-up and develop a proposal and outline.\nWith a topic in-hand and your group determined, your group will first create a repository that will be your package itself. For all members:\n\nCheck to see if your GitHub credentials are in RStudio using gitcreds::gitcreds_get().\n\nIf no information is available, then you will need to run the following code:\n\n\n\nusethis::use_git_config(user.name = \"PUT GITHUB USERNAME HERE\", user.email = \"PUT GITHUB EMAIL HERE\")\n\n\nCreate a new GitHub token (if needed) using usethis::create_github_token(). Set an expiration date for after the semester.\nUse gitcreds::gitcreds_set() to access input for the token, then input the token inside.\n\nThen, have one group member do the following:\n\nIn RStudio: File &gt; New Project &gt; New Directory &gt; Package.\n\nCome up with the package name and find an appropriate local directory to house this repository.\nCheck the “Create a git repository” box, then click “Create Project”\n\nConnect your repository to GitHub\n\nRun usethis::use_github() to create the GitHub repository that will then link to the project.\n\nAdd the other members and Jericho (@jericholawson) as collaborators on GitHub (either via email or username)\n\nFor the other members:\n\nAccept the collaboration invite.\nIn RStudio: File &gt; New Project &gt; Package Control &gt; git.\n\nCopy the URL of the GitHub repository and then find an appropriate local directory to house this repository.\n\n\nOnce you all are able to commit, pull, and push items from your cloned repositories to GitHub, your group will then write up a proposal and outline that discusses the topic of your package, its potential functionality and tasks, and what the goal of the package is. At the bottom of the write-up, you will loosely outline the hierarchy of R scripts and their connections to other scripts and data. This will all be done in the README.md file.\nYour proposal should be be about 2-3 paragraphs, with the additional outline of the package itself.\nRefer to the criteria in the Components section for more details on this proposal.\n\n\n3. Build the package and its components.\nYou will build a base package and its components after getting approval from the proposal. The following resources will be extremely beneficial as you build your package:\n\nR Packages textbook\nPackages:\n\nusethis: For package automation and development\ndevtools: For package setup\ntestthat: For testing\nroxygen2: For documentation\n\n\nMake sure that all packages are installed and loaded to utilize these packages. Additionally, you will do the following to ensure proper roxygen2 usage:\n\nGo to Tools &gt; Project Options &gt; Build Tools\n\nMake sure all boxes are checked as seen in the first figure below.\nClick on Configure and then make sure all boxes are checked as seen in the second figure below.\nClick OK.\n\n\n\n\n\n\n\n\nYou will need to have the following components by the end of the project:\n\nREADME.md\n\nAfter removing the proposal ideas, you will write a minimum of 3 paragraphs that talks about its use, installation, and brief details. This can take on a variety of forms, but the goal of this README.md is to provide a basic understanding of what the package does for the user and how they can use it.\n\nDESCRIPTION.md\n\nThis file should contain package information, including but not limited to: the title, authors, version, description, license, and dependencies.\nThis should be updated automatically via roxygen2.\n\nLICENSE\n\nThis will provide a license to your package if needed.\nThis should be updated automatically via roxygen2.\n\nNAMESPACE\n\nShould be automatically generated using Roxygen.\n\nR/\n\nYou will need to have .R scripts that accomplish 8-10 tasks covering the main functionality of what you intend for the package to do. Each function file should contain appropriate Roxygen comments for documentation, the function itself (or functions themselves), and error handling. The scripts themselves can be of any length, but should contain a function or series of functions that carry out a particular task. For example, a script may consist of Roxygen2 comments and a function that does some data wrangling on some object x. Note that a task can be done in a single script or multiple ones.\n\ntests/\n\nYou will need to have test files for all R scripts created in your package. These test files should cover main uses of the function (including intended usage and edge cases.)\n\nmanuals/\n\nDocumentation will be created for all function files and data objects. For the manuals, you will need to have a title, description, items, values, details, and examples.\n\nvignettes/\n\nA vignette can be thought of as a tutorial for a user who wants to use multiple pieces of your package. Your group will write one vignette to detail how to run through certain actions with your package.\n\ndata/\n\nYou will need to have at least one simulated or real-world dataset. This should be connected to the functions you create.\n\n\n\n\n4. Complete checkpoints.\nRefer to the checkpoints in the Components section.\n\n\n5. Create demonstration for package use.\nYour group will develop a 5-7 minute demonstration that showcases the functionality of your package. You will want to talk about the rationale behind the package, how a starter can use it, and what it can do.\nYou can use your vignette to guide through the demonstration. The package will need to be operational on at least one of your computers, so make sure that you walk through what you will showcase prior to the demonstration.\nFor more information on the criteria, see the Components section.\n\n\n6. Complete package development.\nAll project work will need to be committed and pushed to GitHub (@jericholawson) by Wednesday, 5/6 at 11:59pm."
+    "text": "Guidelines\n\n1. Form your group and determine topic.\nYou will form groups of 2-3 to work with for the project. From there, y’all will determine a topic and potential functions to center a package around.\nThe package can relate to a personal or academic interest, some statistical or analytical tool, build upon an existing package, or other items. Consult with me if you need guidance on the topic. In previous iterations of this course, the following topics have been explored:\n\nAnalyzing video game sales across the globe\nExploring Olympic data\nWorking with Federal Election Commission data\nExpanding the Pokedex for Pokemon\nProviding functionality for ASCII art via R\n\nYou can explore a couple packages in-depth from last semester to see the package structure and its content:\n\nhealthCensus\nhistoricalBorders\n\nYou can also consider some of the packages seen in CRAN itself.\n\n\n2. Set-up and develop a proposal and outline.\nWith a topic in-hand and your group determined, your group will first create a repository that will be your package itself. For all members:\n\nCheck to see if your GitHub credentials are in RStudio using gitcreds::gitcreds_get().\n\nIf no information is available, then you will need to run the following code:\n\n\n\nusethis::use_git_config(user.name = \"PUT GITHUB USERNAME HERE\", user.email = \"PUT GITHUB EMAIL HERE\")\n\n\nCreate a new GitHub token (if needed) using usethis::create_github_token(). Set an expiration date for after the semester.\nUse gitcreds::gitcreds_set() to access input for the token, then input the token inside.\n\nThen, have one group member do the following:\n\nIn RStudio: File &gt; New Project &gt; New Directory &gt; Package.\n\nCome up with the package name and find an appropriate local directory to house this repository.\nCheck the “Create a git repository” box, then click “Create Project”\n\nConnect your repository to GitHub\n\nRun usethis::use_github() to create the GitHub repository that will then link to the project.\n\nAdd the other members and Jericho (@jericholawson) as collaborators on GitHub (either via email or username)\n\nFor the other members:\n\nAccept the collaboration invite.\nIn RStudio: File &gt; New Project &gt; Package Control &gt; git.\n\nCopy the URL of the GitHub repository and then find an appropriate local directory to house this repository.\n\n\nOnce you all are able to commit, pull, and push items from your cloned repositories to GitHub, your group will then write up a proposal and outline that discusses the topic of your package, its potential functionality and tasks, and what the goal of the package is. At the bottom of the write-up, you will loosely outline the hierarchy of R scripts and their connections to other scripts and data. This will all be done in the README.md file.\nYour proposal should be be about 2-3 paragraphs, with the additional outline of the package itself.\nRefer to the criteria in the Components section for more details on this proposal.\n\n\n3. Build the package and its components.\nYou will build a base package and its components after getting approval from the proposal. The following resources will be extremely beneficial as you build your package:\n\nR Packages textbook\nPackages:\n\nusethis: For package automation and development\ndevtools: For package setup\ntestthat: For testing\nroxygen2: For documentation\n\n\nMake sure that all packages are installed and loaded to utilize these packages. Additionally, you will do the following to ensure proper roxygen2 usage:\n\nGo to Tools &gt; Project Options &gt; Build Tools\nMake sure all boxes are checked as seen in the first figure below.\nClick on Configure and then make sure all boxes are checked as seen in the second figure below.\nClick OK.\n\n\n\n\n\n\n\n\nYou will need to have the following components by the end of the project:\n\nREADME.md\n\nAfter removing the proposal ideas, you will write a minimum of 3 paragraphs that talks about its use, installation, and brief details. This can take on a variety of forms, but the goal of this README.md is to provide a basic understanding of what the package does for the user and how they can use it.\n\nDESCRIPTION.md\n\nThis file should contain package information, including but not limited to: the title, authors, version, description, license, and dependencies.\nThis should be updated automatically via roxygen2.\n\nLICENSE\n\nThis will provide a license to your package if needed.\nThis should be updated automatically via roxygen2.\n\nNAMESPACE\n\nShould be automatically generated using Roxygen.\n\nR/\n\nYou will need to have .R scripts that accomplish 8-10 tasks covering the main functionality of what you intend for the package to do. Each function file should contain appropriate Roxygen comments for documentation, the function itself (or functions themselves), and error handling. The scripts themselves can be of any length, but should contain a function or series of functions that carry out a particular task. For example, a script may consist of Roxygen2 comments and a function that does some data wrangling on some object x. Note that a task can be done in a single script or multiple ones.\n\ntests/\n\nYou will need to have test files for all R scripts created in your package. These test files should cover main uses of the function (including intended usage and edge cases.)\n\nmanuals/\n\nDocumentation will be created for all function files and data objects. For the manuals, you will need to have a title, description, items, values, details, and examples.\n\nvignettes/\n\nA vignette can be thought of as a tutorial for a user who wants to use multiple pieces of your package. Your group will write one vignette to detail how to run through certain actions with your package.\n\ndata/\n\nYou will need to have at least one simulated or real-world dataset. This should be connected to the functions you create.\n\n\n\n\n4. Complete checkpoints.\nRefer to the checkpoints in the Components section.\n\n\n5. Create demonstration for package use.\nYour group will develop a 5-7 minute demonstration that showcases the functionality of your package. You will want to talk about the rationale behind the package, how a starter can use it, and what it can do.\nYou can use your vignette to guide through the demonstration. The package will need to be operational on at least one of your computers, so make sure that you walk through what you will showcase prior to the demonstration.\nFor more information on the criteria, see the Components section.\n\n\n6. Complete package development.\nAll project work will need to be committed and pushed to GitHub (@jericholawson) by Wednesday, 5/6 at 11:59pm."
   },
   {
     "objectID": "package/instructions.html#components",
     "href": "package/instructions.html#components",
     "title": "Package (400 pts)",
     "section": "Components",
-    "text": "Components\n\nProposal and Help File\n\n20 pts, due Friday, 3/27 at 11:59pm\n\nYour group will write a proposal and outline centered around the package that will be created. The proposal should address the topic you want your package to center around, what functionality your package will have, and how it will be impactful for users. You will loosely outline the hierarchy of R scripts and their connections to other scripts and data. This will all be done in the README.md file.\nThe grading criteria is below:\n\n(10 pts) Content: Is your topic extensive enough to create functions/data for? Do you provide possible sources for certain pieces of information in your package? Do you have a sensible layout to this potential package?\n(10 pts) Formatting: Is the proposal clear and detailed? Is it in some form of a .md file? Was this turned in on time?\n\nThe proposal will be committed and pushed as the README.md file in the GitHub repository for your package. Feedback will be given on the proposal thereafter.\n\n\nCheckpoint #1: Minimum Viable Project\n\n20 pts, due Monday, 4/13 at 11:59pm\n\nThis checkpoint is designed to make sure your team is on the right track. By this point, you should have a minimum viable project (MVP) that has the following specifications:\n\n(5 pts) Commits from each of the group members\n(10 pts) The structure mentioned in guideline #3 exists with:\n\nAt least one working file for each component\nNoticeable progress within each part\n\n(5 pts) Pass R CMD check (no errors, no warnings, and minimal notes)\n\nTeams will get feedback about their progress on GitHub after the submission date.\n\n\nRehearsal\n\n30 pts, conducted on Monday, 4/20 in lieu of lecture\n\nA rehearsal will be conducted to analyze your ability to think critically about code as a programmer and provide an opportunity to showcase your package (and its potential) in a 1-on-1 format.\nDuring the rehearsal, you will be discussing the following:\n\n(10 pts) Introduce the rationale and overview of your package up to this point\n\ne.g. What is it? Who is it for? Why? How?\n\n(10 pts) Answer 2-3 questions related to specific parts of your code\n\ne.g. What considerations are needed for your function? How does the function operate? Why is it coded as such?\n\n(10 pts) Critique your skills as a programmer and the package at its current state\n\ne.g. Strengths? Weaknesses?\n\n\nArrive with the understanding that mistakes are absolutely fine along the way, but do not try to oversell yourself or the package’s capabilities.\nSignups will occur the week prior.\n\n\nCheckpoint #2: More Complete Viable Project\n\n20 pts, due Friday, 4/24 at 11:59pm\n\nContinuing the momentum from the last checkpoint, you will have new additions to your package such that the following criteria is met:\n\n(4 pts) Complete, rough drafts of your README, DESCRIPTION, LICENSE, and NAMESPACE files\n(4 pts) At least 5 mostly-created function files created for your R/ folder\n(4 pts) At least one complete test file\n(4 pts) A rough draft of a sample vignette\n(4 pts) All data necessary to run through package\n\nTeams will get additional feedback about their progress after the submission date.\n\n\nDemonstration\n\n60 pts, given on Wednesday, 4/29 during lecture\n\nDuring the final lecture of the semester (i.e. Wednesday, 4/29), teams will present a demonstration of their package to the class. Signups will occur the week after Thanksgiving.\nThe goal of the demonstration is to show the functionality and rationale of the package. The demonstration should take about 5-7 minutes. The following criteria will be used:\n\nContext (20 pts)\n\nProvides the rationale behind why your package is relevant and useful\nShowcases context in the functions that are presented\nDiscusses future directions and pitfalls of this package\n\nFunctionality (20 pts)\n\nShows how 2-3 functions work, either through a given walkthrough or vignette\nDiscusses accessing the package and how it can be used in conjunction with other tools\n\nPresentation (20 pts)\n\nAll members provide meaningful insights in an engaging and clear fashion\nDemonstration is organized, with minimal errors and mistakes\nEqual participation amongst all group members\n\n\n\n\nFinal Package\n\n250 pts, due Wednesday, 5/6 at 11:59pm\n\nThe final package will be completed by Wednesday, 5/6 at 11:59pm. When finished, you will commit and push all changes via GitHub (via @jericholawson).\nThe layout from guideline #3 will be used here. Specifically, the criteria will be the following:\n\nComponents (50 pts)\n\nAll parts are included in the package and meet the requirements mentioned in Guideline #3.\n\nFunctionality (50 pts)\n\nEach part of the package works as intended, with no errors or warnings.\n\nAppearance (50 pts)\n\nCode is well-commented, organized, and uses certain practices for efficiency.\nText documents are organized and clear to the reader.\nFile names are clear and to-the-point.\n\nRelevance (50 pts)\n\nRationale to the package is legitimate.\nFunctions correspond to the package’s intended goal and description.\n\nDetail (50 pts)\n\nAppropriate amount of description that conveys what the package does.\nA complete set of R files and vignettes that provide a basic understanding of the package."
+    "text": "Components\n\nProposal and Help File\n\n20 pts, due Monday, 3/30 at 11:59pm\n\nYour group will write a proposal and outline centered around the package that will be created. The proposal should address the topic you want your package to center around, what functionality your package will have, and how it will be impactful for users. You will loosely outline the hierarchy of R scripts and their connections to other scripts and data. This will all be done in the README.md file.\nThe grading criteria is below:\n\n(10 pts) Content: Is your topic extensive enough to create functions/data for? Do you provide possible sources for certain pieces of information in your package? Do you have a sensible layout to this potential package?\n(10 pts) Formatting: Is the proposal clear and detailed? Is it in some form of a .md file? Was this turned in on time?\n\nThe proposal will be committed and pushed as the README.md file in the GitHub repository for your package. Feedback will be given on the proposal thereafter.\n\n\nCheckpoint #1: Minimum Viable Project\n\n20 pts, due Monday, 4/13 at 11:59pm\n\nThis checkpoint is designed to make sure your team is on the right track. By this point, you should have a minimum viable project (MVP) that has the following specifications:\n\n(5 pts) Commits from each of the group members\n(10 pts) The structure mentioned in guideline #3 exists with:\n\nAt least one working file for each component\nNoticeable progress within each part\n\n(5 pts) Pass R CMD check (no errors, no warnings, and minimal notes)\n\nTeams will get feedback about their progress on GitHub after the submission date.\n\n\nRehearsal\n\n30 pts, conducted on Monday, 4/20 in lieu of lecture\n\nA rehearsal will be conducted to analyze your ability to think critically about code as a programmer and provide an opportunity to showcase your package (and its potential) in a 1-on-1 format.\nDuring the rehearsal, you will be discussing the following:\n\n(10 pts) Introduce the rationale and overview of your package up to this point\n\ne.g. What is it? Who is it for? Why? How?\n\n(10 pts) Answer 2-3 questions related to specific parts of your code\n\ne.g. What considerations are needed for your function? How does the function operate? Why is it coded as such?\n\n(10 pts) Critique your skills as a programmer and the package at its current state\n\ne.g. Strengths? Weaknesses?\n\n\nArrive with the understanding that mistakes are absolutely fine along the way, but do not try to oversell yourself or the package’s capabilities.\nSignups will occur the week prior.\n\n\nCheckpoint #2: More Complete Viable Project\n\n20 pts, due Friday, 4/24 at 11:59pm\n\nContinuing the momentum from the last checkpoint, you will have new additions to your package such that the following criteria is met:\n\n(4 pts) Complete, rough drafts of your README, DESCRIPTION, LICENSE, and NAMESPACE files\n(4 pts) At least 5 mostly-created function files created for your R/ folder\n(4 pts) At least one complete test file\n(4 pts) A rough draft of a sample vignette\n(4 pts) All data necessary to run through package\n\nTeams will get additional feedback about their progress after the submission date.\n\n\nDemonstration\n\n60 pts, given on Wednesday, 4/29 during lecture\n\nDuring the final lecture of the semester (i.e. Wednesday, 4/29), teams will present a demonstration of their package to the class. Signups will occur the week after Thanksgiving.\nThe goal of the demonstration is to show the functionality and rationale of the package. The demonstration should take about 5-7 minutes. The following criteria will be used:\n\nContext (20 pts)\n\nProvides the rationale behind why your package is relevant and useful\nShowcases context in the functions that are presented\nDiscusses future directions and pitfalls of this package\n\nFunctionality (20 pts)\n\nShows how 2-3 functions work, either through a given walkthrough or vignette\nDiscusses accessing the package and how it can be used in conjunction with other tools\n\nPresentation (20 pts)\n\nAll members provide meaningful insights in an engaging and clear fashion\nDemonstration is organized, with minimal errors and mistakes\nEqual participation amongst all group members\n\n\n\n\nFinal Package\n\n250 pts, due Wednesday, 5/6 at 11:59pm\n\nThe final package will be completed by Wednesday, 5/6 at 11:59pm. When finished, you will commit and push all changes via GitHub (via @jericholawson).\nThe layout from guideline #3 will be used here. Specifically, the criteria will be the following:\n\nComponents (50 pts)\n\nAll parts are included in the package and meet the requirements mentioned in Guideline #3.\n\nFunctionality (50 pts)\n\nEach part of the package works as intended, with no errors or warnings.\n\nAppearance (50 pts)\n\nCode is well-commented, organized, and uses certain practices for efficiency.\nText documents are organized and clear to the reader.\nFile names are clear and to-the-point.\n\nRelevance (50 pts)\n\nRationale to the package is legitimate.\nFunctions correspond to the package’s intended goal and description.\n\nDetail (50 pts)\n\nAppropriate amount of description that conveys what the package does.\nA complete set of R files and vignettes that provide a basic understanding of the package."
   },
   {
     "objectID": "package/instructions.html#overview",
     "href": "package/instructions.html#overview",
     "title": "Package (400 pts)",
     "section": "",
-    "text": "The time has come!! You will be working in groups of 2-3 to create a sound, reproducible, and complete R package on a topic or interest of your choice. Here are the following elements:\n\nProposal and Outline (20 pts, due Friday, 3/27 at 11:59pm)\n\nProposal on topic in mind, with basic functionality of package. An outline will scheme out how the package will work and which functions might be created to accomplish its goal.\n\nCheckpoint #1: Minimum Viable Project (20 pts, due Monday, 4/13 at 11:59pm)\n\nOwn repository set up with multiple commits from each member in group\nBasic framework is configured, with an attempt at each component\nPass R CMD check (no errors, no warnings, minimal notes)\n\nRehearsal (30 pts, given during allotted times on Monday, 4/20)\n\n10 minute conversation with Jericho regarding package and R concepts\nIntroduction into package, followed by Q&A about its components\n\nCheckpoint #2: More Complete Viable Project (20 pts, due Friday, 4/24 at 11:59pm)\n\nSteady progress towards finished product\n\nDemonstration (60 pts, given in-class on Wednesday, 4/29)\n\n5-8 minute demo walking through package\n\nFinal package (250 pts, due Wednesday, 5/6 at 11:59pm)\n\nThe repository (representing your package) will have the following components by the last turn-in:\n\nSetup-related items\n\nDESCRIPTION.md\nLICENSE\nNAMESPACE\n\nDocumentation\n\nREADME.md file (describing main components/rationale to package)\nmanuals/ (i.e. help files)\n\nCreated for all function files and objects\n\nvignettes/ (i.e. tutorial file)\n\nOne main vignette walking through a thorough example of the package\n\n\nBack-end\n\nR/\n\n.R scripts to accomplish 8-10 tasks (consisting of one or multiple scripts)\n\ntests/\n\nAppropriate testing on all function files (via testthat)\n\ndata/\n\nAt least one real/simulated dataset that your package is centered around\n\n\n\nAfter the second exam, in-class time will be split up differently, where the first 20-25 minutes of class will be spent on a mini-lecture, while the rest of the time will be given to y’all to work on your packages. In this time, you are free to collaborate with your group members and/or consult with me about the package."
+    "text": "The time has come!! You will be working in groups of 2-3 to create a sound, reproducible, and complete R package on a topic or interest of your choice. Here are the following elements:\n\nProposal and Outline (20 pts, due Monday, 3/30 at 11:59pm)\n\nProposal on topic in mind, with basic functionality of package. An outline will scheme out how the package will work and which functions might be created to accomplish its goal.\n\nCheckpoint #1: Minimum Viable Project (20 pts, due Monday, 4/13 at 11:59pm)\n\nOwn repository set up with multiple commits from each member in group\nBasic framework is configured, with an attempt at each component\nPass R CMD check (no errors, no warnings, minimal notes)\n\nRehearsal (30 pts, given during allotted times on Monday, 4/20)\n\n10 minute conversation with Jericho regarding package and R concepts\nIntroduction into package, followed by Q&A about its components\n\nCheckpoint #2: More Complete Viable Project (20 pts, due Friday, 4/24 at 11:59pm)\n\nSteady progress towards finished product\n\nDemonstration (60 pts, given in-class on Wednesday, 4/29)\n\n5-8 minute demo walking through package\n\nFinal package (250 pts, due Wednesday, 5/6 at 11:59pm)\n\nThe repository (representing your package) will have the following components by the last turn-in:\n\nSetup-related items\n\nDESCRIPTION.md\nLICENSE\nNAMESPACE\n\nDocumentation\n\nREADME.md file (describing main components/rationale to package)\nmanuals/ (i.e. help files)\n\nCreated for all function files and objects\n\nvignettes/ (i.e. tutorial file)\n\nOne main vignette walking through a thorough example of the package\n\n\nBack-end\n\nR/\n\n.R scripts to accomplish 8-10 tasks (consisting of one or multiple scripts)\n\ntests/\n\nAppropriate testing on all function files (via testthat)\n\ndata/\n\nAt least one real/simulated dataset that your package is centered around\n\n\n\nAfter the second exam, in-class time will be split up differently, where the first 20-25 minutes of class will be spent on a mini-lecture, while the rest of the time will be given to y’all to work on your packages. In this time, you are free to collaborate with your group members and/or consult with me about the package."
   },
   {
     "objectID": "package/instructions.html#rehearsal",
@@ -4671,30 +4671,30 @@
   {
     "objectID": "lectures/w9l2_packageIntro.html#last-time",
     "href": "lectures/w9l2_packageIntro.html#last-time",
-    "title": "Object-Oriented Programming (OOP)",
-    "section": "",
-    "text": "S3 objects\n\nOther features\n\nPackages\n\nWhy?\nAnatomy\nExamples"
+    "title": "Introduction to Packages",
+    "section": "Last Time",
+    "text": "Last Time\n\nS3 objects\n\nOther features\n\nPackages\n\nWhy?\nAnatomy\nExamples\n\nExercises\n\nExploration of package"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#today",
     "href": "lectures/w9l2_packageIntro.html#today",
-    "title": "Object-Oriented Programming (OOP)",
+    "title": "Introduction to Packages",
     "section": "Today",
-    "text": "Today\n\nPackages\n\nBreakdown of seven parts\nExercises: Building the R package"
+    "text": "Today\n\nPackages\n\nBreakdown of its parts\n\nReview topics\n\n\nNote: Package creation will NOT be covered on the upcoming exam!"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#package-breakdown",
     "href": "lectures/w9l2_packageIntro.html#package-breakdown",
-    "title": "Object-Oriented Programming (OOP)",
-    "section": "Package breakdown",
-    "text": "Package breakdown\n\nDESCRIPTION: summary of work\nNAMESPACE: self-containment\nR/: all code\ntests/: tests for code\nman/: manual for code\nvignettes/: articles\ndata/: any data needed\n\nCheatsheet: link"
+    "title": "Introduction to Packages",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package\n\nCheatsheet: link"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#description",
     "href": "lectures/w9l2_packageIntro.html#description",
-    "title": "Object-Oriented Programming (OOP)",
+    "title": "Introduction to Packages",
     "section": "DESCRIPTION",
-    "text": "DESCRIPTION\n\nContains a summary of the work\nProvides the following:\n\nTitle\nDescription\nVersion number\nImports\nAuthor\nand more!"
+    "text": "DESCRIPTION\n\nSummary of work\n\nTitle and description should be changed over time\nChapter 9 of R Packages"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#description-1",
@@ -4706,58 +4706,58 @@
   {
     "objectID": "lectures/w9l2_packageIntro.html#namespace",
     "href": "lectures/w9l2_packageIntro.html#namespace",
-    "title": "Object-Oriented Programming (OOP)",
+    "title": "Introduction to Packages",
     "section": "NAMESPACE",
-    "text": "NAMESPACE\n\nMakes your packages self-contained\nCan use devtools::document() to generate namespace automatically\n\nResults from creating R files"
+    "text": "NAMESPACE\n\nMakes your packages self-contained\nCan use devtools::document() to generate namespace automatically\n\nResults from creating R files\n\nChapter 10.2 of R Packages"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#r",
     "href": "lectures/w9l2_packageIntro.html#r",
-    "title": "Object-Oriented Programming (OOP)",
+    "title": "Introduction to Packages",
     "section": "R/",
-    "text": "R/\n\nAll R code is housed here through .R scripts\n\nA single file for each R function\nuse_r(\"function_name\")"
+    "text": "R/\n\nAll R code is housed here through .R scripts\n\nA single file for each R function\nuse_r(\"function_name\")\n\nChapter 6 of R Packages"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#r-example",
     "href": "lectures/w9l2_packageIntro.html#r-example",
-    "title": "Object-Oriented Programming (OOP)",
-    "section": "R/: example",
-    "text": "R/: example"
+    "title": "Introduction to Packages",
+    "section": "R/: Example",
+    "text": "R/: Example"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#tests",
     "href": "lectures/w9l2_packageIntro.html#tests",
-    "title": "Object-Oriented Programming (OOP)",
-    "section": "tests",
-    "text": "tests\n\nTests to make sure your functions are working properly\n\nuse_test() to create test file"
+    "title": "Introduction to Packages",
+    "section": "Tests",
+    "text": "Tests\n\nTests to make sure your functions are working properly\n\nuse_test() to create test file\n\nChapter 13 of R Packages"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#man",
     "href": "lectures/w9l2_packageIntro.html#man",
-    "title": "Object-Oriented Programming (OOP)",
-    "section": "man",
-    "text": "man\n\nDocumentation for your code\n\nDoes so for each function (automatically with roxygen2)\nContains the following:\n\nDescription\nUsage\nArguments\nDetails\nValue\nNote\nReferences\nExamples"
+    "title": "Introduction to Packages",
+    "section": "Man",
+    "text": "Man\n\nDocumentation for your code\n\nDoes so for each function (automatically with roxygen2)\nContains the following:\n\nDescription\nUsage\nArguments\nDetails\nValue\nNote\nReferences\nExamples\n\n\nChapter 16 of R Packages"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#example-man",
     "href": "lectures/w9l2_packageIntro.html#example-man",
-    "title": "Object-Oriented Programming (OOP)",
+    "title": "Introduction to Packages",
     "section": "Example: man",
     "text": "Example: man"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#vignettes",
     "href": "lectures/w9l2_packageIntro.html#vignettes",
-    "title": "Object-Oriented Programming (OOP)",
-    "section": "vignettes",
-    "text": "vignettes\n\nExplanations of the functionality of your package\nUser-friendly versions of help files (with more functionality)\n\nusethis::use_vignette(\"my-vignette\")\nCreates R Markdown document to add code and text"
+    "title": "Introduction to Packages",
+    "section": "Vignettes",
+    "text": "Vignettes\n\nExplanations of the functionality of your package\nUser-friendly versions of help files (with more functionality)\n\nusethis::use_vignette(\"my-vignette\")\nCreates R Markdown document to add code and text\n\nChapter 17 of R Packages"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#data",
     "href": "lectures/w9l2_packageIntro.html#data",
-    "title": "Object-Oriented Programming (OOP)",
-    "section": "data",
-    "text": "data\n\nAny data used in your package\n\nStored datasets\nDatasets for examples\nusethis::use_data(data) for some data"
+    "title": "Introduction to Packages",
+    "section": "Data",
+    "text": "Data\n\nAny data used in your package\n\nStored datasets\nDatasets for examples\nusethis::use_data(data) for some data\n\nChapter 7 of R Packages"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#for-now-and-tuesday",
@@ -4765,5 +4765,75 @@
     "title": "Object-Oriented Programming (OOP)",
     "section": "For now and Tuesday:",
     "text": "For now and Tuesday:\n\nWork on exercises #7: Making an R Package (due Tuesday at 2:45pm)\nRead Advanced R: chapter 5\nRead R Packages: chapters 16\nComplete questions on above chapters in Moodle by Tuesday at 2:45pm\n\nTurn in .qmd and rendered .html file to\n\nQuiz next Thursday at beginning of class!\n\nWill be open-note coding quiz"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#discussion",
+    "href": "lectures/w9l2_packageIntro.html#discussion",
+    "title": "Introduction to Packages",
+    "section": "Discussion",
+    "text": "Discussion\nIn pairs, discuss the following questions regarding your investigation into package components from last time:\n\nWhat were the key components in a package?\nFor one specific R script: what pieces of code and concepts were used when writing the script?\nWhat things did you find confusing?"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#creating-a-package",
+    "href": "lectures/w9l2_packageIntro.html#creating-a-package",
+    "title": "Introduction to Packages",
+    "section": "Creating a Package",
+    "text": "Creating a Package\n\nusethis: For package automation and development\ndevtools: For package setup\ntestthat: For testing\nroxygen2: For documentation"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#github",
+    "href": "lectures/w9l2_packageIntro.html#github",
+    "title": "Introduction to Packages",
+    "section": "GitHub",
+    "text": "GitHub\n\nWill host the package\nCollaboration\nNeed to create and store token"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#github-setup",
+    "href": "lectures/w9l2_packageIntro.html#github-setup",
+    "title": "Introduction to Packages",
+    "section": "GitHub Setup",
+    "text": "GitHub Setup\n\nTo retrieve your git credentials in RStudio:\n\n\ngitcreds::gitcreds_get()\n\n\nIf no credentials are there:\n\n\nusethis::use_git_config(user.name = \"PUT GITHUB USERNAME HERE\", user.email = \"PUT GITHUB EMAIL HERE\")"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#github-setup-1",
+    "href": "lectures/w9l2_packageIntro.html#github-setup-1",
+    "title": "Introduction to Packages",
+    "section": "GitHub Setup",
+    "text": "GitHub Setup\n\nCreate token\n\n\nusethis::create_github_token()\n\n\nStore token\n\n\ngitcreds::gitcreds_set()"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#package-creation",
+    "href": "lectures/w9l2_packageIntro.html#package-creation",
+    "title": "Introduction to Packages",
+    "section": "Package Creation",
+    "text": "Package Creation"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#cloning-the-package",
+    "href": "lectures/w9l2_packageIntro.html#cloning-the-package",
+    "title": "Introduction to Packages",
+    "section": "Cloning the Package",
+    "text": "Cloning the Package"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#build-tools",
+    "href": "lectures/w9l2_packageIntro.html#build-tools",
+    "title": "Introduction to Packages",
+    "section": "Build Tools",
+    "text": "Build Tools\n\nTools &gt; Project Options &gt; Build Tools"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#package-breakdown-1",
+    "href": "lectures/w9l2_packageIntro.html#package-breakdown-1",
+    "title": "Introduction to Packages",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#r-cmd-check",
+    "href": "lectures/w9l2_packageIntro.html#r-cmd-check",
+    "title": "Introduction to Packages",
+    "section": "R CMD Check",
+    "text": "R CMD Check\n\nInstalls and checks the integrity of your R packages\n\nErrors? Correct documentation? Functionality?\n\nAppendix A of R Packages"
   }
 ]
