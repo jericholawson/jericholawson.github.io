@@ -312,7 +312,7 @@
     "href": "schedule.html#week-9-data-tidying-323---327",
     "title": "Schedule",
     "section": "Week 9: Data Tidying (3/23 - 3/27)",
-    "text": "Week 9: Data Tidying (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25Friday, 3/27\n\n\nLecture #15: Data Tidying\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nHW #3 (due Tuesday, 3/3 at 8:59pm)\n\n\n\n\n\nQuiz #3: Functions and Apply\nLecture #16: Data Tidying, Part II\n\nSlides\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Sunday, 3/8 at 8:59pm)\n\n\n\n\n\nLab #6: Data Tidying"
+    "text": "Week 9: Data Tidying (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25Friday, 3/27\n\n\n\n\n\n\n\n\nNoteLecture: Data Tidying\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Pivoting\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #6: Data Tidying\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-10-programming-330---43",
@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling and Joining\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nStudy Guide\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nStudy Guide\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -3630,7 +3630,7 @@
     "href": "schedule.html#week-6-data-wranglingjoining-32---36",
     "title": "Schedule",
     "section": "Week 6: Data Wrangling/Joining (3/2 - 3/6)",
-    "text": "Week 6: Data Wrangling/Joining (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4Friday, 3/6\n\n\n\n\n\n\n\n\nNoteLecture: Data Wrangling\n\n\n\n\nSlides\nActivity\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #4 (due Wednesday, 3/4 at 11:59pm)\n\nTemplate\n\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Joining\n\n\n\n\nSlides\nActivity\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #4 (due tonight at 11:59pm)\n\nTemplate\n\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\nExam in-class on next Friday, 3/13\n\nStudy Guide\n\n\n\n\n\n\n\n\n\n\n\n\nNoteProject Working Time and Lab #5\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 6: Data Wrangling/Joining (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4Friday, 3/6\n\n\n\n\n\n\n\n\nNoteLecture: Data Wrangling\n\n\n\n\nSlides\nActivity\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #4 (due Wednesday, 3/4 at 11:59pm)\n\nTemplate\n\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Joining\n\n\n\n\nSlides\nActivity\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #4 (due tonight at 11:59pm)\n\nTemplate\n\nProject #1: Video + Repository (due Friday, 3/6 at 11:59pm)\n\nInstructions\n\nExam in-class on next Friday, 3/13\n\nStudy Guide\n\n\n\n\n\n\n\n\n\n\n\n\nNoteProject Working Time and Lab #5\n\n\n\n\nInstructions\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nProject #1: Video + Repository (due tonight at 11:59pm)\n\nInstructions\nNote: A late day can be used for submission here!\n\nLab #5 (due Wednesday, 3/11 at 11:59pm)\n\nTemplate\n\nExam in-class on next Friday, 3/13\n\nStudy Guide"
   },
   {
     "objectID": "lectures/w6l2_actTemp.html",
@@ -4079,5 +4079,369 @@
     "title": "Data Joining",
     "section": "",
     "text": "Data wrangling\n\nOrdering\nSubsetting\nCreating\nSummarizing\n\nExamples"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#welcome-to-the-second-half",
+    "href": "lectures/w9l1_tidying.html#welcome-to-the-second-half",
+    "title": "Data Tidying",
+    "section": "Welcome to the Second Half!",
+    "text": "Welcome to the Second Half!\nSo far, we’ve explored these topics:\n\nData basics\nData visualization\nData wrangling/joining\nR coding and git"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#welcome-to-the-second-half-1",
+    "href": "lectures/w9l1_tidying.html#welcome-to-the-second-half-1",
+    "title": "Data Tidying",
+    "section": "Welcome to the Second Half!",
+    "text": "Welcome to the Second Half!\nWe will now focus on these topics:\n\nTidying and pivoting data (this week)\nData ethics (next week)\nFormal coding (the week after)\nSpatial thinking (rest of semester)"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#today",
+    "href": "lectures/w9l1_tidying.html#today",
+    "title": "Data Tidying",
+    "section": "Today",
+    "text": "Today\n\nFormatting up columns and values\nParsing dates\nConditionals"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#dataset-for-today",
+    "href": "lectures/w9l1_tidying.html#dataset-for-today",
+    "title": "Data Tidying",
+    "section": "Dataset for Today",
+    "text": "Dataset for Today\n\nPrison_Boundaries data\n\nAccessed here\n\nUse read.csv() command\n\n410 observations, 32 variables\nSpatial information about prisons\n\nCreate a new .qmd file in your submission repository for turn-in. Use the following code:\n\n\nlibrary(tidyverse)\nprisons &lt;- read.csv(\"../data/Prison_Boundaries.csv\")"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#data-basics",
+    "href": "lectures/w9l1_tidying.html#data-basics",
+    "title": "Data Tidying",
+    "section": "Data Basics",
+    "text": "Data Basics\n\nWe’ve worked with rectangular datasets\n\nRows for observations, columns for variables\nQuestion 1: What have been some issues you’ve had with this setup? Can data be condensed?"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#data-basics-1",
+    "href": "lectures/w9l1_tidying.html#data-basics-1",
+    "title": "Data Tidying",
+    "section": "Data Basics",
+    "text": "Data Basics\n\nMissing data\n\nNAs, -999 values, blank spaces\nis.na() for identifying\n\n\n\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5           NA         0.2  setosa\n2          4.9         3.0           NA         0.2    -999\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#data-basics-2",
+    "href": "lectures/w9l1_tidying.html#data-basics-2",
+    "title": "Data Tidying",
+    "section": "Data Basics",
+    "text": "Data Basics\n\nWrong R type for a column\n\nProblematic when running analysis\n\n\n\n\n                mpg cyl vs am gear carb\nMazda RX4      21.0   6  0  1    4    4\nMazda RX4 Wag  21.0   6  0  1    4    4\nDatsun 710     22.8   4  1  1    4    1\nHornet 4 Drive 21.4   6  1  0    3    1"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#data-basics-3",
+    "href": "lectures/w9l1_tidying.html#data-basics-3",
+    "title": "Data Tidying",
+    "section": "Data Basics",
+    "text": "Data Basics\n\nMultiple variables referring to same metric, but altered by one item\n\ne.g. year, location\ne.g. collecting measurement heights from every person\nWill circle back to next lecture\n\n\n\n\n       Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec\n1973  9007  8106  8928  9137 10017 10826 11317 10744  9713  9938  9161  8927\n1974  7750  6981  8038  8422  8714  9512 10120  9823  8743  9129  8710  8680\n1975  8162  7306  8124  7870  9387  9556 10093  9620  8285  8466  8160  8034\n1976  7717  7461  7767  7925  8623  8945 10078  9179  8037  8488  7874  8647\n1977  7792  6957  7726  8106  8890  9299 10625  9302  8314  8850  8265  8796\n1978  7836  6892  7791  8192  9115  9434 10484  9827  9110  9070  8633  9240"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#vector-types",
+    "href": "lectures/w9l1_tidying.html#vector-types",
+    "title": "Data Tidying",
+    "section": "Vector Types",
+    "text": "Vector Types\n\nFor an imported data set, this is stored as a data.frame object\n\nComposed of a series of vectors that make up the columns\nEach vector is composed of different R types:\n\ndouble: seen with numeric data (2)\ncharacter: seen for written data (“2”)\nlogical: T, F, or NA\nDate: represents a calendar date\nOther types as well\n\nMay need to factorize a vector as a factor\n\nUsed for categorical data"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#vector-types-1",
+    "href": "lectures/w9l1_tidying.html#vector-types-1",
+    "title": "Data Tidying",
+    "section": "Vector types",
+    "text": "Vector types\n\nCan check the R type for an object with typeof()\n\n\ntypeof(mtcars$am)\n\n[1] \"double\""
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#hierarchy",
+    "href": "lectures/w9l1_tidying.html#hierarchy",
+    "title": "Data Tidying",
+    "section": "Hierarchy",
+    "text": "Hierarchy\n\nA vector must consist of elements of the same type\n\ninteger, logical, double, character\n\n\nQuestion 2: What happens when we create a vector with two types represented in it? Is there a hierarchy to these types?\n\nx4 &lt;- c(2, \"times\", TRUE, 4)"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#testing-and-coercion",
+    "href": "lectures/w9l1_tidying.html#testing-and-coercion",
+    "title": "Data Tidying",
+    "section": "Testing and Coercion",
+    "text": "Testing and Coercion\n\nis.____() returns T/F if an object is of that type\n\ni.e. testing\n\nas.____() converts that object to the specified type\n\ni.e. coercion"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#testing-and-coercion-1",
+    "href": "lectures/w9l1_tidying.html#testing-and-coercion-1",
+    "title": "Data Tidying",
+    "section": "Testing and Coercion",
+    "text": "Testing and Coercion\n\nmtcars$am\n\n [1] 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 1 1 1\n\nis.character(mtcars$am)\n\n[1] FALSE\n\nas.character(mtcars$am)\n\n [1] \"1\" \"1\" \"1\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"0\" \"1\" \"1\"\n[20] \"1\" \"0\" \"0\" \"0\" \"0\" \"0\" \"1\" \"1\" \"1\" \"1\" \"1\" \"1\" \"1\""
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#testing-and-coercion-2",
+    "href": "lectures/w9l1_tidying.html#testing-and-coercion-2",
+    "title": "Data Tidying",
+    "section": "Testing and Coercion",
+    "text": "Testing and Coercion\n\nEach type has its own function\n\ne.g. as.double(), as.character(), as.logical()\nConsider the functionality of each type\n\n\nQuestion 3: Use the + and mean() operations on the following vectors:\n\nx1 &lt;- c(1, 2, 3, 4, 5)\nx2 &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\")\nx3 &lt;- c(TRUE, FALSE, FALSE, TRUE, FALSE)"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#special-case-dates",
+    "href": "lectures/w9l1_tidying.html#special-case-dates",
+    "title": "Data Tidying",
+    "section": "Special Case: dates",
+    "text": "Special Case: dates\n\nWhen dates are imported into R, they will most likely be of a character type\n\nConversion to special type: date\nAllows for unique calculations and tasks\n\nUse of lubridate package\n\nas.date(), year(), ymd_hms()\nCan find this on lubridate cheatsheet here"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#use-of-mutate",
+    "href": "lectures/w9l1_tidying.html#use-of-mutate",
+    "title": "Data Tidying",
+    "section": "Use of mutate()",
+    "text": "Use of mutate()\n\nWhenever formatting columns, we will use mutate to overwrite a variable with a new cleaned up variable.\n\n\nprisons |&gt;\n  mutate(insert new column here)"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#setting-dates",
+    "href": "lectures/w9l1_tidying.html#setting-dates",
+    "title": "Data Tidying",
+    "section": "Setting Dates",
+    "text": "Setting Dates\n\nymd_hms() will take a date formatted as year, month, day, hour, minute, second and convert it to a date time format\n\n\nBeforeCodeAfter\n\n\n\nprisons |&gt; \n  select(NAME, SOURCEDATE) |&gt; \n  head(3)\n\n               NAME             SOURCEDATE\n1 BALDWIN PARK JAIL 2018/05/16 00:00:00+00\n2    CLAREMONT JAIL 2018/05/25 00:00:00+00\n3      CONCORD JAIL 2018/05/25 00:00:00+00\n\n\n\n\n\nlibrary(lubridate)\n\nprisons &lt;- \n  prisons |&gt; \n  mutate(SOURCEDATE = ymd_hms(SOURCEDATE))\n\n\n\n\n\n               NAME SOURCEDATE\n1 BALDWIN PARK JAIL 2018-05-16\n2    CLAREMONT JAIL 2018-05-25\n3      CONCORD JAIL 2018-05-25"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#setting-na-values",
+    "href": "lectures/w9l1_tidying.html#setting-na-values",
+    "title": "Data Tidying",
+    "section": "Setting NA values",
+    "text": "Setting NA values\n\nna_if() will take a variable and set specified values to NA\n\n\nBeforeCodeAfter\n\n\n\nprisons |&gt; \n  select(NAME, POPULATION) |&gt; \n  head(3)\n\n               NAME POPULATION\n1 BALDWIN PARK JAIL       -999\n2    CLAREMONT JAIL       -999\n3      CONCORD JAIL       -999\n\nsum(is.na(prisons$POPULATION))\n\n[1] 0\n\n\n\n\n\nprisons &lt;- \n  prisons |&gt; \n  mutate(POPULATION = na_if(POPULATION, -999))\n\n\n\n\nprisons |&gt; \n  select(NAME, POPULATION) |&gt; \n  head(3)\n\n               NAME POPULATION\n1 BALDWIN PARK JAIL         NA\n2    CLAREMONT JAIL         NA\n3      CONCORD JAIL         NA\n\nsum(is.na(prisons$POPULATION))\n\n[1] 132"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#replacing-strings",
+    "href": "lectures/w9l1_tidying.html#replacing-strings",
+    "title": "Data Tidying",
+    "section": "Replacing Strings",
+    "text": "Replacing Strings\n\nstr_replace() will take a variable and replace an existing string with a new string\n\n\nBeforeCodeAfter\n\n\n\nprisons |&gt; \n  select(NAME, ADDRESS) |&gt; \n  head(3)\n\n               NAME                   ADDRESS\n1 BALDWIN PARK JAIL 14403 EAST PACIFIC AVENUE\n2    CLAREMONT JAIL          570 W BONITA AVE\n3      CONCORD JAIL       1350 GALINDO STREET\n\n\n\n\n\nprisons &lt;- \n  prisons |&gt; \n  mutate(ADDRESS = str_replace(ADDRESS, \n                               \"AVENUE\", \n                               \"AVE\"))\n\n\n\n\n\n               NAME                ADDRESS\n1 BALDWIN PARK JAIL 14403 EAST PACIFIC AVE\n2    CLAREMONT JAIL       570 W BONITA AVE\n3      CONCORD JAIL    1350 GALINDO STREET"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#removing-strings",
+    "href": "lectures/w9l1_tidying.html#removing-strings",
+    "title": "Data Tidying",
+    "section": "Removing Strings",
+    "text": "Removing Strings\n\nstr_replace() will take a variable and replace an existing string with a new string\n\n\nBeforeCodeAfter\n\n\n\nprisons |&gt; select(NAME, Creator) |&gt; head(3)\n\n               NAME       Creator\n1 BALDWIN PARK JAIL HostedByHIFLD\n2    CLAREMONT JAIL HostedByHIFLD\n3      CONCORD JAIL HostedByHIFLD\n\n\n\n\n\nprisons &lt;- \n  prisons |&gt; \n  mutate(Creator = str_replace(Creator, \n                               \"HostedBy\", \n                               \"\"))\n\n\n\n\n\n               NAME Creator\n1 BALDWIN PARK JAIL   HIFLD\n2    CLAREMONT JAIL   HIFLD\n3      CONCORD JAIL   HIFLD"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#conditionals",
+    "href": "lectures/w9l1_tidying.html#conditionals",
+    "title": "Data Tidying",
+    "section": "Conditionals",
+    "text": "Conditionals\n\ncase_when() allows us to set values when conditions are met\n\n\nBeforeCodeAfter\n\n\n\nprisons |&gt; \n  select(SECURELVL) |&gt; \n  distinct()\n\n      SECURELVL\n1 NOT AVAILABLE\n2       MINIMUM\n3        MEDIUM\n4      JUVENILE\n5       MAXIMUM\n\n\n\n\n\nprisons &lt;- \n  prisons |&gt; \n  mutate(JUVENILE = \n           case_when(\n             SECURELVL == \"JUVENILE\" ~ \"Juvenile\",\n             TRUE ~ \"Not Juvenile\")) \n\n\n\n\n\n                                      NAME     SECURELVL     JUVENILE\n1                        BALDWIN PARK JAIL NOT AVAILABLE Not Juvenile\n2                           CLAREMONT JAIL NOT AVAILABLE Not Juvenile\n3                             CONCORD JAIL NOT AVAILABLE Not Juvenile\n4                            MONROVIA JAIL NOT AVAILABLE Not Juvenile\n5                    SIGNAL HILL CITY JAIL NOT AVAILABLE Not Juvenile\n6               MIRA LOMA DETENTION CENTER  Not Juvenile Not Juvenile\n7                         CULVER CITY JAIL NOT AVAILABLE Not Juvenile\n8                          SANTA RITA JAIL  Not Juvenile Not Juvenile\n9  YOLO COUNTY JUVENILE DETENTION FACILITY      Juvenile     Juvenile\n10     YOLO COUNTY MONROE DETENTION CENTER  Not Juvenile Not Juvenile"
+  },
+  {
+    "objectID": "lectures/w9l1_tidying.html#for-the-remainder-of-class",
+    "href": "lectures/w9l1_tidying.html#for-the-remainder-of-class",
+    "title": "Data Tidying",
+    "section": "For the Remainder of Class:",
+    "text": "For the Remainder of Class:\n\nAnswer the following questions about the prisons data in your .qmd file:\n\nQ4: Using sapply(prisons, typeof), identify which columns in the data frame have an improper data type.\nQ5: For two of these variables mentioned in Q4, correct the data type using prior code.\nQ6: Using the cheatsheet mentioned earlier, try out two different lubridate functions on the date/time column in the prisons dataset."
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#last-time",
+    "href": "lectures/w9l2_pivoting.html#last-time",
+    "title": "Data Pivoting",
+    "section": "Last Time",
+    "text": "Last Time\n\nFormatting up columns and values\nParsing dates\nConditionals"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#today",
+    "href": "lectures/w9l2_pivoting.html#today",
+    "title": "Data Pivoting",
+    "section": "Today",
+    "text": "Today\n\nWhat is tidy data?\nPivoting\n\nLonger data\nWider data\nSeparation\nNesting"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#data-basics",
+    "href": "lectures/w9l2_pivoting.html#data-basics",
+    "title": "Data Pivoting",
+    "section": "Data Basics",
+    "text": "Data Basics\n\nMultiple variables referring to same metric, but altered by one item\n\ne.g. year, location\ne.g. collecting measurement heights from every person\n\nCreate a new .qmd file in your submission repository for turn-in. Use the following code:\n\n\n\n       Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec\n1973  9007  8106  8928  9137 10017 10826 11317 10744  9713  9938  9161  8927\n1974  7750  6981  8038  8422  8714  9512 10120  9823  8743  9129  8710  8680\n1975  8162  7306  8124  7870  9387  9556 10093  9620  8285  8466  8160  8034\n1976  7717  7461  7767  7925  8623  8945 10078  9179  8037  8488  7874  8647\n1977  7792  6957  7726  8106  8890  9299 10625  9302  8314  8850  8265  8796\n1978  7836  6892  7791  8192  9115  9434 10484  9827  9110  9070  8633  9240"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#what-is-tidy-data",
+    "href": "lectures/w9l2_pivoting.html#what-is-tidy-data",
+    "title": "Data Pivoting",
+    "section": "What is Tidy Data?",
+    "text": "What is Tidy Data?\n\nEvery observation has its own row\nEvery variable has its own columns\nEvery type of observation unit is a table\n\nGeneralizes our understanding of what can go into a cell\ne.g. single values, list-columns, tables"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#is-this-tidy",
+    "href": "lectures/w9l2_pivoting.html#is-this-tidy",
+    "title": "Data Pivoting",
+    "section": "Is This Tidy?",
+    "text": "Is This Tidy?\n\n\n        Date Nrthmptn_AQI NYC_AQI Bstn_AQI\n1 03/19/2022           70      72       43\n2 03/18/2022           69      60       59"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#benefits-of-tidy-data",
+    "href": "lectures/w9l2_pivoting.html#benefits-of-tidy-data",
+    "title": "Data Pivoting",
+    "section": "Benefits of Tidy Data",
+    "text": "Benefits of Tidy Data\n\nCan allow for different forms through the use of pivoting\n\nParticularly important when\n\nsummarizing cases (e.g. wider, left-to-right)\nlooking at individuals (e.g. longer, top-to-bottom)\n\ne.g. blood pressure measurements at multiple times for same patient"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#food-for-thought",
+    "href": "lectures/w9l2_pivoting.html#food-for-thought",
+    "title": "Data Pivoting",
+    "section": "Food for Thought",
+    "text": "Food for Thought\nSuppose I am collecting music preferences from students in 10 different classes (e.g. genre). Consider these two scenarios for our data:\n\nEvery class is in its own row, with each student’s preference as we go across the columns\nEvery student is in its own row, with their class and music preference in the next two columns\n\nQuestion 1: Determine which dataset will be “wider” and which one will be “longer.”\nQuestion 2: Determine the pros and cons of using each type of dataset."
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#pivoting-longer",
+    "href": "lectures/w9l2_pivoting.html#pivoting-longer",
+    "title": "Data Pivoting",
+    "section": "Pivoting Longer",
+    "text": "Pivoting Longer\n\nUse pivot_longer() to pivot a dataset from wider to longer format:\n\nYou have multiple columns of the same variable/unit you want to condense to a single column\n\nTakes the following arguments:\n\ncols: a series of columns to condense\n\nAll other columns will be kept\nMore common than not to use - to indicate which variables to keep\n\nThe names of those columns will become repeated rows in the pivoted data frame, and the values in those columns will be stored in a new column.\n\n\nnames_to: name of column where the column names will be stored\nvalues_to: name of column where the values associated with those names will be stored\nVarious arguments to support transformations to names"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#example",
+    "href": "lectures/w9l2_pivoting.html#example",
+    "title": "Data Pivoting",
+    "section": "Example",
+    "text": "Example\n\nBeforeCodeAfter\n\n\n\n\n        Date Nrthmptn_AQI NYC_AQI Bstn_AQI\n1 03/19/2022           70      72       43\n2 03/18/2022           69      60       59\n\n\n\n\n\ndf |&gt; pivot_longer(cols = ends_with(\"AQI\"), # these columns are condensed\n                    names_to = \"City\", # name of new column\n                    values_to = \"AQI\") |&gt; # values for new column\n  mutate(City = str_replace(City, \"_AQI\", \"\"))\n\n\n\n\n\n# A tibble: 6 × 3\n  Date       City       AQI\n  &lt;chr&gt;      &lt;chr&gt;    &lt;dbl&gt;\n1 03/19/2022 Nrthmptn    70\n2 03/19/2022 NYC         72\n3 03/19/2022 Bstn        43\n4 03/18/2022 Nrthmptn    69\n5 03/18/2022 NYC         60\n6 03/18/2022 Bstn        59"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#quick-activity",
+    "href": "lectures/w9l2_pivoting.html#quick-activity",
+    "title": "Data Pivoting",
+    "section": "Quick Activity",
+    "text": "Quick Activity\nQuestion 3: How would I convert the dates on the previous slide to a date-time format?"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#activity-with-usaccdeaths",
+    "href": "lectures/w9l2_pivoting.html#activity-with-usaccdeaths",
+    "title": "Data Pivoting",
+    "section": "Activity with USAccDeaths",
+    "text": "Activity with USAccDeaths\n\nUse the following code to create the deaths data frame:\n\n\ndeaths &lt;- as.data.frame(matrix(USAccDeaths, nrow = 6, ncol = 12, byrow = T))\ndeaths &lt;- deaths |&gt; \n  mutate(year = 1973:1978) |&gt;\n  rename(\"jan\" = V1, \"feb\" = V2, \"mar\" = V3,\n         \"apr\" = V4, \"may\" = V5, \"jun\" = V6,\n         \"jul\" = V7, \"aug\" = V8, \"sep\" = V9,\n         \"oct\" = V10, \"nov\" = V11, \"dec\" = V12) |&gt;\n  relocate(year)\n\nThen, answer the following:\n\nQuestion 4: Use pivot_longer() to create a 72x3 data frame that has all of the deaths in a single column. Assign this to deaths_longer.\n\n\nQuestion 5: Determine if each of the columns are of the appropriate type. Also determine if any column needs to be factorized."
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#pivoting-wider",
+    "href": "lectures/w9l2_pivoting.html#pivoting-wider",
+    "title": "Data Pivoting",
+    "section": "Pivoting Wider",
+    "text": "Pivoting Wider\n\nUse pivot_wider() to pivot a dataset from longer to wider format:\n\nNeed to have a column that has potential indicators for each of the rows\nNeed to have a column that has those values for each of the indicators referring to a single item of interest\n\nTakes the following arguments:\n\nnames_from: name of column to get the new column names from\nvalues_from: name of column to get the cell values from\nVarious arguments to support transformations to names"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#example-1",
+    "href": "lectures/w9l2_pivoting.html#example-1",
+    "title": "Data Pivoting",
+    "section": "Example",
+    "text": "Example\n\nBeforeCodeAfter\n\n\n\n\n# A tibble: 6 × 3\n  Date       City       AQI\n  &lt;chr&gt;      &lt;chr&gt;    &lt;dbl&gt;\n1 03/19/2022 Nrthmptn    70\n2 03/19/2022 NYC         72\n3 03/19/2022 Bstn        43\n4 03/18/2022 Nrthmptn    69\n5 03/18/2022 NYC         60\n6 03/18/2022 Bstn        59\n\n\n\n\n\ndf |&gt; pivot_wider(names_from = \"Date\", \n                   values_from = \"AQI\", \n                   names_repair = make.names)\n\n\n\n\n\n# A tibble: 3 × 3\n  City     X03.19.2022 X03.18.2022\n  &lt;chr&gt;          &lt;dbl&gt;       &lt;dbl&gt;\n1 Nrthmptn          70          69\n2 NYC               72          60\n3 Bstn              43          59"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#activity-with-usaccdeaths-1",
+    "href": "lectures/w9l2_pivoting.html#activity-with-usaccdeaths-1",
+    "title": "Data Pivoting",
+    "section": "Activity with USAccDeaths",
+    "text": "Activity with USAccDeaths\nUsing the deaths_longer data frame,\n\nQuestion 6: Use pivot_wider() to return back to the form seen in deaths(). Assign this to deaths_wider and verify that it matches the original dataset we used."
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#separating-columns",
+    "href": "lectures/w9l2_pivoting.html#separating-columns",
+    "title": "Data Pivoting",
+    "section": "Separating Columns",
+    "text": "Separating Columns\n\nAt times, our column names or values may be named in a way that can be broken apart systematically\n\nWe use separate() to split values in a column into values in multiple columns:\n\ne.g. place_day to place and day\n\n\nseparate() takes the following arguments:\n\ncol: existing column to separate\ninto: vector of names of the new columns\nsep: a character (or more) that indicate where to separate columns\n\ne.g. _ in between place and day"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#example-2",
+    "href": "lectures/w9l2_pivoting.html#example-2",
+    "title": "Data Pivoting",
+    "section": "Example",
+    "text": "Example\n\nBeforeCodeAfter\n\n\n\n\n  Nrthmptn_3_19 Nrthamtn_3_18  Bstn_3_19 Bstn_3_18\n1            70            69 Unrecorded        59\n\n\n\n\n\ndf |&gt; \n  pivot_longer(\n    cols = everything(), \n    names_to = \"Measure\",\n    values_to = \"AQI\") |&gt;\n  separate(Measure, into = c(\"City\", \"Month\", \"Date\"), sep = \"_\")\n\n\n\n\n\n# A tibble: 4 × 4\n  City     Month Date  AQI       \n  &lt;chr&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;     \n1 Nrthmptn 3     19    70        \n2 Nrthamtn 3     18    69        \n3 Bstn     3     19    Unrecorded\n4 Bstn     3     18    59"
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#list-columns",
+    "href": "lectures/w9l2_pivoting.html#list-columns",
+    "title": "Data Pivoting",
+    "section": "List-Columns",
+    "text": "List-Columns\n\nAt times, we want a cell in a single column to store multiple values\n\ne.g. multiple eye colors, preferences, awards\n\n\n\nDatasetValue\n\n\n\nstarwars |&gt;\n  slice(1:3) |&gt;\n  select(name, hair_color, films)\n\n# A tibble: 3 × 3\n  name           hair_color films    \n  &lt;chr&gt;          &lt;chr&gt;      &lt;list&gt;   \n1 Luke Skywalker blond      &lt;chr [5]&gt;\n2 C-3PO          &lt;NA&gt;       &lt;chr [6]&gt;\n3 R2-D2          &lt;NA&gt;       &lt;chr [7]&gt;\n\n\n\n\n\nstarwars |&gt;\n  slice(1:3) |&gt;\n  pluck(\"films\")\n\n[[1]]\n[1] \"A New Hope\"              \"The Empire Strikes Back\"\n[3] \"Return of the Jedi\"      \"Revenge of the Sith\"    \n[5] \"The Force Awakens\"      \n\n[[2]]\n[1] \"A New Hope\"              \"The Empire Strikes Back\"\n[3] \"Return of the Jedi\"      \"The Phantom Menace\"     \n[5] \"Attack of the Clones\"    \"Revenge of the Sith\"    \n\n[[3]]\n[1] \"A New Hope\"              \"The Empire Strikes Back\"\n[3] \"Return of the Jedi\"      \"The Phantom Menace\"     \n[5] \"Attack of the Clones\"    \"Revenge of the Sith\"    \n[7] \"The Force Awakens\""
+  },
+  {
+    "objectID": "lectures/w9l2_pivoting.html#breaking-apart-and-creating-list-columns",
+    "href": "lectures/w9l2_pivoting.html#breaking-apart-and-creating-list-columns",
+    "title": "Data Pivoting",
+    "section": "Breaking Apart and Creating List-Columns",
+    "text": "Breaking Apart and Creating List-Columns\n\nunnest() will break the list into an entry for each row\n\nhas similar functionality to pivot_longer()\n\nnest() will capture all of the elements in a column belonging to shared entries and put them into a list\n\nhas similar functionality to pivot_wider()\n\n\n\nunnest()nest()\n\n\n\nstarwarsUnnested &lt;- starwars |&gt;\n  unnest(films) |&gt;\n  select(name, hair_color, films)\nhead(starwarsUnnested)\n\n# A tibble: 6 × 3\n  name           hair_color films                  \n  &lt;chr&gt;          &lt;chr&gt;      &lt;chr&gt;                  \n1 Luke Skywalker blond      A New Hope             \n2 Luke Skywalker blond      The Empire Strikes Back\n3 Luke Skywalker blond      Return of the Jedi     \n4 Luke Skywalker blond      Revenge of the Sith    \n5 Luke Skywalker blond      The Force Awakens      \n6 C-3PO          &lt;NA&gt;       A New Hope             \n\n\n\n\n\nstarwarsUnnested |&gt;\n  nest(.by = c(name, hair_color), .key = \"films\") |&gt;\n  slice(1:3)\n\n# A tibble: 3 × 3\n  name           hair_color films           \n  &lt;chr&gt;          &lt;chr&gt;      &lt;list&gt;          \n1 Luke Skywalker blond      &lt;tibble [5 × 1]&gt;\n2 C-3PO          &lt;NA&gt;       &lt;tibble [6 × 1]&gt;\n3 R2-D2          &lt;NA&gt;       &lt;tibble [7 × 1]&gt;"
+  },
+  {
+    "objectID": "labs/lab6/index.html",
+    "href": "labs/lab6/index.html",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "",
+    "text": "In terms of data analysis, this lab has one goal: to determine the number of industrial facilities that are currently in violation of both the Clean Air Act and the Clean Water Act in California. To achieve this goal, we’re going to have to do some data wrangling and join together some datasets published by the EPA. We’re going to practice applying different types of joins to this data and consider what we learn with each.\n\n\n\nIdentify join keys\nDiscern the differences between types of joins\nDiscern what happens when we perform many-to-many joins\nApply filtering joins to identify missing data\nPractice data wrangling"
+  },
+  {
+    "objectID": "labs/lab6/index.html#introduction",
+    "href": "labs/lab6/index.html#introduction",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "",
+    "text": "In terms of data analysis, this lab has one goal: to determine the number of industrial facilities that are currently in violation of both the Clean Air Act and the Clean Water Act in California. To achieve this goal, we’re going to have to do some data wrangling and join together some datasets published by the EPA. We’re going to practice applying different types of joins to this data and consider what we learn with each.\n\n\n\nIdentify join keys\nDiscern the differences between types of joins\nDiscern what happens when we perform many-to-many joins\nApply filtering joins to identify missing data\nPractice data wrangling"
+  },
+  {
+    "objectID": "labs/lab6/index.html#review-of-key-terms",
+    "href": "labs/lab6/index.html#review-of-key-terms",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "Review of Key Terms",
+    "text": "Review of Key Terms\n\n\n\n\n\n\nTip\n\n\n\nYou may wish to reference this Data Wrangling Cheatsheet when completing this lab.\n\n\n\nJoin Key\n\nA variable shared across two datasets that identifies the observations that will be merged"
+  },
+  {
+    "objectID": "labs/lab6/index.html#epas-echo",
+    "href": "labs/lab6/index.html#epas-echo",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "EPA’s ECHO",
+    "text": "EPA’s ECHO\nThe U.S. Environmental Protection Agency (EPA) is responsible for monitoring and regulating over 800,000 industrial facilities in the United States. This involves regularly inspecting facilities for their compliance with different environmental laws, issuing notices and taking enforcement actions when facilities are out of compliance, and issuing penalties for failures to address violations. A record of all of this activity is maintained online in a database known as ECHO - Enforcement and Compliance History Online. Specifically, ECHO maintains information about enforcement and compliance actions taken in relation to the Clean Air Act, the Clean Water Act, the Safe Drinking Water Act, and the Resource Conservation and Recovery Act.\nThere is so much information available to us via ECHO, and there is even an R package that makes it really simple to access the data in ECHO. However, because ECHO documents compliance with a number of different environmental laws, when we pull data from ECHO about regulated facilities, it is usually organized into separate tables for each law. Today we are going to pull a dataset documenting facilities’ compliance with the Clean Air Act and then pull a second dataset documenting facilities’ compliance with the Clean Water Act.\nThe Clean Air Act was first enacted in 1963 to regulate emissions from both stationary and mobile sources of air pollution. The Clean Water Act was enacted in 1972 regulate the polluting of U.S. waterways. When a facility violates one of these Acts, it typically means that they have released an excess amount of pollutants, neglected to implement the proper control technologies or standards, or failed to submit reports."
+  },
+  {
+    "objectID": "labs/lab6/index.html#setting-up-your-environment",
+    "href": "labs/lab6/index.html#setting-up-your-environment",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "Setting Up Your Environment",
+    "text": "Setting Up Your Environment\n\nInstall the echor package in your Console.\nRun the code below to load today’s data frames into your environment.\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\nlibrary(echor)\n\nWarning: package 'echor' was built under R version 4.4.3\n\necho_air_ca &lt;- \n  echoAirGetFacilityInfo(p_st = \"CA\", \n                         qcolumns = \"1,4,5,8,107,108,109,110\") |&gt;\n  select(-SourceID)\n\necho_water_ca &lt;- \n  echoWaterGetFacilityInfo(p_st = \"CA\", \n                           qcolumns = \"1,4,5,9,203,204,205,206\") |&gt;\n  select(-SourceID)\n\n\nRun the code below to load the data dictionary for echo_air_ca into your environment.\n\n\necho_air_dd &lt;- echoAirGetMeta() |&gt;\n  filter(ColumnID %in% c(1,4,5,8,107,108,109,110)) |&gt;\n  select(ColumnID, ObjectName, Description)\n\necho_water_dd &lt;- echoWaterGetMeta() |&gt;\n  filter(ColumnID %in% c(1,4,5,9,203,204,205,206)) |&gt;\n  select(ColumnID, ObjectName, Description)\n\n\nOpen both echo_air_dd and echo_water_dd to review the data dictionaries for these datasets."
+  },
+  {
+    "objectID": "labs/lab6/index.html#data-analysis",
+    "href": "labs/lab6/index.html#data-analysis",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "Data Analysis",
+    "text": "Data Analysis\n\nJoin Keys\nWhen joining data frames, we need to determine a join key. This will be a variable that exists in both data frames to uniquely identify the data frames’ units of observation. This key needs to be shared across the two data frames in order to be able to join the data frames together. This is because when joining data frames, R will check the value in that variable for one data frame and look for the corresponding value in the key variable for the other data frame in order to determine which units of observation match across the data frames.\nFor instance, let’s say we have two data frames documenting the same group of students - one documents their current courses, and another documents their living arrangements. For both data frames, the student ID might serve as a join key. This ID uniquely identifies each student, and we expect that that key will be the same in both data frames (i.e. the 99- that represents you in one data frame will be the same as the 99- number that represents you in another data frame.) Because that number matches across the two data frames, we can use that variable to determine which rows (i.e. students) in the first data frame are associated with which rows in the second data frame.\n\n\n\n\n\n\nImportantQuestion 1 (3 pts)\n\n\n\nReference the data dictionaries for these two data frames to determine the names of the variables that we will join on. Remember that these should be variables that we can use to uniquely identify each unit of observation across the data frames.\nWrite code below to determine the number of unique values for the variables you identify in each of these data frames.\n\nHint: Remember how we counted unique values in a variable in lab 1.\n\n\n# Write code here for echo_air_ca\n# Write code here for echo_water_ca\n\n\n\nIf you’ve done this correctly, you’ll learn that there are about 2700 unique values echo_air_ca’s key variable. You’ll also learn that there are about 29000 unique values in echo_water_ca’s key variable.\n…but if you look in your environment, you will notice that the number of unique values does not match the number of rows in echo_air_ca, and the number of rows in echo_water_ca. This means that the key variable must repeat, and that certain facilities are represented more than once in each of these data frames.\nThis happens because even the EPA defines a facility in different ways depending on what laws it is regulated by. What counts as one facility in the Clean Air Act may count as two or three facilities in the Clean Water Act, but there is only one ID to document the relationships between them. This means that the same ID may show up a few times for different parts of the same facility. Check out some of the duplicating rows via my code below. Notice how multiple facilities - sometimes with entirely different names can be associated with the same RegistryID?\n\necho_air_ca |&gt;\n  group_by(RegistryID) |&gt;\n  filter(n() &gt; 1) |&gt;\n  arrange(RegistryID) |&gt;\n  head()\n\n# A tibble: 6 × 8\n# Groups:   RegistryID [3]\n  AIRName            AIRCity AIRState RegistryID CurrSvFlag ViolFlag CurrVioFlag\n  &lt;chr&gt;              &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;           &lt;dbl&gt;    &lt;dbl&gt;       &lt;dbl&gt;\n1 AVCORP COMPOSITE … GARDENA CA       110000474…          0        0           0\n2 TEX-TECH ENGINEER… GARDENA CA       110000474…          0        0           0\n3 BALL METAL BEVERA… TORRAN… CA       110000475…          0        0           0\n4 REYNOLDS METALS CO TORRAN… CA       110000475…          0        0           0\n5 AIR PRODUCTS MANU… PARAMO… CA       110000475…          1        1           1\n6 ALTAIR PARAMOUNT,… PARAMO… CA       110000475…          0        0           0\n# ℹ 1 more variable: Insp5yrFlag &lt;dbl&gt;\n\n\nLater we will talk about what happens when we join two data frames that both have repeating keys, but for now, we’re going aggregate both of these data frames so that each Registry ID only appears once. Basically, we are going to write code to say: if any of the rows pertaining to this Registry ID document certain kinds of violations, set the violation flag for that facility to 1.\n\n\n\n\n\n\nImportantQuestion 2 (3 pts)\n\n\n\nIn the code below, for each of the data frames, you should group the data by RegistryID and then summarize by returning the max() value in CurrSvFlag, ViolFlag, CurrVioFlag, Insp5yrFlag for each group. Store the results in echo_air_ca_agg and echo_water_ca_agg respectively. Note how many rows in are in echo_air_ca_agg and echo_water_ca_agg. It should match the number of unique values in RegistryID that you calculated above.\n\necho_air_ca_agg &lt;-\n  echo_air_ca |&gt;\n  ______ |&gt;             #group by RegistryID\n  _____(                #Summarize the following:\n    CurrSvFlag = _____, #Calculate max value in CurrSvFlag\n    ViolFlag = _____,   #Calculate max value in ViolFlag\n    CurrVioFlag = _____,#Calculate max value in CurrVioFlag\n    Insp5yrFlag = _____ #Calculate max value in Insp5yrFlag\n  )\n\necho_water_ca_agg &lt;- #Copy and adjust code above to create echo_water_ca_agg\n\n\n\n\n\nJoins\nSo now we have two data frames with unique registry IDs and variables indicating whether the facility has a current significant violation, whether it has had a violation in the past three years, whether it has a current violation, and whether it has been inspected in the past 5 years.\nNow we want to join these two data frames together, so that we can check which facilities have violations to both the Clean Air Act and the Clean Water Act.\n\n\n\n\n\n\nImportantQuestion 3 (4 pts)\n\n\n\nWrite code below to perform four kinds of joins - a left join, a right join, and inner join, and a full join. echo_water_ca_agg should be in the first position, and echo_air_ca_agg should be joined onto it. I’ve started that for you in the commented code below.\n\n#joined_left &lt;- echo_water_ca_agg |&gt; \n\n#joined_right &lt;- echo_water_ca_agg |&gt; \n\n#joined_inner &lt;- echo_water_ca_agg |&gt; \n\n#joined_full &lt;- echo_water_ca_agg |&gt; \n\n\n\nCheck out the first six rows of joined_full below and note what happens when a RegistryID is present in one data frame but not in the other. We see data values in the columns associated with the data frame where the RegistryID was present, and NA values in the columns associated with the data frame where the RegistryID was not present. This is how we come to have so many extra rows in joined_full.\n\njoined_full |&gt; head()\n\n# A tibble: 6 × 9\n  RegistryID   CurrSvFlag.x ViolFlag.x CurrVioFlag.x Insp5yrFlag.x CurrSvFlag.y\n  &lt;chr&gt;               &lt;dbl&gt;      &lt;dbl&gt;         &lt;dbl&gt;         &lt;dbl&gt;        &lt;dbl&gt;\n1 09R10F004               0          0             0             0           NA\n2 110000473176            0          0             0             0            0\n3 110000473247            0          0             0             0           NA\n4 110000473345            0          0             0             0           NA\n5 110000473372            0          1             0             1           NA\n6 110000473407            0          0             0             1           NA\n# ℹ 3 more variables: ViolFlag.y &lt;dbl&gt;, CurrVioFlag.y &lt;dbl&gt;,\n#   Insp5yrFlag.y &lt;dbl&gt;\n\n\nWith joined_inner, any rows associated with a RegistryID that doesn’t appear in both data frames get dropped. Check out the number of rows in joined_inner.\n\nnrow(joined_inner)\n\n[1] 769\n\n\nThis represents the number of Registry IDs that were present in both echo_water_ca_agg and echo_air_ca_agg.\n\n\n\n\n\n\nImportantQuestion 4 (4 pts)\n\n\n\nThe three statements below are incorrect. Correct my statements below about the remaining joins.\n\npaste(nrow(joined_full), \"represents the number of Registry IDs present in echo_air_ca_agg\")\n\npaste(nrow(joined_left), \"represents the number of Registry IDs present in either echo_air_ca_agg or echo_water_ca_agg\")\n\npaste(nrow(joined_right), \"represents the number of Registry IDs present in echo_water_ca_agg\")\n\n\n\nFrom here on out, since we are only interested in the facilities with violations to both Acts, we are going to focus on joined_inner. Let’s remove the rest of the joined data frames from our environment.\n\nrm(joined_full, joined_left, joined_right)\n\nYou might note at this point that it can be difficult to tell which columns are associated with which environmental laws. This is because originally in both data frames, the variables we are most interested in (CurrSvFlag, ViolFlag, CurrVioFlag, Insp5yrFlag) shared the same names. When we joined these two data frames together, R opted to distinguish between them by tacking a .x onto the variable names for the data frame in the first position in the join and a .y onto the variable names for the data frame in the second position in the join. Let’s give each of these variables more meaningful names. To do so, we can use the rename() function, which is included in the dplyr package in the tidyverse. When piped to a dataframe, the formula for rename() is simple: rename(new_name = old_name)\n\n\n\n\n\n\nImportantQuestion 5 (4 pts)\n\n\n\nIn my code below rename the remaining columns to differentiate between the column names from the two original data frames.\n\njoined_inner_renamed &lt;-\n  joined_inner |&gt;\n  rename(\n    CurrSvFlag_water = CurrSvFlag.x,\n    ViolFlag_water = ViolFlag.x \n    #Rename remaining columns here. Be sure to separate by comma. There are six more to go!\n  )\n\n\n\n\n\n\n\n\n\nImportantQuestion 6 (4 pts)\n\n\n\nNow that we have a cleaned up data frame, use a data wrangling verb to subset the data frame to the rows where a RegistryID has a current violation to both the Clean Water Act and Clean Air Act. Repeat these steps to determine which RegistryIDs have a significant violation to both Acts. I recommend running this on joined_inner_renamed.\nOnce you’ve run these codes, open both echo_air_ca and echo_water_ca by clicking on the data frames in your environment. Search for a few of the RegistryIDs that appeared in your analysis to identify the names and locations of the facilities.\n\n# Write wrangling code here for current violations. \n\n# Write wrangling code here for significant violations. \n\n\n\n\n\nMany-to-Many Joins\nWe don’t know much about these facilities because we lost a lot of critical information (e.g. the facility’s name and location) when aggregating our data by RegistryID above. At the time, we couldn’t aggregate by name because certain facilities sharing the same RegistryID had different names! Aggregating by name would have meant that we’d still have repeating RegistryIds in the data frame - one for each different version of the facility’s name.\nThe truth is though that we didn’t technically have to ensure that the RegistryID didn’t repeat. We can still join data frames in instances where the join key repeats in both data frames. This is called performing a many-to-many join because we are joining many of the same key in one data frame to many of the same key in another data frame. It’s important to pay attention to what happens when we make this join. Let’s look at an example: the facility with Registry ID 110001181186.\n\necho_air_ca |&gt;\n  filter(RegistryID == 110001181186) \n\n# A tibble: 3 × 8\n  AIRName            AIRCity AIRState RegistryID CurrSvFlag ViolFlag CurrVioFlag\n  &lt;chr&gt;              &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;           &lt;dbl&gt;    &lt;dbl&gt;       &lt;dbl&gt;\n1 DOS CUADRAS/SOUTH… CARPIN… CA       110001181…          0        0           0\n2 DOS CUADRAS/SOUTH… CARPIN… CA       110001181…          0        0           0\n3 DOS CUADRAS/SOUTH… CARPIN… CA       110001181…          0        0           0\n# ℹ 1 more variable: Insp5yrFlag &lt;dbl&gt;\n\necho_water_ca |&gt;\n  filter(RegistryID == 110001181186)\n\n# A tibble: 2 × 8\n  CWPName    CWPCity       CWPState RegistryID   CurrSvFlag ViolFlag CurrVioFlag\n  &lt;chr&gt;      &lt;chr&gt;         &lt;chr&gt;    &lt;chr&gt;             &lt;dbl&gt;    &lt;dbl&gt;       &lt;dbl&gt;\n1 PLATFORM A PACIFIC OCEAN CA       110001181186          1        1           1\n2 PLATFORM B PACIFIC OCEAN CA       110001181186          0        0           0\n# ℹ 1 more variable: Insp5yrFlag &lt;dbl&gt;\n\n\nIn echo_air_ca, this RegistryID appears three times in the data frame, and in echo_water_ca, this RegistryID appears twice in the data frame. In each instance, the facility has a different name. What happens to facility 110001181186 when we perform a many-to-many join?\n\necho_water_ca |&gt; \n  inner_join(echo_air_ca, by = \"RegistryID\") |&gt; \n  filter(RegistryID == 110001181186) |&gt;\n  select(CWPName, AIRName, RegistryID)\n\nWarning in inner_join(echo_water_ca, echo_air_ca, by = \"RegistryID\"): Detected an unexpected many-to-many relationship between `x` and `y`.\nℹ Row 1200 of `x` matches multiple rows in `y`.\nℹ Row 1443 of `y` matches multiple rows in `x`.\nℹ If a many-to-many relationship is expected, set `relationship =\n  \"many-to-many\"` to silence this warning.\n\n\n# A tibble: 6 × 3\n  CWPName    AIRName                             RegistryID  \n  &lt;chr&gt;      &lt;chr&gt;                               &lt;chr&gt;       \n1 PLATFORM A DOS CUADRAS/SOUTH COUNTY/PLATFORM A 110001181186\n2 PLATFORM A DOS CUADRAS/SOUTH COUNTY/PLATFORM B 110001181186\n3 PLATFORM A DOS CUADRAS/SOUTH COUNTY/PLATFORM C 110001181186\n4 PLATFORM B DOS CUADRAS/SOUTH COUNTY/PLATFORM A 110001181186\n5 PLATFORM B DOS CUADRAS/SOUTH COUNTY/PLATFORM B 110001181186\n6 PLATFORM B DOS CUADRAS/SOUTH COUNTY/PLATFORM C 110001181186\n\n\nThis inner join created six rows for facility 110001181186. This is because R matched each of the three rows for facility 110001181186 in echo_air_ca with the two rows for facility 110001181186 in echo_water_ca (and 3 rows * 2 rows = 6 rows).\nThis is one of the reasons why it is important to understand the context of datasets and their units of observation. Here we’ve joined these rows together as if they represented matching facilities. …but just by looking at this output we know that PLATFORM A is going to be physically different than DOS CUADRAS/SOUTH COUNTY/PLATFORM B, and PLATFORM B is going to be physically different than DOS CUADRAS/SOUTH COUNTY/PLATFORM C. The only thing that they all share is that they are sub-parts of the facility with the RegistryID 110001181186. Ultimately the units of observation don’t match across these two data frames because Clean Air Act and Clean Water Act delineate facilities differently. By aggregating to RegistryID above - something shared across the two Acts - we standardized the unit of observation, which made it possible to perform a more meaningful join.\n\n\n\n\n\n\nImportantQuestion 7 (4 pts)\n\n\n\nUsing my code as an example, determine how many times facility 110000483619 appears in echo_air_ca and how many times it appears in echo_water_ca. How many times would this facility show up if we were to perform a many-to-many inner join for these two data frames? Write your response as a comment in the code chunk.\n\n#Write code here for echo_air_ca!\n\n#Write code here for echo_water_ca!\n\n#Write comment here!\n\n\n\n\n\nFiltering Joins\nSometimes we want to know which observations that appear in one data frame don’t appear in another data frame. This might tell us where we have missing data. In this case, it will tell us which facilities are regulated by one environmental law and not the other.\n\n\n\n\n\n\nImportantQuestion 8 (4 pts)\n\n\n\nWrite code below to perform two anti_join()s. The first should tell me which facilities are regulated by the Clean Air Act and not the Clean Water Act, and the second should tell me which facilities are regulated by the Clean Water Act and not the Clean Air Act.\n\n#not_clean_water &lt;- Write code here!\n\n#not_clean_air &lt;- Write code here!\n\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nIn March 2020, the Environmental Protection Agency published a memo that permitted industrial facilities impacted by the Covid-19 pandemic to temporarily suspend mandated pollution monitoring. Research published by the Environmental Data Governance Initiative (EDGI) [@nostMorePermissionPollute2020] has indicated that, during this time, reported violations to the Clean Air Act and the Clean Water Act dropped considerably. However, EDGI’s report goes on to argue that violations were likely being under-counted at this time. …first, because facilities were not being required to monitor and report data to the same degree during Covid-19, and second, because the EPA was conducting fewer inspections during Covid-19. In sum, as they say, “the absence of data should not be taken as the absence of pollution.” What social harms emerge in the wake of these data absences? Who benefits from these policies, and who faces the greatest risks? How should we as data scientists think and act as we anaylze and present this data?"
+  },
+  {
+    "objectID": "labs/lab6/lab6.html",
+    "href": "labs/lab6/lab6.html",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "",
+    "text": "In terms of data analysis, this lab has one goal: to determine the number of industrial facilities that are currently in violation of both the Clean Air Act and the Clean Water Act in California. To achieve this goal, we’re going to have to do some data wrangling and join together some datasets published by the EPA. We’re going to practice applying different types of joins to this data and consider what we learn with each.\n\n\n\nIdentify join keys\nDiscern the differences between types of joins\nDiscern what happens when we perform many-to-many joins\nApply filtering joins to identify missing data\nPractice data wrangling"
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#introduction",
+    "href": "labs/lab6/lab6.html#introduction",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "",
+    "text": "In terms of data analysis, this lab has one goal: to determine the number of industrial facilities that are currently in violation of both the Clean Air Act and the Clean Water Act in California. To achieve this goal, we’re going to have to do some data wrangling and join together some datasets published by the EPA. We’re going to practice applying different types of joins to this data and consider what we learn with each.\n\n\n\nIdentify join keys\nDiscern the differences between types of joins\nDiscern what happens when we perform many-to-many joins\nApply filtering joins to identify missing data\nPractice data wrangling"
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#review-of-key-terms",
+    "href": "labs/lab6/lab6.html#review-of-key-terms",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "Review of Key Terms",
+    "text": "Review of Key Terms\n\n\n\n\n\n\nTip\n\n\n\nYou may wish to reference this Data Wrangling Cheatsheet when completing this lab.\n\n\n\nJoin Key\n\nA variable shared across two datasets that identifies the observations that will be merged"
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#epas-echo",
+    "href": "labs/lab6/lab6.html#epas-echo",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "EPA’s ECHO",
+    "text": "EPA’s ECHO\nThe U.S. Environmental Protection Agency (EPA) is responsible for monitoring and regulating over 800,000 industrial facilities in the United States. This involves regularly inspecting facilities for their compliance with different environmental laws, issuing notices and taking enforcement actions when facilities are out of compliance, and issuing penalties for failures to address violations. A record of all of this activity is maintained online in a database known as ECHO - Enforcement and Compliance History Online. Specifically, ECHO maintains information about enforcement and compliance actions taken in relation to the Clean Air Act, the Clean Water Act, the Safe Drinking Water Act, and the Resource Conservation and Recovery Act.\nThere is so much information available to us via ECHO, and there is even an R package that makes it really simple to access the data in ECHO. However, because ECHO documents compliance with a number of different environmental laws, when we pull data from ECHO about regulated facilities, it is usually organized into separate tables for each law. Today we are going to pull a dataset documenting facilities’ compliance with the Clean Air Act and then pull a second dataset documenting facilities’ compliance with the Clean Water Act.\nThe Clean Air Act was first enacted in 1963 to regulate emissions from both stationary and mobile sources of air pollution. The Clean Water Act was enacted in 1972 regulate the polluting of U.S. waterways. When a facility violates one of these Acts, it typically means that they have released an excess amount of pollutants, neglected to implement the proper control technologies or standards, or failed to submit reports."
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#setting-up-your-environment",
+    "href": "labs/lab6/lab6.html#setting-up-your-environment",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "Setting Up Your Environment",
+    "text": "Setting Up Your Environment\n\nInstall the echor package in your Console.\nRun the code below to load today’s data frames into your environment.\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\nlibrary(echor)\n\nWarning: package 'echor' was built under R version 4.4.3\n\necho_air_ca &lt;- \n  echoAirGetFacilityInfo(p_st = \"CA\", \n                         qcolumns = \"1,4,5,8,107,108,109,110\") |&gt;\n  select(-SourceID)\n\necho_water_ca &lt;- \n  echoWaterGetFacilityInfo(p_st = \"CA\", \n                           qcolumns = \"1,4,5,9,203,204,205,206\") |&gt;\n  select(-SourceID)\n\n\nRun the code below to load the data dictionary for echo_air_ca into your environment.\n\n\necho_air_dd &lt;- echoAirGetMeta() |&gt;\n  filter(ColumnID %in% c(1,4,5,8,107,108,109,110)) |&gt;\n  select(ColumnID, ObjectName, Description)\n\necho_water_dd &lt;- echoWaterGetMeta() |&gt;\n  filter(ColumnID %in% c(1,4,5,9,203,204,205,206)) |&gt;\n  select(ColumnID, ObjectName, Description)\n\n\nOpen both echo_air_dd and echo_water_dd to review the data dictionaries for these datasets."
+  },
+  {
+    "objectID": "labs/lab6/lab6.html#questions",
+    "href": "labs/lab6/lab6.html#questions",
+    "title": "Lab #6: Data Joining (30 pts)",
+    "section": "Questions",
+    "text": "Questions\nRead through the details in the instructions file prior to answering each of the following questions.\n\n\n\n\n\n\nImportantQuestion 1 (3 pts)\n\n\n\nReference the data dictionaries for these two data frames to determine the names of the variables that we will join on. Remember that these should be variables that we can use to uniquely identify each unit of observation across the data frames.\nWrite code below to determine the number of unique values for the variables you identify in each of these data frames.\n\nHint: Remember how we counted unique values in a variable in lab 1.\n\n\n# Write code here for echo_air_ca\n# Write code here for echo_water_ca\n\n\n\n\n\n\n\n\n\nImportantQuestion 2 (3 pts)\n\n\n\nIn the code below, for each of the data frames, you should group the data by RegistryID and then summarize by returning the max() value in CurrSvFlag, ViolFlag, CurrVioFlag, Insp5yrFlag for each group. Store the results in echo_air_ca_agg and echo_water_ca_agg respectively. Note how many rows in are in echo_air_ca_agg and echo_water_ca_agg. It should match the number of unique values in RegistryID that you calculated above.\n\necho_air_ca_agg &lt;-\n  echo_air_ca |&gt;\n  ______ |&gt;             #group by RegistryID\n  _____(                #Summarize the following:\n    CurrSvFlag = _____, #Calculate max value in CurrSvFlag\n    ViolFlag = _____,   #Calculate max value in ViolFlag\n    CurrVioFlag = _____,#Calculate max value in CurrVioFlag\n    Insp5yrFlag = _____ #Calculate max value in Insp5yrFlag\n  )\n\necho_water_ca_agg &lt;- #Copy and adjust code above to create echo_water_ca_agg\n\n\n\n\n\n\n\n\n\nImportantQuestion 3 (4 pts)\n\n\n\nWrite code below to perform four kinds of joins - a left join, a right join, and inner join, and a full join. echo_water_ca_agg should be in the first position, and echo_air_ca_agg should be joined onto it. I’ve started that for you in the commented code below.\n\n#joined_left &lt;- echo_water_ca_agg |&gt; \n\n#joined_right &lt;- echo_water_ca_agg |&gt; \n\n#joined_inner &lt;- echo_water_ca_agg |&gt; \n\n#joined_full &lt;- echo_water_ca_agg |&gt; \n\n\n\n\n\n\n\n\n\nImportantQuestion 4 (4 pts)\n\n\n\nThe three statements below are incorrect. Correct my statements below about the remaining joins.\n\npaste(nrow(joined_full), \"represents the number of Registry IDs present in echo_air_ca_agg\")\n\npaste(nrow(joined_left), \"represents the number of Registry IDs present in either echo_air_ca_agg or echo_water_ca_agg\")\n\npaste(nrow(joined_right), \"represents the number of Registry IDs present in echo_water_ca_agg\")\n\n\n\n\n\n\n\n\n\nImportantQuestion 5 (4 pts)\n\n\n\nIn my code below rename the remaining columns to differentiate between the column names from the two original data frames.\n\njoined_inner_renamed &lt;-\n  joined_inner |&gt;\n  rename(\n    CurrSvFlag_water = CurrSvFlag.x,\n    ViolFlag_water = ViolFlag.x \n    #Rename remaining columns here. Be sure to separate by comma. There are six more to go!\n  )\n\n\n\n\n\n\n\n\n\nImportantQuestion 6 (4 pts)\n\n\n\nNow that we have a cleaned up data frame, use a data wrangling verb to subset the data frame to the rows where a RegistryID has a current violation to both the Clean Water Act and Clean Air Act. Repeat these steps to determine which RegistryIDs have a significant violation to both Acts. I recommend running this on joined_inner_renamed.\nOnce you’ve run these codes, open both echo_air_ca and echo_water_ca by clicking on the data frames in your environment. Search for a few of the RegistryIDs that appeared in your analysis to identify the names and locations of the facilities.\n\n# Write wrangling code here for current violations. \n\n# Write wrangling code here for significant violations. \n\n\n\n\n\n\n\n\n\nImportantQuestion 7 (4 pts)\n\n\n\nUsing my code as an example, determine how many times facility 110000483619 appears in echo_air_ca and how many times it appears in echo_water_ca. How many times would this facility show up if we were to perform a many-to-many inner join for these two data frames? Write your response as a comment in the code chunk.\n\n#Write code here for echo_air_ca!\n\n#Write code here for echo_water_ca!\n\n#Write comment here!\n\n\n\n\n\n\n\n\n\nImportantQuestion 8 (4 pts)\n\n\n\nWrite code below to perform two anti_join()s. The first should tell me which facilities are regulated by the Clean Air Act and not the Clean Water Act, and the second should tell me which facilities are regulated by the Clean Water Act and not the Clean Air Act.\n\n#not_clean_water &lt;- Write code here!\n\n#not_clean_air &lt;- Write code here!\n\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nIn March 2020, the Environmental Protection Agency published a memo that permitted industrial facilities impacted by the Covid-19 pandemic to temporarily suspend mandated pollution monitoring. Research published by the Environmental Data Governance Initiative (EDGI) [@nostMorePermissionPollute2020] has indicated that, during this time, reported violations to the Clean Air Act and the Clean Water Act dropped considerably. However, EDGI’s report goes on to argue that violations were likely being under-counted at this time. …first, because facilities were not being required to monitor and report data to the same degree during Covid-19, and second, because the EPA was conducting fewer inspections during Covid-19. In sum, as they say, “the absence of data should not be taken as the absence of pollution.” What social harms emerge in the wake of these data absences? Who benefits from these policies, and who faces the greatest risks? How should we as data scientists think and act as we anaylze and present this data?"
   }
 ]
