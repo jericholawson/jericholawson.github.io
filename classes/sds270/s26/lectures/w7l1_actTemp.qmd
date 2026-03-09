@@ -1,0 +1,169 @@
+---
+title: "Exercises from Week 7, Lecture 1: Conditions"
+subtitle: "SDS 270"
+autor: "YOUR NAME HERE"
+format: html
+---
+
+## Introduction
+
+In these exercises, we will learn how to handle conditions.
+
+**Goal:** By the end of this lab, you should be able to handle an error and return from it gracefully.
+
+```{r}
+library(tidyverse)
+```
+
+
+## Three types of conditions
+
+Recall that there are three main types of conditions in R:
+
+- **error**: will terminate the function immediately and throw an error
+- **warning**: will continue to execute the function, but will warn you about what happened afterwards
+- **message**: will immediately display a message about what is happening.
+
+The following function will compute the number of unique values in whatever columns in a data frame you select. The first argument is the data frame, and the second argument is the dots, which are simply passed to `select()`.
+
+Note that this function may display a message, a `warning()`, or an error depending on what happens.
+
+```{r}
+unique_values <- function(.data, ...) {
+  x <- .data |>
+    select(...)
+  
+  if (ncol(x) == ncol(.data)) {
+    warning("All columns selected!")
+  }
+  
+  if (ncol(x) < 1) {
+    stop("No columns selected.")
+  }
+
+  message(paste("Computing on", ncol(x), "columns..."))  
+  map_int(x, n_distinct)
+}
+```
+
+::: {.callout-important}
+
+### Q1
+
+Examine the code for `unique_values()` carefully. Explain how the function works.
+
+PUT SOLUTION HERE
+
+:::
+
+If we give this function no valid selection, we will throw an error.
+
+```{r}
+#| error: true
+unique_values(starwars)
+```
+
+::: {.callout-important}
+
+### Q2
+
+Was the error in the previous example thrown by `unique_values()` or by `select()`? How do you know?
+
+PUT SOLUTION HERE
+
+:::
+
+If we select all of the columns in the data frame, then we get a warning. However, the code still executes.
+
+```{r}
+#| error: true
+unique_values(starwars, everything())
+```
+
+::: {.callout-important}
+
+### Q3
+
+Why does the warning message show up before the results? Why does the warning message show up before the message?
+
+PUT SOLUTION HERE
+
+:::
+
+Since `unique_values()` passes the dots to `select()`, we can leverage all of the functionality of the select helpers!
+
+```{r}
+#| error: true
+unique_values(starwars, contains("n"))
+```
+
+However, if we pass garbage to `select()`, then of course `select()` will still throw an error.
+
+```{r}
+#| error: true
+unique_values(starwars, i_love_r)
+```
+
+::: {.callout-important}
+
+### Q4
+
+Consider the difference in the output between the previous example and `unique_values(starwars)`. What is different?
+
+PUT SOLUTION HERE
+
+:::
+
+## Catching errors
+
+Instead of just failing whenever the user passes bad arguments to `select()`, we might want to catch those errors and do something with them. Here, we use a `tryCatch()` statement to provide some additional information about what went wrong, and to continue with the original data frame if the `select()` statement failed.
+
+```{r}
+unique_values_safe <- function(.data, ...) {
+  x <- tryCatch(
+    error = function(cnd) {
+      warning("Attempt to select column has failed")
+      message("Here is what we know about the error")
+      str(cnd)
+      .data
+    },
+    .data |>
+      select(...)
+  )
+  
+  if (ncol(x) == ncol(.data)) {
+    warning("All columns selected!")
+  }
+  
+  if (ncol(x) < 1) {
+    stop("No columns selected.")
+  }
+
+  message(paste("Computing on", ncol(x), "columns..."))  
+  map_int(x, n_distinct)
+}
+```
+
+Now, even though an error still occurs, we still get output.
+
+```{r}
+#| error: true
+unique_values_safe(starwars, i_love_r)
+```
+
+Whether this output is sensible is an open question for the developer. In this case I think it is probably not sensible.
+
+::: {.callout-important}
+
+### Q5
+
+Why might it be a better idea to fail with an error in the previous example instead of continuing with the full data frame?
+
+PUT SOLUTION HERE
+
+:::
+
+
+## Turn-In
+
+Stage, commit, and push your template file to your SDS 270 repository.

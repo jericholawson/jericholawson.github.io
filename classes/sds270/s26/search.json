@@ -3840,7 +3840,7 @@
     "href": "schedule.html#week-6-exam-1-environments-32---36",
     "title": "Schedule",
     "section": "Week 6: Exam #1, Environments (3/2 - 3/6)",
-    "text": "Week 6: Exam #1, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\nGood luck!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 7 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\nSlides\nActivities/Template\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 8 of Advanced R (before Monday’s class)\nSet #3 due next Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here"
+    "text": "Week 6: Exam #1, Environments (3/2 - 3/6)\n\nMonday, 3/2Wednesday, 3/4\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\nGood luck!!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 7 of Advanced R (before Wednesday’s class)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Environments\n\n\n\n\nSlides\n\nExam Feedback\n\nActivities/Template\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 8 of Advanced R (before Monday’s class)\nSet #3 due next Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#last-time",
@@ -3889,7 +3889,7 @@
     "href": "lectures/w7l1_conditions.html#errors-2",
     "title": "Conditions",
     "section": "Errors",
-    "text": "Errors\n\naboveMean &lt;- function(x){\n  if (type_of(x) != \"double\" & type_of(x) != \"integer\"){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  }\n  mean(x &gt; mean(x))\n}"
+    "text": "Errors\n\nErrors should be used when we expect an action that will break our functionality\n\nWithout them: unexpected behavior; caught by other uninformative errors"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#errors-3",
@@ -3917,7 +3917,7 @@
     "href": "lectures/w7l1_conditions.html#warnings-2",
     "title": "Conditions",
     "section": "Warnings",
-    "text": "Warnings\n\naboveMean &lt;- function(x){\n  if (!(type_of(x) %in% c(\"double\", \"integer\", \"logical\"))){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  } else if (type_of(x) == \"logical\"){\n    warning(\"Not recommended due to repetition of code.\")\n  }\n  mean(x &gt; mean(x))\n}"
+    "text": "Warnings\n\nWarnings should be used when we expect unexpected behavior with our function\n\nWithout them: should not break function; will lead to confusion on user’s part"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#warnings-3",
@@ -3938,7 +3938,7 @@
     "href": "lectures/w7l1_conditions.html#messages-1",
     "title": "Conditions",
     "section": "Messages",
-    "text": "Messages\n\naboveMean &lt;- function(x){\n  if (!(type_of(x) %in% c(\"double\", \"integer\", \"logical\"))){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  } else if (type_of(x) == \"logical\"){\n    warning(\"Not recommended due to repetition of code.\")\n  }\n  \n  result &lt;- mean(x &gt; mean(x))\n  if (result &lt;= 0.25){\n    message(\"There appears to be evidence of right-skeweness or outliers.\")\n  }\n\n  return(result)\n}"
+    "text": "Messages\n\nMessages should be used when we want to provide any information worth displaying to the user\n\nWithout them: Nothing bad happens"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#messages-2",
@@ -3994,7 +3994,7 @@
     "href": "lectures/w7l1_act.html#three-types-of-conditions",
     "title": "Exercises from Week 7, Lecture 1: Conditions",
     "section": "Three types of conditions",
-    "text": "Three types of conditions\nRecall that there are three main types of conditions in R:\n\nerror: will terminate the function immediately and throw an error\nwarning: will continue to execute the function, but will warn you about what happened afterwards\nmessage: will immediately display a message about what is happening.\n\nThe following function will compute the number of unique values in whatever columns in a data frame you select. The first argument is the data frame, and the second argument is the dots, which are simply passed to select().\nNote that this function may display a message, a warning(), or an error depending on what happens.\n\nunique_values &lt;- function(.data, ...) {\n  x &lt;- .data |&gt;\n    select(...)\n  \n  if (ncol(x) == ncol(.data)) {\n    warning(\"All columns selected!\")\n  }\n  \n  if (ncol(x) &lt; 1) {\n    stop(\"No columns selected.\")\n  }\n\n  message(paste(\"Computing on\", ncol(x), \"columns...\"))  \n  map_int(x, n_distinct)\n}\n\n\n\n\n\n\n\nImportantQ1\n\n\n\nExamine the code for unique_values() carefully. Explain how the function works.\n\n\nIf we give this function no valid selection, we will throw an error.\n\nunique_values(starwars)\n\nError in `unique_values()`:\n! No columns selected.\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nWas the error in the previous example thrown by unique_values() or by select()? How do you know?\n\n\nIf we select all of the columns in the data frame, then we get a warning. However, the code still executes.\n\nunique_values(starwars, everything())\n\nWarning in unique_values(starwars, everything()): All columns selected!\n\n\nComputing on 14 columns...\n\n\n      name     height       mass hair_color skin_color  eye_color birth_year \n        87         46         39         12         31         15         37 \n       sex     gender  homeworld    species      films   vehicles  starships \n         5          3         49         38         24         11         16 \n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nWhy does the warning message show up before the results? Why does the warning message show up before the message, when the line of code with message() came after the call to warning() in the function?\n\n\nSince unique_values() passes the dots to select(), we can leverage all of the functionality of the select helpers!\n\nunique_values(starwars, contains(\"n\"))\n\nComputing on 3 columns...\n\n\n      name skin_color     gender \n        87         31          3 \n\n\nHowever, if we pass garbage to select(), then of course select() will still throw an error.\n\nunique_values(starwars, i_love_r)\n\nError in `select()`:\n! Can't select columns that don't exist.\n✖ Column `i_love_r` doesn't exist.\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nConsider the difference in the output between the previous example and unique_values(starwars). What is different?"
+    "text": "Three types of conditions\nRecall that there are three main types of conditions in R:\n\nerror: will terminate the function immediately and throw an error\nwarning: will continue to execute the function, but will warn you about what happened afterwards\nmessage: will immediately display a message about what is happening.\n\nThe following function will compute the number of unique values in whatever columns in a data frame you select. The first argument is the data frame, and the second argument is the dots, which are simply passed to select().\nNote that this function may display a message, a warning(), or an error depending on what happens.\n\nunique_values &lt;- function(.data, ...) {\n  x &lt;- .data |&gt;\n    select(...)\n  \n  if (ncol(x) == ncol(.data)) {\n    warning(\"All columns selected!\")\n  }\n  \n  if (ncol(x) &lt; 1) {\n    stop(\"No columns selected.\")\n  }\n\n  message(paste(\"Computing on\", ncol(x), \"columns...\"))  \n  map_int(x, n_distinct)\n}\n\n\n\n\n\n\n\nImportantQ1\n\n\n\nExamine the code for unique_values() carefully. Explain how the function works.\n\n\nIf we give this function no valid selection, we will throw an error.\n\nunique_values(starwars)\n\nError in `unique_values()`:\n! No columns selected.\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nWas the error in the previous example thrown by unique_values() or by select()? How do you know?\n\n\nIf we select all of the columns in the data frame, then we get a warning. However, the code still executes.\n\nunique_values(starwars, everything())\n\nWarning in unique_values(starwars, everything()): All columns selected!\n\n\nComputing on 14 columns...\n\n\n      name     height       mass hair_color skin_color  eye_color birth_year \n        87         46         39         12         31         15         37 \n       sex     gender  homeworld    species      films   vehicles  starships \n         5          3         49         38         24         11         16 \n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nWhy does the warning message show up before the results? Why does the warning message show up before the message?\n\n\nSince unique_values() passes the dots to select(), we can leverage all of the functionality of the select helpers!\n\nunique_values(starwars, contains(\"n\"))\n\nComputing on 3 columns...\n\n\n      name skin_color     gender \n        87         31          3 \n\n\nHowever, if we pass garbage to select(), then of course select() will still throw an error.\n\nunique_values(starwars, i_love_r)\n\nError in `select()`:\n! Can't select columns that don't exist.\n✖ Column `i_love_r` doesn't exist.\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nConsider the difference in the output between the previous example and unique_values(starwars). What is different?"
   },
   {
     "objectID": "lectures/w7l1_act.html#catching-errors",
@@ -4015,7 +4015,7 @@
     "href": "schedule.html#week-7-conditions-and-object-oriented-programming-oop-39---313",
     "title": "Schedule",
     "section": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)",
-    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 12 of Advanced R (before Wednesday’s class)\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)"
+    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 12 of Advanced R (before Wednesday’s class)\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)"
   },
   {
     "objectID": "lectures/w7l1_actTemp.html",
@@ -4835,5 +4835,12 @@
     "title": "Introduction to Packages",
     "section": "R CMD Check",
     "text": "R CMD Check\n\nInstalls and checks the integrity of your R packages\n\nErrors? Correct documentation? Functionality?\n\nAppendix A of R Packages"
+  },
+  {
+    "objectID": "lectures/w7l1_conditions.html",
+    "href": "lectures/w7l1_conditions.html",
+    "title": "Conditions",
+    "section": "",
+    "text": "Environments\n\nWhat they are?\nThe categories\n\nGlobal\nPackage\nNamespace\nFunction"
   }
 ]
