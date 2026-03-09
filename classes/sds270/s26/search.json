@@ -3889,14 +3889,14 @@
     "href": "lectures/w7l1_conditions.html#errors-2",
     "title": "Conditions",
     "section": "Errors",
-    "text": "Errors\n\nErrors should be used when we expect an action that will break our functionality\n\nWithout them: unexpected behavior; caught by other uninformative errors"
+    "text": "Errors\n\naboveMean &lt;- function(x){\n  if (typeof(x) != \"double\" & typeof(x) != \"integer\"){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  }\n  mean(x &gt; mean(x))\n}"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#errors-3",
     "href": "lectures/w7l1_conditions.html#errors-3",
     "title": "Conditions",
     "section": "Errors",
-    "text": "Errors\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `type_of()`:\n! could not find function \"type_of\"\n\naboveMean(x = c(3, 3, 3, 9))  \n\nError in `type_of()`:\n! could not find function \"type_of\"\n\n\n\nErrors should be used when we expect an action that will break our functionality\n\nWithout them: unexpected behavior; caught by other uninformative errors"
+    "text": "Errors\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `aboveMean()`:\n! Incorrect type for function. Consider using a double/integer type.\n\naboveMean(x = c(3, 3, 3, 9))  \n\n[1] 0.25\n\n\n\nErrors should be used when we expect an action that will break our functionality\n\nWithout them: unexpected behavior; caught by other uninformative errors"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#warnings",
@@ -3917,14 +3917,14 @@
     "href": "lectures/w7l1_conditions.html#warnings-2",
     "title": "Conditions",
     "section": "Warnings",
-    "text": "Warnings\n\nWarnings should be used when we expect unexpected behavior with our function\n\nWithout them: should not break function; will lead to confusion on user’s part"
+    "text": "Warnings\n\naboveMean &lt;- function(x){\n  if (!(typeof(x) %in% c(\"double\", \"integer\", \"logical\"))){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  } else if (typeof(x) == \"logical\"){\n    warning(\"Not recommended due to repetition of code.\")\n  }\n  mean(x &gt; mean(x))\n}"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#warnings-3",
     "href": "lectures/w7l1_conditions.html#warnings-3",
     "title": "Conditions",
     "section": "Warnings",
-    "text": "Warnings\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `type_of()`:\n! could not find function \"type_of\"\n\naboveMean(x = c(T, F, T, F, F, F))  \n\nError in `type_of()`:\n! could not find function \"type_of\"\n\n\n\nWarnings should be used when we expect unexpected behavior with our function\n\nWithout them: should not break function; will lead to confusion on user’s part"
+    "text": "Warnings\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `aboveMean()`:\n! Incorrect type for function. Consider using a double/integer type.\n\naboveMean(x = c(T, F, T, F, F, F))  \n\nWarning in aboveMean(x = c(T, F, T, F, F, F)): Not recommended due to\nrepetition of code.\n\n\n[1] 0.3333333\n\n\n\nWarnings should be used when we expect unexpected behavior with our function\n\nWithout them: should not break function; will lead to confusion on user’s part"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#messages",
@@ -3938,14 +3938,14 @@
     "href": "lectures/w7l1_conditions.html#messages-1",
     "title": "Conditions",
     "section": "Messages",
-    "text": "Messages\n\nMessages should be used when we want to provide any information worth displaying to the user\n\nWithout them: Nothing bad happens"
+    "text": "Messages\n\naboveMean &lt;- function(x){\n  if (!(typeof(x) %in% c(\"double\", \"integer\", \"logical\"))){\n    stop(\"Incorrect type for function. Consider using a double/integer type.\")\n  } else if (typeof(x) == \"logical\"){\n    warning(\"Not recommended due to repetition of code.\")\n  }\n  \n  result &lt;- mean(x &gt; mean(x))\n  if (result &lt;= 0.25){\n    message(\"There appears to be evidence of right-skeweness or outliers.\")\n  }\n\n  return(result)\n}"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#messages-2",
     "href": "lectures/w7l1_conditions.html#messages-2",
     "title": "Conditions",
     "section": "Messages",
-    "text": "Messages\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `type_of()`:\n! could not find function \"type_of\"\n\naboveMean(x = c(T, F, T, F, F, F))  \n\nError in `type_of()`:\n! could not find function \"type_of\"\n\naboveMean(x = c(3, 3, 3, 3, 3, 3, 3, 21))\n\nError in `type_of()`:\n! could not find function \"type_of\"\n\n\n\nMessages should be used when we want to provide any information worth displaying to the user\n\nWithout them: Nothing bad happens"
+    "text": "Messages\n\naboveMean(x = c(\"let\", \"me\", \"try\", \"this\"))\n\nError in `aboveMean()`:\n! Incorrect type for function. Consider using a double/integer type.\n\naboveMean(x = c(T, F, T, F, F, F))  \n\nWarning in aboveMean(x = c(T, F, T, F, F, F)): Not recommended due to\nrepetition of code.\n\n\n[1] 0.3333333\n\naboveMean(x = c(3, 3, 3, 3, 3, 3, 3, 21))\n\nThere appears to be evidence of right-skeweness or outliers.\n\n\n[1] 0.125\n\n\n\nMessages should be used when we want to provide any information worth displaying to the user\n\nWithout them: Nothing bad happens"
   },
   {
     "objectID": "lectures/w7l1_conditions.html#ignoring-errors-via-try",

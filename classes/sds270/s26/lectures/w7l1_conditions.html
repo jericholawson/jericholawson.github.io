@@ -304,6 +304,28 @@
 </section>
 <section id="errors-2" class="slide level2">
 <h2>Errors</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>aboveMean <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb4-2"><a></a>  <span class="cf">if</span> (<span class="fu">typeof</span>(x) <span class="sc">!=</span> <span class="st">"double"</span> <span class="sc">&amp;</span> <span class="fu">typeof</span>(x) <span class="sc">!=</span> <span class="st">"integer"</span>){</span>
+<span id="cb4-3"><a></a>    <span class="fu">stop</span>(<span class="st">"Incorrect type for function. Consider using a double/integer type."</span>)</span>
+<span id="cb4-4"><a></a>  }</span>
+<span id="cb4-5"><a></a>  <span class="fu">mean</span>(x <span class="sc">&gt;</span> <span class="fu">mean</span>(x))</span>
+<span id="cb4-6"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="errors-3" class="slide level2">
+<h2>Errors</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">aboveMean</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="st">"let"</span>, <span class="st">"me"</span>, <span class="st">"try"</span>, <span class="st">"this"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `aboveMean()`:
+! Incorrect type for function. Consider using a double/integer type.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">aboveMean</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">9</span>))  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.25</code></pre>
+</div>
+</div>
 <ul>
 <li>Errors should be used when we expect an action that will break our functionality
 <ul>
@@ -325,9 +347,9 @@
 <section id="warnings-1" class="slide level2">
 <h2>Warnings</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>aboveMean <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
-<span id="cb4-2"><a></a>  <span class="fu">mean</span>(x <span class="sc">&gt;</span> <span class="fu">mean</span>(x))</span>
-<span id="cb4-3"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>aboveMean <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb9-2"><a></a>  <span class="fu">mean</span>(x <span class="sc">&gt;</span> <span class="fu">mean</span>(x))</span>
+<span id="cb9-3"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <blockquote>
 <p>Question: What unusual behavior may arise when using the function on some input <code>x</code>?</p>
@@ -335,6 +357,34 @@
 </section>
 <section id="warnings-2" class="slide level2">
 <h2>Warnings</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>aboveMean <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb10-2"><a></a>  <span class="cf">if</span> (<span class="sc">!</span>(<span class="fu">typeof</span>(x) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"double"</span>, <span class="st">"integer"</span>, <span class="st">"logical"</span>))){</span>
+<span id="cb10-3"><a></a>    <span class="fu">stop</span>(<span class="st">"Incorrect type for function. Consider using a double/integer type."</span>)</span>
+<span id="cb10-4"><a></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">typeof</span>(x) <span class="sc">==</span> <span class="st">"logical"</span>){</span>
+<span id="cb10-5"><a></a>    <span class="fu">warning</span>(<span class="st">"Not recommended due to repetition of code."</span>)</span>
+<span id="cb10-6"><a></a>  }</span>
+<span id="cb10-7"><a></a>  <span class="fu">mean</span>(x <span class="sc">&gt;</span> <span class="fu">mean</span>(x))</span>
+<span id="cb10-8"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="warnings-3" class="slide level2">
+<h2>Warnings</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">aboveMean</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="st">"let"</span>, <span class="st">"me"</span>, <span class="st">"try"</span>, <span class="st">"this"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `aboveMean()`:
+! Incorrect type for function. Consider using a double/integer type.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">aboveMean</span>(<span class="at">x =</span> <span class="fu">c</span>(T, F, T, F, F, F))  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in aboveMean(x = c(T, F, T, F, F, F)): Not recommended due to
+repetition of code.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3333333</code></pre>
+</div>
+</div>
 <ul>
 <li>Warnings should be used when we expect unexpected behavior with our function
 <ul>
@@ -354,6 +404,47 @@
 </section>
 <section id="messages-1" class="slide level2">
 <h2>Messages</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>aboveMean <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb16-2"><a></a>  <span class="cf">if</span> (<span class="sc">!</span>(<span class="fu">typeof</span>(x) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"double"</span>, <span class="st">"integer"</span>, <span class="st">"logical"</span>))){</span>
+<span id="cb16-3"><a></a>    <span class="fu">stop</span>(<span class="st">"Incorrect type for function. Consider using a double/integer type."</span>)</span>
+<span id="cb16-4"><a></a>  } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">typeof</span>(x) <span class="sc">==</span> <span class="st">"logical"</span>){</span>
+<span id="cb16-5"><a></a>    <span class="fu">warning</span>(<span class="st">"Not recommended due to repetition of code."</span>)</span>
+<span id="cb16-6"><a></a>  }</span>
+<span id="cb16-7"><a></a>  </span>
+<span id="cb16-8"><a></a>  result <span class="ot">&lt;-</span> <span class="fu">mean</span>(x <span class="sc">&gt;</span> <span class="fu">mean</span>(x))</span>
+<span id="cb16-9"><a></a>  <span class="cf">if</span> (result <span class="sc">&lt;=</span> <span class="fl">0.25</span>){</span>
+<span id="cb16-10"><a></a>    <span class="fu">message</span>(<span class="st">"There appears to be evidence of right-skeweness or outliers."</span>)</span>
+<span id="cb16-11"><a></a>  }</span>
+<span id="cb16-12"><a></a></span>
+<span id="cb16-13"><a></a>  <span class="fu">return</span>(result)</span>
+<span id="cb16-14"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="messages-2" class="slide level2">
+<h2>Messages</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">aboveMean</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="st">"let"</span>, <span class="st">"me"</span>, <span class="st">"try"</span>, <span class="st">"this"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `aboveMean()`:
+! Incorrect type for function. Consider using a double/integer type.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="fu">aboveMean</span>(<span class="at">x =</span> <span class="fu">c</span>(T, F, T, F, F, F))  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in aboveMean(x = c(T, F, T, F, F, F)): Not recommended due to
+repetition of code.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3333333</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a><span class="fu">aboveMean</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">21</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>There appears to be evidence of right-skeweness or outliers.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.125</code></pre>
+</div>
+</div>
 <ul>
 <li>Messages should be used when we want to provide any information worth displaying to the user
 <ul>
@@ -370,23 +461,23 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>f1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb5-2"><a></a>  <span class="fu">try</span>(<span class="fu">log</span>(x))</span>
-<span id="cb5-3"><a></a>  <span class="fu">print</span>(x)</span>
-<span id="cb5-4"><a></a>}</span>
-<span id="cb5-5"><a></a></span>
-<span id="cb5-6"><a></a><span class="fu">f1</span>(<span class="st">"x"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>f1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb25-2"><a></a>  <span class="fu">try</span>(<span class="fu">log</span>(x))</span>
+<span id="cb25-3"><a></a>  <span class="fu">print</span>(x)</span>
+<span id="cb25-4"><a></a>}</span>
+<span id="cb25-5"><a></a></span>
+<span id="cb25-6"><a></a><span class="fu">f1</span>(<span class="st">"x"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="ignoring-errors-via-try-1" class="slide level2">
 <h2>Ignoring Errors via <code>try()</code></h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>f1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb6-2"><a></a>  <span class="fu">try</span>(<span class="fu">log</span>(x))</span>
-<span id="cb6-3"><a></a>  <span class="fu">print</span>(x)</span>
-<span id="cb6-4"><a></a>}</span>
-<span id="cb6-5"><a></a></span>
-<span id="cb6-6"><a></a><span class="fu">f1</span>(<span class="st">"x"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>f1 <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb26-2"><a></a>  <span class="fu">try</span>(<span class="fu">log</span>(x))</span>
+<span id="cb26-3"><a></a>  <span class="fu">print</span>(x)</span>
+<span id="cb26-4"><a></a>}</span>
+<span id="cb26-5"><a></a></span>
+<span id="cb26-6"><a></a><span class="fu">f1</span>(<span class="st">"x"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Error in log(x) : non-numeric argument to mathematical function
 [1] "x"</code></pre>
@@ -403,22 +494,22 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>f3 <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb8-2"><a></a>  <span class="fu">tryCatch</span>(</span>
-<span id="cb8-3"><a></a>    <span class="at">error =</span> <span class="cf">function</span>(cnd) {</span>
-<span id="cb8-4"><a></a>      <span class="co"># stuff to do when error occurs</span></span>
-<span id="cb8-5"><a></a>      <span class="cn">NA</span></span>
-<span id="cb8-6"><a></a>    },</span>
-<span id="cb8-7"><a></a>    <span class="co"># what you are actually trying to do</span></span>
-<span id="cb8-8"><a></a>    <span class="fu">log</span>(x)</span>
-<span id="cb8-9"><a></a>  )</span>
-<span id="cb8-10"><a></a>}</span>
-<span id="cb8-11"><a></a></span>
-<span id="cb8-12"><a></a><span class="fu">f3</span>(<span class="st">"x"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>f3 <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb28-2"><a></a>  <span class="fu">tryCatch</span>(</span>
+<span id="cb28-3"><a></a>    <span class="at">error =</span> <span class="cf">function</span>(cnd) {</span>
+<span id="cb28-4"><a></a>      <span class="co"># stuff to do when error occurs</span></span>
+<span id="cb28-5"><a></a>      <span class="cn">NA</span></span>
+<span id="cb28-6"><a></a>    },</span>
+<span id="cb28-7"><a></a>    <span class="co"># what you are actually trying to do</span></span>
+<span id="cb28-8"><a></a>    <span class="fu">log</span>(x)</span>
+<span id="cb28-9"><a></a>  )</span>
+<span id="cb28-10"><a></a>}</span>
+<span id="cb28-11"><a></a></span>
+<span id="cb28-12"><a></a><span class="fu">f3</span>(<span class="st">"x"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">f3</span>(<span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">f3</span>(<span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.386294</code></pre>
 </div>
