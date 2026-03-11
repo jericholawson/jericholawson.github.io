@@ -130,7 +130,7 @@
     "href": "schedule.html#week-8-spring-break-316---320",
     "title": "Schedule",
     "section": "Week 8: Spring Break (3/16 - 3/20)",
-    "text": "Week 8: Spring Break (3/16 - 3/20)\n\nMonday, 3/16Wednesday, 3/18\n\n\n\n\n\n\n\n\nNoteNO CLASS\n\n\n\nEnjoy spring break! :)\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteNO CLASS\n\n\n\nEnjoy spring break! :)\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 8: Spring Break (3/16 - 3/20)\n\nMonday, 3/16Wednesday, 3/18\n\n\n\n\n\n\n\n\nNoteNO CLASS\n\n\n\nEnjoy spring break! :)\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)\n\n\n\n\n\n\n\n\n\n\n\n\nNoteNO CLASS\n\n\n\nEnjoy spring break! :)\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)"
   },
   {
     "objectID": "schedule.html#week-9-s3-objects-package-foundation-323---327",
@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n10: Conditions\n11: Object-Oriented Programming\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
   },
   {
     "objectID": "sets/set1.html",
@@ -4015,7 +4015,7 @@
     "href": "schedule.html#week-7-conditions-and-object-oriented-programming-oop-39---313",
     "title": "Schedule",
     "section": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)",
-    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 12 of Advanced R (before Wednesday’s class)\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)"
+    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 12 of Advanced R (before Wednesday’s class)\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)"
   },
   {
     "objectID": "lectures/w7l1_actTemp.html",
@@ -4204,7 +4204,7 @@
     "href": "lectures/w7l2_oop.html#defining-a-new-generic-function",
     "title": "Object-Oriented Programming (OOP)",
     "section": "Defining a New Generic Function",
-    "text": "Defining a New Generic Function\n\nNeed standardly-named function, followed by functions correspond to class\n\nmyFunct, myFunct.myClass\nA default function would be recommended here too!\n\n\n\n# Creates generic function with rmse as name\nrmse &lt;- function(x, ...) {\n  UseMethod(\"rmse\")\n}\n\n# Creates method for lm object\nrmse.lm &lt;- function(x, ...) {\n  sqrt(mean(x$residuals^2))\n}\n\n# Test it out!\nrmse(mod)\n\n[1] 3.148207"
+    "text": "Defining a New Generic Function\n\nNeed standard-named function, followed by functions correspond to class\n\nmyFunct, myFunct.myClass\nA default function would be recommended here too!\n\n\n\n# Creates generic function with rmse as name\nrmse &lt;- function(x, ...) {\n  UseMethod(\"rmse\")\n}\n\n# Creates method for lm object\nrmse.lm &lt;- function(x, ...) {\n  sqrt(mean(x$residuals^2))\n}\n\n# Test it out!\nrmse(mod)\n\n[1] 3.148207"
   },
   {
     "objectID": "lectures/w7l2_oop.html#default-function",
@@ -4842,5 +4842,103 @@
     "title": "Conditions",
     "section": "",
     "text": "Environments\n\nWhat they are?\nThe categories\n\nGlobal\nPackage\nNamespace\nFunction"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#roadmap",
+    "href": "lectures/ml1_code-doc.html#roadmap",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nThe package will be the main focus for the rest of the quarter\nEach of the remaining classes will consist of the following:\n\nmini-lectures\nworking time\ndemos\npackage exercises"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#roadmap-1",
+    "href": "lectures/ml1_code-doc.html#roadmap-1",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nNext three classes: setup of each of package parts\n\nDescription, namespace, tests, manuals, vignettes, and data\nR CMD CHECK\n\nExtensive time to work on project\nInterview-style quiz on Tuesday, 12/2\n\nExplaining certain aspects of your package\nDecision-making behind the code\n\nDemonstrations on Thursday, 12/11\n\n5-7 minutes"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#resources-for-package-development",
+    "href": "lectures/ml1_code-doc.html#resources-for-package-development",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Resources for package development",
+    "text": "Resources for package development\n\nR Packages textbook\nPackage cheatsheet\nusethis Documentation"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#tips-as-youre-working-on-it",
+    "href": "lectures/ml1_code-doc.html#tips-as-youre-working-on-it",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Tips as you’re working on it",
+    "text": "Tips as you’re working on it\n\nComplete is better than perfect\nCommit and push changes often\nBreak your package down into many parts\n\nConsider what items are needed in each function"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#package-breakdown",
+    "href": "lectures/ml1_code-doc.html#package-breakdown",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Package breakdown",
+    "text": "Package breakdown\n\nREADME: high-level description of work\nDESCRIPTION: summary of work\nNAMESPACE: self-containment\nR/: all code\ntests/: tests for code\nman/: manual for code\nvignettes/: articles\ndata/: any data needed"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#setup",
+    "href": "lectures/ml1_code-doc.html#setup",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Setup",
+    "text": "Setup\n\nFor one person: create new package\n\nFile &gt; New Project &gt; R Package"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#setup-1",
+    "href": "lectures/ml1_code-doc.html#setup-1",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Setup",
+    "text": "Setup\n\nInstall the following packages:\n\nusethis, devtools, roxygen2, testthat, knitr\n\nSetup github personal access token\nCommit first changes\nRun usethis::use_github()\nOn GitHub: change permissions"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#setup-2",
+    "href": "lectures/ml1_code-doc.html#setup-2",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Setup",
+    "text": "Setup\n\nFor others: clone package\n\nFile &gt; New Project &gt; Version Control &gt; git"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#r-files",
+    "href": "lectures/ml1_code-doc.html#r-files",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "R files",
+    "text": "R files\n\nCreate R files via use_r()\n\nPut proposed file name within parentheses\n\nFlexibility in what can go in an R file\n\nOne function\nA made-for-user function, with helpers behind the scenes\nFamily of functions\n\nSee Chapter 6 of R Packages\n\n\nuse_r(\"test\")"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#r-files-1",
+    "href": "lectures/ml1_code-doc.html#r-files-1",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "R files",
+    "text": "R files\n\nFunctions/values can be referenced without specifically referring to a file\n\nWhy is this the case?\n\nAdhere to some structure"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#manuals",
+    "href": "lectures/ml1_code-doc.html#manuals",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "Manuals",
+    "text": "Manuals\n\nAdd Roxygen comments to your .R files\n\nStarts with #'\n@description, @param, @details, @return, @examples\n\n\n\ndevtools::document()"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#r-data-data-vs.-data-raw-vs.-data.r",
+    "href": "lectures/ml1_code-doc.html#r-data-data-vs.-data-raw-vs.-data.r",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "R data: data vs. data-raw vs. data.R",
+    "text": "R data: data vs. data-raw vs. data.R\n\ndata/ is where the .rda files go\n\nshould be data.frames or tibbles\nlazy-loaded with package\ncan automatically reference data with its name\n\n\n\nusethis::use_data(my_pkg_data)"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#r-data-data-vs.-data-raw-vs.-data.r-1",
+    "href": "lectures/ml1_code-doc.html#r-data-data-vs.-data-raw-vs.-data.r-1",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "R data: data vs. data-raw vs. data.R",
+    "text": "R data: data vs. data-raw vs. data.R\n\ndata-raw/ is where you keep the raw data and scripts\n\nnot part of the package\nare part of the repository!\ntidyverse convention\n\n\n\nusethis::use_data_raw(\"my_pkg_data\")"
+  },
+  {
+    "objectID": "lectures/ml1_code-doc.html#r-data-data-vs.-data-raw-vs.-data.r-2",
+    "href": "lectures/ml1_code-doc.html#r-data-data-vs.-data-raw-vs.-data.r-2",
+    "title": "Mini-Lecture #1: Code and Documentation",
+    "section": "R data: data vs. data-raw vs. data.R",
+    "text": "R data: data vs. data-raw vs. data.R\n\nR/data.R is where you document the stuff in data\n\njust the name of the data set\nuse roxygen2 to add other information\ntidyverse convention"
   }
 ]

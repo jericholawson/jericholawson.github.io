@@ -1,0 +1,277 @@
+---
+title: "Exercises from Week 7, Lecture 2: Object-Oriented Programming"
+subtitle: "SDS 270"
+autor: "YOUR NAME HERE"
+format: html
+---
+## Introduction
+
+In these exercises, we will learn how to write methods for S3 generics.
+
+Goal: by the end of this lab, you should be able to...
+
+- write your own S3 generic methods and functions, and
+- identify pieces that make up object-oriented programming.
+
+(Install and) load in the following libraries below to work on this lab: `sloop`, `tidyverse`, `emoji`, and `crayon`
+
+```{r}
+#| warning: false
+library(sloop)
+library(tidyverse)
+library(emoji)
+library(crayon)
+```
+
+## Exercises: Set I
+
+These exercises will be completed during lecture.
+
+In groups of 2-3, think of two (real-world) objects that are adjacent to a car in some fashion. Consider the following:
+
+::: {.callout-important}
+
+##### Q1
+
+- For each (real-world) object, what attributes and functions does this object have?
+
+PUT ANSWER HERE
+
+:::
+
+::: {.callout-important}
+
+##### Q2
+
+- For one function for each object, what is needed to start and end the function?
+
+PUT ANSWER HERE
+
+:::
+
+
+::: {.callout-important}
+
+##### Q3
+
+- What connects the (real-world) objects together with a car object?
+
+PUT ANSWER HERE
+
+:::
+
+## Exercises: Set II
+
+There are many methods for the `print()` generic available:
+
+```{r}
+s3_methods_generic("print")
+```
+
+Other common S3 generics include `summary()` and `plot()`:
+
+```{r}
+s3_methods_generic("summary")
+s3_methods_generic("plot")
+```
+
+
+::: {.callout-important}
+
+##### Q4
+
+Try to think of another generic function that you’ve worked with in the past. Use `s3_methods_generic()` to find its available methods. [Note that you might have to load other packages to find the methods or the generic that you recall.]
+
+```{r}
+# ANSWER HERE
+```
+
+:::
+
+In addition to listing the methods for a particular generic, we can find all the methods that are defined for a particular class using `s3_methods_class()`:
+
+```{r}
+s3_methods_class("tbl_df")
+```
+
+Note that while the methods for a particular **generic** are most likely written by many different developers in many different packages, the **methods** for a particular class are most likely written by the same set of developers of a single package.
+
+### Method dispatch
+
+If you are ever unsure of which method is actually being run when you invoke a generic, use `s3_dispatch()` to figure out what is going on.
+
+```{r}
+s3_dispatch(print(starwars))
+s3_dispatch(print(mtcars))
+```
+
+
+::: {.callout-important}
+
+##### Q5
+
+Why do the previous two examples show a different list of available methods?
+
+PUT ANSWER HERE
+
+:::
+
+::: {.callout-important}
+
+##### Q6
+
+Why doesn’t `print.data.frame()` get called on `starwars`?
+
+PUT ANSWER HERE
+
+:::
+
+### Using a method
+
+First, we’ll learn about two fun packages: `emoji` and `crayon`.
+
+#### `emoji`
+The [`emoji`](https://emilhvitfeldt.github.io/emoji/) package allows you print an emoji via the `emoji()` function. To display an emoji, call it by name:
+
+```{r}
+emoji("star")
+emoji("dog")
+emoji("basketball")
+```
+
+You can see the full list of available emojis in the tibble returned by emojis.
+
+- `emojis |> View()`
+
+::: {.callout-important}
+
+##### Q7
+
+Find an emoji that you like and use emoji() to print it here.
+
+```{r}
+# PUT ANSWER HERE
+```
+
+:::
+
+
+#### `crayon`
+The [`crayon`](https://github.com/r-lib/crayon) package allows you to print in color in the console. For a complicated example of what you can do, consider the tidyverse logo:
+
+```{r}
+tidyverse_logo()
+```
+
+For a simpler, example, you can write your name in blue. Be sure to wrap the text in `cat()` (or `message()`) to send it to the console.
+
+```{r}
+cat(crayon::blue("Jericho"))
+```
+
+::: {.callout-important}
+
+##### Q8
+
+Pick a color from the crayon package and write something using that color.
+
+```{r}
+# PUT ANSWER HERE
+```
+
+:::
+
+### Defining a method
+Now we will define a simple `print()` method that will only be invoked for objects of class `sds270`. This method will simply print a colorful message to the console, and then invoke the `NextMethod()` available.
+
+```{r}
+print.sds270 <- function(x, ...) {
+  cat(
+    crayon::magenta(
+      "Jericho", 
+      emoji::emoji("heart"), 
+      "s programming in R!\n"
+    )
+  )
+  NextMethod()
+}
+```
+
+
+To use it, we just have to create an object of type `sds270`, and then call print(). Remember that in R you can simply modify the class attribute of any object!
+
+```{r}
+class(starwars) <- c("sds270", class(starwars))
+starwars
+```
+
+Note that this method works on objects of any underlying class!!
+
+```{r}
+class(Titanic)
+class(Titanic) <- c("sds270", class(Titanic))
+Titanic
+```
+
+::: {.callout-important}
+
+##### Q9
+
+Define your own `print()` method for objects having class [your GitHub username]. Then add your class name to an object's listing of classes and print out that object.
+
+```{r}
+# PUT ANSWER HERE
+```
+
+:::
+
+### Defining a new generic
+In lecture, we defined a method for an existing generic function. Now, we will define a new generic function.
+
+```{r}
+print_emoji <- function(x, ...) {
+  UseMethod("print_emoji")
+}
+```
+
+
+Since we haven’t defined any methods yet, the function won’t actually work! However, we can start by writing a default method that will simply call the existing `print()` generic.
+
+```{r}
+print_emoji.default <- function(x, ...) {
+  print(x, ...)
+}
+```
+
+Now our `print_emoji()` function will work.
+
+```{r}
+print_emoji(starwars)
+```
+
+
+::: {.callout-important}
+
+##### Q10
+
+In the default method for `print_emoji()`, can we use `NextMethod()` instead of `print()`? Why or why not?
+
+PUT ANSWER HERE
+
+:::
+
+::: {.callout-important}
+
+##### Q11
+
+Write a print_emoji() method for data.frames.
+
+```{r}
+# PUT ANSWER HERE
+```
+
+:::
+
+## Turn-In
+
+Stage, commit, and push your template file to your SDS 270 repository.
