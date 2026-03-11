@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling\n6: Data Tidying\n7: Programming with Data\n8: Generative AI\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nStudy Guide\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n12: Data Problem-Solving\n\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling\n6: Data Tidying\n7: Components of AI\n8: Programming with Data\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nStudy Guide\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -2965,7 +2965,7 @@
     "href": "schedule.html#week-7-review-and-exam-1-39---313",
     "title": "Schedule",
     "section": "Week 7: Review and Exam #1 (3/9 - 3/13)",
-    "text": "Week 7: Review and Exam #1 (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11Friday, 3/13\n\n\n\n\n\n\n\n\nNoteProblem Solving and Lab #5\n\n\n\n\nSlides\n\nActivity\n\nLab Instructions\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #5 (due Wednesday, 3/11 at 11:59pm)\n\nTemplate\n\nExam in-class on Friday, 3/13\n\nStudy Guide\n\n\nNote: Come to Wednesday’s class with any questions about material, either from the whole semester or specifically in regard to the study guide.\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 7: Review and Exam #1 (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11Friday, 3/13\n\n\n\n\n\n\n\n\nNoteProblem Solving and Lab #5\n\n\n\n\nSlides\n\nActivity\n\nLab Instructions\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #5 (due Wednesday, 3/11 at 11:59pm)\n\nTemplate\n\nExam in-class on Friday, 3/13\n\nStudy Guide\n\n\nNote: Come to Wednesday’s class with any questions about material, either from the whole semester or specifically in regard to the study guide.\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #5 (due tonight at 11:59pm)\n\nTemplate\n\nExam in-class on Friday, 3/13\n\nStudy Guide\n\n\n\n\n\n\n\n\n\n\n\n\nImportantExam #1\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "lectures/w6l1_joining.html#last-time",
@@ -3356,8 +3356,8 @@
     "objectID": "lectures/w7l1_ps.html#last-time",
     "href": "lectures/w7l1_ps.html#last-time",
     "title": "Problem Solving with Data Wrangling/Joining",
-    "section": "Last Time",
-    "text": "Last Time\n\nData joining\n\nRationale\nDifferent types of joins\nR examples"
+    "section": "",
+    "text": "Data joining\n\nRationale\nDifferent types of joins\nR examples"
   },
   {
     "objectID": "lectures/w7l1_ps.html#today",
@@ -4443,5 +4443,271 @@
     "title": "Lab #6: Data Joining (30 pts)",
     "section": "Questions",
     "text": "Questions\nRead through the details in the instructions file prior to answering each of the following questions.\n\n\n\n\n\n\nImportantQuestion 1 (3 pts)\n\n\n\nReference the data dictionaries for these two data frames to determine the names of the variables that we will join on. Remember that these should be variables that we can use to uniquely identify each unit of observation across the data frames.\nWrite code below to determine the number of unique values for the variables you identify in each of these data frames.\n\nHint: Remember how we counted unique values in a variable in lab 1.\n\n\n# Write code here for echo_air_ca\n# Write code here for echo_water_ca\n\n\n\n\n\n\n\n\n\nImportantQuestion 2 (3 pts)\n\n\n\nIn the code below, for each of the data frames, you should group the data by RegistryID and then summarize by returning the max() value in CurrSvFlag, ViolFlag, CurrVioFlag, Insp5yrFlag for each group. Store the results in echo_air_ca_agg and echo_water_ca_agg respectively. Note how many rows in are in echo_air_ca_agg and echo_water_ca_agg. It should match the number of unique values in RegistryID that you calculated above.\n\necho_air_ca_agg &lt;-\n  echo_air_ca |&gt;\n  ______ |&gt;             #group by RegistryID\n  _____(                #Summarize the following:\n    CurrSvFlag = _____, #Calculate max value in CurrSvFlag\n    ViolFlag = _____,   #Calculate max value in ViolFlag\n    CurrVioFlag = _____,#Calculate max value in CurrVioFlag\n    Insp5yrFlag = _____ #Calculate max value in Insp5yrFlag\n  )\n\necho_water_ca_agg &lt;- #Copy and adjust code above to create echo_water_ca_agg\n\n\n\n\n\n\n\n\n\nImportantQuestion 3 (4 pts)\n\n\n\nWrite code below to perform four kinds of joins - a left join, a right join, and inner join, and a full join. echo_water_ca_agg should be in the first position, and echo_air_ca_agg should be joined onto it. I’ve started that for you in the commented code below.\n\n#joined_left &lt;- echo_water_ca_agg |&gt; \n\n#joined_right &lt;- echo_water_ca_agg |&gt; \n\n#joined_inner &lt;- echo_water_ca_agg |&gt; \n\n#joined_full &lt;- echo_water_ca_agg |&gt; \n\n\n\n\n\n\n\n\n\nImportantQuestion 4 (4 pts)\n\n\n\nThe three statements below are incorrect. Correct my statements below about the remaining joins.\n\npaste(nrow(joined_full), \"represents the number of Registry IDs present in echo_air_ca_agg\")\n\npaste(nrow(joined_left), \"represents the number of Registry IDs present in either echo_air_ca_agg or echo_water_ca_agg\")\n\npaste(nrow(joined_right), \"represents the number of Registry IDs present in echo_water_ca_agg\")\n\n\n\n\n\n\n\n\n\nImportantQuestion 5 (4 pts)\n\n\n\nIn my code below rename the remaining columns to differentiate between the column names from the two original data frames.\n\njoined_inner_renamed &lt;-\n  joined_inner |&gt;\n  rename(\n    CurrSvFlag_water = CurrSvFlag.x,\n    ViolFlag_water = ViolFlag.x \n    #Rename remaining columns here. Be sure to separate by comma. There are six more to go!\n  )\n\n\n\n\n\n\n\n\n\nImportantQuestion 6 (4 pts)\n\n\n\nNow that we have a cleaned up data frame, use a data wrangling verb to subset the data frame to the rows where a RegistryID has a current violation to both the Clean Water Act and Clean Air Act. Repeat these steps to determine which RegistryIDs have a significant violation to both Acts. I recommend running this on joined_inner_renamed.\nOnce you’ve run these codes, open both echo_air_ca and echo_water_ca by clicking on the data frames in your environment. Search for a few of the RegistryIDs that appeared in your analysis to identify the names and locations of the facilities.\n\n# Write wrangling code here for current violations. \n\n# Write wrangling code here for significant violations. \n\n\n\n\n\n\n\n\n\nImportantQuestion 7 (4 pts)\n\n\n\nUsing my code as an example, determine how many times facility 110000483619 appears in echo_air_ca and how many times it appears in echo_water_ca. How many times would this facility show up if we were to perform a many-to-many inner join for these two data frames? Write your response as a comment in the code chunk.\n\n#Write code here for echo_air_ca!\n\n#Write code here for echo_water_ca!\n\n#Write comment here!\n\n\n\n\n\n\n\n\n\nImportantQuestion 8 (4 pts)\n\n\n\nWrite code below to perform two anti_join()s. The first should tell me which facilities are regulated by the Clean Air Act and not the Clean Water Act, and the second should tell me which facilities are regulated by the Clean Water Act and not the Clean Air Act.\n\n#not_clean_water &lt;- Write code here!\n\n#not_clean_air &lt;- Write code here!\n\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nIn March 2020, the Environmental Protection Agency published a memo that permitted industrial facilities impacted by the Covid-19 pandemic to temporarily suspend mandated pollution monitoring. Research published by the Environmental Data Governance Initiative (EDGI) [@nostMorePermissionPollute2020] has indicated that, during this time, reported violations to the Clean Air Act and the Clean Water Act dropped considerably. However, EDGI’s report goes on to argue that violations were likely being under-counted at this time. …first, because facilities were not being required to monitor and report data to the same degree during Covid-19, and second, because the EPA was conducting fewer inspections during Covid-19. In sum, as they say, “the absence of data should not be taken as the absence of pollution.” What social harms emerge in the wake of these data absences? Who benefits from these policies, and who faces the greatest risks? How should we as data scientists think and act as we anaylze and present this data?"
+  },
+  {
+    "objectID": "projects/proj2inst.html",
+    "href": "projects/proj2inst.html",
+    "title": "Project #2 (150 pts)",
+    "section": "",
+    "text": "WarningWarning\n\n\n\nUpdates to this document are indicated in red.\nTBD"
+  },
+  {
+    "objectID": "projects/proj2inst.html#background",
+    "href": "projects/proj2inst.html#background",
+    "title": "Project #2 (150 pts)",
+    "section": "Background",
+    "text": "Background\nIn this project, you will be working in groups of 2-3 to incorporate various data techniques discussed in class on an analysis that you will conduct on a dataset and question of your choice. A Git workflow will be established for all members in your group, and each of you will contribute to the data cleaning, exploratory data analysis, and/or general analysis associated with your research question. The process and results will be presented in a report and another mode of your choice. By the end of this project, you will be able to:\n\nDevelop an appropriately-scoped and relevant research question from a dataset.\nApply a manageable Git workflow for all members in your team.\nCreate clear, efficient, and meaningful code to execute your analysis, including the use of functions, functionals, and tidyverse operations.\nExamine visual aspects and metrics from your analysis, including but not limited to plots, tables, statistics, and models.\nSummarize your process and findings in a report and creative mode of your choice.\n\nThe project will contain the following parts:\n\nProposal (5 pts; due Friday, 4/10 at 11:59pm in created repository)\nCreative Presentation (30 pts; given Monday, 4/27 in class)\nReport (40 pts; due Monday, 4/27 at 11:59pm in repository)\nRepository (70 pts; due Monday, 4/27 at 11:59pm)\nEvaluations (5 pts; due Monday, 4/27 at 11:59pm on Moodle)\n\nParts of several lectures will be dedicated to working on the project. Aside from these times, you will be tasked with working on this project outside of class."
+  },
+  {
+    "objectID": "projects/proj2inst.html#instructions",
+    "href": "projects/proj2inst.html#instructions",
+    "title": "Project #2 (150 pts)",
+    "section": "Instructions",
+    "text": "Instructions\n\nFind your groupmates. You will group up in teams of 2-3 and specify this to me in your proposal. You may not work by yourself.\nChoose a dataset and write a central research question. Your group will find a reasonably-sized dataset based on an interest of your choice. This dataset should be legitimate with some metadata that explains how the data was collected. To that end, you can find datasets from some of these resources:\n\ndata.gov\nKaggle\nUCI Machine Learning Repository\nNYC Open Data\n\nOnce your group has explored the metadata and data, you will develop a central research question that analyzes a collective group, set of variables, or some form of a relationship. From there, you can also develop smaller questions you would like to answer within an exploratory data analysis.\nThe group members, data source (and a summary of its data/metadata), and a synopsis of your research direction will all be included in a proposal located in the repository your group will create in the next step.\nSetup a repository on GitHub and RStudio. One person will need to go to their GitHub profile. In the profile, you will create a new repository by clicking “New” at the top-right hand corner of the screen:\n\nFrom there, you will put in the following specifications for your new repository:\n\nThen, create the repository. You will need to invite collaborators to your repository as well. Invite all members of the group, as well as Jericho (@jericholawson) to the repository.\nThereafter, the rest of you will create a new project in RStudio based around your new repository. To do so, go to File &gt; New Project &gt; Version Control &gt; Git. Copy the new repository URL and paste it into the first field. Name your project “project2” and place the new repository into a new folder on your laptop. Then, click “Create Project”.\nNote: With everyone having access to the repository, it will be extremely imperative to pull before you commit and push. Preferably, you may want to work in a separate branch and then merge the branch at major checkpoints. Refer to lab #2 and Jericho for more information.\nImport data and get to know the data set. This will involve a combination of looking at the metadata and a snippet of the data itself. Consider the following questions as you examine the data:\n\nWho is the creator/maintainer of the data?\nWhat do the observations represent? How many variables are there?\nHow many observations and variables are in the data set?\nWhat are the variables in there? What are the possible values in each variable?\nIdentify the response or variable of interest in this data set.\n\nThis should be numerical.\n\nAre there missing values in the data set? If so, how many and is there a reason why this is the case?\n\nIf it appears to be random, you can omit the missing observations. If not, you will need to subset your data.\n\n\nFrom this point on, you will be developing 3-4 unique Quarto documents, one/two for each of the next three tasks below. Each of these tasks below will need to have use of each of the following R traits:\n\nFunctions\nUse of tidyverse\nPiping or assigning objects\nComments and/or code chunks\n\nPerform data tidying and possible joining. Your group will need to resolve the following issues that may show up in your data:\n\nFile formatting (e.g. .xlsx, shape files)\nMissing values\nImproper data types (e.g. non-factors, all characters)\nImproper column or group names\nMultiple files to merge together (either more variables or observations)\nPivoted in incorrect format for analysis\n\nCreate a single Quarto document that brings in your original data files and performs data tidying, joining, and pivoting (relating to the above issues and others). You should break this code up into various chunks, labeling/commenting what each chunk does briefly in a few words.\nSome data wrangling may need to be done, particularly if you are looking at certain subsets of the data or missing data exists. Your code should properly subset the data so that you are able to complete the data visualizations.\nConduct an exploratory data analysis. With a combination of code related to data wrangling and data visualization, you will explore at least three variables related (in)directly to your research direction that will give your group a better idea regarding the relationships, trends, and characteristics of your data. Unlike the first project, there are no restrictions to what variables you should explore and which tools to use – only as long as they relate to your research question.\nYou can use any combination of plots (via ggplot2), summary tables (via dplyr), and metrics. If you are repeatedly using similar code elements or chunks, you are encouraged to encapsulate this code within functions and/or functionals. For your report and creative mode, you will discuss what the data indicates about the situation around your research question.\nConduct an overall analysis. Naturally, this will be a continuation of your exploratory data analysis. You will now explore the variables referred to from your research question. At the bare minimum, you will present at least three summary tables, plots, and/or metrics that answer your research question. These figures should…\n\nProvide objective insight into the data related to your question\nSpark a discussion about the implications of your results\n\nYou will further discuss these two bullet points in your report and creative mode, connecting them to an overall discussion on your research questions and its replications.\nYou may be inclined to complete further analysis – predictive, cluster, causal, and others. I want to make this clear: this is not required. However, if your group feels that it will aid in a clearer and thought-provoking analysis, you are open to do so (but again, not required!).\nAnalyze and conclude your findings. Similar to project #1, you will consider the following questions:\n\nWhat can be said about the data? Trends? Patterns? Characteristics?\nWhat does this say about the situation at hand? How does this further your understanding of the topic?\nWhat are some of the challenges and pitfalls of this analysis and/or data?\n\nWrite a report and create a presentation in a mode of your choice. Your group will take everything that has been discussed and create two items from your group’s research. Akin to what was seen in project #1, your group will write a 2-4 page report (double-spaced, 12 point size, a common font). More specifications can be seen in the Components section. Additionally, your group will create an item of a form of your choice, which will be presented in front of the class on the last Monday of class. More information on this can be seen in the Components section.\nDevelop a complete repository and fill out evaluations. The final version of your repository will be shared with Jericho and will consist of code, your cleaned up data, and a README file. More specifications can be seen in the Components section.\nYou will also fill out evaluations on yourself and each of your group members, describing each person’s contribution to the project. This will be done on Moodle."
+  },
+  {
+    "objectID": "projects/proj2inst.html#components",
+    "href": "projects/proj2inst.html#components",
+    "title": "Project #2 (150 pts)",
+    "section": "Components",
+    "text": "Components\n\nProposal (5 pts; due Friday, 4/10 at 11:59pm via repository)\nYour group’s proposal will contain the following:\n\nNames of all group members\nData source\n2-3 sentence summary of the data and metadata\n2-3 sentence synopsis of your research direction, including your overall question\n\nOne person will push this to your group’s repository by the due date. Make sure to add me (@jericholawson) as a GitHub collaborator. No project late days may be used here.\nThis is completion-based. Your group will get feedback about the feasibility of the data and research question, with approval or revisions from my end.\n\n\nCreative Presentation (30 pts; presented on Monday, 4/27 in class)\nAs one of the two items for presenting your research, you will be creating this item based on a mode of your choice.\nThe mode can be one of the following:\n\nA traditional 3-4 minute presentation with slides\nA 1-2 minute TikTok-style reel highlighting the main points\nA blog post discussion of what your group found\nA 2-3 minute video of your project\nA Q&A discussing the main points of your research question\n\nTwo critical aspects will be primarily graded on:\n\n(15 pts) Adherence to the stylistic aspects of the mode\n\ne.g. delivery, organization, and setup in a presentation\n\n(15 pts) Content of the presentation\n\nAdequate information to discuss research, including background, your analysis, and implications\n\n\nThis piece will be presented during class on the last Monday (e.g. 4/27) of the semester. Nothing will need to be submitted. You are required to show up for the entirety of everyone’s group presentations on that day. No late work will be accepted for this part.\n\n\nReport (40 pts; due Monday, 4/27 at 11:59pm via Moodle)\nThis report will contain all of the analysis and discussion related to the research your group is conducting with the dataset.\nThe report will be graded based on the following specifications:\n\n(2 pts) Formatting\n\nContains 2-4 pages of text (excluding images)\nDouble-spaced, 12 point, common font (with organization)\n\n(8 pts) Introduction\n\nDescription of dataset and topic behind research question\nResearch question(s)\n\n(10 pts) Exploratory data analysis\n\nFigures, tables, and/or metrics of at least four variables\nDiscussion of characteristics and metrics from above items\n\n(10 pts) Main analysis\n\nFigures, tables, and/or metrics centered around main variable of interest\nDiscussion of results from above items\n\n(10 pts) Conclusion\n\nSummary of findings\nExamination of pitfalls in data and process\n\n\nThis should be in your repository by the due date. Up to two late days can be used on this part (in connection to the repository).\n\n\nRepository (70 pts; due Monday, 4/27 at 11:59pm via GitHub)\nThe repository will contain all of the coding work completed. This includes all code, the dataset, and a README.md file (as well as the report). Your group’s repository will have the following elements:\n\n(5 pts) data folder\n\nThe .csv file of the tidied data set.\n\n(60 pts) R folder\n\nThree .qmd files\n\nTidying\nEDA\nOverall analysis\n\nCode must be working, efficient, and organized.\n\n(5 pts for each file) Working: Does your code work successfully on your data?\n(10 pts…) Efficient: Does your code use coding techniques discussed in class (e.g. functions, proper variable names, appropriate processes)?\n(5 pts…) Organized: Is your code segmented properly and includes comments/headers briefly addressing what each part does?\n\n\n(5 pts) README.md file\n\nTitle, one-paragraph description of purpose, authors, and an overview of the structure.\nDone in a .md or .txt file.\n\n(0 pts) Report (in a .pdf file)\n\nYour group will need to share this repository to me (@jericholawson) on GitHub. This task must be done by the due date mentioned above. Two project late days may be used here if needed.\n\n\nEvaluations (5 pts; due Monday, 4/27 at 11:59pm via Moodle)\nFor each member in your group (including yourself), you will answer the following questions in no more than two sentences:\n\nWhat did they contribute to the project?\nWere there any problems working with them?\n\nThis part allows me to address issues with group dynamics and fair grading. Points provided here will stem from completion of this task and an equal contribution to the project (informed by evaluations and/or GitHub commits)."
+  },
+  {
+    "objectID": "lectures/w7l1_ps.html",
+    "href": "lectures/w7l1_ps.html",
+    "title": "Problem Solving with Data Wrangling/Joining",
+    "section": "",
+    "text": "Data joining\n\nRationale\nDifferent types of joins\nR examples"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#last-time",
+    "href": "lectures/w10l1_ethics.html#last-time",
+    "title": "Data Ethics",
+    "section": "Last Time",
+    "text": "Last Time\n\nWhat is tidy data?\nPivoting\n\nLonger data\nWider data\nSeparation\nNesting"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#today",
+    "href": "lectures/w10l1_ethics.html#today",
+    "title": "Data Ethics",
+    "section": "Today",
+    "text": "Today\n\nData ethics\n\nDefinition\nStakeholders\nPrivacy and anonymity\nSocietal consequences\nVideo"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#data-science-an-overview",
+    "href": "lectures/w10l1_ethics.html#data-science-an-overview",
+    "title": "Data Ethics",
+    "section": "Data Science: An Overview:",
+    "text": "Data Science: An Overview:\n\n\n\nInterdisciplinary field combining computer science, mathematics/statistics, and domain expertise to extract meaningful information from unstructured data points\nIncludes the human aspect: use of aesthetics, situational context, and communication to explain the data to the world"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#data-is-currency",
+    "href": "lectures/w10l1_ethics.html#data-is-currency",
+    "title": "Data Ethics",
+    "section": "Data Is Currency!",
+    "text": "Data Is Currency!\n\n“Data is an exchange medium and a measure of worth, much like money. It is exchanged, purchased, and sold in digital markets; frequently, we do not even realize it. Every action we take online—including clicks, likes, and purchases—generates a piece of data. These tidbits add up to a wealth of knowledge that businesses and organizations may mine and profit from.”\n\n\nAkshitha Vemuru, St. Andrews Economist"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#definition",
+    "href": "lectures/w10l1_ethics.html#definition",
+    "title": "Data Ethics",
+    "section": "Definition",
+    "text": "Definition\n\nStudies and evaluates moral problems related to data, algorithms, and corresponding practices\n\nData generation, recording, processing, sharing, AI, machine learning, programming, etc.\n\n\n\nFloridi & Taddeo, 2016"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#impacts-of-data",
+    "href": "lectures/w10l1_ethics.html#impacts-of-data",
+    "title": "Data Ethics",
+    "section": "Impacts of Data",
+    "text": "Impacts of Data\n\nData can be collected on just about anything at any given time\n\nProvides stakeholders with a bunch of information\nCan be used to train models or generate analysis for good…\n\nImproving service times, identifying lapses in health coverage to certain groups\n\nBut can be for bad as well\n\nPredatory loans, personalized ads"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#stakeholders",
+    "href": "lectures/w10l1_ethics.html#stakeholders",
+    "title": "Data Ethics",
+    "section": "Stakeholders",
+    "text": "Stakeholders\n\nYou, as the subject, are the main stakeholder\n\nMillions of variables\n\nOther stakeholders: businesses, government agencies, researchers, etc."
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#data-privacy",
+    "href": "lectures/w10l1_ethics.html#data-privacy",
+    "title": "Data Ethics",
+    "section": "Data Privacy",
+    "text": "Data Privacy\n\nAll about the appropriate management of data, especially involving sensitive information\n\nSensitive can be subjective\n\nWho should have access to what data?\ne.g. credit card scores, dating preferences, phone numbers\n\nExtends to models and algorithms\n\n\n\nI will respect the privacy of my data subjects, for their data are not disclosed to me that the world may know, so I will tread with care in matters of privacy and security."
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#examples-of-data-privacy",
+    "href": "lectures/w10l1_ethics.html#examples-of-data-privacy",
+    "title": "Data Ethics",
+    "section": "Examples of Data Privacy",
+    "text": "Examples of Data Privacy\n\nPrivacy protections\n\ne.g. encryption, masking\n\nRegulatory requirements\n\ne.g. laws, guidelines\n\nMitigating privacy risks\n\ne.g. lack of access"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#example-masked-data-geocoding",
+    "href": "lectures/w10l1_ethics.html#example-masked-data-geocoding",
+    "title": "Data Ethics",
+    "section": "Example: Masked Data Geocoding",
+    "text": "Example: Masked Data Geocoding\n\nFor public viewing, street numbers in address data may be masked in some fashion\n\nFront-masked: first few numbers are masked\nBack-masked: last few numbers are masked\n\nDone for anonymity\n\nIf front-masked, keeps general spacing of address"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#example-massachusetts-data-privacy-laws",
+    "href": "lectures/w10l1_ethics.html#example-massachusetts-data-privacy-laws",
+    "title": "Data Ethics",
+    "section": "Example: Massachusetts Data Privacy Laws",
+    "text": "Example: Massachusetts Data Privacy Laws\n &gt; Source: mass.gov"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#data-privacy-in-action",
+    "href": "lectures/w10l1_ethics.html#data-privacy-in-action",
+    "title": "Data Ethics",
+    "section": "Data Privacy In Action",
+    "text": "Data Privacy In Action\n\n\nContent Warning: Mention of violence"
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html#activity",
+    "href": "lectures/w10l1_ethics.html#activity",
+    "title": "Data Ethics",
+    "section": "Activity",
+    "text": "Activity\n\nYou will be discussing with others regarding the video and two different written pieces\n\nBrowse over to the Activities file for today on the website\nFill out the questions in the .qmd file and turn in it by the end of class"
+  },
+  {
+    "objectID": "lectures/w10l1_act.html",
+    "href": "lectures/w10l1_act.html",
+    "title": "Activities from Week 10, Lecture 1: Data Ethics",
+    "section": "",
+    "text": "We’ve discussed some ideas regarding data ethics. With those around you, you will discuss your thoughts on the video and answer questions regarding two different articles."
+  },
+  {
+    "objectID": "lectures/w10l1_act.html#introduction",
+    "href": "lectures/w10l1_act.html#introduction",
+    "title": "Activities from Week 10, Lecture 1: Data Ethics",
+    "section": "",
+    "text": "We’ve discussed some ideas regarding data ethics. With those around you, you will discuss your thoughts on the video and answer questions regarding two different articles."
+  },
+  {
+    "objectID": "lectures/w10l1_act.html#carissa-véliz-how-privacy-can-save-your-life",
+    "href": "lectures/w10l1_act.html#carissa-véliz-how-privacy-can-save-your-life",
+    "title": "Activities from Week 10, Lecture 1: Data Ethics",
+    "section": "Carissa Véliz: How privacy can save your life",
+    "text": "Carissa Véliz: How privacy can save your life\nYou’ve just watched a TEDTalk from Carissa Véliz about how data privacy should be used to protect your livelihood. You can access the video for reference here.\nAfter talking to others about the video, answer the following questions below:\n\n\n\n\n\n\nImportantQ1\n\n\n\nWhat are some important ideas that Carissa Véliz talked about in the video? What are your thoughts to some of the examples she used and her perspective?"
+  },
+  {
+    "objectID": "lectures/w10l1_act.html#your-data-is-diminishing-your-freedom",
+    "href": "lectures/w10l1_act.html#your-data-is-diminishing-your-freedom",
+    "title": "Activities from Week 10, Lecture 1: Data Ethics",
+    "section": "Your data is diminishing your freedom",
+    "text": "Your data is diminishing your freedom\nRead the New York Times article “Your Data is Diminishing Your Freedom” at the following link here. After discussing your thoughts on the piece, answer the following questions:\n\n\n\n\n\n\nImportantQ2\n\n\n\nWhat does it mean that “we have become our own data?” How does that sentiment affect your personal decision-making, and how we define ourselves?\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nUsing the article as support, what are some concerns you personally have about the use of your data?"
+  },
+  {
+    "objectID": "lectures/w10l1_act.html#federal-data-strategy",
+    "href": "lectures/w10l1_act.html#federal-data-strategy",
+    "title": "Activities from Week 10, Lecture 1: Data Ethics",
+    "section": "Federal Data Strategy",
+    "text": "Federal Data Strategy\nThe U.S. Government has a Federal Data Strategy with the hopes of defining how to use data to serve the public and steward resources while “protecting security, privacy, and confidentiality.”\nYou will read page 4 of the Data Ethics Framework based on the strategy here. After discussing your thoughts on the piece, answer the following questions:\n\n\n\n\n\n\nImportantQ4\n\n\n\nDiscuss examples about how a government (or smaller body) could execute a data ethics tenet of your choice."
+  },
+  {
+    "objectID": "lectures/w10l1_act.html#turn-in",
+    "href": "lectures/w10l1_act.html#turn-in",
+    "title": "Activities from Week 10, Lecture 1: Data Ethics",
+    "section": "Turn-in",
+    "text": "Turn-in\nSave the .qmd file inside your activities repository. Please stage, commit, and push to GitHub."
+  },
+  {
+    "objectID": "lectures/w10l1_ethics.html",
+    "href": "lectures/w10l1_ethics.html",
+    "title": "Data Ethics",
+    "section": "",
+    "text": "What is tidy data?\nPivoting\n\nLonger data\nWider data\nSeparation\nNesting"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#last-time",
+    "href": "lectures/w10l2_ai.html#last-time",
+    "title": "AI Ethics",
+    "section": "",
+    "text": "Data ethics\n\nDefinition\nStakeholders\nPrivacy and anonymity\nSocietal consequences\nVideo"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#today",
+    "href": "lectures/w10l2_ai.html#today",
+    "title": "AI Ethics",
+    "section": "Today",
+    "text": "Today\n\nEthics in AI\n\nBehind the scenes\nProcess\nVideo\nExploring a makeshift AI model"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#artificial-intelligence-is-still-human-based",
+    "href": "lectures/w10l2_ai.html#artificial-intelligence-is-still-human-based",
+    "title": "AI Ethics",
+    "section": "Artificial Intelligence is Still Human-Based",
+    "text": "Artificial Intelligence is Still Human-Based\n\nUse of various learning models\n\nModel: encapsulates process to complete a certain task\ne.g. machine learning, deep learning, large language\n\nModels are built by statisticians and computer scientists\n\nOptimization can occur, but choices about various are made by humans\n\nBiases? Perspectives?"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#example",
+    "href": "lectures/w10l2_ai.html#example",
+    "title": "AI Ethics",
+    "section": "Example",
+    "text": "Example\n\nDescribe the weather to me today.\n\n\nHow would you respond?\nHow would Gemini or ChatGPT respond?"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#example-1",
+    "href": "lectures/w10l2_ai.html#example-1",
+    "title": "AI Ethics",
+    "section": "Example",
+    "text": "Example\nThe process?\n\nIf I was outside \\(\\rightarrow\\) I’ll mention my experiences\nIf I wasn’t outside \\(\\rightarrow\\) I’ll go outside, I’ll say how it is"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#example-2",
+    "href": "lectures/w10l2_ai.html#example-2",
+    "title": "AI Ethics",
+    "section": "Example",
+    "text": "Example\nAI’s process (for large-language models)?\n\nBreak down the words and determine what context is needed\nLook through weather sources or use contextual clues to provide educated response\nConstructs prompt in a natural tone and is formatted correctly\n\n\nEach piece requires multiple models to accomplish its task."
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#example-3",
+    "href": "lectures/w10l2_ai.html#example-3",
+    "title": "AI Ethics",
+    "section": "Example",
+    "text": "Example\n\nSunny, 55 degrees, light breeze.\nToday, it will be sunny and 55 degrees outside with a light breeze periodically throughout the day.\n\nWord-by-word, this sentence must be constructed."
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#ai-in-a-nutshell",
+    "href": "lectures/w10l2_ai.html#ai-in-a-nutshell",
+    "title": "AI Ethics",
+    "section": "AI in a Nutshell",
+    "text": "AI in a Nutshell\n\nNeeds information to fuel the tasks and response\n\nIn the form of data\nA lack of information \\(\\rightarrow\\) bad responses\nCan make predictions to generate response, but it’s not always right"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#ai-on-a-global-scale",
+    "href": "lectures/w10l2_ai.html#ai-on-a-global-scale",
+    "title": "AI Ethics",
+    "section": "AI on a Global Scale",
+    "text": "AI on a Global Scale\n\n\nGlobal data centre electricity consumption, by equipment, Base Case, 2020-2030 (Source: IEA)"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#why-were-giving-ai-too-much-credit",
+    "href": "lectures/w10l2_ai.html#why-were-giving-ai-too-much-credit",
+    "title": "AI Ethics",
+    "section": "Why We’re Giving AI Too Much Credit",
+    "text": "Why We’re Giving AI Too Much Credit"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#ethical-use-from-unesco",
+    "href": "lectures/w10l2_ai.html#ethical-use-from-unesco",
+    "title": "AI Ethics",
+    "section": "Ethical Use from UNESCO",
+    "text": "Ethical Use from UNESCO\n\nRespect, protection and promotion of human rights\n\nEnvironment, inclusiveness, societies\n\nPrinciples:\n\nSafety, security, sustainability, transparency\n\nRecommendations:\n\nEthical impact assessment\nData policy\n\nAdequate data collection\nData privacy\nIncrease interpretability of tools\n\n\n\nMore at UNESCO"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html#views-from-a-statistician",
+    "href": "lectures/w10l2_ai.html#views-from-a-statistician",
+    "title": "AI Ethics",
+    "section": "Views from a Statistician",
+    "text": "Views from a Statistician\n\nThink it as any information-gathering tool\n\ne.g. TV, computer, Google\nInformation is empowerment…\n\nBut it needs to be used responsibly\n\nTradeoffs:\n\nIntrinsic motivation\nBackground knowledge\nEnergy consumption\n\n\nAnd there’s a difference between knowing and doing"
+  },
+  {
+    "objectID": "lectures/w10l2_ai.html",
+    "href": "lectures/w10l2_ai.html",
+    "title": "AI Ethics",
+    "section": "",
+    "text": "Data ethics\n\nDefinition\nStakeholders\nPrivacy and anonymity\nSocietal consequences\nVideo"
   }
 ]
