@@ -4015,7 +4015,7 @@
     "href": "schedule.html#week-7-conditions-and-object-oriented-programming-oop-39---313",
     "title": "Schedule",
     "section": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)",
-    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 12 of Advanced R (before Wednesday’s class)\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)"
+    "text": "Week 7: Conditions and Object-Oriented Programming (OOP) (3/9 - 3/13)\n\nMonday, 3/9Wednesday, 3/11\n\n\n\n\n\n\n\n\nNoteLecture: Conditions\n\n\n\n\nSlides\nActivity\n\nTemplate\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 12 of Advanced R (before Wednesday’s class)\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Object-Oriented Programming\n\n\n\n\nSlides\nActivity\n\nTemplate\n\nSupplemental Material for OOP\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #3 due Friday, 3/13 at 11:59pm via your repository\n\nCreate new .qmd file named “set3.qmd”, type answers in document, and stage/commit/push in repository\nLink to dataset and metadata here\n\nRead chapter 13 of Advanced R (before class on Monday, 3/23)"
   },
   {
     "objectID": "lectures/w7l1_actTemp.html",
@@ -4940,5 +4940,54 @@
     "title": "Mini-Lecture #1: Code and Documentation",
     "section": "R data: data vs. data-raw vs. data.R",
     "text": "R data: data vs. data-raw vs. data.R\n\nR/data.R is where you document the stuff in data\n\njust the name of the data set\nuse roxygen2 to add other information\ntidyverse convention"
+  },
+  {
+    "objectID": "lectures/s1_oop.html",
+    "href": "lectures/s1_oop.html",
+    "title": "Supplement to Object-Oriented Programming",
+    "section": "",
+    "text": "Extending (and clarifying) our conversation on classes in R, I’ll walk through the example shown in class and show how it can be incorporated in R code."
+  },
+  {
+    "objectID": "lectures/s1_oop.html#introduction",
+    "href": "lectures/s1_oop.html#introduction",
+    "title": "Supplement to Object-Oriented Programming",
+    "section": "",
+    "text": "Extending (and clarifying) our conversation on classes in R, I’ll walk through the example shown in class and show how it can be incorporated in R code."
+  },
+  {
+    "objectID": "lectures/s1_oop.html#a-class",
+    "href": "lectures/s1_oop.html#a-class",
+    "title": "Supplement to Object-Oriented Programming",
+    "section": "A Class",
+    "text": "A Class\nA class (using the S3 system) can be defined in a few ways: either formally through the use of helpers or as we go by altering an object’s class attribute.\nWhile there are ways to formally set the object’s class to a new class, we can do so (and get away with this) by adding a character (named as the class) to its class attribute. To do this, we can use:\n\nclass(my_object) &lt;- c(\"my_class\", class(my_object))\n\nWe are most definitely prone to errors when trying to associate an object as a new class. We will talk in Monday’s lecture after the break about ways we can let the user create the object (associated with the class) in a more formal manner."
+  },
+  {
+    "objectID": "lectures/s1_oop.html#the-car-bicycle-and-vehicle-classes",
+    "href": "lectures/s1_oop.html#the-car-bicycle-and-vehicle-classes",
+    "title": "Supplement to Object-Oriented Programming",
+    "section": "The Car, Bicycle, and Vehicle Classes",
+    "text": "The Car, Bicycle, and Vehicle Classes\nIf we dichotomize each of these three objects, cars and bicycle are their own categories and they share components that would make them vehicles. As such, we would want to design a system in which the vehicle class is a parent class of the car and bicycle classes.\nFor each of these classes, we discussed actions and attributes that define these classes. For a vehicle object, we may have the following:\n\nType of vehicle\nColor\nCan be used to travel to some destination in a certain number of hours\n\nLet’s create an object that houses the first two qualities:\n\nmyVehicle &lt;- list(type = \"car\", color = \"blue\")\n\nQuite simply, we can make a list with these qualities. In next Monday’s class, we’ll discuss helpers and constructors we can create to allow the user to make these objects easily.\nTo associate this myVehicle object of the vehicle class, we can add the class name to the class attribute:\n\nclass(myVehicle) &lt;- c(\"vehicle\", class(myVehicle))\nclass(myVehicle)\n\n[1] \"vehicle\" \"list\"   \n\n\nAlternatively, we can also use the structure() function to do this, where we can put the object as the first argument and the class name as the second argument:\n\nmyVehicle &lt;- structure(myVehicle, class = \"vehicle\")"
+  },
+  {
+    "objectID": "lectures/s1_oop.html#the-methods",
+    "href": "lectures/s1_oop.html#the-methods",
+    "title": "Supplement to Object-Oriented Programming",
+    "section": "The Methods",
+    "text": "The Methods\nFor any method, we need to have a generic, default, and class-specific function. Why? With the S3 class system, the generic’s job is to perform method dispatch. If I use the print() function, R needs a way to determine how to access the class-specific functions.\nAs such, suppose we create the travel function for our vehicle class. We start with the generic, which will be written as:\n\ntravel &lt;- function(x, ...){\n  UseMethod(\"travel\")\n}\n\nIn this specific function only, we use the UseMethod() function on the name of the method we’ll be creating. The dots now have a purpose here: carry any potential arguments through a search path of possible travel() methods depending on the classes associated with an object.\nHowever, if I run the travel() function on our object, I get this error:\n\ntravel(myVehicle)\n\nError in `UseMethod()`:\n! no applicable method for 'travel' applied to an object of class \"c('vehicle', 'list')\"\n\n\nAs the error states, there is no travel() method on the classes associated with our object. This is where a method for the default class is needed. The default class is a pseudo-class – it serves as a fallback in case we do not have a method that exists for the class we are working with.\nThe default function can be used to run an operation on the object (regardless of its class or type), or it can serve to tell the user that a method doesn’t exist for the classes associated with the object. For example:\n\ntravel.default &lt;- function(x, ...){\n  print(NULL)\n}\n\nHere, I just printed NULL. So, when I run the travel() function once again:\n\ntravel(myVehicle)\n\nNULL\n\n\nI get the NULL statement since I do not have a travel() method for the vehicle class. Now, I can add in this travel() method. When you write the function, you will need to have it named as methodName.className. This will allow method dispatch to correctly pick the appropriate method. As an example:\n\ntravel.vehicle &lt;- function(x, dest, ...){\n  if (dest == \"Amherst\"){\n    print(\"6 miles\")\n  } else {\n    print(NA)\n  }\n}\n\nNow, if I run the travel() function on myVehicle:\n\ntravel(myVehicle, \"Amherst\")\n\n[1] \"6 miles\"\n\n\nI’ve now created a method for my vehicle class, with proper structure needed for method dispatch and missing methods."
+  },
+  {
+    "objectID": "lectures/s1_oop.html#inheritance",
+    "href": "lectures/s1_oop.html#inheritance",
+    "title": "Supplement to Object-Oriented Programming",
+    "section": "Inheritance",
+    "text": "Inheritance\nInheritance refers to attributes and methods that can be shared among classes. This allows us to define parent and child classes. Child classes will have its methods called first in method dispatch. An object of a child class will take on all of the behavior of the parent class, but with specifics defined in the child class. As such, when you view your class attribute, the child class will come first.\nIn our example, let’s associate myVehicle with the car class.\n\nclass(myVehicle) &lt;- c(\"car\", class(myVehicle))\n\nIf we print out the class attribute:\n\nclass(myVehicle)\n\n[1] \"car\"     \"vehicle\" \"list\"   \n\n\nThe car class will be the child class of the vehicle class. A car should take on all of the components and actions of a vehicle, but with more specifics that make a car a car.\nTo emphasize this, we will create a travel() method for the car class. Perhaps, we now want to specify the time it takes to get to a destination. Then,\n\ntravel.car &lt;- function(x, dest, ...){\n  if (dest == \"Amherst\"){\n    print(\"20 minutes\")\n  } else {\n    print(NA)\n  }\n}\n\nIf we use the travel() function now:\n\ntravel(myVehicle, \"Amherst\")\n\n[1] \"20 minutes\"\n\n\nWe’re now using the method corresponding to the car class. As you notice, we now have no output from the vehicle class; perhaps we still want this output. To do so, we can add a NextMethod() call to our method associated with the car class – this will print the same output as before, but then use the method thereafter from the parent class and run the actions from that method. As such, if we do change the travel() method:\n\ntravel.car &lt;- function(x, dest, ...){\n  if (dest == \"Amherst\"){\n    print(\"20 minutes\")\n  } else {\n    print(NA)\n  }\n  NextMethod()\n}\n\nThen, we can get this output:\n\ntravel(myVehicle, \"Amherst\")\n\n[1] \"20 minutes\"\n[1] \"6 miles\"\n\n\nThis will be how object-oriented programming works in R, at least initially. We’ll go into some more specifics on method dispatch and helpers later."
+  },
+  {
+    "objectID": "lectures/s1_oop.html#food-for-thought",
+    "href": "lectures/s1_oop.html#food-for-thought",
+    "title": "Supplement to Object-Oriented Programming",
+    "section": "Food for Thought",
+    "text": "Food for Thought\nOn your own, create an object of the bicycle and vehicle classes. Then, create a travel() method for the bicycle class and test the method out on the object you created."
   }
 ]
