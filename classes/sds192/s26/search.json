@@ -312,7 +312,7 @@
     "href": "schedule.html#week-9-data-tidying-323---327",
     "title": "Schedule",
     "section": "Week 9: Data Tidying (3/23 - 3/27)",
-    "text": "Week 9: Data Tidying (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25Friday, 3/27\n\n\n\n\n\n\n\n\nNoteLecture: Data Tidying\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Monday, 3/23 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Pivoting\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #6: Data Tidying\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 9: Data Tidying (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25Friday, 3/27\n\n\n\n\n\n\n\n\nNoteLecture: Data Tidying\n\n\n\n\nSlides\nCreate your own .qmd file to answer questions from slides\n\nPush to activities repository\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nReadings #6 (due Monday, 3/23 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Data Pivoting\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #6: Data Tidying\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-10-programming-330---43",
@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n12: Data Problem-Solving\n\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling\n6: Data Tidying\n7: Components of AI\n8: Programming with Data\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nStudy Guide\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n12: Data Problem-Solving\n13: Review for Exam #1\n14: Data Tidying\n\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling\n6: Data Tidying\n7: Components of AI\n8: Programming with Data\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nStudy Guide\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -4134,7 +4134,7 @@
     "href": "lectures/w9l1_tidying.html#data-basics-3",
     "title": "Data Tidying",
     "section": "Data Basics",
-    "text": "Data Basics\n\nMultiple variables referring to same metric, but altered by one item\n\ne.g. year, location\ne.g. collecting measurement heights from every person\nWill circle back to next lecture\n\n\n\n\n       Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec\n1973  9007  8106  8928  9137 10017 10826 11317 10744  9713  9938  9161  8927\n1974  7750  6981  8038  8422  8714  9512 10120  9823  8743  9129  8710  8680\n1975  8162  7306  8124  7870  9387  9556 10093  9620  8285  8466  8160  8034\n1976  7717  7461  7767  7925  8623  8945 10078  9179  8037  8488  7874  8647\n1977  7792  6957  7726  8106  8890  9299 10625  9302  8314  8850  8265  8796\n1978  7836  6892  7791  8192  9115  9434 10484  9827  9110  9070  8633  9240"
+    "text": "Data Basics\n\nMultiple variables referring to same metric, but altered by one item\n\ne.g. year, location\ne.g. collecting measurement heights from every person\nWill circle back to this in next lecture\n\n\n\n\n       Jan   Feb   Mar   Apr   May   Jun   Jul   Aug   Sep   Oct   Nov   Dec\n1973  9007  8106  8928  9137 10017 10826 11317 10744  9713  9938  9161  8927\n1974  7750  6981  8038  8422  8714  9512 10120  9823  8743  9129  8710  8680\n1975  8162  7306  8124  7870  9387  9556 10093  9620  8285  8466  8160  8034\n1976  7717  7461  7767  7925  8623  8945 10078  9179  8037  8488  7874  8647\n1977  7792  6957  7726  8106  8890  9299 10625  9302  8314  8850  8265  8796\n1978  7836  6892  7791  8192  9115  9434 10484  9827  9110  9070  8633  9240"
   },
   {
     "objectID": "lectures/w9l1_tidying.html#vector-types",
