@@ -137,7 +137,7 @@
     "href": "schedule.html#week-9-s3-objects-package-foundation-323---327",
     "title": "Schedule",
     "section": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)",
-    "text": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25\n\n\n\n\n\n\n\n\nNoteLecture: S3\n\n\n\n\nSlides\n\nCreate .qmd file with answers to questions in slides\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 1 of R Packages (before class on Wednesday)\nStudy Guide and Set #4\n\nUse the template to type answers in document and stage/commit/push in repository\nDue Monday, 3/29 at 11:59pm, but turn-in before Saturday, 3/27 for feedback before exam\nExam #2 will be given out in-class on Monday, 3/29\n\nRead over package guidelines\n\nI’ll discuss the guidelines in the next two Wednesday lectures\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Packages\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nStudy Guide and Set #4\n\nUse the template to type answers in document and stage/commit/push in repository\nDue Monday, 3/29 at 11:59pm, but turn-in before Saturday, 3/27 for feedback before exam\nExam #2 will be given out in-class on Monday, 3/29\n\nRead over package guidelines\n\nI’ll discuss the guidelines in the next two Wednesday lectures\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm"
+    "text": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25\n\n\n\n\n\n\n\n\nNoteLecture: S3\n\n\n\n\nSlides\n\nCreate .qmd file with answers to questions in slides\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 1 of R Packages (before class on Wednesday)\nStudy Guide and Set #4\n\nUse the template to type answers in document and stage/commit/push in repository\nDue Monday, 3/30 at 11:59pm, but turn-in before Saturday, 3/28 for feedback before exam\nExam #2 will be given out in-class on Monday, 3/30\n\nRead over package guidelines\n\nI’ll discuss the guidelines in the next two Wednesday lectures\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Packages\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nStudy Guide and Set #4\n\nUse the template to type answers in document and stage/commit/push in repository\nDue Monday, 3/29 at 11:59pm, but turn-in before Saturday, 3/27 for feedback before exam\nExam #2 will be given out in-class on Monday, 3/29\n\nRead over package guidelines\n\nI’ll discuss the guidelines in the next two Wednesday lectures\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm"
   },
   {
     "objectID": "schedule.html#week-10-packages---description-and-libraries-330---43",
@@ -5086,14 +5086,14 @@
     "href": "sets/set4.html",
     "title": "Set #4 (50 pts)",
     "section": "",
-    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/29 at 11:59pm\n\nIf you turn it in before Saturday, 3/27, I will be able to provide feedback before the exam!"
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/30 at 11:59pm\n\nIf you turn it in before Saturday, 3/28, I will be able to provide feedback before the exam!"
   },
   {
     "objectID": "sets/set4.html#instructions",
     "href": "sets/set4.html#instructions",
     "title": "Set #4 (50 pts)",
     "section": "",
-    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/29 at 11:59pm\n\nIf you turn it in before Saturday, 3/27, I will be able to provide feedback before the exam!"
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/30 at 11:59pm\n\nIf you turn it in before Saturday, 3/28, I will be able to provide feedback before the exam!"
   },
   {
     "objectID": "sets/set4.html#background",
