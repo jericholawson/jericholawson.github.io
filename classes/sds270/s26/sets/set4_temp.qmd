@@ -1,0 +1,140 @@
+---
+title: "Set #4 (50 pts)"
+subtitle: "SDS 270: Programming for Data Science in R, Spring 2026"
+author: "Jericho Lawson"
+editor: source
+date: last-modified
+---
+
+## Instructions
+
+- Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository. 
+- Certain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.
+- Refer to syllabus for late work deductions.
+- This set is **completion-based**. 
+- Due date: **Monday, 3/29 at 11:59pm**
+  - If you turn it in before **Saturday, 3/27**, I will be able to provide feedback before the exam!
+
+## Background
+
+The fourth (and final) problem set will contain various problems related to the following:
+
+- Environments (Ch. 7, AR)
+- Conditions (Ch. 8, AR)
+- Functionals (Ch. 9, AR)
+- Object-Oriented Programming/S3 (Ch. 12-13, AR)
+
+Other topics we've discussed earlier in the semester may show up in these problems. Make sure to carefully read and follow directions for each problem.
+
+Place any needed libraries below:
+
+```{r}
+
+```
+
+
+## Q1: Mean 
+
+When we use the `mean()` function, this is based on the formula for the arithmetic mean. Say we want to create an alternative `mean()` function that uses the formula for the harmonic mean.
+
+The harmonic mean can be defined as:
+
+$\frac{n}{\sum_i \frac{1}{x_i}}$, 
+
+where $n$ is the number of observations and $x_i$ is an observation at some index $i$. 
+Parts of this question will relate to the deployment of this harmonic mean.
+
+##### (a) Define a new `mean()` function in your global environment that uses the harmonic mean formula given some input `x`.
+
+```{r}
+
+```
+
+
+##### (b) Run base R's `mean()` function and your created `mean()` function on the `mpg` column of the `mtcars` dataset.
+
+```{r}
+
+```
+
+##### (c) Implement an instance of each of the three types of conditions in your new `mean()` function. Then, test out the revised function on three different inputs, with each input triggering each type of condition.
+
+```{r}
+
+```
+
+```{r, error=TRUE, warning=TRUE, message=TRUE}
+
+```
+
+
+##### (d) Use a functional to get the harmonic mean of each variable in the `mtcars` dataset, returning an appropriate data structure.
+
+```{r}
+
+```
+
+##### (e) In your own words, discuss the role of the search path in R in 2-3 sentences.
+
+
+
+
+##### (f) Describe a way to implement the harmonic mean as part of base R's `mean()` function.
+
+
+
+
+## Q2: Simple Linear Regression
+
+In this question, we want to determine operations and characteristics of a new class of data, which focuses on a data frame with exactly two double columns, which we will define as `slr`.
+
+For an object to be of an `slr` class, it must:
+
+- Have exactly two columns, both of which are double atomic vectors
+- Be a child class of the data.frame class
+- The first column is representing the "response" or `y`, while the second column is the "predictor" or `x`
+
+SLR is referring to simple linear regression, where we will want to use the variable denoted as `x` to explain any variation in the variable denoted as `y`. We will want to create a few items that will allow users to easily create an object of this class and run operations on this object.
+
+The parts below will reference this `slr` class.
+
+##### (a) Create a helper and constructor for the `slr` class, incorporating the restrictions specified in the introduction of this question. The user must input atomic vectors `x` and `y` that are of a double, integer, or logical type. 
+
+```{r}
+
+```
+
+
+##### (b) Create an object of the `slr` class using the helper created in part (a) on any two columns you choose from the `mtcars` dataset.
+
+```{r}
+
+```
+
+
+##### (c) Create functions for the `estimates` method, which should handle input from the `slr` class as well as an input of any other class. The class-specific method will take in a `data` input and will return the least-squares estimates of fitting `x` to `y`.
+
+Use the formulas below to return those estimates:
+
+- $\beta_1 = \frac{s_{xy}}{s_x}$, where $s$ refers to the standard deviation
+  - Use `cov()` for $s_{xy}$
+- $\beta_0 = \bar{y} - \beta_1 \bar{x}$, where $\bar{y}$ and $\bar{x}$ refer to the means of $x$ and $y$ respectively
+
+```{r}
+
+```
+
+##### (d) Create a summary method for the `slr` class that refers to output from summary methods of parent classes. This summary method will display the least-squares estimates.
+
+```{r}
+
+```
+
+
+##### (e) Compare the roles of an environmemt and a class in R in 2-3 sentences.
+
+
+
+## Turn-In
+
+When finished, commit and push this file to your SDS 270 repository.
