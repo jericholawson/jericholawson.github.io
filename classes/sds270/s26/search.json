@@ -137,7 +137,7 @@
     "href": "schedule.html#week-9-s3-objects-package-foundation-323---327",
     "title": "Schedule",
     "section": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)",
-    "text": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25\n\n\n\n\n\n\n\n\nNoteLecture: S3\n\n\n\n\nSlides\n\nCreate .qmd file with answers to questions in slides\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 1 of R Packages (before class on Wednesday)\nStudy Guide and Set #4\n\nUse the template to type answers in document and stage/commit/push in repository\nDue Monday, 3/30 at 11:59pm, but turn-in before Saturday, 3/28 for feedback before exam\nExam #2 will be given out in-class on Monday, 3/30\n\nRead over package guidelines\n\nI’ll discuss the guidelines in the next two Wednesday lectures\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Packages\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nStudy Guide and Set #4\n\nUse the template to type answers in document and stage/commit/push in repository\nDue Monday, 3/29 at 11:59pm, but turn-in before Saturday, 3/27 for feedback before exam\nExam #2 will be given out in-class on Monday, 3/29\n\nRead over package guidelines\n\nI’ll discuss the guidelines in the next two Wednesday lectures\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm"
+    "text": "Week 9: S3 Objects, Package Foundation (3/23 - 3/27)\n\nMonday, 3/23Wednesday, 3/25\n\n\n\n\n\n\n\n\nNoteLecture: S3\n\n\n\n\nSlides\n\nCreate .qmd file with answers to questions in slides\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nRead chapter 1 of R Packages (before class on Wednesday)\nStudy Guide and Set #4\n\nUse the template to type answers in document and stage/commit/push in repository\nDue Monday, 3/30 at 11:59pm, but turn-in before Saturday, 3/28 for feedback before exam\nExam #2 will be given out in-class on Monday, 3/30\n\nRead over package guidelines\n\nI’ll discuss the guidelines in the next two Wednesday lectures\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Intro to Packages\n\n\n\n\nSlides\n\nNo .qmd file to turn in!\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nStudy Guide and Set #4\n\nUse the template to type answers in document and stage/commit/push in repository\nDue Monday, 3/29 at 11:59pm, but turn-in before Saturday, 3/27 for feedback before exam\nExam #2 will be given out in-class on Monday, 3/29\n\nRead over package guidelines\n\nFirst assignment: Proposal due next Wednesday, 4/1 at 11:59pm\nNext Wednesday: Package setup and time to work on proposal"
   },
   {
     "objectID": "schedule.html#week-10-packages---description-and-libraries-330---43",
@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n10: Conditions\n11: Object-Oriented Programming\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n\n\n\n\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n10: Conditions\n11: Object-Oriented Programming\n12: S3\n13: Package Intro\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n4: Set 4\n\n\n\n\nInstructions\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam\n\nStudy Guide for Exam #2\n\nPractice Exam/Set #4"
   },
   {
     "objectID": "sets/set1.html",
@@ -4673,14 +4673,14 @@
     "href": "lectures/w9l2_packageIntro.html#last-time",
     "title": "Introduction to Packages",
     "section": "Last Time",
-    "text": "Last Time\n\nS3 objects\n\nOther features\n\nPackages\n\nWhy?\nAnatomy\nExamples\n\nExercises\n\nExploration of package"
+    "text": "Last Time\n\nS3 objects\n\nHelpers\nConstructors\nValidators"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#today",
     "href": "lectures/w9l2_packageIntro.html#today",
     "title": "Introduction to Packages",
     "section": "Today",
-    "text": "Today\n\nPackages\n\nBreakdown of its parts\n\nReview topics\n\n\nNote: Package creation will NOT be covered on the upcoming exam!"
+    "text": "Today\n\nPackages\n\nBreakdown of its parts\n\nPackage instructions\nReview topics\n\n\nNote: Package creation will NOT be covered on the upcoming exam!"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#package-breakdown",
@@ -4827,7 +4827,7 @@
     "href": "lectures/w9l2_packageIntro.html#package-breakdown-1",
     "title": "Introduction to Packages",
     "section": "Package Breakdown",
-    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package\n\nCheatsheet: link"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#r-cmd-check",
@@ -5163,6 +5163,328 @@
     "href": "schedule.html#week-10-exam-2-packages---description-and-libraries-330---43",
     "title": "Schedule",
     "section": "Week 10: Exam #2; Packages - Description and Libraries (3/30 - 4/3)",
-    "text": "Week 10: Exam #2; Packages - Description and Libraries (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1\n\n\n\n\n\n\n\n\nImportantExam #2\n\n\n\nGood luck!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #4 due tonight at 11:59pm\n\nUse the template to type answers in document and stage/commit/push in repository\n\nRead over package guidelines\n\nDiscussion and working time in Wednesday’s class!\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\nLook over chapters 6 and 16 of R Packages (before class on Wednesday)\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: R Code and Documentation\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nProject: proposal due tonight at 11:59pm"
+    "text": "Week 10: Exam #2; Packages - Description and Libraries (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1\n\n\n\n\n\n\n\n\nImportantExam #2\n\n\n\nGood luck!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #4 due tonight at 11:59pm\n\nUse the template to type answers in document and stage/commit/push in repository\n\nRead over package guidelines\n\nPackage setup and working time in Wednesday’s class!\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\nLook over chapters 6 and 16 of R Packages (before class on Wednesday)\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: R Code and Documentation\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nProject: proposal due tonight at 11:59pm"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#another-shift-to-package-development",
+    "href": "lectures/w9l2_packageIntro.html#another-shift-to-package-development",
+    "title": "Introduction to Packages",
+    "section": "Another Shift to Package Development",
+    "text": "Another Shift to Package Development\n\n\n\nAdvanced R\n\n\n\n\n\n\n\n\n[1] \"❌\"\n\n\n\n\nR Packages\n\n\n\n\n\n\n\n\n[1] \"✔️\""
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#r-packages-an-intro",
+    "href": "lectures/w9l2_packageIntro.html#r-packages-an-intro",
+    "title": "Introduction to Packages",
+    "section": "R Packages: An Intro",
+    "text": "R Packages: An Intro\n\n“bundles together code, data, documentation, and tests, and is easy to share with others”\nOpen-source\nOrganization purposes\n\n\n“Seriously, it doesn’t have to be about sharing your code (although that is an added benefit!). It is about saving yourself time.” -Hilary Parker"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#youre-a-developer-now",
+    "href": "lectures/w9l2_packageIntro.html#youre-a-developer-now",
+    "title": "Introduction to Packages",
+    "section": "You’re a Developer Now!",
+    "text": "You’re a Developer Now!\n\nInside a package vs. outside of it\n\nHow we access objects, functions, other packages, etc. will be different\nWhat do you want the user to do?\nHow does your code behave to deliver the result?"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#youre-a-developer-now-1",
+    "href": "lectures/w9l2_packageIntro.html#youre-a-developer-now-1",
+    "title": "Introduction to Packages",
+    "section": "You’re a Developer Now!",
+    "text": "You’re a Developer Now!\n\n# User\nprint(x)\n\n\n# Developer\nprint.car &lt;- function(x, ...){\n  message(\"You have a car!\")\n  NextMethod()\n}"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#packages-to-use",
+    "href": "lectures/w9l2_packageIntro.html#packages-to-use",
+    "title": "Introduction to Packages",
+    "section": "Packages to Use",
+    "text": "Packages to Use\n\nusethis: For package automation and development\ndevtools: For package setup\ntestthat: For testing\nroxygen2: For documentation"
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#exercises-an-investigation",
+    "href": "lectures/w9l2_packageIntro.html#exercises-an-investigation",
+    "title": "Introduction to Packages",
+    "section": "Exercises: An Investigation",
+    "text": "Exercises: An Investigation\nIn your same pairings (or by yourself),\n\nLook through the following archive of R packages: link\n\nClick on a package that is of interest to you and download the tar.gz file onto your computer.\nFor each of the seven components discussed earlier:\n\nWrite down a few sentences describing what you see and how this would be useful to\n\nthe user, and\nthe developer.\n\n\n\nThis does not need to be turned in. We will discuss after spending some time exploring a package."
+  },
+  {
+    "objectID": "lectures/w9l2_packageIntro.html#package-breakdown-2",
+    "href": "lectures/w9l2_packageIntro.html#package-breakdown-2",
+    "title": "Introduction to Packages",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#today",
+    "href": "lectures/ml1_packageIntro.html#today",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Today",
+    "text": "Today\n\nPackages\n\nSetup\nBreakdown of its parts\nTime to work on proposal"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#discussion",
+    "href": "lectures/ml1_packageIntro.html#discussion",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Discussion",
+    "text": "Discussion\nIn pairs, discuss the following questions regarding your investigation into package components from last time:\n\nWhat were the key components in a package?\nFor one specific R script: what pieces of code and concepts were used when writing the script?\nWhat things did you find confusing?"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#package-breakdown",
+    "href": "lectures/ml1_packageIntro.html#package-breakdown",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package\n\nCheatsheet: link"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#creating-a-package",
+    "href": "lectures/ml1_packageIntro.html#creating-a-package",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Creating a Package",
+    "text": "Creating a Package\n\nusethis: For package automation and development\ndevtools: For package setup\ntestthat: For testing\nroxygen2: For documentation"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#github",
+    "href": "lectures/ml1_packageIntro.html#github",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "GitHub",
+    "text": "GitHub\n\nWill host the package\nCollaboration\nNeed to create and store token"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#github-setup",
+    "href": "lectures/ml1_packageIntro.html#github-setup",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "GitHub Setup",
+    "text": "GitHub Setup\n\nTo retrieve your git credentials in RStudio:\n\n\ngitcreds::gitcreds_get()\n\n\nIf no credentials are there:\n\n\nusethis::use_git_config(user.name = \"PUT GITHUB USERNAME HERE\", user.email = \"PUT GITHUB EMAIL HERE\")"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#github-setup-1",
+    "href": "lectures/ml1_packageIntro.html#github-setup-1",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "GitHub Setup",
+    "text": "GitHub Setup\n\nCreate token\n\n\nusethis::create_github_token()\n\n\nStore token\n\n\ngitcreds::gitcreds_set()"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#package-creation",
+    "href": "lectures/ml1_packageIntro.html#package-creation",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Package Creation",
+    "text": "Package Creation"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#cloning-the-package",
+    "href": "lectures/ml1_packageIntro.html#cloning-the-package",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Cloning the Package",
+    "text": "Cloning the Package"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#build-tools",
+    "href": "lectures/ml1_packageIntro.html#build-tools",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Build Tools",
+    "text": "Build Tools\n\nTools &gt; Project Options &gt; Build Tools"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#package-breakdown-1",
+    "href": "lectures/ml1_packageIntro.html#package-breakdown-1",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#description",
+    "href": "lectures/ml1_packageIntro.html#description",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "DESCRIPTION",
+    "text": "DESCRIPTION\n\nSummary of work\n\nTitle and description should be changed over time\nChapter 9 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#namespace",
+    "href": "lectures/ml1_packageIntro.html#namespace",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "NAMESPACE",
+    "text": "NAMESPACE\n\nMakes your packages self-contained\nCan use devtools::document() to generate namespace automatically\n\nResults from creating R files\n\nChapter 10.2 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#r",
+    "href": "lectures/ml1_packageIntro.html#r",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "R/",
+    "text": "R/\n\nAll R code is housed here through .R scripts\n\nA single file for each R function\nuse_r(\"function_name\")\n\nChapter 6 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#r-example",
+    "href": "lectures/ml1_packageIntro.html#r-example",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "R/: Example",
+    "text": "R/: Example"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#tests",
+    "href": "lectures/ml1_packageIntro.html#tests",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Tests",
+    "text": "Tests\n\nTests to make sure your functions are working properly\n\nuse_test() to create test file\n\nChapter 13 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#man",
+    "href": "lectures/ml1_packageIntro.html#man",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Man",
+    "text": "Man\n\nDocumentation for your code\n\nDoes so for each function (automatically with roxygen2)\nContains the following:\n\nDescription\nUsage\nArguments\nDetails\nValue\nNote\nReferences\nExamples\n\n\nChapter 16 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#example-man",
+    "href": "lectures/ml1_packageIntro.html#example-man",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Example: man",
+    "text": "Example: man"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#vignettes",
+    "href": "lectures/ml1_packageIntro.html#vignettes",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Vignettes",
+    "text": "Vignettes\n\nExplanations of the functionality of your package\nUser-friendly versions of help files (with more functionality)\n\nusethis::use_vignette(\"my-vignette\")\nCreates R Markdown document to add code and text\n\nChapter 17 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#data",
+    "href": "lectures/ml1_packageIntro.html#data",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "Data",
+    "text": "Data\n\nAny data used in your package\n\nStored datasets\nDatasets for examples\nusethis::use_data(data) for some data\n\nChapter 7 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml1_packageIntro.html#r-cmd-check",
+    "href": "lectures/ml1_packageIntro.html#r-cmd-check",
+    "title": "Mini-Lecture #1: Package Setup",
+    "section": "R CMD Check",
+    "text": "R CMD Check\n\nInstalls and checks the integrity of your R packages\n\nErrors? Correct documentation? Functionality?\n\nAppendix A of R Packages"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html",
+    "href": "lectures/ml2_code-doc.html",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "",
+    "text": "The package will be the main focus for the rest of the quarter\nEach of the remaining classes will consist of the following:\n\nmini-lectures\nworking time\ndemos"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#roadmap",
+    "href": "lectures/ml2_code-doc.html#roadmap",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "",
+    "text": "The package will be the main focus for the rest of the quarter\nEach of the remaining classes will consist of the following:\n\nmini-lectures\nworking time\ndemos"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#roadmap-1",
+    "href": "lectures/ml2_code-doc.html#roadmap-1",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nNext four classes: setup of each of package parts\n\nCode, data, and documentation (4/1)\nDescription and dependencies (4/6)\nTesting and R CMD CHECK (4/8)\nVignettes (4/15)\n\nExtensive time to work on project"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#roadmap-2",
+    "href": "lectures/ml2_code-doc.html#roadmap-2",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Roadmap",
+    "text": "Roadmap\n\nCheckpoints\n\nMVP (by 4/13), more refined (by 4/24)\n\nRehearsal (on 4/20)\n\n8-10 minutes, no class on 4/20\n\nDemonstration (on 4/29)"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#tips-as-youre-working-on-it",
+    "href": "lectures/ml2_code-doc.html#tips-as-youre-working-on-it",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Tips as you’re working on it",
+    "text": "Tips as you’re working on it\n\nComplete is better than perfect!\nCommit and push changes often\nBreak your package down into many parts\n\nConsider what items are needed in each function"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#package-breakdown",
+    "href": "lectures/ml2_code-doc.html#package-breakdown",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#package-breakdown-1",
+    "href": "lectures/ml2_code-doc.html#package-breakdown-1",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\n\nusethis::use_r()\n\ntests/: Testing for code\nman/: Documentation for code and objects\n\nComments created within scripts\ndevtools::document()\n\nvignettes/: Tutorials for use\ndata/: Data embedded in package\n\nusethis::use_data()"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#r-files",
+    "href": "lectures/ml2_code-doc.html#r-files",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "R Files",
+    "text": "R Files\n\nCreate R files via use_r(\"script_name\")\n\nPut proposed file name within parentheses\n\n\n\nusethis::use_r(\"script_name\")"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#r-files-1",
+    "href": "lectures/ml2_code-doc.html#r-files-1",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "R Files",
+    "text": "R Files\n\nRoxygen2 comments\n\nUsed for documentation\n\nA function (or family of functions)\n\nDocumentation should correspond precisely to items file\n\nSee Chapter 6 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#documentation",
+    "href": "lectures/ml2_code-doc.html#documentation",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Documentation",
+    "text": "Documentation\n\nDocumentation will pop up as .Rd files\n\nYou will NOT edit these files\n\nRoxygen2 comments"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#documentation-1",
+    "href": "lectures/ml2_code-doc.html#documentation-1",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Documentation",
+    "text": "Documentation\n\n#' Title Here\n#'\n#' @description Add brief description to function(s)\n#' @details Specifics about functionality, inputs, etc.\n#' @param input Brief description of input. (Add as many params as needed)\n#' @return Brief description of what function returns/prints.\n#' @export Added here to export function to user (text not needed here)\n#' @import package Import package used to supplement function. (Add as many as needed)\n#' @examples\n#' Put function call as example. \n#'"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#documentation-2",
+    "href": "lectures/ml2_code-doc.html#documentation-2",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Documentation",
+    "text": "Documentation\n\n#' adds the Roxygen2 comments\nUse devtools::document() to update .Rd files"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#code",
+    "href": "lectures/ml2_code-doc.html#code",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Code",
+    "text": "Code\n\nAfter Roxygen2 comments -&gt; put code for functions\nConsider…\n\nhow function works within the package (and for user)\nwhich imports are needed here"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#example",
+    "href": "lectures/ml2_code-doc.html#example",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Example",
+    "text": "Example\n\n#' A function screaming\n#'\n#' @description Function that returns a character expressing its emotions when running.\n#' @details Will only return one expression and one expression only.\n#' @param x Any type.\n#' @return Function's emotion (as a character).\n#' @export\n#' @import tidyr\n#' @examples\n#' scream(2)\n#'\n\nscream &lt;- function(x){\n  return(\"ahhhhh\")\n}"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#data",
+    "href": "lectures/ml2_code-doc.html#data",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Data",
+    "text": "Data\n\nData will occupy its own folder in R\nThree types:\n\ndata\ndata-raw\ndata.R"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#data-raw-data",
+    "href": "lectures/ml2_code-doc.html#data-raw-data",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Data: Raw Data",
+    "text": "Data: Raw Data\n\ndata-raw/\nUsed more of a reference, less for execution\n\n\nusethis::use_data_raw(\"my_pkg_data\")"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#data-the-actual-data",
+    "href": "lectures/ml2_code-doc.html#data-the-actual-data",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Data: The Actual Data",
+    "text": "Data: The Actual Data\n\ndata/\nThis data will be referenced by other functions in package\n\nWill be converted to an .Rda file\nShould be a data frame or tibble\nLazy-loaded with package\n\n\n\nusethis::use_data(my_pkg_data)"
+  },
+  {
+    "objectID": "lectures/ml2_code-doc.html#data-documentation",
+    "href": "lectures/ml2_code-doc.html#data-documentation",
+    "title": "Mini-Lecture #2: Code and Documentation",
+    "section": "Data: Documentation",
+    "text": "Data: Documentation\n\nR/data.R is where you document the data\n\nSame roxygen2 comment format\nJust the name of the data set\n\n\n\nusethis::use_r(\"data_name\")"
   }
 ]

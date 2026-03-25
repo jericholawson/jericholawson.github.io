@@ -12,8 +12,8 @@ date: last-modified
 - Certain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.
 - Refer to syllabus for late work deductions.
 - This set is **completion-based**. 
-- Due date: **Monday, 3/29 at 11:59pm**
-  - If you turn it in before **Saturday, 3/27**, I will be able to provide feedback before the exam!
+- Due date: **Monday, 3/30 at 11:59pm**
+  - If you turn it in before **Saturday, 3/28**, I will be able to provide feedback before the exam!
 
 ## Background
 
