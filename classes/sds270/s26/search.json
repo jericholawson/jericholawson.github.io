@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n10: Conditions\n11: Object-Oriented Programming\n12: S3\n13: Package Intro\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n4: Set 4\n\n\n\n\nInstructions\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam\n\nStudy Guide for Exam #2\n\nPractice Exam/Set #4"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n10: Conditions\n11: Object-Oriented Programming\n12: S3\n13: Package Intro\nM1: Package Intro, Part II\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n4: Set 4\n\n\n\n\nInstructions\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam\n\nStudy Guide for Exam #2\n\nPractice Exam/Set #4"
   },
   {
     "objectID": "sets/set1.html",
@@ -5163,7 +5163,7 @@
     "href": "schedule.html#week-10-exam-2-packages---description-and-libraries-330---43",
     "title": "Schedule",
     "section": "Week 10: Exam #2; Packages - Description and Libraries (3/30 - 4/3)",
-    "text": "Week 10: Exam #2; Packages - Description and Libraries (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1\n\n\n\n\n\n\n\n\nImportantExam #2\n\n\n\nGood luck!\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #4 due tonight at 11:59pm\n\nUse the template to type answers in document and stage/commit/push in repository\n\nRead over package guidelines\n\nPackage setup and working time in Wednesday’s class!\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\nLook over chapters 6 and 16 of R Packages (before class on Wednesday)\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: R Code and Documentation\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nProject: proposal due tonight at 11:59pm"
+    "text": "Week 10: Exam #2; Packages - Description and Libraries (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1\n\n\n\n\n\n\n\n\nImportantExam #2\n\n\n\nGood luck!\n\nExam and turn-in on Moodle under “Exam #2”\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #4 due tonight at 11:59pm\n\nUse the template to type answers in document and stage/commit/push in repository\n\nRead over package guidelines\n\nPackage setup and working time in Wednesday’s class!\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Package Setup; Proposal Working Time\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nProposal due tonight at 11:59pm as README.md file\n\nAdd me (@jericholawson) as collaborator on GitHub\nPackage guidelines\nNext assignment: Checkpoint #1 due Monday, 4/13 at 11:59pm\n\nSkim through chapters 6, 7, and 16 of R Packages"
   },
   {
     "objectID": "lectures/w9l2_packageIntro.html#another-shift-to-package-development",
@@ -5486,5 +5486,173 @@
     "title": "Mini-Lecture #2: Code and Documentation",
     "section": "Data: Documentation",
     "text": "Data: Documentation\n\nR/data.R is where you document the data\n\nSame roxygen2 comment format\nJust the name of the data set\n\n\n\nusethis::use_r(\"data_name\")"
+  },
+  {
+    "objectID": "sets/set4_donotpublish.html",
+    "href": "sets/set4_donotpublish.html",
+    "title": "Set #4 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/30 at 11:59pm\n\nIf you turn it in before Saturday, 3/28, I will be able to provide feedback before the exam!"
+  },
+  {
+    "objectID": "sets/set4_donotpublish.html#instructions",
+    "href": "sets/set4_donotpublish.html#instructions",
+    "title": "Set #4 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/30 at 11:59pm\n\nIf you turn it in before Saturday, 3/28, I will be able to provide feedback before the exam!"
+  },
+  {
+    "objectID": "sets/set4_donotpublish.html#background",
+    "href": "sets/set4_donotpublish.html#background",
+    "title": "Set #4 (50 pts)",
+    "section": "Background",
+    "text": "Background\nThe fourth (and final) problem set will contain various problems related to the following:\n\nEnvironments (Ch. 7, AR)\nConditions (Ch. 8, AR)\nFunctionals (Ch. 9, AR)\nObject-Oriented Programming/S3 (Ch. 12-13, AR)\n\nOther topics we’ve discussed earlier in the semester may show up in these problems. Make sure to carefully read and follow directions for each problem.\nPlace any needed libraries below:\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "sets/set4_donotpublish.html#q1-mean-75-pts",
+    "href": "sets/set4_donotpublish.html#q1-mean-75-pts",
+    "title": "Set #4 (50 pts)",
+    "section": "Q1: Mean (75 pts)",
+    "text": "Q1: Mean (75 pts)\nWhen we use the mean() function, this is based on the formula for the arithmetic mean. Say we want to create an alternative mean() function that uses the formula for the harmonic mean.\nThe harmonic mean can be defined as:\n\\(\\frac{n}{\\sum_i \\frac{1}{x_i}}\\),\nwhere \\(n\\) is the number of observations and \\(x_i\\) is an observation at some index \\(i\\). Parts of this question will relate to the deployment of this harmonic mean.\n\n(a) (10 pts) Define a new mean() function in your global environment that uses the harmonic mean formula given some input x.\n\nmean &lt;- function(x){\n  length(x) / sum(1 / x)\n}\n\n\n\n(b) (10 pts) Run base R’s mean() function and your created mean() function on the mpg column of the mtcars dataset.\n\nmean(mtcars$mpg)\n\n[1] 18.44092\n\nbase::mean(mtcars$mpg)\n\n[1] 20.09062\n\n\n\n\n(c) (18 pts) Implement an instance of each of the three types of conditions in your new mean() function. Then, test out the revised function on three different inputs, with each input triggering each type of condition.\n\nmean &lt;- function(x){\n  if (typeof(x) != \"logical\" & typeof(x) != \"double\"){\n    stop(\"Invalid type.\")\n  }\n  \n  if (typeof(x) == \"logical\"){\n    warning(\"Not recommended for use on logical type.\")\n  }\n  \n  message(\"Number of observations: \", length(x))\n  length(x) / sum(1 / x)\n}\n\n\nmean(c(\"This\", \"will\", \"not\", \"work\"))\n\nError in `mean()`:\n! Invalid type.\n\nmean(c(T, F, F, F, T))\n\nWarning in mean(c(T, F, F, F, T)): Not recommended for use on logical type.\n\n\nNumber of observations: 5\n\n\n[1] 0\n\nmean(mtcars$mpg)\n\nNumber of observations: 32\n\n\n[1] 18.44092\n\n\n\n\n(d) (10 pts) Use a functional to get the harmonic mean of each variable in the mtcars dataset, returning an appropriate data structure.\n\nmap_dbl(mtcars, mean)\n\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\n\n\n       mpg        cyl       disp         hp       drat         wt       qsec \n 18.440917   5.647059 166.799389 118.228892   3.520704   2.918263  17.678200 \n        vs         am       gear       carb \n  0.000000   0.000000   3.555556   2.026385 \n\n\n\n\n(e) (15 pts) In your own words, discuss the role of the search path in R in 2-3 sentences.\n\n#- Result of lexical scoping\n#- When running an object/function:\n#  - Finds item in global environment first, then within each of the packages, followed by base\n#  - Within the package: finds within namespace, then imports\n\n\n\n(f) (12 pts) Describe a way to implement the harmonic mean as part of base R’s mean() function.\n\n#- Use as a method for a class\n#- Can implement a new argument to access this harmonic mean"
+  },
+  {
+    "objectID": "sets/set4_donotpublish.html#q2-simple-linear-regression-75-pts",
+    "href": "sets/set4_donotpublish.html#q2-simple-linear-regression-75-pts",
+    "title": "Set #4 (50 pts)",
+    "section": "Q2: Simple Linear Regression (75 pts)",
+    "text": "Q2: Simple Linear Regression (75 pts)\nIn this question, we want to determine operations and characteristics of a new class of data, which focuses on a data frame with exactly two double columns, which we will define as slr.\nFor an object to be of an slr class, it must:\n\nHave exactly two columns, both of which are double atomic vectors\nBe a child class of the data.frame class\nThe first column is representing the “response” or y, while the second column is the “predictor” or x\n\nSLR is referring to simple linear regression, where we will want to use the variable denoted as x to explain any variation in the variable denoted as y. We will want to create a few items that will allow users to easily create an object of this class and run operations on this object.\nThe parts below will reference this slr class.\n\n(a) (20 pts) Create a helper and constructor for the slr class, incorporating the restrictions specified in the introduction of this question. The user must input atomic vectors x and y that are of a double, integer, or logical type.\n\nnew_slr &lt;- function(x){\n  stopifnot(is.data.frame(x))\n  stopifnot(ncol(x) == 2)\n  return(structure(x, class = c(\"slr\", class(x))))\n}\n\nslr &lt;- function(x, y){\n  if (!(typeof(x) %in% c(\"double\", \"integer\", \"logical\")) | \n      !(typeof(y) %in% c(\"double\", \"integer\", \"logical\"))){\n    stop(\"x and/or y is not of a double, integer, or logical type.\")\n  }\n  x &lt;- as.double(x)\n  y &lt;- as.double(y)\n  newObj &lt;- data.frame(y = y, x = x)\n  x &lt;- new_slr(newObj)\n  return(x)\n}\n\n\n\n(b) (10 pts) Create an object of the slr class using the helper created in part (a) on any two columns you choose from the mtcars dataset.\n\ndata &lt;- slr(mtcars$hp, mtcars$mpg)\n\n\n\n(c) (15 pts) Create functions for the estimates method, which should handle input from the slr class as well as an input of any other class. The class-specific method will take in a data input and will return the least-squares estimates of fitting x to y.\nUse the formulas below to return those estimates:\n\n\\(\\beta_1 = \\frac{s_{xy}}{s_x}\\), where \\(s\\) refers to the standard deviation\n\nUse cov() for \\(s_{xy}\\)\n\n\\(\\beta_0 = \\bar{y} - \\beta_1 \\bar{x}\\), where \\(\\bar{y}\\) and \\(\\bar{x}\\) refer to the means of \\(x\\) and \\(y\\) respectively\n\n\nestimates &lt;- function(data, ...){\n  UseMethod(\"estimates\")\n}\n\nestimates.slr &lt;- function(data, ...){\n  beta1 &lt;- cov(data$y, data$x) / sd(data$x)\n  beta0 &lt;- mean(data$y) - beta1 * mean(data$x)\n  return(c(m = beta1, b = beta0))\n} \n\nestimates.default &lt;- function(data, ...){\n  message(\"Method not defined for object of class: \", class(data))\n}\n\n\nestimates(mtcars)\n\nMethod not defined for object of class: data.frame\n\nestimates(data)\n\nNumber of observations: 32\n\n\nNumber of observations: 32\n\n\n         m          b \n -4.677926 571.506976 \n\n\n\n\n(d) (15 pts) Create a summary method for the slr class that refers to output from summary methods of parent classes. This summary method will display the least-squares estimates.\n\nsummary.slr &lt;- function(data, ...){\n  print(estimates(data))\n  NextMethod()\n}\n\nsummary(data)\n\nNumber of observations: 32\nNumber of observations: 32\n\n\n         m          b \n -4.677926 571.506976 \n\n\n       y               x        \n Min.   :10.40   Min.   : 52.0  \n 1st Qu.:15.43   1st Qu.: 96.5  \n Median :19.20   Median :123.0  \n Mean   :20.09   Mean   :146.7  \n 3rd Qu.:22.80   3rd Qu.:180.0  \n Max.   :33.90   Max.   :335.0  \n\n\n\n\n(e) (15 pts) Compare the roles of an environmemt and a class in R in 2-3 sentences.\n\n#- Environment: Used to structure where objects are and how they can be referenced\n#- Class: develop methods, attributes, etc for external facing object"
+  },
+  {
+    "objectID": "sets/set4_donotpublish.html#turn-in",
+    "href": "sets/set4_donotpublish.html#turn-in",
+    "title": "Set #4 (50 pts)",
+    "section": "Turn-In",
+    "text": "Turn-In\nWhen finished, commit and push this file to your SDS 270 repository."
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#package-breakdown",
+    "href": "lectures/ml3_metadata.html#package-breakdown",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#package-breakdown-1",
+    "href": "lectures/ml3_metadata.html#package-breakdown-1",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nREADME: high-level description of work\n\nusethis::use_readme_rmd()\n\nDESCRIPTION: Summary of package\n\nManually crafted :(\n\nNAMESPACE: Self-containment of objects\n\ndevtools::document()\n\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#readme",
+    "href": "lectures/ml3_metadata.html#readme",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "README",
+    "text": "README\n\nServes as higher-level description of work to package user\n\nA Gen Z example\n\nFormat\n\nQuick description\nInstallation\nA “mini vignette”\n\nSome cool tasks it can do\nSimple (cool) example 1\nSimple (cool) example 2"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#readme-making-a-hex-sticker",
+    "href": "lectures/ml3_metadata.html#readme-making-a-hex-sticker",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "README: Making a Hex Sticker",
+    "text": "README: Making a Hex Sticker\n\n\n\n\n\nhexSticker package\n\nUsed to make your own logo for your package"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#description",
+    "href": "lectures/ml3_metadata.html#description",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "DESCRIPTION",
+    "text": "DESCRIPTION\n\nContains a summary of the work\nProvides the following:\n\nTitle\nDescription\nVersion number\n\nusethis::use_version()\n\nImports\n\nusethis::use_package()\n\nAuthor\nLicense\nand more!"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#description-1",
+    "href": "lectures/ml3_metadata.html#description-1",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "DESCRIPTION",
+    "text": "DESCRIPTION"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#license",
+    "href": "lectures/ml3_metadata.html#license",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "License",
+    "text": "License\n\nPermissive license with minimal restrictions\n\nuse_mit_license()\n\nCopyleft license (i.e free use)\n\nuse_gpl_license()\n\nMaking code closed-source\n\nuse_proprietary_license()"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#namespace",
+    "href": "lectures/ml3_metadata.html#namespace",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "NAMESPACE",
+    "text": "NAMESPACE\n\nMakes your packages self-contained\nCan use devtools::document() to generate namespace automatically\n\nResults from creating R files"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#github-actions",
+    "href": "lectures/ml3_metadata.html#github-actions",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "GitHub Actions",
+    "text": "GitHub Actions\n\nResources\n\nUnderstanding GitHub Actions workflow files\nGitHub Actions for the R language"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#github-actions-1",
+    "href": "lectures/ml3_metadata.html#github-actions-1",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "GitHub actions",
+    "text": "GitHub actions\n\nResources\n\nUnderstanding GitHub Actions workflow files\nGitHub Actions for the R language"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#readme-1",
+    "href": "lectures/ml3_metadata.html#readme-1",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "README",
+    "text": "README\n\nTo generate README file:\n\nusethis::use_readme_rmd()\nAutomatically generated file to fill in the blanks\n\nTo generate README badge:\n\nuse_lifecycle_badge()"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#description-title-description-version-number",
+    "href": "lectures/ml3_metadata.html#description-title-description-version-number",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "DESCRIPTION: Title, Description, Version Number",
+    "text": "DESCRIPTION: Title, Description, Version Number\n\nTitle: brief description of package (part of title to package)\nDescription: Couple sentences describing what package does and its objectives"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#description-version-number-imports",
+    "href": "lectures/ml3_metadata.html#description-version-number-imports",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "DESCRIPTION: Version Number, Imports",
+    "text": "DESCRIPTION: Version Number, Imports\n\nVersion number: relays to user what version the package is in\n\nusethis::use_version()\n\nImports: are there any packages this package relies on in order to run?\n\ne.g. ggplot to display a plot\nusethis::use_package()"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#description-authors",
+    "href": "lectures/ml3_metadata.html#description-authors",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "Description: Authors",
+    "text": "Description: Authors\n\nAuthors@R: person(\"Jericho\", \"Lawson\", email = \"jlawson01@smith.edu\",\n  role = c(\"aut\", \"cre\"))\n\n\nFirst name, last name, email\nRoles can be as author (“aut”), creator (“cre”), contributor (“ctb”), and more"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#description-license",
+    "href": "lectures/ml3_metadata.html#description-license",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "DESCRIPTION: License",
+    "text": "DESCRIPTION: License\n\nPermissive license with minimal restrictions\n\nuse_mit_license()\n\nCopyleft license (i.e free use)\n\nuse_gpl_license()\n\nMaking code closed-source\n\nuse_proprietary_license()\n\n\nMore details: R Packages on Licensing"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#bonus-github-actions",
+    "href": "lectures/ml3_metadata.html#bonus-github-actions",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "Bonus: GitHub Actions",
+    "text": "Bonus: GitHub Actions\n\nTrigger package checking automatically upon commit\nEnsure package is always in working order\n\nusethis::use_github_actions(\"check-release\")"
+  },
+  {
+    "objectID": "schedule.html#week-11-packages---code-data-documentation-metadata-46---410",
+    "href": "schedule.html#week-11-packages---code-data-documentation-metadata-46---410",
+    "title": "Schedule",
+    "section": "Week 11: Packages - Code, Data, Documentation, Metadata (4/6 - 4/10)",
+    "text": "Week 11: Packages - Code, Data, Documentation, Metadata (4/6 - 4/10)\n\nMonday, 4/6Wednesday, 4/8\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Code, Data, Documentation\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Metadata and More Package Setup\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "schedule.html#week-10-exam-2-packages---description-and-setup-330---43",
+    "href": "schedule.html#week-10-exam-2-packages---description-and-setup-330---43",
+    "title": "Schedule",
+    "section": "Week 10: Exam #2; Packages - Description and Setup (3/30 - 4/3)",
+    "text": "Week 10: Exam #2; Packages - Description and Setup (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1\n\n\n\n\n\n\n\n\nImportantExam #2\n\n\n\nGood luck!\n\nExam and turn-in on Moodle under “Exam #2”\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #4 due tonight at 11:59pm\n\nUse the template to type answers in document and stage/commit/push in repository\n\nRead over package guidelines\n\nPackage setup and working time in Wednesday’s class!\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Package Setup; Proposal Working Time\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nProposal due tonight at 11:59pm as README.md file\n\nAdd me (@jericholawson) as collaborator on GitHub\nPackage guidelines\nNext assignment: Checkpoint #1 due Monday, 4/13 at 11:59pm\n\nSkim through chapters 6, 7, and 16 of R Packages"
   }
 ]
