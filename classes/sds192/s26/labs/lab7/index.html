@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="PUT NAME HERE">
+
+<title>Lab #7: Components of AI (30 pts) – SDS 192: Introduction to Data Science, Spring 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SDS 192: Introduction to Data Science, Spring 2026</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://sds-192-02-202603.slack.com"> 
+<span class="menu-text"><iconify-icon icon="fa6-brands:slack"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/"> 
+<span class="menu-text"><iconify-icon icon="fa6-brands:github"></iconify-icon></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#behind-the-ai" id="toc-behind-the-ai" class="nav-link" data-scroll-target="#behind-the-ai">Behind the AI</a></li>
+  <li><a href="#running-the-model" id="toc-running-the-model" class="nav-link" data-scroll-target="#running-the-model">Running the Model</a></li>
+  <li><a href="#wrapup" id="toc-wrapup" class="nav-link" data-scroll-target="#wrapup">Wrapup</a></li>
+  <li><a href="#prompt" id="toc-prompt" class="nav-link" data-scroll-target="#prompt">Prompt</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab #7: Components of AI (30 pts)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>PUT NAME HERE </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>As you’ve seen in this week’s lectures, much forethought has to go into the creation of a model for artificial intelligence, whether it is from the business, engineering, or ethical side of things. We will focus on the engineering and ethical portions by using a poorly-made example of a natural language processor using Markov chains.</p>
+<p>Before we dive into the mechanics of the model, discuss with others around you and write answers regarding the following questions:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q1 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Think about the following sentence: “I am having a great day!”. What rules or considerations do I need to follow linguistically in order to convey that sentiment? Is there an order to how those words are being said?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q2 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Think about the following sentence: “I am having a great day!”. Are there replacements I can make for each word that would still result in a comprehensible sentence?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q3 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Think about the following sentence: “I am having a great day!”. How often am I using each of these words in a sentence? Does it depend on the situation?</p>
+</div>
+</div>
+</section>
+<section id="behind-the-ai" class="level2">
+<h2 class="anchored" data-anchor-id="behind-the-ai">Behind the AI</h2>
+<p>Despite over-analyzing the six-worded sentence, it is important to understand the mechanics of this sentence generation when it comes to generating responses. A large-language model (LLM) is a computational model that uses a bunch of data for natural language processing. When we build a model, we want to consider the appropriate methods that can be used for training and results, as well the inputs and outputs associated with our method.</p>
+<p>Pivoting back to our discussion on how sentences are created, one model we might create builds upon the idea of predicting what the next word might be given the word before, based on the part of speech and subject. Here, we venture into using <a href="https://en.wikipedia.org/wiki/Markov_chain">Markov chains</a>.</p>
+<p>We will need to assign probabilities (and/or weights) to how the next word of a sentence comes about. Additionally, we’ll need a dictionary of words to start with.</p>
+<p>There are many sophisticated models that can be used for natural language processing, including but not limited to:</p>
+<ul>
+<li>Deep learning models</li>
+<li>Neural networks</li>
+<li>Large-language models</li>
+</ul>
+<p>We will not delve into these specific models; rather, we will focus on a more simplistic model to garner a better understanding of how a probabilistic model can fuel generation of a sentence.</p>
+<p>I have created two models to aid in our creation of sentences:</p>
+<ul>
+<li>A model to generate probabilities of certain words being used, given their part of speech (i.e.&nbsp;noun, adjective)</li>
+<li>A model to generate probabilities of certain parts of speech being used next given the part of speech from the previous word</li>
+</ul>
+<p>These two models allow for the determination of a word given what part of speech we’re using and what the next word might be given what word we’ve used. As you’ll see in a second, this approach is rather interesting.</p>
+<p>To incorporate these two models and generate sentences, we will use two different datasets:</p>
+<ul>
+<li><code>wordData.csv</code>: This contains 114 different words with the part of speech they fall under, their usage probability, and the chance of which part of speech comes next.
+<ul>
+<li>Words come from the list of most commonly used words in English (Source: <a href="https://en.wikipedia.org/wiki/Most_common_words_in_English">Wikipedia</a>)</li>
+</ul></li>
+<li><code>tranMatData.csv</code>: This is a transition matrix that allows us to go from one word to the next.</li>
+</ul>
+<p>A transition matrix can be thought of as a grid of outcomes/chances depending on the action. A small example is to determine what mood you’ll be in the next day given how you feel currently. If you’re in a bad mood today, perhaps there’s a 60% chance you’ll be in a good mood tomorrow. On the flip side, if you’re in a good mood today, perhaps there will be a 45% chance you’ll be in a good mood tomorrow. When placed in a transition matrix, we get the following:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Happy</th>
+<th style="text-align: left;">Sad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Happy</td>
+<td style="text-align: left;">0.45</td>
+<td style="text-align: left;">0.55</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sad</td>
+<td style="text-align: left;">0.60</td>
+<td style="text-align: left;">0.40</td>
+</tr>
+</tbody>
+</table>
+<p>In our example, we are using the transition matrix to go from one word to the next. Load in the <a href="wordData.csv">wordData.csv</a> and <a href="tranMatData.csv">tranMatData.csv</a> files and then take a look at the <code>head()</code> of the two data files.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wordData <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"wordData.csv"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>tranMatData <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"tranMatData.csv"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(wordData)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    word       prob type xToN xToV xToA xToP xToO
+1   time 0.18005486 noun    0  0.8    0  0.1  0.1
+2 person 0.11011750 noun    0  0.8    0  0.1  0.1
+3   year 0.09746984 noun    0  0.8    0  0.1  0.1
+4    way 0.09560719 noun    0  0.8    0  0.1  0.1
+5    day 0.08356078 noun    0  0.8    0  0.1  0.1
+6  thing 0.05726067 noun    0  0.8    0  0.1  0.1</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(tranMatData)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  V1 V2 V3 V4 V5 V6 V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20 V21
+1  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0
+2  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0
+3  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0
+4  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0
+5  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0
+6  0  0  0  0  0  0  0  0  0   0   0   0   0   0   0   0   0   0   0   0   0
+  V22 V23 V24 V25       V26      V27        V28        V29        V30
+1   0   0   0   0 0.1440439 0.088094 0.07797587 0.07648575 0.06684862
+2   0   0   0   0 0.1440439 0.088094 0.07797587 0.07648575 0.06684862
+3   0   0   0   0 0.1440439 0.088094 0.07797587 0.07648575 0.06684862
+4   0   0   0   0 0.1440439 0.088094 0.07797587 0.07648575 0.06684862
+5   0   0   0   0 0.1440439 0.088094 0.07797587 0.07648575 0.06684862
+6   0   0   0   0 0.1440439 0.088094 0.07797587 0.07648575 0.06684862
+         V31        V32        V33       V34        V35        V36        V37
+1 0.04580854 0.04378441 0.04152201 0.0363781 0.03548045 0.02913206 0.01670996
+2 0.04580854 0.04378441 0.04152201 0.0363781 0.03548045 0.02913206 0.01670996
+3 0.04580854 0.04378441 0.04152201 0.0363781 0.03548045 0.02913206 0.01670996
+4 0.04580854 0.04378441 0.04152201 0.0363781 0.03548045 0.02913206 0.01670996
+5 0.04580854 0.04378441 0.04152201 0.0363781 0.03548045 0.02913206 0.01670996
+6 0.04580854 0.04378441 0.04152201 0.0363781 0.03548045 0.02913206 0.01670996
+         V38        V39       V40        V41        V42         V43         V44
+1 0.01635178 0.01329238 0.0124035 0.01182986 0.01124411 0.007583404 0.005912194
+2 0.01635178 0.01329238 0.0124035 0.01182986 0.01124411 0.007583404 0.005912194
+3 0.01635178 0.01329238 0.0124035 0.01182986 0.01124411 0.007583404 0.005912194
+4 0.01635178 0.01329238 0.0124035 0.01182986 0.01124411 0.007583404 0.005912194
+5 0.01635178 0.01329238 0.0124035 0.01182986 0.01124411 0.007583404 0.005912194
+6 0.01635178 0.01329238 0.0124035 0.01182986 0.01124411 0.007583404 0.005912194
+          V45         V46         V47        V48         V49          V50 V51
+1 0.005780088 0.004695457 0.003002231 0.00296717 0.001774749 0.0008994295   0
+2 0.005780088 0.004695457 0.003002231 0.00296717 0.001774749 0.0008994295   0
+3 0.005780088 0.004695457 0.003002231 0.00296717 0.001774749 0.0008994295   0
+4 0.005780088 0.004695457 0.003002231 0.00296717 0.001774749 0.0008994295   0
+5 0.005780088 0.004695457 0.003002231 0.00296717 0.001774749 0.0008994295   0
+6 0.005780088 0.004695457 0.003002231 0.00296717 0.001774749 0.0008994295   0
+  V52 V53 V54 V55 V56 V57 V58 V59 V60 V61 V62 V63 V64 V65 V66 V67 V68 V69 V70
+1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  V71 V72 V73 V74 V75        V76        V77        V78        V79         V80
+1   0   0   0   0   0 0.04253882 0.01352811 0.01074312 0.01047803 0.004934759
+2   0   0   0   0   0 0.04253882 0.01352811 0.01074312 0.01047803 0.004934759
+3   0   0   0   0   0 0.04253882 0.01352811 0.01074312 0.01047803 0.004934759
+4   0   0   0   0   0 0.04253882 0.01352811 0.01074312 0.01047803 0.004934759
+5   0   0   0   0   0 0.04253882 0.01352811 0.01074312 0.01047803 0.004934759
+6   0   0   0   0   0 0.04253882 0.01352811 0.01074312 0.01047803 0.004934759
+          V81         V82         V83        V84         V85         V86
+1 0.003925486 0.003662983 0.003320593 0.00174598 0.001706967 0.001386655
+2 0.003925486 0.003662983 0.003320593 0.00174598 0.001706967 0.001386655
+3 0.003925486 0.003662983 0.003320593 0.00174598 0.001706967 0.001386655
+4 0.003925486 0.003662983 0.003320593 0.00174598 0.001706967 0.001386655
+5 0.003925486 0.003662983 0.003320593 0.00174598 0.001706967 0.001386655
+6 0.003925486 0.003662983 0.003320593 0.00174598 0.001706967 0.001386655
+           V87          V88          V89        V90        V91         V92
+1 0.0008866144 0.0008762601 0.0002656181 0.01800549 0.01101175 0.009746984
+2 0.0008866144 0.0008762601 0.0002656181 0.01800549 0.01101175 0.009746984
+3 0.0008866144 0.0008762601 0.0002656181 0.01800549 0.01101175 0.009746984
+4 0.0008866144 0.0008762601 0.0002656181 0.01800549 0.01101175 0.009746984
+5 0.0008866144 0.0008762601 0.0002656181 0.01800549 0.01101175 0.009746984
+6 0.0008866144 0.0008762601 0.0002656181 0.01800549 0.01101175 0.009746984
+          V93         V94         V95         V96         V97         V98
+1 0.009560719 0.008356078 0.005726067 0.005473051 0.005190251 0.004547262
+2 0.009560719 0.008356078 0.005726067 0.005473051 0.005190251 0.004547262
+3 0.009560719 0.008356078 0.005726067 0.005473051 0.005190251 0.004547262
+4 0.009560719 0.008356078 0.005726067 0.005473051 0.005190251 0.004547262
+5 0.009560719 0.008356078 0.005726067 0.005473051 0.005190251 0.004547262
+6 0.009560719 0.008356078 0.005726067 0.005473051 0.005190251 0.004547262
+          V99        V100        V101        V102        V103        V104
+1 0.004435056 0.003641507 0.002088745 0.002043973 0.001661548 0.001550438
+2 0.004435056 0.003641507 0.002088745 0.002043973 0.001661548 0.001550438
+3 0.004435056 0.003641507 0.002088745 0.002043973 0.001661548 0.001550438
+4 0.004435056 0.003641507 0.002088745 0.002043973 0.001661548 0.001550438
+5 0.004435056 0.003641507 0.002088745 0.002043973 0.001661548 0.001550438
+6 0.004435056 0.003641507 0.002088745 0.002043973 0.001661548 0.001550438
+         V105        V106         V107         V108        V109         V110
+1 0.001478733 0.001405514 0.0009479255 0.0007390243 0.000722511 0.0005869321
+2 0.001478733 0.001405514 0.0009479255 0.0007390243 0.000722511 0.0005869321
+3 0.001478733 0.001405514 0.0009479255 0.0007390243 0.000722511 0.0005869321
+4 0.001478733 0.001405514 0.0009479255 0.0007390243 0.000722511 0.0005869321
+5 0.001478733 0.001405514 0.0009479255 0.0007390243 0.000722511 0.0005869321
+6 0.001478733 0.001405514 0.0009479255 0.0007390243 0.000722511 0.0005869321
+          V111         V112         V113         V114
+1 0.0003752789 0.0003708962 0.0002218437 0.0001124287
+2 0.0003752789 0.0003708962 0.0002218437 0.0001124287
+3 0.0003752789 0.0003708962 0.0002218437 0.0001124287
+4 0.0003752789 0.0003708962 0.0002218437 0.0001124287
+5 0.0003752789 0.0003708962 0.0002218437 0.0001124287
+6 0.0003752789 0.0003708962 0.0002218437 0.0001124287</code></pre>
+</div>
+</div>
+<p>Answer the following questions below:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q4 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Look at <code>wordData</code>. The <code>prob</code> column provides the probability of that word being used given what its part of speech is. Determine if these probabilities are legitimate for each of these words. What other considerations do I need to make when determining the probability?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q5 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Look at <code>tranMatData</code>. Each row provides the probability that the corresponding word will be followed by the word specified by the column. Determine if these probabilities are legitimate for each of these words. What other considerations do I need to make when determining the probability?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q6 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Based on both of the datasets, what are some issues that may arise when using this data?</p>
+</div>
+</div>
+</section>
+<section id="running-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-model">Running the Model</h2>
+<p>Now onto the fun part – we are going to create our own sentences! To do so, run the following chunk below:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code to provide the first word of the sentence</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>sentence <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"the"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>wordInd <span class="ot">=</span> <span class="fu">which</span>(wordData<span class="sc">$</span>word <span class="sc">==</span> <span class="st">"the"</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># We can specify the number of words we want in our sentence here</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>numWords <span class="ot">=</span> <span class="dv">6</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Run this code to create the sentence</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>(numWords <span class="sc">-</span> <span class="dv">1</span>)){</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  wordInd <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(wordData), <span class="at">size =</span> <span class="dv">1</span>, <span class="at">prob =</span> tranMatData[wordInd, ])</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  sentence <span class="ot">=</span> <span class="fu">c</span>(sentence, wordData<span class="sc">$</span>word[wordInd])</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the sentence here</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(sentence, <span class="at">collapse =</span> <span class="st">" "</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "the hand have year get work"</code></pre>
+</div>
+</div>
+<p>There you have it – we’ve generated sentences! But as you see, the results are interesting to say the least. You’ll notice that every time you run it, you will generate a new sentence. Some may make sense, while others may not.</p>
+<p>As you’ve probably discussed in previous questions, there are many, many considerations to generating these sentences. The following questions will bring the discussion back full-circle:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q7 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Run the code above 5 different times using a <code>numWords</code> of 6. Copy and paste the results below.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q8 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What are some observations you notice from the sentences? Are there any similarities? Differences? Confusions? Do the sentences make sense?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q9 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What are some factors we may want to factor into our program aside from:</p>
+<ul>
+<li>the probability of a word being used, and</li>
+<li>what the next word will be given the part of speech of the previous word?</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Q10 (3 pts)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose we attempted to use this model in lieu of more sophisticated programs like ChatGPT, Gemini, and Claude. What would your perception be? How would this lead to issues with resolving prompts you fed to the programs?</p>
+</div>
+</div>
+</section>
+<section id="wrapup" class="level2">
+<h2 class="anchored" data-anchor-id="wrapup">Wrapup</h2>
+<p>Thankfully, these sophisticated programs are able to answer questions and provide responses that answer our questions, do so in a natural way, and give additional information aside from the initial ask. This is what has made these programs so intriguing and highly used over the last few years.</p>
+<p>However, as you’ve seen with this example, developing these models takes a lot of foresight and power. The factors you’ve discussed in this activity only scratch the surface of all potential variables and factors to consider when developing a model. Additionally, we only looked at prompt generation and not into other avenues, such as comprehending prompts.</p>
+<p>If you’ve already exhausted a lot of brain power thinking about these factors, imagine the power it takes to factor these considerations into a series of models and executing the results. The data itself will also compound these actions. Also, as you’ve seen here, artificial intelligence relies on the success of the models, data, and processes behind the scenes. Nothing is perfect, and at times, you may find that these models will produce odd, incomplete, or unrelated answers.</p>
+</section>
+<section id="prompt" class="level2">
+<h2 class="anchored" data-anchor-id="prompt">Prompt</h2>
+<p>In Slack (under the <code>#discussions</code> channel), provide an example of a time you used an large language model like ChatGPT to resolve a prompt and it generated a rather unusual response. Consider why the response was generated as such.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
