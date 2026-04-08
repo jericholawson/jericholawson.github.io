@@ -347,7 +347,7 @@
     "href": "schedule.html#week-14-presentations-apis-review-427---51",
     "title": "Schedule",
     "section": "Week 14: Presentations, APIs, Review (4/27 - 5/1)",
-    "text": "Week 14: Presentations, APIs, Review (4/27 - 5/1)\n\nMonday, 4/27Wednesday, 4/29Friday, 5/1\n\n\n\n\n\n\n\n\nNoteProject #2 Presentations and Project Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #10: Polygon Mapping\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Bonus Topics and Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 14: Presentations, APIs, Review (4/27 - 5/1)\n\nMonday, 4/27Wednesday, 4/29Friday, 5/1\n\n\n\n\n\n\n\n\nNoteProject #2 Presentations and Project Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #10: Polygon Mapping\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: APIs and Review\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#finals-52---59",
@@ -5457,6 +5457,615 @@
     "href": "schedule.html#week-11-programming-46---410",
     "title": "Schedule",
     "section": "Week 11: Programming (4/6 - 4/10)",
-    "text": "Week 11: Programming (4/6 - 4/10)\n\nMonday, 4/6Wednesday, 4/8Friday, 4/10\n\n\n\n\n\n\n\n\nNoteLecture: Functions in R\n\n\n\n\nSlides + Activity\nCreate your own .qmd file to answer questions from slides\n\nPush to activities repository\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #7 (due Wednesday, 4/8 at 11:59pm)\n\nTemplate\n\nProject #2: Proposal (due Friday, 4/10 at 11:59pm in new GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Iteration in R\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #8: Programming in R\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 11: Programming (4/6 - 4/10)\n\nMonday, 4/6Wednesday, 4/8Friday, 4/10\n\n\n\n\n\n\n\n\nNoteLecture: Functions in R\n\n\n\n\nSlides + Activity\nCreate your own .qmd file to answer questions from slides\n\nPush to activities repository\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #7 (due Wednesday, 4/8 at 11:59pm)\n\nTemplate\n\nProject #2: Proposal (due Friday, 4/10 at 11:59pm in new GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Iteration in R\n\n\n\n\nSlides + Activity\nCreate your own .qmd file to answer questions from slides\n\nPush to activities repository\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #7 (due tonight at 11:59pm)\n\nTemplate\n\nProject #2: Proposal (due Friday, 4/10 at 11:59pm in new GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\nReadings #9 (due Sunday, 4/12 at 11:59pm on Perusall)\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #8: Programming in R\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+  },
+  {
+    "objectID": "labs/lab8/index.html",
+    "href": "labs/lab8/index.html",
+    "title": "Lab #8: Programming with Data (30 pts)",
+    "section": "",
+    "text": "In this lab, we will program some custom R functions that allow us to analyze data related to medical conflicts of interest. Specifically, we will determine which ten Massachusetts-based doctors received the most money from pharmaceutical or medical device manufacturers in 2024. Then we will leverage our custom functions to produce a number of tables and plots documenting information about the payments made to each of these doctors. In doing so, we will update a similar analysis produced by ProPublica in 2018 called Dollars for Docs.\n\n\n\nWrite custom R functions\nIterate a function over the values in a vector, using the family of map functions\nPractice data cleaning and wrangling"
+  },
+  {
+    "objectID": "labs/lab8/index.html#introduction",
+    "href": "labs/lab8/index.html#introduction",
+    "title": "Lab #8: Programming with Data (30 pts)",
+    "section": "",
+    "text": "In this lab, we will program some custom R functions that allow us to analyze data related to medical conflicts of interest. Specifically, we will determine which ten Massachusetts-based doctors received the most money from pharmaceutical or medical device manufacturers in 2024. Then we will leverage our custom functions to produce a number of tables and plots documenting information about the payments made to each of these doctors. In doing so, we will update a similar analysis produced by ProPublica in 2018 called Dollars for Docs.\n\n\n\nWrite custom R functions\nIterate a function over the values in a vector, using the family of map functions\nPractice data cleaning and wrangling"
+  },
+  {
+    "objectID": "labs/lab8/index.html#review-of-key-terms",
+    "href": "labs/lab8/index.html#review-of-key-terms",
+    "title": "Lab #8: Programming with Data (30 pts)",
+    "section": "Review of Key Terms",
+    "text": "Review of Key Terms\n\n\n\n\n\n\nTip\n\n\n\nYou may wish to reference this purrr Cheatsheet when completing this lab.\n\n\n\nFunction\n\na series of statements that returns a value or performs a task\n\nIteration\n\nrepeating a task over a series of values, vectors, or lists"
+  },
+  {
+    "objectID": "labs/lab8/index.html#cmss-open-payments-dataset",
+    "href": "labs/lab8/index.html#cmss-open-payments-dataset",
+    "title": "Lab #8: Programming with Data (30 pts)",
+    "section": "CMS’s Open Payments Dataset",
+    "text": "CMS’s Open Payments Dataset\nIn 2010, the the Physician Payments Sunshine Act (2010) was passed, requiring medical drug and device manufacturers to disclose payments and other transfers of value made to physicians, non-physician practitioners, and teaching hospitals. This law was put into place to promote transparency in our medical system - enabling the U.S. government and citizens to monitor for potential medical conflicts of interest. Today, every time a drug or medical device manufacturer makes a payment to a covered recipient, they must disclose the nature of that payment and the amount to the U.S. Centers for Medicare & Medicaid. Data about payments is then aggregated, reviewed by (and sometimes disputed by) recipients, corrected, and then published as an open government dataset.\nDefinitions for what counts as a reporting entity, a covered recipient, and a reportable activity have been expanding since the passing of the Physician Payments Sunshine Act as legislators have raised concerns over the degree of transparency of diversifying financial arrangements in the healthcare system. In 2020, the first settlement for violations to the Sunshine Act was announced, requiring Medtronic Inc. to pay $9.2 million to resolve allegations for failure to report. This served as a signal that enforcement is ramping up in the coming years. In 2022, the state of California passed a law requiring that medical practitioners disclose to patients that this data resource exists."
+  },
+  {
+    "objectID": "labs/lab8/index.html#setting-up-your-environment",
+    "href": "labs/lab8/index.html#setting-up-your-environment",
+    "title": "Lab #8: Programming with Data (30 pts)",
+    "section": "Setting Up Your Environment",
+    "text": "Setting Up Your Environment\n\nRun the code below to load today’s data frames into your environment.\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\nlibrary(lubridate)\nlibrary(RColorBrewer)\nopen_payments_original &lt;- read_csv(\"https://openpaymentsdata.cms.gov/api/1/datastore/query/e6b17c6a-2534-4207-a4a1-6746a14911ff/0/download?conditions%5B0%5D%5Bproperty%5D=recipient_state&conditions%5B0%5D%5Bvalue%5D=MA&conditions%5B0%5D%5Boperator%5D=%3D&format=csv\") |&gt;\n  select(Covered_Recipient_NPI,\n         Covered_Recipient_First_Name:Covered_Recipient_Last_Name,\n         Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID,\n         Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Name,\n         Recipient_City,\n         Recipient_State,\n         Covered_Recipient_Specialty_1,\n         Total_Amount_of_Payment_USDollars,\n         Indicate_Drug_or_Biological_or_Device_or_Medical_Supply_1,\n         Product_Category_or_Therapeutic_Area_1,\n         Name_of_Drug_or_Biological_or_Device_or_Medical_Supply_1,\n         Date_of_Payment,\n         Nature_of_Payment_or_Transfer_of_Value,\n         Number_of_Payments_Included_in_Total_Amount,\n         Form_of_Payment_or_Transfer_of_Value,\n         Dispute_Status_for_Publication,\n         Payment_Publication_Date) |&gt;\n  filter(!is.na(Covered_Recipient_NPI))\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)"
+  },
+  {
+    "objectID": "labs/lab8/index.html#cleaning-up-this-data-frame",
+    "href": "labs/lab8/index.html#cleaning-up-this-data-frame",
+    "title": "Lab #8: Programming with Data (30 pts)",
+    "section": "Cleaning up this Data Frame",
+    "text": "Cleaning up this Data Frame\nEventually we are going to plot some timelines of payments to specific doctors, and we will need the Date_of_Payment column to be in a date-time format to do so. Right now however, these columns are strings. To get started with cleaning up this dataset, let’s convert the date columns in open_payments_original to a date-time format.\n\n\n\n\n\n\nImportantQuestion 1 (3 pts)\n\n\n\nWrite code to convert the Date_of_Payment and the Payment_Publication_Date column to date-time format. You should first determine the format of the date in Date_of_Payment and Payment_Publication_Date and then reference the lubridate library to determine the corresponding function for parsing that date format. Finally, you will mutate the two columns.\n\nOptional challenge: Rather than mutating each column, see if you can mutate() across() the two columns to complete this step.\n\n\n# Uncomment below to write code to convert to date-time format here. \n\n# open_payments_dates_cleaned &lt;- open_payments_original |&gt;\n\n\n\nTo confirm that we’ve done this right, we can check whether both of the dates are in the date-time format.\n\n\n\n\n\n\nImportantQuestion 2 (3 pts)\n\n\n\nThe is.Date function returns TRUE if a vector is in date-time format, and FALSE if it is not. Below, I’ve selected the two columns in open_payments that contain the word “date” in the column header. Determine which map() function to use in order to return a vector that indicates whether these columns are in a date-time format. If you’ve done everything correctly, you should get the output below.\n\n# Select the appropriate map function below\n\nopen_payments_dates_cleaned |&gt;\n  select(contains(\"date\")) |&gt;\n  _____(is.Date)\n\n\n\n         Date_of_Payment Payment_Publication_Date \n                    TRUE                     TRUE \n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nCheck out what happens if you swap out your map function above for map, map_chr, or map_int. Can you figure out the relationship between these values and the original values?\n\n\nIt’s important to note that the unit of observation in this dataset is not one medical practitioner, and it is not one manufacturer. Instead it is one payment from a manufacturer to a medical practitioner. That means that a medical practitioner can appear multiple times in the dataset if they’ve received multiple payments, and a medical drug or device manufacturer can appear multiple times in the dataset if they’ve disbursed multiple payments. We can identify medical practitioners with the Covered_Recipient_NPI column and manufacturers with the Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_ID column.\n…but we want to know more than just the ID of a medical practitioner. To identify which doctors are receiving the most money, we also want to know that practitioner’s name, location, specialty, etc. Because practitioners’ names are manually entered into a database every time a payment is made to them, sometimes the formatting of a practitioner’s name entered for one payment can differ from how that same practitioner’s name is formatted when entered for another payment. The same goes for other variables related to that practitioner. For instance, check out how the capitalization differs for the practitioner below. In some cases, there is a middle initial, while in others, there is a full middle name; in some cases, the practitioner’s name is all capitalized, and in other cases it is not.\n\nopen_payments_dates_cleaned |&gt;\n  filter(Covered_Recipient_NPI == 1003047473) |&gt;\n  select(Covered_Recipient_First_Name, Covered_Recipient_Middle_Name, Covered_Recipient_Last_Name)\n\n# A tibble: 31 × 3\n   Covered_Recipient_First_Name Covered_Recipient_Middl…¹ Covered_Recipient_La…²\n   &lt;chr&gt;                        &lt;chr&gt;                     &lt;chr&gt;                 \n 1 Sherine                      M                         Hassey                \n 2 Sherine                      M                         Hassey                \n 3 Sherine                      M                         Hassey                \n 4 Sherine                      M                         Hassey                \n 5 Sherine                      M                         Hassey                \n 6 SHERINE                      Mary                      HASSEY                \n 7 SHERINE                      Mary                      HASSEY                \n 8 SHERINE                      Mary                      HASSEY                \n 9 SHERINE                      M                         HASSEY                \n10 SHERINE                      M                         HASSEY                \n# ℹ 21 more rows\n# ℹ abbreviated names: ¹​Covered_Recipient_Middle_Name,\n#   ²​Covered_Recipient_Last_Name\n\n\nThis issue with formatting exists across this entire dataset. To ensure that similar entities appear in the right buckets when we aggregate the data, we are going to standardize capitalization across the whole dataset. We’re also going to leave out the practitioner’s middle initial since it is not always included (or included in the same way).\n\n\n\n\n\n\nImportantQuestion 3 (3 pts)\n\n\n\nWrite code to mutate across all character columns such that strings in these columns are converted to title case. Title case refers to casing where the first letter in each word is capitalized and all other letters are lowercase. Strings can be converted to title case with the function str_to_title.\nAfter you’ve done this, mutate a new column called Covered_Recipient_Full_Name that concatenates (hint: i.e. paste()) together Covered_Recipient_First_Name and Covered_Recipient_Last_Name.\nStore the resulting data frame in open_payments.\n\n# Uncomment below to clean up strings\n\n# open_payments &lt;- open_payments_dates_cleaned |&gt;\n\n\n\nAs we saw before, one Covered_Recipient_NPI was associated with multiple names if the names were capitalized in some cases and not others. Now that we’ve standardized the formatting of these names, there ideally should be one full name associated with every Covered_Recipient_NPI. Let’s compare the length of unique Covered_Recipient_NPI values to the length of unique Covered_Recipient_Full_Name values to check whether this is the case.\n\n\n\n\n\n\nImportantQuestion 4 (3 pts)\n\n\n\nWrite a function below called num_unique. The function should calculate the length of unique values in the vector passed to the argument x.\nBelow, I’ve selected the two columns in open_payments that we want to iterate this function over. Determine which map() function to use in order to return a numeric vector that indicates the length of unique values in each of these columns. If you’ve done everything correctly, you should get the output below.\n\nnum_unique &lt;- function(x) {\n # Write function here.\n}\n\nopen_payments |&gt;\n  select(Covered_Recipient_NPI, Covered_Recipient_Full_Name) |&gt;\n  _____(_____) # Determine which map function to call here.\n\n\n\n      Covered_Recipient_NPI Covered_Recipient_Full_Name \n                      22234                       22308 \n\n\n\n\nNotice that there are still more full names than Covered_Recipient_NPIs, which means that certain doctors have multiple names in this dataset. Below I’ve written some code to calculate the number unique full names listed for each Covered_Recipient_NPI and filter to the rows with more than one name. Can you identify some reasons why we might have multiple names listed for this same medical practitioner in this data frame?\n\nopen_payments |&gt;\n  group_by(Covered_Recipient_NPI) |&gt;\n  mutate(num_names = length(unique(Covered_Recipient_Full_Name))) |&gt;\n  ungroup() |&gt;\n  filter(num_names &gt; 1) |&gt;\n  select(Covered_Recipient_NPI, Covered_Recipient_Full_Name) |&gt;\n  distinct() |&gt;\n  arrange(desc(Covered_Recipient_NPI))\n\n# A tibble: 818 × 2\n   Covered_Recipient_NPI Covered_Recipient_Full_Name\n                   &lt;dbl&gt; &lt;chr&gt;                      \n 1            1992991657 Lana Schumacher- Beal      \n 2            1992991657 Lana Schumacher-Beal       \n 3            1992991657 Lana Schumacher            \n 4            1992932453 Jessica Ravikoff           \n 5            1992932453 Jessica Allegretti         \n 6            1992788160 Jonathan Slater            \n 7            1992788160 John Slater                \n 8            1992712178 Pasi Janne                 \n 9            1992712178 Pasi Antero Janne          \n10            1992059679 Carolyn Bagley             \n# ℹ 808 more rows\n\n\nBecause of these issues, it is important that we use the Covered_Recipient_NPI to identify doctors vs. the full name.\nNow that we have a final cleaned up open_payments data frame, let’s remove the other data frames from our environment.\n\nrm(open_payments_original, open_payments_dates_cleaned)\n\n…and on to analysis."
+  },
+  {
+    "objectID": "labs/lab8/index.html#data-analysis",
+    "href": "labs/lab8/index.html#data-analysis",
+    "title": "Lab #8: Programming with Data (30 pts)",
+    "section": "Data Analysis",
+    "text": "Data Analysis\nUltimately, our aim is to produce a number of tables and plots for each of the ten MA-based doctors that received the most money from medical drug and device manufacturers in 2024. This means that one of our first analysis steps is to identify those 10 medical practitioners.\n\n\n\n\n\n\nImportantQuestion 5 (3 pts)\n\n\n\nWrite code to determine the 10 medical practitioners that received the most money from drug and device manufacturers in 2024, and store your results in top_10_doctors. Your final data frame should have 10 rows and columns for Covered_Recipient_NPI and sum_total_payments.\n\n# Uncomment below and write data wrangling code\n\n#top_10_doctors &lt;- open_payments |&gt;\n\n\n\nRight now the values that we will eventually want to iterate over in our analysis are stored as columns in a dataframe. …but remember that the family of purrr functions allows us to apply a function to each element of a vector or list. We want to create a series of vectors from these columns that we can iterate over. We will use the pull() function to do this.\n\n\n\n\n\n\nImportantQuestion 6 (3 pts)\n\n\n\nCreate a vector of top_10_doctors_ids from top_10_doctors, using the pull() function.\n\n# Uncomment and write code below to pull the top 10 doctor IDs into a vector\n\n# top_10_doctors_ids &lt;- top_10_doctors |&gt;\n\n\n\nWe also want a vector of doctor names associated with each of these IDs, but remember that there can be multiple names for a single doctor in this dataset. With this in mind, we are going to create a vector of the first listed name for a given Covered_Recipient_NPI in the dataset. Taking the first listed name as the doctor’s name is an imperfect solution. The first listed name could be a misspelling. It could be a doctor’s maiden name that they have since changed. This is a temporary solution, and we would want to confirm that we have the correct name for each doctor before publishing any of these findings.\n\n\n\n\n\n\nImportantQuestion 7 (3 pts)\n\n\n\nCreate a vector containing the names of the doctors associated with the IDs in top_10_doctors_ids. First, define the function get_doctor_name. This function will:\n\ntake a doctor_id as an argument,\nfilter open_payments to that ID,\nsummarize the first() Covered_Recipient_Full_Name listed for that ID,\npull() the name value\n\nOnce this function has been defined, select the appropriate map() function to iterate top_10_doctors_ids through get_doctor_name and store the resulting character vector in top_10_doctors_names.\n\nget_doctor_name &lt;- function(doctor_id){\n  # Write function code here\n}\n\n# Iterate the top_10_doctors_ids vector through get_doctor_name and store the results in a character vector\n\n# top_10_doctors_names &lt;- \n\n\n\nNow that we have the vectors we want to iterate over, we are ready to start defining our first functions.\n\nWhat kind of payments did MA-based doctors receive in 2024?\nTo get started, let’s define a function that filters open_payments to a given doctor ID, and then calculates how much of each kind of payment has been paid to that doctor. Here is an example of what that data wrangling code would look like for a specific Covered_Recipient_NPI:\n\nopen_payments |&gt;\n  filter(Covered_Recipient_NPI == 1003801903) |&gt;\n  group_by(Nature_of_Payment_or_Transfer_of_Value) |&gt;\n  summarize(num_payments = \n              sum(Number_of_Payments_Included_in_Total_Amount),\n            total_payments = sum(Total_Amount_of_Payment_USDollars))\n\n# A tibble: 1 × 3\n  Nature_of_Payment_or_Transfer_of_Value num_payments total_payments\n  &lt;chr&gt;                                         &lt;dbl&gt;          &lt;dbl&gt;\n1 Acquisitions                                      1       2114077.\n\n\n\n\n\n\n\n\nImportantQuestion 8 (3 pts)\n\n\n\nWrap the above code in a function named calculate_payment_type_amts. Rather than filtering to 1003801903, filter based on the value passed to an argument named doctor_id.\nThen, use the map() function to apply calculate_payment_type_amts to each element in the top_10_doctors_ids vector. Running this code should return a list of 10 data frames.\nFinally, pipe in set_names(top_10_doctors_names) to set the names for each data frame in the list to the doctor’s name.\n\n# Write calculate_payment_type_amts function here\n\n# Iterate calculate_payment_type_amts over top_10_doctors_ids and set names to top_10_doctors_names\n\n\n\n\n\nWhen were payments made to each of these doctors in 2024?\nHere’s an example of a plot we could create to answer this question for one doctor.\n\n  open_payments |&gt;\n    filter(Covered_Recipient_NPI == 1003801903) |&gt;\n    ggplot(aes(x = day(Date_of_Payment), \n               y = \"\", \n               fill = Total_Amount_of_Payment_USDollars)) +\n    geom_jitter(pch = 21, size = 2, color = \"black\") +\n    theme_minimal() +\n    labs(title = \"Roger Hajjar\", \n         y = \"\", \n         x = \"Day\",\n         fill = \"Payment Amount\") +\n    scale_y_discrete(limits = rev) +\n    scale_fill_distiller(palette = \"BuPu\", direction = 1, labels = scales::comma) +\n    facet_wrap(vars(month(Date_of_Payment, label = TRUE)), nrow = 4) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantQuestion 9 (3 pts)\n\n\n\nWrite a function named payments_calendar. The function should:\n\nTake a doctor_id and doctor_name as arguments\nFilter open_payments to the doctor’s ID\nCreate payment calendar plot modeled after the one above.\nSet the title of the plot to the doctor’s name\n\nAfter you’ve written this function, select the appropriate map function to apply payments_calendar to each element in the top_10_doctors_ids vector and top_10_doctors_names vector.\n\nOptional Challenge: Extend your code to include the first listed specialty for each top 10 doctor as a subtitle in each plot.\n\n\n# Write payments_calendar function here\n\n# Iterate payments_calendar over top_10_doctors_ids and top_10_doctors_ids to create 10 plots\n\n\n\n\n\nWhich manufacturers paid MA-based doctors in 2024, and through what forms of payment?\nFinally, let’s define a function that filters open_payments to a given doctor ID and determines how much the doctor received in compensation from different manufacturers, along with the forms of payment from each manufacturer. To do so, we will need to aggregate the data by Covered_Recipient_NPI, Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Name, and Form_of_Payment_or_Transfer_of_Value and calculate the total payments associated with each grouping.\n\n\n\n\n\n\nImportantQuestion 10 (3 pts)\n\n\n\nWrite a function named calculate_manufacturer_payments. The function should:\n\nTake a doctor_id as an argument\nFilter open_payments to that ID\nAggregate the filtered data by Covered_Recipient_NPI, Applicable_Manufacturer_or_Applicable_GPO_Making_Payment_Name, and Form_of_Payment_or_Transfer_of_Value\nCalculate the total amount of payments for each grouping\nSort the resulting data frame in descending order by the total amount of payments.\n\nAfter you’ve written this function, use the map_df() function to apply calculate_manufacturer_payments to each element in the top_10_doctors_ids vector. Note how this returns one data frame rather than a list of 10 data frames.\nPlot your resulting data frame as a column plot, attempting (to the best of your ability) to match the formatting of the plot below.\n\nOptional Challenge: List the doctor’s full name in each facet band, rather than the the doctor’s ID.\n\n\n# Write calculate_manufacturer_payments function here\n\n# Iterate calculate_manufacturer_payments over top_10_doctors_ids here\n\n# Plot resulting data frame here\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantQuestion 11 (Extra Credit, +3 points on lab)\n\n\n\nWrite a function named drugs_and_devices. The function should create a plot that shows how much money a given doctor was paid for each drug or biological device for which they received payment in 2024, grouped by the nature of payment.\nAfter you’ve written this function, use a map function to apply drugs_and_devices to each element in the top_10_doctors_ids vector. You should produce 10 plots - one for each doctor.\n\n# Create function here\n\n# Apply function here\n\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nOn September 29, 2022, California Governor Gavin Newsom signed a bill requiring that all physicians and surgeons notify patients about the Open Payments database on their initial visit. Specifically, patients will be given the following notice: “The Open Payments database is a federal tool used to search payments made by drug and device companies to physicians and teaching hospitals. It can be found at https://openpaymentsdata.cms.gov,” and will be prompted to sign and date that they have received the notice. This policy was developed in response to concerns that, while the Open Payments database includes a great deal of information that might impact how citizens make decisions about their healthcare, very few people knew of the database. Do you think this is a good solution to this problem? Should other states follow suit? Do you see any drawbacks to this policy? Share your ideas on our discussions Slack channel."
+  },
+  {
+    "objectID": "labs/lab9/index.html",
+    "href": "labs/lab9/index.html",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "",
+    "text": "In this lab, we will build a map that visualizes toxic emissions in Louisiana’s Cancer Alley - an 85-mile stretch of land from Baton Rouge to New Orleans, where some of the most serious health disparities in the U.S. are reported. In doing so, we will gain practice in producing point maps in Leaflet.\n\n\n\nTransform point data to an appropriate CRS\nMap point data in Leaflet\nCreate palettes for points on maps\nAdd legends and labels to a map"
+  },
+  {
+    "objectID": "labs/lab9/index.html#introduction",
+    "href": "labs/lab9/index.html#introduction",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "",
+    "text": "In this lab, we will build a map that visualizes toxic emissions in Louisiana’s Cancer Alley - an 85-mile stretch of land from Baton Rouge to New Orleans, where some of the most serious health disparities in the U.S. are reported. In doing so, we will gain practice in producing point maps in Leaflet.\n\n\n\nTransform point data to an appropriate CRS\nMap point data in Leaflet\nCreate palettes for points on maps\nAdd legends and labels to a map"
+  },
+  {
+    "objectID": "labs/lab9/index.html#review-of-key-terms",
+    "href": "labs/lab9/index.html#review-of-key-terms",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "Review of Key Terms",
+    "text": "Review of Key Terms\n\n\n\n\n\n\nTip\n\n\n\nYou may wish to reference this reference guide when completing this lab.\n\n\n\nCoordinate Reference System (CRS)\n\na system used to locate geographic points on different spatial projections"
+  },
+  {
+    "objectID": "labs/lab9/index.html#toxic-release-inventory",
+    "href": "labs/lab9/index.html#toxic-release-inventory",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "Toxic Release Inventory",
+    "text": "Toxic Release Inventory\nThe EPA’s Emergency Planning and Community Right to Know Act (EPCRA) of 1986 established the Toxic Release Inventory as a mechanism to monitor and inform the public of toxic emissions released in their communities. Every year, certain U.S. industrial facilities are required to report to the EPA the amounts of certain chemical on-site and off-site releases in pounds. Facilities required to report include those that employ more than 10 individuals, release more than a certain threshold of a TRI-regulated chemical, and are classified by a specified set of Standard Industrial Codes, including mining, utilities, manufacturing, publishing, and hazardous waste.\n\n\nToday, we are going to examine TRI data from 2023 in Louisiana’s Cancer Alley. Cancer Alley is an 85-mile stretch of land along the Mississippi River where more than 200 fossil fuel and petrochemical operate. It is an area of the country facing some of the highest cancer risks in the United States, and it is inhabited predominantly by Black communities, raising significant concerns about environmental injustices. Next week, we are going to look at the demographics of the community’s in cancer alley and consider its racial history. This week, we are going to focus on chemical emissions in this area."
+  },
+  {
+    "objectID": "labs/lab9/index.html#setting-up-your-environment",
+    "href": "labs/lab9/index.html#setting-up-your-environment",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "Setting Up Your Environment",
+    "text": "Setting Up Your Environment\n\nInstall the following packages in your Environment:\n\n\ninstall.packages(\"leaflet\")\ninstall.packages(\"sf\")\n\n\nRun the code below to load today’s data frames into your environment.\n\n\nlibrary(tidyverse)\nlibrary(leaflet)\nlibrary(RColorBrewer)\nlibrary(sf)\n\ntri_la_2023 &lt;- read_csv(\"https://raw.githubusercontent.com/SDS-192-Intro/public-website-fall-25/refs/heads/main/data/2023_la.csv\", name_repair = make.names) |&gt;\n  filter(X50..UNIT.OF.MEASURE == \"Pounds\") |&gt;\n  arrange(desc(X107..TOTAL.RELEASES)) |&gt;\n  mutate(chemical_total_text = paste(X37..CHEMICAL, X107..TOTAL.RELEASES, sep = \": \")) |&gt;\n  group_by(X2..TRIFD) |&gt;\n  summarize(X4..FACILITY.NAME = first(X4..FACILITY.NAME),\n            X12..LATITUDE = first(X12..LATITUDE),\n            X13..LONGITUDE = first(X13..LONGITUDE),\n            X23..INDUSTRY.SECTOR = first(X23..INDUSTRY.SECTOR),\n            X107..TOTAL.RELEASES = sum(X107..TOTAL.RELEASES),\n            X..CHEMICAL.TEXT = paste(chemical_total_text, collapse = \" &lt;br&gt; \"))"
+  },
+  {
+    "objectID": "labs/lab9/index.html#mapping-in-leaflet",
+    "href": "labs/lab9/index.html#mapping-in-leaflet",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "Mapping in Leaflet",
+    "text": "Mapping in Leaflet\nWe are going to work with the leaflet() package to design a map of the toxic emissions released in Louisiana in 2023. The map will color and size the points by the total emissions. At any point during these exercises, you can reference the leaflet documentation to help you build out these maps."
+  },
+  {
+    "objectID": "labs/lab9/index.html#initialize-your-map",
+    "href": "labs/lab9/index.html#initialize-your-map",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "Initialize your Map",
+    "text": "Initialize your Map\nThere are three steps to initializing a map in leaflet:\n\nCall the leaflet() function to create a map widget.\nCall the setView(lat = 0.00, lng = 0.00, zoom = 0). This function determines where the map will initially focus. We provide a set of coordinates that will be the map’s center point when we load it, and a number (from 1 to 16) to indicate the level at which to zoom in on the map.\n\nCall addProviderTiles() to load up provider tiles that constitute a base map. A number of different map providers have provider tiles that we can reference here. A few examples of the arguments we can supply to this function include include:\n\n\nproviders$OpenStreetMap\nproviders$Stamen.Toner\nproviders$CartoDB.Positron\nproviders$Esri.NatGeoWorldMap\n\nRun the code below to initialize a map.\n\nmap1 &lt;- leaflet(width = \"100%\") %&gt;%\n  setView(lat = 0.00, lng = 0.00, zoom = 0) %&gt;%\n  addProviderTiles(providers$Stamen.Toner)\n\nmap1\n\n\n\n\n\n\n\nImportantQuestion 1 (2 pts)\n\n\n\nAdjust the code below to center the map on Louisiana. You’ll need to look up the coordinates for LA, keeping in mind that South and West coordinates will be negative. Adjust the zoom to keep the whole state in view (setting the zoom level between 1 and 16). When you are happy with the View, switch out the provider tiles to a base map that won’t distract from the data points we will layer on top of this map. Keep in mind our discussions regarding Visualization Aesthetics here.\n\n# Uncomment and adjust code below.\n#la_map &lt;- leaflet(width = \"100%\") %&gt;%\n#  setView(lat = 0.00, lng = 0.00, zoom = 0) %&gt;%\n#  addProviderTiles(providers$Stamen.Toner)\n\n# Uncomment below to view the map!\n# la_map"
+  },
+  {
+    "objectID": "labs/lab9/index.html#set-geometry-and-transform-data-crs",
+    "href": "labs/lab9/index.html#set-geometry-and-transform-data-crs",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "Set Geometry and Transform Data CRS",
+    "text": "Set Geometry and Transform Data CRS\nWe will be looking to convert our data into an object with coordinate-based geometry so that we can map it. We can use the st_as_sf() function to do this. st_as_sf() takes two arguments:\n\nThe names of the columns in our data frame containing geographic coodinates in the format coords = c(\"&lt;longitude column names&gt;\", \"&lt;latitude column name&gt;\")\nThe coordinate reference system that the dataset currently uses in the format crs = &lt;crs number&gt;.\n\nAfter adding this geometry column with st_as_sf(), we need to make sure that the CRS for our coordinates is consistent with the CRS of the basemap we will be placing the points on. The coordinates in tri_la_2023 data are in NAD 83 (EPSG:4269) and our basemap is in WGS 84 (EPSG:4326).\n\n\n\n\n\n\nImportantQuestion 2 (2 pts)\n\n\n\nIn the code block below, create a new geometry column with the given coordinates, using the function st_as_sf(). The column for longitude will go in the first coordinate position, and latitude will go in the second. Be sure to set the data’s current CRS (4269) in that function. Then transform the CRS to 4326 using st_transform().\n\n# Uncomment and fill in the blanks below. The column for longitude will go in the first coordinate position, and latitude will go in the second. \n\n#tri_la_2023 &lt;- tri_la_2023 %&gt;%\n#  st_as_sf(coords = c(\"____\", \"____\"), crs = ____) %&gt;%\n#  st_transform(____)"
+  },
+  {
+    "objectID": "labs/lab9/index.html#add-layers",
+    "href": "labs/lab9/index.html#add-layers",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "Add Layers",
+    "text": "Add Layers\nOnce we have our initial map, we can add layers to the map that display different forms of geospatial data. There are a number of different functions in leaflet that we can use to add layers. For instance, we can add markers to the map at a certain geo-coordinates using the addMarkers() function. We can also add polygons and rectangles to the map using the addRectangles() function or the addPolygons() function. Today we are going to work exclusively with the addCircleMarkers() function. This allows us to add a circle at the latitude and longitude for each row in our dataset. It also allows us to adjust the circle’s color and size according to values in our dataset.\n\n\n\n\n\n\nImportantQuestion 3 (2 pts)\n\n\n\nIn the code block below, pipe addCircleMarkers() onto the basemap and list data = tri_la_2023 as an argument in that function. It should look like my map below.\n\n# Uncomment and add the function\n\n#la_map %&gt;%\n\n\n\n\n\n\n\n\n\nMap isn’t so legible/beautiful at this point, right?"
+  },
+  {
+    "objectID": "labs/lab9/index.html#styling-the-map",
+    "href": "labs/lab9/index.html#styling-the-map",
+    "title": "Lab #9: Mapping with Leaflet (30 pts)",
+    "section": "Styling the Map",
+    "text": "Styling the Map\n\n\n\n\n\n\nImportantQuestion 4 (3 pts)\n\n\n\nCopy the map you just created into the code chunk below, and pipe the addCircleMarkers() function onto your code. Check out the help pages for the addCircleMarkers() function, and add some arguments to help with the map’s legibility. At the very least, you should adjust the radius, weight, color, fillColor, and fillOpacity, and understand how each of these arguments will change the style of the map. For now you can set the color to “black” and the fillColor to “white”. See if you can get your map to match mine below.\n\n# Copy previous map here! \n\n\n\n\n\n\n\n\n\n\nSizing the Circles\n\n\n\n\n\n\nImportantQuestion 5 (4 pts)\n\n\n\nCopy and paste the last map that you created below. We are going to size each circle by the total chemical releases at that facility. Total releases is stored in the column X107..TOTAL.RELEASES in our dataset, so we could size the circles by setting the radius to ~X107..TOTAL.RELEASES. However, this would lead to some massive circles on our map as certain facilities have released hundreds of thousands of pounds in emissions, and the value we supply to radius will determine the pixels of the circle on our map. To deal with this, we are going to divide the total releases by 1000000. Set the radius to ~X107..TOTAL.RELEASES/1000000 below.\n\n# Copy map colored by bins here!\n\n\n\n\n\n\n\n\n\n\n\nCreating Color Palettes\nNow that our map is looking more legible, let’s color the circles by the type of industry for each facility. Remembering back to our lesson on Understanding Datasets and Visualization Aesthetics, we should keep in mind that X23..INDUSTRY.SECTOR is a categorical variable, and therefore, we will create a qualitative color palette to map it.\nThere is one function in leaflet for creating a categorical color palette:\n\ncolorFactor(): Creates a palette by assigning a color to each unique value\n\nThis function takes the following arguments:\n\npalette: the colors we wish to map to the data. We will use preset palettes from the RColorBrewer. You can call display.brewer.all() to see the list of palettes or reference here: http://applied-r.com/rcolorbrewer-palettes/\ndomain: the values we wish to apply the palette to. Here we reference the column from the data frame we wish to color the points by using the accessor $.\n\n\n\n\n\n\n\nImportantQuestion 6 (3 pts)\n\n\n\nCreate a categorical palettes below using colorFactor(), setting the palette to “Set2”, and the domain to tri_la_2023$X23..INDUSTRY.SECTOR.\n\n#Uncomment below to create the palette\n\n#pal_fact &lt;- \n\n\n\nNow that we have created a palette, we can map the colors to the points in our map.\n\n\n\n\n\n\nImportantQuestion 7 (3 pts)\n\n\n\nCopy and paste the last map you created into the code chunk below. We are going to adjust the fillColor by setting it to the variable from the dataset that we wish to color (X23.INDUSTRY.SECTOR), colored by one of the palettes that we created. We can do this by setting the fill color argument equal to ~pal_fact(X23.INDUSTRY.SECTOR).\nWe also need to add a legend to explain the colors. Add a pipe to the end of the addCircleMarkers() and then add the function addLegend(). Consult the help pages for the addLegend() function to determine how to add a legend for the meaning of the colors represented on the map. At the very least, you will need an argument for data, pal, and values.\nYour map should look like mine below.\n\n# Copy the map here!\n\n\n\n\n\n\n\n\n\nNow there are 19 unique industry sectors in this dataset, and that may be too many unique values to be able to readily recognize differentiation in color. Let’s change up how we approach coloring this map. Instead, let’s color the circles by the 2023 total releases at each facility on the map. Keep in mind that X107..TOTAL.RELEASES is a numeric variable, and therefore, we will create a sequential color palette to map it.\nThere are three functions in leaflet for creating a sequential color palette:\n\ncolorNumeric(): Creates a palette by assigning numbers to different colors on a spectrum\ncolorBin(): Creates a palette by grouping numbers into a specified number of equally-spaced intervals (e.g. 0-10, &gt;10-20, &gt;20-30)\ncolorQuantile(): Creates a palette by grouping numbers into a specified number of equally-sized quantiles\n\nEach of these functions takes the arguments palette and domain, just as we did when calling colorFactor(). In addition, the colorBin() function takes the argument bins, which indicates the number of color intervals to be created. The colorQuantile() functions takes the argument n, which indicates the number of quantiles to map data into.\n\n\n\n\n\n\nImportantQuestion 8 (3 pts)\n\n\n\nCreate three palettes below (one using each function colorNumeric(), colorBin(), and colorQuantile()), setting the palette to “YlOrRd”, and the domain to tri_la_2023$X107..TOTAL.RELEASES. For colorBin(), set the bins to 6, and for colorQuantile(), set n to 4.\n\npal_num &lt;- colorNumeric(palette=\"YlOrRd\", \n                        domain = tri_la_2023$X107..TOTAL.RELEASES)\n#Uncomment below to create the other two palettes.\n\n#pal_bin &lt;- \n\n#pal_quant &lt;- \n\n\n\n\n\n\n\n\n\nImportantQuestion 9 (3 pts)\n\n\n\nCopy and paste the last map you created into the code chunk below, three times. For each, we are going to adjust the fillColor by setting it to the variable from the dataset that we wish to color (X107..TOTAL.RELEASES), colored by one of the palettes that we created. We can do this by setting the fill color argument equal to:\n\n~pal_num(X107..TOTAL.RELEASES): for coloring the points according the pal_num() palette we created on the X107..TOTAL.RELEASES variable\n~pal_bin(X107..TOTAL.RELEASES): for coloring the points according the pal_bin() palette we created on the X107..TOTAL.RELEASES variable\n~pal_quant(X107..TOTAL.RELEASES): for coloring the points according the pal_quant palette we created on the X107..TOTAL.RELEASES() variable\n\nAdjust the legends for each of the maps.\nYour maps should look like mine below.\n\n# Copy map first time here!\n\n# Copy map second time here!\n\n# Copy map third time here!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantQuestion 10 (3 pts)\n\n\n\nBelow explain the following: Why do the colors appear differently on each map? Which map best represents the distribution of values in X107..TOTAL.RELEASES?\n\n\n\n\nPopups\nLeaflet popups display information about a point we click on it. They are configured via Hypertext Markup Language (HTML). HTML is the markup language used to create webpages. It is akin to RMarkdown; for both HTML and RMarkdown we use certain characters to signal how we want our text formatted and styled.\nThere are a few HTML tags that you need to know in order to style a popup:\n\n&lt;br&gt; creates a newline\n&lt;b&gt;…&lt;/b&gt; makes the enclosing text bold\n&lt;i&gt;…&lt;/i&gt; makes the enclosing text italicized\n\nSo let’s say I had my name stored in the variable name and my institution stored in the variable institution. If I wanted to create a popup with my name in bold and my institution beneath it italics, I would use the following HTML tags: paste(\"&lt;b&gt;\", name, \"&lt;/b&gt;&lt;br&gt;&lt;i&gt;\", institution, \"&lt;/i&gt;\"). Here I’ve pasted together my name (wrapped in the bold tags), a break, and my instituion (wrapped in the italic tags).\n\n\n\n\n\n\nImportantQuestion 11 (3 pts)\n\n\n\nNow, we are going to add popups on the map. Copy and paste the code from the previous step into the code chunk below. Then do the following:\n\nAdd the popup argument to the addCircleMarkers() function. Using the paste() function, create a popup that includes the facility’s name (in bold), the facility’s industry sector (in italics), and the chemicals released by the facility. (Note that the last the data point is stored in X..CHEMICAL.TEXT). Note that you will need to place a ~ in front of the paste() function to communicate that there are variables in your argument.\nAdd the popupOptions argument to the addCircleMarkers() function. Set the popupOptions to popupOptions(maxHeight = 200, closeOnClick = TRUE)). This will ensure that really tall popups will scroll vertically rather than taking up an entire page.\n\nYour popups should look like mine in the map below.\n\n# Copy previous map here!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nNotably, while the Emergency Planning and Community Right-to-Know Act mandates reporting of emissions, it does not mandate monitoring of emissions. While other environmental regulations do set certain monitoring standards for specific TRI chemicals and pollution activities, for all other chemicals and activities, facilities are required to report based on a “reasonable estimate” of releases and other waste management quantities. In the early 1990s the National Wildlife Federation uncovered that certain facilities showing tremendous reductions in emissions from one year to the next had not actually cut down on pollution, but instead developed different ways of estimating their emissions. The public doesn’t see how emissions are calculated; they only see the final reported emissions. Given this history of certain facilities reporting “phantom reductions”, what kinds of legal, practice-based, or social interventions might ensure that this data remains reliable and accountable to the communities that use it to assess risks? What might make these interventions challenging to implement; what would need to change in order for these interventions to be realized? Share your ideas on our discussions Slack channel."
+  },
+  {
+    "objectID": "labs/lab10/index.html",
+    "href": "labs/lab10/index.html",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "",
+    "text": "This lab is an extension of last week’s lab on Point Mapping in Leaflet. In this lab, we will continue our research into Louisiana’s Cancer Alley, layering in consideration of the demographics of the communities surrounding polluting facilities. This will allow us to assess racial disparities in exposure to environmental toxics. In this lab, we will also consider how choices that we make in mapping can shape the stories that the maps tell.\n\n\n\nTransform polygon data to an appropriate CRS\nMap polygon data in Leaflet\nCreate palettes for polygons on maps\nAdjust layer controls on polygon maps\nRecognize some of the ways that maps can “lie”"
+  },
+  {
+    "objectID": "labs/lab10/index.html#introduction",
+    "href": "labs/lab10/index.html#introduction",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "",
+    "text": "This lab is an extension of last week’s lab on Point Mapping in Leaflet. In this lab, we will continue our research into Louisiana’s Cancer Alley, layering in consideration of the demographics of the communities surrounding polluting facilities. This will allow us to assess racial disparities in exposure to environmental toxics. In this lab, we will also consider how choices that we make in mapping can shape the stories that the maps tell.\n\n\n\nTransform polygon data to an appropriate CRS\nMap polygon data in Leaflet\nCreate palettes for polygons on maps\nAdjust layer controls on polygon maps\nRecognize some of the ways that maps can “lie”"
+  },
+  {
+    "objectID": "labs/lab10/index.html#review-of-key-terms",
+    "href": "labs/lab10/index.html#review-of-key-terms",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Review of Key Terms",
+    "text": "Review of Key Terms\n\n\n\n\n\n\nTip\n\n\n\nYou may wish to reference this reference guide when completing this lab.\n\n\n\nEcological Fallacy\n\nA reasoning error that emerges when we assume that conclusions that we draw about a group also apply to individual members of that group\n\nModifiable Aerial Unit Problem\n\nA problem that occurs when representing spatial data; how we choose to draw administrative boundaries can bias our understanding of the relationships amongst spatial data points"
+  },
+  {
+    "objectID": "labs/lab10/index.html#u.s.-census-data",
+    "href": "labs/lab10/index.html#u.s.-census-data",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "U.S. Census Data",
+    "text": "U.S. Census Data\nThe United States Census is survey of the population of the United States, taken every ten years. This data collection is mandated by the U.S. Constitution. There are countless stories that can be documented about the census. For example: - The census is one of the first examples of “big data” in the U.S.; too large to be computed by hand, special machines had to be developed to tabulate census data in the late 1800s. - The categories available for documenting race and ethnicity have shifted considerably over the past two centuries, mirroring changing perceptions of race in the U.S.\n- For more stories, you might consider reading [@boukDemocracyDataHidden2022] .\nThe census has a number of data tables available for public analysis. Today, we are just going to look at data documenting the population of Black residents in Louisiana, collected during the 2020 census."
+  },
+  {
+    "objectID": "labs/lab10/index.html#setting-up-your-environment",
+    "href": "labs/lab10/index.html#setting-up-your-environment",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Setting Up Your Environment",
+    "text": "Setting Up Your Environment\n\nInstall the following packages in your Environment:\n\n\ninstall.packages(\"devtools\")\ninstall.packages(\"remotes\")\nremotes::install_github(\"walkerke/tidycensus\")\n\n\nCreate an API Key for accessing census data here. The key will be emailed to you, and you must activate it with the link you receive in your email. NOTE: It may take several minutes to activate. If you click on the link in your email, and it doesn’t work, try again in a bit.\nRun the following code in your terminal to store the census API key in your environment.\n\n\nlibrary(tidycensus)\ncensus_api_key(\"[ADD KEY HERE]\", overwrite = FALSE, install = TRUE)\n\n\nRestart R. Don’t skip this step!!\nRun the code below to load the packages for today’s lab.\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\nlibrary(leaflet)\n\nWarning: package 'leaflet' was built under R version 4.4.3\n\nlibrary(sf)\nlibrary(tigris)\n\nWarning: package 'tigris' was built under R version 4.4.3\n\nlibrary(tidycensus)\n\nWarning: package 'tidycensus' was built under R version 4.4.3\n\nlibrary(RColorBrewer)"
+  },
+  {
+    "objectID": "labs/lab10/index.html#data-analysis",
+    "href": "labs/lab10/index.html#data-analysis",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Data Analysis",
+    "text": "Data Analysis\nWe are going to start by pulling census data about the population of residents that identify as black in Louisiana at both the census tract and the county level. Note that we are using a specific census variable that counts the population that identifies as Black or African American alone. This is an undercount of Black residents as it does not account for those residents that identify as Black along with another race.\n\n\n\n\n\n\nImportantQuestion 1 (2 pts)\n\n\n\nRead the help pages for get_decennial(). Load census data at the county level for variable ‘P1_004N’ (Total Population: Population of one race: Black or African American alone). You should set the state to ‘LA’, the geometry to TRUE, and the summary_var to ‘P1_001N’ (Total Population). We will eventually use these two tables to calculate the percentage of the population that identifies as Black on the census.\nRepeat and edit the code to get the same data at the tract level.\n\ncensus_counties &lt;- get_decennial(geography = ______,\n                                 variables = ______,\n                                 state = _____,\n                                 summary_var = _____,\n                                 geometry = _____)\n\n\ncensus_tracts &lt;- get_decennial(_____)\n\n\n\nBy setting geometry to TRUE when we loaded this data, the data imported with a geometry field. We can check the CRS of this data by running the function below.\n\ncensus_counties |&gt;\n  st_crs()\n\nCoordinate Reference System:\n  User input: NAD83 \n  wkt:\nGEOGCRS[\"NAD83\",\n    DATUM[\"North American Datum 1983\",\n        ELLIPSOID[\"GRS 1980\",6378137,298.257222101,\n            LENGTHUNIT[\"metre\",1]]],\n    PRIMEM[\"Greenwich\",0,\n        ANGLEUNIT[\"degree\",0.0174532925199433]],\n    CS[ellipsoidal,2],\n        AXIS[\"latitude\",north,\n            ORDER[1],\n            ANGLEUNIT[\"degree\",0.0174532925199433]],\n        AXIS[\"longitude\",east,\n            ORDER[2],\n            ANGLEUNIT[\"degree\",0.0174532925199433]],\n    ID[\"EPSG\",4269]]\n\n\nAs you recall, we need the CRS of our data to match the CRS of our basemap, which is WGS 84 (EPSG:4326).\n\n\n\n\n\n\nImportantQuestion 2 (2 pts)\n\n\n\nIn the code block below, transform the CRS of both census_counties and census_tracts to 4326 using st_transform().\n\ncensus_counties &lt;- #Fill code here\n\ncensus_tracts &lt;- #Fill code here"
+  },
+  {
+    "objectID": "labs/lab10/index.html#projections",
+    "href": "labs/lab10/index.html#projections",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Projections",
+    "text": "Projections\nWhenever we are mapping data, we need to consider the map’s projection. Recall that there are infinite ways to flatten our spherical globe into a 2-dimensional map. The projection standard that we choose indicates how 3-dimensional geometric shapes are configured on our 2-dimensional map. By default, leaflet expects all latitude, longitude, and shape data to be input as EPSG:4326, and it projects all of that data according to EPSG:3857. All of the basetiles are also projected as EPSG:3857.\n…but what if a different standard were used to project data on the map. To demonstrate how a map of Louisiana counties might look different with a different projection, below, I’ve created a custom leaflet projection that projects data according to the US National Atlas Equal Area (EPSG:9311) system.\n\nepsg9311 &lt;- leafletCRS(\n  crsClass = \"L.Proj.CRS\",\n  code = \"EPSG:9311\",\n  proj4def = \"+proj=laea +lat_0=45 +lon_0=-100 +x_0=0 +y_0=0 +a=6370997 +b=6370997 +units=m +no_defs\",\n  resolutions = 2 ^ (16:7)\n)\n\nHere’s how the map looks with leaflet’s default projection.\n\nplot_la_map &lt;- function(opts = leafletOptions()) {\n  leaflet(census_counties, options = opts) %&gt;%\n  setView(lat = 30.5191, lng = -91.5209, zoom = 6) %&gt;%\n  addProviderTiles(providers$CartoDB.Positron, group = \"Minimal\") %&gt;%\n    addPolygons(\n      weight = 1,\n      color = \"black\",\n    )\n}\n\nplot_la_map()\n\n\n\n\n\nHere’s how the map looks when data is projected according to my custom projection. Be sure to Zoom out so you can see where the polygons appear on the map.\n\nplot_la_map(opts = leafletOptions(crs = epsg9311))\n\n\n\n\n\nHere I’ve told leaflet to project my data according to a projection standard that does not match the projection of my base tiles, which is why the data appears in the wrong location in relation to the base tiles. Additionally, you will notice that the orientation of the polygons on the map look a bit different than our default map. Keep in mind that each of these projection standards has different purposes. There is not a particular way to project data that is more “correct” than another way. However, when working in leaflet, it is important to have our data projected in the same way that our base tiles are projected so that we know where shapes are located on the map."
+  },
+  {
+    "objectID": "labs/lab10/index.html#symbolization",
+    "href": "labs/lab10/index.html#symbolization",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Symbolization",
+    "text": "Symbolization\nHow we symbolize geographic features on a map can tell a different story about what is going on at a particular location. So far, we have been using a rather minimalist basemap that only shows major streets and major land features in Louisiana. Proximity to major highways and bodies of water can tell important story when it comes to pollution. However, geographic features that don’t appear on this minimalist map also tell an important story. For example, valleys nestled between mountain ranges can trap pollution, leading to poorer air quality in those areas. In the code below, we are going to create a basemap that let’s us toggle between two different ways of symbolizing geography.\nTo create the option to toggle between these maps, we will need to assign each version of the map to a “group.” We can then use addLayersControl() function to indicate that we want to allow users to toggle between these two groups.\n\n\n\n\n\n\nImportantQuestion 3 (2 pts)\n\n\n\nI’ve initialized a map of Louisiana for you below with our basic base tiles. Set the group for these tiles to “Minimal”. Note that we will call addProviderTiles() to add a second set of base tiles. Set these base tiles to providers$Esri.WorldImagery and the group to “Satellite”. Add the addLayersControl() function and set the base groups to the names of the two groups you just established.\nYour map should match mine below.\n\nla_map &lt;- leaflet(width = \"100%\") %&gt;%\n  setView(lat = 30.5191, lng = -91.5209, zoom = 6) %&gt;%\n  addProviderTiles(providers$CartoDB.Positron, group = ______) %&gt;%\n  addProviderTiles(______, group = ______) %&gt;%\n  _____(\n    baseGroups = c(\"_____\",\"_____\"),\n    options = layersControlOptions(collapsed = FALSE)\n  )\n\nla_map\n\n\n\n\n\n\n\n\n\nZoom in to the region along the Mississippi River between Baton Rouge and New Orleans and then toggle to the Satellite map. What do you notice about the geographic features of that area that you didn’t notice with the minimalist basemap? Both show that Cancer Alley is situated along the Mississippi River. However, with the satellite map, you may notice that there are several long and skinny plots of land along the Mississippi River. This is giving us a view into the legacies of environmental racism in this space.\nPrior to this land being referred to as Cancer Alley, it was often referred to as “Plantation Country” as it was the location of several large sugarcane plantations. Plantations were set up in these long and skinny plots of land along the Mississippi River, making it possible to bring sugar to market. While you might find stately plantation houses facing the river, on the opposite side of these stretches of land, you would find the houses of the enslaved workers that were forced to work on these plantations. In the 1900s, following emancipation and the rising costs of sugarcane production, these plots became attractive to oil and gas companies looking to set up petrochemical refineries with access to a water source near the Gulf of Mexico. Descendants of the Black enslaved population that worked on the sugarcane plantations still live in these communities along the Mississippi River, making this a site of considerable environmental injustices. For more information see [@knowlesLayersViolence2020]."
+  },
+  {
+    "objectID": "labs/lab10/index.html#standardization",
+    "href": "labs/lab10/index.html#standardization",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Standardization",
+    "text": "Standardization\nNow that we have our basemaps, we can begin to visualize the data we have pulled regarding Louisiana’s Black population from the 2020 census. Below I’ve created the first version of that map for you. First I created a color palette spanning from light blue to dark blue, and binning Black population values into 5 buckets. Then I added polygons of Louisiana counties to the map and colored the counties according the palette that I created. Finally, I added a legend to explain the colors appearing on the map.\n\npal_bin_census_county_pop &lt;- colorBin(palette=\"Blues\", \n                    domain = census_counties$value,\n                    bins = 5)\n\nla_map %&gt;%\n  addPolygons(data = census_counties, \n              weight = 1,\n              color = \"black\",\n              fillColor = ~pal_bin_census_county_pop(value),\n              fillOpacity = 0.5,) %&gt;%\n  addLegend(data = census_counties,\n            title = \"Population Black Residents\", \n            pal = pal_bin_census_county_pop, \n            values = ~value)\n\n\n\n\n\nYou may notice that the colors appear a darker shade of blue (indicating a higher Black population) right around Louisiana’s major cities. The problem with using this map to identify predominantly Black communities is this: when we compare the total population of a certain demographic across regions, we don’t know if a larger population is a result of that demographic being more represented in that region, alternatively if it is a result of the total population being higher in that region. To be able to compare how Black communities are represented across Louisiana, we need to standardize our data to account for the total population. In other words, we need to calculate the percentage of the total population that identifies as Black in each region.\n\n\n\n\n\n\nImportantQuestion 4 (2 pts)\n\n\n\nUsing a data wrangling verb, add a column to each census data frame that calculates the percentage of the population in each census county/tract that identifies as Black. To do so, you will need to divide the Black population stored in value by the total population summary_value and multiply by 100.\n\ncensus_counties &lt;- #Fill code here\n\ncensus_tracts &lt;- #Fill code here\n\n\n\n\n\n\n\n\n\nImportantQuestion 5 (2 pts)\n\n\n\nCopy the palette and map that I created above, which colored counties by the total Black population. Adjust the code to color the counties by the variable you created to record the percent Black population.\n\npal_bin_census_county_perc &lt;- #Create county palette here\n\n#Create county map here"
+  },
+  {
+    "objectID": "labs/lab10/index.html#aggregation",
+    "href": "labs/lab10/index.html#aggregation",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Aggregation",
+    "text": "Aggregation\nExamining our map of Louisiana counties, we can see that counties along the Mississippi River from Baton Rouge to New Orleans do appear to have a higher percentage of Black residents. However, counties are quite large and can have some considerable racial disparities within them. This map is not giving us much insight into the racial make-up of communities specifically along the Mississippi River. In other words, our data here is aggregated at too broad a spatial scale to see the racial make-up of Cancer Alley. We are going to add another layer to map you created above that allows us to toggle between visualizing the racial make-up of counties and the racial make-up of census tracts, which are smaller units of geography.\n\n\n\n\n\n\nImportantQuestion 6 (2 pts)\n\n\n\nCopy the palette and map that you created above. Create a second palette to color polygons by the percent Black population in census tracts.\nPipe a second addPolygons() function call and a second addLegend() function call onto your map. Copy arguments from the previous function calls and adjust them to color the polygons in this second call by the percent Black population in census tracts.\nFinally, in change the weight of the county polygons to 2 so that we can differentiate the borders of our census counties from our census tracts.\n\n# Copy the palette you created above for census counties here\n\n# Create palette for census tracts here\n\n# Copy the map you created above here and adjust according to the prompt\n\n\n\n\n\n\n\n\n\nWe have two layers on our map now, and we want to be able to toggle between them. In other words, I want to be able to turn the county layer off and the tract layer on and vice versa. To do this, we need to assign each layer (which includes our polygons and the corresponding legend) to a group and then add layer controls to the map. We also need to indicate which layers should be turned on and which should be hidden by default when we load the map.\n\n\n\n\n\n\nImportantQuestion 7 (4 pts)\n\n\n\nCopy the map that you created above into the code chunk below. Add a group = argument to each addPolygons() and addLegend() call; set the group for your county layers as “County” and the group for your tract layers as “Tract”.\nThen pipe the addLayersControl() function onto your map. Within this function, set the baseGroup = argument as we did above to c(\"Minimal\",\"Satellite\") so that we can toggle between basemaps. Then set the overlayGroups = argument to c(\"County\", \"Tract\") so that we can toggle between overlay layers. Add options = layersControlOptions(collapsed = FALSE) so that the layer controls appear when we load the map. Add position = \"bottomleft\" so that the layer controls don’t overlap with the legends.\nFinally, pipe the function hideGroup(\"Tract\") onto the end of your map. This will hide the “Tract” group when we load the map.\n\n# Copy map here and adjust according to the prompt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantQuestion 8 (3 pts)\n\n\n\nZoom in to the region along the Mississippi River between Baton Rouge and New Orleans. Then toggle the Tract layer on. Notice how there is a higher representation of Black residents residing along the Mississippi River compared to the rest of the counties. Below, explain how this is an example of the ecological fallacy."
+  },
+  {
+    "objectID": "labs/lab10/index.html#layering-toxics-data",
+    "href": "labs/lab10/index.html#layering-toxics-data",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Layering Toxics Data",
+    "text": "Layering Toxics Data\nAs a last step, we are going to add a third layer to our map, displaying the toxic facilities data that we mapped last week. Run the code below to load that data, transform the CRS, create a palette to color the points by total releases, and map the data.\n\ntri_la_2023 &lt;- read_csv(\"https://raw.githubusercontent.com/SDS-192-Intro/public-website-fall-25/refs/heads/main/data/2023_la.csv\", name_repair = make.names) |&gt;\n  filter(X50..UNIT.OF.MEASURE == \"Pounds\") |&gt;\n  arrange(desc(X107..TOTAL.RELEASES)) |&gt;\n  mutate(chemical_total_text = paste(X37..CHEMICAL, X107..TOTAL.RELEASES, sep = \": \")) |&gt;\n  group_by(X2..TRIFD) |&gt;\n  summarize(X4..FACILITY.NAME = first(X4..FACILITY.NAME),\n            X12..LATITUDE = first(X12..LATITUDE),\n            X13..LONGITUDE = first(X13..LONGITUDE),\n            X23..INDUSTRY.SECTOR = first(X23..INDUSTRY.SECTOR),\n            X107..TOTAL.RELEASES = sum(X107..TOTAL.RELEASES),\n            X..CHEMICAL.TEXT = paste(chemical_total_text, collapse = \" &lt;br&gt; \"))\n\ntri_la_2023 &lt;- tri_la_2023 %&gt;%\n  st_as_sf(coords = c(\"X13..LONGITUDE\", \"X12..LATITUDE\"), crs = 4269) %&gt;%\n  st_transform(4326)\n\npal_bin &lt;- colorBin(palette=\"YlOrRd\", \n                    domain = tri_la_2023$X107..TOTAL.RELEASES,\n                    bins = 6)\n\nla_map %&gt;%\n  addCircleMarkers(data = tri_la_2023, \n                   weight = 0.5,\n                   radius = 3,\n                   color = \"black\",\n                   fillColor = ~pal_bin(X107..TOTAL.RELEASES), \n                   fillOpacity = 0.8,\n                   popup = ~paste(\"&lt;b&gt;\",\n                                  X4..FACILITY.NAME,\n                                  \"&lt;/b&gt;&lt;br&gt;&lt;i&gt;\",\n                                  X23..INDUSTRY.SECTOR,\n                                  \"&lt;/i&gt;&lt;br&gt;&lt;br&gt;\",\n                                  X..CHEMICAL.TEXT),\n                   popupOptions = popupOptions(maxHeight = 200, \n                                               closeOnClick = TRUE)) %&gt;%\n  addLegend(data = tri_la_2023,\n            title = \"TRI Releases in Pounds\", \n            pal = pal_bin, \n            values = ~X107..TOTAL.RELEASES)\n\n\n\n\n\n\n\n\n\n\n\nImportantQuestion 9 (4 pts)\n\n\n\nCopy the last map that you created above visualizing the percent Black population in LA counties and tracts. Then copy my code above to addCircleMarkers() for TRI facilities and addLegend() for TRI facilities. Pipe these functions onto your map after your addPolygons() function calls but before the addLayersControl() function call.\nSet the group = argument for the TRI circle markers and the TRI legend to “TRI”. Then add “TRI” as an additional group in the overlayGroups = argument in your addLayersControl() function.\n\n# Copy map functions and adjust here\n\n\n\n\n\n\n\n\n\nAs you play with this map, you might notice one problem. As soon as you turn the tract layer on, it covers the TRI layer, and you can no longer click on points to learn more about each facility. We need to communicate to leaflet how we want our layers ordered. To do that we, are going to set a zIndex, which indicates the order by which layers should be stacked on top of each other. A higher zIndex indicates that the layer will be stacked higher. In leaflet zIndex values range from 400 to 500.\nTo set the zIndex for each layer, we need to add separate “panes” to our map - one for “circles” and one for “polygons”. We want the facility markers to appear above the polygons (so they remain clickable), so we will want our circle pane to be stacked higher than our polygons pane.\n\n\n\n\n\n\nImportantQuestion 10 (4 pts)\n\n\n\nCopy the last map that you created above. At the beginning of your code right after calling la_map, pipe a addMapPane() function twice. In the first function call, set name = argument to “circles” and the zIndex = argument to 420. In the second function call, set name = argument to “polygons” and the zIndex = argument to 410.\nAdd the argument options = pathOptions(pane = \"polygons\") to both of your addPolygons() function calls, and add the argument options = pathOptions(pane = \"circles\") to your addCircleMarkers() function call.\nAdjust your code to hide the “County” map by default.\n\n# Copy map here and adjust according to the prompt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantQuestion 11 (3 pts)\n\n\n\nZoom in to the region along the Mississippi River between Baton Rouge and New Orleans. Notice how there are at least a few census tracts along the Mississippi River where high-polluting industrial facilities are located, but there is a lower percentage Black population. Explain how the modifiable aerial unit problem may be at play here and why we should consider it in relation to pollution data.\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nFor several years, the U.S. Environmental Protection Agency published a map called EJScreen. The map included layers for socioeconomic indicators like race, income, and age, along with layers for environmental indicators such as TRI releases, proximity to superfund sites, proximity to major traffic sources, and more. Users could also map layers for health disparities, such as cancer rates and asthma rates. It helped document how certain communities faced disproportionate environmental burdens across the country. On February 5, 2025, EJScreen was removed from the EPA’s website, at the same time that the EPA was overhauling several diversity, equity, and inclusion (DEI) initiatives under the Trump administration. Luckily, the advocacy organization Public Environmental Data Partners (PEDP) archived a reconstructed version of the map and made it available here. This one example of several government data sources that have been suppressed for political reasons. Why do you think these data removals are happening? What are some of the consequences of removing or defunding public government data like this? What role should non-governmental organizations play in securing access to this data? Are there ever good political reasons to suppress public data, and who should be involved those decisions? Share your ideas on our discussions Slack channel."
+  },
+  {
+    "objectID": "labs/lab10/lab10.html",
+    "href": "labs/lab10/lab10.html",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "",
+    "text": "Install the following packages in your Environment:\n\n\ninstall.packages(\"devtools\")\ninstall.packages(\"remotes\")\nremotes::install_github(\"walkerke/tidycensus\")\n\n\nCreate an API Key for accessing census data here. The key will be emailed to you, and you must activate it with the link you receive in your email. NOTE: It may take several minutes to activate. If you click on the link in your email, and it doesn’t work, try again in a bit.\nRun the following code in your terminal to store the census API key in your environment.\n\n\nlibrary(tidycensus)\ncensus_api_key(\"[ADD KEY HERE]\", overwrite = FALSE, install = TRUE)\n\n\nRestart R. Don’t skip this step!!\nRun the code below to load the packages for today’s lab.\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\nlibrary(leaflet)\n\nWarning: package 'leaflet' was built under R version 4.4.3\n\nlibrary(sf)\nlibrary(tigris)\n\nWarning: package 'tigris' was built under R version 4.4.3\n\nlibrary(tidycensus)\n\nWarning: package 'tidycensus' was built under R version 4.4.3\n\nlibrary(RColorBrewer)"
+  },
+  {
+    "objectID": "labs/lab10/lab10.html#setting-up-your-environment",
+    "href": "labs/lab10/lab10.html#setting-up-your-environment",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "",
+    "text": "Install the following packages in your Environment:\n\n\ninstall.packages(\"devtools\")\ninstall.packages(\"remotes\")\nremotes::install_github(\"walkerke/tidycensus\")\n\n\nCreate an API Key for accessing census data here. The key will be emailed to you, and you must activate it with the link you receive in your email. NOTE: It may take several minutes to activate. If you click on the link in your email, and it doesn’t work, try again in a bit.\nRun the following code in your terminal to store the census API key in your environment.\n\n\nlibrary(tidycensus)\ncensus_api_key(\"[ADD KEY HERE]\", overwrite = FALSE, install = TRUE)\n\n\nRestart R. Don’t skip this step!!\nRun the code below to load the packages for today’s lab.\n\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\nlibrary(leaflet)\n\nWarning: package 'leaflet' was built under R version 4.4.3\n\nlibrary(sf)\nlibrary(tigris)\n\nWarning: package 'tigris' was built under R version 4.4.3\n\nlibrary(tidycensus)\n\nWarning: package 'tidycensus' was built under R version 4.4.3\n\nlibrary(RColorBrewer)"
+  },
+  {
+    "objectID": "labs/lab10/lab10.html#questions",
+    "href": "labs/lab10/lab10.html#questions",
+    "title": "Lab 10: Polygon Mapping in Leaflet (30 pts)",
+    "section": "Questions",
+    "text": "Questions\n\n\n\n\n\n\nImportantQuestion 1 (2 pts)\n\n\n\nRead the help pages for get_decennial(). Load census data at the county level for variable ‘P1_004N’ (Total Population: Population of one race: Black or African American alone). You should set the state to ‘LA’, the geometry to TRUE, and the summary_var to ‘P1_001N’ (Total Population). We will eventually use these two tables to calculate the percentage of the population that identifies as Black on the census.\nRepeat and edit the code to get the same data at the tract level.\n\ncensus_counties &lt;- get_decennial(geography = ______,\n                                 variables = ______,\n                                 state = _____,\n                                 summary_var = _____,\n                                 geometry = _____)\n\n\ncensus_tracts &lt;- get_decennial(_____)\n\n\n\n\n\n\n\n\n\nImportantQuestion 2 (2 pts)\n\n\n\nIn the code block below, transform the CRS of both census_counties and census_tracts to 4326 using st_transform().\n\ncensus_counties &lt;- #Fill code here\n\ncensus_tracts &lt;- #Fill code here\n\n\n\n\n\n\n\n\n\nImportantQuestion 3 (2 pts)\n\n\n\nI’ve initialized a map of Louisiana for you below with our basic base tiles. Set the group for these tiles to “Minimal”. Note that we will call addProviderTiles() to add a second set of base tiles. Set these base tiles to providers$Esri.WorldImagery and the group to “Satellite”. Add the addLayersControl() function and set the base groups to the names of the two groups you just established.\nYour map should match mine below.\n\nla_map &lt;- leaflet(width = \"100%\") %&gt;%\n  setView(lat = 30.5191, lng = -91.5209, zoom = 6) %&gt;%\n  addProviderTiles(providers$CartoDB.Positron, group = ______) %&gt;%\n  addProviderTiles(______, group = ______) %&gt;%\n  _____(\n    baseGroups = c(\"_____\",\"_____\"),\n    options = layersControlOptions(collapsed = FALSE)\n  )\n\nla_map\n\n\n\n\n\n\n\n\n\nImportantQuestion 4 (2 pts)\n\n\n\nUsing a data wrangling verb, add a column to each census data frame that calculates the percentage of the population in each census county/tract that identifies as Black. To do so, you will need to divide the Black population stored in value by the total population summary_value and multiply by 100.\n\ncensus_counties &lt;- #Fill code here\n\ncensus_tracts &lt;- #Fill code here\n\n\n\n\n\n\n\n\n\nImportantQuestion 5 (2 pts)\n\n\n\nCopy the palette and map that I created above, which colored counties by the total Black population. Adjust the code to color the counties by the variable you created to record the percent Black population.\n\npal_bin_census_county_perc &lt;- #Create county palette here\n\n#Create county map here \n\n\n\n\n\n\n\n\n\nImportantQuestion 6 (2 pts)\n\n\n\nCopy the palette and map that you created above. Create a second palette to color polygons by the percent Black population in census tracts.\nPipe a second addPolygons() function call and a second addLegend() function call onto your map. Copy arguments from the previous function calls and adjust them to color the polygons in this second call by the percent Black population in census tracts.\nFinally, in change the weight of the county polygons to 2 so that we can differentiate the borders of our census counties from our census tracts.\n\n# Copy the palette you created above for census counties here\n\n# Create palette for census tracts here\n\n# Copy the map you created above here and adjust according to the prompt\n\n\n\n\n\n\n\n\n\nImportantQuestion 7 (4 pts)\n\n\n\nCopy the map that you created above into the code chunk below. Add a group = argument to each addPolygons() and addLegend() call; set the group for your county layers as “County” and the group for your tract layers as “Tract”.\nThen pipe the addLayersControl() function onto your map. Within this function, set the baseGroup = argument as we did above to c(\"Minimal\",\"Satellite\") so that we can toggle between basemaps. Then set the overlayGroups = argument to c(\"County\", \"Tract\") so that we can toggle between overlay layers. Add options = layersControlOptions(collapsed = FALSE) so that the layer controls appear when we load the map. Add position = \"bottomleft\" so that the layer controls don’t overlap with the legends.\nFinally, pipe the function hideGroup(\"Tract\") onto the end of your map. This will hide the “Tract” group when we load the map.\n\n# Copy map here and adjust according to the prompt\n\n\n\n\n\n\n\n\n\nImportantQuestion 8 (3 pts)\n\n\n\nZoom in to the region along the Mississippi River between Baton Rouge and New Orleans. Then toggle the Tract layer on. Notice how there is a higher representation of Black residents residing along the Mississippi River compared to the rest of the counties. Below, explain how this is an example of the ecological fallacy.\n\n\n\n\n\n\n\n\nImportantQuestion 9 (4 pts)\n\n\n\nCopy the last map that you created above visualizing the percent Black population in LA counties and tracts. Then copy my code above to addCircleMarkers() for TRI facilities and addLegend() for TRI facilities. Pipe these functions onto your map after your addPolygons() function calls but before the addLayersControl() function call.\nSet the group = argument for the TRI circle markers and the TRI legend to “TRI”. Then add “TRI” as an additional group in the overlayGroups = argument in your addLayersControl() function.\n\n# Copy map functions and adjust here\n\n\n\n\n\n\n\n\n\nImportantQuestion 10 (4 pts)\n\n\n\nCopy the last map that you created above. At the beginning of your code right after calling la_map, pipe a addMapPane() function twice. In the first function call, set name = argument to “circles” and the zIndex = argument to 420. In the second function call, set name = argument to “polygons” and the zIndex = argument to 410.\nAdd the argument options = pathOptions(pane = \"polygons\") to both of your addPolygons() function calls, and add the argument options = pathOptions(pane = \"circles\") to your addCircleMarkers() function call.\nAdjust your code to hide the “County” map by default.\n\n# Copy map here and adjust according to the prompt\n\n\n\n\n\n\n\n\n\nImportantQuestion 11 (3 pts)\n\n\n\nZoom in to the region along the Mississippi River between Baton Rouge and New Orleans. Notice how there are at least a few census tracts along the Mississippi River where high-polluting industrial facilities are located, but there is a lower percentage Black population. Explain how the modifiable aerial unit problem may be at play here and why we should consider it in relation to pollution data.\n\n\n\n\n\n\n\n\nCautionEthical Considerations\n\n\n\nFor several years, the U.S. Environmental Protection Agency published a map called EJScreen. The map included layers for socioeconomic indicators like race, income, and age, along with layers for environmental indicators such as TRI releases, proximity to superfund sites, proximity to major traffic sources, and more. Users could also map layers for health disparities, such as cancer rates and asthma rates. It helped document how certain communities faced disproportionate environmental burdens across the country. On February 5, 2025, EJScreen was removed from the EPA’s website, at the same time that the EPA was overhauling several diversity, equity, and inclusion (DEI) initiatives under the Trump administration. Luckily, the advocacy organization Public Environmental Data Partners (PEDP) archived a reconstructed version of the map and made it available here. This one example of several government data sources that have been suppressed for political reasons. Why do you think these data removals are happening? What are some of the consequences of removing or defunding public government data like this? What role should non-governmental organizations play in securing access to this data? Are there ever good political reasons to suppress public data, and who should be involved those decisions? Share your ideas on our discussions Slack channel."
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#last-time",
+    "href": "lectures/w13l1_polygonMapping.html#last-time",
+    "title": "Polygon Mapping",
+    "section": "",
+    "text": "Leaflet\n\nBasic use\nAdding markers and layers\nColor palettes\n\nProject time"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#today",
+    "href": "lectures/w13l1_polygonMapping.html#today",
+    "title": "Polygon Mapping",
+    "section": "Today",
+    "text": "Today\n\nMapping geographic boundaries\nImporting and mapping shapefiles\nChloropleth maps\nProject time"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#activity-review-of-maps",
+    "href": "lectures/w13l1_polygonMapping.html#activity-review-of-maps",
+    "title": "Polygon Mapping",
+    "section": "Activity: Review of Maps",
+    "text": "Activity: Review of Maps\n\nPair up with a person or two around you.\nYou’ll be working through questions as the lecture goes on.\nAnswers will be turned in through a .qmd file named w13l1_act.qmd in one person’s lab submission repository (with all group members’ names in there).\n\nAnswer the following questions:\n\nQuestion 1: What function do we use to encode a data frame with geometry based on lat/long data?\nQuestion 2: What function do we use convert to a new CRS?\nQuestion 3: What CRS does Leaflet expect data to be in?"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#mapping-polygons",
+    "href": "lectures/w13l1_polygonMapping.html#mapping-polygons",
+    "title": "Polygon Mapping",
+    "section": "Mapping Polygons",
+    "text": "Mapping Polygons\n\nNot all cartographic data is encoded as a latitude and longitude! Some cartographic data is encoded as regularly or irregularly shaped polygons\nCan demarcate:\n\nAdministrative boundaries (e.g. census tracts, zip codes, states),\nFeature boundaries (e.g. buildings, bodies of water, etc.)\nBuffers (e.g. areas at a specified distance from a point source)"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#administrative-boundaries-us-census",
+    "href": "lectures/w13l1_polygonMapping.html#administrative-boundaries-us-census",
+    "title": "Polygon Mapping",
+    "section": "Administrative Boundaries: US Census",
+    "text": "Administrative Boundaries: US Census"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#administrative-boundaries-us-census-1",
+    "href": "lectures/w13l1_polygonMapping.html#administrative-boundaries-us-census-1",
+    "title": "Polygon Mapping",
+    "section": "Administrative Boundaries: US Census",
+    "text": "Administrative Boundaries: US Census"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#administrative-boundaries-us-census-2",
+    "href": "lectures/w13l1_polygonMapping.html#administrative-boundaries-us-census-2",
+    "title": "Polygon Mapping",
+    "section": "Administrative Boundaries: US Census",
+    "text": "Administrative Boundaries: US Census"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#administrative-boundary-soup",
+    "href": "lectures/w13l1_polygonMapping.html#administrative-boundary-soup",
+    "title": "Polygon Mapping",
+    "section": "Administrative Boundary Soup",
+    "text": "Administrative Boundary Soup\n\nNYC Boundaries Map"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#feature-boundaries",
+    "href": "lectures/w13l1_polygonMapping.html#feature-boundaries",
+    "title": "Polygon Mapping",
+    "section": "Feature Boundaries",
+    "text": "Feature Boundaries"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#feature-boundaries-1",
+    "href": "lectures/w13l1_polygonMapping.html#feature-boundaries-1",
+    "title": "Polygon Mapping",
+    "section": "Feature Boundaries",
+    "text": "Feature Boundaries"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#shapefiles",
+    "href": "lectures/w13l1_polygonMapping.html#shapefiles",
+    "title": "Polygon Mapping",
+    "section": "Shapefiles",
+    "text": "Shapefiles\n\nFile for storing geospatial feature data\nActually a series of files (.shp, .shx, and .dbf) that must all be present in the directory for the shapefile to import.\nImported file ends in .shp and contains feature geometry"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#importing-shapefiles",
+    "href": "lectures/w13l1_polygonMapping.html#importing-shapefiles",
+    "title": "Polygon Mapping",
+    "section": "Importing Shapefiles",
+    "text": "Importing Shapefiles\n\nFunction st_read() from sf package used to read in shapefiles\n\n\n\n\n\n\nlibrary(sf)\n\nLinking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE\n\nnyc_cd &lt;- st_read(\"data/nycd_25b/nycd.shp\")\n\nReading layer `nycd' from data source \n  `C:\\Users\\mario\\Documents\\jericholawson.github.io\\classes\\sds192\\s26\\lectures\\data\\nycd_25b\\nycd.shp' \n  using driver `ESRI Shapefile'\nSimple feature collection with 71 features and 3 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 913175.1 ymin: 120128.4 xmax: 1067383 ymax: 272844.3\nProjected CRS: NAD83 / New York Long Island (ftUS)"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#importing-shapefiles-1",
+    "href": "lectures/w13l1_polygonMapping.html#importing-shapefiles-1",
+    "title": "Polygon Mapping",
+    "section": "Importing Shapefiles",
+    "text": "Importing Shapefiles\n\nnyc_cd |&gt; head(4)\n\nSimple feature collection with 4 features and 3 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 980883.8 ymin: 173977.6 xmax: 1039416 ymax: 232849.4\nProjected CRS: NAD83 / New York Long Island (ftUS)\n  BoroCD Shape_Leng Shape_Area                       geometry\n1    410  105822.38  172077375 MULTIPOLYGON (((1023869 176...\n2    480   47338.74   32777561 MULTIPOLYGON (((1022277 218...\n3    104   67546.05   49310052 MULTIPOLYGON (((985929.3 22...\n4    107   39863.70   53152583 MULTIPOLYGON (((995422.2 23..."
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#mapping-polygons-with-leaflet",
+    "href": "lectures/w13l1_polygonMapping.html#mapping-polygons-with-leaflet",
+    "title": "Polygon Mapping",
+    "section": "Mapping Polygons with Leaflet",
+    "text": "Mapping Polygons with Leaflet\n\nOutputCode\n\n\n\n\nWarning: package 'leaflet' was built under R version 4.4.3\n\n\n\n\n\n\n\n\n\nlibrary(leaflet)\nnyc_cd &lt;- nyc_cd |&gt;\n  st_transform(4326)\nleaflet(width = \"100%\") |&gt;\n  setView(lat = 40.7, lng = -74.0, zoom = 10) |&gt; \n  addProviderTiles(\"CartoDB.Positron\") |&gt;\n  addPolygons(data = nyc_cd)"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#chloropleth-maps",
+    "href": "lectures/w13l1_polygonMapping.html#chloropleth-maps",
+    "title": "Polygon Mapping",
+    "section": "Chloropleth Maps",
+    "text": "Chloropleth Maps\n\nPresents a numeric variable aggregated by a geospatial unit\nRepresents the value of the aggregated numeric variable via intensity of color\n\nValues presented via a sequential or diverging palette"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#mapping-population-how-to-join",
+    "href": "lectures/w13l1_polygonMapping.html#mapping-population-how-to-join",
+    "title": "Polygon Mapping",
+    "section": "Mapping Population: How to Join?",
+    "text": "Mapping Population: How to Join?\n\nPop DataCD Data\n\n\n\nlibrary(tidyverse)\ncd_pop &lt;- read_csv(\"https://data.cityofnewyork.us/resource/xi7c-iiu2.csv?$select=borough,cd_number,_2010_population%20as%20population_2010\")\n\ncd_pop |&gt; \n  select(borough,cd_number) |&gt; \n  head(5)\n\n# A tibble: 5 × 2\n  borough cd_number\n  &lt;chr&gt;       &lt;dbl&gt;\n1 Bronx           1\n2 Bronx           2\n3 Bronx           3\n4 Bronx           4\n5 Bronx           5\n\n\n\n\n\nnyc_cd |&gt; \n  select(BoroCD) |&gt; \n  head(5)\n\nSimple feature collection with 5 features and 1 field\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: -74.14063 ymin: 40.52928 xmax: -73.80113 ymax: 40.80579\nGeodetic CRS:  WGS 84\n  BoroCD                       geometry\n1    410 MULTIPOLYGON (((-73.85722 4...\n2    480 MULTIPOLYGON (((-73.86272 4...\n3    104 MULTIPOLYGON (((-73.99394 4...\n4    107 MULTIPOLYGON (((-73.95965 4...\n5    595 MULTIPOLYGON (((-74.05051 4..."
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#cleaning-geographic-id-fields",
+    "href": "lectures/w13l1_polygonMapping.html#cleaning-geographic-id-fields",
+    "title": "Polygon Mapping",
+    "section": "Cleaning Geographic ID Fields",
+    "text": "Cleaning Geographic ID Fields\n\ncd_pop &lt;- cd_pop |&gt;\n  mutate(borough_num = case_when( \n    borough == \"Manhattan\" ~ 1,\n    borough == \"Bronx\" ~ 2,\n    borough == \"Brooklyn\" ~ 3,\n    borough == \"Queens\" ~ 4,\n    borough == \"Staten Island\" ~ 5)) |&gt;\n  mutate(cd = str_pad(cd_number, 2, side=\"left\", \"0\")) |&gt;\n  mutate(BoroCD = paste0(borough_num, cd) |&gt; as.numeric())\n\nnyc_cd &lt;- \n  nyc_cd |&gt;\n  left_join(cd_pop, by = c(\"BoroCD\" = \"BoroCD\"))"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#nyc-commmunity-district-chloropleth-numeric",
+    "href": "lectures/w13l1_polygonMapping.html#nyc-commmunity-district-chloropleth-numeric",
+    "title": "Polygon Mapping",
+    "section": "NYC Commmunity District Chloropleth: Numeric",
+    "text": "NYC Commmunity District Chloropleth: Numeric\n\nOutputCode\n\n\n\n\n\n\n\n\n\n\n\nlibrary(RColorBrewer)\npal_num &lt;- colorNumeric(palette = \"YlOrRd\", \n                        domain = nyc_cd$population_2010)\n\nleaflet(width = \"100%\") |&gt;\n  setView(lat = 40.7, lng = -74.0, zoom = 10) |&gt; \n  addProviderTiles(\"CartoDB.Positron\") |&gt;\n  addPolygons(data = nyc_cd,\n              fillColor = ~pal_num(population_2010), \n              stroke = FALSE,\n              fillOpacity = 0.5) |&gt;\n  addLegend(data = nyc_cd, \n            values = ~population_2010,\n            pal = pal_num,\n            title = \"Population\")"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#nyc-commmunity-district-chloropleth-bin",
+    "href": "lectures/w13l1_polygonMapping.html#nyc-commmunity-district-chloropleth-bin",
+    "title": "Polygon Mapping",
+    "section": "NYC Commmunity District Chloropleth: Bin",
+    "text": "NYC Commmunity District Chloropleth: Bin\n\nOutputCode\n\n\n\n\n\n\n\n\n\n\n\nlibrary(RColorBrewer)\npal_bin &lt;- colorBin(palette = \"YlOrRd\", \n                        domain = nyc_cd$population_2010, n = 4)\n\nleaflet(width = \"100%\") |&gt;\n  setView(lat = 40.7, lng = -74.0, zoom = 10) |&gt; \n  addProviderTiles(\"CartoDB.Positron\") |&gt;\n  addPolygons(data = nyc_cd,\n              fillColor = ~pal_bin(population_2010), \n              stroke = FALSE,\n              fillOpacity = 0.5) |&gt;\n  addLegend(data = nyc_cd, \n            values = ~population_2010,\n            pal = pal_bin,\n            title = \"Population\")"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html#nyc-commmunity-district-chloropleth-quantile",
+    "href": "lectures/w13l1_polygonMapping.html#nyc-commmunity-district-chloropleth-quantile",
+    "title": "Polygon Mapping",
+    "section": "NYC Commmunity District Chloropleth: Quantile",
+    "text": "NYC Commmunity District Chloropleth: Quantile\n\nOutputCode\n\n\n\n\n\n\n\n\n\n\n\nlibrary(RColorBrewer)\npal_quant &lt;- colorQuantile(palette = \"YlOrRd\", \n                        domain = nyc_cd$population_2010, n = 4)\n\nleaflet(width = \"100%\") |&gt;\n  setView(lat = 40.7, lng = -74.0, zoom = 10) |&gt; \n  addProviderTiles(\"CartoDB.Positron\") |&gt;\n  addPolygons(data = nyc_cd,\n              fillColor = ~pal_quant(population_2010), \n              stroke = FALSE,\n              fillOpacity = 0.5) |&gt;\n  addLegend(data = nyc_cd, \n            values = ~population_2010,\n            pal = pal_quant,\n            title = \"Population\")"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#last-time",
+    "href": "lectures/w13l2_lyingMaps.html#last-time",
+    "title": "Lying with Maps",
+    "section": "Last Time",
+    "text": "Last Time\n\nMapping geographic boundaries\nImporting and mapping shapefiles\nChloropleth maps\nProject time"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#today",
+    "href": "lectures/w13l2_lyingMaps.html#today",
+    "title": "Lying with Maps",
+    "section": "Today",
+    "text": "Today\n\nLying with maps\n\nProjections\nSymbolization\nGerrymandering\n\nProject time"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#all-maps-lie",
+    "href": "lectures/w13l2_lyingMaps.html#all-maps-lie",
+    "title": "Lying with Maps",
+    "section": "All Maps Lie!",
+    "text": "All Maps Lie!"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#acknowledgements",
+    "href": "lectures/w13l2_lyingMaps.html#acknowledgements",
+    "title": "Lying with Maps",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\nBased on material from Eric Deluca and Sara Nelson\n\nLying with Maps"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#activity-maps",
+    "href": "lectures/w13l2_lyingMaps.html#activity-maps",
+    "title": "Lying with Maps",
+    "section": "Activity: Maps",
+    "text": "Activity: Maps\n\n\n\n\nLook at the map of Smith College from Google. Answer the following:\n\nQuestion 1: What is included and what is excluded from the map?\nQuestion 2: Which modification strategies are at work in this map? What is the effect?"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#little-lies",
+    "href": "lectures/w13l2_lyingMaps.html#little-lies",
+    "title": "Lying with Maps",
+    "section": "Little Lies",
+    "text": "Little Lies\nMaps can lie through smaller, but deceptive ways:\n\nProjections\nSymbolization\nStandardization\nClassification\nAggregation"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#projections",
+    "href": "lectures/w13l2_lyingMaps.html#projections",
+    "title": "Lying with Maps",
+    "section": "Projections",
+    "text": "Projections"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#symbolization",
+    "href": "lectures/w13l2_lyingMaps.html#symbolization",
+    "title": "Lying with Maps",
+    "section": "Symbolization",
+    "text": "Symbolization"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#cartograms",
+    "href": "lectures/w13l2_lyingMaps.html#cartograms",
+    "title": "Lying with Maps",
+    "section": "Cartograms",
+    "text": "Cartograms\n\n\nBenjamin Hennig, https://www.viewsoftheworld.net/"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#standardization",
+    "href": "lectures/w13l2_lyingMaps.html#standardization",
+    "title": "Lying with Maps",
+    "section": "Standardization",
+    "text": "Standardization"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#classification",
+    "href": "lectures/w13l2_lyingMaps.html#classification",
+    "title": "Lying with Maps",
+    "section": "Classification",
+    "text": "Classification\n\n\n\nBinning creates equal interval breaks, and classifies the data into the intervals.\n\n\n\n\n\n\n\n\n\nQuantiles creates breaks so that there are the same number of observations classified into each bin."
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#aggregation",
+    "href": "lectures/w13l2_lyingMaps.html#aggregation",
+    "title": "Lying with Maps",
+    "section": "Aggregation",
+    "text": "Aggregation\n\nEcological fallacy: Assuming that a value calculated for a group is equivalent to the values for individual members of the group"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#zonation",
+    "href": "lectures/w13l2_lyingMaps.html#zonation",
+    "title": "Lying with Maps",
+    "section": "Zonation",
+    "text": "Zonation\n\n\n\nModifiable Aerial Unit Problem\nThe boundaries we aggregate data into are often arbitrary (i.e. not meaningful for the analysis)\n\nIf I’m studying air quality effects of a facility on surrounding populations, air pollution doesn’t stop at a zip code even if I aggregate my data by zip code.\n\nDrawing boundaries in a different way would produce different results."
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#big-lies",
+    "href": "lectures/w13l2_lyingMaps.html#big-lies",
+    "title": "Lying with Maps",
+    "section": "Big Lies",
+    "text": "Big Lies\n\nIn some cases, the mapping oddities are not so innocent:\n\nGerrymandering\nContested territories\nAdvertising"
+  },
+  {
+    "objectID": "lectures/w13l2_lyingMaps.html#gerrymandering",
+    "href": "lectures/w13l2_lyingMaps.html#gerrymandering",
+    "title": "Lying with Maps",
+    "section": "Gerrymandering",
+    "text": "Gerrymandering"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#last-time",
+    "href": "lectures/w14l1_apis.html#last-time",
+    "title": "APIs",
+    "section": "Last Time",
+    "text": "Last Time\n\nMapping geographic boundaries\nImporting and mapping shapefiles\nChloropleth maps\nProject time"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#today",
+    "href": "lectures/w14l1_apis.html#today",
+    "title": "APIs",
+    "section": "Today",
+    "text": "Today\n\nAPIs\nReview"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#api-application-programming-interface",
+    "href": "lectures/w14l1_apis.html#api-application-programming-interface",
+    "title": "APIs",
+    "section": "API (Application Programming Interface)",
+    "text": "API (Application Programming Interface)\n\nAllows programmers or other systems (or users) to communicate with an online data service\nClients (other programmers) expose part of the data service they’ve used to construct their databases\n\nThis is called an endpoint\nClients also publish documentation about how to communicate with the endpoint\n\nUsers build URLs or HTTP services to request computer-readable data from the endpoint"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#http-and-get-requests",
+    "href": "lectures/w14l1_apis.html#http-and-get-requests",
+    "title": "APIs",
+    "section": "HTTP and GET Requests",
+    "text": "HTTP and GET Requests\n\nHypertext Transfer Protocol (HTTP) is what enables communication between servers hosting web pages and browsers\nGET requests enable us to access a resource from a server (only receives data; doesn’t change it on the server)\nEntering https://smith.edu into a browser issues a GET request to access the home page of the Smith website"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#response-codes",
+    "href": "lectures/w14l1_apis.html#response-codes",
+    "title": "APIs",
+    "section": "Response Codes",
+    "text": "Response Codes\n\n\n\n200: Success!\n403: Forbidden\n404: Not Found\n500: Internal Server Error\n502: Bad Gateway\n\n\n\n\nhttps://learn.onemonth.com/what-is-a-404-page/"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#api-calls",
+    "href": "lectures/w14l1_apis.html#api-calls",
+    "title": "APIs",
+    "section": "API Calls",
+    "text": "API Calls\n\n\n\nSends an HTTP request URI for a certain resource to a server\n\nURI includes parameters about what data we wish receive and in what format (e.g. all colleges in MA in the format CSV)\n\nServers send that information back via HTTP via response"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#api-keys",
+    "href": "lectures/w14l1_apis.html#api-keys",
+    "title": "APIs",
+    "section": "API Keys",
+    "text": "API Keys\n\nMany services require you to request and reference an API key before accessing data from their API\nAllows systems to track abuse of the service and sometimes limit requests\nUsually free\nAPI key gets included in call"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#motivating-example-nyc-311-service-requests",
+    "href": "lectures/w14l1_apis.html#motivating-example-nyc-311-service-requests",
+    "title": "APIs",
+    "section": "Motivating Example: NYC 311 Service Requests",
+    "text": "Motivating Example: NYC 311 Service Requests"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#constructing-a-query",
+    "href": "lectures/w14l1_apis.html#constructing-a-query",
+    "title": "APIs",
+    "section": "Constructing a Query",
+    "text": "Constructing a Query\nBase URL is the API Endpoint: https://data.cityofnewyork.us/resource/erm2-nwe9.csv"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#basic-filtering",
+    "href": "lectures/w14l1_apis.html#basic-filtering",
+    "title": "APIs",
+    "section": "Basic Filtering",
+    "text": "Basic Filtering\nhttps://data.cityofnewyork.us/resource/erm2-nwe9.csv\n\nFilters appended after a ?\nMultiple filters combined with &\n$limit= limits the number of rows downloaded to a certain number\n\nhttps://data.cityofnewyork.us/resource/erm2-nwe9.csv?unique_key=10693408\nhttps://data.cityofnewyork.us/resource/erm2-nwe9.json?complaint_type=Obstruction&$limit=100"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#api-documentation",
+    "href": "lectures/w14l1_apis.html#api-documentation",
+    "title": "APIs",
+    "section": "API Documentation",
+    "text": "API Documentation\n\nIndicates how to sign up for an API key\nIndicates possible output formats (e.g. CSV, JSON, XML, etc.)\nLists field names and descriptions\nProvides example API calls\nOutlines error messages and solutions\n\n\nhttps://dev.socrata.com/foundry/data.cityofnewyork.us/erm2-nwe9"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#spaces-and-special-characters",
+    "href": "lectures/w14l1_apis.html#spaces-and-special-characters",
+    "title": "APIs",
+    "section": "Spaces and Special Characters",
+    "text": "Spaces and Special Characters\nInternet protocols don’t know how to interpret spaces or other special characters (i.e. non-ASCII), so we replace those characters with special codes that they do recognize:\n\n\n\nspace : %20\n!: %21\n\": %22\n\n\n\n%: %25\n': %27\n-: %2D\n\n\nThere are many resources online for identifying these."
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#example-request-with-special-characters",
+    "href": "lectures/w14l1_apis.html#example-request-with-special-characters",
+    "title": "APIs",
+    "section": "Example Request with Special Characters",
+    "text": "Example Request with Special Characters\nhttps://data.cityofnewyork.us/resource/erm2-nwe9.csv?complaint_type=Noise%20%2D%20Commercial&$limit=200"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#reading-api-output-into-r",
+    "href": "lectures/w14l1_apis.html#reading-api-output-into-r",
+    "title": "APIs",
+    "section": "Reading API Output into R",
+    "text": "Reading API Output into R\n\nWhen API data can be output as a CSV, the URL can be provided directly into read_csv()\n\n\nlibrary(readr)\nnyc_recent_noise &lt;- read_csv(\"https://data.cityofnewyork.us/resource/erm2-nwe9.csv?complaint_type=Noise%20%2D%20Commercial&$limit=200\")\nhead(nyc_recent_noise)\n\n# A tibble: 6 × 44\n  unique_key created_date        closed_date         agency agency_name         \n       &lt;dbl&gt; &lt;dttm&gt;              &lt;dttm&gt;              &lt;chr&gt;  &lt;chr&gt;               \n1   68571334 2026-04-06 01:59:31 NA                  NYPD   New York City Polic…\n2   68569504 2026-04-06 01:40:33 NA                  NYPD   New York City Polic…\n3   68570387 2026-04-06 01:38:25 NA                  NYPD   New York City Polic…\n4   68567191 2026-04-06 01:22:18 2026-04-06 01:38:45 NYPD   New York City Polic…\n5   68568589 2026-04-06 00:59:41 NA                  NYPD   New York City Polic…\n6   68569061 2026-04-06 00:48:32 2026-04-06 01:31:24 NYPD   New York City Polic…\n# ℹ 39 more variables: complaint_type &lt;chr&gt;, descriptor &lt;chr&gt;,\n#   descriptor_2 &lt;lgl&gt;, location_type &lt;chr&gt;, incident_zip &lt;dbl&gt;,\n#   incident_address &lt;chr&gt;, street_name &lt;chr&gt;, cross_street_1 &lt;chr&gt;,\n#   cross_street_2 &lt;chr&gt;, intersection_street_1 &lt;chr&gt;,\n#   intersection_street_2 &lt;chr&gt;, address_type &lt;chr&gt;, city &lt;chr&gt;,\n#   landmark &lt;chr&gt;, facility_type &lt;lgl&gt;, status &lt;chr&gt;, due_date &lt;lgl&gt;,\n#   resolution_description &lt;chr&gt;, resolution_action_updated_date &lt;dttm&gt;, …"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#what-is-a-relational-database",
+    "href": "lectures/w14l1_apis.html#what-is-a-relational-database",
+    "title": "APIs",
+    "section": "What is a relational database?",
+    "text": "What is a relational database?\n\nSeries of tables (or rectangular datasets!)\nEvery table has an ID field for each unit of observation (row)\nIDs are referenced to map relations across related tables\nAccess data from individual tables or across multiple tables with Structured Query Language (SQL)"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#dplyr-vs.-sql",
+    "href": "lectures/w14l1_apis.html#dplyr-vs.-sql",
+    "title": "APIs",
+    "section": "dplyr vs. SQL",
+    "text": "dplyr vs. SQL\n\n\n\nselect()\nfilter()\ngroup_by()\narrange()\nhead()\n\n\n\nSELECT\nWHERE\nGROUP BY\nORDER BY\nLIMIT"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#sql-in-apis",
+    "href": "lectures/w14l1_apis.html#sql-in-apis",
+    "title": "APIs",
+    "section": "SQL in APIs",
+    "text": "SQL in APIs\n\nDifferent flavors of SQL can be written in the URLs constructed for API calls\nSocrata’s API provides functionality for the Socrata Query Language (SoQL) - a flavor of SQL"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#soql",
+    "href": "lectures/w14l1_apis.html#soql",
+    "title": "APIs",
+    "section": "SoQL",
+    "text": "SoQL"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#soql-example-1",
+    "href": "lectures/w14l1_apis.html#soql-example-1",
+    "title": "APIs",
+    "section": "SoQL Example 1",
+    "text": "SoQL Example 1\n\ndplyrSQLSoQL\n\n\n\ndf |&gt;\n  select(unique_key, created_date, incident_address) |&gt;\n  filter(descriptor == 'Pothole') |&gt;\n  head(100)\n\n\n\nSELECT unique_key, created_date, incident_address \nWHERE descriptor = 'Pothole'\nLIMIT 100\n\n\n\nnyc_recent_potholes &lt;- read_csv(\"https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$select=unique_key,created_date,incident_address&$where=descriptor='Pothole'&$limit=100\")\nhead(nyc_recent_potholes)\n\n# A tibble: 6 × 3\n  unique_key created_date        incident_address   \n       &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt;              \n1   68568797 2026-04-06 01:31:25 &lt;NA&gt;               \n2   68564309 2026-04-04 04:24:22 NOSTRAND AVENUE    \n3   68565007 2026-04-04 04:23:49 WOODHAVEN BOULEVARD\n4   68560011 2026-04-04 04:22:24 BEDFORD AVENUE     \n5   68560009 2026-04-04 04:13:01 TIEMANN AVENUE     \n6   68561076 2026-04-04 04:12:55 REMSEN AVENUE"
+  },
+  {
+    "objectID": "lectures/w14l1_apis.html#soql-example-2",
+    "href": "lectures/w14l1_apis.html#soql-example-2",
+    "title": "APIs",
+    "section": "SoQL Example 2",
+    "text": "SoQL Example 2\n\ndplyrSQLSoQL\n\n\n\ndf |&gt;\n  filter(complaint_type == 'Traffic') |&gt;\n  group_by(descriptor) |&gt;\n  summarize(count = n()) |&gt;\n  arrange(desc(count))\n\n\n\nWHERE complaint_type = 'Traffic'\nSELECT descriptor, count(*)\nGROUP BY descriptor\nORDER BY count DESC\n\n\n\n\nlibrary(readr)\nnyc_traffic_complaints &lt;- read_csv(\"https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$where=complaint_type='Traffic'&$select=descriptor,count(*)&$group=descriptor&$order=count%20DESC\")\nhead(nyc_traffic_complaints)\n\n# A tibble: 5 × 2\n  descriptor                  count\n  &lt;chr&gt;                       &lt;dbl&gt;\n1 Congestion/Gridlock         14947\n2 Drag Racing                 11235\n3 Chronic Speeding             9243\n4 Truck Route Violation        7800\n5 Chronic Stoplight Violation  2622"
+  },
+  {
+    "objectID": "lectures/w13l1_polygonMapping.html",
+    "href": "lectures/w13l1_polygonMapping.html",
+    "title": "Polygon Mapping",
+    "section": "",
+    "text": "Leaflet\n\nBasic use\nAdding markers and layers\nColor palettes\n\nProject time"
   }
 ]
