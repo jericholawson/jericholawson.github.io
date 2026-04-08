@@ -158,14 +158,14 @@
     "href": "schedule.html#week-12-packages---testing-vignettes-413---417",
     "title": "Schedule",
     "section": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)",
-    "text": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15\n\n\n\n\n\n\n\n\nNoteLecture: Testing\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Vignettes\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Testing\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Vignettes\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-13-packages---project-time-420---424",
     "href": "schedule.html#week-13-packages---project-time-420---424",
     "title": "Schedule",
     "section": "Week 13: Packages - Project Time (4/20 - 4/24)",
-    "text": "Week 13: Packages - Project Time (4/20 - 4/24)\n\nMonday, 4/20Wednesday, 4/22\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 13: Packages - Project Time (4/20 - 4/24)\n\nMonday, 4/20Wednesday, 4/22\n\n\n\n\n\n\n\n\nNoteRehearsals (NO LECTURE)\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteProject Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-14-packages---project-time-demonstrations-427---51",
@@ -179,7 +179,7 @@
     "href": "schedule.html#finals-package-52---59",
     "title": "Schedule",
     "section": "Finals: Package (5/2 - 5/9)",
-    "text": "Finals: Package (5/2 - 5/9)\n\nTo-Do\n\n\n\n\n\n\n–&gt;"
+    "text": "Finals: Package (5/2 - 5/9)\n\nTo-Do"
   },
   {
     "objectID": "schedule.html#week-1-introduction-data-structures-126---130",
@@ -4337,7 +4337,7 @@
     "href": "package/instructions.html",
     "title": "Package (400 pts)",
     "section": "",
-    "text": "The time has come!! You will be working in groups of 2-3 to create a sound, reproducible, and complete R package on a topic or interest of your choice. Here are the following elements:\n\nProposal and Outline (20 pts, due Wednesday, 4/1 at 11:59pm)\n\nProposal on topic in mind, with basic functionality of package. An outline will scheme out how the package will work and which functions might be created to accomplish its goal.\n\nCheckpoint #1: Minimum Viable Project (20 pts, due Monday, 4/13 at 11:59pm)\n\nOwn repository set up with multiple commits from each member in group\nBasic framework is configured, with an attempt at each component\nPass R CMD check (no errors, no warnings, minimal notes)\n\nRehearsal (30 pts, given during allotted times on Monday, 4/20)\n\n10 minute conversation with Jericho regarding package and R concepts\nIntroduction into package, followed by Q&A about its components\n\nCheckpoint #2: More Complete Viable Project (20 pts, due Friday, 4/24 at 11:59pm)\n\nSteady progress towards finished product\n\nDemonstration (60 pts, given in-class on Wednesday, 4/29)\n\n5-8 minute demo walking through package\n\nFinal package (250 pts, due Wednesday, 5/6 at 11:59pm)\n\nThe repository (representing your package) will have the following components by the last turn-in:\n\nSetup-related items\n\nDESCRIPTION.md\nLICENSE\nNAMESPACE\n\nDocumentation\n\nREADME.md file (describing main components/rationale to package)\nmanuals/ (i.e. help files)\n\nCreated for all function files and objects\n\nvignettes/ (i.e. tutorial file)\n\nOne main vignette walking through a thorough example of the package\n\n\nBack-end\n\nR/\n\n.R scripts to accomplish 8-10 tasks (consisting of one or multiple scripts)\n\ntests/\n\nAppropriate testing on all function files (via testthat)\n\ndata/\n\nAt least one real/simulated dataset that your package is centered around\n\n\n\nAfter the second exam, in-class time will be split up differently, where the first 20-25 minutes of class will be spent on a mini-lecture, while the rest of the time will be given to y’all to work on your packages. In this time, you are free to collaborate with your group members and/or consult with me about the package."
+    "text": "The time has come!! You will be working in groups of 2-3 to create a sound, reproducible, and complete R package on a topic or interest of your choice. Here are the following elements:\n\nProposal and Outline (20 pts, due Wednesday, 4/1 at 11:59pm)\n\nProposal on topic in mind, with basic functionality of package. An outline will scheme out how the package will work and which functions might be created to accomplish its goal.\n\nCheckpoint #1: Minimum Viable Project (20 pts, due Wednesday, 4/15 at 11:59pm)\n\nOwn repository set up with multiple commits from each member in group\nBasic framework is configured, with an attempt at each component\nPass R CMD check (no errors, no warnings, minimal notes)\n\nRehearsal (30 pts, given during allotted times on Monday, 4/20)\n\n10 minute conversation with Jericho regarding package and R concepts\nIntroduction into package, followed by Q&A about its components\n\nCheckpoint #2: More Complete Viable Project (20 pts, due Friday, 4/24 at 11:59pm)\n\nSteady progress towards finished product\n\nDemonstration (60 pts, given in-class on Wednesday, 4/29)\n\n5-8 minute demo walking through package\n\nFinal package (250 pts, due Wednesday, 5/6 at 11:59pm)\n\nThe repository (representing your package) will have the following components by the last turn-in:\n\nSetup-related items\n\nDESCRIPTION.md\nLICENSE\nNAMESPACE\n\nDocumentation\n\nREADME.md file (describing main components/rationale to package)\nmanuals/ (i.e. help files)\n\nCreated for all function files and objects\n\nvignettes/ (i.e. tutorial file)\n\nOne main vignette walking through a thorough example of the package\n\n\nBack-end\n\nR/\n\n.R scripts to accomplish 8-10 tasks (consisting of one or multiple scripts)\n\ntests/\n\nAppropriate testing on all function files (via testthat)\n\ndata/\n\nAt least one real/simulated dataset that your package is centered around\n\n\n\nAfter the second exam, in-class time will be split up differently, where the first 20-25 minutes of class will be spent on a mini-lecture, while the rest of the time will be given to y’all to work on your packages. In this time, you are free to collaborate with your group members and/or consult with me about the package."
   },
   {
     "objectID": "package/instructions.html#tldr",
@@ -4365,14 +4365,14 @@
     "href": "package/instructions.html#components",
     "title": "Package (400 pts)",
     "section": "Components",
-    "text": "Components\n\nProposal and Help File\n\n20 pts, due Wednesday, 4/1 at 11:59pm\n\nYour group will write a proposal and outline centered around the package that will be created. The proposal should address the topic you want your package to center around, what functionality your package will have, and how it will be impactful for users. You will loosely outline the hierarchy of R scripts and their connections to other scripts and data. This will all be done in the README.md file.\nThe grading criteria is below:\n\n(10 pts) Content: Is your topic extensive enough to create functions/data for? Do you provide possible sources for certain pieces of information in your package? Do you have a sensible layout to this potential package?\n(10 pts) Formatting: Is the proposal clear and detailed? Is it in some form of a .md file? Was this turned in on time?\n\nThe proposal will be committed and pushed as the README.md file in the GitHub repository for your package. Feedback will be given on the proposal thereafter.\n\n\nCheckpoint #1: Minimum Viable Project\n\n20 pts, due Monday, 4/13 at 11:59pm\n\nThis checkpoint is designed to make sure your team is on the right track. By this point, you should have a minimum viable project (MVP) that has the following specifications:\n\n(5 pts) Commits from each of the group members\n(10 pts) The structure mentioned in guideline #3 exists with:\n\nAt least one working file for each component\nNoticeable progress within each part\n\n(5 pts) Pass R CMD check (no errors, no warnings, and minimal notes)\n\nTeams will get feedback about their progress on GitHub after the submission date.\n\n\nRehearsal\n\n30 pts, conducted on Monday, 4/20 in lieu of lecture\n\nA rehearsal will be conducted to analyze your ability to think critically about code as a programmer and provide an opportunity to showcase your package (and its potential) in a 1-on-1 format.\nDuring the 8-10 minute rehearsal, you will be discussing the following:\n\n(10 pts) Introduce the rationale and overview of your package up to this point\n\ne.g. What is it? Who is it for? Why? How?\n\n(10 pts) Answer 2-3 questions related to specific parts of your code\n\ne.g. What considerations are needed for your function? How does the function operate? Why is it coded as such?\n\n(10 pts) Critique your skills as a programmer and the package at its current state\n\ne.g. Strengths? Weaknesses?\n\n\nArrive with the understanding that mistakes are absolutely fine along the way, but do not try to oversell yourself or the package’s capabilities.\nSignups will occur the week prior.\n\n\nCheckpoint #2: More Complete Viable Project\n\n20 pts, due Friday, 4/24 at 11:59pm\n\nContinuing the momentum from the last checkpoint, you will have new additions to your package such that the following criteria is met:\n\n(4 pts) Complete, rough drafts of your README, DESCRIPTION, LICENSE, and NAMESPACE files\n(4 pts) At least 5 mostly-created function files created for your R/ folder\n(4 pts) At least one complete test file\n(4 pts) A rough draft of a sample vignette\n(4 pts) All data necessary to run through package\n\nTeams will get additional feedback about their progress after the submission date.\n\n\nDemonstration\n\n60 pts, given on Wednesday, 4/29 during lecture\n\nDuring the final lecture of the semester (i.e. Wednesday, 4/29), teams will present a demonstration of their package to the class. Signups will occur the week prior.\nThe goal of the demonstration is to show the functionality and rationale of the package. The demonstration should take about 5-7 minutes. The following criteria will be used:\n\nContext (20 pts)\n\nProvides the rationale behind why your package is relevant and useful\nShowcases context in the functions that are presented\nDiscusses future directions and pitfalls of this package\n\nFunctionality (20 pts)\n\nShows how 2-3 functions work, either through a given walkthrough or vignette\nDiscusses accessing the package and how it can be used in conjunction with other tools\n\nPresentation (20 pts)\n\nAll members provide meaningful insights in an engaging and clear fashion\nDemonstration is organized, with minimal errors and mistakes\nEqual participation amongst all group members\n\n\n\n\nFinal Package\n\n250 pts, due Wednesday, 5/6 at 11:59pm\n\nThe final package will be completed by Wednesday, 5/6 at 11:59pm. When finished, you will commit and push all changes via GitHub (via @jericholawson).\nThe layout from guideline #3 will be used here. Specifically, the criteria will be the following:\n\nComponents (50 pts)\n\nAll parts are included in the package and meet the requirements mentioned in Guideline #3.\n\nFunctionality (50 pts)\n\nEach part of the package works as intended, with no errors or warnings.\n\nAppearance (50 pts)\n\nCode is well-commented, organized, and uses certain practices for efficiency.\nText documents are organized and clear to the reader.\nFile names are clear and to-the-point.\n\nRelevance (50 pts)\n\nRationale to the package is legitimate.\nFunctions correspond to the package’s intended goal and description.\n\nDetail (50 pts)\n\nAppropriate amount of description that conveys what the package does.\nA complete set of R files and vignettes that provide a basic understanding of the package."
+    "text": "Components\n\nProposal and Help File\n\n20 pts, due Wednesday, 4/1 at 11:59pm\n\nYour group will write a proposal and outline centered around the package that will be created. The proposal should address the topic you want your package to center around, what functionality your package will have, and how it will be impactful for users. You will loosely outline the hierarchy of R scripts and their connections to other scripts and data. This will all be done in the README.md file.\nThe grading criteria is below:\n\n(10 pts) Content: Is your topic extensive enough to create functions/data for? Do you provide possible sources for certain pieces of information in your package? Do you have a sensible layout to this potential package?\n(10 pts) Formatting: Is the proposal clear and detailed? Is it in some form of a .md file? Was this turned in on time?\n\nThe proposal will be committed and pushed as the README.md file in the GitHub repository for your package. Feedback will be given on the proposal thereafter.\n\n\nCheckpoint #1: Minimum Viable Project\n\n20 pts, due Wednesday, 4/15 at 11:59pm\n\nThis checkpoint is designed to make sure your team is on the right track. By this point, you should have a minimum viable project (MVP) that has the following specifications:\n\n(5 pts) Commits from each of the group members\n(10 pts) The structure mentioned in guideline #3 exists with:\n\nAt least one working file for each component\nNoticeable progress within each part\n\n(5 pts) Pass R CMD check (no errors, no warnings, and minimal notes)\n\nTeams will get feedback about their progress on GitHub after the submission date.\n\n\nRehearsal\n\n30 pts, conducted on Monday, 4/20 in lieu of lecture\n\nA rehearsal will be conducted to analyze your ability to think critically about code as a programmer and provide an opportunity to showcase your package (and its potential) in a 1-on-1 format.\nDuring the 8-10 minute rehearsal, you will be discussing the following:\n\n(10 pts) Introduce the rationale and overview of your package up to this point\n\ne.g. What is it? Who is it for? Why? How?\n\n(10 pts) Answer 2-3 questions related to specific parts of your code\n\ne.g. What considerations are needed for your function? How does the function operate? Why is it coded as such?\n\n(10 pts) Critique your skills as a programmer and the package at its current state\n\ne.g. Strengths? Weaknesses?\n\n\nArrive with the understanding that mistakes are absolutely fine along the way, but do not try to oversell yourself or the package’s capabilities.\nSignups will occur the week prior.\n\n\nCheckpoint #2: More Complete Viable Project\n\n20 pts, due Friday, 4/24 at 11:59pm\n\nContinuing the momentum from the last checkpoint, you will have new additions to your package such that the following criteria is met:\n\n(4 pts) Complete, rough drafts of your README, DESCRIPTION, LICENSE, and NAMESPACE files\n(4 pts) At least 5 mostly-created function files created for your R/ folder\n(4 pts) At least one complete test file\n(4 pts) A rough draft of a sample vignette\n(4 pts) All data necessary to run through package\n\nTeams will get additional feedback about their progress after the submission date.\n\n\nDemonstration\n\n60 pts, given on Wednesday, 4/29 during lecture\n\nDuring the final lecture of the semester (i.e. Wednesday, 4/29), teams will present a demonstration of their package to the class. Signups will occur the week prior.\nThe goal of the demonstration is to show the functionality and rationale of the package. The demonstration should take about 5-7 minutes. The following criteria will be used:\n\nContext (20 pts)\n\nProvides the rationale behind why your package is relevant and useful\nShowcases context in the functions that are presented\nDiscusses future directions and pitfalls of this package\n\nFunctionality (20 pts)\n\nShows how 2-3 functions work, either through a given walkthrough or vignette\nDiscusses accessing the package and how it can be used in conjunction with other tools\n\nPresentation (20 pts)\n\nAll members provide meaningful insights in an engaging and clear fashion\nDemonstration is organized, with minimal errors and mistakes\nEqual participation amongst all group members\n\n\n\n\nFinal Package\n\n250 pts, due Wednesday, 5/6 at 11:59pm\n\nThe final package will be completed by Wednesday, 5/6 at 11:59pm. When finished, you will commit and push all changes via GitHub (via @jericholawson).\nThe layout from guideline #3 will be used here. Specifically, the criteria will be the following:\n\nComponents (50 pts)\n\nAll parts are included in the package and meet the requirements mentioned in Guideline #3.\n\nFunctionality (50 pts)\n\nEach part of the package works as intended, with no errors or warnings.\n\nAppearance (50 pts)\n\nCode is well-commented, organized, and uses certain practices for efficiency.\nText documents are organized and clear to the reader.\nFile names are clear and to-the-point.\n\nRelevance (50 pts)\n\nRationale to the package is legitimate.\nFunctions correspond to the package’s intended goal and description.\n\nDetail (50 pts)\n\nAppropriate amount of description that conveys what the package does.\nA complete set of R files and vignettes that provide a basic understanding of the package."
   },
   {
     "objectID": "package/instructions.html#overview",
     "href": "package/instructions.html#overview",
     "title": "Package (400 pts)",
     "section": "",
-    "text": "The time has come!! You will be working in groups of 2-3 to create a sound, reproducible, and complete R package on a topic or interest of your choice. Here are the following elements:\n\nProposal and Outline (20 pts, due Wednesday, 4/1 at 11:59pm)\n\nProposal on topic in mind, with basic functionality of package. An outline will scheme out how the package will work and which functions might be created to accomplish its goal.\n\nCheckpoint #1: Minimum Viable Project (20 pts, due Monday, 4/13 at 11:59pm)\n\nOwn repository set up with multiple commits from each member in group\nBasic framework is configured, with an attempt at each component\nPass R CMD check (no errors, no warnings, minimal notes)\n\nRehearsal (30 pts, given during allotted times on Monday, 4/20)\n\n10 minute conversation with Jericho regarding package and R concepts\nIntroduction into package, followed by Q&A about its components\n\nCheckpoint #2: More Complete Viable Project (20 pts, due Friday, 4/24 at 11:59pm)\n\nSteady progress towards finished product\n\nDemonstration (60 pts, given in-class on Wednesday, 4/29)\n\n5-8 minute demo walking through package\n\nFinal package (250 pts, due Wednesday, 5/6 at 11:59pm)\n\nThe repository (representing your package) will have the following components by the last turn-in:\n\nSetup-related items\n\nDESCRIPTION.md\nLICENSE\nNAMESPACE\n\nDocumentation\n\nREADME.md file (describing main components/rationale to package)\nmanuals/ (i.e. help files)\n\nCreated for all function files and objects\n\nvignettes/ (i.e. tutorial file)\n\nOne main vignette walking through a thorough example of the package\n\n\nBack-end\n\nR/\n\n.R scripts to accomplish 8-10 tasks (consisting of one or multiple scripts)\n\ntests/\n\nAppropriate testing on all function files (via testthat)\n\ndata/\n\nAt least one real/simulated dataset that your package is centered around\n\n\n\nAfter the second exam, in-class time will be split up differently, where the first 20-25 minutes of class will be spent on a mini-lecture, while the rest of the time will be given to y’all to work on your packages. In this time, you are free to collaborate with your group members and/or consult with me about the package."
+    "text": "The time has come!! You will be working in groups of 2-3 to create a sound, reproducible, and complete R package on a topic or interest of your choice. Here are the following elements:\n\nProposal and Outline (20 pts, due Wednesday, 4/1 at 11:59pm)\n\nProposal on topic in mind, with basic functionality of package. An outline will scheme out how the package will work and which functions might be created to accomplish its goal.\n\nCheckpoint #1: Minimum Viable Project (20 pts, due Wednesday, 4/15 at 11:59pm)\n\nOwn repository set up with multiple commits from each member in group\nBasic framework is configured, with an attempt at each component\nPass R CMD check (no errors, no warnings, minimal notes)\n\nRehearsal (30 pts, given during allotted times on Monday, 4/20)\n\n10 minute conversation with Jericho regarding package and R concepts\nIntroduction into package, followed by Q&A about its components\n\nCheckpoint #2: More Complete Viable Project (20 pts, due Friday, 4/24 at 11:59pm)\n\nSteady progress towards finished product\n\nDemonstration (60 pts, given in-class on Wednesday, 4/29)\n\n5-8 minute demo walking through package\n\nFinal package (250 pts, due Wednesday, 5/6 at 11:59pm)\n\nThe repository (representing your package) will have the following components by the last turn-in:\n\nSetup-related items\n\nDESCRIPTION.md\nLICENSE\nNAMESPACE\n\nDocumentation\n\nREADME.md file (describing main components/rationale to package)\nmanuals/ (i.e. help files)\n\nCreated for all function files and objects\n\nvignettes/ (i.e. tutorial file)\n\nOne main vignette walking through a thorough example of the package\n\n\nBack-end\n\nR/\n\n.R scripts to accomplish 8-10 tasks (consisting of one or multiple scripts)\n\ntests/\n\nAppropriate testing on all function files (via testthat)\n\ndata/\n\nAt least one real/simulated dataset that your package is centered around\n\n\n\nAfter the second exam, in-class time will be split up differently, where the first 20-25 minutes of class will be spent on a mini-lecture, while the rest of the time will be given to y’all to work on your packages. In this time, you are free to collaborate with your group members and/or consult with me about the package."
   },
   {
     "objectID": "package/instructions.html#rehearsal",
@@ -5583,7 +5583,7 @@
     "href": "lectures/ml3_metadata.html#namespace",
     "title": "Mini-Lecture #3: Metadata and More Package Setup",
     "section": "NAMESPACE",
-    "text": "NAMESPACE\n\nMakes your packages self-contained\nCan use devtools::document() to generate namespace automatically\n\nResults from creating R files"
+    "text": "NAMESPACE\n\nMakes your packages self-contained\nCan use devtools::document() to generate namespace automatically\n\nResults from creating R files\nYou may need to delete namespace file first for this to work!"
   },
   {
     "objectID": "lectures/ml3_metadata.html#github-actions",
@@ -5646,7 +5646,7 @@
     "href": "schedule.html#week-11-packages---code-data-documentation-metadata-46---410",
     "title": "Schedule",
     "section": "Week 11: Packages - Code, Data, Documentation, Metadata (4/6 - 4/10)",
-    "text": "Week 11: Packages - Code, Data, Documentation, Metadata (4/6 - 4/10)\n\nMonday, 4/6Wednesday, 4/8\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Code, Data, Documentation\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSkim through chapters 4.4-4.5 and 9-11 of R Packages by next class\n\nCan look at Appendix A for more details on R CMD check\n\nNext assignment/checkpoint: Checkpoint #1 due by Monday, 4/13 at 11:59pm\n\nCommit and push changes to GitHub repository\nPackage guidelines\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Metadata and More Package Setup\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 11: Packages - Code, Data, Documentation, Metadata (4/6 - 4/10)\n\nMonday, 4/6Wednesday, 4/8\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Code, Data, Documentation\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSkim through chapters 4.4-4.5 and 9-11 of R Packages by next class\n\nCan look at Appendix A for more details on R CMD check\n\nNext assignment/checkpoint: Checkpoint #1 due by Monday, 4/13 at 11:59pm\n\nCommit and push changes to GitHub repository\nPackage guidelines\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Metadata and More Package Setup\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSkim through chapters 13-14 of R Packages by next class\nNext assignment/checkpoint: Checkpoint #1 due by Wednesday, 4/15 at 11:59pm\n\nCommit and push changes to GitHub repository\nPackage guidelines"
   },
   {
     "objectID": "schedule.html#week-10-exam-2-packages---description-and-setup-330---43",
@@ -5654,5 +5654,159 @@
     "title": "Schedule",
     "section": "Week 10: Exam #2; Packages - Description and Setup (3/30 - 4/3)",
     "text": "Week 10: Exam #2; Packages - Description and Setup (3/30 - 4/3)\n\nMonday, 3/30Wednesday, 4/1\n\n\n\n\n\n\n\n\nImportantExam #2\n\n\n\nGood luck!\n\nExam and turn-in on Moodle under “Exam #2”\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSet #4 due tonight at 11:59pm\n\nUse the template to type answers in document and stage/commit/push in repository\n\nRead over package guidelines\n\nPackage setup and working time in Wednesday’s class!\nFirst assignment: Proposal due Wednesday, 4/1 at 11:59pm\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Package Setup; Proposal Working Time\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nProposal due tonight at 11:59pm as README.md file\n\nAdd me (@jericholawson) as collaborator on GitHub\nPackage guidelines\nNext assignment: Checkpoint #1 due Monday, 4/13 at 11:59pm\n\nSkim through chapters 6, 7, and 16 of R Packages"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#things-to-keep-in-mind-code",
+    "href": "lectures/ml3_metadata.html#things-to-keep-in-mind-code",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "Things to Keep in Mind: Code",
+    "text": "Things to Keep in Mind: Code\n\nStart with an overall task you’d like your user to do\n\ne.g. visualize a scatter plot for a given species\nusethis::use_r(\"speciesScatter\")"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#things-to-keep-in-mind-code-1",
+    "href": "lectures/ml3_metadata.html#things-to-keep-in-mind-code-1",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "Things to Keep in Mind: Code",
+    "text": "Things to Keep in Mind: Code\n\nBreak down task into individual steps\n\ne.g. subsetting, plotting\nConsider potential errors after writing initial code\n\n\n\nspeciesScatter &lt;- function(species){\n  # Subset based on species\n  data &lt;- iris[iris$Species == species, ]\n  \n  # Create/print a scatter plot based on sepal length, width\n  plot(data$Sepal.Length, data$Sepal.Width, \n       main = paste(\"Sepal Length vs. Width of\", species))\n}"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#things-to-keep-in-mind-code-2",
+    "href": "lectures/ml3_metadata.html#things-to-keep-in-mind-code-2",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "Things to Keep in Mind: Code",
+    "text": "Things to Keep in Mind: Code\n\nBuild the documentation through Roxygen2 comments\n\ndevtools::document() to update .Rd files for documentation\n\n\n\n#' Scatter Plot for Iris Species\n#'\n#' @description Prints a scatter plot of sepal lengths and widths for a given species.\n#' @details Plots are generated using base R. The species come specifically from the base R iris dataset.\n#' @param species a character representing a potential species in the iris dataset (setosa, versicolor, virginica)\n#' @export\n#' @examples\n#' speciesScatter(\"setosa\")"
+  },
+  {
+    "objectID": "lectures/ml3_metadata.html#things-to-keep-in-mind-code-3",
+    "href": "lectures/ml3_metadata.html#things-to-keep-in-mind-code-3",
+    "title": "Mini-Lecture #3: Metadata and More Package Setup",
+    "section": "Things to Keep in Mind: Code",
+    "text": "Things to Keep in Mind: Code"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#dates-to-keep-in-mind",
+    "href": "lectures/ml4_testing.html#dates-to-keep-in-mind",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Dates to Keep in Mind",
+    "text": "Dates to Keep in Mind\n\n4/13 (today): minimum viable product/project\n\nFramework for each of the components\nShould pass R CMD check\n\n4/20: rehearsals\n\nSign up here"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#package-breakdown",
+    "href": "lectures/ml4_testing.html#package-breakdown",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#package-breakdown-1",
+    "href": "lectures/ml4_testing.html#package-breakdown-1",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\n\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\n\nusethis::use_test(\"\")\n\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#r-cmd-check",
+    "href": "lectures/ml4_testing.html#r-cmd-check",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "R CMD Check",
+    "text": "R CMD Check\n\nRuns over 50 automated checks\nThree types of problems:\n\nErrors: must fix\nWarnings: should really fix\nNotes: should probably fix\n\nREAD the error messages\n\nLook them up in the book\nMost won’t mean much until it happens to you"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#errors-youll-likely-see",
+    "href": "lectures/ml4_testing.html#errors-youll-likely-see",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Errors You’ll Likely See",
+    "text": "Errors You’ll Likely See\n\nChecking installed package size\n\nCRAN packages limited to 5 MB\n\nChecking package dependencies\nChecking dependencies in R code\n\nAnything you use must appear in DESCRIPTION somewhere\nDepends: probably do not use\nImports: dependencies in package\nSuggests: packages used only in examples or vignettes"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#errors-youll-likely-see-1",
+    "href": "lectures/ml4_testing.html#errors-youll-likely-see-1",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Errors You’ll Likely See",
+    "text": "Errors You’ll Likely See\n\nChecking examples\n\nexamples code has to run\ncan’t take too long\n\nChecking tests\n\nhave to pass all tests\n\nChecking Rd sections\n\nhave to document all exported functions\nhave to document all arguments\nuse @rdname to document multiple functions together"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#testthat",
+    "href": "lectures/ml4_testing.html#testthat",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "testthat",
+    "text": "testthat\n\nUnit tests for R\nKeeps your code robust, bug-free\nAutomated"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#testthat-setup",
+    "href": "lectures/ml4_testing.html#testthat-setup",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "testthat Setup",
+    "text": "testthat Setup\nTo setup testthat in your package, you will need to install the package first, and then call the following function:\n\nusethis::use_testthat(3)\n\nTo create a test, you can use use_test():\n\n# will be named \"test-square.R\"\nuse_test(\"square\")"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#example-in-r-file",
+    "href": "lectures/ml4_testing.html#example-in-r-file",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Example (in R file)",
+    "text": "Example (in R file)\n\nsquare &lt;- function(x) {\n  if (!is.numeric(x)) {\n    stop(paste0(\"x must be numeric, but '\", x, \"' is not\"))\n  }\n  x * x\n}\nsquare(2) == 4\n\n[1] TRUE\n\nlibrary(testthat)\nexpect_equal(square(2), 4)"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#example-in-test-file",
+    "href": "lectures/ml4_testing.html#example-in-test-file",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Example (in test file)",
+    "text": "Example (in test file)\n\ntest_that(\"square works\", {\n  # test a simple case\n  expect_equal(square(0), 0)\n  \n  # test against known value\n  expect_equal(square(-1), 1)\n  # test against base R function\n  expect_equal(square(-1), 1^2)\n  # test against itself\n  expect_equal(square(-1), square(1))\n  \n  # test a range of values\n  expect_equal(square(1:10), (1:10)^2)\n  \n  # weird edge cases\n  expect_equal(square(-Inf), Inf)\n})\n\nTest passed 😸"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#tests-to-use",
+    "href": "lectures/ml4_testing.html#tests-to-use",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Tests to Use",
+    "text": "Tests to Use\n\nexpect_equal() for (approximately) equal output\n\nexpect_identical() for EXACT output\n2 arguments to compare\n\nexpect_error() (and expect_warning(), expect_message())\n\nSingle argument"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#example-to-test",
+    "href": "lectures/ml4_testing.html#example-to-test",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Example (to test)",
+    "text": "Example (to test)\n\ntestthat::test_file(\"tests/testthat/test-square.R\")"
+  },
+  {
+    "objectID": "lectures/ml5_vignettes.html#dates-to-keep-in-mind",
+    "href": "lectures/ml5_vignettes.html#dates-to-keep-in-mind",
+    "title": "Mini-Lecture #5: Vignettes",
+    "section": "Dates to Keep in Mind",
+    "text": "Dates to Keep in Mind\n\n4/20: rehearsals\n\nSign up here\nNo lecture/class on Monday as a result\n\n4/24: checkpoint #2\n\nSubstantial progress on package\nShould pass R CMD check"
+  },
+  {
+    "objectID": "lectures/ml5_vignettes.html#package-breakdown",
+    "href": "lectures/ml5_vignettes.html#package-breakdown",
+    "title": "Mini-Lecture #5: Vignettes",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml5_vignettes.html#package-breakdown-1",
+    "href": "lectures/ml5_vignettes.html#package-breakdown-1",
+    "title": "Mini-Lecture #5: Vignettes",
+    "section": "Package Breakdown",
+    "text": "Package Breakdown\n\nDESCRIPTION: Summary of package\nNAMESPACE: Self-containment of objects\nR/: All code\ntests/: Testing for code\nman/: Documentation for code and objects\nvignettes/: Tutorials for use\n\nusethis::use_vignette(\"my-vignette\")\n\ndata/: Data embedded in package"
+  },
+  {
+    "objectID": "lectures/ml5_vignettes.html#vignettes",
+    "href": "lectures/ml5_vignettes.html#vignettes",
+    "title": "Mini-Lecture #5: Vignettes",
+    "section": "Vignettes",
+    "text": "Vignettes\n\nLong-form guide to your package\n\nThink of it as a tutorial\nusethis::use_vignette(\"my-vignette\")\nDone in a .rmd format\nCan also be a cheatsheet"
+  },
+  {
+    "objectID": "lectures/ml5_vignettes.html#example",
+    "href": "lectures/ml5_vignettes.html#example",
+    "title": "Mini-Lecture #5: Vignettes",
+    "section": "Example",
+    "text": "Example\n\nLet’s look at a modern example"
+  },
+  {
+    "objectID": "lectures/ml5_vignettes.html#vignettes-1",
+    "href": "lectures/ml5_vignettes.html#vignettes-1",
+    "title": "Mini-Lecture #5: Vignettes",
+    "section": "Vignettes",
+    "text": "Vignettes\n\nQuestions to consider:\n\nWhat can your package do?\nWhat should users know about it?\nHow does it work?\nShow us something cool!\n\nExample\n\nSource code"
   }
 ]
