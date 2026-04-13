@@ -158,7 +158,7 @@
     "href": "schedule.html#week-12-packages---testing-vignettes-413---417",
     "title": "Schedule",
     "section": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)",
-    "text": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Testing\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Vignettes\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 12: Packages - Testing, Vignettes (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Testing\n\n\n\n\nSlides\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nSkim through chapter 17 of R Packages by next class\nNext assignment/checkpoint: Checkpoint #1 due Wednesday at 11:59pm\n\nCommit and push changes to GitHub repository\nPackage guidelines\nSign up for rehearsals here\n\n\n\n\n\n\n\n\n\n\n\n\nNoteMini-Lecture: Vignettes\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-13-packages---project-time-420---424",
@@ -893,7 +893,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n10: Conditions\n11: Object-Oriented Programming\n12: S3\n13: Package Intro\nM1: Package Intro, Part II\nM2: Code, Documentation, & Data\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n4: Set 4\n\n\n\n\nInstructions\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam\n\nStudy Guide for Exam #2\n\nPractice Exam/Set #4"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesSetsPackageTextbooksDataExam Prep\n\n\n\n1: Introduction, Tech Setup, Atomic Vectors\n2: Lists\n3: Data Frames and Subsetting\n4: Assignment and Memory\n5: Control Flow\n6: Functions\n7: Functionals (apply)\n8: Functionals (map)\n9: Environments\n10: Conditions\n11: Object-Oriented Programming\n12: S3\n13: Package Intro\nM1: Package Intro, Part II\nM2: Code, Documentation, & Data\nM3: Metadata\nM4: Testing\n\n\n\n\n1: Set 1\n2: Set 2\n3: Set 3\n4: Set 4\n\n\n\n\nInstructions\n\n\n\n\nAdvanced R\nR Packages\n\n\n\n\nMacroinvertebrates\nDog Bite Data (via NYC Open Data)\n\n\n\n\nStudy Guide for Exam #1\n\nPractice Exam\n\nStudy Guide for Exam #2\n\nPractice Exam/Set #4"
   },
   {
     "objectID": "sets/set1.html",
@@ -5688,7 +5688,7 @@
     "href": "lectures/ml4_testing.html#dates-to-keep-in-mind",
     "title": "Mini-Lecture #4: Testing",
     "section": "Dates to Keep in Mind",
-    "text": "Dates to Keep in Mind\n\n4/13 (today): minimum viable product/project\n\nFramework for each of the components\nShould pass R CMD check\n\n4/20: rehearsals\n\nSign up here"
+    "text": "Dates to Keep in Mind\n\n4/15 (Wednesdat): minimum viable product/project\n\nFramework for each of the components\nShould pass R CMD check\n\n4/20 (next Monday): rehearsals\n\nSign up here"
   },
   {
     "objectID": "lectures/ml4_testing.html#package-breakdown",
@@ -5737,7 +5737,7 @@
     "href": "lectures/ml4_testing.html#testthat-setup",
     "title": "Mini-Lecture #4: Testing",
     "section": "testthat Setup",
-    "text": "testthat Setup\nTo setup testthat in your package, you will need to install the package first, and then call the following function:\n\nusethis::use_testthat(3)\n\nTo create a test, you can use use_test():\n\n# will be named \"test-square.R\"\nuse_test(\"square\")"
+    "text": "testthat Setup\nTo setup testthat in your package, you will need to install the package first, and then call the following function:\n\nusethis::use_testthat(3)\n\nTo create a test (file), you can use use_test():\n\n# will be named \"test-square.R\"\nuse_test(\"square\")"
   },
   {
     "objectID": "lectures/ml4_testing.html#example-in-r-file",
@@ -5751,7 +5751,7 @@
     "href": "lectures/ml4_testing.html#example-in-test-file",
     "title": "Mini-Lecture #4: Testing",
     "section": "Example (in test file)",
-    "text": "Example (in test file)\n\ntest_that(\"square works\", {\n  # test a simple case\n  expect_equal(square(0), 0)\n  \n  # test against known value\n  expect_equal(square(-1), 1)\n  # test against base R function\n  expect_equal(square(-1), 1^2)\n  # test against itself\n  expect_equal(square(-1), square(1))\n  \n  # test a range of values\n  expect_equal(square(1:10), (1:10)^2)\n  \n  # weird edge cases\n  expect_equal(square(-Inf), Inf)\n})\n\nTest passed 😸"
+    "text": "Example (in test file)\n\ntest_that(\"square works\", {\n  # test a simple case\n  expect_equal(square(0), 0)\n  \n  # test against known value\n  expect_equal(square(-1), 1)\n  # test against base R function\n  expect_equal(square(-1), 1^2)\n  # test against itself\n  expect_equal(square(-1), square(1))\n  \n  # test a range of values\n  expect_equal(square(1:10), (1:10)^2)\n  \n  # weird edge cases\n  expect_equal(square(-Inf), Inf)\n})\n\nTest passed 🎊"
   },
   {
     "objectID": "lectures/ml4_testing.html#tests-to-use",
@@ -5765,7 +5765,7 @@
     "href": "lectures/ml4_testing.html#example-to-test",
     "title": "Mini-Lecture #4: Testing",
     "section": "Example (to test)",
-    "text": "Example (to test)\n\ntestthat::test_file(\"tests/testthat/test-square.R\")"
+    "text": "Example (to test)\n\nMust document() package first\nRun following in console:\n\n\ntestthat::test_file(\"tests/testthat/test-square.R\")"
   },
   {
     "objectID": "lectures/ml5_vignettes.html#dates-to-keep-in-mind",
@@ -5808,5 +5808,19 @@
     "title": "Mini-Lecture #5: Vignettes",
     "section": "Vignettes",
     "text": "Vignettes\n\nQuestions to consider:\n\nWhat can your package do?\nWhat should users know about it?\nHow does it work?\nShow us something cool!\n\nExample\n\nSource code"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#example-in-r-file-square.r",
+    "href": "lectures/ml4_testing.html#example-in-r-file-square.r",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Example (in R file, square.R)",
+    "text": "Example (in R file, square.R)\n\nsquare &lt;- function(x) {\n  if (!is.numeric(x)) {\n    stop(paste0(\"x must be numeric, but '\", x, \"' is not\"))\n  }\n  x * x\n}\nsquare(2) == 4\n\n[1] TRUE\n\nlibrary(testthat)\nexpect_equal(square(2), 4)"
+  },
+  {
+    "objectID": "lectures/ml4_testing.html#example-in-test-file-test-square.r",
+    "href": "lectures/ml4_testing.html#example-in-test-file-test-square.r",
+    "title": "Mini-Lecture #4: Testing",
+    "section": "Example (in test file, test-square.R)",
+    "text": "Example (in test file, test-square.R)\n\ntest_that(\"square works\", {\n  # test a simple case\n  expect_equal(square(0), 0)\n  \n  # test against known value\n  expect_equal(square(-1), 1)\n  # test against base R function\n  expect_equal(square(-1), 1^2)\n  # test against itself\n  expect_equal(square(-1), square(1))\n  \n  # test a range of values\n  expect_equal(square(1:10), (1:10)^2)\n  \n  # weird edge cases\n  expect_equal(square(-Inf), Inf)\n})\n\nTest passed 😀"
   }
 ]
