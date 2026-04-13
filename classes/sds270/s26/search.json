@@ -5688,7 +5688,7 @@
     "href": "lectures/ml4_testing.html#dates-to-keep-in-mind",
     "title": "Mini-Lecture #4: Testing",
     "section": "Dates to Keep in Mind",
-    "text": "Dates to Keep in Mind\n\n4/15 (Wednesdat): minimum viable product/project\n\nFramework for each of the components\nShould pass R CMD check\n\n4/20 (next Monday): rehearsals\n\nSign up here"
+    "text": "Dates to Keep in Mind\n\n4/15 (Wednesday): minimum viable product/project\n\nFramework for each of the components\nShould pass R CMD check\n\n4/20 (next Monday): rehearsals\n\nSign up here"
   },
   {
     "objectID": "lectures/ml4_testing.html#package-breakdown",
@@ -5821,6 +5821,6 @@
     "href": "lectures/ml4_testing.html#example-in-test-file-test-square.r",
     "title": "Mini-Lecture #4: Testing",
     "section": "Example (in test file, test-square.R)",
-    "text": "Example (in test file, test-square.R)\n\ntest_that(\"square works\", {\n  # test a simple case\n  expect_equal(square(0), 0)\n  \n  # test against known value\n  expect_equal(square(-1), 1)\n  # test against base R function\n  expect_equal(square(-1), 1^2)\n  # test against itself\n  expect_equal(square(-1), square(1))\n  \n  # test a range of values\n  expect_equal(square(1:10), (1:10)^2)\n  \n  # weird edge cases\n  expect_equal(square(-Inf), Inf)\n})\n\nTest passed 😀"
+    "text": "Example (in test file, test-square.R)\n\ntest_that(\"square works\", {\n  # test a simple case\n  expect_equal(square(0), 0)\n  \n  # test against known value\n  expect_equal(square(-1), 1)\n  # test against base R function\n  expect_equal(square(-1), 1^2)\n  # test against itself\n  expect_equal(square(-1), square(1))\n  \n  # test a range of values\n  expect_equal(square(1:10), (1:10)^2)\n  \n  # weird edge cases\n  expect_equal(square(-Inf), Inf)\n})\n\nTest passed 😸"
   }
 ]
