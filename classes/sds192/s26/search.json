@@ -333,7 +333,7 @@
     "href": "schedule.html#week-12-spatial-thinking-413---417",
     "title": "Schedule",
     "section": "Week 12: Spatial Thinking (4/13 - 4/17)",
-    "text": "Week 12: Spatial Thinking (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15Friday, 4/17\n\n\n\n\n\n\n\n\nNoteLecture: Spatial Thinking\n\n\n\n\nSlides\nActivity\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #8 (due Wednesday, 4/15 at 11:59pm)\n\nTemplate\n\nProject #2: All Other Components (due Monday, 4/27 at 11:59pm in GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Spatial Mapping and Project Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #9: Point Mapping\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 12: Spatial Thinking (4/13 - 4/17)\n\nMonday, 4/13Wednesday, 4/15Friday, 4/17\n\n\n\n\n\n\n\n\nNoteLecture: Spatial Thinking\n\n\n\n\nSlides\nActivity\nTemplate\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #8 (due Wednesday, 4/15 at 11:59pm)\n\nTemplate\n\nProject #2: All Other Components (due Monday, 4/27 at 11:59pm in GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Spatial Mapping and Project Time\n\n\n\n\nSlides + Activity\nCreate your own .qmd file to answer questions from slides\n\nPush to activities repository\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #8 (due tonight at 11:59pm)\n\nTemplate\n\nReadings #10 (due Sunday, 4/19 at 11:59pm on Perusall)\nProject #2: All Other Components (due Monday, 4/27 at 11:59pm in GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLab #9: Point Mapping\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-13-spatial-thinking-420---424",
@@ -368,7 +368,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n12: Data Problem-Solving\n13: Review for Exam #1\n14: Data Tidying\n15: Data Pivoting\n16: Data Ethics\n17: AI Ethics\n18: Functions in R\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling\n6: Data Tidying\n7: Components of AI\n8: Programming with Data\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nStudy Guide\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n12: Data Problem-Solving\n13: Review for Exam #1\n14: Data Tidying\n15: Data Pivoting\n16: Data Ethics\n17: AI Ethics\n18: Functions in R\n19: Iteration in R\n19b: Optional: Testing\n20: Spatial Thinking\n21: Point Mapping\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling\n6: Data Tidying\n7: Components of AI\n8: Programming with Data\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\n\n\n\n\nStudy Guide\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
   },
   {
     "objectID": "syllabus-pdf.html",
@@ -5450,7 +5450,7 @@
     "href": "lectures/w12l2_pointMapping.html#activity",
     "title": "Point Mapping",
     "section": "Activity",
-    "text": "Activity\nUsing the given data and code, play around with the following features:\n\nBackground of the map (e.g. provider tiles, zoomed-in area)\nCircle marker attributes\nPalettes\nPlace the code and output in a new .qmd file in your submission repository and name the file w12l2_act.qmd."
+    "text": "Activity\nUsing the given data and code, play around with the following features:\n\nBackground of the map (e.g. provider tiles, zoomed-in area)\n\nUse link here to explore more\n\nCircle marker attributes\nPalettes\n\nUse link here for more details\n\nPlace the code and output in a new .qmd file in your submission repository and name the file w12l2_act.qmd."
   },
   {
     "objectID": "schedule.html#week-11-programming-46---410",
