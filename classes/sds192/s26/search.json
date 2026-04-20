@@ -340,7 +340,7 @@
     "href": "schedule.html#week-13-spatial-thinking-420---424",
     "title": "Schedule",
     "section": "Week 13: Spatial Thinking (4/20 - 4/24)",
-    "text": "Week 13: Spatial Thinking (4/20 - 4/24)\n\nMonday, 4/20Wednesday, 4/22Friday, 4/24\n\n\n\n\n\n\n\n\nNoteLecture: Polygon Mapping\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Lying with Maps and Project Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: NO LECTURE (Collaborations!)\n\n\n\n\nEnjoy the collaborations of your fellow Smithies!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
+    "text": "Week 13: Spatial Thinking (4/20 - 4/24)\n\nMonday, 4/20Wednesday, 4/22Friday, 4/24\n\n\n\n\n\n\n\n\nNoteLecture: Polygon Mapping\n\n\n\n\nSlides + Activity\nCreate your own .qmd file to answer questions from slides\n\nPush to activities repository\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\nLab #9 (due Wednesday, 4/22 at 11:59pm)\n\nTemplate\n\nProject #2: All Other Components (due Monday, 4/27 at 11:59pm in GitHub repository shared with me on GitHub (@jericholawson))\n\nInstructions\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: Lying with Maps and Project Time\n\n\n\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteLecture: NO LECTURE (Collaborations!)\n\n\n\n\nEnjoy the collaborations of your fellow Smithies!\n\n\n\n\n\n\n\n\n\nWarningTo-Do/Due"
   },
   {
     "objectID": "schedule.html#week-14-presentations-apis-review-427---51",
@@ -5680,8 +5680,8 @@
     "objectID": "lectures/w13l1_polygonMapping.html#last-time",
     "href": "lectures/w13l1_polygonMapping.html#last-time",
     "title": "Polygon Mapping",
-    "section": "",
-    "text": "Leaflet\n\nBasic use\nAdding markers and layers\nColor palettes\n\nProject time"
+    "section": "Last Time",
+    "text": "Last Time\n\nLeaflet\n\nBasic use\nAdding markers and layers\nColor palettes\n\nProject time"
   },
   {
     "objectID": "lectures/w13l1_polygonMapping.html#today",
@@ -5758,7 +5758,7 @@
     "href": "lectures/w13l1_polygonMapping.html#importing-shapefiles",
     "title": "Polygon Mapping",
     "section": "Importing Shapefiles",
-    "text": "Importing Shapefiles\n\nFunction st_read() from sf package used to read in shapefiles\n\n\n\n\n\n\nlibrary(sf)\n\nLinking to GEOS 3.13.0, GDAL 3.10.1, PROJ 9.5.1; sf_use_s2() is TRUE\n\nnyc_cd &lt;- st_read(\"data/nycd_25b/nycd.shp\")\n\nReading layer `nycd' from data source \n  `C:\\Users\\mario\\Documents\\jericholawson.github.io\\classes\\sds192\\s26\\lectures\\data\\nycd_25b\\nycd.shp' \n  using driver `ESRI Shapefile'\nSimple feature collection with 71 features and 3 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 913175.1 ymin: 120128.4 xmax: 1067383 ymax: 272844.3\nProjected CRS: NAD83 / New York Long Island (ftUS)"
+    "text": "Importing Shapefiles\n\nFunction st_read() from sf package used to read in shapefiles\n\n\n\n\n\n\nlibrary(sf)\nnyc_cd &lt;- st_read(\"data/nycd_25b/nycd.shp\")\n\nReading layer `nycd' from data source \n  `C:\\Users\\mario\\Documents\\jericholawson.github.io\\classes\\sds192\\s26\\lectures\\data\\nycd_25b\\nycd.shp' \n  using driver `ESRI Shapefile'\nSimple feature collection with 71 features and 3 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: 913175.1 ymin: 120128.4 xmax: 1067383 ymax: 272844.3\nProjected CRS: NAD83 / New York Long Island (ftUS)"
   },
   {
     "objectID": "lectures/w13l1_polygonMapping.html#importing-shapefiles-1",
@@ -5772,7 +5772,7 @@
     "href": "lectures/w13l1_polygonMapping.html#mapping-polygons-with-leaflet",
     "title": "Polygon Mapping",
     "section": "Mapping Polygons with Leaflet",
-    "text": "Mapping Polygons with Leaflet\n\nOutputCode\n\n\n\n\nWarning: package 'leaflet' was built under R version 4.4.3\n\n\n\n\n\n\n\n\n\nlibrary(leaflet)\nnyc_cd &lt;- nyc_cd |&gt;\n  st_transform(4326)\nleaflet(width = \"100%\") |&gt;\n  setView(lat = 40.7, lng = -74.0, zoom = 10) |&gt; \n  addProviderTiles(\"CartoDB.Positron\") |&gt;\n  addPolygons(data = nyc_cd)"
+    "text": "Mapping Polygons with Leaflet\n\nOutputCode\n\n\n\n\n\n\n\n\n\n\n\nlibrary(leaflet)\nnyc_cd &lt;- nyc_cd |&gt;\n  st_transform(4326)\nleaflet(width = \"100%\") |&gt;\n  setView(lat = 40.7, lng = -74.0, zoom = 10) |&gt; \n  addProviderTiles(\"CartoDB.Positron\") |&gt;\n  addPolygons(data = nyc_cd)"
   },
   {
     "objectID": "lectures/w13l1_polygonMapping.html#chloropleth-maps",
