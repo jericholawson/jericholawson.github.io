@@ -1,0 +1,225 @@
+---
+title: "Lab 10: Polygon Mapping in Leaflet (30 pts)"
+author: "PUT NAME HERE"
+format:
+  html:
+    code-fold: false
+execute: 
+  echo: true
+knitr:
+  opts_chunk: 
+    message: false
+editor: source
+---
+
+## Setting Up Your Environment
+
+1. Install the following packages in your Environment:
+
+-   `install.packages("devtools")`
+-   `install.packages("remotes")`
+-   `remotes::install_github("walkerke/tidycensus")`
+
+2. Create an API Key for accessing census data [here](https://api.census.gov/data/key_signup.html). The key will be emailed to you, and you must activate it with the link you receive in your email. **NOTE: It may take several minutes to activate.** If you click on the link in your email, and it doesn't work, try again in a bit. 
+
+3. Run the following code in your terminal to store the census API key in your environment. 
+
+```{r}
+#| eval: false
+library(tidycensus)
+census_api_key("[ADD KEY HERE]", overwrite = FALSE, install = TRUE)
+```
+
+4. Restart R. **Don't skip this step!!**
+
+5. Run the code below to load the packages for today's lab.
+
+```{r}
+#| document: show
+library(tidyverse)
+library(leaflet)
+library(sf)
+library(tigris)
+library(tidycensus)
+library(RColorBrewer)
+```
+
+## Questions
+
+::: {.callout-important} 
+###### Question 1 (2 pts)
+
+Read the help pages for `get_decennial()`. Load census data at the county level for `variable` 'P1_004N' (Total Population: Population of one race: Black or African American alone). You should set the `state` to 'LA', the `geometry` to `TRUE`, and the `summary_var` to 'P1_001N' (Total Population). We will eventually use these two tables to calculate the percentage of the population that identifies as Black on the census. 
+
+Repeat and edit the code to get the same data at the tract level.
+
+```{r}
+#| eval: false
+census_counties <- get_decennial(geography = ______,
+                                 variables = ______,
+                                 state = _____,
+                                 summary_var = _____,
+                                 geometry = _____)
+
+
+census_tracts <- get_decennial(_____)
+
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 2 (2 pts)
+
+In the code block below, transform the CRS of both `census_counties` and `census_tracts` to 4326 using `st_transform()`. 
+
+```{r}
+#| eval: false
+
+census_counties <- #Fill code here
+
+census_tracts <- #Fill code here
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 3 (2 pts)
+
+I've initialized a map of Louisiana for you below with our basic base tiles. Set the group for these tiles to "Minimal". Note that we will call `addProviderTiles()` to add a second set of base tiles. Set these base tiles to `providers$Esri.WorldImagery` and the group to "Satellite". Add the `addLayersControl()` function and set the base groups to the names of the two groups you just established. 
+
+Your map should match mine below.
+
+```{r}
+#| eval: false
+
+la_map <- leaflet(width = "100%") %>%
+  setView(lat = 30.5191, lng = -91.5209, zoom = 6) %>%
+  addProviderTiles(providers$CartoDB.Positron, group = ______) %>%
+  addProviderTiles(______, group = ______) %>%
+  _____(
+    baseGroups = c("_____","_____"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+
+la_map
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 4 (2 pts)
+
+Using a data wrangling verb, add a column to each census data frame that calculates the percentage of the population in each census county/tract that identifies as Black. To do so, you will need to divide the Black population stored in `value` by the total population `summary_value` and multiply by 100. 
+
+```{r}
+#| eval: false
+
+census_counties <- #Fill code here
+
+census_tracts <- #Fill code here
+  
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 5 (2 pts)
+
+Copy the palette and map that I created above, which colored counties by the total Black population. Adjust the code to color the counties by the variable you created to record the percent Black population. 
+
+```{r}
+#| eval: false
+
+pal_bin_census_county_perc <- #Create county palette here
+
+#Create county map here 
+  
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 6 (2 pts)
+
+Copy the palette and map that you created above. Create a second palette to color polygons by the percent Black population in census tracts. 
+
+Pipe a second `addPolygons()` function call and a second `addLegend()` function call onto your map. Copy arguments from the previous function calls and adjust them to color the polygons in this second call by the percent Black population in **census tracts**. 
+
+Finally, in change the `weight` of the **county** polygons to 2 so that we can differentiate the borders of our census counties from our census tracts. 
+
+```{r}
+
+# Copy the palette you created above for census counties here
+
+# Create palette for census tracts here
+
+# Copy the map you created above here and adjust according to the prompt
+
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 7 (4 pts)
+
+Copy the map that you created above into the code chunk below. Add a `group =` argument to each `addPolygons()` and `addLegend()` call; set the group for your county layers as "County" and the group for your tract layers as "Tract".
+
+Then pipe the `addLayersControl()` function onto your map. Within this function, set the `baseGroup = ` argument as we did above to `c("Minimal","Satellite")` so that we can toggle between basemaps. Then set the `overlayGroups =` argument to `c("County", "Tract")` so that we can toggle between overlay layers. Add `options = layersControlOptions(collapsed = FALSE)` so that the layer controls appear when we load the map. Add `position = "bottomleft"` so that the layer controls don't overlap with the legends. 
+
+Finally, pipe the function `hideGroup("Tract")` onto the end of your map. This will hide the "Tract" group when we load the map. 
+
+```{r}
+# Copy map here and adjust according to the prompt
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 8 (3 pts)
+
+Zoom in to the region along the Mississippi River between Baton Rouge and New Orleans. Then toggle the Tract layer on. Notice how there is a higher representation of Black residents residing along the Mississippi River compared to the rest of the counties. Below, explain how this is an example of the ecological fallacy.  
+
+:::
+
+::: {.callout-important} 
+###### Question 9 (4 pts)
+
+Copy the last map that you created above visualizing the percent Black population in LA counties and tracts. Then copy my code above to `addCircleMarkers()` for TRI facilities and `addLegend()` for TRI facilities. Pipe these functions onto your map after your `addPolygons()` function calls but before the `addLayersControl()` function call. 
+
+Set the `group = ` argument for the TRI circle markers and the TRI legend to "TRI". Then add "TRI" as an additional group in the `overlayGroups = ` argument in your `addLayersControl()` function. 
+
+```{r}
+# Copy map functions and adjust here
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 10 (4 pts)
+
+Copy the last map that you created above. At the beginning of your code right after calling `la_map`, pipe a `addMapPane()` function twice. In the first function call, set `name = ` argument to "circles" and the `zIndex = ` argument to 420. In the second function call, set `name = ` argument to "polygons" and the `zIndex = ` argument to 410. 
+
+Add the argument `options = pathOptions(pane = "polygons")` to both of your `addPolygons()` function calls, and add the argument `options = pathOptions(pane = "circles")` to your `addCircleMarkers()` function call. 
+
+Adjust your code to hide the "County" map by default.
+
+```{r}
+# Copy map here and adjust according to the prompt
+```
+
+:::
+
+::: {.callout-important} 
+###### Question 11 (3 pts)
+
+Zoom in to the region along the Mississippi River between Baton Rouge and New Orleans. Notice how there are at least a few census tracts along the Mississippi River where high-polluting industrial facilities are located, but there is a lower percentage Black population. Explain how the modifiable aerial unit problem may be at play here and why we should consider it in relation to pollution data. 
+
+:::
+
+::: callout-caution
+## Ethical Considerations
+
+For several years, the U.S. Environmental Protection Agency published a map called EJScreen. The map included layers for socioeconomic indicators like race, income, and age, along with layers for environmental indicators such as TRI releases, proximity to superfund sites, proximity to major traffic sources, and more. Users could also map layers for health disparities, such as cancer rates and asthma rates. It helped document how certain communities faced disproportionate environmental burdens across the country. On February 5, 2025, EJScreen was removed from the EPA's website, at the same time that the EPA was overhauling several diversity, equity, and inclusion (DEI) initiatives under the Trump administration. Luckily, the advocacy organization Public Environmental Data Partners (PEDP) archived a reconstructed version of the map and made it available [here](https://screening-tools.com/epa-ejscreen). This one example of several government data sources that have been suppressed for political reasons. Why do you think these data removals are happening? What are some of the consequences of removing or defunding public government data like this? What role should non-governmental organizations play in securing access to this data? Are there ever good political reasons to suppress public data, and who should be involved those decisions? Share your ideas on our `discussions` Slack channel.
+
+:::
