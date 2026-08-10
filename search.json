@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Jericho Lawson",
     "section": "",
-    "text": "jlawson01@smith.edu\n @jerichostats\n jericholawson\n\nI am currently a Lecturer at Smith College. My research interests include high-dimensional variable selection, sports statistics, and deep learning. I am committed to providing student-centric and engaging statistical education to all backgrounds, as seen in courses such as Introduction to Statistical Computing, Sampling Surveys, and Introduction to Statistics. My current research aims to pinpoint useful abstract features within images for image classification through the knockoffs framework, called ImgKnock."
+    "text": "jblawson@vassar.edu\n @jerichostats\n jericholawson\n\nI am currently a Visiting Assistant Professor at Vassar College. I have taught various statistics courses as a graduate student and lecturer, including Introduction to Statistical Modeling, Statistical Computing, Sampling Surveys, and Introduction to Data Science. My goal is for students to come out with a stronger foundational understanding of statistics, while also embracing the application and quirkiness of the field itself. While the field has paved the way for modern advances like automation and AI, it also grounds individuals with consistent process and inference, allowing us to identify traits of a population and solve problems.\n\nSeeing Theory: link\nSpurious Correlations: link\n\nMy research interests include high-dimensional variable selection, sports statistics, and deep learning. My current research aims to pinpoint useful abstract features within images for image classification through the knockoffs framework, called ImgKnock.\n\nDissertation! link\nDetecting Glaucoma? link"
   },
   {
     "objectID": "about.html",
@@ -67,7 +67,7 @@
     "href": "index.html#recent-news",
     "title": "Jericho Lawson",
     "section": "Recent News",
-    "text": "Recent News\nTBD"
+    "text": "Recent News\n\n06/2026: I will be heading to the Department of Mathematics and Statistics at Vassar College as a Visiting Assistant Professor for one year. I want to thank everyone, from students to colleagues, at Smith College who welcomed me in as I transitioned from my PhD program to the world of academia."
   },
   {
     "objectID": "index.html#for-fun",
@@ -95,7 +95,7 @@
     "href": "research.html#publications",
     "title": "Research",
     "section": "Publications",
-    "text": "Publications\nBouris E., Levya B.K., Odugbo O.P., Lawson J., Jin S., Fei Z., Morales E., Alkhalili O., Caprioli J. (2025). A Vision Transformer Model for the Detection of Early Glaucoma from Optic Disc Photographs. Under revision at Medical Image Analysis.\nLawson J., Fei Z. (2025). ImgKnock: Novel Knockoff Inference for Image Data via Latent Representation Learning. UC Riverside. Retrieved from https://escholarship.org/uc/item/77403004.\nLawson J., Watkins J. (2020). Legitimate or Unfair?: An Evaluation and Improvement of the College Football Playoff Using Logistic Regression and Adjacency Matrices. University of Arizona Campus Repository. Retrieved from: https://repository.arizona.edu/handle/10150/651357."
+    "text": "Publications\nBouris E., Levya B.K., Odugbo O.P., Lawson J., Jin S., Fei Z., Morales E., Alkhalili O., Caprioli J. (2026). A Vision Transformer Model for the Detection of Early Glaucoma from Optic Disc Photographs. Scientific Reports, 16, Article 14831. https://doi.org/10.1038/s41598-026-44662-7\nLawson J., Fei Z. (2025). ImgKnock: Novel Knockoff Inference for Image Data via Latent Representation Learning. UC Riverside. Retrieved from https://escholarship.org/uc/item/77403004.\nLawson J., Watkins J. (2020). Legitimate or Unfair?: An Evaluation and Improvement of the College Football Playoff Using Logistic Regression and Adjacency Matrices. University of Arizona Campus Repository. Retrieved from: https://repository.arizona.edu/handle/10150/651357."
   },
   {
     "objectID": "research.html#posters-and-talks",
@@ -144,7 +144,7 @@
     "href": "classes/classes.html#instructor-of-record",
     "title": "Classes",
     "section": "Instructor of Record",
-    "text": "Instructor of Record\n\nSmith College (2025 - )UC Riverside (2020 - 2025)\n\n\n\nSDS 192: Introduction to Data Science\n\nFall 2025 (x2), Spring 2026\n\nSDS 270: Programming for Data Science in R\n\nFall 2025, Spring 2026\n\n\n\n\n\nSTAT 011: Introduction to Statistical Modeling\n\nFall 2023, Spring 2024\n\nSTAT 107: Statistical Computing\n\nSummer 2023, Summer 2024\n\nSTAT 127: Quality Improvements\n\nWinter 2023, Winter 2024)\n\nSTAT 130: Sampling Surveys\n\nFall 2024\n\nSTAT 170: Regression Analysis\n\nSummer 2025"
+    "text": "Instructor of Record\n\nVassar College (2026 - present)Smith College (2025 - 2026)UC Riverside (2020 - 2025)\n\n\n\nMATH 240: Introduction to Statistics\n\nFall 2026\n\nMATH 241: Probability\n\nFall 2026 (x2)\n\n\n\n\n\nSDS 192: Introduction to Data Science\n\nFall 2025 (x2), Spring 2026\n\nSDS 270: Programming for Data Science in R\n\nFall 2025, Spring 2026\n\n\n\n\n\nSTAT 011: Introduction to Statistical Modeling\n\nFall 2023, Spring 2024\n\nSTAT 107: Statistical Computing\n\nSummer 2023, Summer 2024\n\nSTAT 127: Quality Improvements\n\nWinter 2023, Winter 2024)\n\nSTAT 130: Sampling Surveys\n\nFall 2024\n\nSTAT 170: Regression Analysis\n\nSummer 2025"
   },
   {
     "objectID": "classes/classes.html#teaching-assistant",
@@ -165,14 +165,14 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Non-tabular knockoffs variable selection\nSports analytics\nSignal and image processing\n\nMy primary research interests center around the methodology of knockoffs variable selection on non-tabular data, specifically involving images from many contexts. Under the guidance of Dr. Zhe Fei, my PhD work focused on vision-transformer masked-autoencoder (ViTMAE) models to generate latent representations of images that can be used in an FDR-controlled variable selection framework called knockoffs to identify binary outcomes. As an application, I explored how this framework can be used to identify patients who exhibit signs of glaucoma.\nCurrent research centers on embedding the framework under mathematical guarantees and extending it to other disciplines, like those seen in the medical and environmental fields."
+    "text": "Warning: package 'fs' was built under R version 4.4.3"
   },
   {
     "objectID": "research.html#research-interests",
     "href": "research.html#research-interests",
     "title": "Research",
-    "section": "",
-    "text": "Non-tabular knockoffs variable selection\nSports analytics\nSignal and image processing\n\nMy primary research interests center around the methodology of knockoffs variable selection on non-tabular data, specifically involving images from many contexts. Under the guidance of Dr. Zhe Fei, my PhD work focused on vision-transformer masked-autoencoder (ViTMAE) models to generate latent representations of images that can be used in an FDR-controlled variable selection framework called knockoffs to identify binary outcomes. As an application, I explored how this framework can be used to identify patients who exhibit signs of glaucoma.\nCurrent research centers on embedding the framework under mathematical guarantees and extending it to other disciplines, like those seen in the medical and environmental fields."
+    "section": "Research Interests",
+    "text": "Research Interests\n\nNon-tabular knockoffs variable selection\nSports analytics\nSignal and image processing\n\nMy primary research interests center around the methodology of knockoffs variable selection on non-tabular data, specifically involving images from many contexts. Under the guidance of Dr. Zhe Fei, my PhD work focused on vision-transformer masked-autoencoder (ViTMAE) models to generate latent representations of images that can be used in an FDR-controlled variable selection framework called knockoffs to identify binary outcomes. As an application, I explored how this framework can be used to identify patients who exhibit signs of glaucoma.\nCurrent research centers on embedding the framework under mathematical guarantees and extending it to other disciplines, like those seen in the medical and environmental fields."
   },
   {
     "objectID": "classes/sds192/s26/index.html",
@@ -397,5 +397,460 @@
     "title": "SDS 270: Programming for Data Science in R",
     "section": "Announcements",
     "text": "Announcements\nTBD"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_donotpublish.html",
+    "href": "classes/sds270/s26/sets/set4_donotpublish.html",
+    "title": "Set #4 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/30 at 11:59pm\n\nIf you turn it in before Saturday, 3/28, I will be able to provide feedback before the exam!"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_donotpublish.html#instructions",
+    "href": "classes/sds270/s26/sets/set4_donotpublish.html#instructions",
+    "title": "Set #4 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/30 at 11:59pm\n\nIf you turn it in before Saturday, 3/28, I will be able to provide feedback before the exam!"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_donotpublish.html#background",
+    "href": "classes/sds270/s26/sets/set4_donotpublish.html#background",
+    "title": "Set #4 (50 pts)",
+    "section": "Background",
+    "text": "Background\nThe fourth (and final) problem set will contain various problems related to the following:\n\nEnvironments (Ch. 7, AR)\nConditions (Ch. 8, AR)\nFunctionals (Ch. 9, AR)\nObject-Oriented Programming/S3 (Ch. 12-13, AR)\n\nOther topics we’ve discussed earlier in the semester may show up in these problems. Make sure to carefully read and follow directions for each problem.\nPlace any needed libraries below:\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_donotpublish.html#q1-mean-75-pts",
+    "href": "classes/sds270/s26/sets/set4_donotpublish.html#q1-mean-75-pts",
+    "title": "Set #4 (50 pts)",
+    "section": "Q1: Mean (75 pts)",
+    "text": "Q1: Mean (75 pts)\nWhen we use the mean() function, this is based on the formula for the arithmetic mean. Say we want to create an alternative mean() function that uses the formula for the harmonic mean.\nThe harmonic mean can be defined as:\n\\(\\frac{n}{\\sum_i \\frac{1}{x_i}}\\),\nwhere \\(n\\) is the number of observations and \\(x_i\\) is an observation at some index \\(i\\). Parts of this question will relate to the deployment of this harmonic mean.\n\n(a) (10 pts) Define a new mean() function in your global environment that uses the harmonic mean formula given some input x.\n\nmean &lt;- function(x){\n  length(x) / sum(1 / x)\n}\n\n\n\n(b) (10 pts) Run base R’s mean() function and your created mean() function on the mpg column of the mtcars dataset.\n\nmean(mtcars$mpg)\n\n[1] 18.44092\n\nbase::mean(mtcars$mpg)\n\n[1] 20.09062\n\n\n\n\n(c) (18 pts) Implement an instance of each of the three types of conditions in your new mean() function. Then, test out the revised function on three different inputs, with each input triggering each type of condition.\n\nmean &lt;- function(x){\n  if (typeof(x) != \"logical\" & typeof(x) != \"double\"){\n    stop(\"Invalid type.\")\n  }\n  \n  if (typeof(x) == \"logical\"){\n    warning(\"Not recommended for use on logical type.\")\n  }\n  \n  message(\"Number of observations: \", length(x))\n  length(x) / sum(1 / x)\n}\n\n\nmean(c(\"This\", \"will\", \"not\", \"work\"))\n\nError in `mean()`:\n! Invalid type.\n\nmean(c(T, F, F, F, T))\n\nWarning in mean(c(T, F, F, F, T)): Not recommended for use on logical type.\n\n\nNumber of observations: 5\n\n\n[1] 0\n\nmean(mtcars$mpg)\n\nNumber of observations: 32\n\n\n[1] 18.44092\n\n\n\n\n(d) (10 pts) Use a functional to get the harmonic mean of each variable in the mtcars dataset, returning an appropriate data structure.\n\nmap_dbl(mtcars, mean)\n\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\nNumber of observations: 32\n\n\n       mpg        cyl       disp         hp       drat         wt       qsec \n 18.440917   5.647059 166.799389 118.228892   3.520704   2.918263  17.678200 \n        vs         am       gear       carb \n  0.000000   0.000000   3.555556   2.026385 \n\n\n\n\n(e) (15 pts) In your own words, discuss the role of the search path in R in 2-3 sentences.\n\n#- Result of lexical scoping\n#- When running an object/function:\n#  - Finds item in global environment first, then within each of the packages, followed by base\n#  - Within the package: finds within namespace, then imports\n\n\n\n(f) (12 pts) Describe a way to implement the harmonic mean as part of base R’s mean() function.\n\n#- Use as a method for a class\n#- Can implement a new argument to access this harmonic mean"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_donotpublish.html#q2-simple-linear-regression-75-pts",
+    "href": "classes/sds270/s26/sets/set4_donotpublish.html#q2-simple-linear-regression-75-pts",
+    "title": "Set #4 (50 pts)",
+    "section": "Q2: Simple Linear Regression (75 pts)",
+    "text": "Q2: Simple Linear Regression (75 pts)\nIn this question, we want to determine operations and characteristics of a new class of data, which focuses on a data frame with exactly two double columns, which we will define as slr.\nFor an object to be of an slr class, it must:\n\nHave exactly two columns, both of which are double atomic vectors\nBe a child class of the data.frame class\nThe first column is representing the “response” or y, while the second column is the “predictor” or x\n\nSLR is referring to simple linear regression, where we will want to use the variable denoted as x to explain any variation in the variable denoted as y. We will want to create a few items that will allow users to easily create an object of this class and run operations on this object.\nThe parts below will reference this slr class.\n\n(a) (20 pts) Create a helper and constructor for the slr class, incorporating the restrictions specified in the introduction of this question. The user must input atomic vectors x and y that are of a double, integer, or logical type.\n\nnew_slr &lt;- function(x){\n  stopifnot(is.data.frame(x))\n  stopifnot(ncol(x) == 2)\n  return(structure(x, class = c(\"slr\", class(x))))\n}\n\nslr &lt;- function(x, y){\n  if (!(typeof(x) %in% c(\"double\", \"integer\", \"logical\")) | \n      !(typeof(y) %in% c(\"double\", \"integer\", \"logical\"))){\n    stop(\"x and/or y is not of a double, integer, or logical type.\")\n  }\n  x &lt;- as.double(x)\n  y &lt;- as.double(y)\n  newObj &lt;- data.frame(y = y, x = x)\n  x &lt;- new_slr(newObj)\n  return(x)\n}\n\n\n\n(b) (10 pts) Create an object of the slr class using the helper created in part (a) on any two columns you choose from the mtcars dataset.\n\ndata &lt;- slr(mtcars$hp, mtcars$mpg)\n\n\n\n(c) (15 pts) Create functions for the estimates method, which should handle input from the slr class as well as an input of any other class. The class-specific method will take in a data input and will return the least-squares estimates of fitting x to y.\nUse the formulas below to return those estimates:\n\n\\(\\beta_1 = \\frac{s_{xy}}{s_x}\\), where \\(s\\) refers to the standard deviation\n\nUse cov() for \\(s_{xy}\\)\n\n\\(\\beta_0 = \\bar{y} - \\beta_1 \\bar{x}\\), where \\(\\bar{y}\\) and \\(\\bar{x}\\) refer to the means of \\(x\\) and \\(y\\) respectively\n\n\nestimates &lt;- function(data, ...){\n  UseMethod(\"estimates\")\n}\n\nestimates.slr &lt;- function(data, ...){\n  beta1 &lt;- cov(data$y, data$x) / sd(data$x)\n  beta0 &lt;- mean(data$y) - beta1 * mean(data$x)\n  return(c(m = beta1, b = beta0))\n} \n\nestimates.default &lt;- function(data, ...){\n  message(\"Method not defined for object of class: \", class(data))\n}\n\n\nestimates(mtcars)\n\nMethod not defined for object of class: data.frame\n\nestimates(data)\n\nNumber of observations: 32\n\n\nNumber of observations: 32\n\n\n         m          b \n -4.677926 571.506976 \n\n\n\n\n(d) (15 pts) Create a summary method for the slr class that refers to output from summary methods of parent classes. This summary method will display the least-squares estimates.\n\nsummary.slr &lt;- function(data, ...){\n  print(estimates(data))\n  NextMethod()\n}\n\nsummary(data)\n\nNumber of observations: 32\nNumber of observations: 32\n\n\n         m          b \n -4.677926 571.506976 \n\n\n       y               x        \n Min.   :10.40   Min.   : 52.0  \n 1st Qu.:15.43   1st Qu.: 96.5  \n Median :19.20   Median :123.0  \n Mean   :20.09   Mean   :146.7  \n 3rd Qu.:22.80   3rd Qu.:180.0  \n Max.   :33.90   Max.   :335.0  \n\n\n\n\n(e) (15 pts) Compare the roles of an environmemt and a class in R in 2-3 sentences.\n\n#- Environment: Used to structure where objects are and how they can be referenced\n#- Class: develop methods, attributes, etc for external facing object"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_donotpublish.html#turn-in",
+    "href": "classes/sds270/s26/sets/set4_donotpublish.html#turn-in",
+    "title": "Set #4 (50 pts)",
+    "section": "Turn-In",
+    "text": "Turn-In\nWhen finished, commit and push this file to your SDS 270 repository."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l1_actTemp.html",
+    "href": "classes/sds270/s26/lectures/w7l1_actTemp.html",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "",
+    "text": "In these exercises, we will learn how to handle conditions.\nGoal: By the end of this lab, you should be able to handle an error and return from it gracefully.\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l1_actTemp.html#introduction",
+    "href": "classes/sds270/s26/lectures/w7l1_actTemp.html#introduction",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "",
+    "text": "In these exercises, we will learn how to handle conditions.\nGoal: By the end of this lab, you should be able to handle an error and return from it gracefully.\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l1_actTemp.html#three-types-of-conditions",
+    "href": "classes/sds270/s26/lectures/w7l1_actTemp.html#three-types-of-conditions",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Three types of conditions",
+    "text": "Three types of conditions\nRecall that there are three main types of conditions in R:\n\nerror: will terminate the function immediately and throw an error\nwarning: will continue to execute the function, but will warn you about what happened afterwards\nmessage: will immediately display a message about what is happening.\n\nThe following function will compute the number of unique values in whatever columns in a data frame you select. The first argument is the data frame, and the second argument is the dots, which are simply passed to select().\nNote that this function may display a message, a warning(), or an error depending on what happens.\n\nunique_values &lt;- function(.data, ...) {\n  x &lt;- .data |&gt;\n    select(...)\n  \n  if (ncol(x) == ncol(.data)) {\n    warning(\"All columns selected!\")\n  }\n  \n  if (ncol(x) &lt; 1) {\n    stop(\"No columns selected.\")\n  }\n\n  message(paste(\"Computing on\", ncol(x), \"columns...\"))  \n  map_int(x, n_distinct)\n}\n\n\n\n\n\n\n\nImportantQ1\n\n\n\nExamine the code for unique_values() carefully. Explain how the function works.\nPUT SOLUTION HERE\n\n\nIf we give this function no valid selection, we will throw an error.\n\nunique_values(starwars)\n\nError in `unique_values()`:\n! No columns selected.\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nWas the error in the previous example thrown by unique_values() or by select()? How do you know?\nPUT SOLUTION HERE\n\n\nIf we select all of the columns in the data frame, then we get a warning. However, the code still executes.\n\nunique_values(starwars, everything())\n\nWarning in unique_values(starwars, everything()): All columns selected!\n\n\nComputing on 14 columns...\n\n\n      name     height       mass hair_color skin_color  eye_color birth_year \n        87         46         39         12         31         15         37 \n       sex     gender  homeworld    species      films   vehicles  starships \n         5          3         49         38         24         11         16 \n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nWhy does the warning message show up before the results? Why does the warning message show up before the message?\nPUT SOLUTION HERE\n\n\nSince unique_values() passes the dots to select(), we can leverage all of the functionality of the select helpers!\n\nunique_values(starwars, contains(\"n\"))\n\nComputing on 3 columns...\n\n\n      name skin_color     gender \n        87         31          3 \n\n\nHowever, if we pass garbage to select(), then of course select() will still throw an error.\n\nunique_values(starwars, i_love_r)\n\nError in `select()`:\n! Can't select columns that don't exist.\n✖ Column `i_love_r` doesn't exist.\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nConsider the difference in the output between the previous example and unique_values(starwars). What is different?\nPUT SOLUTION HERE"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l1_actTemp.html#catching-errors",
+    "href": "classes/sds270/s26/lectures/w7l1_actTemp.html#catching-errors",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Catching errors",
+    "text": "Catching errors\nInstead of just failing whenever the user passes bad arguments to select(), we might want to catch those errors and do something with them. Here, we use a tryCatch() statement to provide some additional information about what went wrong, and to continue with the original data frame if the select() statement failed.\n\nunique_values_safe &lt;- function(.data, ...) {\n  x &lt;- tryCatch(\n    error = function(cnd) {\n      warning(\"Attempt to select column has failed\")\n      message(\"Here is what we know about the error\")\n      str(cnd)\n      .data\n    },\n    .data |&gt;\n      select(...)\n  )\n  \n  if (ncol(x) == ncol(.data)) {\n    warning(\"All columns selected!\")\n  }\n  \n  if (ncol(x) &lt; 1) {\n    stop(\"No columns selected.\")\n  }\n\n  message(paste(\"Computing on\", ncol(x), \"columns...\"))  \n  map_int(x, n_distinct)\n}\n\nNow, even though an error still occurs, we still get output.\n\nunique_values_safe(starwars, i_love_r)\n\nWarning in value[[3L]](cond): Attempt to select column has failed\n\n\nHere is what we know about the error\n\n\nList of 11\n $ message         : chr \"\"\n $ trace           :Classes 'rlang_trace', 'rlib_trace', 'tbl' and 'data.frame':    24 obs. of  6 variables:\n  ..$ call       :List of 24\n  .. ..$ : language unique_values_safe(starwars, i_love_r)\n  .. ..$ : language tryCatch(error = function(cnd) {     warning(\"Attempt to select column has failed\") ...\n  .. ..$ : language tryCatchList(expr, classes, parentenv, handlers)\n  .. ..$ : language tryCatchOne(expr, names, parentenv, handlers[[1L]])\n  .. ..$ : language doTryCatch(return(expr), name, parentenv, handler)\n  .. ..$ : language select(.data, ...)\n  .. ..$ : language select.data.frame(.data, ...)\n  .. ..$ : language tidyselect::eval_select(expr(c(...)), data = .data, error_call = error_call)\n  .. ..$ : language eval_select_impl(data, names(data), as_quosure(expr, env), include = include,      exclude = exclude, strict = st| __truncated__ ...\n  .. ..$ : language with_subscript_errors(out &lt;- vars_select_eval(vars, expr, strict = strict,      data = x, name_spec = name_spec, | __truncated__ ...\n  .. ..$ : language withCallingHandlers(expr, vctrs_error_subscript = function(cnd) {     cnd$subscript_action &lt;- subscript_action(type) ...\n  .. ..$ : language vars_select_eval(vars, expr, strict = strict, data = x, name_spec = name_spec,      uniquely_named = uniquely_nam| __truncated__ ...\n  .. ..$ : language walk_data_tree(expr, data_mask, context_mask)\n  .. ..$ : language eval_c(expr, data_mask, context_mask)\n  .. ..$ : language reduce_sels(node, data_mask, context_mask, init = init)\n  .. ..$ : language walk_data_tree(new, data_mask, context_mask)\n  .. ..$ : language as_indices_sel_impl(out, vars = vars, strict = strict, data = data, allow_predicates = allow_predicates,      cal| __truncated__\n  .. ..$ : language as_indices_impl(x, vars, call = call, arg = arg, strict = strict)\n  .. ..$ : language chr_as_locations(x, vars, call = call, arg = arg)\n  .. ..$ : language vctrs::vec_as_location(x, n = length(vars), names = vars, call = call,      arg = arg)\n  .. ..$ : language `&lt;fn&gt;`()\n  .. ..$ : language stop_subscript_oob(i = i, subscript_type = subscript_type, names = names,      subscript_action = subscript_actio| __truncated__ ...\n  .. ..$ : language stop_subscript(class = \"vctrs_error_subscript_oob\", i = i, subscript_type = subscript_type,      ..., call = call)\n  .. ..$ : language abort(class = c(class, \"vctrs_error_subscript\"), i = i, ..., call = call)\n  ..$ parent     : int [1:24] 0 1 2 3 4 1 1 7 8 9 ...\n  ..$ visible    : logi [1:24] TRUE TRUE TRUE TRUE TRUE TRUE ...\n  ..$ namespace  : chr [1:24] NA \"base\" \"base\" \"base\" ...\n  ..$ scope      : chr [1:24] \"global\" \"::\" \"local\" \"local\" ...\n  ..$ error_frame: logi [1:24] FALSE FALSE FALSE FALSE FALSE FALSE ...\n  ..- attr(*, \"version\")= int 2\n $ parent          : NULL\n $ i               : chr \"i_love_r\"\n $ subscript_type  : chr \"character\"\n $ names           : chr [1:14] \"name\" \"height\" \"mass\" \"hair_color\" ...\n $ subscript_action: chr \"select\"\n $ subscript_arg   : chr \"i_love_r\"\n $ rlang           :List of 1\n  ..$ inherit: logi TRUE\n $ call            : language select(.data, ...)\n $ subscript_elt   : chr \"column\"\n - attr(*, \"class\")= chr [1:5] \"vctrs_error_subscript_oob\" \"vctrs_error_subscript\" \"rlang_error\" \"error\" ...\n\n\nWarning in unique_values_safe(starwars, i_love_r): All columns selected!\n\n\nComputing on 14 columns...\n\n\n      name     height       mass hair_color skin_color  eye_color birth_year \n        87         46         39         12         31         15         37 \n       sex     gender  homeworld    species      films   vehicles  starships \n         5          3         49         38         24         11         16 \n\n\nWhether this output is sensible is an open question for the developer. In this case I think it is probably not sensible.\n\n\n\n\n\n\nImportantQ5\n\n\n\nWhy might it be a better idea to fail with an error in the previous example instead of continuing with the full data frame?\nPUT SOLUTION HERE"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l1_actTemp.html#turn-in",
+    "href": "classes/sds270/s26/lectures/w7l1_actTemp.html#turn-in",
+    "title": "Exercises from Week 7, Lecture 1: Conditions",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w5l1_actTemp.html",
+    "href": "classes/sds270/s26/lectures/w5l1_actTemp.html",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "",
+    "text": "We will utilize CO2 concentration data from Mauna Loa between 1959-1997. More information about the dataset can be found by using ?co2. Run the following code below to create a data frame with that co2 data:\n\nlibrary(purrr)\nco2_df &lt;- as.data.frame(matrix(co2, nrow = 39, ncol = 12, byrow = T))\nrownames(co2_df) &lt;- 1959:1997\ncolnames(co2_df) &lt;- c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n                   \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\")\n\nWith this data frame, we will find out how we can use the various map() functions to complete particular analytical tasks.\n\n\n\n\n\n\nImportantQ1\n\n\n\nUsing the co2_df dataset, subset the data into two different datasets, with the following specifications:\n\nco2_60s: Data from 1960-1969\nco2_70s: Data from 1970-1979\n\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nGenerate a summary of every single month (column) from the co2_60s data.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nCreate a function that takes the mean of the difference of two atomic vectors (as inputs x, y) and returns this mean. Then, use one of the map() functions to apply the created function on the co2_60s and co2_70smonths.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nFind the minimum monthly CO2 level across the years in the co2_60s data.\n\n# PUT SOLUTION HERE"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w5l1_actTemp.html#introduction",
+    "href": "classes/sds270/s26/lectures/w5l1_actTemp.html#introduction",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "",
+    "text": "We will utilize CO2 concentration data from Mauna Loa between 1959-1997. More information about the dataset can be found by using ?co2. Run the following code below to create a data frame with that co2 data:\n\nlibrary(purrr)\nco2_df &lt;- as.data.frame(matrix(co2, nrow = 39, ncol = 12, byrow = T))\nrownames(co2_df) &lt;- 1959:1997\ncolnames(co2_df) &lt;- c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n                   \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\")\n\nWith this data frame, we will find out how we can use the various map() functions to complete particular analytical tasks.\n\n\n\n\n\n\nImportantQ1\n\n\n\nUsing the co2_df dataset, subset the data into two different datasets, with the following specifications:\n\nco2_60s: Data from 1960-1969\nco2_70s: Data from 1970-1979\n\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nGenerate a summary of every single month (column) from the co2_60s data.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nCreate a function that takes the mean of the difference of two atomic vectors (as inputs x, y) and returns this mean. Then, use one of the map() functions to apply the created function on the co2_60s and co2_70smonths.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nFind the minimum monthly CO2 level across the years in the co2_60s data.\n\n# PUT SOLUTION HERE"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w5l1_actTemp.html#turn-in",
+    "href": "classes/sds270/s26/lectures/w5l1_actTemp.html#turn-in",
+    "title": "Exercises from Week 5, Lecture 1: Functionals - map()",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w2l2_actTemp.html",
+    "href": "classes/sds270/s26/lectures/w2l2_actTemp.html",
+    "title": "Exercises from Week 2, Lecture 2: Subsetting",
+    "section": "",
+    "text": "In these exercises, we will be working with starwars tibble to learn how to subset in various manners.\nBy the end of this lab, you will be able to:\n\nsubset a data frame and tibble based on positive, negative, logical, and character indexing\napply the filter and select functions via dplyr\n\nLoad in the following libraries below to work on this lab: tidyverse\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nYou will create a separate .qmd file and complete the following exercises that will then be committed and pushed in your SDS 270 repository."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w2l2_actTemp.html#introduction",
+    "href": "classes/sds270/s26/lectures/w2l2_actTemp.html#introduction",
+    "title": "Exercises from Week 2, Lecture 2: Subsetting",
+    "section": "",
+    "text": "In these exercises, we will be working with starwars tibble to learn how to subset in various manners.\nBy the end of this lab, you will be able to:\n\nsubset a data frame and tibble based on positive, negative, logical, and character indexing\napply the filter and select functions via dplyr\n\nLoad in the following libraries below to work on this lab: tidyverse\n\nlibrary(tidyverse)\n\nWarning: package 'ggplot2' was built under R version 4.4.3\n\n\nWarning: package 'tidyr' was built under R version 4.4.3\n\n\nWarning: package 'purrr' was built under R version 4.4.3\n\n\nWarning: package 'stringr' was built under R version 4.4.3\n\n\nWarning: package 'lubridate' was built under R version 4.4.3\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\nYou will create a separate .qmd file and complete the following exercises that will then be committed and pushed in your SDS 270 repository."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w2l2_actTemp.html#exercises",
+    "href": "classes/sds270/s26/lectures/w2l2_actTemp.html#exercises",
+    "title": "Exercises from Week 2, Lecture 2: Subsetting",
+    "section": "Exercises",
+    "text": "Exercises\nFor these exercises, you will be working exclusively with the starwars tibble. Answer the following questions below:\n\n\n\n\n\n\nImportantQ1\n\n\n\nUsing a dplyr function, construct a tibble from starwars that only contains characters with blue eyes.\n\n# Do not alter code right above.\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nUsing a dplyr function, construct a tibble from starwars that only contains characters with blue eyes and a height below 100 cm. Then, display only the names of these characters.\n\n# Do not alter code right above.\n\n\n\n\nBase R Subsetting vs. dplyr() functions\nIn many applications, you will find R users that subset through the [], [[]], $ symbols, but unless we know the type and functionality associated with the type, we will run across some errors.\nThe next few exercises will showcase this. You will use the following objects in the next 3 exercises.\n\nnum &lt;- 5\nvar &lt;- \"skin_color\"\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nUsing starwars, access the 5th column using the num object within the [[]], [] and $ operators. What do you notice?\n\n# Do not alter code right above.\n\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nUsing starwars, access the 5th column using the var object within the [[]], [] and $ operators. What do you notice?\n\n# Do not alter code right above.\n\n\n\n\n\n\n\n\n\nImportantQ5\n\n\n\nUsing starwars, access the 5th column by name with one of the dplyr functions. What do you notice?\n\n# Do not alter code right above.\n\n\n\n\n\nList-columns: nest() and unnest()\nWe now look into list-columns, which are columns in which each element is composed of a list. When we think of a vector, most of the time we see a single value that is stored in an element. A list-column changes this. That value is now a list, which can be of any length we desire.\nList-columns can be expanded by unnest(). This has the effect of lengthening the data frame (sort of like an accordion). Each row is duplicated for each unique value of each entry in the list-column.\nThe nest() function performs the opposite operation of “rolling up” the data frame to create a new list-column. We did this in the intro of list-columns.\n\n\n\n\n\n\nImportantQ6\n\n\n\nNow using the starwars tibble, experiment with list-columns by expanding and contracting the other list-columns in the storms data frame.\n\n\n\n\nMapping over list columns\nSuppose now we want to add the numbers of films for each character to the starwars data set. A simple mutate() like this will not throw an error, but also won’t do what we want.\n\noops &lt;- starwars |&gt;\n  mutate(num_films = length(films)) |&gt;\n  arrange(desc(num_films)) |&gt;\n  select(name, num_films)\noops\n\n# A tibble: 87 × 2\n   name               num_films\n   &lt;chr&gt;                  &lt;int&gt;\n 1 Luke Skywalker            87\n 2 C-3PO                     87\n 3 R2-D2                     87\n 4 Darth Vader               87\n 5 Leia Organa               87\n 6 Owen Lars                 87\n 7 Beru Whitesun Lars        87\n 8 R5-D4                     87\n 9 Biggs Darklighter         87\n10 Obi-Wan Kenobi            87\n# ℹ 77 more rows\n\n\nThis just made all of the entries equal to length(films).\n\nall(oops$num_films == length(starwars$films))\n\n[1] TRUE\n\n\nTo get this right, we need to map() inside our mutate().\n\nstarwars |&gt;\n  mutate(num_films_actual = map_int(films, length)) |&gt;\n  arrange(desc(num_films_actual)) |&gt;\n  select(name, num_films_actual, films)\n\n# A tibble: 87 × 3\n   name           num_films_actual films    \n   &lt;chr&gt;                     &lt;int&gt; &lt;list&gt;   \n 1 R2-D2                         7 &lt;chr [7]&gt;\n 2 C-3PO                         6 &lt;chr [6]&gt;\n 3 Obi-Wan Kenobi                6 &lt;chr [6]&gt;\n 4 Luke Skywalker                5 &lt;chr [5]&gt;\n 5 Leia Organa                   5 &lt;chr [5]&gt;\n 6 Chewbacca                     5 &lt;chr [5]&gt;\n 7 Yoda                          5 &lt;chr [5]&gt;\n 8 Palpatine                     5 &lt;chr [5]&gt;\n 9 Darth Vader                   4 &lt;chr [4]&gt;\n10 Han Solo                      4 &lt;chr [4]&gt;\n# ℹ 77 more rows"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w3l1_code.html",
+    "href": "classes/sds192/s26/lectures/w3l1_code.html",
+    "title": "Week 3, Lecture 1",
+    "section": "",
+    "text": "mtcars\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\nwhich(mtcars$mpg &lt; 15) # positive\n\n[1]  7 15 16 17 24\n\n-which(mtcars$mpg &lt; 15) # negative\n\n[1]  -7 -15 -16 -17 -24\n\nmtcars$mpg &lt; 15 # logical\n\n [1] FALSE FALSE FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE\n[13] FALSE FALSE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE  TRUE\n[25] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE\n\nmtcars[mtcars$mpg &lt; 15, ]\n\n                     mpg cyl disp  hp drat    wt  qsec vs am gear carb\nDuster 360          14.3   8  360 245 3.21 3.570 15.84  0  0    3    4\nCadillac Fleetwood  10.4   8  472 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8  460 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8  440 230 3.23 5.345 17.42  0  0    3    4\nCamaro Z28          13.3   8  350 245 3.73 3.840 15.41  0  0    3    4"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html",
+    "title": "APIs",
+    "section": "",
+    "text": "Mapping geographic boundaries\nImporting and mapping shapefiles\nChloropleth maps\nProject time"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#last-time",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#last-time",
+    "title": "APIs",
+    "section": "",
+    "text": "Mapping geographic boundaries\nImporting and mapping shapefiles\nChloropleth maps\nProject time"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#today",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#today",
+    "title": "APIs",
+    "section": "Today",
+    "text": "Today\n\nAPIs\nReview"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#api-application-programming-interface",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#api-application-programming-interface",
+    "title": "APIs",
+    "section": "API (Application Programming Interface)",
+    "text": "API (Application Programming Interface)\n\nAllows programmers or other systems (or users) to communicate with an online data service\nClients (other programmers) expose part of the data service they’ve used to construct their databases\n\nThis is called an endpoint\nClients also publish documentation about how to communicate with the endpoint\n\nUsers build URLs or HTTP services to request computer-readable data from the endpoint"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#http-and-get-requests",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#http-and-get-requests",
+    "title": "APIs",
+    "section": "HTTP and GET Requests",
+    "text": "HTTP and GET Requests\n\nHypertext Transfer Protocol (HTTP) is what enables communication between servers hosting web pages and browsers\nGET requests enable us to access a resource from a server (only receives data; doesn’t change it on the server)\nEntering https://smith.edu into a browser issues a GET request to access the home page of the Smith website"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#response-codes",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#response-codes",
+    "title": "APIs",
+    "section": "Response Codes",
+    "text": "Response Codes\n\n\n\n200: Success!\n403: Forbidden\n404: Not Found\n500: Internal Server Error\n502: Bad Gateway\n\n\n\n\nhttps://learn.onemonth.com/what-is-a-404-page/"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#api-calls",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#api-calls",
+    "title": "APIs",
+    "section": "API Calls",
+    "text": "API Calls\n\n\n\nSends an HTTP request URI for a certain resource to a server\n\nURI includes parameters about what data we wish receive and in what format (e.g. all colleges in MA in the format CSV)\n\nServers send that information back via HTTP via response"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#api-keys",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#api-keys",
+    "title": "APIs",
+    "section": "API Keys",
+    "text": "API Keys\n\nMany services require you to request and reference an API key before accessing data from their API\nAllows systems to track abuse of the service and sometimes limit requests\nUsually free\nAPI key gets included in call"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#motivating-example-nyc-311-service-requests",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#motivating-example-nyc-311-service-requests",
+    "title": "APIs",
+    "section": "Motivating Example: NYC 311 Service Requests",
+    "text": "Motivating Example: NYC 311 Service Requests"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#constructing-a-query",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#constructing-a-query",
+    "title": "APIs",
+    "section": "Constructing a Query",
+    "text": "Constructing a Query\nBase URL is the API Endpoint: https://data.cityofnewyork.us/resource/erm2-nwe9.csv"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#basic-filtering",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#basic-filtering",
+    "title": "APIs",
+    "section": "Basic Filtering",
+    "text": "Basic Filtering\nhttps://data.cityofnewyork.us/resource/erm2-nwe9.csv\n\nFilters appended after a ?\nMultiple filters combined with &\n$limit= limits the number of rows downloaded to a certain number\n\nhttps://data.cityofnewyork.us/resource/erm2-nwe9.csv?unique_key=10693408\nhttps://data.cityofnewyork.us/resource/erm2-nwe9.json?complaint_type=Obstruction&$limit=100"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#api-documentation",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#api-documentation",
+    "title": "APIs",
+    "section": "API Documentation",
+    "text": "API Documentation\n\nIndicates how to sign up for an API key\nIndicates possible output formats (e.g. CSV, JSON, XML, etc.)\nLists field names and descriptions\nProvides example API calls\nOutlines error messages and solutions\n\n\nhttps://dev.socrata.com/foundry/data.cityofnewyork.us/erm2-nwe9"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#spaces-and-special-characters",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#spaces-and-special-characters",
+    "title": "APIs",
+    "section": "Spaces and Special Characters",
+    "text": "Spaces and Special Characters\nInternet protocols don’t know how to interpret spaces or other special characters (i.e. non-ASCII), so we replace those characters with special codes that they do recognize:\n\n\n\nspace : %20\n!: %21\n\": %22\n\n\n\n%: %25\n': %27\n-: %2D\n\n\n\nThere are many resources online for identifying these."
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#example-request-with-special-characters",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#example-request-with-special-characters",
+    "title": "APIs",
+    "section": "Example Request with Special Characters",
+    "text": "Example Request with Special Characters\nhttps://data.cityofnewyork.us/resource/erm2-nwe9.csv?complaint_type=Noise%20%2D%20Commercial&$limit=200"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#reading-api-output-into-r",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#reading-api-output-into-r",
+    "title": "APIs",
+    "section": "Reading API Output into R",
+    "text": "Reading API Output into R\n\nWhen API data can be output as a CSV, the URL can be provided directly into read_csv()\n\n\nlibrary(readr)\nnyc_recent_noise &lt;- read_csv(\"https://data.cityofnewyork.us/resource/erm2-nwe9.csv?complaint_type=Noise%20%2D%20Commercial&$limit=200\")\nhead(nyc_recent_noise)\n\n# A tibble: 6 × 44\n  unique_key created_date        closed_date         agency agency_name         \n       &lt;dbl&gt; &lt;dttm&gt;              &lt;dttm&gt;              &lt;chr&gt;  &lt;chr&gt;               \n1   69997483 2026-08-09 02:05:52 NA                  NYPD   New York City Polic…\n2   69996151 2026-08-09 02:01:55 NA                  NYPD   New York City Polic…\n3   69998130 2026-08-09 01:57:36 NA                  NYPD   New York City Polic…\n4   70002833 2026-08-09 01:54:08 2026-08-09 02:00:11 NYPD   New York City Polic…\n5   69998773 2026-08-09 01:52:00 NA                  NYPD   New York City Polic…\n6   70003348 2026-08-09 01:50:19 NA                  NYPD   New York City Polic…\n# ℹ 39 more variables: complaint_type &lt;chr&gt;, descriptor &lt;chr&gt;,\n#   descriptor_2 &lt;lgl&gt;, location_type &lt;chr&gt;, incident_zip &lt;dbl&gt;,\n#   incident_address &lt;chr&gt;, street_name &lt;chr&gt;, cross_street_1 &lt;chr&gt;,\n#   cross_street_2 &lt;chr&gt;, intersection_street_1 &lt;chr&gt;,\n#   intersection_street_2 &lt;chr&gt;, address_type &lt;chr&gt;, city &lt;chr&gt;,\n#   landmark &lt;chr&gt;, facility_type &lt;lgl&gt;, status &lt;chr&gt;, due_date &lt;lgl&gt;,\n#   resolution_description &lt;chr&gt;, resolution_action_updated_date &lt;dttm&gt;, …"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#what-is-a-relational-database",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#what-is-a-relational-database",
+    "title": "APIs",
+    "section": "What is a relational database?",
+    "text": "What is a relational database?\n\nSeries of tables (or rectangular datasets!)\nEvery table has an ID field for each unit of observation (row)\nIDs are referenced to map relations across related tables\nAccess data from individual tables or across multiple tables with Structured Query Language (SQL)"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#dplyr-vs.-sql",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#dplyr-vs.-sql",
+    "title": "APIs",
+    "section": "dplyr vs. SQL",
+    "text": "dplyr vs. SQL\n\n\n\nselect()\nfilter()\ngroup_by()\narrange()\nhead()\n\n\n\nSELECT\nWHERE\nGROUP BY\nORDER BY\nLIMIT"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#sql-in-apis",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#sql-in-apis",
+    "title": "APIs",
+    "section": "SQL in APIs",
+    "text": "SQL in APIs\n\nDifferent flavors of SQL can be written in the URLs constructed for API calls\nSocrata’s API provides functionality for the Socrata Query Language (SoQL) - a flavor of SQL"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#soql",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#soql",
+    "title": "APIs",
+    "section": "SoQL",
+    "text": "SoQL"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#soql-example-1",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#soql-example-1",
+    "title": "APIs",
+    "section": "SoQL Example 1",
+    "text": "SoQL Example 1\n\ndplyrSQLSoQL\n\n\n\ndf |&gt;\n  select(unique_key, created_date, incident_address) |&gt;\n  filter(descriptor == 'Pothole') |&gt;\n  head(100)\n\n\n\nSELECT unique_key, created_date, incident_address \nWHERE descriptor = 'Pothole'\nLIMIT 100\n\n\n\nnyc_recent_potholes &lt;- read_csv(\"https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$select=unique_key,created_date,incident_address&$where=descriptor='Pothole'&$limit=100\")\nhead(nyc_recent_potholes)\n\n# A tibble: 6 × 3\n  unique_key created_date        incident_address\n       &lt;dbl&gt; &lt;dttm&gt;              &lt;chr&gt;           \n1   69987338 2026-08-07 23:58:36 WEST   53 STREET\n2   69981632 2026-08-07 23:27:15 &lt;NA&gt;            \n3   69987341 2026-08-07 23:23:59 &lt;NA&gt;            \n4   69981631 2026-08-07 23:17:50 HOLLYWOOD AVENUE\n5   69990216 2026-08-07 23:13:55 &lt;NA&gt;            \n6   69987334 2026-08-07 23:10:05 86 STREET"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w14l1_apis.html#soql-example-2",
+    "href": "classes/sds192/s26/lectures/w14l1_apis.html#soql-example-2",
+    "title": "APIs",
+    "section": "SoQL Example 2",
+    "text": "SoQL Example 2\n\ndplyrSQLSoQL\n\n\n\ndf |&gt;\n  filter(complaint_type == 'Traffic') |&gt;\n  group_by(descriptor) |&gt;\n  summarize(count = n()) |&gt;\n  arrange(desc(count))\n\n\n\nWHERE complaint_type = 'Traffic'\nSELECT descriptor, count(*)\nGROUP BY descriptor\nORDER BY count DESC\n\n\n\n\nlibrary(readr)\nnyc_traffic_complaints &lt;- read_csv(\"https://data.cityofnewyork.us/resource/erm2-nwe9.csv?$where=complaint_type='Traffic'&$select=descriptor,count(*)&$group=descriptor&$order=count%20DESC\")\nhead(nyc_traffic_complaints)\n\n# A tibble: 5 × 2\n  descriptor                  count\n  &lt;chr&gt;                       &lt;dbl&gt;\n1 Congestion/Gridlock         15729\n2 Drag Racing                 11913\n3 Chronic Speeding             9761\n4 Truck Route Violation        8237\n5 Chronic Stoplight Violation  2852"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w7l2_review.html",
+    "href": "classes/sds192/s26/lectures/w7l2_review.html",
+    "title": "Review",
+    "section": "",
+    "text": "Other useful functions\nProblem-solving\nTime to work on project"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w7l2_review.html#last-time",
+    "href": "classes/sds192/s26/lectures/w7l2_review.html#last-time",
+    "title": "Review",
+    "section": "",
+    "text": "Other useful functions\nProblem-solving\nTime to work on project"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w7l2_review.html#today",
+    "href": "classes/sds192/s26/lectures/w7l2_review.html#today",
+    "title": "Review",
+    "section": "Today",
+    "text": "Today\n\nReview"
+  },
+  {
+    "objectID": "classes/sds192/s26/lectures/w7l2_review.html#tbd",
+    "href": "classes/sds192/s26/lectures/w7l2_review.html#tbd",
+    "title": "Review",
+    "section": "TBD",
+    "text": "TBD"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w4l1_actTemp.html",
+    "href": "classes/sds270/s26/lectures/w4l1_actTemp.html",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "",
+    "text": "Finish these exercises by the end of the day (at 11:59pm)."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w4l1_actTemp.html#note",
+    "href": "classes/sds270/s26/lectures/w4l1_actTemp.html#note",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "",
+    "text": "Finish these exercises by the end of the day (at 11:59pm)."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w4l1_actTemp.html#introduction",
+    "href": "classes/sds270/s26/lectures/w4l1_actTemp.html#introduction",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "Introduction",
+    "text": "Introduction\nIn these exercises, we will learn how to find out about functions and the principles of lexical scoping. We will investigate a use of the dots.\nGoal: By the end of this lab, you should be able to retrieve information about functions and understand how lexical scoping works in R."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w4l1_actTemp.html#learning-about-functions",
+    "href": "classes/sds270/s26/lectures/w4l1_actTemp.html#learning-about-functions",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "Learning about Functions",
+    "text": "Learning about Functions\nThere are many functions in R, and nobody knows how all of them work. From time to time it is helpful to retrieve information about these functions. The documentation in help() is great to read, but it doesn’t always provide the information you need.\n\nArguments\nThe first question you may have is what arguments a function takes. We can learn this by running args() on the bare name of the function.\n\nargs(dplyr::filter)\n\nfunction (.data, ..., .by = NULL, .preserve = FALSE) \nNULL\n\n\n\nargs(print)\n\nfunction (x, ...) \nNULL\n\n\nNote that for S3 generic function like print(), you can also find the arguments for specific methods.\n\nargs(print.data.frame)\n\nfunction (x, ..., digits = NULL, quote = FALSE, right = TRUE, \n    row.names = TRUE, max = NULL) \nNULL"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w4l1_actTemp.html#exercises",
+    "href": "classes/sds270/s26/lectures/w4l1_actTemp.html#exercises",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "Exercises",
+    "text": "Exercises\n\n\n\n\n\n\nImportantQ1\n\n\n\nFind the arguments for tidyr::pivot_longer().\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nThink of another function whose arguments you always forget. Find them using args().\n\n# PUT SOLUTION HERE\n\n\n\n\nThe Body\nThe body() function returns the actual code that runs inside a function. There are a several reasons why you might want to see this:\n\nIt’s the only way to actually see what a function is doing\nReading other people’s code is a great way to improve your own ability to write code\nIf the documentation doesn’t answer your question, perhaps the code will\nInspecting the code inside a function will help you to think more like a developer, as opposed to a user.\n\n\nbody(tibble)\n\n{\n    xs &lt;- quos(...)\n    tibble_quos(xs, .rows, .name_repair)\n}\n\n\nNote that a function may call unexported functions (e.g., tibble_quos()) that you won’t recognize. Since the function is not exported, you have to use the triple colon operator to view its source.\n\nbody(tibble:::tibble_quos)\n\n{\n    col_names &lt;- given_col_names &lt;- names2(xs)\n    empty_col_names &lt;- which(col_names == \"\")\n    col_names[empty_col_names] &lt;- names(quos_auto_name(xs[empty_col_names]))\n    lengths &lt;- rep_along(xs, 0L)\n    output &lt;- rep_along(xs, list(NULL))\n    env &lt;- new_environment()\n    mask &lt;- new_data_mask_with_data(env)\n    first_size &lt;- .rows\n    for (j in seq_along(xs)) {\n        res &lt;- eval_tidy(xs[[j]], mask)\n        if (!is.null(res)) {\n            if (single_row) {\n                if (vec_is(res)) {\n                  if (vec_size(res) != 1) {\n                    abort_tibble_row_size_one(j, given_col_names[[j]], \n                      vec_size(res))\n                  }\n                }\n                else {\n                  res &lt;- list(res)\n                }\n            }\n            else {\n                res &lt;- check_valid_col(res, col_names[[j]], j, \n                  call)\n                lengths[[j]] &lt;- current_size &lt;- vec_size(res)\n                if (is.null(first_size)) {\n                  first_size &lt;- current_size\n                }\n                else if (first_size == 1L && current_size != \n                  1L) {\n                  idx_to_fix &lt;- seq2(1L, j - 1L)\n                  output[idx_to_fix] &lt;- fixed_output &lt;- map(output[idx_to_fix], \n                    vec_recycle, current_size)\n                  map2(output[idx_to_fix], col_names[idx_to_fix], \n                    add_to_env2, env = env)\n                  first_size &lt;- current_size\n                }\n                else {\n                  res &lt;- vectbl_recycle_rows(res, first_size, \n                    j, given_col_names[[j]], call)\n                }\n            }\n            output[[j]] &lt;- res\n            col_names[[j]] &lt;- add_to_env2(res, given_col_names[[j]], \n                col_names[[j]], env)\n        }\n    }\n    names(output) &lt;- col_names\n    is_null &lt;- map_lgl(output, is.null)\n    output &lt;- output[!is_null]\n    output &lt;- splice_dfs(output)\n    output &lt;- set_repaired_names(output, repair_hint = TRUE, \n        .name_repair = .name_repair, call = call)\n    new_tibble(output, nrow = first_size %||% 0L)\n}\n\n\nIf you try to view the body of an S3 generic function, you will find that it is rather short.\n\nbody(print)\n\nUseMethod(\"print\")\n\n\nA generic function usually doesn’t do anything other than call one of its methods. Those methods have the interesting code.\n\nbody(print.data.frame)\n\n{\n    n &lt;- length(row.names(x))\n    if (length(x) == 0L) {\n        cat(sprintf(ngettext(n, \"data frame with 0 columns and %d row\", \n            \"data frame with 0 columns and %d rows\"), n), \"\\n\", \n            sep = \"\")\n    }\n    else if (n == 0L) {\n        print.default(names(x), quote = FALSE)\n        cat(gettext(\"&lt;0 rows&gt; (or 0-length row.names)\\n\"))\n    }\n    else {\n        if (is.null(max)) \n            max &lt;- getOption(\"max.print\", 99999L)\n        if (!is.finite(max)) \n            stop(\"invalid 'max' / getOption(\\\"max.print\\\"): \", \n                max)\n        omit &lt;- (n0 &lt;- max%/%length(x)) &lt; n\n        m &lt;- as.matrix(format.data.frame(if (omit) \n            x[seq_len(n0), , drop = FALSE]\n        else x, digits = digits, na.encode = FALSE))\n        if (!isTRUE(row.names)) \n            dimnames(m)[[1L]] &lt;- if (isFALSE(row.names)) \n                rep.int(\"\", if (omit) \n                  n0\n                else n)\n            else row.names\n        print(m, ..., quote = quote, right = right, max = max)\n        if (omit) \n            cat(\" [ reached 'max' / getOption(\\\"max.print\\\") -- omitted\", \n                n - n0, \"rows ]\\n\")\n    }\n    invisible(x)\n}\n\n\n\nbody(print.default)\n\n{\n    args &lt;- pairlist(digits = digits, quote = quote, na.print = na.print, \n        print.gap = print.gap, right = right, max = max, width = width, \n        useSource = useSource, ...)\n    missings &lt;- c(missing(digits), missing(quote), missing(na.print), \n        missing(print.gap), missing(right), missing(max), missing(width), \n        missing(useSource))\n    .Internal(print.default(x, args, missings))\n}\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\nInspect the code for the summary method for an lm object. Do you see where the \\(R^2\\) is computed?\n\n# PUT SOLUTION HERE\n\n\n\n\n\nThe Environment\nIt is also important to know in what environment a function is created. The environment() function tells us.\n\nenvironment(print)\n\n&lt;environment: namespace:base&gt;\n\n\n\nenvironment(filter)\n\n&lt;environment: namespace:dplyr&gt;\n\n\nWe’ll learn more about environments in the next chapter."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w4l1_actTemp.html#scoping",
+    "href": "classes/sds270/s26/lectures/w4l1_actTemp.html#scoping",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "Scoping",
+    "text": "Scoping\nR uses lexical scoping. This means that when R looks for the value of names, it depends on the state of things when the function is defined.\n\nName Masking\nR looks for variables inside a function definition first (local variables), but if it can’t find them, it looks in the parent environment. In this case, when my_fun() is executed, R looks for the value of global_var. Many programming languages will throw an error in this situation, because global_var is not defined in the environment created by my_fun(). However, R just keeps looking for global_var in the parent environment (which in this case is the global environment).\n\nglobal_var &lt;- 21\n\nmy_fun &lt;- function(x) {\n  x + global_var\n}\n\nmy_fun(3)\n\n[1] 24\n\n\n\nenvironment(my_fun)\n\n&lt;environment: R_GlobalEnv&gt;\n\n\nNote also that if we try to re-define global_var inside the function definition, we are masking the name global_var.\n\nmy_fun2 &lt;- function(x) {\n  global_var &lt;- 99\n  x + global_var\n}\n\nmy_fun2(3)\n\n[1] 102\n\n\nNote the difference reported by findGlobals().\n\ncodetools::findGlobals(my_fun)\n\n[1] \"{\"          \"+\"          \"global_var\"\n\n\n\ncodetools::findGlobals(my_fun2)\n\n[1] \"{\"  \"+\"  \"&lt;-\"\n\n\n\n\nA Fresh Start\nLocal variables that are created inside a function never see the light of day in the parent environment.\n\nmy_fun3 &lt;- function(x) {\n  local_var &lt;- 7\n  x + global_var\n}\n\nmy_fun3(3)\n\n[1] 24\n\n\n\nlocal_var\n\nError:\n! object 'local_var' not found\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nWhy would it be a bad idea to allow the value of local variables to persist outside of the function?\nPUT SOLUTION HERE\n\n\n\n\nDynamic Lookup\nBecause of name masking, values of objects in the parent environment can affect the behavior of a function. This behavior is often useful in data analysis scripts, but can be problematic in more formal programming.\nThis means that if we reset the value of global_var, we change the behavior of my_fun().\n\nglobal_var &lt;- 15\n\nmy_fun(3)\n\n[1] 18\n\n\n\n\n\n\n\n\nImportantQ5\n\n\n\nGive an example of a situation in which dynamic lookup is helpful.\nPUT SOLUTION HERE\n\n\n\n\n\n\n\n\nImportantQ6\n\n\n\nGive an example of a situation in which dynamic lookup could be problematic.\nPUT SOLUTION HERE"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w4l1_actTemp.html#the-dots",
+    "href": "classes/sds270/s26/lectures/w4l1_actTemp.html#the-dots",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "The Dots",
+    "text": "The Dots\nThe dots (...) are a way of collecting an arbitrary set of arguments to a function. There are two main purposes as to why you might want to have the dots as an arguments to your function.\nFirst, note that you can convert the dots into a named list within your function using the list() function.\n\ncatch_the_dots &lt;- function(...) {\n  list(...)\n}\n\ncatch_the_dots(whatever = \"hi\")\n\n$whatever\n[1] \"hi\"\n\n\n\nPassing the Dots\nYou might want to pass the dots to another function from within your function. This is typically useful when you want to leverage the functionality of an existing function, without having to specify all of its arguments. For example, suppose we want to add theming to a ggplot. One way to do that would be to extend the scale_color_manual() function and hard-code the official Smith colors.\nFirst, note that scale_color_manual() takes the dots as an argument.\n\nargs(ggplot2::scale_color_manual)\n\nfunction (..., values, aesthetics = \"colour\", breaks = waiver(), \n    na.value = \"grey50\") \nNULL\n\n\nMoreover, it passes the dots to manual_scale():\n\nbody(ggplot2::scale_color_manual)\n\n{\n    manual_scale(aesthetics, values, breaks, ..., na.value = na.value)\n}\n\n\nWhich in turn passes the dots to discrete_scale():\n\nbody(ggplot2:::manual_scale)\n\n{\n    call &lt;- call %||% current_call()\n    if (is_missing(values)) {\n        values &lt;- NULL\n    }\n    else {\n        force(values)\n    }\n    if (is.null(limits) && !is.null(names(values))) {\n        force(aesthetic)\n        limits &lt;- function(x) {\n            x &lt;- intersect(x, c(names(values), NA)) %||% character()\n            if (length(x) &lt; 1) {\n                cli::cli_warn(paste0(\"No shared levels found between {.code names(values)} of the manual \", \n                  \"scale and the data's {.field {aesthetic}} values.\"))\n            }\n            x\n        }\n    }\n    if (is.vector(values) && is.null(names(values)) && !is_waiver(breaks) && \n        !is.null(breaks) && !is.function(breaks)) {\n        if (length(breaks) &lt;= length(values)) {\n            names(values) &lt;- breaks\n        }\n        else {\n            names(values) &lt;- breaks[seq_along(values)]\n        }\n    }\n    pal &lt;- function(n) {\n        if (n &gt; length(values)) {\n            cli::cli_abort(\"Insufficient values in manual scale. {n} needed but only {length(values)} provided.\")\n        }\n        values\n    }\n    discrete_scale(aesthetic, name = name, palette = pal, breaks = breaks, \n        limits = limits, call = call, ...)\n}\n\n\nWhich actually does the work (Note that having 3 colons ::: allows you to access functions in an R package that aren’t @exported, i.e. are kept hidden from the user in the function’s roxygen2 code).\n\nbody(ggplot2::discrete_scale)\n\n{\n    call &lt;- call %||% current_call()\n    if (lifecycle::is_present(scale_name)) {\n        deprecate_soft0(\"3.5.0\", \"discrete_scale(scale_name)\")\n    }\n    aesthetics &lt;- standardise_aes_names(aesthetics)\n    check_breaks_labels(breaks, labels, call = call)\n    fallback.palette &lt;- validate_fallback_palette(palette, fallback.palette, \n        aesthetics, discrete = TRUE, call = call)\n    limits &lt;- allow_lambda(limits)\n    breaks &lt;- allow_lambda(breaks)\n    labels &lt;- allow_lambda(labels)\n    minor_breaks &lt;- allow_lambda(minor_breaks)\n    if (!is.function(limits) && (length(limits) &gt; 0) && !is_discrete(limits)) {\n        cli::cli_warn(c(\"Continuous limits supplied to discrete scale.\", \n            i = \"Did you mean {.code limits = factor(...)} or {.fn scale_*_continuous}?\"), \n            call = call)\n    }\n    position &lt;- arg_match0(position, c(\"left\", \"right\", \"top\", \n        \"bottom\"))\n    is_position &lt;- any(is_position_aes(aesthetics))\n    if (is.null(breaks) && !is_position) {\n        guide &lt;- \"none\"\n    }\n    if (is_position && identical(palette, identity)) {\n        palette &lt;- seq_len\n    }\n    ggproto(NULL, super, call = call, aesthetics = aesthetics, \n        palette = palette, fallback_palette = fallback.palette, \n        range = DiscreteRange$new(), limits = limits, na.value = na.value, \n        na.translate = na.translate, expand = expand, name = name, \n        breaks = breaks, minor_breaks = minor_breaks, labels = labels, \n        drop = drop, guide = guide, position = position)\n}\n\n\nAccording to the Smith College Visual Identity program, the official Smith colors are: #002855, #F2A900.\nThus, we can create a scale_color_smith() function that leverages scale_color_manual() by hard-coding the official Smith color values. But in order to get this to work, we have to pass the dots so that scale_color_manual() can do all the work that it normally does! Otherwise, we would have to copy the source of scale_color_manual() – but that would be inefficient and brittle.\n\nscale_color_smith &lt;- function(...) {\n  ggplot2::scale_color_manual(\n    ..., \n    values = c(\"#002855\", \"#F2A900\")\n  )\n}\n\nWe can then use our custom function. Note that since it only has two colors, it won’t work if it is mapped to a categorical variable with more than two levels.\n\nstarwars |&gt;\n  filter(species %in% c(\"Human\", \"Droid\")) |&gt; \n  ggplot(aes(x = height, y = mass, color = species)) + \n  geom_point() + \n  scale_color_smith()\n\nWarning: Removed 17 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportantQ7\n\n\n\nWrite the corresponding function scale_fill_smith() and test it.\n\n# PUT SOLUTION HERE\n\n\n\n\n\n\n\n\n\nImportantQ8\n\n\n\nWrite a scale_color_gradient_smith() function that produces a gradient scale from Smith blue to Smith gold.\n\n# PUT SOLUTION HERE"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w4l1_actTemp.html#turn-in",
+    "href": "classes/sds270/s26/lectures/w4l1_actTemp.html#turn-in",
+    "title": "Exercises from Week 4, Lecture 1: Functions",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w6l1_actTemp.html",
+    "href": "classes/sds270/s26/lectures/w6l1_actTemp.html",
+    "title": "Exercises from Week 6, Lecture 1: Environments",
+    "section": "",
+    "text": "library(rlang)\n\n\n\n\n\n\n\nImportantQ1\n\n\n\nLoad in a package of your choice. Then run the following:\n\nsearch()\n\nAnswer the following questions:\n\nHow is the package ordered relative to the rest of the environments?\nIf there is more than one package associated with what you loaded: why do you think the developers chose the order they did?\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nLet’s write a function that returns the environment that runs during its execution. Note that this is not the global environment.\n\nfunc_env &lt;- function() {\n  x &lt;- \"what?\"\n  current_env()\n}\n\nenv_print(func_env())\n\n\nWhat is the parent environment of the execution environment shown above?"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w6l1_actTemp.html#packages",
+    "href": "classes/sds270/s26/lectures/w6l1_actTemp.html#packages",
+    "title": "Exercises from Week 6, Lecture 1: Environments",
+    "section": "",
+    "text": "library(rlang)\n\n\n\n\n\n\n\nImportantQ1\n\n\n\nLoad in a package of your choice. Then run the following:\n\nsearch()\n\nAnswer the following questions:\n\nHow is the package ordered relative to the rest of the environments?\nIf there is more than one package associated with what you loaded: why do you think the developers chose the order they did?\n\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\nLet’s write a function that returns the environment that runs during its execution. Note that this is not the global environment.\n\nfunc_env &lt;- function() {\n  x &lt;- \"what?\"\n  current_env()\n}\n\nenv_print(func_env())\n\n\nWhat is the parent environment of the execution environment shown above?"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w6l1_actTemp.html#turn-in",
+    "href": "classes/sds270/s26/lectures/w6l1_actTemp.html#turn-in",
+    "title": "Exercises from Week 6, Lecture 1: Environments",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l2_actTemp.html",
+    "href": "classes/sds270/s26/lectures/w7l2_actTemp.html",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "",
+    "text": "In these exercises, we will learn how to write methods for S3 generics.\nGoal: by the end of this lab, you should be able to…\n\nwrite your own S3 generic methods and functions, and\nidentify pieces that make up object-oriented programming.\n\n(Install and) load in the following libraries below to work on this lab: sloop, tidyverse, emoji, and crayon\n\nlibrary(sloop)\nlibrary(tidyverse)\nlibrary(emoji)\nlibrary(crayon)"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l2_actTemp.html#introduction",
+    "href": "classes/sds270/s26/lectures/w7l2_actTemp.html#introduction",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "",
+    "text": "In these exercises, we will learn how to write methods for S3 generics.\nGoal: by the end of this lab, you should be able to…\n\nwrite your own S3 generic methods and functions, and\nidentify pieces that make up object-oriented programming.\n\n(Install and) load in the following libraries below to work on this lab: sloop, tidyverse, emoji, and crayon\n\nlibrary(sloop)\nlibrary(tidyverse)\nlibrary(emoji)\nlibrary(crayon)"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l2_actTemp.html#exercises-set-i",
+    "href": "classes/sds270/s26/lectures/w7l2_actTemp.html#exercises-set-i",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "Exercises: Set I",
+    "text": "Exercises: Set I\nThese exercises will be completed during lecture.\nIn groups of 2-3, think of two (real-world) objects that are adjacent to a car in some fashion. Consider the following:\n\n\n\n\n\n\nImportantQ1\n\n\n\n\nFor each (real-world) object, what attributes and functions does this object have?\n\nPUT ANSWER HERE\n\n\n\n\n\n\n\n\nImportantQ2\n\n\n\n\nFor one function for each object, what is needed to start and end the function?\n\nPUT ANSWER HERE\n\n\n\n\n\n\n\n\nImportantQ3\n\n\n\n\nWhat connects the (real-world) objects together with a car object?\n\nPUT ANSWER HERE"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l2_actTemp.html#exercises-set-ii",
+    "href": "classes/sds270/s26/lectures/w7l2_actTemp.html#exercises-set-ii",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "Exercises: Set II",
+    "text": "Exercises: Set II\nThere are many methods for the print() generic available:\n\ns3_methods_generic(\"print\")\n\n# A tibble: 329 × 4\n   generic class             visible source             \n   &lt;chr&gt;   &lt;chr&gt;             &lt;lgl&gt;   &lt;chr&gt;              \n 1 print   acf               FALSE   registered S3method\n 2 print   activeConcordance FALSE   registered S3method\n 3 print   AES               FALSE   registered S3method\n 4 print   all_vars          FALSE   registered S3method\n 5 print   anova             FALSE   registered S3method\n 6 print   any_vars          FALSE   registered S3method\n 7 print   aov               FALSE   registered S3method\n 8 print   aovlist           FALSE   registered S3method\n 9 print   ar                FALSE   registered S3method\n10 print   Arima             FALSE   registered S3method\n# ℹ 319 more rows\n\n\nOther common S3 generics include summary() and plot():\n\ns3_methods_generic(\"summary\")\n\n# A tibble: 43 × 4\n   generic class                 visible source             \n   &lt;chr&gt;   &lt;chr&gt;                 &lt;lgl&gt;   &lt;chr&gt;              \n 1 summary aov                   TRUE    stats              \n 2 summary aovlist               FALSE   registered S3method\n 3 summary aspell                FALSE   registered S3method\n 4 summary check_packages_in_dir FALSE   registered S3method\n 5 summary connection            TRUE    base               \n 6 summary data.frame            TRUE    base               \n 7 summary Date                  TRUE    base               \n 8 summary default               TRUE    base               \n 9 summary Duration              FALSE   registered S3method\n10 summary ecdf                  FALSE   registered S3method\n# ℹ 33 more rows\n\ns3_methods_generic(\"plot\")\n\n# A tibble: 36 × 4\n   generic class         visible source             \n   &lt;chr&gt;   &lt;chr&gt;         &lt;lgl&gt;   &lt;chr&gt;              \n 1 plot    acf           FALSE   registered S3method\n 2 plot    data.frame    FALSE   registered S3method\n 3 plot    decomposed.ts FALSE   registered S3method\n 4 plot    default       TRUE    graphics           \n 5 plot    dendrogram    FALSE   registered S3method\n 6 plot    density       FALSE   registered S3method\n 7 plot    ecdf          TRUE    stats              \n 8 plot    factor        FALSE   registered S3method\n 9 plot    formula       FALSE   registered S3method\n10 plot    function      TRUE    graphics           \n# ℹ 26 more rows\n\n\n\n\n\n\n\n\nImportantQ4\n\n\n\nTry to think of another generic function that you’ve worked with in the past. Use s3_methods_generic() to find its available methods. [Note that you might have to load other packages to find the methods or the generic that you recall.]\n\n# ANSWER HERE\n\n\n\nIn addition to listing the methods for a particular generic, we can find all the methods that are defined for a particular class using s3_methods_class():\n\ns3_methods_class(\"tbl_df\")\n\n# A tibble: 21 × 4\n   generic       class  visible source             \n   &lt;chr&gt;         &lt;chr&gt;  &lt;lgl&gt;   &lt;chr&gt;              \n 1 $             tbl_df FALSE   registered S3method\n 2 $&lt;-           tbl_df FALSE   registered S3method\n 3 [             tbl_df FALSE   registered S3method\n 4 [[            tbl_df FALSE   registered S3method\n 5 [[&lt;-          tbl_df FALSE   registered S3method\n 6 [&lt;-           tbl_df FALSE   registered S3method\n 7 arrange_      tbl_df FALSE   registered S3method\n 8 as.data.frame tbl_df FALSE   registered S3method\n 9 distinct_     tbl_df FALSE   registered S3method\n10 filter_       tbl_df FALSE   registered S3method\n# ℹ 11 more rows\n\n\nNote that while the methods for a particular generic are most likely written by many different developers in many different packages, the methods for a particular class are most likely written by the same set of developers of a single package.\n\nMethod dispatch\nIf you are ever unsure of which method is actually being run when you invoke a generic, use s3_dispatch() to figure out what is going on.\n\ns3_dispatch(print(starwars))\n\n   print.tbl_df\n=&gt; print.tbl\n * print.data.frame\n * print.default\n\ns3_dispatch(print(mtcars))\n\n=&gt; print.data.frame\n * print.default\n\n\n\n\n\n\n\n\nImportantQ5\n\n\n\nWhy do the previous two examples show a different list of available methods?\nPUT ANSWER HERE\n\n\n\n\n\n\n\n\nImportantQ6\n\n\n\nWhy doesn’t print.data.frame() get called on starwars?\nPUT ANSWER HERE\n\n\n\n\nUsing a method\nFirst, we’ll learn about two fun packages: emoji and crayon.\n\nemoji\nThe emoji package allows you print an emoji via the emoji() function. To display an emoji, call it by name:\n\nemoji(\"star\")\n\n[1] \"⭐\"\n\nemoji(\"dog\")\n\n[1] \"🐶\"\n\nemoji(\"basketball\")\n\n[1] \"🏀\"\n\n\nYou can see the full list of available emojis in the tibble returned by emojis.\n\nemojis |&gt; View()\n\n\n\n\n\n\n\nImportantQ7\n\n\n\nFind an emoji that you like and use emoji() to print it here.\n\n# PUT ANSWER HERE\n\n\n\n\n\ncrayon\nThe crayon package allows you to print in color in the console. For a complicated example of what you can do, consider the tidyverse logo:\n\ntidyverse_logo()\n\n⬢ __  _    __   .    ⬡           ⬢  . \n / /_(_)__/ /_ ___  _____ _______ ___ \n/ __/ / _  / // / |/ / -_) __(_-&lt;/ -_)\n\\__/_/\\_,_/\\_, /|___/\\__/_/ /___/\\__/ \n     ⬢  . /___/      ⬡      .       ⬢ \n\n\nFor a simpler, example, you can write your name in blue. Be sure to wrap the text in cat() (or message()) to send it to the console.\n\ncat(crayon::blue(\"Jericho\"))\n\nJericho\n\n\n\n\n\n\n\n\nImportantQ8\n\n\n\nPick a color from the crayon package and write something using that color.\n\n# PUT ANSWER HERE\n\n\n\n\n\n\nDefining a method\nNow we will define a simple print() method that will only be invoked for objects of class sds270. This method will simply print a colorful message to the console, and then invoke the NextMethod() available.\n\nprint.sds270 &lt;- function(x, ...) {\n  cat(\n    crayon::magenta(\n      \"Jericho\", \n      emoji::emoji(\"heart\"), \n      \"s programming in R!\\n\"\n    )\n  )\n  NextMethod()\n}\n\nTo use it, we just have to create an object of type sds270, and then call print(). Remember that in R you can simply modify the class attribute of any object!\n\nclass(starwars) &lt;- c(\"sds270\", class(starwars))\nstarwars\n\nJericho ❤️ s programming in R!\n# A tibble: 87 × 14\n   name     height  mass hair_color skin_color eye_color birth_year sex   gender\n   &lt;chr&gt;     &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n 1 Luke Sk…    172    77 blond      fair       blue            19   male  mascu…\n 2 C-3PO       167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n 3 R2-D2        96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n 4 Darth V…    202   136 none       white      yellow          41.9 male  mascu…\n 5 Leia Or…    150    49 brown      light      brown           19   fema… femin…\n 6 Owen La…    178   120 brown, gr… light      blue            52   male  mascu…\n 7 Beru Wh…    165    75 brown      light      blue            47   fema… femin…\n 8 R5-D4        97    32 &lt;NA&gt;       white, red red             NA   none  mascu…\n 9 Biggs D…    183    84 black      light      brown           24   male  mascu…\n10 Obi-Wan…    182    77 auburn, w… fair       blue-gray       57   male  mascu…\n# ℹ 77 more rows\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;\n\n\nNote that this method works on objects of any underlying class!!\n\nclass(Titanic)\n\n[1] \"table\"\n\nclass(Titanic) &lt;- c(\"sds270\", class(Titanic))\nTitanic\n\nJericho ❤️ s programming in R!\n, , Age = Child, Survived = No\n\n      Sex\nClass  Male Female\n  1st     0      0\n  2nd     0      0\n  3rd    35     17\n  Crew    0      0\n\n, , Age = Adult, Survived = No\n\n      Sex\nClass  Male Female\n  1st   118      4\n  2nd   154     13\n  3rd   387     89\n  Crew  670      3\n\n, , Age = Child, Survived = Yes\n\n      Sex\nClass  Male Female\n  1st     5      1\n  2nd    11     13\n  3rd    13     14\n  Crew    0      0\n\n, , Age = Adult, Survived = Yes\n\n      Sex\nClass  Male Female\n  1st    57    140\n  2nd    14     80\n  3rd    75     76\n  Crew  192     20\n\n\n\n\n\n\n\n\nImportantQ9\n\n\n\nDefine your own print() method for objects having class [your GitHub username]. Then add your class name to an object’s listing of classes and print out that object.\n\n# PUT ANSWER HERE\n\n\n\n\n\nDefining a new generic\nIn lecture, we defined a method for an existing generic function. Now, we will define a new generic function.\n\nprint_emoji &lt;- function(x, ...) {\n  UseMethod(\"print_emoji\")\n}\n\nSince we haven’t defined any methods yet, the function won’t actually work! However, we can start by writing a default method that will simply call the existing print() generic.\n\nprint_emoji.default &lt;- function(x, ...) {\n  print(x, ...)\n}\n\nNow our print_emoji() function will work.\n\nprint_emoji(starwars)\n\nJericho ❤️ s programming in R!\n# A tibble: 87 × 14\n   name     height  mass hair_color skin_color eye_color birth_year sex   gender\n   &lt;chr&gt;     &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n 1 Luke Sk…    172    77 blond      fair       blue            19   male  mascu…\n 2 C-3PO       167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n 3 R2-D2        96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n 4 Darth V…    202   136 none       white      yellow          41.9 male  mascu…\n 5 Leia Or…    150    49 brown      light      brown           19   fema… femin…\n 6 Owen La…    178   120 brown, gr… light      blue            52   male  mascu…\n 7 Beru Wh…    165    75 brown      light      blue            47   fema… femin…\n 8 R5-D4        97    32 &lt;NA&gt;       white, red red             NA   none  mascu…\n 9 Biggs D…    183    84 black      light      brown           24   male  mascu…\n10 Obi-Wan…    182    77 auburn, w… fair       blue-gray       57   male  mascu…\n# ℹ 77 more rows\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;\n\n\n\n\n\n\n\n\nImportantQ10\n\n\n\nIn the default method for print_emoji(), can we use NextMethod() instead of print()? Why or why not?\nPUT ANSWER HERE\n\n\n\n\n\n\n\n\nImportantQ11\n\n\n\nWrite a print_emoji() method for data.frames.\n\n# PUT ANSWER HERE"
+  },
+  {
+    "objectID": "classes/sds270/s26/lectures/w7l2_actTemp.html#turn-in",
+    "href": "classes/sds270/s26/lectures/w7l2_actTemp.html#turn-in",
+    "title": "Exercises from Week 7, Lecture 2: Object-Oriented Programming",
+    "section": "Turn-In",
+    "text": "Turn-In\nStage, commit, and push your template file to your SDS 270 repository."
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_temp.html",
+    "href": "classes/sds270/s26/sets/set4_temp.html",
+    "title": "Set #4 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/30 at 11:59pm\n\nIf you turn it in before Saturday, 3/28, I will be able to provide feedback before the exam!"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_temp.html#instructions",
+    "href": "classes/sds270/s26/sets/set4_temp.html#instructions",
+    "title": "Set #4 (50 pts)",
+    "section": "",
+    "text": "Answer all questions with some combination of code and prose, turning in the .qmd file by committing and pushing the file to your GitHub repository.\nCertain questions will ask you to do the problem in a specific way. Please adhere to these instructions or points will be deducted.\nRefer to syllabus for late work deductions.\nThis set is completion-based.\nDue date: Monday, 3/30 at 11:59pm\n\nIf you turn it in before Saturday, 3/28, I will be able to provide feedback before the exam!"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_temp.html#background",
+    "href": "classes/sds270/s26/sets/set4_temp.html#background",
+    "title": "Set #4 (50 pts)",
+    "section": "Background",
+    "text": "Background\nThe fourth (and final) problem set will contain various problems related to the following:\n\nEnvironments (Ch. 7, AR)\nConditions (Ch. 8, AR)\nFunctionals (Ch. 9, AR)\nObject-Oriented Programming/S3 (Ch. 12-13, AR)\n\nOther topics we’ve discussed earlier in the semester may show up in these problems. Make sure to carefully read and follow directions for each problem.\nPlace any needed libraries below:"
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_temp.html#q1-mean",
+    "href": "classes/sds270/s26/sets/set4_temp.html#q1-mean",
+    "title": "Set #4 (50 pts)",
+    "section": "Q1: Mean",
+    "text": "Q1: Mean\nWhen we use the mean() function, this is based on the formula for the arithmetic mean. Say we want to create an alternative mean() function that uses the formula for the harmonic mean.\nThe harmonic mean can be defined as:\n\\(\\frac{n}{\\sum_i \\frac{1}{x_i}}\\),\nwhere \\(n\\) is the number of observations and \\(x_i\\) is an observation at some index \\(i\\). Parts of this question will relate to the deployment of this harmonic mean.\n\n(a) Define a new mean() function in your global environment that uses the harmonic mean formula given some input x.\n\n\n(b) Run base R’s mean() function and your created mean() function on the mpg column of the mtcars dataset.\n\n\n(c) Implement an instance of each of the three types of conditions in your new mean() function. Then, test out the revised function on three different inputs, with each input triggering each type of condition.\n\n\n(d) Use a functional to get the harmonic mean of each variable in the mtcars dataset, returning an appropriate data structure.\n\n\n(e) In your own words, discuss the role of the search path in R in 2-3 sentences.\n\n\n(f) Describe a way to implement the harmonic mean as part of base R’s mean() function."
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_temp.html#q2-simple-linear-regression",
+    "href": "classes/sds270/s26/sets/set4_temp.html#q2-simple-linear-regression",
+    "title": "Set #4 (50 pts)",
+    "section": "Q2: Simple Linear Regression",
+    "text": "Q2: Simple Linear Regression\nIn this question, we want to determine operations and characteristics of a new class of data, which focuses on a data frame with exactly two double columns, which we will define as slr.\nFor an object to be of an slr class, it must:\n\nHave exactly two columns, both of which are double atomic vectors\nBe a child class of the data.frame class\nThe first column is representing the “response” or y, while the second column is the “predictor” or x\n\nSLR is referring to simple linear regression, where we will want to use the variable denoted as x to explain any variation in the variable denoted as y. We will want to create a few items that will allow users to easily create an object of this class and run operations on this object.\nThe parts below will reference this slr class.\n\n(a) Create a helper and constructor for the slr class, incorporating the restrictions specified in the introduction of this question. The user must input atomic vectors x and y that are of a double, integer, or logical type.\n\n\n(b) Create an object of the slr class using the helper created in part (a) on any two columns you choose from the mtcars dataset.\n\n\n(c) Create functions for the estimates method, which should handle input from the slr class as well as an input of any other class. The class-specific method will take in a data input and will return the least-squares estimates of fitting x to y.\nUse the formulas below to return those estimates:\n\n\\(\\beta_1 = \\frac{s_{xy}}{s_x}\\), where \\(s\\) refers to the standard deviation\n\nUse cov() for \\(s_{xy}\\)\n\n\\(\\beta_0 = \\bar{y} - \\beta_1 \\bar{x}\\), where \\(\\bar{y}\\) and \\(\\bar{x}\\) refer to the means of \\(x\\) and \\(y\\) respectively\n\n\n\n(d) Create a summary method for the slr class that refers to output from summary methods of parent classes. This summary method will display the least-squares estimates.\n\n\n(e) Compare the roles of an environmemt and a class in R in 2-3 sentences."
+  },
+  {
+    "objectID": "classes/sds270/s26/sets/set4_temp.html#turn-in",
+    "href": "classes/sds270/s26/sets/set4_temp.html#turn-in",
+    "title": "Set #4 (50 pts)",
+    "section": "Turn-In",
+    "text": "Turn-In\nWhen finished, commit and push this file to your SDS 270 repository."
   }
 ]

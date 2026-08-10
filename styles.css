@@ -2,7 +2,8 @@
 
 /* Navbar background */
 .navbar {
-  background-color: #1d1160 !important;  /* dark blue/gray */
+  background: linear-gradient(180deg, #1d1160 0%, rgba(76, 65, 138, 0.85) 100%) !important;
+  backdrop-filter: blur(10px); /* Blurs content scrolling underneath */
 }
 
 /* Navbar text color */
