@@ -165,14 +165,14 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Warning: package 'fs' was built under R version 4.4.3"
+    "text": "Non-tabular knockoffs variable selection\nSports analytics\nSignal and image processing\n\nMy primary research interests center around the methodology of knockoffs variable selection on non-tabular data, specifically involving images from many contexts. Under the guidance of Dr. Zhe Fei, my PhD work focused on vision-transformer masked-autoencoder (ViTMAE) models to generate latent representations of images that can be used in an FDR-controlled variable selection framework called knockoffs to identify binary outcomes. As an application, I explored how this framework can be used to identify patients who exhibit signs of glaucoma.\nCurrent research centers on embedding the framework under mathematical guarantees and extending it to other disciplines, like those seen in the medical and environmental fields."
   },
   {
     "objectID": "research.html#research-interests",
     "href": "research.html#research-interests",
     "title": "Research",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nNon-tabular knockoffs variable selection\nSports analytics\nSignal and image processing\n\nMy primary research interests center around the methodology of knockoffs variable selection on non-tabular data, specifically involving images from many contexts. Under the guidance of Dr. Zhe Fei, my PhD work focused on vision-transformer masked-autoencoder (ViTMAE) models to generate latent representations of images that can be used in an FDR-controlled variable selection framework called knockoffs to identify binary outcomes. As an application, I explored how this framework can be used to identify patients who exhibit signs of glaucoma.\nCurrent research centers on embedding the framework under mathematical guarantees and extending it to other disciplines, like those seen in the medical and environmental fields."
+    "section": "",
+    "text": "Non-tabular knockoffs variable selection\nSports analytics\nSignal and image processing\n\nMy primary research interests center around the methodology of knockoffs variable selection on non-tabular data, specifically involving images from many contexts. Under the guidance of Dr. Zhe Fei, my PhD work focused on vision-transformer masked-autoencoder (ViTMAE) models to generate latent representations of images that can be used in an FDR-controlled variable selection framework called knockoffs to identify binary outcomes. As an application, I explored how this framework can be used to identify patients who exhibit signs of glaucoma.\nCurrent research centers on embedding the framework under mathematical guarantees and extending it to other disciplines, like those seen in the medical and environmental fields."
   },
   {
     "objectID": "classes/sds192/s26/index.html",
