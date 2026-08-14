@@ -110,5 +110,12 @@
     "title": "Getting Started with R",
     "section": "Optional: Using Posit Cloud",
     "text": "Optional: Using Posit Cloud\nPosit Cloud is a cloud-based version of RStudio, which allows you to access your project with any internet-connected device. To access Posit Cloud, you can use the following link: https://posit.cloud/.\n\nYou will need to register for an account, which can be done with your Vassar email address. Once registered, you will see your workspace with an empty selection of projects. From here, you will create a new project by clicking ‘New Project’, following by ‘New RStudio Project’.\nNote: You will be able to following all lab instructions as usual, with one caveat: files will be saved in the hard drive in the cloud, not on your computer. As such, you will need to do the following steps depending on what action you are taking:\n\nTo upload a file in your project (e.g. lab instructions): Click the ‘Upload’ button in the bottom-right corner of the screen to load a file from your computer to the cloud.\nTo download a file onto your computer (e.g. a finished lab report): Click on the checkbox associated with the file you want to download. Then, click the ‘More’ button in the bottom-right corner of the screen, followed by the ‘Export’ button. Type in an appropriate file name to your file, click ‘OK’, and you should see that the file has been successfully downloaded onto your computer."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "“”"
   }
 ]
