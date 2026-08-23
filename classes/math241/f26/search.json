@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "MATH 241: Probability",
     "section": "",
-    "text": "This website is the central hub for all materials related to this iteration of MATH 241. Use the links at the top of the page to access certain content.\n\n\nSource: xkcd"
+    "text": "This website is the central hub for all materials related to this iteration of MATH 241.\n\nUse the Assignments tab to access lab and HW assignments\nUse the Material tab to access slides and materials\nUse the Schedule tab to access the course schedule in a calendar view\nUse the Syllabus tab to access the syllabus\n\nEnjoy this lovely XKCD comic of probabilistic outcomes of certain events:\n\n\nSource: xkcd"
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "MATH 241: Probability",
     "section": "",
-    "text": "This website is the central hub for all materials related to this iteration of MATH 241. Use the links at the top of the page to access certain content.\n\n\nSource: xkcd"
+    "text": "This website is the central hub for all materials related to this iteration of MATH 241.\n\nUse the Assignments tab to access lab and HW assignments\nUse the Material tab to access slides and materials\nUse the Schedule tab to access the course schedule in a calendar view\nUse the Syllabus tab to access the syllabus\n\nEnjoy this lovely XKCD comic of probabilistic outcomes of certain events:\n\n\nSource: xkcd"
   },
   {
     "objectID": "index.html#announcements",
@@ -166,5 +166,19 @@
     "title": "Syllabus",
     "section": "Note",
     "text": "Note\nThe instructor has the right to modify the syllabus if needed. If this occurs, students will be notified before the change occurs.\nAckowledgement: The content and structure of this course are modeled after materials from Drs. Robin Belton (Vassar College) and Ming-Wen An (Vassar College)."
+  },
+  {
+    "objectID": "material.html",
+    "href": "material.html",
+    "title": "Material",
+    "section": "",
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesProjectsExam Prep\n\n\nTBA\n\n\nTBA\n\n\nTBA\n\n\n\n\nTextbooksTechnology\n\n\n\nBlitzstein, J. K., & Hwang, J. (2019). Introduction to Probability (2nd ed.). Chapman & Hall/CRC. http://probabilitybook.net\n\nThis textbook is free to use online!\nMore resources can be found through this course website, for which our textbook is based on.\n\n\n\n\n\nFor coding: R and RStudio\n\nInstructions\n\nAssignment turn-ins: Gradescope\n\nEntry code for 01: KNE4DG\nEntry code for 02: 7KRWXN\n\nCourse management: Moodle\n\n01 course\n02 course\nWill be used seldomly.\n\nCourse materials: Course Website\nDiscussions and announcements: Slack\n\n01 course\n02 course"
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Below you will find all assignments from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nHWProjects\n\n\nTBA\n\n\nTBA"
   }
 ]

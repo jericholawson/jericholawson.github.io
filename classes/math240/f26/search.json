@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "MATH 240: Introduction to Statistics",
     "section": "",
-    "text": "This website is the central hub for all materials related to this iteration of MATH 240. Use the links at the top of the page to access certain content.\n\n\nSource: xkcd"
+    "text": "This website is the central hub for all materials related to this iteration of MATH 241.\n\nUse the Assignments tab to access lab and HW assignments\nUse the Material tab to access slides and materials\nUse the Schedule tab to access the course schedule in a calendar view\nUse the Syllabus tab to access the syllabus\n\nEnjoy this cute graphic of two distributions:\n\n\nSource: Allison Horst"
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "MATH 240: Introduction to Statistics",
     "section": "",
-    "text": "This website is the central hub for all materials related to this iteration of MATH 240. Use the links at the top of the page to access certain content.\n\n\nSource: xkcd"
+    "text": "This website is the central hub for all materials related to this iteration of MATH 241.\n\nUse the Assignments tab to access lab and HW assignments\nUse the Material tab to access slides and materials\nUse the Schedule tab to access the course schedule in a calendar view\nUse the Syllabus tab to access the syllabus\n\nEnjoy this cute graphic of two distributions:\n\n\nSource: Allison Horst"
   },
   {
     "objectID": "index.html#announcements",
@@ -137,7 +137,7 @@
     "href": "syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "In this webpage, you will find the syllabus for this course (04)."
+    "text": "In this webpage, you will find the syllabus for this course (04). A .pdf version of this syllabus can be accessed here."
   },
   {
     "objectID": "syllabus.html#overview",
@@ -186,7 +186,7 @@
     "href": "material.html",
     "title": "Material",
     "section": "",
-    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesLabsProjectsExam Prep\n\n\n\n1: Introductions\n2: Intro to Data\n3: Intro to R\n4: R and GitHub\n5: Intro to Data Visualization\n6: ggplot2\n7: Histograms, Bar Plots\n8: Box Plots, Line Charts, Scatter Plots\n9: Advanced ggplot2 & Data Wrangling\n10: Data Wrangling\n11: Data Joining\n12: Data Problem-Solving\n13: Review for Exam #1\n14: Data Tidying\n15: Data Pivoting\n16: Data Ethics\n17: AI Ethics\n18: Functions in R\n19: Iteration in R\n19b: Optional: Testing\n20: Spatial Thinking\n21: Point Mapping\n22: Polygon Mapping\n23: Lying with Maps\n\n\n\n\n1: R and Understanding Datasets\n\nTemplate for Download\n\n2: GitHub\n3: Visualization Aesthetics\n4: Plotting Frequencies and Distributions\n5: Data Wrangling\n6: Data Tidying\n7: Components of AI\n8: Programming with Data\n9: Point Mapping\n10: Polygon Mapping\n\n\n\n\nProject #1\nProject #2\n\n\n\n\nStudy Guide for Exam #1\nStudy Guide for Exam #2\n\n\n\n\n\nTextbooksPerusallDatasets\n\n\n\nModern Data Science\nModern Dive\nIntroduction to Data Science: Data Analysis and Prediction Algorithms with R\n\n\n\n\nAccess\n\n\n\n\nNBA, 2024 Season"
+    "text": "Below you will find all resources from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nSlidesProjectsExam Prep\n\n\nTBA\n\n\nTBA\n\n\nTBA\n\n\n\n\nTextbooksTechnology\n\n\n\nÇetinkaya-Rundel, M., & Hardin, J. (2024). Introduction to Modern Statistics (2nd ed.). OpenIntro. https://openintro-ims.netlify.app/\n\nThis textbook is free to use online!\n\n\nOptional:\n\nWackerly, D. D., Mendenhall, W., & Scheaffer, R. L. (2008). Mathematical Statistics with Applications (7th ed.). Thomson Brooks/Cole.\n\nGood for a more mathematical flavor to the content; it’s what I used in undergrad!\n\n\n\n\n\nFor coding: R and RStudio\n\nInstructions\n\nAssignment turn-ins: Gradescope\n\nEntry code: D6NV3R\n\nCourse management: Moodle\n\nWill be used seldomly.\n\nCourse materials: Course Website\nDiscussions and announcements: Slack"
   },
   {
     "objectID": "resources/r.html",
@@ -278,5 +278,12 @@
     "title": "Syllabus",
     "section": "Note",
     "text": "Note\nThe instructor has the right to modify the syllabus if needed. If this occurs, students will be notified before the change occurs.\nAckowledgement: The content and structure of this course are modeled after materials from Drs. Robin Belton (Vassar College), Ming-Wen An (Vassar College), and Lindsay Poirier (Smith College)."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Below you will find all assignments from this course in a list format. This webpage will be updated throughout the entirety of the semester.\n\nHWLabsProjects\n\n\nTBA\n\n\nTBA\n\n\n\nTBA"
   }
 ]
