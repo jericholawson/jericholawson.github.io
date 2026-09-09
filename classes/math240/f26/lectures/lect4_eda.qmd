@@ -1,0 +1,124 @@
+---
+title: "EDA: Part I"
+format: html
+---
+
+## Libraries
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+```
+
+
+## Loading in Data
+
+We can use the `read.csv()` function in order to import a dataset from our laptop. We need the following steps however:
+
+1. Gather data and place it in an organized place in your computer storage.
+  - Should be a .csv file
+  - e.g. same folder as where your .qmd file will be in
+2. Create .qmd/.R file
+  - e.g. You can place file in same folder that has the data you're working with
+3. Recall the file path to the .csv file
+  - Relative: based on the file location of R file (you just need filename.csv)
+  - Absolute: whole file path on your computer (e.g. C:/Users/.../filename.csv)
+4. Use `read.csv("filepath")` and assign it to an object name of your choice
+5. Run command and you should see it stored in your R environment
+
+```{r}
+movies <- read.csv("../datasets/movies.csv")
+```
+
+## Commands for Dataset Characteristics
+
+```{r}
+dim(movies) # number of rows and columns
+nrow(movies) # number of rows
+ncol(movies) # number of columns
+length(movies$duration) # number of observations in column/vector
+typeof(movies$duration) # R type of variable
+```
+
+## Frequency Tables
+
+```{r}
+table(movies$content_rating)
+round(table(movies$content_rating) / nrow(movies), 4)
+```
+
+## Bar Plots
+
+```{r}
+# Creating a frequency bar plot
+p1 <- ggplot(movies, mapping=aes(x=content_rating)) + 
+  geom_bar(fill="brown") +
+  ylab("Frequency") + 
+  xlab("MPAA Rating")
+
+# Creating a relative frequency bar plot
+p2 <- ggplot(movies, mapping=aes(x=content_rating, y=(..count..)/sum(..count..))) +
+  geom_bar(fill="light green") + 
+  ylab("Relative Frequency") + 
+  xlab("MPAA Rating")
+
+grid.arrange(p1, p2, ncol=2)
+```
+
+## Pie and Waffle Charts
+
+```{r}
+library(baffle)
+
+movies <- movies |> 
+  mutate(content_rating = factor(content_rating))
+
+factor(movies$content_rating, ordered = F, levels = unique(movies$content_rating))
+```
+
+
+```{r}
+content_sum <- movies |> 
+  group_by(content_rating) |> 
+  summarise(count = n())
+
+p3 <- ggplot(content_sum, aes(x = "", y = count, fill = content_rating)) + 
+  geom_bar(stat="identity", width=1, color="white") +
+  coord_polar("y", start=0) +
+  theme_void() +
+  labs(fill = "MPAA Rating")
+
+waffle(table(movies$content_rating))
+
+```
+
+## Histogram
+
+```{r}
+ggplot(movies, aes(x = duration)) +
+  geom_histogram(bins = 40, color = "black", fill = "lightblue") +
+  theme_bw() +
+  xlab("Duration (mins)") +
+  ylab("Frequency")
+```
+
+## Density Plot
+
+```{r}
+ggplot(movies, aes(x = duration)) +
+  geom_density(color = "black", fill = "lightblue") +
+  theme_bw() +
+  xlab("Duration (mins)") +
+  ylab("Rel. Frequency")
+```
+
+## Box Plot
+
+```{r}
+ggplot(movies, aes(x = duration)) +
+  geom_boxplot(color = "black", fill = "lightblue") +
+  theme_bw() +
+  xlab("Duration (mins)")
+```
+
