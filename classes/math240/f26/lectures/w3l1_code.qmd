@@ -1,0 +1,57 @@
+---
+title: "EDA for Two Categorical Variables"
+format: html
+---
+
+## Libraries
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+```
+
+
+## Loading in Data
+
+```{r}
+movies <- read.csv("../datasets/movies.csv")
+```
+
+## Contingency Tables
+
+```{r}
+movies <- movies |> 
+  mutate(newCent = ifelse(title_year >= 2000, "21st", "20th"))
+```
+
+```{r}
+table(movies$content_rating, movies$newCent)
+```
+
+## Stacked Bar Plots
+
+```{r}
+p1 <- ggplot(movies, aes(x = newCent, fill = content_rating)) +
+  geom_bar() +
+  xlab("Century") +
+  ylab("Count") +
+  labs(fill = "Rating") +
+  theme_bw()
+
+p2 <- ggplot(movies, aes(x = newCent, fill = content_rating)) +
+  geom_bar(position = "fill") +
+  xlab("Century") +
+  ylab("Proportion") +
+  labs(fill = "Rating") +
+  theme_bw()
+
+grid.arrange(p1, p2, ncol=2)
+```
+
+## Mosaic Plots
+
+```{r}
+mosaicplot(table(movies$content_rating, movies$newCent), color = c("lightgreen", "lightblue"), main = "Mosaic Plot of Content Ratings and Centuries of Movies", las = 2)
+```
+
