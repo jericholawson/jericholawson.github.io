@@ -1,0 +1,123 @@
+---
+title: "EDA for Two Variables: Cat/Num and 2 Numerical"
+format: html
+---
+
+## Libraries
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+```
+
+## Loading in Data
+
+```{r}
+movies <- read.csv("../datasets/movies.csv")
+```
+
+## Overlaid Density Plots
+
+```{r}
+p3 <- ggplot(movies, aes(x = duration, fill = newCent)) +
+  geom_histogram(bins = 40, alpha = 0.4) +
+  xlab("Duration (mins)") +
+  ylab("Count") +
+  labs(fill = "Century") +
+  theme_bw()
+
+p4 <- ggplot(movies, aes(x = duration, fill = newCent)) +
+  geom_density(alpha = 0.4) +
+  xlab("Duration (mins)") +
+  ylab("Count") +
+  labs(fill = "Century") +
+  theme_bw()
+
+grid.arrange(p3, p4, ncol=2)
+```
+
+## Faceted Plots
+
+```{r}
+p5 <- ggplot(movies, aes(x = duration, fill = content_rating)) +
+  geom_histogram(bins = 40, alpha = 0.4) +
+  facet_wrap(~content_rating, nrow = 2) +
+  xlab("Duration (mins)") +
+  ylab("Count") +
+  labs(fill = "Rating") +
+  theme_bw()
+
+p6 <- ggplot(movies, aes(x = duration, fill = content_rating)) +
+  geom_density(alpha = 0.4) +
+  facet_wrap(~content_rating, nrow = 2) +
+  xlab("Duration (mins)") +
+  ylab("Count") +
+  labs(fill = "Rating") +
+  theme_bw()
+
+grid.arrange(p5, p6, ncol=2)
+```
+
+## Side-by-side Box Plots
+
+```{r}
+ggplot(movies, aes(x = duration, y = content_rating, fill = content_rating)) +
+  geom_boxplot() +
+  xlab("Duration (mins)") +
+  ylab("Rating") +
+  labs(fill = "Rating") +
+  theme_bw()
+```
+
+## Five-Number Summaries
+
+```{r}
+tapply(movies$duration, movies$content_rating, summary)
+```
+
+## Scatter Plots
+
+```{r}
+movies$grossMil = movies$gross / 1000000
+ggplot(movies, aes(x = duration, y = grossMil)) +
+  geom_point() +
+  xlab("Duration (mins)") +
+  ylab("Gross (in Millions of $)") +
+  theme_bw()
+```
+
+## Correlation
+
+```{r}
+cor(movies$duration, movies$grossMil)
+```
+## Mapping Data
+
+
+```{r}
+library(maps)
+library(mlbench)
+data(BostonHousing2)
+boston <- map_data("county", region = "Massachusetts")
+
+ggplot(BostonHousing2, aes(x = lon, y = lat, colour = medv)) +
+  geom_polygon(data = boston,
+               aes(x = long, y = lat, group = group),
+               fill = NA, color = "black") +
+  geom_point(data = BostonHousing2, 
+             aes(x = lon, y = lat, colour = medv),
+             alpha = 0.2) + theme_classic() +
+  coord_map("albers",  lat0 = 45.5, lat1 = 29.5) +
+  labs(x = "",
+       y = "",
+       colour = "Median\nHousing\nValues\n($1000s)",
+       title = "Median Value of Owner-Occupied Homes\n
+across Boston Census Tracts, 1970") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.line.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line.y = element_blank())
+```
