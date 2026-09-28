@@ -1,0 +1,296 @@
+---
+title: "Simple Linear Regression in R (30 pts)"
+subtitle: "MATH 240 | Lab #2"
+author: "YOUR NAME HERE"
+date: "Due Date: September 28th, 2026"
+execute:
+  error: true
+format: 
+  pdf:
+    geometry: 
+      - left=1in
+      - right=1in
+      - top=1in
+      - bottom=1in
+---
+
+::: callout-note
+## Lab Instructions
+
+In this lab, we will look at data on 500 live births in North Carolina, focusing on the use of linear regression to understand the relationship between an infant's birth weight and their birthing parent's age and weight gain during pregnancy. To do so, we will introduce the following R functions:
+
+-   `residual()` and `fitted()` for extracting relevant components of the linear regression fit
+-   `predict()` for making new predictions with our fitted regression line
+:::
+
+## Getting Started
+
+As always, let's start by setting up our R coding environment! In this lab, we will use functions from the `tidyverse` and `broom` packages, as well as data that is stored as a CSV file on the website.
+
+```{r}
+#| echo: true
+#| output: false
+# Note: you may need to first install the broom package by running 
+# install.packages("broom") directly in your R console
+
+# Unpacking our tools and equipment
+library(tidyverse)
+library(broom) 
+
+# Reading in the data
+infants <- read.csv("infants.csv")
+```
+
+The data contain information on $n=500$ randomly sampled live births in North Carolina between 2003 and 2004. For each of these live births, the following variables were collected:
+
+-   **race**: birthing parent race, dichotomized as white (0) or Black/African-American (1)
+-   **sex**: infant sex, dichotomized as female (0) or male (1)
+-   **mage**: maternal age at the time of birth, in years
+-   **smoker**: indicator of whether the birthing parent smoked during pregnancy, no (0)/yes (1)
+-   **gained**: weight gained by the birthing parent during the pregnancy, in pounds
+-   **weight**: birth weight of the baby, in kilograms
+-   **weeks**: gestational period, in weeks
+
+## Analysis of the Infant Birth Weight Data
+
+Let's suppose that our interest lies in understanding how an infant's birth weight interrelates with their birthing parent's weight gain during pregnancy! We'll consider two possible ways of representing that weight gain:
+
+1.  As a continuous numerical variable, capturing the exact number of pounds that an individual gained during their pregnancy
+2.  As a categorical variable, with levels corresponding to a small (less than or equal to 20lb) vs. moderate to large (greater than 20lb) weight gain.\footnote{These cut-offs \textit{do not} represent current recommendations or best practices for obstetric care. In practice, the recommended weight gain for an expectant parent depends on their pre-pregnancy BMI, the number of children they're carrying, and other nuanced/context-dependant factors.}
+
+In order to ensure that both our outcome (an infant's birth weight) and our predictor (their birthing parent's weight gain) are measured on the same scale, let's begin by `mutate()`ing the birth weight variable so that it is recorded in pounds rather than kilograms:
+
+```{r}
+# One kilogram is approximately 2.2 pounds
+infants <- infants |> mutate(weight_lb = weight*2.2)
+```
+
+We can also create the categorical representation of birthing parent weight gain as follows:
+
+```{r}
+infants <- infants |> 
+  mutate(gained_cat = case_when(gained <= 20 ~ "small",
+                                gained > 20 ~ "moderate to large"))
+infants$gained_cat <- factor(infants$gained_cat)
+```
+
+Finally, before we dive head first into our regression analysis, let's take a moment to summarize each of the relationships of interest visually! We can use a scatter plot to display the association between infant birth weight and birthing parent weight gain (measured as a continuous numeric variable) and a box plot to display the same association when birthing parent weight gain is represented categorically.
+
+```{r}
+# Scatter plot: continuous birthing parent weight gain
+infants |> ggplot(mapping = aes(x = gained, y = weight_lb)) + 
+  geom_point(col="steelblue") + 
+  xlab("Birthing Parent Weight Gain (in lbs)") + 
+  ylab("Infant Birth Weight (in lbs)") + 
+  theme_bw()
+
+# Box plot: categorical birthing parent weight gain
+infants |> ggplot(mapping = aes(x = gained_cat, y = weight_lb, fill=gained_cat)) + 
+  geom_boxplot() + guides(fill="none") +
+  scale_x_discrete(labels=c("> 20 lb", "<= 20 lb")) + 
+  xlab("Birthing Parent Weight Gain (in lbs)") + 
+  ylab("Infant Birth Weight (in lbs)") + 
+  theme_bw()
+```
+
+Take a moment to think about what each of these plots is showing you. Do infant birth weight and birthing parent weight gain appear to be associated? In what ways? Revisit the handout from last class if you'd like to see how we characterized the *form*, *direction*, and *strength* of this association.
+
+### 1. Infant Birth Weight and Continuous Birthing Parent Weight Gain
+
+As we saw last class, we can use the `lm()` function in R to fit a **l**inear **m**odel to our infant birth weight data, treating `weight_lb` (infant birth weight, in pounds) as our outcome and `gained` (birthing parent weight gain during pregnancy, in pounds) as our predictor!
+
+```{r}
+# Fitting the regression model
+lm.gained <- lm(weight_lb ~ gained, data = infants)
+
+# Summarizing the fitted linear model
+lm.gained |> tidy()
+```
+
+Using the table above, we can write down the least squares regression line for the linear model: \begin{equation*}
+\widehat{\text{weight}}_i = 6.72 + 0.016\times \text{gained}_i.
+\end{equation*} Based on this model, we estimate that the average birth weight of infants' whose birthing parents gained 0 pounds during pregnancy is 6.72 pounds; each additional pound of weight gained during pregnancy is associated with a 0.016 pound increase in the infant's birth weight, on average.
+
+#### Assessing model fit
+
+How well does this fitted regression line represent the observed infant birth weight/parent weight gain relationship? Visualizing our fitted regression line in the data space can give us *some* sense of the model fit:
+
+```{r}
+# Scatter plot: continuous birthing parent weight gain
+infants |> ggplot(mapping = aes(x = gained, y = weight_lb)) + 
+  geom_point(col="steelblue") + 
+  geom_abline(intercept=coef(lm.gained)[1], slope=coef(lm.gained)[2]) +
+  xlab("Birthing Parent Weight Gain (in lbs)") + 
+  ylab("Infant Birth Weight (in lbs)") + 
+  theme_bw()
+```
+
+But if we want to assess the fit of this model more formally, we will need to use summaries such as the coefficient of determination and the residual plot. We can access these (and other) key attributes of our model in one of two ways:
+
+-   Using built-in "helper" functions like `fitted()` and `residual()`. These functions take the model object `lm.gained` as an input and respectively calculate either the fitted values ($\hat{y}_i$) or the residuals ($e_i = y_i - \widehat{y}_i$) for each observation in the data set used to fit the model
+-   Using the `$` operation on either `lm.gained` or `summary(lm.gained)`
+
+##### Coefficient of determination
+
+The following code shows several equivalent ways of finding the coefficient of determination for our fitted regression model:
+
+```{r}
+# Accessing information stored within the summary(lm.gained) object
+r.2 <- summary(lm.gained)$r.squared
+r.2
+
+# Calculating the coefficient of determination by hand
+sst <- sum((infants$weight_lb - mean(infants$weight_lb))^2)
+sse <- sum(residuals(lm.gained)^2)
+r.2 <- 1 - sse/sst
+r.2
+
+# Calculating the coefficient of determination in terms of variances
+sst <- (500-1)*var(infants$weight_lb)
+sse <- (500-1)*var(residuals(lm.gained))
+r.2 <- 1 - sse/sst
+r.2
+```
+
+Furthermore, because our fitted regression model contains only a single numerical predictor, we can also calculate the coefficient of determination, $R^2$, by squaring the Pearson correlation coefficient between infant birth weight and birthing parent weight gain, $r$:
+
+```{r}
+# Bonus fourth approach!
+cor(infants$weight_lb, infants$gained)^2
+```
+
+All approaches should lead you to the same answer! In particular, the coefficient of determination for our fitted model is $R^2 = 0.026$. So (continuous) birthing parent weight gain during pregnancy explains approximately 2.6% of the total variability in infant birth weight.
+
+##### Residual plots
+
+We can also use our **ggplot** plot tools from last week's lab to visualize the quality of our model fit! To construct a residual plot using ggplot, we will need to compute the following two things for all observations in our dataset:
+
+-   The predicted birth weight based on our model fit, $\widehat{y}_i$
+-   The residual, $e_i = y_i - \widehat{y}_i$, characterizing the discrepancy between our model fit and the actual infant birth weight
+
+We will use the `mutate()` function to add each of these variables to our dataset!
+
+```{r}
+# Adding columns called "fitted" and "residual" to our data
+infants <- infants |> mutate(fitted=fitted(lm.gained), 
+                             residual=residuals(lm.gained))
+glimpse(infants)
+```
+
+Now we're ready to create a residual plot for our fitted simple linear regression line! I've gone ahead and colored the points of the scatter plot `"steelblue"` and added a reference line at $y=0$.
+
+```{r}
+# Creating the residual plot
+infants |> ggplot(mapping = aes(x = fitted, y = residual)) + 
+  geom_point(color="steelblue") + xlab("Predicted Birth Weight") + 
+  ylab("Residual") + theme_classic() + geom_hline(yintercept=0)
+```
+
+What do you think of the model fit? Does a linear regression line seem like a reasonable model for quantifying the association between birthing parent weight gain during pregnancy and infant birth weight?
+
+#### Prediction using a linear regression line
+
+How might we use our fitted regression line to make predictions about a baby's birth weight, given information about their birthing parent's weight gain during pregnancy?
+
+::: callout-note
+## The Scenario
+
+An expectant parent approaches us and mentions that they've gained 27 pounds over the course of their pregnancy. What would we predict their baby's birth weight to be?
+:::
+
+There are once again several (main) ways to make these sorts of predictions in R!
+
+1.  Use the fitted regression line coefficients, accessed using the `coef()` function, to do the math we've been doing on the board: $\widehat{y}_i = \widehat{\beta}_0 + \widehat{\beta}_1 \times 27$. The intercept term is the first element of `coef()` and the slope term is the second; we can access these elements using square brackets, `[]`.
+2.  Use the `predict()` function to have R do all the computation and math for us. In order to use this function, we will first need to make a data frame containing the value of the relevant explanatory variable (predictor) for our new patient.
+
+```{r}
+# Approach one: directly use the estimated model coefficients
+pred.weight <- coef(lm.gained)[1] + coef(lm.gained)[2]*27
+pred.weight
+
+# Approach two: using the predict() function
+new.patient <- data.frame(gained=27)
+pred.weight <- predict(lm.gained, new.patient)
+pred.weight
+```
+
+So either way we predict that this patient's baby will be 7.15 pounds at birth.
+
+### 2. Infant Birth Weight and Categorical Birthing Parent Weight Gain
+
+What if we had wished to represent birthing parent weight gain as a categorical variable (denoting small ($\leq 20$ pounds) vs. moderate to large ($>20$ pounds) pregnancy weight gains) instead?
+
+Well, it turns out we're in luck: The process of fitting a least squares regression line with a single categorical predictor is nearly identical! As long as our categorical variable is stored as a *factor* vector in R, the `lm()` function will automatically create all of the necessary indicator variable(s). By default, R treats the first level as the reference level:
+
+```{r}
+levels(infants$gained_cat)
+```
+
+So in this case, R will treat "moderate to large" pregnancy weight gains as the reference level. We can then use `lm()` to fit the desired linear regression model:
+
+```{r}
+lm.gained.cat <- lm(weight_lb ~ gained_cat, data=infants)
+lm.gained.cat |> tidy()
+```
+
+Our fitted intercept term, $\widehat{\beta}_0$, is once again found in the `(Intercept)` row under the `estimate` heading, and our fitted slope term for categorical parental weight gain, $\widehat{\beta}_1$, is found in the `gained_catsmall` row under the `estimate` heading.\footnote{When R creates its own indicator variables, it follows the following naming convention: it appends the level name (here, ``small") to the name of the column that contained the original categorical variable (here, ``gained\_cat").} So based on this model, we:
+
+-   Estimate that the mean birth weight for infants whose birthing parents gained a moderate to large amount of weight during their pregnancies is 7.30 pounds.
+-   Estimate that birthing parents with small weight gains during their pregnancies gave birth to infants who weighed 0.378 pounds less, on average, than birthing parents with moderate to large weight gains.
+
+This categorical representation of weight gain during pregnancy explains approximately 1.5% of the total variability in infant birth weights.
+
+```{r}
+summary(lm.gained.cat)$r.squared
+```
+
+## Lab Questions
+
+We'll continue working with the same North Carolina infants data set for the second portion of this lab, though our focus will shift to understanding the relationship between infant birth weight and birthing parent age!
+
+1.  (5 pts) Consider the simple linear regression line: \begin{equation*}
+    E[\text{weight}_i | \text{age}_i] = \beta_0 + \beta_1\times \text{age}_i
+    \end{equation*} What are the estimated regression coefficients, $\hat{\beta_0}$ and $\hat{\beta_1}$? How would I interpret them?
+    
+```{r}
+# CODE HERE
+```
+
+Written answer here:
+
+
+2.  (5 pts) Mutate your dataset to create a new variable, `age_cent`, that *centers* the parental age variable. In other words, this new `age_cent` variable should be formed by subtracting `mean(mage)` from every `mage` observation in the dataset.
+
+```{r}
+# CODE HERE
+```
+
+3.  (5 pts) Re-fit the regression line from (1), keeping infant birth weight (in kilograms) `weight` as the outcome (response) variable but now using the new `age_cent` as the predictor (explanatory) variable. Compare the estimated regression coefficients between these two model fits: what has stayed the same and what has changed? How would we interpret the estimated coefficients now? *(Hint: What does it mean for someone to have an `age_cent` value of 0? What does that imply in terms of their `mage`?)*
+    
+```{r}
+# CODE HERE
+```
+
+Written answer here:
+
+
+4.  (5 pts) Create a residual plot assessing the fit of your model from question 2. Does this line seem reasonable?
+    
+```{r}
+# CODE HERE
+```
+
+Written answer here:
+
+5.  (5 pts) Recall that advanced birthing parent age describes any pregnancy occurring in individuals over the age of 35. Mutate the data frame so that it contains the variable `adv_age`, which takes on a value of `"not advanced age"` if `mage <= 35` and a value of `"advanced age"` if `mage > 35`. Then fit a second linear regression model to the dataset, once again taking `weight` as the outcome (response) variable and now taking `adv_age` as the predictor (explanatory) variable. Treat `"not advanced age"` as the reference level. What is your fitted regression model? How would you interpret the estimated intercept and slope terms in context?
+    
+```{r}
+# CODE HERE
+```
+
+Written answer here:
+
+6.  (5 pts) Compare the coefficients of determination for your model from question 2 (where birthing parent age is a numerical variable) and your model from question 4 (where birthing parent age is a binary categorical variable). Which model explains more variability in infant birth weight?
+
+Written answer here:
+
