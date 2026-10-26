@@ -23,7 +23,7 @@ Next, we can denote the hypotheses. We want to look for a difference, and as suc
 - $H_0: \mu = 67.5$
 - $H_a: \mu \neq 67.5$
 
-Lastly, we define a discernibility level of 0.05. 
+Lastly, we define a discernibility level of 0.05.
 
 ## Collect Data
 
@@ -33,7 +33,7 @@ We have the data itself from the sample, which is seen below:
 samp <- c(59, 67, 73, 61, 60, 62, 62, 65, 62, 58, 70, 61, 63, 62, 66, 64, 63, 64, 61, 60)
 ```
 
-We also know the population itself, whose distribution is related to the null distribution. As such, 
+We also know the population itself, whose distribution is related to the null distribution. As such,
 
 ```{r}
 set.seed(13)
@@ -95,4 +95,4 @@ pval <- mean(res <= mu - diff | res >= mu + diff)
 pval
 ```
 
-Our p-value is equal to 0.028, which is less than our discernibility level of 0.05. As such, we reject the null hypothesis and conclude that there is a discernible difference in the mean heights of this group versus the heights in the population. 
+Our p-value is equal to 0.028, which is less than our discernibility level of 0.05. As such, we reject the null hypothesis and conclude that there is a discernible difference in the mean heights of this group versus the heights in the population.
