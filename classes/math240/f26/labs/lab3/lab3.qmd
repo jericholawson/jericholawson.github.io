@@ -1,0 +1,273 @@
+---
+title: "Sampling Distribution (30 pts)"
+subtitle: "MATH 240 | Lab #3"
+author: "YOUR NAME HERE"
+execute:
+  error: true
+format: 
+  pdf:
+    geometry: 
+      - left=1in
+      - right=1in
+      - top=1in
+      - bottom=1in
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+In this lab, you will construct a *sampling distribution* of a
+statistic. Recall from class that the **sampling distribution of a
+statistic** is the distribution of the statistic calculated from many
+samples. It allows us to quantify and understand the sampling
+variability (and more generally, the distribution) of a statistic. The
+sampling distribution of a statistic is necessary for making both types
+of inference (hypothesis tests and confidence intervals). In practice,
+we usually work with a *model* for the sampling distribution. But in
+this lab, we have the luxury of creating the population *and* having
+access to resources (i.e. computing power) to take *many* samples from
+this population, thereby constructing the actual sampling distribution.
+
+::: {#boxedtext}
+**Setting a seed:** We will take some random samples and build sampling
+distributions in this lab, which means we should set a seed at the start
+of your lab. This ensures reproducibility of your results, i.e. that you
+get the same results every time you run the code.
+<!---If this concept is new to you, review the lab on probability.--->
+:::
+
+```{r}
+set.seed(1234)
+```
+
+## Getting Started
+
+### Load packages
+
+In this lab, we will explore and visualize the data using the
+**tidyverse** suite of packages and the **openintro** package. We will
+also use the **infer** package for resampling.
+
+Let's load the packages. Again, if you're using the RStudio server, you
+may not be able to load the **tidyverse** suite, and instead should load
+the specific packages: **dplyr** and **ggplot2** as you've done in
+previous labs. Modify the code below accordingly.
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(openintro)
+library(infer)
+```
+
+### The data
+
+A 2019 Gallup report states the following:
+
+> The premise that scientific progress benefits people has been embodied
+> in discoveries throughout the ages -- from the development of
+> vaccinations to the explosion of technology in the past few decades,
+> resulting in billions of supercomputers now resting in the hands and
+> pockets of people worldwide. Still, not everyone around the world
+> feels science benefits them personally.
+>
+> **Source:** [World Science Day: Is Knowledge
+> Power?](https://news.gallup.com/opinion/gallup/268121/world-science-day-knowledge-power.aspx)
+
+The Wellcome Global Monitor finds that 20% of people globally do not
+believe that the work scientists do benefits people like them. In this
+lab, you will assume this 20% is a true population proportion and learn
+about how sample proportions can vary from sample to sample by taking
+smaller samples from the population. We will first create our population
+assuming a population size of 100,000. This means 20,000 (20%) of the
+population think the work scientists do does not benefit them personally
+and the remaining 80,000 think it does.
+
+In the code below, we name our data frame `global_monitor` and the
+variable that contains responses to the question *"Do you believe that
+the work scientists do benefit people like you?"* `scientist_work`:
+
+```{r}
+global_monitor <- tibble(
+  scientist_work = c(rep("Benefits", 80000), rep("Doesn't benefit", 20000))
+)
+```
+
+We can visualize the distribution of these responses using a bar plot.
+
+```{r bar-plot-pop, fig.height=2.5, fig.width=10}
+global_monitor %>% ggplot(aes(x = scientist_work)) +
+  geom_bar() +
+  labs(
+    x = "", y = "",
+    title = "Do you believe that the work scientists 
+    do benefit people like you?"
+  ) +
+  coord_flip() 
+```
+
+We can also obtain summary statistics to confirm we constructed the data
+frame correctly.
+
+```{r summ-stat-pop}
+global_monitor %>%
+  count(scientist_work) %>%
+  mutate(p = n /sum(n))
+```
+
+## Sampling variability
+
+<!---The unknown sampling distribution--->
+
+In this lab, you have access to the entire population, but this is
+rarely the case in real life. Gathering information on an entire
+population is often extremely costly or impossible. Because of this, we
+often take a sample of the population and use that to understand the
+properties of the population.
+
+If you are interested in estimating the proportion of people who don't
+think the work scientists do benefits them, you can use the `sample_n`
+command to take a sample of size $n$ people from the population.
+
+```{r samp1}
+samp1 <- global_monitor %>%
+  sample_n(50)
+```
+
+This command takes a simple random sample of size 50 from the
+`global_monitor` dataset, and assigns the result to `samp1`. This is
+similar to randomly drawing names from a hat that contains the names of
+all in the population. Working with these 50 names is considerably
+simpler than working with all 100,000 people in the population.
+
+1.  Describe the distribution of responses in this sample. How does it
+    compare to the distribution of responses in the population?
+    **Hint:** Although the `sample_n` function takes a random sample of
+    observations (i.e. rows) from the dataset, you can still refer to
+    the variables in the dataset with the same names. Code you presented
+    earlier for visualizing and summarising the population data will
+    still be useful for the sample, however be careful to not label your
+    proportion `p` since you're now calculating a sample statistic, not
+    a population parameter. You can customize the label of the
+    statistics to indicate that it comes from the sample.
+
+If you're interested in estimating the proportion of all people who do
+not believe that the work scientists do benefits them, but you do not
+have access to the population data, your best single guess is the sample
+proportion.
+
+Depending on which 50 people you selected, your estimate could be a bit
+above or a bit below the true population proportion of 20%. In general,
+though, the sample proportion turns out to be a pretty good estimate of
+the true population proportion, and you were able to get it by sampling
+less than 1% of the population.
+
+2.  Would you expect the sample proportion to match the sample
+    proportion of another student's sample? Why, or why not? If the
+    answer is no, would you expect the proportions to be somewhat
+    different or very different?
+
+3.  Take a second sample, also of size 50, and call it `samp2`. How does
+    the sample proportion of `samp2` compare with that of `samp1`?
+    Suppose we took two more samples, one of size 100 and one of
+    size 1000. Which would you think would provide a more accurate
+    estimate of the population proportion?
+
+Not surprisingly, every time you take another random sample, you might
+get a different sample proportion. It's useful to get a sense of just
+how much variability you should expect when estimating the population
+proportion this way.
+
+## Constructing a sampling distribution
+
+The distribution of sample proportions, called the *sampling
+distribution (of the proportion)*, can help you understand this
+(sampling) variability. In this section, you''ll construct the sampling
+distribution of the proportion of adults who do not believe the work of
+scientists benefits people like them, based on samples of size $n=50$
+adults.
+
+In this lab, because you have access to the population and computing
+power, you can construct the sampling distribution for the sample
+proportion by actually taking samples from the population and repeating
+that many times. In the code below, we ask R to take 15,000 different
+samples of size 50 from the population, calculate the proportion of
+responses in each sample, filter for only the *Doesn't benefit*
+responses, and store each result in a vector called `sample_props50`.
+The 15,000 different samples are known as *replicates*. The filter step
+is so that we only keep the proportion who don't think science benefits
+(we don't need to keep the proportion who *do* think science benefits).
+We specify `replace = TRUE` since we want each person in the population
+to have a 20% chance of not believing the work of scientists benefits
+them.
+
+```{r iterate}
+sample_props50 <- global_monitor %>%
+                    rep_sample_n(size = 50, reps = 15000, replace = TRUE) %>%
+                    count(scientist_work) %>%
+                    mutate(p_hat = n /sum(n)) %>%
+                    filter(scientist_work == "Doesn't benefit")
+```
+
+And we can visualize the (sampling) distribution of these proportions
+with a histogram:
+
+```{r}
+ggplot(data = sample_props50, aes(x = p_hat)) +
+  geom_histogram(binwidth = 0.02) +
+  labs(
+    x = "p_hat (Doesn't benefit)",
+    title = "Sampling distribution of p_hat",
+    subtitle = "Sample size = 50, Number of samples = 15000"
+  )
+```
+
+1.  How many rows are there in `sample_props50`? What does each row
+    represent? Describe the shape, center, and spread of this sampling
+    distribution. Include the histogram of your distribution.
+
+Note that in practice one rarely gets to build true sampling
+distribution, because one rarely has access to the entire population.
+Without the `rep_sample_n` function, this would be painful. We would
+have to manually run the sampling 15,000 times! Note that for each of
+the 15,000 times we computed a proportion, we did so from a *different*
+sample.
+
+## Effect of Sample Size on the Shape, Center, and Spread of a Sampling Distribution
+
+1.  What would happen to the sampling distribution if we took a
+    *smaller* or *larger* sample? In this section, we explore the effect
+    of *sample size* on the shape, center, and spread of the sampling
+    distribution of proportions of *Doesn't benefit*. So far, you've
+    constructed a sampling distribution of proportions based on samples
+    of size *50 adults*, using 15,000 replicates. Here you will
+    construct sampling distributions of proportions based on samples of
+    size $n=10$ and $n=100$ adults, still using 15,000 replicates.
+    Review and understand your code from above where you constructed a
+    sampling distribution of proportions based on $n=50$ adults, then
+    modify it to construct sampling distributions based on samples of
+    size $n=10$ and $n=100$ adults. Make a histogram of each of your
+    sampling distributions.
+
+<!-- -->
+
+2.  For the two new sampling distributions you constructed (sample sizes
+    10 and 100), answer the following questions: What does each
+    observation in the sampling distribution represent? Describe the
+    center (mean), spread (standard deviation, aka \`\`standard
+    error''), and shape (symmetric/skewed) of the sampling distribution.
+    How do these change as the sample size increases from 10 to 50 to
+    100?
+
+3.  Consider the sampling distribution where the sample size is 50. What
+    do you think would happen to the shape and spread of the sampling
+    distribution as you vary the number of replicates (aka Number of
+    Samples) from 10 to infinity?
+
+It turns out the sample proportion is what we call *unbiased*; this
+means that the *center* of the sampling distribution is at the true
+population proportion. Further, the spread of the distribution indicates
+how much variability is incurred by sampling only 50 people at a time
+from the population.
+
+*This work is licensed under a Creative Commons Attribution-ShareAlike
+4.0 International License.*
